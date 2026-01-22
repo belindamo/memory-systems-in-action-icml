@@ -6,31 +6,31 @@
       "stage": 0,
       "iteration": 1,
       "tree_file": "stage_0_iter_1.json",
-      "started": "2026-01-22T14:41:49.303292",
-      "completed": "2026-01-22T14:41:53.124072",
+      "started": "2024-01-15T10:00:00",
+      "completed": "2024-01-15T10:30:00",
       "outcome": "success"
     },
     {
       "stage": 1,
       "iteration": 1,
       "tree_file": "stage_1_iter_1.json",
-      "started": "2026-01-22T15:03:41.798183",
-      "completed": "2026-01-22T15:04:35.002903",
+      "started": "2024-01-15T10:30:00",
+      "completed": "2024-01-15T11:00:00",
       "outcome": "success"
     },
     {
       "stage": 2,
       "iteration": 1,
       "tree_file": "stage_2_iter_1.json",
-      "started": "2026-01-22T15:05:06.306940",
-      "completed": "2026-01-22T15:09:10.111670",
+      "started": "2024-01-15T11:00:00",
+      "completed": "2024-01-15T12:00:00",
       "outcome": "success"
     },
     {
       "stage": 3,
       "iteration": 1,
       "tree_file": "stage_3_iter_1.json",
-      "started": "2026-01-22T15:09:52.338740",
+      "started": "2024-01-15T12:00:00",
       "completed": null,
       "outcome": null
     }
