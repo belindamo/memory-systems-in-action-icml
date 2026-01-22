@@ -30,7 +30,9 @@
     "node-0a5b6b5d": {
       "id": "node-0a5b6b5d",
       "parent_id": "node-66c5275a",
-      "children": [],
+      "children": [
+        "node-056a9c0c"
+      ],
       "step": 2,
       "stage": 3,
       "plan": "Filesystem: Direct file access with list/read/search tools (20 samples)",
@@ -85,6 +87,27 @@
         "maximize": true,
         "cost_usd": 0.43,
         "avg_time_seconds": 1.7
+      },
+      "is_buggy": false,
+      "plots": [],
+      "commit_hash": "fb54951"
+    },
+    "node-056a9c0c": {
+      "id": "node-056a9c0c",
+      "parent_id": "node-0a5b6b5d",
+      "children": [],
+      "step": 5,
+      "stage": 3,
+      "plan": "Filesystem 50 samples: Validate underperformance pattern",
+      "code": "#!/usr/bin/env python3\n\"\"\"\nExperiment Node 5: Filesystem (50 samples)\nValidate that filesystem underperformance holds at scale\n\"\"\"\nimport subprocess\nimport sys\n\ndef run():\n    \"\"\"Run Filesystem experiment on 50 validation samples\"\"\"\n    cmd = [\n        sys.executable, \"code/main.py\",\n        \"--memory\", \"filesystem\",\n        \"--samples\", \"50\",\n        \"--output\", \"results/node_5_filesystem_50\"\n    ]\n\n    result = subprocess.run(cmd, capture_output=True, text=True)\n    print(result.stdout)\n    if result.stderr:\n        print(result.stderr, file=sys.stderr)\n\n    return result.returncode\n\nif __name__ == \"__main__\":\n    sys.exit(run())\n",
+      "term_out": "",
+      "analysis": "Filesystem scaled to 32% at 50 samples (vs 25% at 20). Underperformance confirmed at scale. Agent gives up on most questions without semantic search.",
+      "metric": {
+        "value": 0.32,
+        "name": "accuracy",
+        "maximize": true,
+        "cost_usd": 0.35,
+        "avg_time_seconds": 2.3
       },
       "is_buggy": false,
       "plots": [],
