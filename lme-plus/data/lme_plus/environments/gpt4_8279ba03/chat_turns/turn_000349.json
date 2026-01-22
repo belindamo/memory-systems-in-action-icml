@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 349,
+  "session_index": 29,
+  "session_id": "sharegpt_0es4qk5_0",
+  "turn_in_session": 5,
+  "date": "2023/03/13 (Mon) 09:47",
+  "role": "assistant",
+  "content": "To enable Dan to use the custom domain `docs.danfletcher.com` for his documentation site, you can follow these general steps:\n\n1. Ask Dan to create a CNAME record for `docs.danfletcher.com` in his DNS settings that points to `dans-gitbook.vercel.app`. This will allow the custom domain to be mapped to his subdomain on your website.\n2. In the Vercel dashboard, add the custom domain `docs.danfletcher.com` to the list of domains for your Gitbook project. This can be done in the \"Domains\" section of the project settings.\n3. Once the custom domain is added, Vercel will provide you with a DNS record that you need to add to the DNS settings for the `danfletcher.com` domain. This DNS record is used to verify that you own the domain and to connect the custom domain to your Vercel project.\n4. After adding the DNS record, wait for the changes to propagate. This can take a few minutes to several hours depending on the DNS provider.\n5. Once the changes have propagated, Vercel will automatically provision an SSL certificate for the custom domain using Let's Encrypt.\n6. Finally, inform Dan that his documentation site is now accessible via the custom domain `docs.danfletcher.com`.\n\nThese steps should allow Dan to use the custom domain `docs.danfletcher.com` for his documentation site while still being hosted on your Gitbook subdomain.",
+  "has_answer": false
+}

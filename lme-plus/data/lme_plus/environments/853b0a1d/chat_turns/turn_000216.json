@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 216,
+  "session_index": 23,
+  "session_id": "sharegpt_c2LF3xK_12",
+  "turn_in_session": 0,
+  "date": "2023/05/23 (Tue) 14:40",
+  "role": "user",
+  "content": "write again, we have 6 Entity Relationship Model:\n1. Restaurant (restaurant\\_id, name, location, contact\\_details, branch\\_id)\n2. Queue (queue\\_id, restaurant\\_id, status, expected\\_waiting\\_time, period\\_id)\n3. Customer (customer\\_id, queue\\_id, name, contact\\_details, time\\_joined)\n4. Table (table\\_id, restaurant\\_id, table\\_number, seats, status)\n5. Branch (branch\\_id, name, location, contact\\_details)\n6. Period (period\\_id, start\\_time, end\\_time)\n\nPlease write in English language.",
+  "has_answer": false
+}

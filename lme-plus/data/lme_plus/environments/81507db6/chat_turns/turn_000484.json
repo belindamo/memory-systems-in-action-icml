@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 484,
+  "session_index": 47,
+  "session_id": "sharegpt_tgr1bpv_17",
+  "turn_in_session": 0,
+  "date": "2023/07/21 (Fri) 22:06",
+  "role": "assistant",
+  "content": "Here are the general steps to create and export a report in Kibana:\n\n1. Open Kibana and navigate to the dashboard or visualization that you want to include in your report.\n2. Click on the \"Share\" button in the top right corner of the screen.\n3. Choose \"Generate PDF\" from the dropdown menu.\n4. In the \"PDF Reports\" dialog box, select the report format, orientation, and page size that you want to use. You can also customize the report title and add a description.\n5. Choose whether you want to include a cover page, a table of contents, and other optional elements in the report.\n6. Click the \"Generate\" button to generate the report.\n7. Once the report is generated, you can preview it by clicking on the \"Download\" button in the dialog box. You can also choose to save the report to your computer, send it via email, or print it.\n\nNote that the \"Generate PDF\" feature is available in the Kibana UI only for Kibana 7.1 and later. For earlier versions of Kibana, you can use third-party plugins or the Reporting API to generate reports.\n\nAdditionally, Kibana also supports the creation of CSV reports, which can be exported from Kibana's Discover UI. Here are the general steps:\n\n1. Open Kibana and navigate to the Discover UI.\n2. Run your search query to generate the data that you want to include in the report.\n3. Click on the \"Download\" button in the top right corner of the screen.\n4. Choose the \"CSV\" format from the dropdown menu.\n5. Choose whether you want to include the column headers and whether to use comma or semicolon as the field delimiter.\n6. Click the \"Download\" button to download the report.\n\nThese are the basic steps to create and export reports in Kibana, but note that the specific options and features may vary depending on the version of Kibana you are using.",
+  "has_answer": false
+}

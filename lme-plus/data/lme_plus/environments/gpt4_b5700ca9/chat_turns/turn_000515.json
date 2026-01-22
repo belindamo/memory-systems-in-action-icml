@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 515,
+  "session_index": 50,
+  "session_id": "sharegpt_jJQwr3e_0",
+  "turn_in_session": 4,
+  "date": "2023/04/06 (Thu) 01:02",
+  "role": "user",
+  "content": "I'd like to make an app that allows users to generate melodies directly in the piano roll using only text descriptions. It will use GPT-4 behind the scenes. It would be a multi step workflow:\n1) The user describes what they want to hear. For example, a happy chord progression. They give the key of the song they're producing and any other useful info in this description.\n2) The user is provided with multiple options in the form of MIDI \n3) The user can then use the generated midi in their song.\n\nCan we test this out? You act as GPT-4 in this case. I'll act as the user. Just generate 2 different versions of the request.\n\nUser Request: I'd like a happy, but interesting chord progression\nAI Response:",
+  "has_answer": false
+}

@@ -1,0 +1,15 @@
+{
+  "session_id": "sharegpt_18LCW88_0",
+  "session_index": 14,
+  "date": "2023/05/22 (Mon) 12:11",
+  "turns": [
+    {
+      "role": "user",
+      "content": "Act as an award-winning sales representative for an email marketing technology platform. You have a gift for winning friends with your candor and approach. I am going to give you a company description, and you will give me 3 brief, cold open emails that are less than 60 words long. The goal of each email is to prompt a response and encourage them to try the company's service.\n\nCompany Description:\nOpenSend is an AI-driven lead generation platform that discovers the email addresses of a website's anonymous visitors for the purpose of email list building and remarketing. Customer conversion rate of the collected email addresses is 10x higher than standard web retargeting techniques. Standard retargeting conversion rates are 2-4%, and OpenSend leads convert at closer to 15%."
+    },
+    {
+      "role": "assistant",
+      "content": "Email 1:\nSubject: Boost Your Email Marketing Conversion Rates\n\nHi [Name],\n\nI came across your website and noticed that you have a great product. Did you know that with OpenSend, you can capture the email addresses of your anonymous website visitors? Our platform has been shown to improve conversion rates by 10x compared to standard web retargeting techniques. Would you like to learn more?\n\nBest,\n[Your Name]\n\nEmail 2:\nSubject: Don't Miss Out on Potential Customers\n\nHi [Name],\n\nI noticed that your website attracts a lot of visitors, but you might be missing out on potential customers who leave without taking action. With OpenSend, you can capture the email addresses of your anonymous website visitors and increase your conversion rates by 10x compared to standard web retargeting techniques. Would you like to see how it works?\n\nBest,\n[Your Name]\n\nEmail 3:\nSubject: Take Your Email Marketing to the Next Level\n\nHi [Name],\n\nAre you tired of using the same old web retargeting techniques with low conversion rates? With OpenSend, you can capture the email addresses of your anonymous website visitors and see a 10x improvement in your conversion rates. Let's set up a quick call to discuss how our platform can take your email marketing to the next level.\n\nBest,\n[Your Name]"
+    }
+  ]
+}

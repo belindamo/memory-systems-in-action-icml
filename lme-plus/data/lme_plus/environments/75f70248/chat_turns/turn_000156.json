@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 156,
+  "session_index": 13,
+  "session_id": "sharegpt_xEeoIuy_0",
+  "turn_in_session": 5,
+  "date": "2023/05/23 (Tue) 09:17",
+  "role": "assistant",
+  "content": "Payment card industry (PCI) Data Security Standard (DSS) is the compliance standard for storing transaction data. PCI DSS is a set of security standards established by major credit card companies, including Visa, MasterCard, American Express, Discover, and JCB, to ensure that businesses that accept card payments protect sensitive cardholder data.\n\nPCI DSS includes requirements for storing, processing, and transmitting cardholder data securely. The standard defines specific security controls and procedures that businesses must implement to protect cardholder data from theft, unauthorized access, or disclosure.\n\nIn terms of storing transaction data, PCI DSS requires that businesses store cardholder data securely, including the cardholder's name, account number, expiration date, and security code. The standard specifies that cardholder data must be stored in a secure, encrypted format and that access to the data must be restricted to authorized personnel only.\n\nBusinesses that process or store payment card data must undergo regular audits and assessments to ensure they are in compliance with the standard. Non-compliance can result in significant fines, penalties, and reputational damage, so it is important for businesses to take PCI DSS compliance seriously.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 170,
+  "session_index": 16,
+  "session_id": "sharegpt_G80BxDv_0",
+  "turn_in_session": 0,
+  "date": "2023/05/25 (Thu) 08:26",
+  "role": "user",
+  "content": "I'll give you all the text per article. For each article, I'll write  next to the last sentence, which means I've given you the entire article. You only need to say \"spq\" as I give you each article. After I give you the last article, I will say \"Please provide your analysis\" and you must follow the steps and template below to write your analysis within 300 characters. please.\n\nsteps : [1] For each text, rate it as positive, negative, or neutral. No explanation, just the result [2]Organize what the Cafe24 should do in the future in one line. \ntemplate : \u25a0Summary | \u25a0The positive, negative and neutral tone | \u25a0What Cafe24 should do\n \n \n \n \uc9c0\uae08 \ubc88\uc5ed\ud558\uae30",
+  "has_answer": false
+}

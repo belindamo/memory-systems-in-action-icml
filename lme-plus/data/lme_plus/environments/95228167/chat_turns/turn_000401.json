@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 401,
+  "session_index": 40,
+  "session_id": "sharegpt_RReCreP_36",
+  "turn_in_session": 5,
+  "date": "2023/05/29 (Mon) 18:07",
+  "role": "assistant",
+  "content": "Sure, based on the 14 elements described, we can have the following workflows:\n\n1. When the user clicks on the \"RSVP\" button, it triggers a \"ShowElement\" action to show the \"RSVP Form\" element.\n2. When the user clicks on the \"Submit\" button in the \"RSVP Form\" element, it triggers a \"HideElement\" action to hide the \"RSVP Form\" element and a \"ShowElement\" action to show the \"Confirmation\" element.\n3. When the user clicks on the \"View Schedule\" button, it triggers a \"ShowElement\" action to show the \"Schedule\" element.\n4. When the user clicks on the \"View Map\" button, it triggers a \"ShowElement\" action to show the \"Map\" element.\n5. When the user clicks on the \"View Registry\" button, it triggers a \"ShowElement\" action to show the \"Registry\" element.\n6. When the user clicks on the \"Our Story\" button, it triggers a \"ShowElement\" action to show the \"Our Story\" element.\n7. When the user clicks on the \"Engagement Photos\" button, it triggers a \"ShowElement\" action to show the \"Engagement Photos\" element.\n8. When the user clicks on the \"Bridal Party\" button, it triggers a \"ShowElement\" action to show the \"Bridal Party\" element.\n9. When the user clicks on the \"Accommodations\" button, it triggers a \"ShowElement\" action to show the \"Accommodations\" element.\n10. When the user clicks on the \"Dress Code\" button, it triggers a \"ShowElement\" action to show the \"Dress Code\" element.\n11. When the user clicks on the \"FAQ\" button, it triggers a \"ShowElement\" action to show the \"FAQ\" element.\n12. When the user clicks on the \"Back\" button in any of the elements, it triggers a \"HideElement\" action to hide the current element and show the \"Home\" element.",
+  "has_answer": false
+}

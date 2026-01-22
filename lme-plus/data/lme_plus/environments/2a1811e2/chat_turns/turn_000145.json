@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 145,
+  "session_index": 14,
+  "session_id": "sharegpt_tMOb5TT_0",
+  "turn_in_session": 3,
+  "date": "2023/03/26 (Sun) 18:55",
+  "role": "assistant",
+  "content": "I apologize for the confusion. I see that you do have `max-height` set on the `img` selector, but the value you have specified is only 10%, which is quite low.\n\nTo limit the height of images, you may want to set `max-height` to a larger value. For example, if you want to limit the height to 200 pixels, you could set it to `max-height: 200px;`.\n\nAlso, note that setting `max-height` on the `img` selector limits the height of all images within the `.card` class, so if you have other images with different height requirements, you may need to create a separate class for those images and set `max-height` on that class instead.",
+  "has_answer": false
+}

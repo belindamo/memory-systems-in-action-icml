@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 110,
+  "session_index": 10,
+  "session_id": "sharegpt_PvScEsS_0",
+  "turn_in_session": 0,
+  "date": "2023/05/24 (Wed) 21:21",
+  "role": "user",
+  "content": "Introduction\nThe doctor\u2019s surgery in Newtown is considering moving their appointments details from a spreadsheet based\nsystem onto a relational database. The doctor\u2019s surgery looks after the health of the town\u2019s residents who\ncan book an appointment to meet with each resident\u2019s registered doctor. To help with the running of the\nsurgery, they maintain a spreadsheet of the name, address, date of birth and phone number of each patient.\nThe spreadsheet also stores information on each patient\u2019s most recent diagnosed condition, any current\nmedication the patient is taking due to their recent condition, as well as any known allergies the patients\nmay have.\nThe current way in which the data are stored is shown in the table below. Note that each doctor can be\nregistered to more than one patient and each patient can have more than one registered doctor. A patient\ncan also be seen by a doctor that they are not registered with. The \u2018Known allergies\u2019 and \u2018Current\nMedication\u2019 columns are empty unless populated by the doctor. An appointment cannot exist without a\npatient or doctor, of course.\nPatient\nName Patient Address Patient Date\nof Birth\n\nPatient\nPhone\nNo\nRegistered\nDoctors\nKnown\nAllergies Appointment Current\nMedication\nRecent\nCondition",
+  "has_answer": false
+}

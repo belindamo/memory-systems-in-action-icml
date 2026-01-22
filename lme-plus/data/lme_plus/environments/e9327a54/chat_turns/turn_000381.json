@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 381,
+  "session_index": 34,
+  "session_id": "sharegpt_gPFzM9v_121",
+  "turn_in_session": 24,
+  "date": "2023/05/27 (Sat) 10:26",
+  "role": "assistant",
+  "content": "You can use the command \"schtasks /query /v /fo LIST /tn task\\_name\" to view the details of a specific task, including the command or binary that is executed when the task runs. Replace \"task\\_name\" with the name of the task you are interested in. This will display the full command line including the path of the binary that is run when the task is executed.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 370,
+  "session_index": 32,
+  "session_id": "541ecc45_3",
+  "turn_in_session": 8,
+  "date": "2023/03/08 (Wed) 15:19",
+  "role": "user",
+  "content": "I think I understand how to trigger the event tracking code now. But I'm not sure how to handle the situation where a customer adds multiple products to their cart. Do I need to send a separate event for each product added to the cart, or is there a way to send a single event with all the products listed?",
+  "has_answer": false
+}

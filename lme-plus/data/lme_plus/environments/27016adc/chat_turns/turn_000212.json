@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 212,
+  "session_index": 19,
+  "session_id": "sharegpt_EKAA5ny_9",
+  "turn_in_session": 6,
+  "date": "2023/05/24 (Wed) 08:11",
+  "role": "assistant",
+  "content": "By default, the files served by Nginx are stored in the `/usr/share/nginx/html` directory inside the Nginx container. This directory is used as the Nginx server's document root.\n\nIn the `docker-compose.yml` file provided earlier, we did not explicitly mount a volume for Nginx's document root because we are not serving any custom files through Nginx in this example. Instead, we are using Nginx as a reverse proxy to forward traffic to the Certbot container, which serves the Let's Encrypt challenge responses.\n\nHowever, if you do need to serve custom files through Nginx, you can mount a volume to the container's `/usr/share/nginx/html` directory to make those files available to Nginx. For example:\n```yaml\nversion: '3.7'\n\nservices:\n  certbot:\n    # ...\n  nginx:\n    image: nginx:latest\n    container_name: nginx\n    ports:\n      - \"80:80\"\n      - \"443:443\"\n    volumes:\n      - ./nginx.conf:/etc/nginx/nginx.conf:ro\n      - ./certs:/etc/letsencrypt\n      - ./html:/usr/share/nginx/html\n```\nIn this updated version, we mount a new volume called `html` to the `/usr/share/nginx/html` directory in the Nginx container:\n```javascript\nvolumes:\n  - ./nginx.conf:/etc/nginx/nginx.conf:ro\n  - ./certs:/etc/letsencrypt\n  - ./html:/usr/share/nginx/html\n```\nThis makes any files stored in the `./html` directory on the host machine available to Nginx. You can replace `./html` with the path to the directory containing your custom files on the host machine.\n\nOnce the volume is mounted, you can reference the files in your Nginx configuration file (e.g. `nginx.conf`) using the path `/usr/share/nginx/html` as the document root.",
+  "has_answer": false
+}

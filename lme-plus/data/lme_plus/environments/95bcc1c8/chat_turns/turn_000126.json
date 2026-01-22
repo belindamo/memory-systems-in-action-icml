@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 126,
+  "session_index": 11,
+  "session_id": "sharegpt_0mXdmE3_0",
+  "turn_in_session": 0,
+  "date": "2023/05/23 (Tue) 11:02",
+  "role": "user",
+  "content": "can you tell me which of these functions are common to ERC-721 and which are custom?\n\nthe contract would have this functions\n\ne4b8c38d => buyAlbum(bytes32[])\n8d0eb9f7 => buySong(bytes32[])\n26092b83 => publicMint()\ne64e51dc => destroyPublic(uint256,uint256)\n692b15a3 => claimAlbum(uint256,uint256)\nc87b56dd => tokenURI(uint256)\n4f1c3244 => setImportantURIs(string,string)\ne0052d7c => reclaimERC20Token(address)\n6b7d2470 => reclaimERC721(address,uint256)\n9ee64d6b => setStartTimes(uint256,uint256,uint256,uint256)\n75edcbe0 => setMerkleRoot(bytes32,bytes32)\nfce57fd9 => setArtistWallet(address)\na7ccabdf => setNFTContract(address)\n8f2fc60b => setRoyalty(address,uint96)\nc1ba4e59 => setQuorum(uint256)\nac1251e0 => setPricePerToken(uint256,uint256)\n613e9ee4 => setSplitsWallet(address)\n3bb16654 => withdrawToSplits()\n7d48441f => \\_isContract(address)\n98995f77 => \\_startTokenId()\n01ffc9a7 => supportsInterface(bytes4)\n280527e8 => isProofValid(address,uint256,bytes32[])\n8e4a8ebf => isProofValid2(address,uint256,bytes32[])\n\n' -- vars --\n +[[string]] baseURI\n +[[string]] imageURL\n +[[string]] contractURI\n +[[bytes32]] root\n +[[bytes32]] root2\n +[[uint256]] ablumSaleStartTime\n +[[uint256]] songSaleStartTime\n +[[uint256]] publicStartTime\n +[[uint256]] destroyExperienceStartTime\n +[[uint256]] albumPrice\n +[[uint256]] songPrice\n +[[mapping uint256=>bool ]] belongsToAlbum\n +{static}[[uint256]] MAX\\_SUPPLY\n +[[uint256]] quorum\n +[[uint256]] songCounter\n +[[mapping uint256=>TokenTypes ]] tokenTypesMap\n +[[mapping uint256=>uint256 ]] destoryExperinceVotes\n +[[mapping uint256=>bool ]] isRestricted\n +[[address]] splitsWallet\n +[[IERC721]] nftContract\n +[[address]] artistWallet",
+  "has_answer": false
+}

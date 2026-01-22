@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 201,
+  "session_index": 21,
+  "session_id": "sharegpt_vbNrVtS_79",
+  "turn_in_session": 0,
+  "date": "2023/02/14 (Tue) 21:08",
+  "role": "assistant",
+  "content": "Here is a suggestion for the layout of the Annotation Tool screen, based on the UI requirements discussed so far:\n\n1. Top Navigation Bar: Contains the logo, page title, user menu, and other global navigation elements.\n2. Left Sidebar: Contains the document outline and label hierarchy, as well as any other tools or controls related to navigation or annotation.\n3. Main Content Area: Contains the document being annotated, with the label toolbar displayed either above or below it.\n4. Right Sidebar: Contains the label suggestion feature, label conflict resolution tool, and label history, as well as any other tools or controls related to annotation.\n5. Bottom Navigation Bar: Contains the pagination controls, progress bar, zoom controls, and any other tools or controls related to navigation or annotation.\n\nThis layout allows users to easily access all the necessary tools and controls while annotating the document, and provides a clear separation between the different areas of the screen. It is designed to be flexible and scalable, so that it can accommodate documents of different sizes and complexity.",
+  "has_answer": false
+}

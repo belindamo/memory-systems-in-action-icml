@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 451,
+  "session_index": 43,
+  "session_id": "e02ddb14_1",
+  "turn_in_session": 7,
+  "date": "2023/11/29 (Wed) 07:15",
+  "role": "assistant",
+  "content": "I'd be happy to provide a detailed example of how PMI is calculated.\n\nLet's consider a loan scenario:\n\n**Loan details:**\n\n* Loan amount: $240,000 (80% of $300,000 purchase price)\n* Loan term: 30 years\n* Interest rate: 4.25%\n* Credit score: 760 (good credit)\n* Loan-to-value (LTV) ratio: 80% (since you're putting 20% down)\n\n**PMI premium calculation:**\n\nTo calculate the PMI premium, lenders use a PMI rate chart or a PMI calculator. The PMI rate depends on the LTV ratio, credit score, and loan term. Here's a sample PMI rate chart:\n\n| LTV Ratio | Credit Score 760 | PMI Rate |\n| --- | --- | --- |\n| 80.01% - 85.00% | 760 | 0.32% |\n| 85.01% - 90.00% | 760 | 0.45% |\n| 90.01% - 95.00% | 760 | 0.60% |\n\nSince our LTV ratio is 80%, we'll use the PMI rate of 0.32% from the chart.\n\n**Annual PMI premium calculation:**\n\n1. Loan amount: $240,000\n2. PMI rate: 0.32% (from the chart)\n3. Annual PMI premium: $240,000 x 0.32% = $768 per year\n\n**Monthly PMI premium:**\n\nTo find the monthly PMI premium, divide the annual premium by 12:\n\n$768 per year \u00f7 12 = $64 per month\n\nThis $64 per month will be added to your monthly mortgage payment.\n\nKeep in mind that PMI rates and calculations may vary depending on the lender and the specific PMI provider. This example is meant to illustrate the general process of calculating PMI premiums.\n\nDo you have any more questions about PMI or mortgage calculations?",
+  "has_answer": false
+}

@@ -1,0 +1,11 @@
+{
+  "session_id": "sharegpt_pPMy8dx_43",
+  "session_index": 13,
+  "date": "2023/05/23 (Tue) 12:36",
+  "turns": [
+    {
+      "role": "assistant",
+      "content": "Sure, here is the code for validation and generating the submission file:\n```python\n# Load the validation dataset\nval_dataset = NewsDataset('val.csv')\nval_loader = DataLoader(val_dataset, batch_size=32, shuffle=False)\n\n# Evaluate the model on validation set\nval_f1 = evaluate(model, device, val_loader)\nprint('Validation F1 score: {:.4f}'.format(val_f1))\n\n# Load the test dataset\ntest_dataset = NewsDataset('test.csv')\ntest_loader = DataLoader(test_dataset, batch_size=32, shuffle=False)\n\n# Generate predictions on test set\nmodel.eval()\ntest_preds = []\nwith torch.no_grad():\n    for data, _ in test_loader:\n        data = data.to(device)\n        output = model(data)\n        pred = output.argmax(dim=1)\n        test_preds.extend(pred.cpu().numpy())\n\n# Generate submission file\nimport pandas as pd\n\ntest_df = pd.read_csv('test.csv')\nsubmission_df = pd.DataFrame({'id': test_df['id'], 'label': test_preds})\nsubmission_df.to_csv('submission.csv', index=False)\n```\nThis code loads the validation and test datasets, evaluates the trained model on the validation set, generates predictions on the test set, and saves the predictions in a submission file called \"submission.csv\"."
+    }
+  ]
+}

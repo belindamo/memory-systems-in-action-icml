@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 313,
+  "session_index": 30,
+  "session_id": "sharegpt_7XsoCYd_16",
+  "turn_in_session": 1,
+  "date": "2023/03/15 (Wed) 10:01",
+  "role": "assistant",
+  "content": "The Citation Success Index (CSI) is a metric for comparing the citation capacity of pairs of journals. It is defined as the probability that a random paper in one journal has more citations than a random paper in another journal, with 50% indicating that the two journals perform equally well [[3], 2017, T. Milojevic and Judit Bar-Ilanb]. Unlike the journal impact factor, the CSI depends on the broadness and shape of citation distributions. A study showed that the CSI is a relatively tight function of the ratio of impact factors of journals being compared and grows slowly as a function of the impact factor ratio [[3], 2017, T. Milojevic and Judit Bar-Ilanb]. Another study found that the lognormal distribution of citation counts is the reason for the relation between impact factors and the CSI [[1], 2018, Zhesi Shen and Jinshan Wu]. The CSI provides an intuitive pair-wise comparison metric for evaluating journals, which can be useful in",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 178,
+  "session_index": 16,
+  "session_id": "sharegpt_7gIKsqO_104",
+  "turn_in_session": 9,
+  "date": "2023/03/15 (Wed) 12:33",
+  "role": "assistant",
+  "content": "Here is one way the code could be refactored:\n```\nconst buttonList = document.querySelectorAll('input[type=button]');\nconst telInput = document.querySelector('input[type=tel]');\ntelInput.tabIndex = -1;\ntelInput.focus();\n\nconst addEventListeners = (element, events) => {\n    events.forEach(({event, action}) => {\n        element.addEventListener(event, action);\n    });\n};\n\nconst buttonEvents = [\n    {event: \"mousedown\", action: e => e.target.classList.add(\"ativa\")},\n    {event: \"mouseup\", action: e => e.target.classList.remove(\"ativa\")},\n    {event: \"keydown\", action: e => {\n        if (e.key === \" \" || e.key === \"Enter\") e.target.classList.add(\"ativa\")\n    }},\n    {event: \"keyup\", action: e => e.target.classList.remove(\"ativa\")},\n    {event: \"click\", action: e => telInput.value += e.target.value},\n];\n\nconst telEvents = [\n    {event: \"keydown\", action: e => {\n        if (e.key === \" \" || e.key === \"Enter\") telInput.classList.add(\"ativa\")\n    }},\n    {event: \"keyup\", action: e => telInput.classList.remove(\"ativa\")},\n];\n\nbuttonList.forEach((button, index) => {\n    button.tabIndex = index + 1;\n    addEventListeners(button, buttonEvents);\n});\n\nconst firstButton = buttonList[0];\nfirstButton.addEventListener(\"keydown\", e => {\n    if (e.key === \"Tab\" && e.shiftKey) {\n        e.preventDefault();\n        telInput.focus();\n    }\n```",
+  "has_answer": false
+}

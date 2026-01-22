@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 153,
+  "session_index": 11,
+  "session_id": "sharegpt_BWMyoNr_0",
+  "turn_in_session": 27,
+  "date": "2023/05/22 (Mon) 01:15",
+  "role": "assistant",
+  "content": "As a proofreader, I would correct the grammar and language usage in your message as follows:\n\n1. Is the RM197 per month just for the clinic appointment system or is it part of your \"GROWTH\" plan which includes an e-commerce store?\n2. What is the maximum number of users allowed to use your system? Can an unlimited number of doctors and staff access the back-end system for RM197 per month?\n3. The doctor's work schedule is subject to change every day. For example, Doctor A worked on March 1, 2022 (Wednesday) from 1PM-5PM, but on March 8, 2022 (Wednesday) from 3PM-10PM. Is it possible to change the timetable daily in the appointment system?\n4. Can users:\n4.1 Cancel their appointments on their own from their end?\n4.2 Reschedule their appointments on their own from their end?\n5. Regarding SMS:\n5.1 What is the cost of using SMS services? How much per SMS?\n5.2 Can we disable the SMS feature and enable our SMS gateway instead?\n6. Do you provide API or Webhooks? Could you kindly send us the link to the documentation?\n7. Can we set conditional rules in the appointment system? For example:\n7.1 Based on the number of doctors on duty:\n* When only one doctor is on duty, one appointment every two hours.\n* When two doctors are on duty, one appointment every hour.\n7.2 Based on the time. (Assuming we offer two services, \"Screening\" and \"Checkup\".)\n* We would like to only offer the \"Screening\" service from 9:00 AM - 12:00 PM.\n* We would like to offer both the \"Screening\" and \"Checkup\" services from 12:00 PM - 10:30 PM.",
+  "has_answer": false
+}

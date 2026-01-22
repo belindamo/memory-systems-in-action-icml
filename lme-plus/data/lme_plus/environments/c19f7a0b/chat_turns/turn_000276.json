@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 276,
+  "session_index": 27,
+  "session_id": "sharegpt_f9XBWSi_15",
+  "turn_in_session": 5,
+  "date": "2023/05/25 (Thu) 23:09",
+  "role": "user",
+  "content": "I don't think that the quantity of data coming in will be huge and it will mostly be well structured data from the exchange or text that wont need to be indexed. So I'm not worried about just putting it into a postgres database. Potentially with some special time series features turned on.\n\nA monitoring and log aggregation system will defiantly be important. I think using an off the shelf solution for this would be best rather than developing our own. There will need to be further investigation into what to use but we should definitely have it.\n\nAs for testing and debugging we will definitely do it but that's not a system right? It's more of a process?",
+  "has_answer": false
+}

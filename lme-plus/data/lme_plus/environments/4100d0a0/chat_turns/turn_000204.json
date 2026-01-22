@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 204,
+  "session_index": 18,
+  "session_id": "sharegpt_t3f69h7_23",
+  "turn_in_session": 0,
+  "date": "2023/05/24 (Wed) 01:27",
+  "role": "assistant",
+  "content": "The best audio format for your application would depend on various factors, such as the quality of the original stream, the bit rate of the stream, and the specific requirements of your application. However, for compatibility with HLS, you may want to consider using AAC audio with an appropriate bit rate.\n\nYes, AES67 is a group of standards and protocols that define interoperability requirements for high-performance audio-over-IP networks. When I say \"carried in the ancillary data space of the AES67 stream,\" I mean that the SCTE-104 messages are inserted into the reserved portion of the AES67 stream that can be used to carry additional data alongside the audio data. This data can be carried in the payload of the UDP or RTP packets, depending on how the AES67 stream is transported over IP networks.",
+  "has_answer": false
+}

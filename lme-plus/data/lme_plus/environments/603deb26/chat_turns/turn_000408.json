@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 408,
+  "session_index": 42,
+  "session_id": "sharegpt_z6pSZ19_0",
+  "turn_in_session": 0,
+  "date": "2023/11/25 (Sat) 21:20",
+  "role": "user",
+  "content": "is that ERD was normalized?\n\nEntities:\n\nCustomer (customer\\_id, name, address, contact\\_details, kyc\\_details)\n\nAccount (account\\_number, account\\_type, account\\_balance, account\\_status)\n\nTransaction (transaction\\_id, transaction\\_type, transaction\\_date, transaction\\_amount, transaction\\_status)\n\nLoan (loan\\_id, loan\\_type, loan\\_amount, interest\\_rate, repayment\\_schedule)\n\nCredit (credit\\_limit, credit\\_utilization, credit\\_score, credit\\_status)\n\nRisk (risk\\_id, risk\\_type, risk\\_level, risk\\_status)\n\nCompliance (compliance\\_id, compliance\\_type, compliance\\_status, compliance\\_deadline)\n\nTreasury (investment\\_portfolio, cash\\_reserves, forex\\_transactions)\n\nBusiness Intelligence (revenue, profitability, market\\_share, kpi)\n\nIntegration/API (api\\_endpoints, api\\_keys, integration\\_status)\n\nRelationships:\n\nCustomer has many Accounts\n\nAccount belongs to one Customer and has many Transactions\n\nTransaction belongs to one Account\n\nCustomer can have many Loans\n\nLoan belongs to one Customer\n\nAccount can have many Loans\n\nCredit belongs to one Customer\n\nRisk belongs to one Customer\n\nCompliance belongs to one Customer\n\nTreasury belongs to one Customer\n\nBusiness Intelligence belongs to one Customer\n\nIntegration/API belongs to one Customer1 / 1\uc9c0\uae08 \ubc88\uc5ed\ud558\uae30",
+  "has_answer": false
+}

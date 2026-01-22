@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 436,
+  "session_index": 38,
+  "session_id": "sharegpt_TuureWP_17",
+  "turn_in_session": 17,
+  "date": "2023/05/29 (Mon) 17:34",
+  "role": "user",
+  "content": "You have an Azure virtual machine\nnamed VM1 that runs Windowvs\nServer 2016.\nYou need to create an alert in Azure\nwhen more than two error events are\nlogged to the System event log on\nVM1 within an hour.\nSolution: You create an Azure Log\nAnalytics workspace and contigure\nthe data settings. You add the\nMicrosoft Monitoring Agent VM\nextensiIon to VM1. You create an\nalert in Azure Monitor and specity\nthe Log Analytics Workspace as the\nSource.\nDoes this meet the goal?\nselect the correct answer\nTrue\nFalse",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 269,
+  "session_index": 26,
+  "session_id": "sharegpt_x5iwfyV_295",
+  "turn_in_session": 5,
+  "date": "2023/05/25 (Thu) 16:59",
+  "role": "user",
+  "content": "clean this method up\n\n @staticmethod\n def get\\_midpoint\\_win\\_rate(seed1, seed2):\n if seed1 == seed2:\n return 0.5\n\n lower\\_seed, higher\\_seed = sorted((seed1, seed2))\n\n left\\_tuple\\_win\\_rate = None\n right\\_tuple\\_win\\_rate = None\n\n for (lower, higher), win\\_rate in HISTORICAL\\_SEED\\_WIN\\_RATES.items():\n if lower == lower\\_seed:\n left\\_tuple\\_win\\_rate = win\\_rate\n if higher == higher\\_seed:\n right\\_tuple\\_win\\_rate = win\\_rate\n if lower == higher\\_seed:\n right\\_tuple\\_win\\_rate = 1 - win\\_rate\n if higher == lower\\_seed:\n left\\_tuple\\_win\\_rate = 1 - win\\_rate\n\n if left\\_tuple\\_win\\_rate is None or right\\_tuple\\_win\\_rate is None:\n raise ValueError(f\"Win rate data not available for seeds {seed1} and {seed2}\")\n\n win\\_rate = (left\\_tuple\\_win\\_rate + right\\_tuple\\_win\\_rate) / 2\n return win\\_rate",
+  "has_answer": false
+}

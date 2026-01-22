@@ -1,0 +1,55 @@
+{
+  "session_id": "sharegpt_xiDADcv_0",
+  "session_index": 22,
+  "date": "2023/03/20 (Mon) 21:16",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I want you to act like a search engine. I will give you documents to search over with attributes like title and body, formatted in block quotes likes this example:\n\nTITLE: these tacos are great!\nBODY: I have just discovered this new restaurant - Barbie's Burrito Barn. She serves such excellent tacos, I heartily recommend it.\n\nWhen I enter a block quote such as above, treat it like a new search document. When I enter any other message, treat that message like a search query. Give the most relevant snippet from the documents that I've told you about so far to the query.\n\nOnly respond with acknowledgement of the new documents. Or respond with the most relevant snippet from the documents. Do not explain your responses. Simply provide the most relevant snippet."
+    },
+    {
+      "role": "assistant",
+      "content": "```\nI have just discovered this new restaurant - Barbie's Burrito Barn. She serves such excellent tacos, I heartily recommend it.\n```"
+    },
+    {
+      "role": "user",
+      "content": "Add the following search document to your list of documents used to answer my queries:\n\nTITLE: Connection issues with MetaMask\nBODY: The latest Google Chrome update (Chrome 91) can cause U2F transport issues on third-party wallets like MetaMask for Mac and Linux users. Due to this issue, you might experience issues when trying to connect to a third-party wallet. This issue also affects other Chromium browsers (Brave, Microsoft Edge, etc...) on the same version. Fix connection issues with MetaMask Before you start, make sure you are using the latest version of MetaMask (v9.5.8). Depending on your Operating System, try the workarounds described below to solve your connection issues.MacMetaMask has implemented a device bridge that allows you to connect your Ledger device to MetaMask through Ledger Live.Click on the MetaMask icon in the upper right corner of your web browser. Click on your profile icon in the upper right corner, then go to Settings > Advanced. Scroll down to Use Ledger Live. Click on the toggle to enable the Ledger Live bridge. Click on your profile icon, then select Connect Hardware Wallet. Select Ledger, then click on Connect. An Open Ledger Live? window appears.Click Open Ledger Live.Once Ledger Live opens, an Open Device Bridge window appears. You are asked to allow a Websocket connection to your MetaMask account. Click Open.You have successfully activated the bridge between Ledger Live and MetaMask. You can now access your accounts in MetaMask. LinuxThe workaround implemented by MetaMask doesn\u2019t work for users on Linux. We are currently working on a fix which will be communicated soon.WindowsIf you are on Windows, you are not affected by this issue since Windows includes a native U2F stack. But if you are experiencing connection issues with MetaMask, you can try to activate the bridge between Ledger Live and MetaMask. This bridge allows you to connect your Ledger device to MetaMask through Ledger Live.Click on the MetaMask icon in the upper right corner of your web browser. Click on your profile icon in the upper right corner, then go to Settings > Advanced. Scroll down to Use Ledger Live. Click on the toggle to enable the Ledger Live bridge. Click on your profile icon, then select Connect Hardware Wallet. Select Ledger, then click on Connect. An Open Ledger Live? window appears.Click Open Ledger Live.Once Ledger Live opens, an Open Device Bridge window appears. You are asked to allow a Websocket connection to your MetaMask account. Click Open.You have successfully activated the bridge between Ledger Live and MetaMask. You can now access your accounts in MetaMask. Fix connection issues with other third-party wallets If you are trying to connect to another third-party wallet that also uses the U2F transport, you may experience the same issues. If the third-party wallet offers the webUSB option, use this option to connect your Ledger device to the third-party wallet.If the third-party wallet doesn\u2019t offer the webUSB option, use a web browser that is not based on Chrome such as Firefox or Safari for Mac users."
+    },
+    {
+      "role": "assistant",
+      "content": "```\nThe latest Google Chrome update (Chrome 91) can cause U2F transport issues on third-party wallets like MetaMask for Mac and Linux users. Due to this issue, you might experience issues when trying to connect to a third-party wallet.\n```"
+    },
+    {
+      "role": "user",
+      "content": "Add the following search document to your list of documents and use it to answer my queries:\n\nTITLE: Connection issues with MetaMask\nBODY: The latest Google Chrome update (Chrome 91) can cause U2F transport issues on third-party wallets like MetaMask for Mac and Linux users. Due to this issue, you might experience issues when trying to connect to a third-party wallet. This issue also affects other Chromium browsers (Brave, Microsoft Edge, etc...) on the same version. Fix connection issues with MetaMask Before you start, make sure you are using the latest version of MetaMask (v9.5.8). Depending on your Operating System, try the workarounds described below to solve your connection issues.MacMetaMask has implemented a device bridge that allows you to connect your Ledger device to MetaMask through Ledger Live.Click on the MetaMask icon in the upper right corner of your web browser. Click on your profile icon in the upper right corner, then go to Settings > Advanced. Scroll down to Use Ledger Live. Click on the toggle to enable the Ledger Live bridge. Click on your profile icon, then select Connect Hardware Wallet. Select Ledger, then click on Connect. An Open Ledger Live? window appears.Click Open Ledger Live.Once Ledger Live opens, an Open Device Bridge window appears. You are asked to allow a Websocket connection to your MetaMask account. Click Open.You have successfully activated the bridge between Ledger Live and MetaMask. You can now access your accounts in MetaMask. LinuxThe workaround implemented by MetaMask doesn\u2019t work for users on Linux. We are currently working on a fix which will be communicated soon.WindowsIf you are on Windows, you are not affected by this issue since Windows includes a native U2F stack. But if you are experiencing connection issues with MetaMask, you can try to activate the bridge between Ledger Live and MetaMask. This bridge allows you to connect your Ledger device to MetaMask through Ledger Live.Click on the MetaMask icon in the upper right corner of your web browser. Click on your profile icon in the upper right corner, then go to Settings > Advanced. Scroll down to Use Ledger Live. Click on the toggle to enable the Ledger Live bridge. Click on your profile icon, then select Connect Hardware Wallet. Select Ledger, then click on Connect. An Open Ledger Live? window appears.Click Open Ledger Live.Once Ledger Live opens, an Open Device Bridge window appears. You are asked to allow a Websocket connection to your MetaMask account. Click Open.You have successfully activated the bridge between Ledger Live and MetaMask. You can now access your accounts in MetaMask. Fix connection issues with other third-party wallets If you are trying to connect to another third-party wallet that also uses the U2F transport, you may experience the same issues. If the third-party wallet offers the webUSB option, use this option to connect your Ledger device to the third-party wallet.If the third-party wallet doesn\u2019t offer the webUSB option, use a web browser that is not based on Chrome such as Firefox or Safari for Mac users."
+    },
+    {
+      "role": "assistant",
+      "content": "```\nThe latest Google Chrome update (Chrome 91) can cause U2F transport issues on third-party wallets like MetaMask for Mac and Linux users. Due to this issue, you might experience issues when trying to connect to a third-party wallet.\n```"
+    },
+    {
+      "role": "user",
+      "content": "TITLE: Resetting your Ledger Live password\nBODY: If you lost or forgot your Ledger Live password, you can reset your password by resetting Ledger Live. Resetting Ledger Live erases all settings and accounts on your computer. Once you have reset Ledger Live, you can then choose a new password and add your accounts back with your Ledger device. NOTE: By resetting Ledger Live, you will not lose your crypto assets since your private keys giving access to your funds remain secure on your Ledger device and are backed up by your recovery phrase.Resetting a lost or forgotten passwordOn the Welcome back page, click on I lost my password. After reading the warning, click on the Reset button. On the Welcome to Ledger page, click on the Get Started button.Click Enter Ledger app after ticking the boxes if you agree with Ledger\u2019s Terms of Use and Privacy Policy.Select your device. Scroll down to the Already have a recovery phrase? section, then click on the Connect device option. On the Genuine check page, click on the Check my Nano button to verify that your device is genuine.Once it\u2019s confirmed that your device is genuine, click on Continue.In Ledger Live, go to Settings, then click on the Password lock toggle ( ). Set up a new password. For step-by-step instructions on how to set up a password, refer to the following article: Set up password lock. Add your accounts back. For more information on how to add your accounts, refer to the following article: Add your accounts."
+    },
+    {
+      "role": "assistant",
+      "content": "```\nIf you lost or forgot your Ledger Live password, you can reset your password by resetting Ledger Live.\n```"
+    },
+    {
+      "role": "user",
+      "content": "welcome back page"
+    },
+    {
+      "role": "assistant",
+      "content": "```\nOn the Welcome back page, click on I lost my password. After reading the warning, click on the Reset button.\n```"
+    },
+    {
+      "role": "user",
+      "content": "what is settings"
+    },
+    {
+      "role": "assistant",
+      "content": "```\nIn Ledger Live, go to Settings, then click on the Password lock toggle ( ). Set up a new password.\n```"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 288,
+  "session_index": 32,
+  "session_id": "sharegpt_7y4qwfF_11",
+  "turn_in_session": 0,
+  "date": "2023/09/04 (Mon) 00:52",
+  "role": "assistant",
+  "content": "I apologize for the confusion. You are correct that the Forge interface has been updated since my previous response, and the \"Create a New Site\" button is no longer available.\n\nTo create a new site on Forge and configure it to use Azure as your server provider, you can follow these updated steps:\n\n1. Log in to your Forge account on the Forge website.\n2. From the Forge dashboard, click on the \"Create a New Server\" button.\n3. In the \"Create a New Server\" form, enter your server details, such as the name, size, and region. Select \"Azure\" as your server provider.\n4. Choose your Azure subscription, resource group, virtual network, and subnet.\n5. Configure your server settings, such as your SSH key, database password, and backup options.\n6. Review the details you entered and click on the \"Create Server\" button to create your new server in Forge.\n7. Once your server is created, you can create a new site on your Azure server by clicking on the \"Create Site\" button in your server's details page.\n8. In the \"Create a New Site\" form, enter your site details, such as the name, domain, and SSL certificate. Choose the web and database servers you want to use.\n9. Review the details you entered and click on the \"Create Site\" button to create your new site on your Azure server.\n10. You can then upload your front-end and back-end files, configure your web server and back-end server, and test and launch your site.\n\nNote that the specific steps for configuring your Azure server and site may vary depending on your site's requirements and the Azure services you choose to use. However, Forge provides detailed documentation and support to help you through the process.",
+  "has_answer": false
+}

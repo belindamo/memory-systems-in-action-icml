@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 527,
+  "session_index": 49,
+  "session_id": "sharegpt_BFODaKW_0",
+  "turn_in_session": 0,
+  "date": "2023/05/30 (Tue) 08:18",
+  "role": "user",
+  "content": "Create all files needed including a docker-compose.yml file and use a single eff.org Certbot container to create and renew certificates from LetsEncrypt. The DNS is located at Google Domains and they issue a API-Key for each domain. Please allow for subdomains with the same key.\nPlease use credentials.yml file as the only data source for API-key, email and domains. \nExample: credentials.yml\ncredentials:\n credential1:\n api\\_key: \n email: user1@example.com\n domains:\n - example1.com\n - \\*.example1.com\n credential2:\n api\\_key: \n email: user2@example.com\n domains:\n - example2.com\n - \\*.example2.com\n\nFrom the container, create a GoLang application to iterate the certbot command and pass all the API-keys and set of domains.\nAlso create a CRON job so it renews once per day.\nPlease print out all files with detailed instructions.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 441,
+  "session_index": 39,
+  "session_id": "sharegpt_GdpvkKD_7",
+  "turn_in_session": 4,
+  "date": "2023/05/29 (Mon) 05:31",
+  "role": "assistant",
+  "content": "Sure, here are the SQL commands for creating the normalized asset management schema:\n\nAsset Table:\n```sql\nCREATE TABLE Asset (\n  AssetID INT PRIMARY KEY,\n  AssetType VARCHAR(50) NOT NULL,\n  AssetName VARCHAR(50) NOT NULL,\n  AssetDescription VARCHAR(255),\n  PurchaseDate DATE NOT NULL\n);\n```\nFinancials Table:\n```sql\nCREATE TABLE Financials (\n  FinancialsID INT PRIMARY KEY,\n  AssetID INT NOT NULL,\n  PurchaseCost DECIMAL(10, 2) NOT NULL,\n  CurrentValue DECIMAL(10, 2),\n  DepreciationRate DECIMAL(4, 2),\n  DispositionDate DATE,\n  FOREIGN KEY (AssetID) REFERENCES Asset(AssetID)\n);\n```\nLocation Table:\n```sql\nCREATE TABLE Location (\n  LocationID INT PRIMARY KEY,\n  LocationName VARCHAR(50) NOT NULL,\n  Address VARCHAR(255) NOT NULL,\n  City VARCHAR(50) NOT NULL,\n  State VARCHAR(50) NOT NULL,\n  ZipCode VARCHAR(10) NOT NULL\n);\n```\nMaintenance Table:\n```sql\nCREATE TABLE Maintenance (\n  MaintenanceID INT PRIMARY KEY,\n  AssetID INT NOT NULL,\n  MaintenanceDate DATE NOT NULL,\n  MaintenanceType VARCHAR(50) NOT NULL,\n  MaintenanceDescription VARCHAR(255),\n  MaintenanceCost DECIMAL(10, 2),\n  FOREIGN KEY (AssetID) REFERENCES Asset(AssetID)\n);\n```\nRisk Table:\n```sql\nCREATE TABLE Risk (\n  RiskID INT PRIMARY KEY,\n  AssetID INT NOT NULL,\n  RiskDescription VARCHAR(255) NOT NULL,\n  RiskProbability DECIMAL(4, 2) NOT NULL,\n  RiskImpact DECIMAL(10, 2) NOT NULL,\n  FOREIGN KEY (AssetID) REFERENCES Asset(AssetID)\n);\n```\nCompliance Table:\n```sql\nCREATE TABLE Compliance (\n  ComplianceID INT PRIMARY KEY,\n  AssetID INT NOT NULL,\n  ComplianceDescription VARCHAR(255) NOT NULL,\n  ComplianceDate DATE NOT NULL,\n  ComplianceStatus VARCHAR(50) NOT NULL,\n  FOREIGN KEY (AssetID) REFERENCES Asset(AssetID)\n);\n```\nNote that in the Financials, Maintenance, Risk, and Compliance tables, the foreign key references the primary key of the Asset table, as these tables are related to the Asset entity.",
+  "has_answer": false
+}

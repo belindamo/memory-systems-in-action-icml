@@ -1,0 +1,47 @@
+{
+  "session_id": "sharegpt_hJ27v45_0",
+  "session_index": 0,
+  "date": "2023/05/20 (Sat) 04:04",
+  "turns": [
+    {
+      "role": "user",
+      "content": "[Task]: Find an apple in the kitchen. The workspace tag below refers to global workspace theory which selects some information into itself and then broadcast the information. You can treat workspace as a reduced memory. You should predict the next single action according to the workspace and observation only.\n[Workspace]: None for the initial time.\n[Observation]: I see the door of the kitchen in front of me.\n[Action]:"
+    },
+    {
+      "role": "assistant",
+      "content": "Walk towards the kitchen door and enter the kitchen to start searching for the apple."
+    },
+    {
+      "role": "user",
+      "content": "[Task]: Find an apple in the kitchen. The workspace tag below refers to global workspace theory which selects some information into itself and then broadcast the information. You can treat workspace as a reduced memory. You should summarize the important information and filter out the unimportant one into the workspace.\n[Observation]: I see the door of the kitchen in front of me.\n[Action]: Walk towards the kitchen door and enter the kitchen to start searching for the apple.\n[Workspace]:"
+    },
+    {
+      "role": "assistant",
+      "content": "Important information to be stored in the workspace:\n\n* Objective: Find an apple in the kitchen\n* Location: The kitchen\n* Task progress: Entered the kitchen\n\nUnimportant information to be filtered out:\n\n* The location of the observer (in front of the kitchen door)"
+    },
+    {
+      "role": "user",
+      "content": "So what may be in workspace, in one sentence."
+    },
+    {
+      "role": "assistant",
+      "content": "The workspace contains the objective (finding an apple in the kitchen), location (the kitchen), and task progress (entered the kitchen)."
+    },
+    {
+      "role": "user",
+      "content": "[Task]: Find an apple in the kitchen. The workspace tag below refers to global workspace theory which selects some information into itself and then broadcast the information. You can treat workspace as a reduced memory. You should predict the next single action according to the workspace and observation only.\n[Workspace]: I entered the kitchen.\n[Observation]: I see a refrigerator, an oven, two tables, three chairs, a wash stand and a wide variety of cutlery.\n[Action]:"
+    },
+    {
+      "role": "assistant",
+      "content": "Check the refrigerator for any apples."
+    },
+    {
+      "role": "user",
+      "content": "[Task]: Find an apple in the kitchen. The workspace tag below refers to global workspace theory which selects some information into itself and then broadcast the information. You can treat workspace as a reduced memory. You should summarize the important information and filter out the unimportant one into the workspace.\n[Observation]: I see a refrigerator, an oven, two tables, three chairs, a wash stand and a wide variety of cutlery.\n[Action]: Check the refrigerator for any apples.\n[Old Workspace]: I entered the kitchen\n[New Workspace]:"
+    },
+    {
+      "role": "assistant",
+      "content": "Important information to be stored in the workspace:\n\n* Objective: Find an apple in the kitchen\n* Location: The kitchen\n* Task progress: Checked the refrigerator for apples\n\nUnimportant information to be filtered out:\n\n* Presence of other kitchen appliances and furniture (oven, tables, chairs, wash stand, cutlery) that are not relevant to finding an apple."
+    }
+  ]
+}

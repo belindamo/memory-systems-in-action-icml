@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 196,
+  "session_index": 21,
+  "session_id": "sharegpt_bLaSZdD_0",
+  "turn_in_session": 3,
+  "date": "2023/05/15 (Mon) 23:32",
+  "role": "assistant",
+  "content": "Yes, a single rule in an XCCDF checklist can contain multiple checks. Each check is used to test the compliance of a particular system configuration item with the associated rule. Multiple checks can be used within a single rule to test the same configuration item in different ways, or to test different configuration items related to the same rule.",
+  "has_answer": false
+}

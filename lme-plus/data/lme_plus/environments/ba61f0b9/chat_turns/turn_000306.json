@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 306,
+  "session_index": 29,
+  "session_id": "sharegpt_1hK2wZj_13",
+  "turn_in_session": 12,
+  "date": "2023/04/29 (Sat) 16:07",
+  "role": "assistant",
+  "content": "The error message you're seeing is caused by the fact that the code is trying to convert the last character of the note string to an integer, but it is not a number but instead it is \"#\" character.\n\nYou can fix this issue by only taking the octave if the last character is a digit, and not when it's \"#\".\n```\n    if note[-1].isdigit():\n        note, octave = note[:-1], int(note[-1])\n    else:\n        note = note[:-1]\n        octave = 4\n```\nThis code checks if the last character of the note is a digit or not and it only takes the octave if it's a digit, otherwise it assigns 4 to the octave.\nThis way, the code will not raise an error and will handle the case where the notes have \"#\" in them.\n\nYou can also adjust the octave assignment to your use case, if the octave is different than 4 in your input.\nPlease let me know if you have any further questions.",
+  "has_answer": false
+}

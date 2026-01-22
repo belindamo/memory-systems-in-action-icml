@@ -1,0 +1,31 @@
+{
+  "session_id": "sharegpt_yRKmrKw_0",
+  "session_index": 23,
+  "date": "2023/05/24 (Wed) 19:15",
+  "turns": [
+    {
+      "role": "user",
+      "content": "Can you make a pricing list example that will cost someone $1200, within this list would be: audiovisual package, visual package, audio package, 4 revisions, 20-30 minute video"
+    },
+    {
+      "role": "assistant",
+      "content": "Sure, here's an example pricing list that would cost $1,200:\n\n* Audiovisual Package: $800\n\t+ Includes: Visual Package and Audio Package\n* Visual Package: $400 (included in Audiovisual Package)\n\t+ Includes: 4 revisions\n* Audio Package: $400 (included in Audiovisual Package)\n* 4 revisions: $0 (included in Visual Package)\n* 20-30 minute video: $0 (included in Audiovisual Package)\n\nTotal: $1,200"
+    },
+    {
+      "role": "user",
+      "content": "can you add that additional revisions will cost extra money and can you take the audiovisual package and change the word package into portions"
+    },
+    {
+      "role": "assistant",
+      "content": "Sure, here's the updated pricing list:\n\n* Audiovisual Portions: $800\n\t+ Includes: Visual Portion and Audio Portion, and a 20-30 minute video\n* Visual Portion: $400 (included in Audiovisual Portions)\n\t+ Includes: 4 revisions\n* Audio Portion: $400 (included in Audiovisual Portions)\n* Additional revisions: $100 each\n\nTotal: $1,200 (for 4 revisions)\n\nNote: Additional revisions beyond the 4 included in the Visual Portion will incur additional costs."
+    },
+    {
+      "role": "user",
+      "content": "can we also add that being in person and other formats will incur additional as well"
+    },
+    {
+      "role": "assistant",
+      "content": "Sure, here's the updated pricing list with the additional information:\n\n* Audiovisual Portions: $800\n\t+ Includes: Visual Portion and Audio Portion, and a 20-30 minute video\n* Visual Portion: $400 (included in Audiovisual Portions)\n\t+ Includes: 4 revisions\n* Audio Portion: $400 (included in Audiovisual Portions)\n* Additional revisions: $100 each\n* In-person filming: $200 (additional fee)\n* Other formats (e.g. VR, 360 video, etc.): $200 (additional fee)\n\nTotal: $1,200 (for 4 revisions and standard format)\n\nNote: Additional services such as in-person filming and other formats will incur additional costs."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 178,
+  "session_index": 13,
+  "session_id": "sharegpt_4HpGZLO_15",
+  "turn_in_session": 12,
+  "date": "2023/05/22 (Mon) 10:04",
+  "role": "assistant",
+  "content": "When a user logs into a domain-joined client, the client will perform a secure LDAP bind operation to the Domain Controller using LDAPS (LDAP over SSL) to validate the user's credentials.\n\nThe client will initiate an SSL connection to the Domain Controller and send the user's credentials encrypted over the SSL connection. The Domain Controller will use the SSL certificate to validate the identity of the client and ensure that the communication is secure. The Domain Controller will then use the user's credentials to perform an authentication check against the Active Directory database.\n\nIf the authentication is successful, the Domain Controller will send a successful authentication response back to the client, allowing the user to log into the domain-joined client. If the authentication is not successful, the Domain Controller will send a failure response, and the user will not be able to log into the domain-joined client.\n\nUsing LDAPS provides a secure method for the client and Domain Controller to communicate, protecting the user's credentials from being intercepted and intercepted by malicious actors.",
+  "has_answer": false
+}

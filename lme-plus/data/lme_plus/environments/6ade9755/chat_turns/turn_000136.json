@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 136,
+  "session_index": 13,
+  "session_id": "sharegpt_g5K4eCT_19",
+  "turn_in_session": 6,
+  "date": "2023/05/21 (Sun) 18:56",
+  "role": "assistant",
+  "content": "In the context of blockchain applications, abstracting away the underlying blockchain means hiding the complexity and technical details of the blockchain from the end-users of the application. The goal is to provide users with a user-friendly and seamless experience that resembles traditional web applications, rather than a technical and complex blockchain-based interface.\n\nFor example, when creating an onboarding experience for a blockchain-based game on the Flow blockchain, abstracting away the blockchain could involve:\n\n1. Sign up via email/social identity: Rather than requiring users to set up a complex wallet with public and private keys, the game could allow users to sign up using their email or social media accounts. This provides a familiar and accessible onboarding experience that users are used to from traditional web applications.\n2. Purchasing NFTs using credit cards: Instead of requiring users to purchase cryptocurrency and then use it to buy NFTs, the game could allow users to purchase NFTs directly using a credit card or other traditional payment method. This removes the need for users to navigate the complexity of buying and transferring cryptocurrency.\n3. Abstracting away the presence of the underlying blockchain: The game could hide the technical details of the blockchain from the user, such as transaction confirmation times, gas fees, and public and private keys. This allows users to interact with the game in a way that resembles traditional web applications, without the need to learn about the technical details of blockchain.\n\nBy abstracting away the complexity of the blockchain, blockchain-based applications on the Flow blockchain can create onboarding experiences that are more familiar and accessible to users that are new to Web3. This can help to attract a wider audience to blockchain-based applications and games, and increase the adoption and usage of the technology.",
+  "has_answer": false
+}

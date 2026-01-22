@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 243,
+  "session_index": 24,
+  "session_id": "sharegpt_h3YKuXq_0",
+  "turn_in_session": 1,
+  "date": "2023/05/25 (Thu) 19:03",
+  "role": "assistant",
+  "content": "API Documentation: Generate Wallet Endpoint\n\nEndpoint: POST /account/wallet\n\nDescription:\nThis endpoint generates a wallet for a user with the specified coin and network. A wallet address and memo will be returned upon successful creation.\n\nRequest Parameters:\n\n* token (required): User token to access the API.\n* coin (required): The cryptocurrency to generate the wallet for. Supported coins: BTC, ETH, LTC.\n* network (required): The network to generate the wallet for. Supported networks: BTC, ETH, LTC.\n\nExample Request:\n```bash\nPOST /account/wallet\n{\n  \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9\",\n  \"coin\": \"BTC\",\n  \"network\": \"BTC\"\n}\n```\nExample Response:\n```css\nHTTP/1.1 200 OK\n{\n  \"address\": \"1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2\",\n  \"memo\": \"abc123\",\n  \"network\": \"BTC\",\n  \"coin\": \"BTC\"\n}\n```\nResponse Fields:\n\n* address: The generated wallet address.\n* memo: A memo or tag associated with the wallet (optional).\n* network: The network the wallet was generated for.\n* coin: The cryptocurrency the wallet was generated for.\n\nError Responses:\n\n* HTTP/1.1 400 Bad Request: Invalid or missing request parameters.\n* HTTP/1.1 401 Unauthorized: Invalid or expired user token.\n* HTTP/1.1 500 Internal Server Error: An error occurred on the server while processing the request.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 268,
+  "session_index": 26,
+  "session_id": "sharegpt_tgr1bpv_17",
+  "turn_in_session": 6,
+  "date": "2023/05/24 (Wed) 21:03",
+  "role": "assistant",
+  "content": "The machine learning aspect in Kibana can be done through the UI, using Kibana's Machine Learning feature. Kibana's Machine Learning UI provides a user-friendly interface for creating and managing machine learning jobs, as well as visualizing the results.\n\nHowever, it's worth noting that some aspects of machine learning in Kibana can also be done through the command line interface (CLI), using the Elasticsearch APIs. For example, you can use the Elasticsearch APIs to manage and configure machine learning jobs, as well as to retrieve and analyze the results.\n\nIn general, using the UI is the most common way to work with machine learning in Kibana, as it provides a more user-friendly experience and allows users to visualize their data and results more easily. However, using the CLI can be useful for more advanced users who want to automate certain aspects of their machine learning workflows or integrate Kibana with other tools and systems.",
+  "has_answer": false
+}

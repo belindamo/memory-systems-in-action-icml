@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 432,
+  "session_index": 38,
+  "session_id": "sharegpt_TuureWP_17",
+  "turn_in_session": 13,
+  "date": "2023/05/29 (Mon) 17:34",
+  "role": "user",
+  "content": "You have an Azure virtual machine\nnamed VM1 that runs Windows\nServer 2019.\nYou sign in to VM1 as a user named\nUser1 and perform the following\nactions:\nCreate files on drive C.\nCreate files on drive D.\nModify the screen \u015faver timeout.\nChange the desktop background\nYou plan to redeploy VM1\nWhich changes will be lost after you\nredeploy VM1?\nthe modified screen saver timeout\nthe new desktop background\nthe new files on drive D\nthe new files on drive C",
+  "has_answer": false
+}

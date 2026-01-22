@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 378,
+  "session_index": 35,
+  "session_id": "sharegpt_2x5IpnY_13",
+  "turn_in_session": 4,
+  "date": "2023/06/04 (Sun) 13:00",
+  "role": "assistant",
+  "content": "You can use the \"Fill Handle\" to apply a formula to an entire set of cells in Excel:\n\n1. Start by entering the formula in the first cell of the range you want to apply it to.\n2. Next, click and hold on the bottom right corner of the cell with the formula (this is called the fill handle) and drag it down or across the range of cells you want to apply the formula to.\n3. Release the mouse button and the formula will be copied to all the cells in the range you selected.\n\nAlternatively, you can also use the \"Fill Down\" or \"Fill Across\" option in the \"Home\" tab of the ribbon.\n\n1. Select the cell with the formula.\n2. Right-click on the selection and choose \"Fill\" and then \"Down\" or \"Across\"\n3. The formula will be applied to the entire range of cells\n\nYou can also use keyboard shortcuts: Ctrl+D will copy the cell to the down and Ctrl+R will copy the cell to the right.\n\nPlease note that If you are using relative cell references in your formula, Excel will automatically adjust the cell references in the formula as you copy it to other cells. If you want to keep the same cell references as in the original formula, you can use the $ symbol before the row or column references to make them absolute.",
+  "has_answer": false
+}

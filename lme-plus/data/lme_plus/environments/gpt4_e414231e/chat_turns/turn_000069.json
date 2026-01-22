@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 69,
+  "session_index": 5,
+  "session_id": "sharegpt_Ry1VHfk_14",
+  "turn_in_session": 9,
+  "date": "2023/03/15 (Wed) 13:38",
+  "role": "assistant",
+  "content": "To add a domain and SSL certificate to your Laravel project on DigitalOcean, you will need to perform the following steps:\n\n1. First, log in to your DigitalOcean account and click on the \"Networking\" tab in the left-hand menu.\n2. In the \"Domains\" section, click on the \"Add Domain\" button and enter the domain name you purchased from GoDaddy. This will create a new DNS record for your domain on DigitalOcean.\n3. Next, click on the \"Add Record\" button and select the \"CNAME\" record type. Enter the name of your subdomain (e.g. \"www\") and the target hostname (e.g. \"laravel.example.com\"). This will create a CNAME record that maps your subdomain to your Laravel project's hostname on DigitalOcean.\n4. Once the DNS records have been created, log in to your GoDaddy account and update the DNS settings for your domain to point to the nameservers provided by DigitalOcean.\n5. After the DNS changes have propagated, you can install the SSL certificate on your server by following the instructions provided by GoDaddy. This will typically involve generating a certificate signing request (CSR) and a private key, and then using these files to request and install the SSL certificate.\n6. Once the SSL certificate is installed, you can update the virtual host configuration for your Laravel project to use the SSL certificate. This will typically involve adding the `SSLEngine`, `SSLCertificateFile`, and `SSLCertificateKeyFile` directives to the virtual host configuration, like this:\n```\n<VirtualHost *:443>\n    ServerName example.com\n    ServerAdmin webmaster@example.com\n    DocumentRoot /var/www/laravel/public\n\n    SSLEngine on\n    SSLCertificateFile /path/to/certificate.\n```",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 262,
+  "session_index": 29,
+  "session_id": "sharegpt_iwYf36y_5",
+  "turn_in_session": 0,
+  "date": "2023/05/26 (Fri) 09:49",
+  "role": "assistant",
+  "content": "Thank you for bringing this to my attention. You are correct that the path should be `$key` instead of `/secrets/google/key.json`. The `$key` variable will contain the path to the JSON key file for the Google DNS API.\n\nAdditionally, you are also correct that the Certbot image uses Alpine, so the shell script should reference `/bin/sh` instead of `/bin/bash`.\n\nHere's an updated version of the `renew-cert.sh` script:\n```bash\n#!/bin/sh\n\n# Load credentials\neval \"$(yq e '.credentials[] | \"export CREDENTIAL_\\(.email | ascii_upcase)=\\(.api_key) # \\(.domains)\"' credential.yml)\"\n\n# Renew certificates for each set of credentials\nfor EMAIL in $(yq e '.credentials[].email' credential.yml); do\n  DOMAINS=$(yq e \".credentials[] | select(.email == \\\"$EMAIL\\\") | .domains | join(\\\",\\\")\" credential.yml)\n  GOOGLE_APPLICATION_CREDENTIALS=$key certbot certonly --dns-google --dns-google-propagation-seconds 30 --dns-google-credentials $key -m $EMAIL -d $DOMAINS --agree-tos -n\ndone\n\n# Reload Nginx to use new certificates\ndocker-compose exec nginx nginx -s reload\n```\nThanks for bringing those issues to my attention, and please let me know if you have any further questions!",
+  "has_answer": false
+}

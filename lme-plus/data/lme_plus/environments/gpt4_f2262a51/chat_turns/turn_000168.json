@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 168,
+  "session_index": 13,
+  "session_id": "sharegpt_4HpGZLO_15",
+  "turn_in_session": 2,
+  "date": "2023/05/22 (Mon) 10:04",
+  "role": "assistant",
+  "content": "In the context of Remote Desktop Protocol (RDP) and Network Level Authentication (NLA), the authentication process typically involves the use of two protocols:\n\n1. Remote Procedure Call (RPC) protocol: The RPC protocol is used to communicate between the client and server during the authentication process. The client sends authentication credentials to the server, and the server communicates back to the client with the authentication status.\n2. Kerberos protocol: The Kerberos protocol is a widely used authentication protocol for Windows networks. When NLA is used with RDP, the client's credentials are verified with the domain controller using the Kerberos protocol. This ensures that the client's identity can be trusted, and that the client is authorized to access the server.\n\nIt's worth noting that other authentication protocols, such as NTLM or certificate-based authentication, may also be used in certain scenarios. However, Kerberos is the most commonly used authentication protocol for Windows networks and is the default authentication protocol used by NLA.",
+  "has_answer": false
+}

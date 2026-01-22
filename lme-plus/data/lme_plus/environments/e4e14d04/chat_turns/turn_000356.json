@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 356,
+  "session_index": 35,
+  "session_id": "sharegpt_FICwTpp_0",
+  "turn_in_session": 0,
+  "date": "2023/05/28 (Sun) 08:27",
+  "role": "user",
+  "content": "I have a pandas dataframe with 3 features a ,b, c , and three targets: return\\_t+1, return\\_t+2, return\\_t+3. I have a model to predict t+3 return on given a,b,c feature at t. How do I wrangle my data set so I can utilise return\\_t+1 to improve the original return\\_t+3 prediction at t+1",
+  "has_answer": false
+}

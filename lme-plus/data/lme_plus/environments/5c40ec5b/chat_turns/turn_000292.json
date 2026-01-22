@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 292,
+  "session_index": 32,
+  "session_id": "sharegpt_7y4qwfF_11",
+  "turn_in_session": 4,
+  "date": "2023/09/04 (Mon) 00:52",
+  "role": "assistant",
+  "content": "To find the IP address, SSH user, and SSH port for your Azure virtual machine, you can follow these steps:\n\n1. Log in to the Azure portal at <https://portal.azure.com>.\n2. In the left-hand menu, click on \"Virtual machines\" to view a list of your virtual machines.\n3. Select the virtual machine that you want to use for your site.\n4. In the virtual machine overview page, you should see the public IP address listed under the \"Networking\" section.\n5. To find the SSH user and port, click on the \"Connect\" button at the top of the page.\n6. In the \"Connect to virtual machine\" pane, select \"SSH\" as the type of connection.\n7. Under \"SSH private key,\" select the SSH key that you want to use to connect to your virtual machine.\n8. You should then see the SSH command to connect to your virtual machine. The user and port will be listed in this command.\n\nFor example, the SSH command may look like this:\n```javascript\nssh myusername@52.111.222.333 -p 22 -i ~/.ssh/myprivatekey\n```\nIn this example, \"myusername\" is the SSH user, \"52.111.222.333\" is the IP address, and \"22\" is the SSH port.\n\nOnce you have this information, you can enter it in the Forge interface when creating your server.",
+  "has_answer": false
+}

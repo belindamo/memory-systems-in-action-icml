@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 442,
+  "session_index": 40,
+  "session_id": "sharegpt_GHsZ4fd_11",
+  "turn_in_session": 10,
+  "date": "2023/05/30 (Tue) 15:49",
+  "role": "assistant",
+  "content": "To prevent name resolution from returning incorrect IP addresses in a domain environment from a Windows 10 system, you can follow these steps:\n\n1. Open the Start menu and search for \"Control Panel\".\n2. In the Control Panel, select \"Network and Internet\" and then \"Network and Sharing Center\".\n3. Click on \"Change adapter settings\" on the left-hand side of the window.\n4. Right-click on the network adapter that you want to configure and select \"Properties\".\n5. In the \"Properties\" window, select \"Internet Protocol Version 4 (TCP/IPv4)\" and click the \"Properties\" button.\n6. Click the \"Advanced\" button and select the \"DNS\" tab.\n7. Under the \"DNS server addresses, in order of use:\" section, click the \"Add\" button.\n8. Enter the IP address of the DNS server that you want to use.\n9. Click \"Add\" and enter the IP address of any additional DNS servers that you want to use.\n10. Click \"OK\" to save the changes.\n\nBy configuring your Windows 10 system to use only authorized DNS servers, you can help prevent name resolution from returning incorrect IP addresses. Additionally, you can also configure your domain environment to use DNS security features, such as DNSSEC and DANE, and to implement strict name resolution policies to further enhance the security of your DNS infrastructure.",
+  "has_answer": false
+}

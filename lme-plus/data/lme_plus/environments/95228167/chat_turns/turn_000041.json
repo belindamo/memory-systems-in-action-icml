@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 41,
+  "session_index": 4,
+  "session_id": "sharegpt_RjO1Toi_66",
+  "turn_in_session": 1,
+  "date": "2023/05/21 (Sun) 04:58",
+  "role": "assistant",
+  "content": "Frame extraction:\n\n1. Statement: \"both say 'no'\"\n\t* Speaker: \"both\"\n\t* Message: \"no\"\n2. Size: \"a small building\"\n\t* Entity: \"building\"\n3. Buildings: \"small building\"\n\t* Descriptor: \"small\"\n\t* Building: \"building\"\n4. Color: \"white, blue and red stripes\"\n\t* Color: \"white\"\n\t* Entity: \"stripes\"\n\t* Color: \"blue\"\n\t* Entity: \"stripes\"\n\t* Color: \"red\"\n\t* Entity: \"stripes\"\n5. Weapon: \"the gun\"\n\t* Weapon: \"gun\"\n6. Departing: \"get the fout of here\"\n\t* Theme: \"the f\"\n\t* Source: \"of here\"\n\t* Theme: \"the f\"\n\t* Source: \"of here\"\n\t* Theme: \"the f\"\n\t* Source: \"of here\"\n7. Weapon: \"the gun\"\n\t* Weapon: \"gun\"\n8. Cardinal\\_numbers: \"a couple of kicks\"\n\t* Number: \"couple\"\n\t* Entity: \"of kicks\"\n9. Emotion\\_directed: \"delighted guffaws\"\n\t* Experiencer: \"guffaws\"\n10. People: \"the guy filming\"\n* Person: \"guy\"",
+  "has_answer": false
+}

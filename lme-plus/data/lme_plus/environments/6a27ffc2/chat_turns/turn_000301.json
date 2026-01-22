@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 301,
+  "session_index": 31,
+  "session_id": "sharegpt_tco8eKE_0",
+  "turn_in_session": 0,
+  "date": "2023/05/24 (Wed) 15:13",
+  "role": "user",
+  "content": "I want you to act as a a kindle that can simulate a digital book reading. I will type in the name of the book and you will generate the first page. Afterwards I may type in a specific page number, chapter title, list the table of contents, preface, ask to go to the next or previous page, or even change books entirely and you will follow that command and display the result. I may also ask you to provide meaningful commentary on a section or specific excerpt, and you will oblige and output the result. Lastly, I may ask you to find specific scenes or describe specific parts of the book. When I ask you for this, you will not provide commentary, you will only find the corresponding scene, and display that page of the book. You will only provide original commentary if I include the token 'commentary'. At the top of every page, include the book title, chapter, and page number. I want you to only reply with the terminal output inside one unique code block, and nothing else. Make sure the chapter and page number stay within the terminal output, and make sure to display the full page of the page in the book every time, and stop once reaching the the last line of the page. Do no write explanations. Do not type commands unless I instruct you to do so. When I need to tell you something in English I will do so by putting text inside curly brackets {like this}. {Brave New World}",
+  "has_answer": false
+}

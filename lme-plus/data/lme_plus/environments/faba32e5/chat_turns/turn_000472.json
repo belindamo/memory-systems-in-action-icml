@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 472,
+  "session_index": 45,
+  "session_id": "sharegpt_gmOSkOC_0",
+  "turn_in_session": 13,
+  "date": "2023/05/30 (Tue) 21:58",
+  "role": "assistant",
+  "content": "FIR filters have only zeros, but no poles. In the context of digital signal processing, poles and zeros refer to the roots of the transfer function of a filter. The transfer function of a filter is the relationship between its input and output. The poles of a transfer function correspond to the roots of the denominator, and the zeros correspond to the roots of the numerator.\n\nIn the case of an IIR filter, the transfer function has both poles and zeros, meaning that both the numerator and denominator of the transfer function have roots. This means that the output of an IIR filter is dependent on both the current and previous input values, which can result in a more complex frequency response.\n\nIn contrast, an FIR filter has a transfer function with only zeros, meaning that only the numerator of the transfer function has roots. This results in a simpler frequency response and a more straightforward design, but also means that the output of an FIR filter is dependent only on the current input values and not on any previous input values.\n\nIn summary, FIR filters have only zeros in their transfer function, while IIR filters have both poles and zeros. The presence of poles and zeros in the transfer function determines the frequency response and stability of the filter, and affects the design and implementation of the filter.",
+  "has_answer": false
+}

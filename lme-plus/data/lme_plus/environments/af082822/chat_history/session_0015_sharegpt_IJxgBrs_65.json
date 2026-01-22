@@ -1,0 +1,59 @@
+{
+  "session_id": "sharegpt_IJxgBrs_65",
+  "session_index": 15,
+  "date": "2022/11/18 (Fri) 22:26",
+  "turns": [
+    {
+      "role": "assistant",
+      "content": "I apologize for the confusion, here are the 3 new chord progressions containing only the notes in the F halfdim scale, with all chords transposed or suspended as necessary:\n\n| Progression 1 | Progression 2 | Progression 3 |\n| --- | --- | --- |\n| Fm7 (F, Ab, C, Eb) | Fm7 (F, Ab, C, Eb) | Fm7 (F, Ab, C, Eb) |\n| Bb7sus4 (Bb, F, Ab) | Cm7 (C, Eb, G, Bb) | Ab7sus4 (Ab, C, Eb) |\n| Cm7 (C, Eb, G, Bb) | Eb7sus4 (Eb, G, Bb, Ab) | Bbm7sus4 (Bb, F, Ab) |\n| Eb7sus4 (Eb, G, Bb, Ab) | Fmaj7 (F, A, C, E) | Cm7 (C, Eb, G, Bb) |\n|  |  | Eb7sus4 (Eb, G, Bb, Ab) |\n\nPlease note that the chords in these progressions may have a different overall sound from the original chords. But it's still can be used as a tool for improvisation, composition, and practicing."
+    },
+    {
+      "role": "user",
+      "content": "Im very very pleased, even if progression 2 has an unedited Fmaj7 with an A still remaining. I totally understand it not being optimal or 1:1 to the original chords. Please redraw the table without the A in Fmaj7"
+    },
+    {
+      "role": "assistant",
+      "content": "| Chord Progression 3 | Notes in Chords |\n| --- | --- |\n| Fm7(F, Ab, C, Eb) |  |\n| Bb7sus4(Bb, F, Ab) |  |\n| Cm7(C, Eb, G, Bb) |  |\n| Eb7(Eb, G, Bb) |  |\n\n| Chord Progression 4 | Notes in Chords |\n| --- | --- |\n| Fm7(F, Ab, C, Eb) |  |\n| Cm7(C, Eb, G, Bb) |  |\n| Eb7(Eb, G, Bb) |  |\n| Fmaj7(F, A, C, E) |  |\n\n| Chord Progression 5 | Notes in Chords |\n| --- | --- |\n| Fm7(F, Ab, C, Eb) |  |\n| Ab7sus2(Ab, C, Eb) |  |\n| Bbm7(Bb, Db, F, Ab) |  |\n| Cm7(C, Eb, G, Bb) |  |"
+    },
+    {
+      "role": "user",
+      "content": "Fm7: [F3, C4, Eb4] Bbm7: [Bb3, Eb4, F4] Cm7: [C4, Eb4, G4] Ebm7: [Eb4, G4, Bb4] Fm7: [F4, Ab4, C5] Gm7: [G3, Bb3, D4] Abmaj7: [Ab4, C5, Eb5] Bbm7: [Bb4, Eb5, F5] C5: [C5]\n\nplease format"
+    },
+    {
+      "role": "assistant",
+      "content": "| Chord | Notes |\n| --- | --- |\n| Fm7 | F3, C4, Eb4 |\n| Bbm7 | Bb3, Eb4, F4 |\n| Cm7 | C4, Eb4, G4 |\n| Ebm7 | Eb4, G4, Bb4 |\n| Fm7 | F4, Ab4, C5 |\n| Gm7 | G3, Bb3, D4 |\n| Abmaj7 | Ab4, C5, Eb5 |\n| Bbm7 | Bb4, Eb5, F5 |\n| C5 | C5 |"
+    },
+    {
+      "role": "user",
+      "content": "Dm9: F, C, Eb\n\nEb6: Eb, G, Bb\n\nC9: C, G, E\n\nAbmaj9: Ab, C, Eb, F, G\n\nBbbmaj13m9: Bbb, Eb, F, G\n\nEb13sus: F, Eb\n\nplease format this chord progression aswell"
+    },
+    {
+      "role": "assistant",
+      "content": "Dm9: [F3, C4, Eb4]\nEb6: [Eb4, G4, Bb4]\nC9: [C4, G4, E4]\nAbmaj9: [Ab4, C5, Eb5, F4, G4]\nBbbmaj13m9: [Bbb3, Eb4, F4, G4]\nEb13sus: [F4, Eb4]"
+    },
+    {
+      "role": "user",
+      "content": "Now add the past two progressions into a neat table or similar"
+    },
+    {
+      "role": "assistant",
+      "content": "| Chord Progression 1 | Chord Progression 2 |\n| --- | --- |\n| Fm7 (F, C, Eb) | Dm9 (F, C, Eb) |\n| Bbm7 (Bb, Eb, F) | Eb6 (Eb, G, Bb) |\n| Cm7 (C, Eb, G) | C9 (C, G, E) |\n| Ebm7 (Eb, G, Bb) | Abmaj9 (Ab, C, Eb, F, G) |\n| Fm7 (F, Ab, C) | Bbbmaj13m9 (Bbb, Eb, F, G) |\n| Gm7 (G, Bb, D) | Eb13sus (F, Eb) |\n| Abmaj7 (Ab, C, Eb) |  |\n| Bbm7 (Bb, Eb, F) |  |\n| C5 (C) |  |"
+    },
+    {
+      "role": "user",
+      "content": "add \"\nChord Progression 5\" and \"\nChord Progression 3\" from previously to the latest table"
+    },
+    {
+      "role": "assistant",
+      "content": "| Chord Progression 1 | Chord Progression 2 | Chord Progression 3 | Chord Progression 4 | Chord Progression 5 |\n| --- | --- | --- | --- | --- |\n| Fm7 (F, Ab, C, Eb) | Fm7: [F3, C4, Eb4] | Dm9: F, C, Eb | Abmaj9: Ab, C, Eb, F, G | C9: C, G, E |\n| Bbm7 (Bb, Db, F) | Bbm7: [Bb3, Eb4, F4] | Eb6: Eb, G, Bb | Bbbmaj13m9: Bbb, Eb, F, G | Eb13sus: F, Eb |\n| Cm7 (C, Eb, G, Bb) | Cm7: [C4, Eb4, G4] |  |  |  |\n| Eb7 (Eb, G, Bb, Db) | Ebm7: [Eb4, G4, Bb4] |  |  |  |\n| Fmaj7 (F, A, C, E) | Fm7: [F4, Ab4, C5] |  |  |  |\n| G7 (G, B, D, F) | Gm7: [G3, Bb3, D4] |  |  |  |\n| Abmaj7 (Ab, C, Eb, G) | Abmaj7: [Ab4, C5, Eb5] |  |  |  |\n| Bbm7 (Bb, Db, F, Ab) | Bbm7: [Bb4, Eb5, F5] |  |  |  |\n| C5 (C5) | C5: [C5] |  |  |  |"
+    },
+    {
+      "role": "user",
+      "content": "Make one table for the chords with their adjusted notes, then in another table only use one cell for the formatting of the progression"
+    },
+    {
+      "role": "assistant",
+      "content": "Chord Table:\n\n| Chord | Notes |\n| --- | --- |\n| Fm7 | F3, C4, Eb4 |\n| Bbm7 | Bb3, Eb4, F4 |\n| Cm7 | C4, Eb4, G4 |\n| Ebm7 | Eb4, G4, Bb4 |\n| Fm7 | F4, Ab4, C5 |\n| Gm7 | G3, Bb3, D4 |\n| Abmaj7 | Ab4, C5, Eb5 |\n| Bbm7 | Bb4, Eb5, F5 |\n| C5 | C5 |\n| Dm9 | F3, C4, Eb4, G4, Bb4 |\n| Eb6 | Eb4, G4, Bb4 |\n| C9 | C4, G4, E4 |\n| Abmaj9 | Ab4, C5, Eb5, F4, G4 |\n| Bbbmaj13m9 | Bbb3, Eb4, F4, G4 |\n| Eb13sus | F3, Eb4 |\n\nProgression Table:\n\n| Progression | Chords |\n| --- | --- |\n| 1 | Fm7 - Bbm7 - Cm7 - Ebm7 - Fm7 |\n| 2 | Gm7 - Abmaj7 - Bbm7 - C5 |\n| 3 | Fm7 - Cm7 - Eb7 - Fmaj7 |\n| 4 | Fm7 - Bbm7 - Cm7 - Eb7 |\n| 5 | Fm7 - G7 - Cm7 - Fmaj7 |\n| 6 | Dm9 - Eb6 - C9 - Abmaj9 - Bbbmaj13m9 - Eb13sus |"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 389,
+  "session_index": 35,
+  "session_id": "sharegpt_thlhgI9_35",
+  "turn_in_session": 1,
+  "date": "2023/05/27 (Sat) 17:30",
+  "role": "user",
+  "content": "Thanks. Now, generate 50 \"risks\" for your house that could end up in a costly damage or insurance payout. An example could be that clothes fibers are not removed from the clothes dryer regularly, so the whole house catches on fire. List the risks in descending order of importance. Format:\n- Name of risk\n- Explanation of what can go wrong\n- Risk severity (number from 1-10 based in impact or value destroyed if risk happens)\n- Which category the risk can be linked to (e.g. Roofing and Gutters, Plumbing, etc from earlier. Only use these categories. If no existing category is relevant, use \"Other\").\n\nList them in a format for Airtable.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 380,
+  "session_index": 38,
+  "session_id": "sharegpt_GKjb2be_0",
+  "turn_in_session": 1,
+  "date": "2023/05/29 (Mon) 02:20",
+  "role": "assistant",
+  "content": "To use an MP4 video as a screensaver in PowerShell, you can follow these steps:\n\n1. Open PowerShell as an administrator.\n2. Type the following command to create a new folder where you will store the video file: `New-Item -ItemType Directory -Force -Path \"C:\\Videos\"`\n3. Copy the MP4 video file to the folder you just created.\n4. Type the following command to create a new registry key that will set the video file as your screensaver: `New-ItemProperty -Path \"HKCU:\\Control Panel\\Desktop\" -Name \"SCRNSAVE.EXE\" -Value \"C:\\Windows\\System32\\mp4screensaver.scr\" -PropertyType String -Force`\n5. Type the following command to create a configuration file for the screensaver: `New-ItemProperty -Path \"HKCU:\\Control Panel\\Desktop\" -Name \"MP4ScreenSaverConfig\" -Value \"C:\\Videos\\video.mp4\" -PropertyType String -Force`\n6. Save the following script as \"mp4screensaver.ps1\" in the System32 folder (e.g., C:\\Windows\\System32):\n```swift\n$player = New-Object -ComObject \"WMPlayer.OCX.7\"\n$player.URL = (Get-ItemProperty -Path \"HKCU:\\Control Panel\\Desktop\" -Name \"MP4ScreenSaverConfig\").MP4ScreenSaverConfig\n$player.controls.play()\nwhile ($true) {\n    Start-Sleep -Seconds 60\n}\n```\n7. Rename the \"mp4screensaver.ps1\" file to \"mp4screensaver.scr\"\n8. Type the following command to set the screensaver to \"mp4screensaver.scr\": `New-ItemProperty -Path \"HKCU:\\Control Panel\\Desktop\" -Name \"ScreenSaveActive\" -Value \"1\" -PropertyType DWord -Force`\n9. Type the following command to set the timeout for the screensaver (in seconds): `New-ItemProperty -Path \"HKCU:\\Control Panel\\Desktop\" -Name \"ScreenSaveTimeOut\" -Value \"300\" -PropertyType DWord -Force`\n\nYour MP4 video is now set as your screensaver. To exit the screensaver, simply move your mouse or press a key on your keyboard.",
+  "has_answer": false
+}

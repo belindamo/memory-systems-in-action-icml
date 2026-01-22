@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 105,
+  "session_index": 12,
+  "session_id": "sharegpt_Ap0jhCm_11",
+  "turn_in_session": 2,
+  "date": "2023/05/04 (Thu) 01:30",
+  "role": "assistant",
+  "content": "Worlds iVue is a platform that combines augmented reality and drone technology, enabling users to control iVue Robotics products and view media content. To build Worlds iVue with Cesium, you can follow these steps:\n\n1. Develop the user interface for controlling the iVue Robotics products, such as the OmniBot Air, using the Cesium JavaScript API to provide 3D visualization and interaction with the drone.\n2. Integrate a real-time mapping feature using the Cesium JavaScript API, so that users can see the location of the drone in real-time as it performs its mission.\n3. Implement a 3D digital object overlay feature using the Cesium JavaScript API, so that users can see digital objects and other data overlaid on top of the real-world environment, providing valuable context and information.\n4. Build the media content viewing feature, which can include job opportunities and geo-located media content produced from iVue Media orders, using the Cesium JavaScript API to display the content in a 3D context and enable easy navigation.\n5. Build additional features for specific industries, such as surveying, construction, and agriculture, that can utilize the power of Cesium's 3D visualization and mapping capabilities to provide valuable insights and information.\n6. Ensure that the platform is secure and reliable, with proper user authentication and data protection measures in place.\n\nBy building Worlds iVue with Cesium, you can leverage the power of Cesium's 3D visualization and mapping capabilities to create an easy-to-use platform that combines augmented reality and drone technology, providing a unique value proposition for a range of industries beyond aerial photography and videography.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 378,
+  "session_index": 34,
+  "session_id": "sharegpt_BK0BcTz_0",
+  "turn_in_session": 0,
+  "date": "2023/05/25 (Thu) 01:32",
+  "role": "user",
+  "content": "Hi chat, I am preparing a e-book for an australian property buyers' agent company. This ebook will be shared online and via social media channels. The goal of this ebook is to attract new clients, and it will contain a curated selection of seven appealing suburbs for property investment in Brisbane. The structure of the e-book will be: 1. title page 2. contents 3. methodology 4. market trends 5. suburb selections 6. call to action. The data used in our suburb level market analysis is: sale volume by price segment, median house prices over time, suburb vacancy rates, region vacancy rates, median rent, a social advantage/disadvantage decile, region unemployment rate, weekly household income, household income state decile, % family households, average household size, property type proportion breakdown (i.e. detached house, townhouse, apartment, etc.), age segment breakdown, inventory on market (months of stock on market), ownership type breakdown (i.e. owned outright, mortgaged, rented, etc.). I would like you to produce a 300 words for the market trends section of this ebook. To do this, I will begin to provide you with information for each of the 7 suburbs. My next prompt will contain information for the first suburb. I would like you to acknowledge receival of this data and then ask for the next suburb. Continue this process until I have provided you with information for all 7 suburbs, delivered in separate prompts. At this point, you will produce 300 words of text regarding market trends for these suburbs in Brisbane. Keep the text engaging and make it accessible to a broad audience. Please confirm that you understand these instructions and begin by requesting the first suburb.",
+  "has_answer": false
+}

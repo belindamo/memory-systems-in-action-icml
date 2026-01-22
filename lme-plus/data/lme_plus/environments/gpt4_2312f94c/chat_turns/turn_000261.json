@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 261,
+  "session_index": 25,
+  "session_id": "sharegpt_uVeeJj8_0",
+  "turn_in_session": 4,
+  "date": "2023/03/15 (Wed) 21:42",
+  "role": "user",
+  "content": "This only finds restaurants in a 5000 meter radius around the physical midpoint of the two addresses, where the shortest driving time between the two addresses may not be within that radius. Is there a way to find all the points between two addresses that take an equal amount of time to drive to from either location?",
+  "has_answer": false
+}

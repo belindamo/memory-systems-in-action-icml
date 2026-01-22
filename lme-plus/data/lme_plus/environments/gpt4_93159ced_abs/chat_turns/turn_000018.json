@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 18,
+  "session_index": 1,
+  "session_id": "sharegpt_pfa0Sfh_17",
+  "turn_in_session": 6,
+  "date": "2023/05/30 (Tue) 16:07",
+  "role": "assistant",
+  "content": "The `cd -` command in a Unix-like shell changes the current working directory to the previous working directory.\n\nFor example, let's say that you are currently in the directory `/home/user/Documents`, and you previously changed directories to `/var/log`. If you enter `cd -`, the shell will change the current working directory to `/var/log`, which was the previous working directory.\n\nThis command is useful if you need to switch back and forth between two directories quickly. It allows you to easily toggle between two directories without having to remember or type out their full paths each time.\n\nNote that the `cd -` command only works with the previous working directory. If you need to switch to a specific directory that is not the previous one, you will need to enter the full path to that directory.",
+  "has_answer": false
+}

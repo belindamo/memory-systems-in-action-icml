@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 355,
+  "session_index": 31,
+  "session_id": "sharegpt_bhZR2Sv_0",
+  "turn_in_session": 0,
+  "date": "2023/05/26 (Fri) 21:55",
+  "role": "user",
+  "content": "Hi, I have machine learning problem that I'd like to ask. Let's assume I have a series of online courses and let's label them as O1, O2, O3 ... ON. These online courses are short module of psychotherapy. Then, I have many clients who receive psychotherapy from us, let's label them as C1, C2, C3 ... CN respectively. Each client will go take one course a week, lasting for 8 weeks, and let's label the time they take the course as T1, T2, T3, T4, T5, T6, T7, T8 respectively. At T1, the client will take a comprehensive psychological test that test for their personality, life satisfaction and what challenges that they're facing, and at T8 the client will take the same test again to measure any changes in their psychological condition. My goal is to build a recommender system take is able to take into account of the test taken in T1, such as their personality and challenges that they're facing, and recommend a sequence of online courses to be taken each week, to maximise the improvement in the psychological test taken at T8. Please advise how to achieve this.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 431,
+  "session_index": 37,
+  "session_id": "sharegpt_8M7HcM3_11",
+  "turn_in_session": 14,
+  "date": "2023/04/11 (Tue) 23:18",
+  "role": "assistant",
+  "content": "Yes, that's correct. The AppArmor profile for a snap is typically generated dynamically by the snapd daemon at runtime based on the confinement rules defined in the snap's snapcraft.yaml file.\n\nTo view the current AppArmor profile for the Discord snap, you can run the following command:\n```bash\nsudo cat /var/lib/snapd/apparmor/profiles/snap.discord.discord\n```\nThis should show you the generated AppArmor profile for the Discord snap. However, I should note that modifying this profile manually is not recommended, as it may interfere with the snap's confinement and security.",
+  "has_answer": false
+}

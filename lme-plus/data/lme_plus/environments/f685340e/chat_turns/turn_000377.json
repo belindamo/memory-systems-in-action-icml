@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 377,
+  "session_index": 35,
+  "session_id": "sharegpt_ZNEat6k_144",
+  "turn_in_session": 4,
+  "date": "2023/07/21 (Fri) 03:37",
+  "role": "user",
+  "content": "Resources of a resource type should not be subnodes of the AzLocalRight. Resource Types have AzLocalRights and AzLocalRights have FieldTypes with possible assignable fieldtypevalues and then the application can have a list of resources of each type which would have single values for properties of their objects that match FieldTypes and the values we have defined",
+  "has_answer": false
+}

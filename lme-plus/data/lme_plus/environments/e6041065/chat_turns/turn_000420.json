@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 420,
+  "session_index": 38,
+  "session_id": "sharegpt_TuureWP_17",
+  "turn_in_session": 1,
+  "date": "2023/05/29 (Mon) 17:34",
+  "role": "user",
+  "content": "Question 27 of 50\nSingle choice question\nYou have a Recovery Service vault that\nyou use to test backups. The test\nbackups contain two protected virtual\nmachines.\nYou need to delete the Recovery\nServices vault.\nWhat should you do first?\nSelect the correct answer\nFrom the Recovery Service vault, delete the backup data\nModify the disaster recovery properties of each virtual machine\nModify the locks of each virtual machine\nFrom the Recovery Service vault, stop the backup of each backup item",
+  "has_answer": false
+}

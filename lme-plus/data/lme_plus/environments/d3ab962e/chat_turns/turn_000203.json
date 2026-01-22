@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 203,
+  "session_index": 18,
+  "session_id": "sharegpt_6fTnCnw_49",
+  "turn_in_session": 7,
+  "date": "2022/09/24 (Sat) 11:29",
+  "role": "user",
+  "content": "That's better, but it's still confusing that you call on transcription a \"system\" and another a \"language\" and then you call the thing being transcribed a \"system\" again.\n\nThe things doing the transcribing - whether to text or to speech - should have a similar type (because they belong in the same category).\nThe thing being transcribed - whether to text or to speech - should have a different type.",
+  "has_answer": false
+}

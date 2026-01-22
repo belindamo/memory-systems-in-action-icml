@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 334,
+  "session_index": 29,
+  "session_id": "sharegpt_RReCreP_0",
+  "turn_in_session": 13,
+  "date": "2023/05/23 (Tue) 15:14",
+  "role": "assistant",
+  "content": "Great, let's use the examples we've discussed so far to create a very simple web page using Lollipop JSON.\n\nHere's an example with a text element, a button element, and a workflow that triggers when the button is clicked and hides the text element:\n```css\n{\n  \"elements\": {\n    \"bTGzk\": {\n      \"properties\": {\n        \"text\": {\n          \"entries\": {\n            \"0\": \"Welcome to my fun webpage!\"\n          },\n          \"type\": \"TextExpression\"\n        },\n        \"height\": 150,\n        \"left\": 200,\n        \"top\": 200,\n        \"width\": 400,\n        \"zindex\": 3\n      },\n      \"type\": \"Text\",\n      \"id\": \"bTGzi\",\n      \"default_name\": \"Text A\",\n      \"style\": \"Text_body_large_\"\n    },\n    \"bTGzr\": {\n      \"properties\": {\n        \"text\": {\n          \"entries\": {\n            \"0\": \"Hide Text\"\n          },\n          \"type\": \"TextExpression\"\n        },\n        \"height\": 50,\n        \"left\": 400,\n        \"top\": 400,\n        \"width\": 100,\n        \"zindex\": 4\n      },\n      \"type\": \"Button\",\n      \"id\": \"bTGzm\",\n      \"default_name\": \"Button B\",\n      \"style\": \"Button_primary_button_\"\n    }\n  },\n  \"workflows\": {\n    \"bTGzh\": {\n      \"properties\": {\n        \"element_id\": \"bTGzm\"\n      },\n      \"type\": \"ButtonClicked\",\n      \"id\": \"bTGzf\",\n      \"actions\": {\n        \"0\": {\n          \"properties\": {\n            \"element_id\": \"bTGzi\"\n          },\n          \"type\": \"HideElement\",\n          \"id\": \"bTGzl\"\n        }\n      }\n    }\n  }\n}\n```\nIn this example, we have a text element with the id \"bTGzi\" and a button element with the id \"bTGzm\". The workflow with the id \"bTGzf\" triggers when the button element is clicked, and its action hides the text element.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 177,
+  "session_index": 17,
+  "session_id": "sharegpt_8oP0XzQ_87",
+  "turn_in_session": 0,
+  "date": "2023/05/22 (Mon) 11:51",
+  "role": "assistant",
+  "content": "Here's an example code snippet for a simple web-based 3D model viewer using the Three.js library in JavaScript:\n```html\n<!DOCTYPE html>\n<html>\n  <head>\n    <title>3D Model Viewer</title>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <style>\n      canvas {\n        width: 100%;\n        height: 100%;\n        margin: 0;\n        padding: 0;\n      }\n    </style>\n  </head>\n  <body>\n    <script src=\"https://threejs.org/build/three.min.js\"></script>\n    <script src=\"https://threejs.org/examples/js/loaders/GLTFLoader.js\"></script>\n    <script>\n      const scene = new THREE.Scene();\n      const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);\n      const renderer = new THREE.WebGLRenderer();\n\n      renderer.setSize(window.innerWidth, window.innerHeight);\n      document.body.appendChild(renderer.domElement);\n\n      const loader = new THREE.GLTFLoader();\n      loader.load('model.gltf', function (gltf) {\n        scene.add(gltf.scene);\n      });\n\n      camera.position.z = 5;\n\n      function animate() {\n        requestAnimationFrame(animate);\n        renderer.render(scene, camera);\n      }\n\n      animate();\n    </script>\n  </body>\n</html>\n```\nIn this example, we're using the Three.js library to create a 3D scene, and we're loading a 3D model using the GLTFLoader. The `animate` function is called once per frame to render the scene. You can replace the `model.gltf` filename with your own 3D model file to load a different model. You can also customize the camera position and other settings to control the appearance of the 3D scene.",
+  "has_answer": false
+}

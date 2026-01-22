@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 299,
+  "session_index": 27,
+  "session_id": "sharegpt_U9Sujf2_9",
+  "turn_in_session": 8,
+  "date": "2023/05/27 (Sat) 08:22",
+  "role": "assistant",
+  "content": "`)\n\n* linked\\_immersive\\_websites (array of ObjectId, references to `websites._id`)\n1. `game_engines` collection:\n\t* \\_id (ObjectId)\n\t* name (string)\n\t* version (string)\n\t* website (string, URL to the game engine's website)\n2. `platforms` collection:\n\t* \\_id (ObjectId)\n\t* name (string)\n\t* website (string, URL to the platform's website)\n3. `web_crawls` collection:\n\t* \\_id (ObjectId)\n\t* timestamp (Date)\n\t* total\\_websites (integer)\n\t* new\\_websites (integer)\n\t* updated\\_websites (integer)\n\t* error\\_count (integer)\n4. `crawl_errors` collection:\n\t* \\_id (ObjectId)\n\t* website\\_id (ObjectId, reference to `websites._id` or `classic_websites._id`)\n\t* crawl\\_id (ObjectId, reference to `web_crawls._id`)\n\t* error\\_type (string, e.g., \"HTTP\", \"Timeout\", \"Parsing\", etc.)\n\t* error\\_message (string)\n\t* timestamp (Date)\n5. `crawl_queue` collection:\n\t* \\_id (ObjectId)\n\t* website\\_id (ObjectId, reference to `websites._id` or `classic_websites._id`)\n\t* website\\_type (string, either \"immersive\" or \"classic\")\n\t* crawl\\_status (string, e.g., \"pending\", \"crawling\", \"crawled\")\n\t* assigned\\_crawler\\_id (string, optional, identifier of the assigned crawler)\n\t* timestamp (Date, time when the website was added to the queue)\n\nThis comprehensive schema includes collections and",
+  "has_answer": false
+}

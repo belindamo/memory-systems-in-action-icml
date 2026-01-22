@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 344,
+  "session_index": 37,
+  "session_id": "sharegpt_zGtHq7S_0",
+  "turn_in_session": 2,
+  "date": "2023/03/17 (Fri) 20:56",
+  "role": "user",
+  "content": "According the above text, please write a python code that save the statistics into .xml file with the following conditions:\n1. Generate two tables. Column name: distance, i.e. [0, 30, 60, 90, 120, 150, 180]. Row name: angle, i.e. [0, 15, 30, 45, 60, 75, 90] \n2. The first table is about recall rate. Each value is denominator / 10. \nFor example, the value of '30 degree: <45 = 5/8, >45 = 3/8' is 8/10=0.80\n3. The second table is about angle accuracy. Each value is fraction in the text. Select the value of <45 when degree is less than 45, and that of > 45 for the rest.\nFor example, the value of '30 degree: <45 = 2/9, >45 = 7/9' is 2/9=0.22 and the value of '60 degree: <45 = 1/10, >45 = 9/10' is 9/10=0.90",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 265,
+  "session_index": 30,
+  "session_id": "541ecc45_1",
+  "turn_in_session": 7,
+  "date": "2023/05/27 (Sat) 07:22",
+  "role": "assistant",
+  "content": "That's correct! You've got the process down.\n\nOnce you've set up the tag and trigger in GTM and published the container, the event will be sent to Google Analytics when the form is submitted. To track the event in Google Analytics, you'll need to set up an event goal. Here's what you need to do:\n\n**In Google Analytics:**\n\n1. Go to the \"Admin\" section and select the property you want to track.\n2. Click on \"Goals\" under the \"Conversions\" section.\n3. Click \"New Goal\" and select \"Custom\" as the goal type.\n4. Choose \"Event\" as the goal type.\n5. Set the \"Category\" to \"Form\" (or the category you specified in the GTM tag).\n6. Set the \"Action\" to \"Submission\" (or the action you specified in the GTM tag).\n7. Optionally, you can set the \"Label\" to the label you specified in the GTM tag (e.g., \"Contact Form\").\n8. Set the \"Value\" to the value you specified in the GTM tag (if any).\n9. Click \"Save\" to save the goal.\n\nOnce you've set up the goal, the event will start showing up in your Google Analytics reports. You can view the event data in the \"Real-Time\" reports, \"Behavior\" reports, or \"Conversions\" reports.\n\n**Tips:**\n\n* Make sure the event category, action, and label in Google Analytics match the settings in your GTM tag.\n* If you've set up a value for the event in GTM, you can also track the total value of form submissions in Google Analytics.\n* You can use the event data to create segments, filters, or custom dashboards in Google Analytics to gain more insights into your form submissions.\n\nThat's it! With these steps, you should be able to track form submissions as goals in Google Analytics using Google Tag Manager.",
+  "has_answer": false
+}

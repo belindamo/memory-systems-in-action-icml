@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 375,
+  "session_index": 34,
+  "session_id": "sharegpt_PEcIUeK_101",
+  "turn_in_session": 11,
+  "date": "2023/05/26 (Fri) 20:26",
+  "role": "assistant",
+  "content": "You're correct that the `apply` method returns a Series when called with `axis=1`. To create a dataframe from the Series, you can use the `to_frame` method to convert the Series to a dataframe, and then use the `reset_index` method to reset the index and create new columns for the index values:\n```\ndf_reactions = df.apply(extract_reactions, axis=1).explode().to_frame().reset_index()\ndf_summary = df_reactions.groupby(['sender', 'recipient', 'timestamp', 'index']).size().reset_index(name='count')\n```\nThis will create a dataframe with five columns: `sender`, `recipient`, `timestamp`, `index`, and `count`, which contains the number of reactions for each sender-recipient pair, along with the timestamp and index from the original dataframe.\n\nThe resulting dataframe will have the following structure:\n```\n  sender recipient     timestamp  index  count\n0  Alice       Bob  167259054807      0      1\n1  Alice       Bob  167259054807      0      1\n2  Alice     Carol  167259054807      0      1\n3    Bob       Bob  167259054807      1      1\n4    Bob     Carol  167259054807      1      1\n```\nI hope this helps! Let me know if you have any other questions.",
+  "has_answer": false
+}

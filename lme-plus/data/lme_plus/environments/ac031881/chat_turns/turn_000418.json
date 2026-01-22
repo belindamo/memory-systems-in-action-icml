@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 418,
+  "session_index": 38,
+  "session_id": "sharegpt_nE62dqp_79",
+  "turn_in_session": 0,
+  "date": "2023/05/29 (Mon) 11:30",
+  "role": "assistant",
+  "content": "It's likely that the result of the query is incorrect, due to a mismatch between the numerator and denominator in the calculation. The numerator is counting the number of rows in `reflect_items` with a NULL value for `immediate_reactions` and an `updated_at` value that is later than the `created_at` value. The denominator is counting the number of all rows in `reflect_items` with an `updated_at` value that is later than the `created_at` value.\n\nIf there are many more rows in `reflect_items` that meet the criteria for the denominator, compared to the criteria for the numerator, then the result of the calculation will be much smaller than 100%. If, on the other hand, there are many more rows in `reflect_items` that meet the criteria for the numerator than the denominator, then the result of the calculation will be much larger than 100%. This could be the cause of the results that you are seeing.\n\nTo resolve this issue, you may want to consider modifying the query so that the numerator and denominator match up more closely, or re-examine the data to ensure that it is consistent with the intended calculation.",
+  "has_answer": false
+}

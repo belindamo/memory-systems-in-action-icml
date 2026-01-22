@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 78,
+  "session_index": 7,
+  "session_id": "sharegpt_wIkETEO_27",
+  "turn_in_session": 3,
+  "date": "2023/05/22 (Mon) 04:43",
+  "role": "user",
+  "content": "This is how my server code looks like:\n\nconst express = require(\"express\");\nconst app = express();\nconst server = require(\"http\").createServer(app);\n\nconst cors = require(\"cors\");\n\napp.use(cors());\n\nconst PORT = process.env.PORT || 4000;\n\nserver.listen(PORT, () => console.log(`Server is running on port ${PORT}`));\n\nconst io = require(\"socket.io\")(server, {\n cors: {\n origin: \"\\*\",\n methods: [\"GET\", \"POST\"],\n },\n});\n\nlet availableClients = [];\n\napp.get(\"/\", (req, res) => {\n res.send(`Server is running.`);\n});\n\napp.post(\"/match\", (req, res) => {\n console.log(\"\");\n return res.status(200);\n});\n\nio.on(`connection`, (socket) => {\n console.log(`connected: `, socket.id);\n\n socket.on(`connect`, () => {\n console.log(`socket.on: `, socket.id);\n });\n\n socket.on(`setTags`, (tags) => {\n console.log(`Client with ${tags}`);\n\n availableClients.push({ socket, tags });\n });\n\n socket.on(`disconnect`, () => {\n console.log(\"disconnected: \", socket.id);\n socket.broadcast.emit(`callEnded`);\n });\n\n // socket.on(`callUser`, ({ userToCall, signalData, from, name }) => {\n // console.log(\"socket.on(callUser): \");\n // io.to(userToCall).emit(`callUser`, { signal: signalData, from, name });\n // });\n\n // socket.on(`answerCall`, (data) => {\n // io.to(data.to).emit(`callAccepted`, data.signal);\n // });\n});\n\n// app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));",
+  "has_answer": false
+}

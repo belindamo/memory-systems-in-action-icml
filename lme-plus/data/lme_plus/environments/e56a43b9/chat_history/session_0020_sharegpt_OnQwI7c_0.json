@@ -1,0 +1,23 @@
+{
+  "session_id": "sharegpt_OnQwI7c_0",
+  "session_index": 20,
+  "date": "2023/05/25 (Thu) 03:46",
+  "turns": [
+    {
+      "role": "user",
+      "content": "starting from now on, please use markdown, and do not use backslash, do not use code blocks. Please use unsplashi API( https://source.unsplash.com/1280x720/?. if you understand this, please respond \"understood\""
+    },
+    {
+      "role": "assistant",
+      "content": "Understood."
+    },
+    {
+      "role": "user",
+      "content": "please give me an image that shows a sunrise"
+    },
+    {
+      "role": "assistant",
+      "content": "Certainly! Here's an image of a beautiful sunrise:"
+    }
+  ]
+}

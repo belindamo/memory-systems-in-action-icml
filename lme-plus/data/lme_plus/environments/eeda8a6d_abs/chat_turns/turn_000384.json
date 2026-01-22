@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 384,
+  "session_index": 41,
+  "session_id": "sharegpt_TXDvX38_0",
+  "turn_in_session": 1,
+  "date": "2023/05/29 (Mon) 22:45",
+  "role": "assistant",
+  "content": "CI Integration is a valuable feature in Facets that simplifies the deployment process of Docker images in various environments. It provides a centralized repository for storing and managing Docker images, making it easier for organizations to maintain different versions of a service across different environments.\n\nFacets allows two types of CI Integration: environment and release stream. An environment integration can hold Docker images for a specific environment, such as a QA or production environment. On the other hand, a release stream integration can store images for a specific release stream, such as a development or stable release.\n\nPromotion workflows are another crucial feature in CI Integration that simplifies the promotion process of builds from one environment to another. Facets allows promotion workflows of type environment or release stream, which can be attached to similarly-typed CI Integration.\n\nPromotion workflows make it easier for organizations to move their builds from one environment to another, ensuring that builds are only promoted when they are ready, reducing the risk of errors, and making it easier to roll back if needed. Additionally, promotion workflows in CI Integration provide auditing information, such as who promoted which build, and when, ensuring accountability and transparency throughout the promotion process.",
+  "has_answer": false
+}

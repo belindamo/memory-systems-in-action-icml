@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 360,
+  "session_index": 29,
+  "session_id": "sharegpt_0es4qk5_0",
+  "turn_in_session": 16,
+  "date": "2023/03/13 (Mon) 09:47",
+  "role": "user",
+  "content": "OK, let's say we want to make some DNS changes to permit Dan pointing his domain at Vercel, even though it disallows Let's Encrypt. If I upload a new SSL certificate on `dans-gitbook.vercel.app` with Digicert instead, would that now allow him to point his domain at Gitbook?",
+  "has_answer": false
+}

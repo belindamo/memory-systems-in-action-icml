@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 270,
+  "session_index": 27,
+  "session_id": "sharegpt_6sDqw6L_0",
+  "turn_in_session": 5,
+  "date": "2023/04/06 (Thu) 17:57",
+  "role": "assistant",
+  "content": "When the Pi-hole installation process prompts you to \"Select a privacy mode for FTL,\" it is asking you to choose the level of data collection and reporting for the FTL (Fast Telemetry Logging) component of the Pi-hole software. FTL is responsible for collecting statistics on the queries handled by Pi-hole.\n\nThere are three privacy modes to choose from:\n\n1. Basic: This option will collect basic statistics such as the number of queries, blocked domains, and clients. This information will be used to improve the performance and functionality of Pi-hole.\n2. Intermediate: This option will collect the same information as Basic mode, but also includes the domain names of blocked queries. This information will be used to improve the accuracy of the ad-blocking lists used by Pi-hole.\n3. Advanced: This option will collect the same information as Intermediate mode, but also includes the IP addresses of clients that make requests to Pi-hole. This information will be used to troubleshoot issues with the software and improve its performance.\n\nSelecting a higher privacy mode will collect more data, but can also help to improve the performance and accuracy of Pi-hole. You can choose the one that best fits your needs and preferences.\n\nPlease be aware that if you select the advanced mode, some users may consider it to be a violation of their privacy.",
+  "has_answer": false
+}

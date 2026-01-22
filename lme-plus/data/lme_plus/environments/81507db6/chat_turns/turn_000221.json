@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 221,
+  "session_index": 23,
+  "session_id": "sharegpt_gzocj9T_0",
+  "turn_in_session": 0,
+  "date": "2023/07/21 (Fri) 12:39",
+  "role": "user",
+  "content": "we are going to create a framework for generating characters belonging to a fantasy world with parameters which can include but is not limited to: attributes, descriptions, and motives. curly brackets indicate proper nouns and should be tagged for future use as we expand the world (e.g. {proper noun}).\n\nHere's an example of what the output should look like:\n\n[name = Rishi Swiftwind]\n[background = hunter]\n[description = a man in his early thirties with jet black hair and emerald colored eyes]\n[personality = quick-tempered, speaks with a sutter, prefers to be alone]\n\n{Rishi Swiftwind} is currently recovering from an expedition to the {Dreadhollow Forest} where he sustained an injury hunting a pack of wolves he suspects to be secretly {Werewolves}. He needs an adventuring party to help him track down their lair.",
+  "has_answer": false
+}

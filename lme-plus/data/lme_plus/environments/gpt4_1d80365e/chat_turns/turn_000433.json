@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 433,
+  "session_index": 42,
+  "session_id": "sharegpt_buXamwc_7",
+  "turn_in_session": 4,
+  "date": "2023/05/17 (Wed) 10:19",
+  "role": "assistant",
+  "content": "You're correct, `apt-get` is a legacy command and `apt` should be used instead. In addition, the `certbot-dns-google` package is now available in the official Debian and Ubuntu repositories, so you can install it with `apt` without having to add an external repository.\n\nHere's an updated `Dockerfile` that uses `apt` and the official `certbot-dns-google` package:\n```bash\nFROM python:3.9-slim-buster\n\n# Install Certbot and the Google Domains plugin\nRUN apt update && apt install -y certbot python3-certbot-dns-google\n\n# Copy the script to the container\nCOPY certbot.sh /app/\n\n# Set the working directory to /app\nWORKDIR /app\n\n# Make the script executable\nRUN chmod +x certbot.sh\n```\nThis `Dockerfile` is similar to the previous one, but it uses `apt` instead of `apt-get`, and installs the `certbot-dns-google` package from the official Debian/Ubuntu repositories using the `python3-` prefix.\n\nNote that the `python3-` prefix is required for the package name because `certbot` is written in Python 3, so the package name includes the Python 3 version number to avoid conflicts with Python 2 packages.\n\nWith this updated `Dockerfile`, you can rebuild your Docker image using `docker-compose build` to incorporate the changes.",
+  "has_answer": false
+}

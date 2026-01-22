@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 168,
+  "session_index": 15,
+  "session_id": "sharegpt_dRn7b5l_293",
+  "turn_in_session": 16,
+  "date": "2023/03/11 (Sat) 06:47",
+  "role": "assistant",
+  "content": "Sure, here's an example table format for test cases:\n\n| Test Case | Description | Input | Expected Output | Actual Output | Status | Error |\n| --- | --- | --- | --- | --- | --- | --- |\n| TC001 | User login | Valid email and password | User dashboard | User dashboard | Pass | None |\n| TC002 | User login | Invalid email or password | Error message | Error message | Pass | None |\n| TC003 | Add course | Valid course details | Success message | Success message | Pass | None |\n| TC004 | Add course | Invalid course details | Error message | Error message | Pass | None |\n| TC005 | Search job | Valid job keyword | List of job postings | List of job postings | Pass | None |\n| TC006 | Search job | Invalid job keyword | Empty list | Empty list | Pass | None |\n| TC007 | Contact us | Valid inquiry details | Success message | Success message | Pass | None |\n| TC008 | Contact us | Missing required details | Error message | Error message | Pass | None |\n| TC009 | Access notes | Valid user and branch | List of notes | List of notes | Pass | None |\n| TC010 | Access notes | Invalid user or branch | Empty list | Empty list | Pass | None |",
+  "has_answer": false
+}

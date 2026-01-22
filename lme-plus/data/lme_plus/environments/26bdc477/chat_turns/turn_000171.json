@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 171,
+  "session_index": 15,
+  "session_id": "sharegpt_G18Riup_0",
+  "turn_in_session": 7,
+  "date": "2023/03/07 (Tue) 07:24",
+  "role": "assistant",
+  "content": "You can use the `kubectl get secrets` command to retrieve the list of secrets in a namespace, and then inspect the secrets to determine if they are managed by SOPS or not.\n\nSOPS secrets are typically annotated with the `sops.k8s.pgp.mozilla.org/encrypted` annotation, which indicates that the secret is encrypted using SOPS. You can use the `kubectl describe` command to retrieve the annotations for a secret:\n```php\nkubectl describe secret <secret-name>\n```\nIf the secret has the `sops.k8s.pgp.mozilla.org/encrypted` annotation, it is a SOPS secret. If the annotation is not present, it is a normal secret.\n\nYou can also use the following command to retrieve a list of all SOPS secrets in a namespace:\n```csharp\nkubectl get secrets -n <namespace> -o json | jq -r '.items[] | select(.metadata.annotations.\"sops.k8s.pgp.mozilla.org/encrypted\" == \"true\") | .metadata.name'\n```",
+  "has_answer": false
+}

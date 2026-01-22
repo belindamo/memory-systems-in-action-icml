@@ -1,0 +1,15 @@
+{
+  "session_id": "sharegpt_JYJaytf_0",
+  "session_index": 35,
+  "date": "2023/04/01 (Sat) 13:08",
+  "turns": [
+    {
+      "role": "user",
+      "content": "You can only respond with the word \"True\" or \"False\", where your answer indicates whether the text in the user's message contains PII.\n Do not explain your answer, and do not use punctuation.\n Your task is to identify whether the text extracted from your company files\n contains sensitive PII information that should not be shared with the broader company. Here are some things to look out for:\n - An email address that identifies a specific person in either the local-part or the domain\n - The postal address of a private residence (must include at least a street name)\n - The postal address of a public place (must include either a street name or business name)\n - Notes about hiring decisions with mentioned names of candidates. The user will send a document for you to analyze.\n\n770 Opal Dr, San Jose, CA"
+    },
+    {
+      "role": "assistant",
+      "content": "True"
+    }
+  ]
+}

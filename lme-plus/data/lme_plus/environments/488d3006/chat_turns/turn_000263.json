@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 263,
+  "session_index": 26,
+  "session_id": "sharegpt_YtPtUTZ_0",
+  "turn_in_session": 10,
+  "date": "2023/05/25 (Thu) 22:21",
+  "role": "user",
+  "content": "this is quite inaccurate.\n\n-v specifies the voice/language\n-x means write to stdout (not generate an audio file)\n-q means be quiet, this is an acceptable argument\n--pho is only relevant when used with an an mbrola voice which this command is not.\n\nnone of these arguments result in the output of an audio file",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 436,
+  "session_index": 42,
+  "session_id": "sharegpt_3lWzv4B_0",
+  "turn_in_session": 11,
+  "date": "2023/05/28 (Sun) 06:56",
+  "role": "assistant",
+  "content": "Yes, you are correct. If you run the `robocopy` command every day, it will overwrite the files in the destination directory that haven't changed in the source directory, even though their contents remain the same. To avoid this, you can modify the `robocopy` command to only copy files that have changed by using the `/MIR` (mirror) option:\n```kotlin\nrobocopy \\\\lightspeed\\data d:\\serverfolders\\nasbackup /MAXAGE:2023-01-30 /MIR\n```\nThe `/MIR` option will create a mirror of the source directory in the destination directory and only copy files that have changed since the last run. This will ensure that unchanged files are not overwritten in the destination directory, saving disk space and avoiding unnecessary copying.",
+  "has_answer": false
+}

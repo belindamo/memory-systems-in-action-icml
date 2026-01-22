@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 375,
+  "session_index": 40,
+  "session_id": "sharegpt_oPOTyid_141",
+  "turn_in_session": 16,
+  "date": "2023/05/28 (Sun) 23:52",
+  "role": "assistant",
+  "content": "To apply the filter for retrieving only items in stock globally without modifying all APIs, you can create a custom function or plugin that hooks into the WooCommerce API request process. This function or plugin can intercept the request and modify the query arguments to include the stock status filter before the API call is made. This way, all API requests will automatically include the filter for retrieving only items in stock without needing to modify each individual API.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 57,
+  "session_index": 5,
+  "session_id": "sharegpt_Z7M15Pp_0",
+  "turn_in_session": 7,
+  "date": "2023/05/20 (Sat) 20:04",
+  "role": "assistant",
+  "content": "To stop all programs running on port 80, you can follow these steps:\n\n1. Open a command prompt or terminal window as an administrator.\n2. Type the following command and press enter:\n```\nnetstat -ano | findstr :80\n```\nThis will display a list of all programs that are currently using port 80.\n\n3. Identify the process ID (PID) of each program that is using port 80. You will see this number in the last column of the output.\n4. To stop",
+  "has_answer": false
+}

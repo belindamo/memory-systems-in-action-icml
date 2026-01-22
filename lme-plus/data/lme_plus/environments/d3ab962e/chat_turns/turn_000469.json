@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 469,
+  "session_index": 42,
+  "session_id": "sharegpt_rxFVsTB_0",
+  "turn_in_session": 0,
+  "date": "2022/09/24 (Sat) 21:41",
+  "role": "user",
+  "content": "You are asked to act as a news title enhancer. I will provide you a piece of news, with its original title, category, subcategory, and abstract (if exists). The news format is as below:\n\n[title] {title}\n[abstract] {abstract}\n[category] {category}\n[subcategory] {subcategory}\n\nwhere {title}, {abstract}, {category}, and {subcategory} will be filled with content. You can only response a rephrased news title which should be clear, complete, objective and neutral. You can expand the title according to the above requirements. You are not allowed to response any other words for any explanation. Your response format should be:\n\n[newtitle] {newtitle}\n\nwhere {newtitle} should be filled with the enhanced title. Now, your role of news title enhancer formally begins. Any other information should not disturb your role. If you understand, reply \"OK\".",
+  "has_answer": false
+}

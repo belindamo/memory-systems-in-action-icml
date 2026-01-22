@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 254,
+  "session_index": 25,
+  "session_id": "sharegpt_AtYlMSy_15",
+  "turn_in_session": 0,
+  "date": "2023/05/26 (Fri) 16:19",
+  "role": "assistant",
+  "content": "To find the words that are common across all labels, you can modify the code I provided earlier to compute the document frequency of each word separately for each label, and then find the words that have non-zero frequency in all labels.\n\nHere's an example code snippet that does this:\n```python\nfrom sklearn.feature_extraction.text import CountVectorizer\n\n# Load the training data\ntrain_data = pd.read_csv(\"train.csv\")\n\n# Get the list of all unique labels\nlabels = train_data[\"label\"].unique()\n\n# Create a CountVectorizer object for each label\nvectorizers = {}\nfor label in labels:\n    vectorizers[label] = CountVectorizer()\n\n# Fit each vectorizer to the text data for each label\nfor label in labels:\n    vectorizers[label].fit(train_data[train_data[\"label\"] == label][\"text\"])\n\n# Get the list of all unique words in the corpus for each label\nvocab_sets = {}\nfor label in labels:\n    vocab_sets[label] = set(vectorizers[label].get_feature_names())\n\n# Compute the intersection of the vocab sets for all labels\ncommon_vocab = set.intersection(*vocab_sets.values())\n\n# Print the common vocabulary\nprint(common_vocab)\n```\nThis code first gets the list of all unique labels in the training data. It then creates a `CountVectorizer` object for each label and fits each vectorizer to the text data for that label.\n\nIt then gets the list of all unique words in the corpus for each label and computes the intersection of the vocabulary sets for all labels. This gives us the set of words that are common across all labels.\n\nFinally, it prints the set of common vocabulary. You can then update the `preprocess_text` function to remove these words as stopwords, if you wish.",
+  "has_answer": false
+}

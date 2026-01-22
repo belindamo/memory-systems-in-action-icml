@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 254,
+  "session_index": 24,
+  "session_id": "sharegpt_1MKqbAt_0",
+  "turn_in_session": 3,
+  "date": "2023/05/25 (Thu) 20:12",
+  "role": "assistant",
+  "content": "Certainly! Here is the same Cronus Zen script, modified to work with an Xbox One controller:\n```\n// Cronus Zen Script for Call of Duty Mobile (Xbox One controller)\n\n// Mod 1: Rapid Fire\n\n// Press and hold the left trigger to rapidly fire your weapon.\n\nif (GetButtonState(LT))\n{\n  SetButtonState(LT, false);\n  SetButtonState(LT, true);\n}\n\n// Mod 2: Auto Sprint\n\n// Automatically sprint when you move forward.\n\nif (GetButtonState(DPad_Up))\n{\n  SetButtonState(Sprint, true);\n}\nelse\n{\n  SetButtonState(Sprint, false);\n}\n\n// Mod 3: Quick Scope\n\n// Quickly scope in and out with the right trigger.\n\nif (GetButtonState(RT))\n{\n  SetButtonState(RT, false);\n  SetButtonState(Scope, true);\n  Sleep(100);\n  SetButtonState(Scope, false);\n}\n\n// Mod 4: Auto Heal\n\n// Automatically use a medkit when your health is low.\n\nif (GetPlayerHealth() < 50)\n{\n  SetButtonState(X, true);\n  Sleep(100);\n  SetButtonState(X, false);\n}\n\n// Mod 5: Jump Shot\n\n// Jump and shoot at the same time with the left trigger.\n\nif (GetButtonState(LT))\n{\n  SetButtonState(A, true);\n}\nelse\n{\n  SetButtonState(A, false);\n}\n```\nI hope this helps! Let me know if you have any questions or need further assistance.",
+  "has_answer": false
+}

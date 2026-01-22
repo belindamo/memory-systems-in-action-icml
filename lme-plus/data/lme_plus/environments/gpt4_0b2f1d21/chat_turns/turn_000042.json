@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 42,
+  "session_index": 4,
+  "session_id": "sharegpt_QP630pA_5",
+  "turn_in_session": 6,
+  "date": "2023/05/25 (Thu) 16:21",
+  "role": "assistant",
+  "content": "| Command | Description | Usage |\n| --- | --- | --- |\n| /blend | Allows you to upload 2-5 images and merge them into a novel new image. | /blend |\n| /blend Options | Prompts to upload 2 photos, ability to add up to 5 images total, select aspect ratio (1:1, 2:3, 3:2) and custom suffixes. | /blend + uploading images + optional fields |\n| /blend Tips | For best results, upload images that are the same aspect ratio as desired result. | N/A |",
+  "has_answer": false
+}

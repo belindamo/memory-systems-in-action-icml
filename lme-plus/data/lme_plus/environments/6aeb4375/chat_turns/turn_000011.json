@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 11,
+  "session_index": 1,
+  "session_id": "sharegpt_I5HWvry_0",
+  "turn_in_session": 3,
+  "date": "2023/07/12 (Wed) 02:43",
+  "role": "assistant",
+  "content": "To create a link to a network share location in a SharePoint library or page, you can follow these steps:\n\n1. Navigate to the library or page where you want to add the link.\n2. Click on the \"New\" button and select \"Link\" or \"Shortcut\" from the options.\n3. In the \"Create Link\" or \"Create Shortcut\" dialog box, enter the name for the link and the URL for the network share location. The URL should be in the format of `\\\\server_name\\folder_name`.\n4. Click on \"OK\" to save the link.\n\nThe link will now appear in the library or page and users will be able to click on it to access the content on the network share.\n\nNote: You may need to have permissions to create links and shortcuts on the library or page and also need to ensure that the network share location is accessible by the user.",
+  "has_answer": false
+}

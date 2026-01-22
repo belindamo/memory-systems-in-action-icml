@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 301,
+  "session_index": 25,
+  "session_id": "sharegpt_sE8hWwU_17",
+  "turn_in_session": 13,
+  "date": "2023/05/27 (Sat) 14:20",
+  "role": "user",
+  "content": "ok the cell B2 is in the right format but still 8:26.\n\nIf I -1 I get 12:26 \n=TEXT(((B2-DATE(1899,12,30))\\*86400-(1\\*3600))/86400+DATE(1899,12,30),\"MM/DD/YYYY hh:mm:ss AM/PM\")\n\nBut first let me see the unix epoch of 01/17/2023 1:26:31 PM",
+  "has_answer": false
+}

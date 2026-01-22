@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 524,
+  "session_index": 53,
+  "session_id": "sharegpt_qCpHDRF_0",
+  "turn_in_session": 1,
+  "date": "2023/05/29 (Mon) 16:52",
+  "role": "assistant",
+  "content": "Here is a PowerShell script that counts the number of PDF files within an array of multiple subfolders and writes the output to a CSV file using Export-CSV:\n```perl\n$folders = @(\"C:\\Folder1\", \"C:\\Folder2\", \"C:\\Folder3\")\n$results = @()\n\nWrite-Progress -Activity \"Counting PDF Files\" -Status \"In Progress\"\n\nforeach ($folder in $folders)\n{\n    $pdfFiles = Get-ChildItem -Path $folder -Filter *.pdf -Recurse | Measure-Object\n    $pdfCount = $pdfFiles.Count\n\n    $results += New-Object PSObject -Property @{\n        Folder = $folder\n        PDF_Count = $pdfCount\n    }\n\n    Write-Progress -Activity \"Counting PDF Files\" -Status \"$folder\" -PercentComplete ($folders.IndexOf($folder) / $folders.Count * 100)\n}\n\n$results | Export-Csv -Path \"C:\\PDF_Count.csv\" -NoTypeInformation\n\nWrite-Progress -Activity \"Counting PDF Files\" -Status \"Completed\" -Completed\n\nWrite-Output \"Finished counting PDF files and exporting results to C:\\PDF_Count.csv\"\n```\nThe script uses the `Write-Progress` cmdlet to display a progress bar that indicates once for each subfolder. The progress bar displays the activity, status, and completion percentage. The results are stored in an array of objects and then exported to a CSV file using the `Export-CSV` cmdlet.",
+  "has_answer": false
+}

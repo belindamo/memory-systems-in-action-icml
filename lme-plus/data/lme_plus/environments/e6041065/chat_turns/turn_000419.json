@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 419,
+  "session_index": 38,
+  "session_id": "sharegpt_TuureWP_17",
+  "turn_in_session": 0,
+  "date": "2023/05/29 (Mon) 17:34",
+  "role": "assistant",
+  "content": "The correct answers are:\n\n* An XML manifest file\n* A driveset CSV file\n\nBefore you prepare the drives for an Azure Import/Export job, you need to create two files:\n\n1. An XML manifest file: This file describes the data that you want to import or export, including the type of data, the file paths, and the storage account and container to use. You can create this file manually or by using the AzCopy command-line tool.\n2. A driveset CSV file: This file lists the drives that you will use for the import or export job, including the drive letter, the volume label, and the location of the manifest file. You can create this file manually or by using the Azure Import/Export Tool.\n\nTherefore, the correct answers are:\n\n* An XML manifest file\n* A driveset CSV file",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 290,
+  "session_index": 26,
+  "session_id": "sharegpt_iwcVyKX_0",
+  "turn_in_session": 11,
+  "date": "2023/05/28 (Sun) 16:19",
+  "role": "assistant",
+  "content": "The Uniswap Info website uses the following metrics to display data for each pool:\n\n* Total Value Locked (TVL): The total value of all assets locked in a liquidity pool, denominated in USD. This is calculated by multiplying the amount of each asset in the pool by its current price in USD and adding the results together.\n* 24h Volume: The total volume of trades executed in a pool over the last 24 hours, denominated in USD. This is calculated by summing the USD value of all trades executed in the pool over the last 24 hours.\n\nAs for filters, the Uniswap Info website includes all liquidity pools on the Uniswap V3 network, regardless of their TVL or other characteristics. However, it only displays data for pools with a minimum of $10,000 in TVL. This filter helps to exclude small, less liquid pools from the data displayed on the website. Additionally, the website excludes pools that have not had any trading activity in the last 24 hours from the 24h Volume rankings.\n\nIt's worth noting that the Uniswap V3 subgraph, which is a separate tool used for querying data on the Uniswap V3 network, may use slightly different metrics or filters depending on how it is configured. However, the metrics and filters used by the Uniswap Info website are generally considered standard for analyzing liquidity pool data on the Uniswap V3 network.",
+  "has_answer": false
+}

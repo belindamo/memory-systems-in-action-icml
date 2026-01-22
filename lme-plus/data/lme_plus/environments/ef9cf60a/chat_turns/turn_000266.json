@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 266,
+  "session_index": 30,
+  "session_id": "sharegpt_VrUNawI_95",
+  "turn_in_session": 2,
+  "date": "2023/05/25 (Thu) 23:49",
+  "role": "assistant",
+  "content": "Voici un autre exemple de suite num\u00e9rique: la suite de Fibonacci. Cette suite est d\u00e9finie par les termes suivants:\nF(0) = 0\nF(1) = 1\nF(n) = F(n-1) + F(n-2) pour n > 1\n\nLa complexit\u00e9 de cette suite est de O(2^n), car pour calculer chaque terme, nous devons calculer les deux termes pr\u00e9c\u00e9dents. Cela signifie que pour calculer le terme n, nous devons calculer les termes n-1 et n-2, ce qui n\u00e9cessite de calculer les termes n-2 et n-3, etc. Cela donne une arborescence de calculs qui s'\u00e9tend jusqu'\u00e0 une profondeur de n, avec chaque n\u0153ud ayant 2 branches, ce qui donne 2^n n\u0153uds.",
+  "has_answer": false
+}

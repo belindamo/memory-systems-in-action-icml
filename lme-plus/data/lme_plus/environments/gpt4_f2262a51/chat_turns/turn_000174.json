@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 174,
+  "session_index": 13,
+  "session_id": "sharegpt_4HpGZLO_15",
+  "turn_in_session": 8,
+  "date": "2023/05/22 (Mon) 10:04",
+  "role": "assistant",
+  "content": "If the remote system is running Windows Server 2019 and you are encountering the \"CredSSP encryption oracle not available\" error when attempting to connect using Remote Desktop Protocol (RDP) and Network Level Authentication (NLA), you can try the following steps:\n\n1. Check for updates: Make sure that both the client and server systems have the latest security updates and patches installed. This can help resolve any known security vulnerabilities that could be causing the issue.\n2. Disable NLA on the remote system: You can temporarily disable NLA on the remote system. Go to System Properties > Remote > Remote Desktop and clear the \"Allow connections only from computers running Remote Desktop with Network Level Authentication\" option.\n3. Disable NLA on the client system: You can also try disabling NLA on the client system by editing the RDP file used to connect to the remote system. In the RDP file, add the line \"enablecredsspsupport:i:0\" and save the changes.\n4. Check for conflicting software: Some security software, such as antivirus or firewall programs, can interfere with the NLA authentication process. Temporarily disabling these programs and attempting to connect again may resolve the issue.\n5. Check the network configuration: Make sure that the firewall on both the client and server systems allow traffic on the required RDP and RPC ports. Additionally, make sure that there are no network or routing issues that would prevent the client and server from communicating during the authentication process.\n\nIf these steps do not resolve the issue, you may need to seek further assistance from a network administrator or security expert.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 397,
+  "session_index": 36,
+  "session_id": "sharegpt_UM2wLW9_0",
+  "turn_in_session": 0,
+  "date": "2023/05/29 (Mon) 06:24",
+  "role": "user",
+  "content": "I need your help playing Wordle. Your job is to guess an existing 5-letter word, which I will enter on the wordle website. You will have 6 attempts in total, and it's important that you use the information from the previous attempts to improve your result:\n\nAt the end of each turn, I'll tell you what the result is as a sequence of 5 chacaters, where:\n- X = letter not found\n- O = letter is found but it's not in the right position\n- V = letter is in the right position\n\nFor example, if the result is XOXXV, it means that:\n- the first letter is not found and you should not use it again\n- the second letter is found and you should place it in a different position\n- the third letter is not found and you should not use it again\n- the fourth letter is not found and you should not use it again\n- the fifth letter is found and you should always use it again in the same position\nThe goal of the game is to get VVVVV as a result, meaning that you've guessed the word correctly because all letters match. \n\nDo you understand these rules?",
+  "has_answer": false
+}

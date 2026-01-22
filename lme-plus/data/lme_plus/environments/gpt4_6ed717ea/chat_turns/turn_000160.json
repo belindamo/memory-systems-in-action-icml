@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 160,
+  "session_index": 15,
+  "session_id": "sharegpt_QovWQci_0",
+  "turn_in_session": 5,
+  "date": "2023/05/29 (Mon) 10:55",
+  "role": "assistant",
+  "content": "A blockchain is a decentralized, digital ledger of transactions that is duplicated and distributed across the entire network of computer systems on the blockchain. Each block in the chain contains a number of transactions, and every time a new transaction occurs on the blockchain, a record of that transaction is added to every participant's ledger. The decentralized database managed by multiple participants is known as a distributed ledger.\n\nThe integrity and chronological order of the blockchain are enforced with cryptography. And, once recorded, the data in any given block cannot be altered retroactively without the alteration of all subsequent blocks and the consensus of the network. This allows the participants to trust the record of transactions without the need for a central authority.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 104,
+  "session_index": 10,
+  "session_id": "sharegpt_UUaR1PN_13",
+  "turn_in_session": 6,
+  "date": "2023/05/20 (Sat) 14:07",
+  "role": "assistant",
+  "content": "I apologize for the confusion. Let's check if the jobs are being passed correctly to the template. In your `job_posting.html` file, replace the following block of code:\n```html\n{% for job in jobs %}\n    <div class=\"col-lg-4 col-md-6 mb-4\">\n        <div class=\"card h-100\">\n            <div class=\"card-body\">\n                <h4 class=\"card-title\">{{ job.title }}</h4>\n                <h6 class=\"card-subtitle mb-2 text-muted\">{{ job.company }}</h6>\n                <p class=\"card-text\">{{ job.description }}</p>\n            </div>\n        </div>\n    </div>\n{% endfor %}\n```\nWith this code:\n```html\n{% for job in jobs %}\n    <div class=\"col-lg-4 col-md-6 mb-4\">\n        <div class=\"card h-100\">\n            <div class=\"card-body\">\n                <h4 class=\"card-title\">Job Title: {{ job.title }}</h4>\n                <h6 class=\"card-subtitle mb-2 text-muted\">Company: {{ job.company }}</h6>\n                <p class=\"card-text\">Description: {{ job.description }}</p>\n            </div>\n        </div>\n    </div>\n{% else %}\n    <div class=\"col-12\">\n        <p>No jobs found.</p>\n    </div>\n{% endfor %}\n```\nThis updated code includes an `{% else %}` clause in the `{% for %}` loop, which will display \"No jobs found.\" if there are no jobs in the `jobs` variable. Save the changes and refresh the page.\n\nIf you still only see the \"Job Postings\" heading and no jobs, and if the \"No jobs found\" message is not displayed either, there might be an issue with your environment or setup. In that case, please provide any error messages or relevant logs from your terminal, and I'll help you troubleshoot the issue further.",
+  "has_answer": false
+}

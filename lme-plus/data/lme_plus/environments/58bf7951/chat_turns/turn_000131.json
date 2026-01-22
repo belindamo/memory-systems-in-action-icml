@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 131,
+  "session_index": 11,
+  "session_id": "sharegpt_HatyEzg_0",
+  "turn_in_session": 13,
+  "date": "2023/05/22 (Mon) 11:57",
+  "role": "assistant",
+  "content": "In the Denavit-Hartenberg (DH) convention, the link offset \ud835\udc51\ud835\udc56 refers to the distance along the common normal (perpendicular to both the previous and the current z-axis) between the previous z-axis and the current z-axis. The link offset is used to describe the position of the current frame relative to the previous frame.\n\nIn the DH convention, the link parameters consist of four parameters: \ud835\udc4e\ud835\udc56, \ud835\udf03\ud835\udc56, \ud835\udc51\ud835\udc56, and \ud835\udf19\ud835\udc56, which describe the relative orientation and position of each link frame with respect to its preceding frame. The link offset, \ud835\udc51\ud835\udc56, is one of these four parameters and is used to describe the position of the current frame along the common normal with respect to the previous frame.",
+  "has_answer": false
+}

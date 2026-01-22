@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 60,
+  "session_index": 6,
+  "session_id": "sharegpt_RbYCBJo_0",
+  "turn_in_session": 3,
+  "date": "2023/05/27 (Sat) 06:35",
+  "role": "assistant",
+  "content": "Sure, here's an example of a simple server program written in Bash shell script:\n```bash\n#!/bin/bash\n\n# Set the listening port and maximum number of connections\nPORT=8080\nMAX_CONN=5\n\n# Start the server\necho \"Starting server on port $PORT\"\nwhile true; do\n    # Wait for a new client connection\n    read -r REQUEST < /dev/tcp/localhost/$PORT\n    if [ \"$REQUEST\" != \"\" ]; then\n        # Handle the client request\n        echo \"Received request: $REQUEST\"\n        RESPONSE=\"Hello, world!\"\n        # Send the response back to the client\n        echo -e \"HTTP/1.1 200 OK\\r\\nContent-Length: ${#RESPONSE}\\r\\n\\r\\n$RESPONSE\" \\\n        | nc -q 0 -N localhost $PORT\n    fi\ndone\n```\nThis script starts a simple HTTP server on port 8080 and listens for incoming client connections. When a client connects, it reads the request and sends a \"Hello, world!\" response back to the client.\n\nNote that this is a very basic example and would not be suitable for a real-world server application. It does not include any error handling, authentication, or security measures, and would not be able to handle multiple clients simultaneously. It is also not optimized for performance and may not scale well under heavy loads.",
+  "has_answer": false
+}

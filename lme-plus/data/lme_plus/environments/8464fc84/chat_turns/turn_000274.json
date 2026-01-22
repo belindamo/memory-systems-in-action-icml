@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 274,
+  "session_index": 25,
+  "session_id": "sharegpt_4PwGTCZ_0",
+  "turn_in_session": 1,
+  "date": "2023/05/26 (Fri) 07:49",
+  "role": "assistant",
+  "content": "In PrestaShop, additional images for products are stored in the \"image\" table of the database. The table contains a column called \"id\\_product\" which links each image to a specific product, as well as a column called \"position\" which determines the order in which the images will be displayed on the product page. To access the additional images for a specific product, you can use a SQL query such as:\n```\nSELECT * FROM ps_image WHERE id_product = [product ID] ORDER BY position;\n```\nMake sure to replace \"[product ID]\" with the actual ID of the product for which you want to retrieve the additional images.",
+  "has_answer": false
+}

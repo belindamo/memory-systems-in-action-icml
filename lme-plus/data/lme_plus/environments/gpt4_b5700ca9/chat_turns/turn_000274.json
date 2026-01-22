@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 274,
+  "session_index": 27,
+  "session_id": "sharegpt_6sDqw6L_0",
+  "turn_in_session": 9,
+  "date": "2023/04/06 (Thu) 17:57",
+  "role": "assistant",
+  "content": "If you are using a Technicolor MediaAccess TG789vac v2 router, with software version 17.1, firmware version 17.1.8066-0001002-20201214122207, the process to configure your router to use Pi-hole as its DNS server would be as follow:\n\n1. Open a web browser and enter the IP address of your router in the address bar. The default IP address is typically 192.168.1.1\n2. Log in using your admin credentials. If you haven't changed it, the default login credentials can be found in the router's documentation.\n3. Once logged in, navigate to the \"Advanced settings\" menu, then select \"IPv4\"\n4. In the \"IPv4\" settings page, you will find the \"Primary DNS server\" field, enter the IP address of your Raspberry Pi running Pi-hole. Leave the \"Secondary DNS server\" field blank.\n5. Click on \"Apply\" button to save the changes.\n6. Restart your router and all the devices connected to it for the changes to take effect.\n\nPlease be aware that these steps are a general guide and may vary depending on the specific version of firmware or software you are running. If you have any trouble, refer to the router's documentation or contact the manufacturer for more information.",
+  "has_answer": false
+}

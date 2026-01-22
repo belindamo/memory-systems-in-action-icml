@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 357,
+  "session_index": 34,
+  "session_id": "sharegpt_gPFzM9v_121",
+  "turn_in_session": 0,
+  "date": "2023/05/27 (Sat) 10:26",
+  "role": "assistant",
+  "content": "To create a new key-value \"Flag\" at HKLM\\Software\\Student and assign it a null-terminated value of \"Now we're cooking with fire!\", you can use the following command:\n\nreg add HKLM\\Software\\Student /v Flag /t REG\\_SZ /d \"Now we're cooking with fire!\" /f\n\nThen run the binary at C:\\Users\\Offsec\\Desktop\\registry-exercises\\registry01.exe to obtain the flag.\n\nNote: You may need to run the command prompt as an administrator to make changes to the registry.",
+  "has_answer": false
+}

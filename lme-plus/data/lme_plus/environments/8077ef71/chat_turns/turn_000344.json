@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 344,
+  "session_index": 25,
+  "session_id": "sharegpt_KyDTtHX_0",
+  "turn_in_session": 3,
+  "date": "2022/03/09 (Wed) 08:52",
+  "role": "assistant",
+  "content": "The concept of \"value-blindness\" refers to a limitation of the Bitcoin blockchain's transaction model, specifically the use of unspent transaction outputs (UTXOs) to control the movement of funds.\n\nIn Bitcoin, when a user wants to make a transaction, they must specify the exact UTXOs they want to spend, along with the destination address and the amount they want to send. These UTXOs are all-or-nothing, meaning that they can only be spent in their entirety; there is no way to split or divide them.\n\nThis limitation can be a problem for certain types of transactions, such as hedging contracts. A hedging contract is a type of financial contract where two parties (A and B) agree to exchange a fixed amount of money after a certain period of time, with the exchange rate being determined by the market value of a specific asset (e.g. 1 BTC = $1000 USD).\n\nFor example, if A and B put in $1000 worth of BTC each into a hedging contract, and after 30 days, the script should send $1000 worth of BTC to A and the rest to B. However, because UTXO are all-or-nothing, the only way to achieve this is through the very inefficient hack of having many UTXO of varying denominations (e.g. one UTXO of 2k for every k up to 30) and having the oracle contract pick which UTXO to send to A and which to B.\n\nThis issue can be solved by the use of smart-contracts which Ethereum provides, where the amount of transaction and the exchange rate can be programmed in the contract, so the funds can be automatically divided among the participants in the contract without relying on the inefficient hack of having many UTXOs.",
+  "has_answer": false
+}

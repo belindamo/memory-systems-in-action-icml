@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 576,
+  "session_index": 52,
+  "session_id": "sharegpt_FQi5DlJ_48",
+  "turn_in_session": 7,
+  "date": "2023/05/29 (Mon) 03:22",
+  "role": "assistant",
+  "content": "You would insert this code within the for loop where you are appending the card elements to the page. For example:\n```css\nfor (var i = 0; i < searchResults.length; i++) {\n    var user = searchResults[i];\n    var card = `<div class=\"card\" style=\"margin-top: 2rem;\">\n                    <div class=\"card-body\">\n                        <p class=\"card-text\">` + user.title + `</p>\n                    </div>\n                    <div class=\"card-footer text-muted\">\n                        ` + user.release_year + `\n                    </div>\n                    <div class=\"card-footer text-muted\">\n                        ` + user.rating + `\n                    </div>\n                    <div class=\"card-footer text-muted\">\n                        <a href=\"filmDetails.html\" class=\"btn btn-primary View\">View Film Details</a>\n                    </div>\n                </div>`;\n    $(\"#posts\").append(card);\n    $(\".View\").on(\"click\", function() {\n        sessionStorage.setItem(\"selectedFilm\", JSON.stringify(user));\n    });\n}\n```\nThis way, when the user clicks on the \"View Film Details\" button, the data associated with that specific button press (user) is saved to session storage so that it can be accessed on the next page (filmDetails.html).",
+  "has_answer": false
+}

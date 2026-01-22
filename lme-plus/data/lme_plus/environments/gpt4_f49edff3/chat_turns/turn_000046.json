@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 46,
+  "session_index": 4,
+  "session_id": "sharegpt_1FQUTKz_45",
+  "turn_in_session": 3,
+  "date": "2023/01/16 (Mon) 07:13",
+  "role": "user",
+  "content": "the dns\\_public\\_ips array is still returning ['1.2.3.4', '13.250.2.198']\n\nit should only return the DNS record, remove the append",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 106,
+  "session_index": 9,
+  "session_id": "sharegpt_XxwMP9O_0",
+  "turn_in_session": 5,
+  "date": "2023/05/22 (Mon) 13:45",
+  "role": "assistant",
+  "content": "Yes, you can include aggregations in a custom report type in Salesforce. One way to include aggregations is to use a \"Cross Filters\" option when creating a custom report type.\n\nHere's how to do it:\n\n1. When creating a custom report type, select the primary object and related object(s) that you want to include in your report type.\n2. In the \"Cross Filters\" section, click \"Add\".\n3. Choose the related object that you want to filter by, and then choose the field that you want to filter on. For example, you might choose to filter by the \"Opportunity Stage\" field on the Opportunity object.\n4. Choose the operator that you want to use for the filter. For example, you might choose \"equals\" or \"not equals\".\n5. Click \"Save\".\n6. Now, when you create a report using your custom report type, you can add a \"Grouping\" to the report that summarizes the data based on the cross filter. For example, you might group the report by the primary object and then by the Opportunity Stage field on the related Opportunity object.\n7. You can also add a \"Summary\" to the report that aggregates the data based on the cross filter. For example, you might add a \"Count\" summary that counts the number of related opportunities for each primary object.\n\nBy using cross filters in your custom report type, you can include aggregations that summarize data based on related objects. This can be a powerful way to gain insights into your data and make more informed business decisions.",
+  "has_answer": false
+}

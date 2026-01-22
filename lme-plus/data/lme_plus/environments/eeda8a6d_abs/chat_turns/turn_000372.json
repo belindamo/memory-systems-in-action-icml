@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 372,
+  "session_index": 40,
+  "session_id": "sharegpt_P01BTRw_0",
+  "turn_in_session": 1,
+  "date": "2023/05/29 (Mon) 17:21",
+  "role": "assistant",
+  "content": "Miners run full nodes because they are responsible for verifying and adding new transactions to the blockchain. Full nodes validate every transaction in a block and check that they adhere to the consensus rules of the network before adding them to the blockchain. This process involves verifying the entire history of the blockchain, which can be a computationally intensive task.\n\nOn the other hand, Bob the merchant only needs to verify that a transaction has been included in a block and has enough confirmations to be considered valid. This can be achieved using a \"lite node\" that implements Simplified Payment Verification (SPV). SPV allows lite nodes to only download and verify the headers of the most recent blocks, rather than the full contents of every block. This makes the process less computationally intensive, allowing Bob to easily verify the transactions he receives.\n\nIn summary, miners need to run full nodes to ensure the integrity of the blockchain and add new transactions to it, whereas merchants like Bob can use lite nodes that implement simplified payment verification to verify transactions quickly and efficiently.",
+  "has_answer": false
+}

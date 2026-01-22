@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 214,
+  "session_index": 18,
+  "session_id": "sharegpt_t3f69h7_23",
+  "turn_in_session": 10,
+  "date": "2023/05/24 (Wed) 01:27",
+  "role": "assistant",
+  "content": "If the app is just stitching audio ads to the stream and delivering it as an HLS stream, PTP implementation may not be necessary. PTP is typically used in professional broadcast environments to synchronize the timing of multiple video and audio sources, which requires very precise timing accuracy. In this case, since the app is not dealing with multiple sources and is not a professional broadcast environment, PTP implementation may not be required.\n\nHowever, if the audio stream being received by the app has timing information embedded in it (such as SMPTE timecode), then the app may need to synchronize its internal clock to that timecode in order to properly insert the ads at the correct times. In this case, PTP implementation may be necessary to ensure that the app's clock is accurately synchronized with the timecode.",
+  "has_answer": false
+}

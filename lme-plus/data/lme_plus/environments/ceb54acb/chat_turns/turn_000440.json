@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 440,
+  "session_index": 44,
+  "session_id": "sharegpt_E3FiZj3_62",
+  "turn_in_session": 13,
+  "date": "2023/05/30 (Tue) 09:28",
+  "role": "assistant",
+  "content": "Sure, here's an example of a datastore model for the `Comment` entity:\n```python\nfrom google.cloud import ndb\n\nclass Comment(ndb.Model):\n    author = ndb.StringProperty(required=True)\n    content = ndb.StringProperty(required=True)\n    created = ndb.DateTimeProperty(auto_now_add=True)\n```\nIn this example, the `Comment` entity has three properties: `author`, `content`, and `created`. The `author` property is a required string property that specifies the name of the user who created the comment. The `content` property is a required string property that contains the text of the comment. The `created` property is a DateTimeProperty that automatically sets the time that the comment was created to the current time when the entity is created.\n\nYou could add additional properties to the `Comment` entity as needed, depending on the requirements of your application.",
+  "has_answer": false
+}

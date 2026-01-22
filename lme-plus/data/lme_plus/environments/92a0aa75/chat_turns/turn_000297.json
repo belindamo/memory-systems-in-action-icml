@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 297,
+  "session_index": 27,
+  "session_id": "sharegpt_U9Sujf2_9",
+  "turn_in_session": 6,
+  "date": "2023/05/27 (Sat) 08:22",
+  "role": "assistant",
+  "content": "Here's the final schema and documentation for your MongoDB database tailored to your requirements:\n\n**Collections:**\n\n1. `websites`\n2. `classic_websites`\n3. `game_engines`\n4. `platforms`\n5. `web_crawls`\n6. `crawl_errors`\n7. `crawl_queue`\n\n**Fields and relationships:**\n\n1. `websites` collection:\n\t* \\_id (ObjectId)\n\t* url (string)\n\t* title (string)\n\t* description (string)\n\t* keywords (array of strings)\n\t* graphics (object)\n\t\t+ poly\\_count (integer)\n\t\t+ texture\\_size (string, e.g., \"1024x1024\")\n\t* world (object)\n\t\t+ size (string, e.g., \"1000x1000\")\n\t\t+ environment (string, e.g., \"indoor\", \"outdoor\")\n\t* immersion\\_type (string, e.g., \"VR\", \"AR\", or \"both\")\n\t* game\\_engine\\_id (ObjectId, reference to `game_engines._id`)\n\t* platform\\_id (ObjectId, reference to `platforms._id`)\n\t* related\\_websites (array of ObjectId, references to `websites._id`)\n\t* classic\\_referrer\\_websites (array of ObjectId, references to `classic_websites._id`)\n\t* crawl\\_id (ObjectId, reference to `web_crawls._id`)\n2. `classic_websites` collection:\n\t* \\_id (ObjectId)\n\t* url (string)\n\t* title (string)\n\t* description (string)\n\t* keywords (array of strings)\n\t* crawl\\_id (ObjectId, reference to `web\\_crawls.\\_id",
+  "has_answer": false
+}

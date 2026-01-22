@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 234,
+  "session_index": 21,
+  "session_id": "sharegpt_A83arI9_383",
+  "turn_in_session": 11,
+  "date": "2023/05/25 (Thu) 14:50",
+  "role": "user",
+  "content": "So, if I extend the utility function such that: \nu( c(i)\\_t , 1-n(i)\\_t ) = log( c(i)\\_t - gamma\\*c\\_t) - X\\*log( n(i)\\_t ), where i denotes an individual and c\\_t is the aggregate consumption of the reference group. \n\nIs the assumption reasonable now?",
+  "has_answer": false
+}

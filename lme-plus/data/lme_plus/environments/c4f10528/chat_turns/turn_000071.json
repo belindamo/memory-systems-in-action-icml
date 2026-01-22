@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 71,
+  "session_index": 6,
+  "session_id": "sharegpt_UtXvMMn_18",
+  "turn_in_session": 3,
+  "date": "2023/05/21 (Sun) 16:06",
+  "role": "assistant",
+  "content": "You can input your key by replacing the string \"YOUR\\_API\\_KEY\\_HERE\" in the `GOOGLE_CLOUD_SPEECH_CREDENTIALS` variable with your actual Google Cloud Speech-to-Text API key.\n\nFor example, if your API key is \"abc123\", then you would change the line:\n```python\nGOOGLE_CLOUD_SPEECH_CREDENTIALS = None\n```\nto:\n```makefile\nGOOGLE_CLOUD_SPEECH_CREDENTIALS = \"abc123\"\n```\nHowever, keep in mind that hard-coding the API key in your code is not recommended for security reasons. It's best to use environment variables or a configuration file to store your API keys.",
+  "has_answer": false
+}

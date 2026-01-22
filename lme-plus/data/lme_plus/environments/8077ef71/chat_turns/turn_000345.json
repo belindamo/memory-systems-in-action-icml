@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 345,
+  "session_index": 25,
+  "session_id": "sharegpt_KyDTtHX_0",
+  "turn_in_session": 4,
+  "date": "2022/03/09 (Wed) 08:52",
+  "role": "user",
+  "content": "\"However, because UTXO are all-or-nothing, the only way to achieve this is through the very inefficient hack of having many UTXO of varying denominations (e.g. one UTXO of 2k for every k up to 30) and having the oracle contract pick which UTXO to send to A and which to B.\"",
+  "has_answer": false
+}

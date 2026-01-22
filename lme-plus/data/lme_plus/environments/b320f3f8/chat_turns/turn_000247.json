@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 247,
+  "session_index": 24,
+  "session_id": "sharegpt_3w5VLHY_0",
+  "turn_in_session": 3,
+  "date": "2023/05/25 (Thu) 13:44",
+  "role": "assistant",
+  "content": "If we do not assume that the players are dealt pocket pairs, the probability of both players making quads in a heads-up Texas Hold'em game is even lower than before. This is because each player now has an additional chance to make quads by hitting quads on the board with one of their hole cards.\n\nCalculating the exact probability in this scenario would be very complex, as it would require considering all possible combinations of hole cards and board cards that could result in both players making quads. However, we can estimate the probability as being significantly lower than the previous calculation.\n\nAssuming that both players are dealt two random cards each, the probability of one player making quads on the flop is approximately 0.17%, or 1 in 594. The probability of the other player also making quads on the flop is the same.\n\nSo, the probability of both players making quads on the flop is approximately (0.0017)^2, or 0.00000289, or about 1 in 346,000.\n\nIf neither player makes quads on the flop, the probability of one of them making quads on the turn is approximately 0.30%, or 1 in 333. The probability of the other player also making quads on the turn is the same.\n\nSo, the probability of both players making quads on the turn is approximately (0.0030)^2, or 0.000009, or about 1 in 112,000.\n\nIf neither player makes quads on the turn, the probability of one of them making quads on the river is approximately 1.38%, or 1 in 72.5. The probability of the other player also making quads on the river is the same.\n\nSo, the probability of both players making quads on the river is approximately (0.0138)^2, or 0.00019044, or about 1 in 5,253.\n\nTherefore, the overall probability of both players making quads in a heads-up Texas Hold'em game, without assuming pocket pairs, is the sum of these three probabilities, which is approximately 0.00020233, or about 1 in 4,941.",
+  "has_answer": false
+}

@@ -1,0 +1,129 @@
+{
+  "source": "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory (ICLR 2025)",
+  "paper_url": "https://arxiv.org/abs/2410.10813",
+  "github": "https://github.com/xiaowu0162/LongMemEval",
+  "dataset": "LongMemEval_S (500 questions, ~115k tokens per question)",
+  "benchmark_description": "Tests 5 core long-term memory abilities: Information Extraction, Multi-Session Reasoning, Knowledge Updates, Temporal Reasoning, and Abstention",
+
+  "retrieval_systems": {
+    "flat-bm25": {
+      "method": "BM25 sparse retrieval",
+      "description": "Traditional sparse retrieval baseline (Robertson & Zaragoza, 2009)",
+      "granularity": "session or turn",
+      "notes": "Significantly lower performance than dense retrievers"
+    },
+    "flat-contriever": {
+      "method": "Contriever dense retrieval",
+      "description": "Dense retrieval with Contriever embeddings (Izacard et al., 2022)",
+      "granularity": "session or turn",
+      "notes": "Better than BM25 but lower than Stella V5"
+    },
+    "flat-stella-v5": {
+      "method": "Stella V5 1.5B dense retrieval",
+      "description": "Dense retrieval with Stella V5 1.5B embeddings - chosen as primary baseline",
+      "model": "dunzhang/stella_en_1.5B_v5",
+      "model_url": "https://huggingface.co/dunzhang/stella_en_1.5B_v5",
+      "granularity": "session or turn",
+      "notes": "Selected for high MTEB performance. Substantially outperforms BM25 and Contriever.",
+      "performance_summary": "Best performing retriever in paper's experiments"
+    },
+    "flat-gte": {
+      "method": "gte-Qwen2-7B-instruct dense retrieval",
+      "description": "Dense retrieval with gte-Qwen2-7B-instruct embeddings",
+      "granularity": "session or turn"
+    }
+  },
+
+  "key_findings": {
+    "commercial_systems_accuracy_drop": {
+      "description": "Commercial chat assistants show significant memory degradation",
+      "chatgpt": {
+        "online_memory": "57.73%",
+        "offline_reading": "91.84%",
+        "accuracy_drop": "34.11 percentage points (37% relative drop)"
+      },
+      "coze": {
+        "accuracy_drop": "~64% relative drop"
+      }
+    },
+    "long_context_llms_accuracy_drop": {
+      "description": "Long-context LLMs on LongMemEval_S vs oracle retrieval",
+      "gpt-4o": {
+        "accuracy_drop": "30.3 percentage points"
+      },
+      "llama-3.1-8b": {
+        "without_chain_of_note": "55.1% drop",
+        "with_chain_of_note": "36.1% drop"
+      }
+    },
+    "optimization_improvements": {
+      "description": "Fact-augmented key expansion technique",
+      "recall_k_improvement": "9.4% average",
+      "qa_accuracy_improvement": "5.4% average",
+      "note": "Improvements measured across all tested models"
+    },
+    "best_retrieval_configuration": {
+      "key_design": "K = V + fact (value + user fact)",
+      "results_on_longmemeval_m": {
+        "recall_at_5_session_gpt4o": "0.732",
+        "ndcg_at_5_gpt4o": "0.620",
+        "qa_accuracy_gpt4o": "0.714",
+        "qa_accuracy_llama31_70b": "0.862"
+      }
+    },
+    "temporal_reasoning_with_query_expansion": {
+      "description": "Time-aware query expansion for temporal reasoning questions",
+      "gpt4o_recall_at_5_sessions": {
+        "without_expansion": "0.639",
+        "with_expansion": "0.722"
+      },
+      "gpt4o_recall_at_5_rounds": {
+        "without_expansion": "0.421",
+        "with_expansion": "0.526"
+      },
+      "ndcg_improvement": "5-10 percentage points"
+    }
+  },
+
+  "evaluation_metrics": {
+    "memory_recall": [
+      "Recall@k (session-level)",
+      "Recall@k (turn-level)",
+      "NDCG@k"
+    ],
+    "qa_performance": [
+      "End-to-end QA accuracy (LLM-as-judge using GPT-4o)",
+      "Accuracy by question type"
+    ]
+  },
+
+  "question_types": {
+    "single-session-user": "Information mentioned by user in single session",
+    "single-session-assistant": "Information mentioned by assistant in single session",
+    "single-session-preference": "User preferences from single session",
+    "multi-session": "Reasoning across multiple sessions",
+    "temporal-reasoning": "Time-dependent reasoning",
+    "knowledge-update": "Handling conflicting information over time",
+    "abstention": "Questions with no answer (suffix: _abs)"
+  },
+
+  "comparison_to_lme_plus": {
+    "lme_original": {
+      "task_type": "Needle-in-haystack retrieval",
+      "evaluation": "Direct retrieval and QA with full context or retrieved sessions"
+    },
+    "lme_plus_new": {
+      "task_type": "Agentic task requiring active search and reasoning",
+      "evaluation": "Agent must use tools (filesystem, memory MCP) to find and answer questions",
+      "key_difference": "Tests agentic retrieval behavior vs pure retrieval systems"
+    }
+  },
+
+  "notes": [
+    "Stella V5 is the recommended baseline retriever for LME+ comparison",
+    "Published baselines are on LongMemEval_S (500 questions)",
+    "LME+ will compare how memory systems perform when used by agents vs standalone retrieval",
+    "Key hypothesis: Memory MCP tools may show different performance patterns in agentic settings",
+    "All published results use LLM-as-judge evaluation with GPT-4o for QA correctness"
+  ]
+}

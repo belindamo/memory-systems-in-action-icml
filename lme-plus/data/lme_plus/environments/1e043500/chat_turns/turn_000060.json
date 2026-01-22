@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 60,
+  "session_index": 7,
+  "session_id": "ultrachat_59272",
+  "turn_in_session": 1,
+  "date": "2023/05/20 (Sat) 19:57",
+  "role": "assistant",
+  "content": "The process of DNA sequencing involves the determination of the complete genetic code of an individual. Geneticists use this process to identify mutations in a specific genetic disorder by following these steps:\n\n1. Sample collection: The first step is to collect a sample of DNA from the individual being tested. The sample can be obtained from blood, saliva, or a tissue biopsy.\n\n2. DNA extraction: The DNA is then extracted from the sample using biochemical techniques such as precipitation, centrifugation, and column purification.\n\n3. DNA fragmentation: The extracted DNA is then fragmented using mechanical, chemical or enzymatic methods.\n\n4. Library preparation: The fragments are then purified, and adapters are added to them to prepare them for sequencing. The fragments are then amplified to create a DNA library.\n\n5. Sequencing: The DNA library is then subjected to high-throughput sequencing using a variety of techniques including Sanger sequencing, Next-generation sequencing (NGS) and Third-generation sequencing. \n\n6. Alignment and analysis: The sequencing data is then aligned with a reference genome with the help of aligner tools. The geneticists then identify the specific point mutations, insertions, and deletions present in the sequence using various bioinformatics tools.\n\nBy comparing this DNA sequence to a reference genome sequence and analyzing the data generated from the sequencing, geneticists look for specific differences - mutations - that signal the potential for a genetic disorder. These mutations are then examined further to determine if they indeed cause the genetic disorder in question.",
+  "has_answer": false
+}

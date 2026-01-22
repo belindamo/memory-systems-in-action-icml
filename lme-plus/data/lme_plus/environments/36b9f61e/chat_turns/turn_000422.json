@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 422,
+  "session_index": 40,
+  "session_id": "sharegpt_QN26oUg_0",
+  "turn_in_session": 5,
+  "date": "2023/05/29 (Mon) 13:13",
+  "role": "assistant",
+  "content": "TIBCO Spotfire provides several options for creating automated reports. Here is a step-by-step guide to creating an automated report in TIBCO Spotfire:\n\n1. Open the Spotfire desktop client and create a new analysis. Add the necessary data tables, visualizations, and filters to the analysis.\n2. Click on the \"File\" menu and select \"Export\" -> \"Library Package\". This will export the analysis as a Spotfire library file (.dxp).\n3. Save the exported file to a location accessible by the TIBCO Spotfire Server.\n4. Open the TIBCO Spotfire Server and navigate to the \"Automation Services\" section.\n5. Click on \"New Job\" and enter a name and description for the job.\n6. In the \"Actions\" section, click on \"Add Action\" and select \"Export Analysis\".\n7. In the \"Export Analysis\" dialog box, select the library file (.dxp) that you exported earlier and specify the output format (e.g., PDF, Excel, PowerPoint).\n8. Configure the output settings, such as the file name, destination folder, and email notifications.\n9. Click on \"Save\" to save the job and schedule it to run at a specific time or frequency.\n10. Once the job is scheduled, the TIBCO Spotfire Server will automatically generate the report according to the configured settings and send it to the specified recipients.\n\nIn summary, creating automated reports in TIBCO Spotfire involves exporting the analysis as a library file, configuring an automation job on the Spotfire Server to generate the report, and specifying the output settings and email notifications.",
+  "has_answer": false
+}

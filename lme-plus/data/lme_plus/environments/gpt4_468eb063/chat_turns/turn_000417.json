@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 417,
+  "session_index": 37,
+  "session_id": "sharegpt_8M7HcM3_11",
+  "turn_in_session": 0,
+  "date": "2023/04/11 (Tue) 23:18",
+  "role": "assistant",
+  "content": "You are correct that AppArmor needs to be enabled and enforcing for it to block operations that violate its policy. If AppArmor is not enabled, it won't have any effect on the system.\n\nIn that case, there might be some other security measure in place that is blocking Discord's read operation. It could also be a bug or a misconfiguration issue with the Discord snap package itself.\n\nYou could try enabling and enforcing AppArmor on your system and see if that resolves the issue with Discord. Here are the steps to do that:\n\n1. Check if AppArmor is installed on your system:\n```\nsudo dpkg -l apparmor\n```\n1. If AppArmor is not installed, install it:\n```csharp\nsudo apt-get install apparmor\n```\n1. Enable AppArmor:\n```bash\nsudo systemctl enable apparmor\n```\n1. Start the AppArmor service:\n```sql\nsudo systemctl start apparmor\n```\n1. Verify that AppArmor is running and enforcing:\n```lua\nsudo aa-status\n```\nIf AppArmor is running and enforcing, you can try launching Discord again and see if the AppArmor logs show any violations. If so, you can create an AppArmor profile as I described earlier to allow Discord to perform the necessary actions.",
+  "has_answer": false
+}

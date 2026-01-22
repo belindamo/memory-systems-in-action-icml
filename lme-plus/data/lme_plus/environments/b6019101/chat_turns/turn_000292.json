@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 292,
+  "session_index": 27,
+  "session_id": "sharegpt_CvVLg2J_18",
+  "turn_in_session": 1,
+  "date": "2023/05/09 (Tue) 18:53",
+  "role": "assistant",
+  "content": "The paper \"Network Hygiene, Incentives, and Regulation: Deployment of Source Address Validation in the Internet\" presents data on the deployment of source address validation (SAV) on the internet. The data is presented in Figure 4, which provides an overview of the findings on SAV deployment for packets both outbound from and inbound to the measured network, for the year ending August 1, 2019. The data is presented by IPv4/24 and IPv6/40 prefixes, and by autonomous systems (ASes). The figure shows that while most networks block packets with spoofed source IP addresses, deployment is far from universal. The data indicates that 25.2% and 32.1% of tested IPv4 and IPv6 ASes, respectively, had at least one prefix where operators had not deployed SAV to block outbound spoofed packets to the Internet. The authors also show that the deployment of SAV is worse for inbound packets than outbound packets, despite these packets being a threat to the receiving network. The authors also compare the data from the year ending August 2019 to data from May 2006, and found that the deployment of SAV has not generally improved.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 191,
+  "session_index": 18,
+  "session_id": "sharegpt_Us1zWGN_19",
+  "turn_in_session": 8,
+  "date": "2023/05/24 (Wed) 00:07",
+  "role": "assistant",
+  "content": "In the case where a customer needs to update an existing campaign and create a new one in the same import, you can add an additional column to the Excel file structure to indicate the action to be performed (e.g., \"Create\" or \"Update\"). This will help the Bulksheet system understand which operation to execute for each row.\n\nHere's the modified structure:\n\n| Action | Object Type | Campaign ID | Campaign Name | Campaign State | Campaign Budget | Ad Group ID | Ad Group Name | Ad Group Default Bid | Keyword | Match Type | ASIN | SKU | Custom Text |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| Create | Campaign | 1 | Campaign A | Enabled | 1000 |  |  |  |  |  |  |  |  |\n| Update | Campaign | 2 | Campaign B | Paused | 1500 |  |  |  |  |  |  |  |  |\n| Create | Ad Group | 1 |  |  |  | 1 | Ad Group 1 | 1.00 |  |  |  |  |  |\n| Create | Keyword | 1 |  |  |  | 1 | Ad Group 1 |  | keywordA1 | Broad |  |  |  |\n| Create | Product Ad | 1 |  |  |  | 1 | Ad Group 1 |  |  |  | B00001A001 | SKU123A | Custom Text A |\n\nIn this example:\n\n* The first column represents the action to be performed for each row (Create or Update).\n* The Bulksheet system should check the Action column to determine whether to create a new object or update an existing one.\n* For updating existing objects, the user should provide the appropriate object IDs (e.g., Campaign ID, Ad Group ID) to match the object they want to update.\n\nThis structure will allow customers to create and update campaigns, ad groups, keywords, and product ads within a single import while providing the necessary information for the Bulksheet system to execute the desired operations.",
+  "has_answer": false
+}

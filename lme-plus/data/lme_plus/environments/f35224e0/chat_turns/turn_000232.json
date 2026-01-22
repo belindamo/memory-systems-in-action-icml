@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 232,
+  "session_index": 21,
+  "session_id": "sharegpt_ZFhr9kU_0",
+  "turn_in_session": 7,
+  "date": "2023/05/24 (Wed) 04:30",
+  "role": "assistant",
+  "content": "When you update a design token within a design system, it does not immediately update all the live applications that use the design system. However, it makes the process of updating those applications much more efficient and consistent.\n\nOnce you change a design token in the design system, you will typically need to update the design system package or library that your applications are using. After updating the package or library, the changes in the design tokens will be reflected in the applications that use them.\n\nIn some cases, this process can be automated through continuous integration and deployment (CI/CD) pipelines, which can speed up the propagation of changes from design tokens to live applications. However, even with automation, there's usually a short delay between the time when a design token is updated and when the changes are visible to the end-users. This delay allows developers and designers to test and verify the updates before they are rolled out to the users.\n\nTo sum up, updating a design token does not cause an immediate change in live applications, but it streamlines the process of updating and maintaining consistency across all applications that use the design system.",
+  "has_answer": false
+}

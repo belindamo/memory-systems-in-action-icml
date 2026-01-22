@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 5,
+  "session_index": 0,
+  "session_id": "sharegpt_RoqJ4YJ_0",
+  "turn_in_session": 5,
+  "date": "2023/05/20 (Sat) 02:08",
+  "role": "assistant",
+  "content": "Yes, here's an example of a JMX template that you can use in Zabbix:\n\n1. Log in to the Zabbix web interface as an administrator.\n2. Go to Configuration -> Templates and click on the \"Create template\" button.\n3. Fill in the following fields:\n* Name: \"JMX template\"\n* Link to Template: Select the template that you want to use as a base for your new template.\n4. Go to the \"Items\" tab, and click on the \"Create item\" button.\n* Name: \"JMX Uptime\"\n* Type: \"Zabbix agent\"\n* Key: \"jmx[java.lang:type=Runtime,name=Uptime]\"\n* Update interval: \"60\"\n* History storage period: \"90d\"\n* Trends storage period: \"365d\"\n5. Repeat step 4 to add more items, such as:\n* \"JMX Heap Memory\"\n* \"JMX Non-Heap Memory\"\n* \"JMX Thread Count\"\n* \"JMX CPU Usage\"\n6. Go to the \"Triggers\" tab, and click on the \"Create trigger\" button.\n* Name: \"High CPU Usage\"\n* Expression: \"{JMX template:jmx[java.lang:type=OperatingSystem,name=ProcessCpuLoad].last()}>0.8\"\n* Severity: \"High\"\n* Dependencies: None\n7. Repeat step 6 to add more triggers, such as:\n* \"High Heap Memory Usage\"\n* \"High Non-Heap Memory Usage\"\n* \"High Thread Count\"\n8. Go to Configuration -> Hosts and link the template to the host that you want to monitor.\n\nThis is an example of a JMX template that you can use to monitor the uptime, heap memory, non-heap memory, thread count, and CPU usage of a Java-based service running in a container. The template also includes triggers for high CPU usage, high heap memory usage, high non-heap memory usage, and high thread count. You can adjust the items and triggers based on your needs and also add more items based on the attributes you want to monitor.",
+  "has_answer": false
+}

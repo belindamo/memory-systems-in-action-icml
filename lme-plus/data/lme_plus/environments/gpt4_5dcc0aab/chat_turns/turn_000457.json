@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 457,
+  "session_index": 42,
+  "session_id": "sharegpt_bLaSZdD_0",
+  "turn_in_session": 5,
+  "date": "2023/05/24 (Wed) 19:03",
+  "role": "assistant",
+  "content": "Sure, here's a simple example of an XCCDF rule that uses two checks:\n```php\n<rule id=\"example_rule\">\n  <title>Example Rule</title>\n  <check system=\"urn:xccdf:check:system:some-os\" id=\"check_1\">\n    <check-content-ref href=\"check_1.xml\"/>\n  </check>\n  <check system=\"urn:xccdf:check:system:some-os\" id=\"check_2\">\n    <check-content-ref href=\"check_2.xml\"/>\n  </check>\n  <description>This is an example of a rule that uses two checks.</description>\n</rule>\n```\nIn this example, the rule with ID `example_rule` contains two checks, `check_1` and `check_2`. The `check` elements define the checks to be performed, and the `check-content-ref` elements refer to external XML files that contain the actual check content. The `system` attribute specifies the operating system or platform for which the checks are applicable.",
+  "has_answer": false
+}

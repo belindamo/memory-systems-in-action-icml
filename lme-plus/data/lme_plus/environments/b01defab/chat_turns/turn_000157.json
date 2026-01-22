@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 157,
+  "session_index": 14,
+  "session_id": "sharegpt_A8RUQVi_0",
+  "turn_in_session": 0,
+  "date": "2023/02/07 (Tue) 23:11",
+  "role": "user",
+  "content": "i have 5 animals - A1, A2, A3, A4, A5. each one has a hunger level H1, H2, H3, H4, H5. each one has a minimum amount of food it needs to be allocated - L1, L2, L3, L4, L5. each one has a maximum amount of food it can accept - M1, M2, M3, M4, M5. the amount of food each animal gets allocated should be enough to satisfy its hunger level, but no more than the maximum and no less than the minimum. the total amount of food available is F. can you write a formula that describes how to allocate the food to each animal in a fair manner, satisfying above criteria? please note, the total amount of food might not be sufficient to satisfy the total hunger level for each animal. in this case we need to do a pro-rata fair allocation of the food, but the minimum and maximum levels should still be respected.",
+  "has_answer": false
+}

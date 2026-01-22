@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 362,
+  "session_index": 34,
+  "session_id": "sharegpt_d7TZyoX_15",
+  "turn_in_session": 1,
+  "date": "2023/05/27 (Sat) 01:58",
+  "role": "user",
+  "content": "These are good but I would like to refine this process. I am using these as prompts to generate images with Stable Diffusion using the txt2img. Proper grammar is not necessary and every word has an impact on the output. Early words are given more weight by this model. Too long a prompt may yield diminishing returns, while too short a prompt may yield erratic outputs with less consistency or may too strongly emulate a particular piece of training data. \n\nI have manually adjusted your prompt for 'the fool' to something closer to what I would expect to give good results from the image generator: \n\n\"digital illustration for The Fool Tarot card, a carefree young man running near the edge of a cliff, by Pamela Colman Smith, by Salvador Dali, by Alex Grey, by Brian Froud, by Yoshitaka Amano, whimsical innocence, surreal landscapes, cosmic vibrancy, fantastical, ethereal linework. intricate silver border of intertwining vines and celestial motifs\"\n\nAlso note: I am using a fine-tuning model that is biased to produce attractive women. Gender neutral nouns like 'youth', 'figure', 'person', tend to generate only women, often in an undesirably sensual style. Where characters are ambiguous, such as 'the fool', please select the traditional gender or specify the gender. If it would be unusual for the character to be depicted in a sensual style and the character is a woman, please include a description of her attire. Alternatively, we can make the design choice to lean into this and make all characters female and depict them in artistic but sensual styles. \n\nBefore continuing, do you understand these updates to the task parameters?",
+  "has_answer": false
+}

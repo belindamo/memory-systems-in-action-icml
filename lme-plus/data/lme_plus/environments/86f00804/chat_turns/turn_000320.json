@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 320,
+  "session_index": 26,
+  "session_id": "sharegpt_Q4svpUN_0",
+  "turn_in_session": 15,
+  "date": "2023/05/27 (Sat) 03:23",
+  "role": "assistant",
+  "content": "Sure, here's the updated version of the instruction:\n\nGiven a sentence and a list of evidence consisting of titles and corresponding sentences, summarize the useful information and filter out irrelevant or noisy information in the evidence. The useful information list should start with the title that is most relevant to the given sentence. Use reasoning based on the evidence to determine if the given sentence is correct or not. The output should be a list of useful information, and a conclusion that is either \"SUPPORTS\" (if the evidence confirms the sentence), \"REFUTES\" (if the evidence contradicts the sentence), or \"NOT ENOUGH INFORMATION\" (if the evidence does not provide enough information to determine the correctness of the sentence).",
+  "has_answer": false
+}

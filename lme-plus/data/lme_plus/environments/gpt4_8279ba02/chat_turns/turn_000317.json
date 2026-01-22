@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 317,
+  "session_index": 30,
+  "session_id": "sharegpt_7XsoCYd_16",
+  "turn_in_session": 5,
+  "date": "2023/03/15 (Wed) 10:01",
+  "role": "assistant",
+  "content": "The citation success index is a metric for comparing the citation capacity of pairs of journals. It measures the probability that a random paper in one journal has more citations than a random paper in another journal, with 50% indicating that the two journals perform equally well. Unlike the journal impact factor (IF), which is based on the number of citations received by a journal's articles in a given year divided by the total number of articles published in the two preceding years, the citation success index depends on the broadness and the shape of citation distributions. It is a relatively tight function of the ratio of IFs of journals being compared, with the citation success index growing slowly as a function of IF ratio. The lognormal distribution of citation counts is the reason for the relation between Impact Factors and Citation Success Index [[1, 2018, Shen and Wu](https://www.semanticscholar.org/paper/0e3cb33e592162e469fd902b47e5ad0c1572080c)]. The citation success index was introduced in a paper by Stasa Milojevic and J. Bar-Ilan in 2016 [[2, 2016, Milojevic and Bar-Ilan](https://www.semanticscholar.org/paper/8ee25b6db4b80ffc81a1adaaede3e6107251158c)], and further discussed in a 2017 paper by T. Milojevic and Judit Bar-Ilanb [[3, 2017, Milojevic and Bar-Ilan](https://www.semanticscholar.org/paper/85521259db5ed7604d143d873fa1edef9dfe2971)].\n\nReferences:\n\n* [[1, 2018, Shen and Wu](https://www.semanticscholar.org/paper/0e3cb33e592162e469fd902b47e5ad0c1572080c)]\n* [[2, 2016, Milojevic and Bar-Ilan](https://www.semanticscholar.org/paper/8ee25b6db4b80ffc81a1adaaede3e6107251158c)]\n* [[3, 2017, Milojevic and Bar-Ilan](https://www.semanticscholar.org/paper/85521259db5ed7604d143d873fa1edef9dfe2971)]",
+  "has_answer": false
+}

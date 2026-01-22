@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 80,
+  "session_index": 8,
+  "session_id": "sharegpt_n3kgf14_29",
+  "turn_in_session": 4,
+  "date": "2023/03/09 (Thu) 19:50",
+  "role": "assistant",
+  "content": "Here is a description and purpose of each attribute in the DynamoDB table for the primary driver module:\n\n* `VIN` (string): This attribute is the primary key of the table and is used to identify the car associated with the primary driver.\n* `Timestamp` (string): This attribute is the sort key of the table and is used to sort the entries in the table in chronological order. It represents the timestamp when the primary driver was registered or updated.\n* `PolestarID` (string): This attribute is the Polestar ID of the primary driver.\n* `System` (string): This attribute is the name of the system that initiated the change (POMS, PolestarID auth API, M2M auth API).\n* `ChangeSource` (string): This attribute is the source of the change (Event, API).\n* `UserID` (string): This attribute is the user ID of the person who made the update (if the change was made using Polestar ID auth API).\n* `ClientID` (string): This attribute is the client ID of the service that made the change (if the change was made using M2M auth API).\n* `EventID` (string): This attribute is the event ID that caused the change (if the update was based on an event).\n* `EventTimestamp` (string): This attribute is the timestamp when the event was emitted (if the update was based on an event).\n* `OrderID` (string): This attribute is the order ID from the event (if the primary driver was registered based on an event from POMS).\n* `PreviousOrderID` (string): This attribute is the previous order ID (if applicable).\n* `EndTimestamp` (string): This attribute is the timestamp when the primary driver was removed (if applicable).",
+  "has_answer": false
+}

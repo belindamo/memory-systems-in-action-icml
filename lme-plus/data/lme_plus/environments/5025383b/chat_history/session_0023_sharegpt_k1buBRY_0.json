@@ -1,0 +1,15 @@
+{
+  "session_id": "sharegpt_k1buBRY_0",
+  "session_index": 23,
+  "date": "2023/05/26 (Fri) 01:58",
+  "turns": [
+    {
+      "role": "user",
+      "content": "How do I communicate to the brand/marketing team in non-technical terms that an iOS app deployment is not instant and can take up to 24 hours from the moment we release it, so the update will not be available to all customers at once?"
+    },
+    {
+      "role": "assistant",
+      "content": "You can communicate to the brand/marketing team in non-technical terms that iOS app deployment is not instant and can take up to 24 hours by explaining it in a simple and straightforward way. Here's an example:\n\n\"Hey team, just wanted to let you know that when we release the new update for our iOS app, it might take up to 24 hours for all customers to see the update. This is because the app store needs time to process the release and make it available to all users. So, some customers might see the update right away, while others might not see it until a bit later. Just wanted to set expectations and avoid any confusion. Thanks!\""
+    }
+  ]
+}

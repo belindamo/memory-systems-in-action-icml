@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 25,
+  "session_index": 2,
+  "session_id": "sharegpt_gQsEPQ6_67",
+  "turn_in_session": 1,
+  "date": "2023/05/20 (Sat) 22:47",
+  "role": "user",
+  "content": "after using on a dataset: Mean Imputation, Knn Imputation k=1, Interpolation and Regression Imputation, I got the following results:\n\n Mean Imputation Knn Imputation k=1 Interpolation Regression Imputation\nMSE 14760.4953 14403.9691 15514.4099 14403.9691\nMAE 42.6963 42.2959 43.4511 42.2959",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 75,
+  "session_index": 8,
+  "session_id": "sharegpt_ZftWuNK_62",
+  "turn_in_session": 1,
+  "date": "2023/05/24 (Wed) 08:26",
+  "role": "assistant",
+  "content": "There are a few ways for a server to store permanent data on a client's browser without the client having to download it:\n\n1. Local Storage: Local Storage is a feature of web browsers that allows websites to store data on the client's device. The data is stored in key-value pairs and is accessible to the website even after the browser is closed. Local Storage is similar to cookies but has a larger storage capacity and does not have the same size limitations.\n2. IndexedDB: IndexedDB is a feature of web browsers that allows websites to store data in a structured format on the client's device. The data can be queried and indexed, similar to a relational database. IndexedDB is more powerful than Local Storage and is suitable for storing large amounts of data.\n3. Web SQL Database: Web SQL Database is a feature of web browsers that allows websites to store data in a relational database format on the client's device. It allows data to be queried and indexed similar to a relational database. However, this feature is not supported by all web browsers.\n4. Service Workers : Service Workers are a feature of web browsers that allow websites to run scripts in the background, even when the browser is closed. These scripts can be used to store data on the client's device, such as caching website assets for offline access.\n\nIn summary, Local Storage, IndexedDB and Web SQL Database are some of the ways for a server to store permanent data on a client's browser without the client having to download it. These are features of web browsers that allow websites to store data on the client's device. Service Workers also allows storing data on client side. Each method has its own benefits and drawbacks, depending on the use case and the requirements of the application.",
+  "has_answer": false
+}

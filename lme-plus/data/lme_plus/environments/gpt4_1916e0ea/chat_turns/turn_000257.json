@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 257,
+  "session_index": 26,
+  "session_id": "sharegpt_cxnxUPt_43",
+  "turn_in_session": 3,
+  "date": "2023/02/28 (Tue) 21:36",
+  "role": "user",
+  "content": "Question 44 of 50\nSingle choice question\nYou plan to move a distributed on-\npremises app named App1 to an\nAzure subscription.\nAfter the planned move, App1 will be\nhosted on several Azure virtual\nmachines.\nYou need to ensure that App1 always\nruns on at least eight virtual machines\nduring planned Azure maintenance.\nWhat should you create?\nSelect the correct answer\none virtual machine scale set that has 10 virtual machines instances\none Availability Set that has three fault domains and one update domain\none Availability Set that has 10 update domains and one fault domain\none virtual machine scale set that has 12 virtual machines instances",
+  "has_answer": false
+}

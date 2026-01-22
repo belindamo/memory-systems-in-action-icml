@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 105,
+  "session_index": 9,
+  "session_id": "sharegpt_SPbMLCl_14",
+  "turn_in_session": 3,
+  "date": "2023/05/21 (Sun) 09:35",
+  "role": "assistant",
+  "content": "Here are three sample documents with valid 40-hour work weeks and various upcoming exceptions:\n\n1. Doctor A:\n```javascript\n{\n  \"_id\": {\n    \"$oid\": \"1234567890abcdef12345678\"\n  },\n  \"specialtyAreas\": [\n    {\n      \"$oid\": \"6156a3590041b25122e0c227\"\n    }\n  ],\n  // Other fields...\n  \"workHours\": [\n    {\n      \"day\": \"Monday\",\n      \"startTime\": \"08:00\",\n      \"endTime\": \"17:00\",\n      \"queue\": false,\n      \"appointments\": true\n    },\n    {\n      \"day\": \"Tuesday\",\n      \"startTime\": \"08:00\",\n      \"endTime\": \"17:00\",\n      \"queue\": false,\n      \"appointments\": true\n    },\n    {\n      \"day\": \"Wednesday\",\n      \"startTime\": \"08:00\",\n      \"endTime\": \"17:00\",\n      \"queue\": false,\n      \"appointments\": true\n    },\n    {\n      \"day\": \"Thursday\",\n      \"startTime\": \"08:00\",\n      \"endTime\": \"17:00\",\n      \"queue\": false,\n      \"appointments\": true\n    },\n    {\n      \"day\": \"Friday\",\n      \"startTime\": \"08:00\",\n      \"endTime\": \"17:\n```",
+  "has_answer": false
+}

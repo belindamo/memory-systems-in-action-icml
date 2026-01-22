@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 36,
+  "session_index": 3,
+  "session_id": "sharegpt_mrZ90jA_33",
+  "turn_in_session": 2,
+  "date": "2023/05/21 (Sun) 01:19",
+  "role": "assistant",
+  "content": "To increase the pool size when using `create_async_engine` from `sqlalchemy.ext.asyncio`, you can pass the desired pool size as a parameter to the `create_async_engine` function.\n\nHere's an example:\n```python\nfrom sqlalchemy.ext.asyncio import create_async_engine\n\n# Replace <your-database-url> with the actual URL of your database\ndatabase_url = \"postgresql://user:password@localhost/mydatabase\"\n\n# Specify the pool size (in this example, 20 connections)\nengine = create_async_engine(database_url, pool_size=20)\n```\nIn this example, the `pool_size` parameter is set to 20, meaning that the connection pool will contain 20 connections.\n\nNote that increasing the pool size can have performance implications, so you should be careful not to set the pool size too high. The optimal pool size depends on factors such as the number of concurrent requests your application receives and the capacity of your database server.",
+  "has_answer": false
+}

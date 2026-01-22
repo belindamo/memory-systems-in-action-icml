@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 225,
+  "session_index": 23,
+  "session_id": "sharegpt_7rLq4MQ_9",
+  "turn_in_session": 4,
+  "date": "2023/05/25 (Thu) 14:16",
+  "role": "assistant",
+  "content": "Certainly, here's a simple example using binary variables with the CBC solver:\n```scss\n!pip install pyomo\n!apt-get install -y -qq coinor-cbc\n\nfrom pyomo.environ import *\n\nmodel = ConcreteModel()\n\nmodel.x = Var(within=Binary)\nmodel.y = Var(within=Binary)\n\ndef my_constraint_rule(model):\n    return model.x + model.y >= 1\n\nmodel.my_constraint = Constraint(rule=my_constraint_rule)\n\nmodel.obj = Objective(expr=model.x + model.y, sense=maximize)\n\nsolver = SolverFactory('cbc')\nresults = solver.solve(model)\n\nprint(results)\n```\nIn this example, we create a Pyomo model with two binary variables, `x` and `y`. We define a constraint that requires `x` and `y` to sum to at least 1. We also define an objective function that maximizes the sum of `x` and `y`. Finally, we use the CBC solver to solve the model.\n\nIf you run this code in Google Colab, it should print the results of the optimization, which will include information about the solver status, solution value, and variable values.",
+  "has_answer": false
+}

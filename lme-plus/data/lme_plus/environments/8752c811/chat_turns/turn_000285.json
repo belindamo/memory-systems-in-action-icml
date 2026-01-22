@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 285,
+  "session_index": 31,
+  "session_id": "sharegpt_qgxzDJ9_0",
+  "turn_in_session": 0,
+  "date": "2023/05/27 (Sat) 00:49",
+  "role": "user",
+  "content": "Please provide a markdown table with ten popular jargon terms used in the [knowledge graph], sort list in the order of frequent use. Please make the table a markdown format so that it can be copied. Each row of the table should have six columns with the following information: \n\n1. Jargon \n2. Simple Explanation (max 8 words) \n3. Description (min 15 words, max 50 words)\n4. Association score with [knowledge graph] keyword\n5. Citation frequency\n6. Reference\n\nPlease write in English language.\uc9c0\uae08 \ubc88\uc5ed\ud558\uae30",
+  "has_answer": false
+}

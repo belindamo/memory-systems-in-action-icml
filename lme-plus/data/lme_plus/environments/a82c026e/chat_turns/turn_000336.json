@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 336,
+  "session_index": 33,
+  "session_id": "sharegpt_k7s3Y7a_0",
+  "turn_in_session": 0,
+  "date": "2023/05/27 (Sat) 17:21",
+  "role": "user",
+  "content": "Web search results:\n\n[1] \"Tunisian authorities opened an inquest into the death of a 16-year-old girl after she was mauled by a dog while walking to school. Residents of the coastal city of Gab\u00e8s have recently...\"\nURL: https://www.africanews.com/2022/04/07/in-tunisia-dangerous-stray-dogs-worry-people-and-animal-rights-activists-demand-more-help/\n\n[2] \"Moving to Tunisia with your pet definitely involves some fees, whether it is a cat or a dog. Here are a few indications: around 90 euros for the rabies antibodies test around 15 euros per kilo for the pet's transport along with its cage (varying from one airline company to another) around 50 euros for the identification microchip.\"\nURL: https://www.expat.com/en/guide/africa/tunisia/14300-traveling-to-tunisia-with-your-pet.html\n\n[3] \"Tunisia is not the most dog friendly country in the world. In Islam, dogs are considered impure or unclean. This combined with the feral dog problem in Tunis and high risk of rabies makes Tunisians very wary and afraid of dogs. I used to have to ask friends to drive us places as no taxi would allow him in the car, even if I offered ...\"\nURL: https://thetravelingtail.com/dog-friendly-tunisia/\nCurrent date: 17.3.2023\n\nInstructions: Using the provided web search results, write a comprehensive reply to the given query. Make sure to cite results using [[number](URL)] notation after the reference. If the provided search results refer to multiple subjects with the same name, write separate answers for each subject.\nQuery: dogs in tunisia\nReply in Deutsch",
+  "has_answer": false
+}

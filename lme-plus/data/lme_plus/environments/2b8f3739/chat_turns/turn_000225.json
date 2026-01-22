@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 225,
+  "session_index": 21,
+  "session_id": "sharegpt_RjO1Toi_31",
+  "turn_in_session": 16,
+  "date": "2023/06/01 (Thu) 12:20",
+  "role": "user",
+  "content": "extract frames and the frame elements from this sentence: {\"sentence\": \"That\u2019s what happened on the Kherson front in the second half of August...\", \"frames\": [{\"name\": \"Event\", \"elements\": [{\"name\": \"Event\", \"text\": \"what\"}, {\"name\": \"Place\", \"text\": \"on the Kherson front\"}, {\"name\": \"Time\", \"text\": \"in the second half of August\"}]}, {\"name\": \"Calendric\\_unit\", \"elements\": [{\"name\": \"Unit\", \"text\": \"half\"}, {\"name\": \"Whole\", \"text\": \"of August\"}]}, {\"name\": \"Part\\_whole\", \"elements\": [{\"name\": \"Part\\_prop\", \"text\": \"second\"}, {\"name\": \"Part\", \"text\": \"half\"}, {\"name\": \"Whole\", \"text\": \"of August\"}]}]}",
+  "has_answer": false
+}

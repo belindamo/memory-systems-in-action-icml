@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 78,
+  "session_index": 9,
+  "session_id": "sharegpt_U8CljCM_315",
+  "turn_in_session": 6,
+  "date": "2023/05/21 (Sun) 20:45",
+  "role": "assistant",
+  "content": "Sure, I understand. Here's the table for the \"Customer Registering\" form:\n\n| Category | Field Title | Field Type | Required | Description |\n| --- | --- | --- | --- | --- |\n| Basic Information | Company Name | Text | Yes | The name of the company |\n|  | Contact Name | Text | Yes | The name of the person who will be the primary contact for the company |\n|  | Phone Number | Text | Yes | The primary phone number for the company |\n|  | Email Address | Text | Yes | The primary email address for the company |\n|  | Address | Text | Yes | The address of the company |\n|  | City | Text | Yes | The city where the company is located |\n|  | Country | Dropdown | Yes | The country where the company is located |\n|  | Tax ID Number | Text | No | The tax identification number for the company, if applicable |\n| Additional Information | Type of Business | Dropdown | Yes | The type of business the company is engaged in |\n|  | Years in Business | Text | Yes | The number of years the company has been in operation |\n|  | Number of Employees | Text | Yes | The number of people employed by the company |\n| Login Information | Username | Text | Yes | The username the customer will use to log in to the system |\n|  | Password | Text | Yes | The password the customer will use to log in to the system |\n|  | Confirm Password | Text | Yes | A field to confirm the password entered by the customer |",
+  "has_answer": false
+}

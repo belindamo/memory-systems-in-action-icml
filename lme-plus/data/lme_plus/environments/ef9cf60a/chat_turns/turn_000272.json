@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 272,
+  "session_index": 30,
+  "session_id": "sharegpt_VrUNawI_95",
+  "turn_in_session": 8,
+  "date": "2023/05/25 (Thu) 23:49",
+  "role": "assistant",
+  "content": "Voici une fonction en Python qui calcule la somme factorielle de n nombres entiers :\n```python\ndef somme_factorielle(n):\n    if n == 0:\n        return 1\n    else:\n        return n * somme_factorielle(n-1) + somme_factorielle(n-1)\n\nprint(somme_factorielle(3))\n```\nLa fonction utilise une approche r\u00e9cursive en appelant elle-m\u00eame deux fois avec n-1 pour calculer la factorielle de n et en ajoutant les deux r\u00e9sultats ensemble pour obtenir la somme factorielle. Si n est \u00e9gal \u00e0 0, la fonction retourne simplement 1.",
+  "has_answer": false
+}

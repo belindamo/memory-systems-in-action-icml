@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 202,
+  "session_index": 21,
+  "session_id": "sharegpt_YpPCfzH_0",
+  "turn_in_session": 5,
+  "date": "2023/05/25 (Thu) 14:42",
+  "role": "assistant",
+  "content": "Here's a sample of user stories for keyword search functionality in Cucumber:\n\nScenario 1: Search for images using keywords\n\nGiven a user is on the Pinterest homepage\nWhen the user enters a keyword into the search bar\nAnd clicks the search button\nThen the user should see a list of images related to the keyword\nAnd the user should be able to view, save or share the images\n\nScenario 2: Save an image from search results\n\nGiven a user is on the Pinterest homepage\nAnd the user has searched for a keyword\nWhen the user clicks on an image\nAnd clicks the \"Save\" button\nThen the image should be saved to the user's default board\n\nScenario 3: Filter search results by popularity\n\nGiven a user is on the Pinterest homepage\nAnd the user has searched for a keyword\nWhen the user clicks the \"Sort by\" dropdown\nAnd selects \"Popularity\"\nThen the search results should be sorted by popularity\nAnd the most popular images should be displayed first\n\nScenario 4: Infinite scrolling through search results\n\nGiven a user is on the Pinterest homepage\nAnd the user has searched for a keyword\nWhen the user scrolls down the page\nThen more images related to the keyword should be loaded dynamically\nAnd the user should be able to keep scrolling to see more images.",
+  "has_answer": false
+}

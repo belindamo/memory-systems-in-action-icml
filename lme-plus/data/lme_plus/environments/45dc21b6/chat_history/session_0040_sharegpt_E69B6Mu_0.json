@@ -1,0 +1,39 @@
+{
+  "session_id": "sharegpt_E69B6Mu_0",
+  "session_index": 40,
+  "date": "2023/05/30 (Tue) 10:29",
+  "turns": [
+    {
+      "role": "user",
+      "content": "What files and configuration would I need to set up a docker compose server with\nNginx, Letsencrypt certbot, vhost, PHP 8.1 and MariaDB?"
+    },
+    {
+      "role": "assistant",
+      "content": "To set up a Docker Compose server with Nginx, Letsencrypt certbot, vhost, PHP 8.1, and MariaDB, you will need the following files:\n\n1. A `Dockerfile` for building the PHP 8.1 image.\n2. A `docker-compose.yml` file for defining the services and their dependencies.\n3. A `default.conf` file for the Nginx vhost configuration.\n4. An `entrypoint.sh` script to handle the Nginx and certbot configuration.\n5. Optionally, a `.env` file for storing environment variables.\n\nHere is an example of what these files might look like:\n\n**Dockerfile**\n```\nFROM php:8.1-fpm\n\n# Install dependencies\nRUN apt-get update && apt-get install -y \\\n        libfreetype6-dev \\\n        libjpeg62-turbo-dev \\\n        libpng-dev \\\n        libzip-dev \\\n        zip \\\n    && docker-php-ext-configure zip --with-libzip \\\n    && docker-php-ext-install -j$(nproc) pdo_mysql zip \\\n    && docker-php-ext-configure gd --with-freetype --with-jpeg \\\n    && docker-php-ext-install -j$(nproc) gd\n```\n**docker-compose.yml**\n```\nversion: '3.7'\n\nservices:\n  nginx:\n    image: nginx:latest\n    container_name: nginx\n    volumes:\n      - ./default.conf:/etc/nginx/conf.d/default.conf\n      - ./src:/var/www/html\n      - ./certs:/etc/letsencrypt\n    ports:\n      - \"80:80\"\n      - \"443:443\"\n    depends_on:\n      - php\n      - certbot\n  certbot:\n    image: certbot/certbot\n    container_name: certbot\n    volumes:\n      - ./src:/var/www/html\n      - ./certs:/etc/letsencrypt\n    entrypoint: \"/entrypoint.sh\"\n  php:\n    build: .\n    container_name: php\n    volumes:\n      - ./src:/var/www/html\n    expose:\n      - \"9000\"\n  db:\n    image: mariadb:latest\n    container_name: db\n    environment:\n      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}\n      MYSQL_DATABASE: ${MYSQL_DATABASE}\n      MYSQL_USER: ${MYSQL_USER}\n      MYSQL_PASSWORD: ${MYSQL_PASSWORD}\n    volumes:\n      - db_data:/var/lib/mysql\n\nvolumes:\n  db_data:\n```\n**default.conf**\n```\nserver {\n    listen 80;\n    listen [::]:80;\n    server_name example.com www.example.com;\n    return 301 https://$server_name$request_uri;\n}\n\nserver {\n    listen 443 ssl;\n    listen [::]:443 ssl;\n    server_\n```"
+    },
+    {
+      "role": "user",
+      "content": "Please finish"
+    },
+    {
+      "role": "assistant",
+      "content": "Here is the rest of the `default.conf` file:\n```\nserver {\n    listen 443 ssl;\n    listen [::]:443 ssl;\n    server_name example.com www.example.com;\n\n    ssl_certificate /etc/letsencrypt/live/example.com/fullchain.pem;\n    ssl_certificate_key /etc/letsencrypt/live/example.com/privkey.pem;\n    include /etc/letsencrypt/options-ssl-nginx.conf;\n    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;\n\n    root /var/www/html;\n    index index.php index.html index.htm;\n\n    location / {\n        try_files $uri $uri/ /index.php$is_args$args;\n    }\n\n    location ~ \\.php$ {\n        try_files $uri =404;\n        fastcgi_pass php:9000;\n        fastcgi_index index.php;\n        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;\n        include fastcgi_params;\n    }\n}\n```\n**entrypoint.sh**\n```\n#!/bin/bash\n\n# Wait for the MySQL server to be available\nuntil mysql -h db -u root -p$MYSQL_ROOT_PASSWORD -e \"\"; do\n    >&2 echo \"MySQL is unavailable - sleeping\"\n    sleep 1\ndone\n\n# Check if the certbot certificate exists\nif [ ! -f /etc/letsencrypt/live/example.com/fullchain.pem ]; then\n    # Obtain a new certificate\n    certbot certonly --webroot -w /var/www/html -d example.com -d www.example.com --email you@example.com --agree-tos --non-interactive\nfi\n\n# Start the Nginx server\nnginx -g \"daemon off;\"\n```\n**.env**\n```\nMYSQL_ROOT_PASSWORD=secret\nMYSQL_DATABASE=database\nMYSQL_USER=user\nMYSQL_PASSWORD=password\n```\nYou can then build and start the server using the following commands:\n```\n# Build the PHP image\ndocker-compose build\n\n# Start the server\ndocker-compose up -d\n```"
+    },
+    {
+      "role": "user",
+      "content": "Please show a directory tree"
+    },
+    {
+      "role": "assistant",
+      "content": "Here is an example of the directory tree for a Docker Compose server with Nginx, Letsencrypt certbot, vhost, PHP 8.1, and MariaDB:\n```\n.\n\u251c\u2500\u2500 Dockerfile\n\u251c\u2500\u2500 docker-compose.yml\n\u251c\u2500\u2500 default.conf\n\u251c\u2500\u2500 entrypoint.sh\n\u251c\u2500\u2500 .env\n\u251c\u2500\u2500 src\n\u2502   \u251c\u2500\u2500 index.php\n\u2502   \u2514\u2500\u2500 ...\n\u2514\u2500\u2500 certs\n    \u251c\u2500\u2500 live\n    \u2502   \u2514\u2500\u2500 example.com\n    \u251c\u2500\u2500 options-ssl-nginx.conf\n    \u251c\u2500\u2500 ssl-dhparams.pem\n    \u2514\u2500\u2500 ...\n```"
+    },
+    {
+      "role": "user",
+      "content": "how do I add multiple hosts all from one config file?"
+    },
+    {
+      "role": "assistant",
+      "content": "To add multiple hosts in a single Nginx configuration file, you can use the `server` block directive. Each `server` block can contain its own unique configuration, including a different `server_name` and `root` directory.\n\nHere is an example of a `default.conf` file that includes configurations for two hosts:\n```\nserver {\n    listen 80;\n    listen [::]:80;\n    server_name example.com www.example.com;\n    return 301 https://$server_name$request_uri;\n}\n\nserver {\n    listen 443 ssl;\n    listen [::]:443 ssl;\n    server_name example.com www.example.com;\n\n    ssl_certificate /etc/letsencrypt/live/example.com/fullchain.pem;\n    ssl_certificate_key /etc/letsencrypt/live/example.com/privkey.pem;\n    include /etc/letsencrypt/options-ssl-nginx.conf;\n    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;\n\n    root /var/www/html/example.com;\n    index index.php index.html index.htm;\n\n    location / {\n        try_files $uri $uri/ /index.php$is_args$args;\n    }\n\n    location ~ \\.php$ {\n        try_files $uri =404;\n        fastcgi_pass php:9000;\n        fastcgi_index index.php;\n        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;\n        include fastcgi_params;\n    }\n}\n\nserver {\n    listen 80;\n    listen [::]:80;\n    server_name example2.com www.example2.com;\n    return 301 https://$server_name$request_uri;\n}\n\nserver {\n    listen 443 ssl;\n    listen [::]:443 ssl;\n    server_name example2.com www.example2.com;\n\n    ssl_certificate /etc/letsencrypt/live/example2.com/fullchain.pem;\n    ssl_certificate_key /etc/letsencrypt/live/example2.com/privkey.pem;\n    include /etc/letsencrypt/options-ssl-nginx.conf;\n    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;\n\n    root /var/www/html/example2.com;\n    index index.php index.html index.htm;\n\n    location / {\n        try_files $uri $uri/ /index.php$is_args$args;\n    }\n\n    location ~ \\.php$ {\n        try_files $uri =404;\n        fastcgi_pass php:9000;\n        fastcgi_index index.php;\n        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;\n        include fastcgi_params;\n    }\n}\n```\nIn this example, the first `server` block listens for HTTP traffic on port 80 for the `example.com` and `www.example.com` domains, and redirects it to HTTPS. The second `server` block listens for HTTPS traffic on port 443 and serves the content for the `"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 308,
+  "session_index": 26,
+  "session_id": "sharegpt_h0un5Rm_167",
+  "turn_in_session": 10,
+  "date": "2023/03/14 (Tue) 15:56",
+  "role": "assistant",
+  "content": "Here is an example of how the code for the feedback feature and post-use instructions for farmers might look like:\n```javascript\n// Feedback Feature\n\n// Create a function to display a feedback form\nfunction showFeedbackForm() {\n  // Code to display the form\n}\n\n// Create a function to submit feedback\nfunction submitFeedback() {\n  // Code to submit feedback to the database\n}\n\n// Add an event listener to the feedback button to show the form\ndocument.getElementById(\"feedback-btn\").addEventListener(\"click\", showFeedbackForm);\n\n// Add an event listener to the submit button on the feedback form to submit feedback\ndocument.getElementById(\"submit-btn\").addEventListener(\"click\", submitFeedback);\n// Post-Use Instructions\n\n// Create a function to display post-use instructions\nfunction showInstructions() {\n  // Code to display instructions\n}\n\n// Add an event listener to the \"next\" button on the AR experience to display instructions\ndocument.getElementById(\"next-btn\").addEventListener(\"click\", showInstructions);\n```\nIn this example, the feedback feature includes a function to display a feedback form and another function to submit the feedback to the database. The event listeners are added to the appropriate buttons to trigger these functions.\n\nThe post-use instructions feature includes a function to display the instructions and an event listener to trigger the function when the \"next\" button on the AR experience is clicked.",
+  "has_answer": false
+}

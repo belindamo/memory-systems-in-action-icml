@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 365,
+  "session_index": 34,
+  "session_id": "sharegpt_PEcIUeK_101",
+  "turn_in_session": 1,
+  "date": "2023/05/26 (Fri) 20:26",
+  "role": "assistant",
+  "content": "To extract the number of reactions sent by each person in a Pandas dataframe, you can first use the `apply` method to apply a function to each row that extracts the reactions from the \"reactions\" column. You can then use the `groupby` and `size` methods to group the reactions by name and count the number of reactions for each person.\n\nHere's an example of how you can do this:\n```\ndef extract_reactions(row):\n    reactions = row['reactions']\n    return [{'name': reaction['name'], 'reaction': reaction['reaction']} for reaction in reactions]\n\ndf_reactions = df.apply(extract_reactions, axis=1).explode()\ndf_summary = df_reactions.groupby('name').size().reset_index(name='count')\n```\nThis will create a new dataframe with two columns: `name` and `count`, which contains the number of reactions for each person.\n\nThe resulting dataframe will have the following structure:\n```\n    name  count\n0  Alice      3\n1    Bob      2\n2  Carol      1\n```\nThis indicates that Alice sent 3 reactions, Bob sent 2 reactions, and Carol sent 1 reaction.\n\nI hope this helps! Let me know if you have any other questions.",
+  "has_answer": false
+}

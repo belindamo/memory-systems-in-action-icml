@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 238,
+  "session_index": 24,
+  "session_id": "sharegpt_MJKLmq1_0",
+  "turn_in_session": 1,
+  "date": "2023/03/10 (Fri) 16:03",
+  "role": "assistant",
+  "content": "Here is the SuiteScript 2.0 version of the provided code:\n```js\nfunction getPromoPrices() {\n  var column = [search.createColumn({\n    name: \"custrecord_parent_promo\",\n    join: null,\n    summary: \"GROUP\"\n  })];\n  var ppm = search.create({\n    type: \"customrecord_special_pricing_detail\",\n    filters: [\n      [\"custrecord_detail_customer\", \"anyof\", \"@NONE@\"],\n      \"AND\",\n      [\"custrecord_parent_promo\", \"noneof\", \"@NONE@\"]\n    ],\n    columns: column\n  }).run().getRange({ start\n```",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 152,
+  "session_index": 11,
+  "session_id": "sharegpt_BWMyoNr_0",
+  "turn_in_session": 26,
+  "date": "2023/05/22 (Mon) 01:15",
+  "role": "user",
+  "content": "Please correct my grammar below, the message below are from We (\"As Clinic\") to the service provider called Yezza (\"As Clinic appointment System provider\")\n\n1. The RM197 per month is that just for Clinic appointment system? or is part of your \"GROWTH\" plan which is included an e-commerce store?\n\n2. What is the maximum number of users to use your systems? Can I have unlimited number of doctors and staff to access the back-end system with RM197 per month?\n\n3. The time roster of the doctors is subject to change every day. \n(eg: \nDoctor A worked on 1 Mar 2022 (WEDNESDAY) at 1PM-5PM, but work 8 Mar 2022 (WEDNESDAY) at 3PM-10PM)\nThe question is, is that possible for me to change the time table on the DAILY basis on the appointment system?\n\n4. Can user:\n4.1 Cancel their own appointment from their end?\n4.2 Reschedule their own appointment from their end?\n\n5. Regarding SMS:\n5.1 What is the cost for using SMS services? How much per SMS?\n5.2 Can we close the features and enable our SMS gateway?\n\n6. Do you provide API or Webhooks? Please kindly send the link of the documentation.\n\n7. Can we set conditional rules on the appointment system?\nEg:\n7.1 Based on the number of doctors on duty\n- when 1 doctor on duty, 1 appointment every 2 hours\n- when 2 doctors on duty, 1 appt every hour\n7.2 Based on the time. (Assume we provide 2 Services which are \"Screening\" and \"Checkup\")\n- I would like to only have the service \"Screening\" on every 900 AM - 1200 PM\n- I would like to have all of the services (\"Screening\" and \"Checkup\" on every 1200 PM -1030PM)",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 465,
+  "session_index": 42,
+  "session_id": "sharegpt_TpaMHPY_0",
+  "turn_in_session": 2,
+  "date": "2023/05/27 (Sat) 23:26",
+  "role": "user",
+  "content": "How to set CSS to let a Dropdown menu (has dynamic items for dropdown content) on a popup modal can be scrolled for both mobile and desktop. I had set \n```\n overflow-y: auto;\n -webkit-overflow-scrolling: auto;\n\n```\nin my style.css, but still cannot scroll the Dropdown (on a popup modal)",
+  "has_answer": false
+}

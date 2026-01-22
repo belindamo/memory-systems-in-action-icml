@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 367,
+  "session_index": 34,
+  "session_id": "sharegpt_PEcIUeK_101",
+  "turn_in_session": 3,
+  "date": "2023/05/26 (Fri) 20:26",
+  "role": "assistant",
+  "content": "To include the sender name in the summary dataframe and count the number of reactions sent by each person to each other person, you can modify the function that extracts the reactions to also include the sender name. You can then use the `groupby` and `size` methods to group the reactions by sender name and recipient name, and count the number of reactions for each pair.\n\nHere's an example of how you can do this:\n```\ndef extract_reactions(row):\n    reactions = row['reactions']\n    sender = row['sender_name']\n    return [{'sender': sender, 'recipient': reaction['name'], 'reaction': reaction['reaction']} for reaction in reactions]\n\ndf_reactions = df.apply(extract_reactions, axis=1).explode()\ndf_summary = df_reactions.groupby(['sender', 'recipient']).size().reset_index(name='count')\n```\nThis will create a new dataframe with three columns: `sender`, `recipient`, and `count`, which contains the number of reactions for each sender-recipient pair.\n\nThe resulting dataframe will have the following structure:\n```\n  sender recipient  count\n0  Alice       Bob      2\n1  Alice     Carol      1\n2    Bob       Bob      1\n3    Bob     Carol      1\n```\nThis indicates that Alice sent 2 reactions to Bob, 1 reaction to Carol, Bob sent 1 reaction to himself, and 1 reaction to Carol.\n\nI hope this helps! Let me know if you have any other questions.",
+  "has_answer": false
+}

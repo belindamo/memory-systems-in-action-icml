@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 23,
+  "session_index": 4,
+  "session_id": "sharegpt_XfeER1N_0",
+  "turn_in_session": 1,
+  "date": "2023/05/21 (Sun) 05:51",
+  "role": "assistant",
+  "content": "To automatically mount an NFS share on boot without blocking the boot process on Debian, you can use the `autofs` service.\n\nFirst, you will need to install the `autofs` package by running the following command:\n```\nsudo apt-get update && sudo apt-get install autofs\n```\nNext, you will need to configure `autofs` to mount your NFS share. You can do this by editing the `/etc/auto.master` file and adding an entry for your NFS share. For example, if you want to mount an NFS share located at `192.168.1.100:/nfsshare` to the `/mnt/nfs` directory on your local machine, you would add the following entry to the `/etc/auto.master` file:\n```\n/mnt/nfs    192.168.1.100:/nfsshare    auto    nofail,bg,soft,intr,nfsvers=3,tcp\n```\nThe `nofail` option tells `autofs` to continue booting even if the NFS share fails to mount. The `bg` option tells `autofs` to mount the share in the background, so it doesn't block the boot process. The other options are specific to NFS and allow for a more robust and reliable mount.\n\nAfter making this change, you will need to restart the `autofs` service in order for the changes to take effect. You can do this by running the following command:\n```\nsudo systemctl restart autofs\n```\nYour NFS share should now be automatically mounted on boot without blocking the boot process. You can check the status of the mount by running the `mount` command and looking for the `/mnt/nfs` mount point.",
+  "has_answer": false
+}

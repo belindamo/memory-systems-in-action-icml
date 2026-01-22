@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 232,
+  "session_index": 21,
+  "session_id": "sharegpt_vl3is2s_11",
+  "turn_in_session": 10,
+  "date": "2023/06/28 (Wed) 20:24",
+  "role": "assistant",
+  "content": "To evaluate the objective function for different values of x1 and x2, you can use Excel's built-in capability to copy formulas down to other cells.\n\nTo do this, you can enter the input values of x1 and x2 in separate cells (for example, in cells A2 and A3), and then enter the formula for the objective function in cell B2 as `=A2^2 - A2*A3^2 + A3^2 - 2*A3`.\n\nThen, you can select cell B2 and use the fill handle to copy the formula down to the other cells in column B (for example, by dragging the fill handle down to cell B10). Excel will automatically adjust the cell references in the formula for each row.\n\nOnce you have copied the formula down to the other cells, you can see the computed value of the objective function for different values of x1 and x2.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 241,
+  "session_index": 23,
+  "session_id": "sharegpt_16aQRSz_0",
+  "turn_in_session": 3,
+  "date": "2023/05/25 (Thu) 01:55",
+  "role": "assistant",
+  "content": "Sure, here's an example of how you can use the INTERSECT operator in the `hasActiveFunction` function:\n```\nasync function hasActiveFunction(ownerId: string, edgeConfigIds: string[]) {\n  const filter: Record<string, string> = {};\n\n  edgeConfigIds.forEach((id, index) => {\n    const filterName = `edgeConfigId${index}`;\n    filter[filterName] = id;\n  });\n\n  const [fn = null] = await getCosmos().queryDocuments<ServerlessFunction>(\n    Collection.FUNCTIONS,\n    `SELECT TOP 1 * FROM c WHERE c.state = \"READY\" AND ARRAY_LENGTH(c.edgeConfigIds) = @count \n    AND (SELECT COUNT(*) FROM UNNEST(@edgeConfigIds) INTERSECT SELECT COUNT(*) FROM UNNEST(c.edgeConfigIds)) = @count`,\n    {\n      ...filter,\n      count: edgeConfigIds.length,\n    },\n    {\n      partitionKey: ownerId,\n    },\n  );\n\n  return fn;\n}\n```\nIn this version of the function, it first creates a filter object, which will be used to pass the edgeConfigIds array as a parameter to the query. Then it uses the INTERSECT operator to find the common elements between the edgeConfigIds array passed as a parameter and the edgeConfigIds array in the documents.\nIt then compares the count of the common elements to the count of the original array passed as a parameter to check if they have the same elements, regardless of order.\nThen it filters the documents that matches the result of the intersection and return the first one.\nPlease note that this is just an example, you may need to adjust it to match your specific use case and data structure.",
+  "has_answer": false
+}

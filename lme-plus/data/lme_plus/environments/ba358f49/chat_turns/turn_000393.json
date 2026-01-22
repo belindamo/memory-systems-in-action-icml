@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 393,
+  "session_index": 39,
+  "session_id": "sharegpt_AqgYTct_0",
+  "turn_in_session": 0,
+  "date": "2022/09/01 (Thu) 22:49",
+  "role": "user",
+  "content": "Production deployment plan\npayment-service is Payment Server V2\n\nfirst-data-xtp-mux is First Data XTP Mux\n\nDC1\n\nDivert all traffic to DC2, so no traffic in DC1\n\nStop payment-service in DC1\n\nStop first-data-xtp-mux in DC1\n\nDeploy first-data-xtp-mux in DC1\n\nDeploy payment-service in DC1\n\nStart first-data-xtp-mux in DC1\n\nStart payment-service in DC1\n\nPVT in DC1\n\nSign-off on PVT\nDC2\n\nDivert all traffic to DC1, so no traffic in DC2\n\nStop payment-service in DC2\n\nStop first-data-xtp-mux in DC2\n\nDeploy first-data-xtp-mux in DC2\n\nDeploy payment-service in DC2\n\nStart first-data-xtp-mux in DC2\n\nStart payment-service in DC2\n\nPVT in DC2\n\nSign-off on PVT\nFinalise\n\nSwitch to load balanced traffic\n\nMonitor",
+  "has_answer": false
+}

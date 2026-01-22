@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 228,
+  "session_index": 21,
+  "session_id": "sharegpt_RjO1Toi_31",
+  "turn_in_session": 19,
+  "date": "2023/06/01 (Thu) 12:20",
+  "role": "assistant",
+  "content": "The frame extraction for the given sentence is as follows:\n\n**Frame**: Measure\\_duration\n\n* **Count**: \"six\"\n* **Unit**: \"months\"\n\n**Frame**: Statement\n\n* **Speaker**: \"I\"\n* **Manner**: \"openly and regularly\"\n* **Message**: \"that if we continue to fight the way we troops have been fighting under the leadership of the Russian Defense Ministry, then we will eventually suffer a crushing defeat in this war\"\n\n**Frame**: Activity\\_ongoing\n\n* **Agent**: \"we\"\n* **Activity**: \"to fight the way we troops have been fighting under the leadership of the Russian Defense Ministry\"\n\n**Frame**: Hostile\\_encounter\n\n* **Side\\_1**: \"we\"\n* **Manner**: \"the way we troops have been fighting\"\n\n**Frame**: Hostile\\_encounter\n\n* **Manner**: \"the way\"\n* **Side\\_1**: \"we troops\"\n* **Manner**: \"under the leadership of the Russian Defense Ministry\"\n\n**Frame**: Catastrophe\n\n* **Patient**: \"we\"\n* **Time**: \"eventually\"\n* **Undesirable\\_event**: \"a crushing defeat in this war\"\n\n**Frame**: Hostile\\_encounter\n\n* **N/A**: \"N/A\"",
+  "has_answer": false
+}

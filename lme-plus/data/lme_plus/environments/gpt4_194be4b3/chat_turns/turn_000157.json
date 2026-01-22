@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 157,
+  "session_index": 15,
+  "session_id": "sharegpt_zvmX9pX_25",
+  "turn_in_session": 2,
+  "date": "2023/05/25 (Thu) 01:23",
+  "role": "assistant",
+  "content": "Sure, here's a table summarizing the information on the \"Quality\" parameter in the last content:\n\n| Quality Setting | Description | GPU Minutes Used | Compatible Model Versions |\n| --- | --- | --- | --- |\n| .25 | Quickest results, least detailed. 4x faster and \u00bc the GPU minutes used compared to the default setting of 1. | .25 | 1, 2, 3, 4, niji |\n| .5 | Less detailed results. 2x faster and \u00bd the GPU minutes used compared to the default setting of 1. | .5 | 1, 2, 3, 4, niji |\n| 1 | Default setting. | 1 | 1, 2, 3, 4, niji |\n\nYou can use the `--quality` or `--q` parameter by adding `--quality <value>` or `--q <value>` to the end of your prompt. You can also change the setting by using the `/settings` command and selecting your preferred value from the menu.",
+  "has_answer": false
+}

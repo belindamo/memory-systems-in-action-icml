@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 364,
+  "session_index": 34,
+  "session_id": "sharegpt_PEcIUeK_101",
+  "turn_in_session": 0,
+  "date": "2023/05/26 (Fri) 20:26",
+  "role": "user",
+  "content": "I have a dataframe that contains one row for each message. The dataframe has a column \"reactions\" which holds a dictionary containing the multiple reactions. Each reaction dictionary contains two keys: the name and the reaction. How would I extract the number of reactions sent by each person?",
+  "has_answer": false
+}

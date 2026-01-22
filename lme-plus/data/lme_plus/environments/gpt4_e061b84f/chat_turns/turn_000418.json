@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 418,
+  "session_index": 41,
+  "session_id": "sharegpt_E3FiZj3_62",
+  "turn_in_session": 5,
+  "date": "2023/06/17 (Sat) 19:42",
+  "role": "assistant",
+  "content": "To collect correct labels of the implant system predicted by the app, we can modify the `Case` model in the `case_management` module to include a new field `predicted_label` which will store the label predicted by the app. We can then update the case with the correct label by allowing users to edit the `predicted_label` field. Here is an updated version of the `Case` model:\n```python\nfrom google.cloud import ndb\n\nclass Case(ndb.Model):\n    # fields for storing the case information\n    case_id = ndb.StringProperty(required=True)\n    case_name = ndb.StringProperty()\n    patient_name = ndb.StringProperty()\n    patient_age = ndb.IntegerProperty()\n    patient_sex = ndb.StringProperty(choices=['M', 'F'])\n    doctor_name = ndb.StringProperty()\n    created_on = ndb.DateTimeProperty(auto_now_add=True)\n    last_updated = ndb.DateTimeProperty(auto_now=True)\n    \n    # fields for storing the image information\n    images = ndb.JsonProperty()\n\n    # fields for storing the prediction information\n    predicted_label = ndb.StringProperty()\n    prediction_confidence = ndb.FloatProperty()\n\n    # fields for sharing the case with other users\n    shared_with = ndb.JsonProperty()\n\n    # fields for storing user comments\n    comments = ndb.JsonProperty()\n```\nWith this modification, we can collect the correct labels predicted by the app for future analysis and improvements.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 392,
+  "session_index": 40,
+  "session_id": "sharegpt_6fTnCnw_27",
+  "turn_in_session": 6,
+  "date": "2022/03/02 (Wed) 06:22",
+  "role": "assistant",
+  "content": "Sure, here is the hierarchy with numbers instead of bullets:\n\n1. Sentence:\n\t1. Clause (Independent or Dependent)\n\t\t1. Subject (if present)\n\t\t\t1. Word (Noun, Pronoun, if present)\n\t\t\t\t1. Letter\n\t\t\t2. Phrase (Noun, if present)\n\t\t2. Predicate\n\t\t\t1. Verb Phrase (Main Verb, Auxiliary Verb, if present)\n\t\t\t\t1. Word (Verb, if present)\n\t\t\t\t\t1. Letter\n\t\t\t\t2. Phrase (Verb, if present)\n\t\t3. Object (if present)\n\t\t\t1. Word (Noun, Pronoun, if present)\n\t\t\t\t1. Letter\n\t\t\t2. Phrase (Noun, if present)\n\t\t4. Complement (if present)\n\t\t\t1. Word (Noun, Pronoun, Adjective, if present)\n\t\t\t\t1. Letter\n\t\t\t2. Phrase (Adjective, if present)\n\t\t5. Modifier (Adjective, Adverb, if present)\n\t\t\t1. Word (Adjective, Adverb, if present)\n\t\t\t\t1. Letter\n\t\t\t2. Phrase (Adjective, Adverb, if present)\n\t2. Phrase (Noun, Verb, Adjective, Adverb, Prepositional, Gerund, Infinitive, if present)\n\t\t1. Word (Noun, Verb, Adjective, Adverb, if present)\n\t\t\t1. Letter\n\nThis way it is clear that each item is a sub-unit of the item one level above it.\nPlease let me know if you have any other question.",
+  "has_answer": false
+}

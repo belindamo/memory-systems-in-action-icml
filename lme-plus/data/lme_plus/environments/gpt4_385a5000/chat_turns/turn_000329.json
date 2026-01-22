@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 329,
+  "session_index": 32,
+  "session_id": "sharegpt_SQzWPKF_34",
+  "turn_in_session": 7,
+  "date": "2023/03/10 (Fri) 23:23",
+  "role": "assistant",
+  "content": "Sure, here are the revised .svg files for the Infrared Footprint and Motor Bracket Footprint, with added rectangles around the border:\n\nInfrared Footprint:\n```php\n<svg width=\"96.5mm\" height=\"20.5mm\" viewBox=\"0 0 96.5 20.5\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"0\" y=\"0\" width=\"96.5\" height=\"20.5\" fill=\"#FFFFFF\" />\n  <circle cx=\"7\" cy=\"4.25\" r=\"1.5\" fill=\"#000000\" />\n  <circle cx=\"24\" cy=\"4.25\" r=\"1.5\" fill=\"#000000\" />\n  <circle cx=\"72.5\" cy=\"4.25\" r=\"1.5\" fill=\"#000000\" />\n  <circle cx=\"89.5\" cy=\"4.25\" r=\"1.5\" fill=\"#000000\" />\n</svg>\n```\nMotor Bracket Footprint:\n```php\n<svg width=\"15mm\" height=\"5mm\" viewBox=\"0 0 15 5\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"0\" y=\"0\" width=\"15\" height=\"5\" fill=\"#FFFFFF\" />\n  <circle cx=\"3.5\" cy=\"2.5\" r=\"1.5\" fill=\"#000000\" />\n  <circle cx=\"11.5\" cy=\"2.5\" r=\"1.5\" fill=\"#000000\" />\n</svg>\n```\nI hope these revised .svg files meet your requirements. Let me know if you have any further questions.",
+  "has_answer": false
+}

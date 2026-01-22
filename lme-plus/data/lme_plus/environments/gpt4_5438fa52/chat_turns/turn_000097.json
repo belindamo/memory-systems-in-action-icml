@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 97,
+  "session_index": 12,
+  "session_id": "sharegpt_ni8QFie_11",
+  "turn_in_session": 2,
+  "date": "2023/05/27 (Sat) 13:58",
+  "role": "assistant",
+  "content": "Use Case 1: Upload game to Steam\nActor: Developer\nBasic Flow:\n\n1. Developer accesses the Steamworks developer portal\n2. Developer uploads game files and provides necessary information such as game title, description, and pricing.\n3. Developer submits the game for review by Steam.\n4. Steam reviews the game and approves or denies it for release.\n\nAlternative Flow 1: Game is denied due to technical issues\n\n* Developer is informed of the technical issues and is prompted to fix them before resubmitting the game.\n\nAlternative Flow 2: Game is denied due to content violations\n\n* Developer is informed of the content violations and is prompted to make changes before resubmitting the game.\n\nAlternative Flow 3: Game has a slow review process\n\n* Developer is informed of the slow review process and is prompted to wait for the review to be completed.\n\nAlternative Flow 4: Game is approved and released\n\n* Developer is informed that the game has been approved and is now available on Steam.",
+  "has_answer": false
+}

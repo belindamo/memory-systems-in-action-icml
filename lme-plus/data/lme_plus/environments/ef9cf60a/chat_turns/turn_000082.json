@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 82,
+  "session_index": 9,
+  "session_id": "sharegpt_U8CljCM_315",
+  "turn_in_session": 10,
+  "date": "2023/05/21 (Sun) 20:45",
+  "role": "assistant",
+  "content": "Sure, here's a table for the \"Add New Machine\" form:\n\n| Category | Field Title | Field Type | Required | Description |\n| --- | --- | --- | --- | --- |\n| Machine Info | Machine Type | Text | Yes | The type of the new machine |\n|  | Machine Brand | Text | Yes | The brand of the new machine |\n|  | Machine Model | Text | Yes | The model of the new machine |\n|  | Year of Manufacture | Number | Yes | The year the machine was manufactured |\n|  | Purchase Date | Date | Yes | The date the machine was purchased |\n|  | Purchase Price | Number | Yes | The purchase price of the machine |\n| Machine Status | Machine Condition | Dropdown List | Yes | The condition of the machine, e.g. \"New\", \"Used\" |\n|  | Machine Location | Text | Yes | The location of the machine in the factory |\n|  | Installation Date | Date | No | The date the machine was installed |\n|  | Installation Technician | Text | No | The name of the technician who installed the machine |\n| Machine Specs | Machine Gauge | Number | Yes | The gauge of the machine |\n|  | Number of Feeders | Number | Yes | The number of feeders on the machine |\n|  | Number of Cylinders | Number | Yes | The number of cylinders on the machine |\n|  | Number of Needles | Number | Yes | The number of needles on the machine |\n|  | Maximum Speed | Number | Yes | The maximum speed of the machine in RPM |",
+  "has_answer": false
+}

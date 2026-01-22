@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 309,
+  "session_index": 28,
+  "session_id": "sharegpt_Ud6pGYb_0",
+  "turn_in_session": 3,
+  "date": "2023/05/27 (Sat) 03:16",
+  "role": "assistant",
+  "content": "To upload files to your bucket, follow these steps:\n\n1. Sign in to the Google Cloud Console.\n2. Click the project drop-down at the top of the page, and select the project that contains the bucket you want to upload files to.\n3. In the side navigation menu, click Storage, and then click on the name of the bucket you want to upload files to.\n4. Click the Upload files button.\n5. Click the Select files from your device button, and select the files you want to upload.\n6. Click the Open button to begin uploading the files to your bucket.\n\nThe uploaded files will appear in the bucket's file list, and you can access them at any time by clicking on their names in the list.\n\nKeep in mind that you will need to set the appropriate permissions on your bucket to allow GPT-3 to access the files you upload. You can do this by clicking on the bucket's name in the Storage browser and then clicking the Edit bucket permissions button. For more information on setting bucket permissions, see the GCP documentation.",
+  "has_answer": false
+}

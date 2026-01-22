@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 219,
+  "session_index": 21,
+  "session_id": "sharegpt_RjO1Toi_31",
+  "turn_in_session": 10,
+  "date": "2023/06/01 (Thu) 12:20",
+  "role": "user",
+  "content": "extract frames and the frame elements from this sentence: {\"sentence\": \"Some better, some worse.\u201d\", \"frames\": [{\"name\": \"Proportional\\_quantity\", \"elements\": [{\"name\": \"Denoted\\_quantity\", \"text\": \"Some\"}, {\"name\": \"Mass\", \"text\": \"better\"}]}, {\"name\": \"Desirability\", \"elements\": [{\"name\": \"\", \"text\": \"N/A\"}]}, {\"name\": \"Proportional\\_quantity\", \"elements\": [{\"name\": \"Denoted\\_quantity\", \"text\": \"some\"}, {\"name\": \"Mass\", \"text\": \"worse\"}]}, {\"name\": \"Desirability\", \"elements\": [{\"name\": \"\", \"text\": \"N/A\"}]}]}",
+  "has_answer": false
+}

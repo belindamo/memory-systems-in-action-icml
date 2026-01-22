@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 42,
+  "session_index": 4,
+  "session_id": "sharegpt_RjO1Toi_66",
+  "turn_in_session": 2,
+  "date": "2023/05/21 (Sun) 04:58",
+  "role": "user",
+  "content": "extract frames and the frame elements from this sentence: {\"sentence\": \"Alexander Khodakovsky, Donbas separatist commander: \u201cThe reason for what is happening, first and foremost, is not a lack of people but careless use of people\u2014that is, how [poorly] the process is organized.\", \"frames\": [{\"name\": \"Leadership\", \"elements\": [{\"name\": \"Governed\", \"text\": \"Donbas separatist\"}]}, {\"name\": \"Causation\", \"elements\": [{\"name\": \"Effect\", \"text\": \"for what is happening\"}, {\"name\": \"Cause\", \"text\": \"is not a lack of people but careless use of people\u2014that is, how [poorly] the process is organized\"}]}, {\"name\": \"Event\", \"elements\": [{\"name\": \"Event\", \"text\": \"what\"}]}, {\"name\": \"Possession\", \"elements\": [{\"name\": \"Possession\", \"text\": \"of people\"}]}, {\"name\": \"People\", \"elements\": [{\"name\": \"Person\", \"text\": \"people\"}]}, {\"name\": \"Using\", \"elements\": [{\"name\": \"Manner\", \"text\": \"careless\"}, {\"name\": \"Instrument\", \"text\": \"of people\"}]}, {\"name\": \"People\", \"elements\": [{\"name\": \"Person\", \"text\": \"people\"}]}, {\"name\": \"Process\", \"elements\": [{\"name\": \"Process\", \"text\": \"process\"}]}, {\"name\": \"Organization\", \"elements\": [{\"name\": \"Organization\", \"text\": \"how\"}, {\"name\": \"Members\", \"text\": \"the process\"}]}]}",
+  "has_answer": false
+}

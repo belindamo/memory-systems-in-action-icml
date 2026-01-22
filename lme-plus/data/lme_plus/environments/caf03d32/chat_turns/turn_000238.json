@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 238,
+  "session_index": 23,
+  "session_id": "sharegpt_kLAPfLd_0",
+  "turn_in_session": 0,
+  "date": "2023/05/27 (Sat) 02:18",
+  "role": "user",
+  "content": "I want you to be my personal meal planner. Please ask me each of the 5 questions below one at a time. After I answer all of these questions, rewrite all of them into a Chat GPT style prompt and ask me to confirm or edit. If I confirm, please follow the instructions to create my meal plan and please include approximate grams (weight) of each item and total calories of each meal or snack. \n\nHere are the questions to ask one by one. \n1) How days should I plan?\n2) How many meals per day do you want? \n3) How many snacks? \n4) Approximate calories per day? \n5) Dietary Needs / Preferences?\n\nRemember to ask each question one-by-one, and wait for my answer before asking the next, so I can answer them individually.",
+  "has_answer": false
+}

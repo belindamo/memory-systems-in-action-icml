@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 485,
+  "session_index": 46,
+  "session_id": "sharegpt_9qAGH5s_0",
+  "turn_in_session": 2,
+  "date": "2023/05/30 (Tue) 10:06",
+  "role": "user",
+  "content": "depending on the previous definition i want to create a web portal project: Smart Reservation System for Multiple Venues \nDescription: Develop a reservation system for different types of venues such as hotels, restaurants, and entertainment venues, that allows users to search for available spaces, make bookings, and manage their reservations. The system should also include features like payment processing, event scheduling, and user feedback.\ntech stack:\nthe project will be a microservices web application\nfor the development\nFront end:angular bootstrap\nbackend:spring boot spring cloud eureka\ndatabases:\nfor users: mysql\nA distributed database like Cassandra could be used to store data related to reservations, such as user information, reservation details, and availability of rooms across multiple hotels. This would allow the system to scale horizontally and handle a large number of requests from users.\nweb services\nGraphQL API for hotels search functionality\nRest api for users and gateway\nAPI testing:mulesoft\nmachine learning microservice :tensorflow java\ndevops\nCI/CD:\ncode :github\nbuild:maven\npackage:docker\npublish:docker\ndeploy:jenkins\nScrum methodology\n5 sprints each is one week\ncan you give the microservices needed on this project based on the information above so I can use all the tecnologies",
+  "has_answer": false
+}

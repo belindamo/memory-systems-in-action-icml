@@ -1,0 +1,63 @@
+{
+  "session_id": "sharegpt_tMOb5TT_0",
+  "session_index": 14,
+  "date": "2023/03/26 (Sun) 18:55",
+  "turns": [
+    {
+      "role": "user",
+      "content": "My images are displaying larger than I would like them to be. I've tried adding a max-height percentage in a few places, but it's not working for me. \n\nWhere would you add the max height? \n\nsection.discover {\n // Frame 3\n display: flex;\n flex-direction: row;\n align-items: flex-start;\n padding: 0;\n gap: 2em;\n max-width: 100%;\n order: 1;\n flex-grow: 0;\n\n header {\n // title\n display: flex;\n padding: 0;\n gap: 1em;\n flex: none;\n order: 0;\n flex-basis: 25%;\n\n h2 {\n // discover\n display: flex;\n align-items: flex-start;\n padding: 0;\n gap: 2em;\n order: 1;\n flex-grow: 0;\n }\n }\n\n .cards {\n // no related\n display: flex;\n flex-wrap: no-wrap;\n justify-content: center;\n\n .card-wrap {\n // push\n display: flex;\n flex-direction: column;\n align-items: flex-start;\n padding: 0.5em;\n flex: none;\n order: 1;\n flex-basis: 33%;\n\n .card {\n display: flex;\n flex-direction: column;\n align-items: stretch;\n\n img {\n // Rectangle 22\n border-radius: 2em 2em 2em 2em;\n order: 0;\n align-self: stretch;\n max-width: 90%;\n max-height: 10%;\n padding: 0.5em;\n }\n\n .content {\n // Frame 2\n display: flex;\n flex-direction: column;\n align-items: flex-start;\n padding: 0;\n gap: 0.5em;\n flex: none;\n order: 1;\n align-self: stretch;\n\n// p.type {\n// color: $medium-grey;\n// }\n\n h3 {\n // .brochure\n font-family: 'Inter';\n font-weight: 700;\n font-size: 1.125em;\n line-height: 1.5em;\n color: #0A0A0A;\n flex: none;\n order: 0;\n align-self: stretch;\n flex-grow: 0;\n }\n\n p.excerpt {\n // .guide\n font-family: 'Inter';\n font-weight: 400;\n font-size: 0.875em;\n line-height: 1.25em;\n color: #657780;\n flex: none;\n order: 1;\n align-self: stretch;\n flex-grow: 0;\n\n }\n }\n\n &:hover {\n color: $dark-magenta;\n border-color: $dark-magenta;\n\n .content {\n @include var(\"background-color\", \"primary-color\", transparentize($dark-magenta, 0.05));\n\n p.excerpt {\n opacity: 1;\n max-height: 100em;\n }\n }\n }\n\n &.guide {\n &::after {\n content: \"\";\n position: absolute;\n left: 0;\n right: 0;\n top: 0;\n bottom: 0;\n transition: background-color 300ms ease-in-out;\n background-color: transparentize($primary-magenta, 0.15);\n z-index: -1;\n }\n\n .content {\n background: transparent;\n\n p.excerpt {\n display: none;\n }\n }\n\n &:hover {\n &::after {\n background-color: transparentize($primary-magenta, 0.35);\n }\n }\n }\n }\n }\n }\n\n h3.popular-journeys {\n @include icon-fa-before(angle-down, .4em, $main-black);\n font-size: 18px;\n margin: 20px 0 18px 0;\n\n &:hover {\n cursor: pointer;\n }\n\n &.expanded {\n @include icon-fa-before(angle-up, .4em, $main-black);\n }\n }\n}"
+    },
+    {
+      "role": "assistant",
+      "content": "To limit the height of images within the `.card` class, you can add the `max-height` property directly to the `img` selector:\n```css\n.card img {\n  border-radius: 2em;\n  max-width: 90%;\n  max-height: 200px; /* set your desired max-height here */\n  padding: 0.5em;\n}\n```\nAdjust the value of `max-height` to your desired height. The `max-height` property limits the height of the image, while the `max-width` property limits the width of the image."
+    },
+    {
+      "role": "user",
+      "content": "I'm confused, I have max-height set in the code above?"
+    },
+    {
+      "role": "assistant",
+      "content": "I apologize for the confusion. I see that you do have `max-height` set on the `img` selector, but the value you have specified is only 10%, which is quite low.\n\nTo limit the height of images, you may want to set `max-height` to a larger value. For example, if you want to limit the height to 200 pixels, you could set it to `max-height: 200px;`.\n\nAlso, note that setting `max-height` on the `img` selector limits the height of all images within the `.card` class, so if you have other images with different height requirements, you may need to create a separate class for those images and set `max-height` on that class instead."
+    },
+    {
+      "role": "user",
+      "content": "So the reason it is not working (far too big) is because I set the value too low? Can that be right?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, that's correct. If you set `max-height` to a value that is too low, the image may still display at a larger size than you intend.\n\nWhen you set `max-height` to a percentage value, the height of the element will be limited to a percentage of its parent element. So if the parent element has a large height, setting `max-height` to a small percentage will still result in a large image.\n\nTo limit the height of the image more precisely, you can use an absolute value for `max-height`, such as pixels or ems. This will limit the height of the image to a fixed size regardless of the size of the parent element."
+    },
+    {
+      "role": "user",
+      "content": "Don't i need to use percentages to keep my designs responsive?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, you're correct. Using percentage values is often the best approach to keep designs responsive, especially when working with elements that are intended to resize based on the size of the viewport.\n\nWhen you use a percentage value for `max-height`, the maximum height of the element will be relative to the height of its parent element, and the element will resize proportionally as the parent element is resized. This can be a good approach to ensure that your designs look good on screens of different sizes.\n\nIn your case, you could try increasing the percentage value of `max-height` to achieve the desired size for your images. Keep in mind that the percentage value will be relative to the height of the parent element, so you may need to adjust the height of the parent element as well in order to get the desired size for your images."
+    },
+    {
+      "role": "user",
+      "content": "What is the minimum max-height percentage I can use for the css to not ignore me?"
+    },
+    {
+      "role": "assistant",
+      "content": "There is no minimum value that you can use for `max-height` to prevent the CSS from being ignored. You can use any percentage value, including a value of 0%.\n\nIf you're finding that the `max-height` property is not having the desired effect on your images, it may be because other CSS properties are conflicting with it, or because the parent element is not the correct size. In some cases, you may need to adjust the values of other CSS properties or modify the HTML structure of the page to achieve the desired result."
+    },
+    {
+      "role": "user",
+      "content": "But you've just told me that the reason my images are so big is because my max-height is only set to 10% I'm confused."
+    },
+    {
+      "role": "assistant",
+      "content": "I apologize for the confusion. To clarify, the issue with your images being too large is likely due to the fact that `max-height` is currently set to only 10% on the `img` selector.\n\nWhen you set `max-height` to a small percentage, the height of the image will be limited to a small percentage of the height of the parent element. If the parent element has a large height, the image may still display at a larger size than you intend.\n\nIn order to limit the size of the images, you should increase the percentage value of `max-height` on the `img` selector. For example, you could try setting `max-height: 50%;` to limit the height of the image to 50% of the height of the parent element.\n\nUsing percentage values for `max-height` is still a good approach to keep designs responsive, especially when working with elements that are intended to resize based on the size of the viewport."
+    },
+    {
+      "role": "user",
+      "content": "I'lll try, but this is very counterintuative as 50% is bigger than 10%"
+    },
+    {
+      "role": "assistant",
+      "content": "I understand that it may seem counterintuitive, but keep in mind that the percentage value for `max-height` is relative to the height of the parent element. If the parent element has a large height, a small percentage value for `max-height` may not have the desired effect of limiting the size of the image.\n\nBy increasing the percentage value for `max-height`, you are effectively limiting the height of the image to a larger percentage of the height of the parent element, which may help achieve the desired result of limiting the size of the image.\n\nIt's worth noting that `max-height` is a maximum limit, so the actual height of the image will still depend on factors such as the aspect ratio of the image and the available space in the parent element."
+    }
+  ]
+}

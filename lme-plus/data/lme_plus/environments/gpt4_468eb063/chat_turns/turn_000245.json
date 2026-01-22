@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 245,
+  "session_index": 21,
+  "session_id": "sharegpt_4vpTf3p_0",
+  "turn_in_session": 0,
+  "date": "2023/04/11 (Tue) 19:18",
+  "role": "user",
+  "content": "I have a table called sales\\_transaction\\_summary, it has columns include region, merchandise week, customer type (which include commercial and consumer), department and sales number. below is the data:\n\n| Region | Merchandise Week | Customer Type | Department | Sales |\n| --- | --- | --- | --- | --- |\n| Victoria East | 202323 | Commercial | Timber | 123456 |\n| Victoria East | 202323 | Commercial | Garden | 213456 |\n| Victoria East | 202323 | Commercial | Power Tool | 231456 |\n| Victoria East | 202323 | Consumer | Timber | 246912 |\n| Victoria East | 202323 | Consumer | Garden | 426912 |\n| Victoria East | 202323 | Consumer | Power Tool | 347184 |\n| Victoria West | 202323 | Commercial | Timber | 135801.6 |\n| Victoria West | 202323 | Commercial | Garden | 213456 |\n| Victoria West | 202323 | Commercial | Power Tool | 254601.6 |\n| Victoria West | 202323 | Consumer | Timber | 259257.6 |\n| Victoria West | 202323 | Consumer | Garden | 448257.6 |\n| Victoria West | 202323 | Consumer | Power Tool | 370329.6 |\n\nplease only reply \"got you\"",
+  "has_answer": false
+}

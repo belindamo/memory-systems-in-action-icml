@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 438,
+  "session_index": 40,
+  "session_id": "sharegpt_GHsZ4fd_11",
+  "turn_in_session": 6,
+  "date": "2023/05/30 (Tue) 15:49",
+  "role": "assistant",
+  "content": "To configure the DNS settings in your network connection settings in Windows 10, follow these steps:\n\n1. Click the Start button in the lower-left corner of the screen.\n2. Click on the gear icon to open the Settings app.\n3. Click on the \"Network & Internet\" category.\n4. Click on the \"Change adapter options\" link on the right side of the window.\n5. Right-click on the network connection that you want to configure and select \"Properties\".\n6. Select \"Internet Protocol Version 4 (TCP/IPv4)\" from the list and click the \"Properties\" button.\n7. In the \"Internet Protocol Version 4 (TCP/IPv4) Properties\" window, select the \"Use the following DNS server addresses\" option.\n8. In the \"Preferred DNS server\" field, enter the IP address of the DNS server that you want to use.\n9. In the \"Alternate DNS server\" field, enter the IP address of a secondary DNS server (optional).\n10. Click the \"OK\" button to save the changes.\n11. Click the \"Close\" button to close the \"Internet Protocol Version 4 (TCP/IPv4) Properties\" window.\n12. Click the \"Close\" button to close the network connection properties window.\n\nAfter configuring the DNS settings, your Windows 10 system will use the specified DNS server to resolve domain names to IP addresses. Note that you may need administrative privileges to make these changes.",
+  "has_answer": false
+}

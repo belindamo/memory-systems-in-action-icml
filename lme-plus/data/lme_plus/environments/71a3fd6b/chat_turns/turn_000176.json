@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 176,
+  "session_index": 18,
+  "session_id": "sharegpt_n3kgf14_17",
+  "turn_in_session": 10,
+  "date": "2023/05/24 (Wed) 15:03",
+  "role": "assistant",
+  "content": "The primary driver module is a service that tracks the user, identified with a Polestar ID, who is the primary driver of a car. A car can only have one primary driver. The primary driver is captured from Polestar's Order Management System (POMS). The service listens to order events from POMS. If an order event contains a valid VIN and Polestar ID in the \"Driver\" field, the service saves that Polestar ID as the car's primary driver. A Polestar ID is valid if it exists in the Polestar ID service (which can be confirmed with an API call). A VIN is valid if it exists in Volvo's factory order system, the Vehicle Internet Sale & Traceability Application (VISTA).\n\nThe service also stores all the events it receives in an \"event store\" for replay purposes. Additionally, the service allows other systems to change a car's primary driver through an API. There are two versions of the API: one with M2M authentication and one with Polestar ID authentication (OAuth). Using the Polestar ID Auth. version, the user can only edit a car's primary driver if they have access to the logged-in primary driver's credentials.\n\nThe service also saves related information for primary driver changes. This includes the system that made the update, the timestamp of when the primary driver was registered, the user ID (if the change was made using Polestar ID auth API), the client ID of the service that made the change (if the change was made using M2M auth API",
+  "has_answer": false
+}

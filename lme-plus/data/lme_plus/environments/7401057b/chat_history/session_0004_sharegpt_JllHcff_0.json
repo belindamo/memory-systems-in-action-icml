@@ -1,0 +1,47 @@
+{
+  "session_id": "sharegpt_JllHcff_0",
+  "session_index": 4,
+  "date": "2023/05/11 (Thu) 01:11",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I need the default midi mappings of popul\u00e1r electronic drums"
+    },
+    {
+      "role": "assistant",
+      "content": "Here are some common default MIDI mappings for popular electronic drum kits:\n\n1. Roland V-Drums:\n\t* Kick drum: MIDI note 36\n\t* Snare drum: MIDI note 38\n\t* Hi-hat: MIDI note 42 (closed), MIDI note 46 (open)\n\t* Tom 1: MIDI note 43\n\t* Tom 2: MIDI note 45\n\t* Tom 3: MIDI note 47\n\t* Crash cymbal: MIDI note 49\n\t* Ride cymbal: MIDI note 51\n2. Alesis Nitro Mesh Kit:\n\t* Kick drum: MIDI note 36\n\t* Snare drum: MIDI note 38\n\t* Hi-hat: MIDI note 42 (closed), MIDI note 46 (open)\n\t* Tom 1: MIDI note 48\n\t* Tom 2: MIDI note 45\n\t* Tom 3: MIDI note 43\n\t* Crash cymbal: MIDI note 49\n\t* Ride cymbal: MIDI note 51\n3. Yamaha DTX400"
+    },
+    {
+      "role": "user",
+      "content": "Ok lets go by manufacturer. Top 5 kits from roland?"
+    },
+    {
+      "role": "assistant",
+      "content": "Sure, here are the top 5 electronic drum kits from Roland, a well-known manufacturer of electronic drums:\n\n1. Roland TD-50KVX: This is Roland's flagship electronic drum kit, and it features a high-end sound"
+    },
+    {
+      "role": "user",
+      "content": "Can you generate it in a common json format? I need their manufacturer, model name and possible versions as well. I would like to recognize them in web midi"
+    },
+    {
+      "role": "assistant",
+      "content": "Sure, here's an example of a JSON format that includes the manufacturer, model name, and possible versions of electronic drum kits:\n```json\n{\n  \"electronic_drums\": [\n    {\n      \"manufacturer\": \"Roland\",\n      \"model\": \"TD-50KVX\",\n      \"versions\": [\n        \"TD-50KVX-S\",\n        \"TD-50KVX-WL\",\n        \"TD-50KVX-EXP\",\n        \"TD-50KVX-ECOM\"\n      ]\n    },\n    {\n      \"manufacturer\": \"Roland\",\n      \"model\n```"
+    },
+    {
+      "role": "user",
+      "content": "This looks good but add midi mapping, too"
+    },
+    {
+      "role": "assistant",
+      "content": "Sure, here's an updated example of the JSON format that includes the manufacturer, model name, possible versions, and MIDI mappings of electronic drum kits:\n```json\n{\n  \"electronic_drums\": [\n    {\n      \"manufacturer\": \"Roland\",\n      \"model\": \"TD-50KVX\",\n      \"versions\": [\n        \"TD-50KVX-S\",\n        \"TD-50KVX-WL\",\n        \"TD-50KVX-EXP\",\n        \"TD-50KVX-ECOM\"\n      ],\n      \"midi_mappings\": [\n        {\"kick\": 36},\n        {\"snare\": 38},\n        {\"hi_hat_closed\": 42},\n        {\"hi_hat_open\": 46},\n        {\"tom_1\": 43},\n        {\"tom_2\": 45},\n        {\"tom_3\": 47},\n        {\"crash_cymbal\": 49},\n        {\"ride_cymbal\": 51}\n      ]\n    },\n    {\n      \"manufacturer\": \"Roland\",\n      \"model\": \"TD-17KVX\",\n      \"versions\": [\n        \"TD-17KVX-S\",\n        \"TD-17KVX-WL\",\n        \"TD-17KVX-EXP\",\n        \"TD-17KVX-ECOM\"\n      ],\n      \"midi_mappings\": [\n        {\"kick\": 36},\n        {\"snare\": 38},\n        {\"hi_hat_closed\": 42},\n        {\"hi_hat_open\": 46},\n        {\"tom_1\": 48},\n        {\"tom_2\": 45},\n        {\"tom_3\": 43},\n        {\"crash_cymbal\": 49},\n        {\"ride_cymbal\": 51}\n      ]\n    },\n    {\n      \"manufacturer\": \"Yamaha\",\n      \"model\": \"DTX532K\",\n      \"versions\": [\n        \"DTX532K-S\",\n        \"DTX532K-WL\",\n        \"DTX532K-EXP\",\n        \"DTX532K-ECOM\"\n      ],\n      \"midi_mappings\": [\n        {\"kick\": 36},\n        {\"snare\": 38},\n        {\"hi_hat_closed\": 42},\n        {\"hi_hat_open\": 46},\n        {\"tom_1\": 50},\n        {\"tom_2\": 48},\n        {\"tom_3\": 45},\n        {\"crash_cymbal\": 49},\n        {\"ride_cymbal\": 51}\n      ]\n    },\n    {\n      \"manufacturer\": \"Alesis\",\n      \"model\": \"Nitro Mesh Kit\",\n      \"versions\": [\n        \"Nitro Mesh Kit-S\",\n        \"Nitro Mesh Kit-WL\",\n        \"Nitro Mesh Kit-EXP\",\n        \"Nitro Mesh Kit-ECOM\"\n      ],\n      \"midi_mappings\": [\n        {\"kick\": 36},\n        {\"snare\": 38},\n        {\"hi_hat_closed\": 42},\n        {\"hi_hat_open\": 46},\n        {\"tom_1\": 48},\n        {\"tom_2\": 45},\n        {\"tom_3\": 43},\n        {\"crash_cymbal\": 49},\n        {\"ride_cymbal\": 51}\n      ]\n    },\n    {\n      \"manufacturer\": \"2box\",\n      \"model\": \"DrumIt Five MKII\",\n      \"versions\": [\n        \"DrumIt Five MKII-S\",\n        \"DrumIt Five MKII-WL\",\n        \"DrumIt Five MKII-EXP\",\n        \"DrumIt Five MKII-ECOM\"\n      ],\n      \"midi_mappings\": [\n        {\"kick\": 36},\n        {\"snare\": 38},\n        {\"hi_hat_closed\n```"
+    },
+    {
+      "role": "user",
+      "content": "Please continue"
+    },
+    {
+      "role": "assistant",
+      "content": "```json\n    {\"hi_hat_closed\": 42},\n    {\"hi_hat_open\": 46},\n    {\"tom_1\": 48},\n    {\"tom_2\": 45},\n    {\"tom_3\": 43},\n    {\"crash_cymbal\": 49},\n    {\"ride_cymbal\": 51}\n  ]\n}\n```\n]\n}\n```kotlin\n\nPlease note that this is just an example and the actual MIDI mappings may vary based on the drum kit version or the user's preferences.\n```"
+    }
+  ]
+}

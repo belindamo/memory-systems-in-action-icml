@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 426,
+  "session_index": 38,
+  "session_id": "sharegpt_nE62dqp_79",
+  "turn_in_session": 8,
+  "date": "2023/05/29 (Mon) 11:30",
+  "role": "assistant",
+  "content": "Sure! To exclude organizations with \"Praxis\" in their name, you can add the following condition in the WHERE clause:\n```vbnet\nSELECT organizations.name AS Organization, \n  course_module_sessions.course_module_id, \n  (COUNT(CASE WHEN reflect_items.immediate_reactions IS NULL \n      AND reflect_items.updated_at > reflect_items.created_at \n      AND course_module_sessions.completed_at is NOT NULL \n      THEN 1 END) / \n   COUNT(CASE WHEN reflect_items.updated_at > reflect_items.created_at \n      AND course_module_sessions.completed_at is NOT NULL\n      THEN 1 END)) * 100 \n  AS `Percentage of Null & Updated Rows`\nFROM praxislabs.organizations AS organizations\nLEFT JOIN praxislabs.users AS users ON users.organization_id = organizations.id\nLEFT JOIN praxislabs.cohorts AS cohorts ON cohorts.id = users.cohort_id\nLEFT JOIN praxislabs.course_module_sessions AS course_module_sessions ON course_module_sessions.user_id = users.id\nLEFT JOIN praxislabs.reflect_items AS reflect_items ON reflect_items.course_module_session_id = course_module_sessions.id\nWHERE organizations.name NOT LIKE '%Praxis%'\nGROUP BY organizations.id, course_module_sessions.course_module_id\nORDER BY organizations.name, course_module_sessions.course_module_id\n```",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 4,
+  "session_index": 0,
+  "session_id": "sharegpt_LQbL4dQ_0",
+  "turn_in_session": 4,
+  "date": "2023/05/20 (Sat) 00:11",
+  "role": "user",
+  "content": "I downloaded pretrained weights for mobilenet from both tensorflow hub and the keras web site. the performance between the two models is different with tensorflow hub working better in real world conditions that the keras version. what would explain this difference? would they have both used imagenet to train their models?",
+  "has_answer": false
+}

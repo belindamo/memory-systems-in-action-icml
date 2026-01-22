@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 85,
+  "session_index": 8,
+  "session_id": "sharegpt_ZftWuNK_62",
+  "turn_in_session": 11,
+  "date": "2023/05/24 (Wed) 08:26",
+  "role": "assistant",
+  "content": "I apologize for any confusion caused. The number of cookies that a server can send per response is not limited by the server, but by the HTTP specification and the browser.\n\nAs per the HTTP specification, a server can send multiple Set-Cookie headers in a single response. Each Set-Cookie header can contain one or more cookies. Therefore, a server can technically send an unlimited number of cookies as part of a single response.\n\nHowever, this does not take into account the client's browser's limits on the number of cookies that can be stored per domain and the total size of cookies that can be stored. As I mentioned earlier, each browser has its own limits on the number of cookies that can be stored per domain and the total size of cookies that can be stored.\n\nIn summary, a server can technically send an unlimited number of cookies as part of a single response via multiple Set-Cookie headers but the number of cookies that a client can store is limited by the browser's limits on the number of cookies that can be stored per domain and the total size of cookies that can be stored.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 3,
+  "session_index": 0,
+  "session_id": "sharegpt_7tOPXDd_50",
+  "turn_in_session": 3,
+  "date": "2023/05/20 (Sat) 00:12",
+  "role": "assistant",
+  "content": "Sure! MPC stands for Model Predictive Control, which is a control strategy that uses a model of the system to make predictions about its future behavior. The idea is to solve an optimization problem at each time step, which tells the controller what actions to take over a short period of time (called the prediction horizon) to achieve a desired objective, such as stabilizing the system or following a trajectory.\n\nIn this paper, the MPC scheme uses an LSTM network as the prediction model of the system. The objective is to stabilize the system towards a specific equilibrium point by acting on the control input. The optimization problem consists of finding the sequence of future control moves that minimizes a cost function while satisfying constraints on the control input and the state of the system. The cost function includes terms that penalize deviations from the desired state, as well as a term that penalizes changes in the control input.\n\nAt each time step, the optimization problem is solved to obtain the sequence of future control moves. However, only the first control move is applied to the system, and the optimization problem is solved again at the next time step using the updated state of the system as the initial condition. This is known as the receding horizon principle.\n\nThe theoretical result (Theorem 4) shows that if the assumptions are satisfied, then the proposed control law will asymptotically stabilize the system towards the desired equilibrium point.",
+  "has_answer": false
+}

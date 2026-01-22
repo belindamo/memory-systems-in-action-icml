@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 144,
+  "session_index": 14,
+  "session_id": "sharegpt_b55pq0c_0",
+  "turn_in_session": 0,
+  "date": "2023/05/23 (Tue) 02:07",
+  "role": "user",
+  "content": "Act as a senior Solidity developer and a Crypto expert. I will give you a list of requirements for a Smart Contract in Solidity, and you will write me a Smart contract.\nCreate me a template for a DAO Smart contract, these are requirements:\n1. It must be easily expandable\n2. It must use Hardhat for deployment\n3. It must be upgradeable\n4. It must feature clean and safe code\n5. It must let users create proposals\n6. It must let users vote on proposals\n7. It must create a check so users can only vote once\n8. It must be able to tally the votes and determine the outcome of the vote \n9. It must be able to set parameters for voting, such as quorum required and voting period\n10.It must be able to execute the proposal\n11. It must be able to maintain an accurate record of all proposals and votes, including the time and date of each vote and final outcome (Mart this functionality with a \"ACCURATERECORD\" Comment)\n12. It must be able to resolve conflicts of interests or collusion among its members",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 422,
+  "session_index": 40,
+  "session_id": "sharegpt_y8BMIYb_0",
+  "turn_in_session": 7,
+  "date": "2022/04/10 (Sun) 20:56",
+  "role": "assistant",
+  "content": "Sure! To add a new node to your existing Kubernetes cluster, you'll need to follow these general steps:\n\n1. Install k3s on the new machine you want to add to your cluster. You can follow the k3s installation instructions here: <https://rancher.com/docs/k3s/latest/en/installation/>\n2. Join the new node to the existing k3s server by running the following command on the new node:\n```perl\ncurl -sfL https://get.k3s.io | K3S_URL=https://<k3s-server-ip>:6443 K3S_TOKEN=<token> sh -\n```\nNote: replace `<k3s-server-ip>` with the IP address of your existing k3s server, and `<token>` with the token generated during the initial k3s server installation.\n3. Verify that the new node has joined the cluster by running the following command on the k3s server:\n```csharp\nkubectl get nodes\n```\nThe output should list all the nodes in your cluster, including the new node.\n\nThat's it! Once you've completed these steps, you can use the new node to deploy and run your Kubernetes applications. By default, k3s uses server-agent architecture, which means the new node will be both a worker and a server, so you can deploy workloads on it as well as managing the cluster.",
+  "has_answer": false
+}

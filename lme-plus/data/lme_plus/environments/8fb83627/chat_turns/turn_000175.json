@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 175,
+  "session_index": 14,
+  "session_id": "sharegpt_Wf7DTxI_13",
+  "turn_in_session": 14,
+  "date": "2023/04/03 (Mon) 04:53",
+  "role": "assistant",
+  "content": "To find all the hosts running a specific version of a web server on a network using Nmap, you can use the following command:\n```css\nnmap -p 80,443 -sV --version-all -oN web-servers.txt <target-network>\n```\nHere, we are scanning only the common HTTP and HTTPS ports 80 and 443, respectively, using the `-p` option. We are also using the `-sV` option to enable service detection and the `--version-all` option to show all version information, including the application name, version number, and any extra information that is available. Finally, we are specifying the output file with the `-oN` option.\n\nReplace `<target-network>` with the network range you want to scan, for example, `192.168.1.0/24`.\n\nThis command will output a report to the specified file, `web-servers.txt`, that contains information about each host running a web server on the specified ports, including the IP address, the port number, and the server version information.\n\nNote that the specific version of the web server should be provided in the `nmap-service-probes` file, which is a file that contains probes for various network services. If the version is not included in the probes, Nmap may not be able to detect it. You can add your own probes to the file to detect newer versions or customize existing probes.",
+  "has_answer": false
+}

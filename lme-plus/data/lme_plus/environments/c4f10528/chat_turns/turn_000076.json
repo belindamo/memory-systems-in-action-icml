@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 76,
+  "session_index": 6,
+  "session_id": "sharegpt_UtXvMMn_18",
+  "turn_in_session": 8,
+  "date": "2023/05/21 (Sun) 16:06",
+  "role": "user",
+  "content": "C:\\Users\\Dan.QTIS>C:\\Users\\Dan.QTIS\\Desktop\\Dan-Special\\Tests\\try2.py\n[000002bf60b02130] mmdevice audio output error: cannot initialize COM (error 0x80010106)\n[000002bf60afe2f0] mmdevice audio output error: cannot initialize COM (error 0x80010106)\n[000002bf60afec20] mmdevice audio output error: cannot initialize COM (error 0x80010106)\n[000002bf60b306f0] filesystem stream error: cannot open file C:\\Users\\Dan.QTIS\\audio\\Mally\\_Mall\\_feat.\\_Ty\\_Dolla\\_ign\\_B-Real\\_-\\_Mary\\_And\\_Molly.mp3 (No such file or directory)\n[000002bf60b169d0] main input error: Your input can't be opened\n[000002bf60b169d0] main input error: VLC is unable to open the MRL 'file:///C:/Users/Dan.QTIS/audio/Mally\\_Mall\\_feat.\\_Ty\\_Dolla\\_ign\\_B-Real\\_-\\_Mary\\_And\\_Molly.mp3'. Check the log for details.\n\nC:\\Users\\Dan.QTIS>C:\\Users\\Dan.QTIS\\Desktop\\Dan-Special\\Tests\\try2.py\n File \"C:\\Users\\Dan.QTIS\\Desktop\\Dan-Special\\Tests\\try2.py\", line 34\n audio\\_file = os.path.Error: podr\u00eda haber un error en la conexi\u00f3n o en la clave de API. Intenta usar otro modelo. Usa el comando HELP(''tu pregunta sobre la extension'' para solucionar tus preguntas relacionadas con la extensi\u00f3n\n ^\nSyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \\UXXXXXXXX escape",
+  "has_answer": false
+}

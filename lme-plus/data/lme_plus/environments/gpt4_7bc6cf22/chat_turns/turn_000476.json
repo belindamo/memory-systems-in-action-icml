@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 476,
+  "session_index": 44,
+  "session_id": "sharegpt_snNieAa_15",
+  "turn_in_session": 4,
+  "date": "2023/03/20 (Mon) 16:23",
+  "role": "assistant",
+  "content": "const anchorX = anchorBoundingBox.left + anchorBoundingBox.width / 2;\nconst anchorY = anchorBoundingBox.top + anchorBoundingBox.height / 2;\n```\n//store calculated angle value\nconst angleValue = calcAngle(mousePosition.x, mousePosition.y, anchorX, anchorY);\n//rotate  eyes\nconst eyes = document.querySelectorAll('.space-cat-eye');\neyes.forEach(eye => {\n  eye.style.transform = `rotate(${-90 + angleValue}deg)`;\n});\n\n//add listener on mount\ndocument.addEventListener('mousemove', handleMouseMove);\n//remove listener on unmount\nreturn () => {\n  document.removeEventListener('mousemove', handleMouseMove);\n};\n```\n}, [mousePosition]);\nreturn (\n<div className='space-cat-container'>\n<div className='space-cat-text-bubble'>\n<div className='space-cat-text-bubble-text'>\n<p>I'm bored, send me a message!</p>\n</div>\n<div className='space-cat-text-bubble-1'></div>\n<div className='space-cat-text-bubble-2'></div>\n</div>\n<div className='space-cat-proximity-hover'></div>\n<div className='space-cat'>\n<img id='anchor' src={spaceCat} alt='space cat' />\n<div className='space-cat-eyes'>\n<img\n id='eye-1'\n className='space-cat-eye'\n src={spaceCatEye}\n alt='space cat eye'\n />\n<img\n id='eye-2'\n className='space-cat-eye'\n src={spaceCatEye}\n alt='space cat eye'\n />\n</div>\n</div>\n</div>\n);\n}\n```\n\nIn this version, i have added\n```",
+  "has_answer": false
+}

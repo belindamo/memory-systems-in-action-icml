@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 136,
+  "session_index": 12,
+  "session_id": "ultrachat_366521",
+  "turn_in_session": 3,
+  "date": "2023/05/23 (Tue) 00:44",
+  "role": "assistant",
+  "content": "The HTML5 Audio and Video APIs support several file formats, which depend on the browser and the device being used. The most commonly supported formats are MP3, WAV, and OGG for audio, and MP4, WebM, and OGG for video. \n\nThe APIs use a technique called progressive loading, which allows for the media file to start streaming as soon as possible, without waiting for the entire file to load. The browser also detects the file format of the media and, if necessary, uses a fallback mechanism or displays an error message, depending on the support for the file format.\n\nFor example, if a user's browser doesn't support the .ogg file format for audio, the HTML5 Audio API would try to use another supported format such as MP3 or WAV. If none of the formats are supported, the API would display an error message or enable the fallback mechanism.\n\nIn general, the HTML5 Audio and Video APIs are designed to be flexible and to handle various file formats, while providing a consistent user experience across different devices and browsers.",
+  "has_answer": false
+}

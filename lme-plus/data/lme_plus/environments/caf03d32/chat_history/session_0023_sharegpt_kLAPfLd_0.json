@@ -1,0 +1,63 @@
+{
+  "session_id": "sharegpt_kLAPfLd_0",
+  "session_index": 23,
+  "date": "2023/05/27 (Sat) 02:18",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I want you to be my personal meal planner. Please ask me each of the 5 questions below one at a time. After I answer all of these questions, rewrite all of them into a Chat GPT style prompt and ask me to confirm or edit. If I confirm, please follow the instructions to create my meal plan and please include approximate grams (weight) of each item and total calories of each meal or snack. \n\nHere are the questions to ask one by one. \n1) How days should I plan?\n2) How many meals per day do you want? \n3) How many snacks? \n4) Approximate calories per day? \n5) Dietary Needs / Preferences?\n\nRemember to ask each question one-by-one, and wait for my answer before asking the next, so I can answer them individually."
+    },
+    {
+      "role": "assistant",
+      "content": "Sure, I'll ask each question one-by-one!\n\n1. How many days do you want me to plan meals for?"
+    },
+    {
+      "role": "user",
+      "content": "3"
+    },
+    {
+      "role": "assistant",
+      "content": "2. How many meals per day do you want?"
+    },
+    {
+      "role": "user",
+      "content": "3"
+    },
+    {
+      "role": "assistant",
+      "content": "3. How many snacks per day do you want?"
+    },
+    {
+      "role": "user",
+      "content": "1"
+    },
+    {
+      "role": "assistant",
+      "content": "4. What is your desired approximate calorie intake per day?"
+    },
+    {
+      "role": "user",
+      "content": "2100"
+    },
+    {
+      "role": "assistant",
+      "content": "5. Do you have any dietary needs or preferences? (e.g. vegetarian, gluten-free)"
+    },
+    {
+      "role": "user",
+      "content": "gluten free"
+    },
+    {
+      "role": "assistant",
+      "content": "Here is a summary of your meal plan:\n\n* 3 days of meal planning\n* 3 meals per day\n* 1 snack per day\n* Total daily calorie intake of 2100\n* Gluten-free dietary preference\n\nPlease confirm if this is correct, or if you would like to make any edits."
+    },
+    {
+      "role": "user",
+      "content": "confirm"
+    },
+    {
+      "role": "assistant",
+      "content": "Understood, here's your meal plan:\n\nDay 1:\n\n* Breakfast: Gluten-free yogurt bowl with 150g of Greek yogurt, 100g of mixed berries, and 30g of gluten-free granola. Total calories: approximately 400.\n* Lunch: Grilled chicken breast (150g) with roasted vegetables (200g) and quinoa (100g). Total calories: approximately 550.\n* Dinner: Grilled salmon (150g) with a mixed green salad (200g) and sweet potato (100g). Total calories: approximately 550.\n* Snack: Apple (100g) and 30g of almond butter. Total calories: approximately 250.\n\nDay 2:\n\n* Breakfast: Scrambled eggs (2) with spinach (50g) and cherry tomatoes (50g), and gluten-free toast (2 slices). Total calories: approximately 400.\n* Lunch: Grilled turkey (150g) with brown rice (100g) and steamed broccoli (200g). Total calories: approximately 550.\n* Dinner: Grilled steak (150g) with roasted mushrooms (100g) and a mixed green salad (200g). Total calories: approximately 550.\n* Snack: Carrots (100g) and hummus (30g). Total calories: approximately 150.\n\nDay 3:\n\n* Breakfast: Gluten-free pancakes with 100g of mixed berries and a drizzle of maple syrup. Total calories: approximately 400.\n* Lunch: Grilled shrimp (150g) with a quinoa and black bean salad (200g). Total calories: approximately 550.\n* Dinner: Grilled chicken fajitas (150g) with peppers (100g) and onions (100g) on a gluten-free tortilla. Total calories: approximately 550.\n* Snack: Rice crackers (30g) with avocado (100g). Total calories: approximately 250.\n\nPlease let me know if you'd like to make any changes to your meal plan."
+    }
+  ]
+}

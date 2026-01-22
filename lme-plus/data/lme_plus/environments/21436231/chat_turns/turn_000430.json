@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 430,
+  "session_index": 42,
+  "session_id": "sharegpt_3lWzv4B_0",
+  "turn_in_session": 5,
+  "date": "2023/05/28 (Sun) 06:56",
+  "role": "assistant",
+  "content": "Here's an example of the `robocopy` command to copy only changed files from the `\\\\lightspeed\\data` source to the `d:\\serverfolders\\nasbackup` destination directory, using a cutoff date of `Jan 30, 2023`:\n```kotlin\nrobocopy \\\\lightspeed\\data d:\\serverfolders\\nasbackup /MAXAGE:2023-01-30\n```\nThis will copy only files in `\\\\lightspeed\\data` that have been modified after `Jan 30, 2023` to the `d:\\serverfolders\\nasbackup` destination directory.",
+  "has_answer": false
+}

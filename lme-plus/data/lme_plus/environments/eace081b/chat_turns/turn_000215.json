@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 215,
+  "session_index": 20,
+  "session_id": "sharegpt_t8L5CeI_0",
+  "turn_in_session": 4,
+  "date": "2023/05/23 (Tue) 00:06",
+  "role": "user",
+  "content": "C/S hires many subcontractors for their projects. This is a time consuming process that must be audited by workers in the field. Typically this falls into the hands of the project sub contractor. The current workflow is done via PDFs and scanning. The new hires fill information out, someone scans it through a computer and emails the appropriate party who inputs the data into accounting, HR etc.\n\nThe IT manager and I were discussing replacing this workflow utilizing their existing docusign subscription as well as box (cloud file service) as a file backup. I would setup the workflow and add a custom webhook or integration which copies all the files over to box and sends out the appropriate email. The idea is that this will save time because:\n\n- Supers will not have to hand-hold or help subs fill out the new hire packet\n- They can give subs a URL and docusigns intuitive interface can guide them through everything they need\n- There are different protocols for NV, and CA as well as different liability and insurance forms that need to be filled out per state. In addition some change every year. Docusign would allow for a source of truth for admins in C/S to manage the logistics of this workflow and ensure everyone is following protocol company wide.\n- This is more secure, these new hire packets often contain social security cars, licenses and other government forms. Using docusign offloads security to them\n- This is cheaper to develop and maintain as we are not re-inventing the wheel and are actually utilizing a subscription C/S already pays for (some of managements concern is this project will go to long and not solve enough problems. - No matter what this data will still need to be re-keyed into accounting by an office worker. This process would allow that office worker to have consistent documents and structures that should make him or her more efficient and less error prone with less back and forth between the field)",
+  "has_answer": false
+}

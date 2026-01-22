@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 22,
+  "session_index": 3,
+  "session_id": "sharegpt_dC2lLD9_0",
+  "turn_in_session": 11,
+  "date": "2023/05/13 (Sat) 01:58",
+  "role": "assistant",
+  "content": "Sure, you have chosen to wait for income. The city's income will increase by the amount specified for each building in your city.\n\nAfter waiting for income to accumulate, the current city status:\nPopulation: 65\nFunds: 200\nIncome: 200\nAvailable Buildings:\n\n* Residential (100 funds, +10 population)\n* Park (50 funds, +5 population)\n* Factory (200 funds, +15 population, +50 income)\n* Shopping Mall (500 funds, +25 population, +100 income)\n* Police Station (300 funds, +20 population)\n* Hospital (600 funds, +30 population)\n\nAs the population grows, new buildings will become available to construct.\nYou can now construct a building or wait for more income to increase the funds.",
+  "has_answer": false
+}

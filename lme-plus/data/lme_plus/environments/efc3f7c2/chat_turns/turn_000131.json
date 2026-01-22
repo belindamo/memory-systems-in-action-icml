@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 131,
+  "session_index": 12,
+  "session_id": "sharegpt_miOKGt1_13",
+  "turn_in_session": 2,
+  "date": "2023/05/22 (Mon) 17:58",
+  "role": "assistant",
+  "content": "A heuristic function that never overestimates the number of steps to the goal is called an admissible heuristic function. In other words, an admissible heuristic function is a function h(n) that estimates the cost of the cheapest path from node n to the goal node, but it never overestimates that cost.\n\nFormally, for any node n and the goal node g, an admissible heuristic function satisfies the following condition:\n\nh(n) \u2264 h\\*(n)\n\nwhere h\\*(n) is the true cost of the cheapest path from node n to the goal node g. This means that the heuristic function is optimistic in its estimation, and it always underestimates or at worst, provides an exact estimate of the true cost of the optimal path.\n\nThe A\\* search algorithm guarantees that the shortest path to the goal is found if an admissible heuristic function is used. Using an admissible heuristic function can make the search more efficient because it can guide the search towards the goal and potentially prune suboptimal paths.",
+  "has_answer": false
+}

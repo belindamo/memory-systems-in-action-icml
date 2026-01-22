@@ -1,0 +1,59 @@
+{
+  "session_id": "sharegpt_nE62dqp_79",
+  "session_index": 38,
+  "date": "2023/05/29 (Mon) 11:30",
+  "turns": [
+    {
+      "role": "assistant",
+      "content": "It's likely that the result of the query is incorrect, due to a mismatch between the numerator and denominator in the calculation. The numerator is counting the number of rows in `reflect_items` with a NULL value for `immediate_reactions` and an `updated_at` value that is later than the `created_at` value. The denominator is counting the number of all rows in `reflect_items` with an `updated_at` value that is later than the `created_at` value.\n\nIf there are many more rows in `reflect_items` that meet the criteria for the denominator, compared to the criteria for the numerator, then the result of the calculation will be much smaller than 100%. If, on the other hand, there are many more rows in `reflect_items` that meet the criteria for the numerator than the denominator, then the result of the calculation will be much larger than 100%. This could be the cause of the results that you are seeing.\n\nTo resolve this issue, you may want to consider modifying the query so that the numerator and denominator match up more closely, or re-examine the data to ensure that it is consistent with the intended calculation."
+    },
+    {
+      "role": "user",
+      "content": "How could it be possible that the numerator be larger than the denominator if the numerator includes a filter that the denominator does not?"
+    },
+    {
+      "role": "assistant",
+      "content": "The cause of this issue is likely due to the difference in filtering between the numerator and denominator in the query.\n\nIn the numerator, you are counting the number of rows where `reflect_items.immediate_reactions` is `NULL` and `reflect_items.updated_at` is greater than `reflect_items.created_at` and `course_module_sessions.completed_at` is not `NULL`.\n\nIn the denominator, you are counting the number of rows in `praxislabs.reflect_items` where `reflect_items.updated_at` is greater than `reflect_items.created_at`.\n\nThe difference in filtering between the two results in a numerator that includes a smaller subset of rows compared to the denominator, which could lead to a percentage greater than 100%.\n\nTo resolve this issue, you may need to adjust the filtering conditions in either the numerator or the denominator to ensure that they are consistent with one another."
+    },
+    {
+      "role": "user",
+      "content": "can we include this in the denominator course\\_module\\_sessions.completed\\_at is not NULL."
+    },
+    {
+      "role": "assistant",
+      "content": "Certainly! Here is the updated query:\n```sql\nSELECT \n  organizations.name AS organization_name,\n  (COUNT(CASE WHEN reflect_items.immediate_reactions IS NULL AND reflect_items.updated_at > reflect_items.created_at THEN 1 END) / \n   (SELECT COUNT(*) FROM praxislabs.reflect_items \n    LEFT JOIN praxislabs.course_module_sessions \n    ON course_module_sessions.id = reflect_items.course_module_session_id\n    WHERE course_module_sessions.completed_at is NOT NULL)) * 100 \n  AS `Percentage of Null & Updated Rows`\nFROM praxislabs.organizations \nLEFT JOIN praxislabs.users \nON users.organization_id = organizations.id\nLEFT JOIN praxislabs.cohorts \nON cohorts.id = users.cohort_id\nLEFT JOIN praxislabs.course_module_sessions \nON course_module_sessions.user_id = users.id\nLEFT JOIN praxislabs.reflect_items \nON reflect_items.course_module_session_id = course_module_sessions.id\nGROUP BY organizations.name\n```"
+    },
+    {
+      "role": "user",
+      "content": "Can we also group by course module id in the query above?"
+    },
+    {
+      "role": "assistant",
+      "content": "Sure! Here's an updated query that includes both the organization name and the course module id in the grouping:\n```sql\nSELECT \n  organizations.name AS organization_name,\n  course_module_sessions.course_module_id,\n  (COUNT(CASE WHEN reflect_items.immediate_reactions IS NULL\n      AND reflect_items.updated_at > reflect_items.created_at\n      AND course_module_sessions.completed_at is NOT NULL\n      THEN 1 END) / \n   COUNT(CASE WHEN reflect_items.updated_at > reflect_items.created_at\n               AND course_module_sessions.completed_at is NOT NULL THEN 1 END)) * 100 \n  AS `Percentage of Null & Updated Rows`\nFROM praxislabs.organizations \nLEFT JOIN praxislabs.users \nON users.organization_id = organizations.id\nLEFT JOIN praxislabs.cohorts \nON cohorts.id = users.cohort_id\nLEFT JOIN praxislabs.course_module_sessions \nON course_module_sessions.user_id = users.id\nLEFT JOIN praxislabs.reflect_items \nON reflect_items.course_module_session_id = course_module_sessions.id\nGROUP BY organizations.name, course_module_sessions.course_module_id\nORDER BY organizations.name, course_module_sessions.completed_at\n```"
+    },
+    {
+      "role": "user",
+      "content": "Lets exclude any organization that has Praxis in the organization name"
+    },
+    {
+      "role": "assistant",
+      "content": "Sure! To exclude organizations with \"Praxis\" in their name, you can add the following condition in the WHERE clause:\n```vbnet\nSELECT organizations.name AS Organization, \n  course_module_sessions.course_module_id, \n  (COUNT(CASE WHEN reflect_items.immediate_reactions IS NULL \n      AND reflect_items.updated_at > reflect_items.created_at \n      AND course_module_sessions.completed_at is NOT NULL \n      THEN 1 END) / \n   COUNT(CASE WHEN reflect_items.updated_at > reflect_items.created_at \n      AND course_module_sessions.completed_at is NOT NULL\n      THEN 1 END)) * 100 \n  AS `Percentage of Null & Updated Rows`\nFROM praxislabs.organizations AS organizations\nLEFT JOIN praxislabs.users AS users ON users.organization_id = organizations.id\nLEFT JOIN praxislabs.cohorts AS cohorts ON cohorts.id = users.cohort_id\nLEFT JOIN praxislabs.course_module_sessions AS course_module_sessions ON course_module_sessions.user_id = users.id\nLEFT JOIN praxislabs.reflect_items AS reflect_items ON reflect_items.course_module_session_id = course_module_sessions.id\nWHERE organizations.name NOT LIKE '%Praxis%'\nGROUP BY organizations.id, course_module_sessions.course_module_id\nORDER BY organizations.name, course_module_sessions.course_module_id\n```"
+    },
+    {
+      "role": "user",
+      "content": "excluding the one we have filtered, what would the percentage be across organizations?"
+    },
+    {
+      "role": "assistant",
+      "content": "To calculate the overall percentage across organizations, you can modify the query as follows:\n```vbnet\nSELECT \n  (COUNT(CASE WHEN reflect_items.immediate_reactions IS NULL \n      AND reflect_items.updated_at > reflect_items.created_at \n      AND course_module_sessions.completed_at is NOT NULL\n      THEN 1 END) / \n   (SELECT COUNT(*) FROM praxislabs.reflect_items \n    JOIN praxislabs.course_module_sessions \n    ON reflect_items.course_module_session_id = course_module_sessions.id\n    JOIN praxislabs.users \n    ON course_module_sessions.user_id = users.id\n    JOIN praxislabs.organizations \n    ON users.organization_id = organizations.id\n    WHERE organizations.name NOT LIKE '%Praxis%' \n    AND reflect_items.updated_at > reflect_items.created_at \n    AND course_module_sessions.completed_at is NOT NULL)) * 100 \n  AS `Percentage of Null & Updated Rows`\nFROM praxislabs.reflect_items \nJOIN praxislabs.course_module_sessions \nON reflect_items.course_module_session_id = course_module_sessions.id\nJOIN praxislabs.users \nON course_module_sessions.user_id = users.id\nJOIN praxislabs.organizations \nON users.organization_id = organizations.id\nWHERE organizations.name NOT LIKE '%Praxis%' \nAND reflect_items.updated_at > reflect_items.created_at \nAND course_module_sessions.completed_at is NOT NULL\nLIMIT 1;\n```\nThis query calculates the percentage of `reflect_items` rows where `immediate_reactions` is null and `updated_at` is greater than `created_at` and `course_module_sessions` is completed (`completed_at` is not null), but only for organizations whose name does not contain the word 'Praxis'. The numerator of the percentage is the count of the rows that match these criteria and the denominator is the count of all the `reflect_items` rows that match the criteria for the non-Praxis organizations. The result is displayed as `Percentage of Null & Updated Rows`."
+    },
+    {
+      "role": "user",
+      "content": "Is there a way we could modify the query to find out if users that null immediate\\_reactions for their first course module was more likely for their next?"
+    },
+    {
+      "role": "assistant",
+      "content": "To determine if users with `null` `immediate_reactions` for their first course module are more likely to have `null` `immediate_reactions` for their next course module, you can modify the query as follows:\n```sql\nSELECT \n  organizations.name AS organization_name,\n  course_module_sessions.course_module_id,\n  (COUNT(CASE WHEN reflect_items.immediate_reactions IS NULL \n      AND reflect_items.updated_at > reflect_items.created_at \n      AND course_module_sessions.completed_at IS NOT NULL\n      THEN 1 END) / \n   (SELECT COUNT(*) \n    FROM praxislabs.reflect_items \n    WHERE reflect_items.updated_at > reflect_items.created_at \n      AND course_module_sessions.completed_at IS NOT NULL)) * 100 \n  AS `Percentage of Null & Updated Rows`\nFROM praxislabs.organizations \nLEFT JOIN praxislabs.users ON organizations.id = users.organization_id \nLEFT JOIN praxislabs.cohorts ON users.cohort_id = cohorts.id \nLEFT JOIN praxislabs.course_module_sessions ON users.id = course_module_sessions.user_id \nLEFT JOIN praxislabs.reflect_items ON course_module_sessions.id = reflect_items.course_module_session_id \nWHERE organizations.name NOT LIKE '%Praxis%' \nGROUP BY organizations.id, course_module_sessions.course_module_id\nORDER BY organizations.id, course_module_sessions.course_module_id;\n```\nIn this query, you can group the data by both `organization` and `course_module`, to see if the pattern of `null` `immediate_reactions` is consistent across organizations and course modules."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 167,
+  "session_index": 15,
+  "session_id": "sharegpt_kS6twK0_14",
+  "turn_in_session": 1,
+  "date": "2023/05/30 (Tue) 07:50",
+  "role": "assistant",
+  "content": "Route Handlers Overview\n\nRoute Handlers allow you to create custom request handlers for a specific route using the Web Request and Response APIs. They are available only inside the app directory, and you should not use API Routes and Route Handlers together.\n\nTo define Route Handlers, create a route.js or route.ts file inside the app directory, like this:\n\napp/api/route.ts\n```javascript\nexport async function GET(request: Request) {}\n```\nSupported HTTP methods include GET, POST, PUT, PATCH, DELETE, HEAD, and OPTIONS. Next.js extends the native Request and Response with NextRequest and NextResponse to provide helpful utilities for advanced use cases.\n\nStatic Route Handlers are evaluated by default when using the GET method with the Response object, which can be beneficial for generating custom route handlers for robots.txt, rss.xml, sitemap.xml, and other routes.\n\nDynamic Route Handlers are evaluated when using the Request object with the GET method, using any of the other HTTP methods, or when using Dynamic Functions like cookies and headers.\n\nRoute Handlers can use Dynamic Segments to create request handlers from dynamic data, but using generateStaticParams() is not yet supported for use with Route Handlers.\n\nRoute Handlers support both Edge and Node.js runtimes seamlessly with an isomorphic Web API, and you can specify the runtime using the runtime segment config option.\n\nExamples of using Route Handlers include revalidating static data, reading cookies and headers, handling redirects, streaming responses, and returning non-UI content like robots.txt, rss.xml, and sitemap.xml.\n\nRoute Handlers use the same route segment configuration as pages and layouts, allowing for options like dynamic, dynamicParams, revalidate, fetchCache, runtime, and preferredRegion.",
+  "has_answer": false
+}

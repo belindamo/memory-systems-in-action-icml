@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 355,
+  "session_index": 32,
+  "session_id": "sharegpt_RtCgJK2_307",
+  "turn_in_session": 30,
+  "date": "2023/05/27 (Sat) 15:27",
+  "role": "assistant",
+  "content": "Markovnikov's rule is a principle in organic chemistry that predicts the regioselectivity of certain electrophilic addition reactions. The rule states that when a protic acid (such as HX) adds to an alkene, the hydrogen atom will add to the carbon atom with the fewer alkyl substituents, while the X group will add to the carbon atom with more alkyl substituents. In other words, the more substituted carbon of the alkene will get more substituted with the addition of HX.\n\nFor example, in the addition of HBr to propene, the hydrogen atom will add to the carbon atom with one hydrogen atom, while the bromine atom will add to the carbon atom with two methyl groups:\n\nCH3CH=CH2 + HBr \u2192 CH3CH(Br)CH3\n\nThis rule helps in predicting the major product of certain addition reactions, particularly those involving asymmetrical reagents.",
+  "has_answer": false
+}

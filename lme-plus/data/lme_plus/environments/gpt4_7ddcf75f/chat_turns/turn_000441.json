@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 441,
+  "session_index": 43,
+  "session_id": "sharegpt_5JjwwHF_0",
+  "turn_in_session": 3,
+  "date": "2023/06/17 (Sat) 03:03",
+  "role": "assistant",
+  "content": "`attrs` is a Python library for creating classes with concise, declarative syntax for the initialization of attributes. It is designed to be a simple and easy-to-use alternative to `__init__` methods, and provides additional functionality such as automatic generation of comparison and representation methods.\n\nHere is an example of how to use `attrs` to create a class:\n```\nimport attr\n\n@attr.s\nclass Person:\n    name = attr.ib()\n    age = attr.ib()\n\np = Person(\"Alice\", 30)\nprint(p)\n```\nThis creates a class `Person` with two attributes `name` and `age` which can be accessed like any other class attribute and is initialized on object creation.\n\nYou can also validate the inputs passed to attributes by providing a validator function.\n```\nimport attr\n\n@attr.s\nclass Person:\n    name = attr.ib(validator=attr.validators.instance_of(str))\n    age = attr.ib(validator=attr.validators.instance_of(int))\n\np = Person(\"Alice\", 30) #this is valid\np = Person(30, 30) #this will throw an error as name is not string\n```\nIt also provides options to customize the behaviour of attributes like default value, conversion function, etc.",
+  "has_answer": false
+}

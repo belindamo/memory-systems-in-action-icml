@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 262,
+  "session_index": 24,
+  "session_id": "sharegpt_BYHT3Xz_0",
+  "turn_in_session": 3,
+  "date": "2023/05/26 (Fri) 07:17",
+  "role": "assistant",
+  "content": "To style your custom block, you can add a `style.css` file in the same directory as your `index.js` file. Here's an example of how you can style your custom block:\n```css\n.my-custom-block {\n    margin: 20px 0;\n}\n\n.my-custom-block img {\n    max-width: 100%;\n}\n\n.my-custom-block h2 {\n    font-size: 24px;\n    margin-bottom: 10px;\n}\n\n.my-custom-block p {\n    font-size: 16px;\n    line-height: 1.5;\n}\n```\nIn this example, we're using some basic CSS rules to style our custom block. We're setting a margin for the block, a max-width for the image, and some font styles for the heading and paragraph.\n\nTo include the CSS in your WordPress site, you can enqueue the stylesheet in your theme or plugin's `functions.php` file using the `wp_enqueue_style()` function. Here's an example:\n```javascript\nfunction my_custom_block_enqueue() {\n    wp_enqueue_style(\n        'my-custom-block-style',\n        plugins_url( 'my-custom-block/style.css' )\n    );\n}\nadd_action( 'enqueue_block_editor_assets', 'my_custom_block_enqueue' );\n```\nIn this example, we're using the `wp_enqueue_style()` function to enqueue the `style.css` file in our custom block directory. The `plugins_url()` function returns the URL of the plugin or theme directory. We're also hooking our function to the `enqueue_block_editor_assets` action to ensure that our styles are loaded in the block editor.",
+  "has_answer": false
+}

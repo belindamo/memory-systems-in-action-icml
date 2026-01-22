@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 190,
+  "session_index": 19,
+  "session_id": "sharegpt_n42dRB1_0",
+  "turn_in_session": 5,
+  "date": "2023/05/25 (Thu) 07:22",
+  "role": "assistant",
+  "content": "Yes, it is possible to animate an SVG image using only SVG elements and attributes. One way to do this is to use the `<animate>` element within the SVG code. The `<animate>` element allows you to animate specific attributes of an SVG element over a given time period.\n\nHere's an example of how you might use the `<animate>` element to animate the spinning of the electrons in the SVG atom:\n```\n<svg width=\"200\" height=\"200\">\n  <circle cx=\"100\" cy=\"100\" r=\"50\" fill=\"none\" stroke=\"black\" />\n  <circle cx=\"100\" cy=\"100\" r=\"5\" fill=\"black\" />\n  <line x1=\"100\" y1=\"100\" x2=\"100\" y2=\"50\" stroke=\"black\">\n    <animate attributeName=\"transform\" values=\"rotate(0 100 100);rotate(360 100 100)\" dur=\"10s\" repeatCount=\"indefinite\"/>\n  </line>\n  <line x1=\"100\" y1=\"100\" x2=\"100\" y2=\"50\" stroke=\"black\" transform=\"rotate(60 100 100)\">\n    <animate attributeName=\"transform\" values=\"rotate(60 100 100);rotate(420 100 100)\" dur=\"15s\" repeatCount=\"indefinite\"/>\n  </line>\n  <line x1=\"100\" y1=\"100\" x2=\"100\" y2=\"50\" stroke=\"black\" transform=\"rotate(90 100 100)\">\n    <animate attributeName=\"transform\" values=\"rotate(90 100 100);rotate(450 100 100)\" dur=\"20s\" repeatCount=\"indefinite\"/>\n  </line>\n</svg>\n```\nThis will animate the electrons to rotate around the nucleus. The `attributeName` attribute specifies the attribute to animate (in this case, `transform`), the `values` attribute specifies the starting and ending values for the animation, the `dur` attribute specifies the duration of the animation, and the `repeatCount` attribute specifies how many times the animation should repeat.\n\nKeep in mind that not all the browser support this feature, but the most recent versions do.",
+  "has_answer": false
+}

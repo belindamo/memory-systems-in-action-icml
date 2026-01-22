@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 68,
+  "session_index": 7,
+  "session_id": "sharegpt_hBx7yrm_45",
+  "turn_in_session": 2,
+  "date": "2023/05/23 (Tue) 00:02",
+  "role": "assistant",
+  "content": "Pseudo code for scanning and verifying submitted documents with AI:\n\n1. User submits document(s) for verification online\n2. System checks if the document(s) are already stored in the blockchain\n3. If the document(s) are already stored in the blockchain, the verifiable credentials algorithm is applied to verify their authenticity\n4. If the document(s) are not stored in the blockchain, the system sends a request for approval to the concerned government agency\n5. The concerned government agency reviews the request and verifies the authenticity of the submitted document(s)\n6. Once the government agency approves the request, the system automatically stores the verified document(s) in the blockchain using the following AI-based method:\n\na. Use Optical Character Recognition (OCR) to extract the text from the document(s)\nb. Apply Natural Language Processing (NLP) to analyze the text and identify key features and elements of the document(s) such as date, name, and ID number\nc. Use machine learning algorithms to compare the extracted features and elements of the document(s) with reference documents to verify their authenticity\nd. Apply the verifiable credentials algorithm to create a digital signature and store the verified document(s) in the blockchain\n7. System notifies the user of the verification results and provides access to the verified document(s) in the blockchain.\n\nOverall, this algorithm streamlines the process of document verification and enhances the security and authenticity of the digital community tax certificate system.",
+  "has_answer": false
+}

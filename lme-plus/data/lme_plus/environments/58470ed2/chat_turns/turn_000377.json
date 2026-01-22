@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 377,
+  "session_index": 40,
+  "session_id": "sharegpt_oPOTyid_141",
+  "turn_in_session": 18,
+  "date": "2023/05/28 (Sun) 23:52",
+  "role": "assistant",
+  "content": "Yes, I can help you with that.\n\nHere are the steps you can follow to apply a global filter on your APIs to retrieve only items in stock:\n\n1. Create a custom function in your WordPress theme's `functions.php` file.\n2. The function should first check if the current request is an API request using the `is_rest()` function.\n3. If it's an API request, the function should check if the request is for a product or a variation using the `get_post_type()` function.\n4. If the request is for a product or a variation, the function should add a `meta_query` parameter to the query arguments with a `stock_status` meta query to retrieve only items in stock. Here's an example:\n```php\nfunction add_stock_filter_to_api( $args, $request ) {\n    if ( ! is_rest() ) {\n        return $args;\n    }\n\n    $post_type = $request->get_param( 'type' );\n\n    if ( 'product' === $post_type || 'product_variation' === $post_type ) {\n        $meta_query = $args['meta_query'];\n        $meta_query[] = array(\n            'key' => '_stock_status',\n            'value' => 'instock'\n        );\n\n        $args['meta_query'] = $meta_query;\n    }\n\n    return $args;\n}\nadd_filter( 'woocommerce_rest_products_query', 'add_stock_filter_to_api', 10, 2 );\n```\n5. Finally, hook the function to the `woocommerce_rest_products_query` filter to apply it to all product-related API requests.\n\nBy following these steps, you should be able to apply a global filter to retrieve only items in stock for all your product-related API requests.",
+  "has_answer": false
+}

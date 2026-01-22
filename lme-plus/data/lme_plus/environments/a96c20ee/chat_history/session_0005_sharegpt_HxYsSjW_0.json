@@ -1,0 +1,15 @@
+{
+  "session_id": "sharegpt_HxYsSjW_0",
+  "session_index": 5,
+  "date": "2023/05/21 (Sun) 01:24",
+  "turns": [
+    {
+      "role": "user",
+      "content": "An SVG image of the US flag inline in Markdown, retrieved from a public URL"
+    },
+    {
+      "role": "assistant",
+      "content": "![US Flag](https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg)"
+    }
+  ]
+}

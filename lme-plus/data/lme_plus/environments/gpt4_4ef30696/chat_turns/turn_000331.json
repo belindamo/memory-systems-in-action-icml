@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 331,
+  "session_index": 32,
+  "session_id": "sharegpt_K8mXaIT_0",
+  "turn_in_session": 5,
+  "date": "2022/01/16 (Sun) 16:18",
+  "role": "assistant",
+  "content": "Sure, here is an example of a script node in Engati bot builder:\n\nSuppose you want to build a script node that sends a message to a user's email address. You can use the following Node.js code to accomplish this:\n```javascript\nconst nodemailer = require('nodemailer');\n\nconst transporter = nodemailer.createTransport({\n  service: 'gmail',\n  auth: {\n    user: 'youremail@gmail.com',\n    pass: 'yourpassword'\n  }\n});\n\nconst mailOptions = {\n  from: 'youremail@gmail.com',\n  to: '{{context.userProfile.email}}',\n  subject: 'Test email from Engati bot',\n  text: 'This is a test email sent from Engati bot'\n};\n\ntransporter.sendMail(mailOptions, function(error, info){\n  if (error) {\n    console.log(error);\n  } else {\n    console.log('Email sent: ' + info.response);\n  }\n});\n```\nIn this code, we are using the `nodemailer` module to send an email to the user's email address. We create a transporter object by providing our Gmail credentials, and then we define the email message using the `mailOptions` object. Finally, we use the `sendMail()` method to send the email and log the result.\n\nTo use this code in Engati, you can create a script node and paste this code into the script editor window. You can then connect this node to other nodes in the conversation flow to trigger the email sending action.\n\nNote that in the `mailOptions` object, we are using Engati's context variable `{{context.userProfile.email}}` to dynamically populate the user's email address. This is because Engati stores the user's email address in the `userProfile` context variable, which we can access using the double curly braces syntax.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 218,
+  "session_index": 21,
+  "session_id": "sharegpt_TO11XwD_29",
+  "turn_in_session": 2,
+  "date": "2023/01/24 (Tue) 10:22",
+  "role": "assistant",
+  "content": "Here is an example of a complete `Program.cs` file for a .NET 6.0 web API project:\n```csharp\nusing Microsoft.AspNetCore.Hosting;\nusing Microsoft.Extensions.Hosting;\n\nnamespace YourProjectName\n{\n    public class Program\n    {\n        public static void Main(string[] args)\n        {\n            CreateHostBuilder(args).Build().Run();\n        }\n\n        public static IHostBuilder CreateHostBuilder(string[] args) =>\n            Host.CreateDefaultBuilder(args)\n                .ConfigureWebHostDefaults(webBuilder =>\n                {\n                    webBuilder.UseStartup<Startup>();\n                });\n    }\n}\n```\nThis file sets up the `Main` method to create a web host builder using the `CreateDefaultBuilder` method, which loads configuration from various sources, including `appsettings.json`, environment variables, and command-line arguments. It then configures the web host to use the `Startup` class as the application's startup class.\n\nYou can customize the host builder by chaining additional methods to `CreateDefaultBuilder` or by calling `ConfigureWebHostDefaults` with a lambda expression that configures the web host. For example, you can use the `UseUrls` method to specify the URLs that the web host should listen on, or the `UseKestrel` method to configure the Kestrel web server.",
+  "has_answer": false
+}

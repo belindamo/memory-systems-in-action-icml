@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 236,
+  "session_index": 20,
+  "session_id": "sharegpt_cZhfJYa_13",
+  "turn_in_session": 12,
+  "date": "2023/03/26 (Sun) 04:07",
+  "role": "assistant",
+  "content": "Here is an example of an output from the Regulatory Data table that relates to Binance:\n\n| Exchange\\_ID | License\\_Number | License\\_Expiration\\_Date | Compliance\\_Status | Regulatory\\_Agency |\n| --- | --- | --- | --- | --- |\n| 1 | 12345678 | 2021-12-31 | Compliant | Financial Conduct Authority (FCA) |\n\nThis output shows that Binance has been issued a license with number 12345678 by the Financial Conduct Authority (FCA), and that the license is set to expire on December 31, 2021. The Compliance\\_Status field indicates that Binance is currently in compliance with all relevant regulations. This information could be used to track the exchange's compliance with regulatory requirements and identify any potential issues that may need to be addressed.",
+  "has_answer": false
+}

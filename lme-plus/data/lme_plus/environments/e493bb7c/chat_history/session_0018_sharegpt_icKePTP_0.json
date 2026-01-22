@@ -1,0 +1,23 @@
+{
+  "session_id": "sharegpt_icKePTP_0",
+  "session_index": 18,
+  "date": "2023/08/14 (Mon) 14:32",
+  "turns": [
+    {
+      "role": "user",
+      "content": "create a horse using ascii art"
+    },
+    {
+      "role": "assistant",
+      "content": "Here is a simple ASCII art representation of a horse:\n```scss\n/\\_/\\ \n( o.o ) \n > ^ <\n```"
+    },
+    {
+      "role": "user",
+      "content": "create multiple horses using complex ascii art"
+    },
+    {
+      "role": "assistant",
+      "content": "network error"
+    }
+  ]
+}

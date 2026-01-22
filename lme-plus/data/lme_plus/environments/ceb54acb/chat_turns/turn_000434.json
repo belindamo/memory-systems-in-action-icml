@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 434,
+  "session_index": 44,
+  "session_id": "sharegpt_E3FiZj3_62",
+  "turn_in_session": 7,
+  "date": "2023/05/30 (Tue) 09:28",
+  "role": "assistant",
+  "content": "To add the ability to archive a case, you could create a new property in the `Case` model, such as `archived` which could be a Boolean indicating whether the case has been archived or not. You could then add a new endpoint to the `case_management` module to allow users to archive or unarchive cases. The API could look something like this:\n```bash\nPOST /cases/:id/archive\nRequest body:\n{\n    \"archived\": true\n}\n\nResponse body:\n{\n    \"message\": \"Case archived successfully\"\n}\n```\nAnd to unarchive a case:\n```bash\nPOST /cases/:id/archive\nRequest body:\n{\n    \"archived\": false\n}\n\nResponse body:\n{\n    \"message\": \"Case unarchived successfully\"\n}\n```\nYou could also consider adding a new endpoint to retrieve all archived cases:\n```bash\nGET /cases/archived\n\nResponse body:\n{\n    \"cases\": [\n        {\n            \"id\": 1,\n            \"patient_name\": \"John Doe\",\n            \"implant_system\": \"ACME Spinal Implant System\",\n            \"archived\": true,\n            ...\n        },\n        {\n            \"id\": 2,\n            \"patient_name\": \"Jane Smith\",\n            \"implant_system\": \"XYZ Spinal Implant System\",\n            \"archived\": true,\n            ...\n        }\n    ]\n}\n```\nThis would allow users to view and manage their archived cases separately from their active cases.",
+  "has_answer": false
+}

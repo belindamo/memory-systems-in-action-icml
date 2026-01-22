@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 197,
+  "session_index": 19,
+  "session_id": "sharegpt_cu7TYt7_57",
+  "turn_in_session": 4,
+  "date": "2023/05/20 (Sat) 17:03",
+  "role": "assistant",
+  "content": "Before the development of digital computers, the concept of public key cryptography was not widely known or used. The development of public key cryptography is generally attributed to the work of Whitfield Diffie and Martin Hellman in the 1970s, who proposed the concept of public key cryptography as an alternative to traditional symmetric key cryptography.\n\nHowever, there were some early examples of cryptographic systems that used techniques similar to public key cryptography. One such example is the Scytale, an ancient cryptographic system used by the Spartans in ancient Greece. The Scytale used a rod of a specific diameter and length to encrypt and decrypt messages, and a matching rod was required to decrypt the message. While not a true public key cryptography system, the Scytale used a similar concept of a \"key\" that was required to encrypt and decrypt messages.\n\nAnother example is the RSA cipher, which is named after its inventors Ron Rivest, Adi Shamir, and Leonard Adleman. The RSA cipher is a public key cryptography system that was developed in the 1970s and has since become one of the most widely used cryptographic systems in the world.\n\nOverall, while the concept of public key cryptography as it is known today was not widely known or used before the development of digital computers, there were some early examples of cryptographic systems that used similar techniques to provide secure communication.",
+  "has_answer": false
+}

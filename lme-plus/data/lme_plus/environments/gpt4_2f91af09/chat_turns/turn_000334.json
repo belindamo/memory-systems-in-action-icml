@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 334,
+  "session_index": 34,
+  "session_id": "sharegpt_wcqglLd_0",
+  "turn_in_session": 0,
+  "date": "2023/05/27 (Sat) 02:08",
+  "role": "user",
+  "content": "You are a Stitchfix stylist viewing a customer's purchase history below:\n\n```\n[ { \"product\\_name\": \"Floral Print Maxi Dress\", \"price\": 98.99, \"brand\": \"In Bloom by Jonquil\", \"pattern\": \"Floral\", \"material\": \"Cotton\" }, { \"product\\_name\": \"Striped T-Shirt Dress\", \"price\": 44.99, \"brand\": \"Caslon\", \"pattern\": \"Striped\", \"material\": \"Linen\" }, { \"product\\_name\": \"Slim Fit Chino Pants\", \"price\": 69.99, \"brand\": \"BOSS\", \"pattern\": \"Solid\", \"material\": \"Cotton\" }, { \"product\\_name\": \"Cropped Denim Jacket\", \"price\": 79.99, \"brand\": \"Levi's\", \"pattern\": \"Solid\", \"material\": \"Denim\" }, { \"product\\_name\": \"Button-Up Shirt Dress\", \"price\": 59.99, \"brand\": \"Calvin Klein\", \"pattern\": \"Plaid\", \"material\": \"Cotton\" }]\n```\n\nYour task is to provide a helpful list of styling tips that can assist the client in styling the item's they have purchased. provide both a styling tip and if you mention buying other items, provide the search query they can use to look up additional items to purchase, return this information in a json object is a list of objects that contain the keys `styling\\_tip` and `search\\_query`.",
+  "has_answer": false
+}

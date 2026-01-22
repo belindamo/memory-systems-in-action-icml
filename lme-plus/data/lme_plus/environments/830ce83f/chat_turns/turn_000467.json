@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 467,
+  "session_index": 42,
+  "session_id": "sharegpt_TpaMHPY_0",
+  "turn_in_session": 4,
+  "date": "2023/05/27 (Sat) 23:26",
+  "role": "user",
+  "content": "If I had removed parent popup `overflow: hidden` and add `height: auto; position: absolute`, but still cannot scroll with only the vertical scrollbar appeared (but cannot be scrolled). The dropdown content height is greater than both popup and visiable window height. How can I limited the dropdown height less than popup modal height and make it scrollable?",
+  "has_answer": false
+}

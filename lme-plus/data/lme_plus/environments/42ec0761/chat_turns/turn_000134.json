@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 134,
+  "session_index": 11,
+  "session_id": "sharegpt_JHGwlee_33",
+  "turn_in_session": 10,
+  "date": "2023/07/22 (Sat) 19:24",
+  "role": "assistant",
+  "content": "Here is an example of a post-authentication block that you can use in the `/etc/freeradius/3.0/sites-available/default` file:\n```\npost-auth {\n    # Additional logic for successful authentication\n    if (\"%{reply:Ldap-Group-Name}\" =~ /^cn=.*,cn=(.*),ou=Client,dc=dev-ldap,dc=fnsmalaysia,dc=com$/) {\n        update reply {\n            Fortinet-Group-Name := \"%{1}\"\n        }\n    } else {\n        update reply {\n            Reply-Message := \"Unknown group name.\"\n        }\n    }\n\n    # Additional logic for MFA\n    if (\"%{reply:bsa_authentication_status}\" == \"success\") {\n        update reply {\n            Reply-Message := \"MFA Authentication succeeded.\"\n        }\n    } else {\n        update reply {\n            Reply-Message := \"MFA Authentication failed.\"\n        }\n        reject\n    }\n}\n```\nThis block checks the user's group membership in OpenLDAP, and assigns the group name to the `Fortinet-Group-Name` attribute.\nIt also checks the status of the MFA authentication performed by the \"bsa\" module, and rejects the request if it failed.\n\nThis is just an example, you may need to adjust the code based on the exact details of your OpenLDAP server and MFA solution.\nIt's recommended to check the official documentation of FreeRADIUS to find out how to configure post-authentication and also check the official documentation of your OpenLDAP and MFA solution to find out how to configure it properly.\n\nPlease let me know if you have any further questions or if there's anything else I can help you with.",
+  "has_answer": false
+}

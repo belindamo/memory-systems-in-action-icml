@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 33,
+  "session_index": 3,
+  "session_id": "sharegpt_HxPu4JE_83",
+  "turn_in_session": 4,
+  "date": "2023/03/07 (Tue) 12:12",
+  "role": "assistant",
+  "content": "A mutex (short for \"mutual exclusion\") is a synchronization mechanism used to enforce mutual exclusion in concurrent programming. In other words, it is used to protect a shared resource from being accessed simultaneously by multiple threads.\n\nHere is a demonstration of the use of mutexes with relevant APIs in C:\n```c\n#include <pthread.h>\n\npthread_mutex_t my_mutex = PTHREAD_MUTEX_INITIALIZER;\n\nvoid *thread_func(void *arg) {\n  pthread_mutex_lock(&my_mutex);\n  // Critical section: Access shared resource\n  pthread_mutex_unlock(&my_mutex);\n  return NULL;\n}\n\nint main(void) {\n  pthread_t thread_id;\n  pthread_create(&thread_id, NULL, &thread_func, NULL);\n  pthread_mutex_lock(&my_mutex);\n  // Critical section: Access shared resource\n  pthread_mutex_unlock(&my_mutex);\n  pthread_join(thread_id, NULL);\n  return 0;\n}\n```\nIn this example, `pthread_mutex_t` is a type that represents a mutex, and `my_mutex` is a global variable that represents the mutex. The `pthread_mutex_lock` function is used to lock the mutex and the `pthread_mutex_unlock` function is used to unlock the mutex.\n\nIn the `thread_func` function, the mutex is locked with `pthread_mutex_lock` before accessing the shared resource. After accessing the shared resource, the mutex is unlocked with `pthread_mutex_unlock`. In the `main` function, the mutex is locked and unlocked in a similar manner.\n\nBy using the mutex, we ensure that only one thread can access the shared resource at a time, and that no other thread can access the shared resource while it is being accessed.",
+  "has_answer": false
+}

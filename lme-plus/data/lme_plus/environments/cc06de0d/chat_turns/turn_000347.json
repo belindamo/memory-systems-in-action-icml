@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 347,
+  "session_index": 30,
+  "session_id": "7ff028d8_1",
+  "turn_in_session": 9,
+  "date": "2023/05/28 (Sun) 08:21",
+  "role": "assistant",
+  "content": "Conditional formatting in Google Sheets is a fantastic way to visualize your spending and get alerts when you approach your limits.\n\nLet's set up the conditional formatting rule together:\n\n**Step 1: Prepare your data**\n\nMake sure your data is organized in a table with the following columns:\n\n| Date | Category | Description | Amount | Category Total | Month |\n| --- | --- | --- | --- | --- | --- |\n\n**Step 2: Create a new column for the alert**\n\nInsert a new column next to the \"Category Total\" column, let's call it \"Alert\". You can do this by right-clicking on the \"Category Total\" column header and selecting \"Insert 1 right\".\n\n**Step 3: Set up the conditional formatting rule**\n\nSelect the entire \"Alert\" column by clicking on the column header.\n\nGo to the \"Format\" tab in the top menu, then click on \"Conditional formatting\".\n\nIn the \"Format cells if\" dropdown, select \"Custom formula is\".\n\nIn the formula bar, enter the following formula:\n```\n=B2>400\n```\nAssuming your Category Total for Clothing is in column B, and you want to alert when you reach $400.\n\n**Step 4: Set the format**\n\nClick on the \"Format\" button and select the format you want to apply when the condition is true. You can choose a bright red fill color, a bold font, or any other format that grabs your attention.\n\n**Step 5: Apply the rule**\n\nClick \"Done\" to apply the conditional formatting rule.\n\nNow, when your Category Total for Clothing reaches $400, the cell in the \"Alert\" column will change to the format you selected, alerting you to slow down on your clothing purchases!\n\nRepeat the process for other categories or spending limits as needed.\n\nHow's that? Do you have any questions about setting up the conditional formatting rule?",
+  "has_answer": false
+}

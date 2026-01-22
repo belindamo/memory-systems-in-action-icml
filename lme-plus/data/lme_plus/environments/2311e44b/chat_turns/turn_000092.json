@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 92,
+  "session_index": 8,
+  "session_id": "sharegpt_pPJZzai_0",
+  "turn_in_session": 11,
+  "date": "2023/05/22 (Mon) 02:47",
+  "role": "assistant",
+  "content": "Dense retrieval models typically handle out-of-vocabulary (OOV) words by leveraging subword embeddings, which represent words as a combination of their constituent subwords.\n\nSubword embeddings are typically learned by pre-training language models on large amounts of text data. During training, the language model learns to predict the next word in a sequence of text, given the previous words as input. To handle OOV words, the language model learns to represent each word as a combination of its constituent subwords, which are typically character n-grams.\n\nFor example, suppose we have an OOV word \"fudgel\" that is not present in the vocabulary of our pre-trained language model. We can still represent the word as a combination of its constituent subwords, such as \"fud\" and \"gel\". The language model can then use the embeddings of these subwords to represent the OOV word.\n\nDuring retrieval, the dense retrieval model can use the pre-trained language model to compute dense embeddings for both the query and the documents in the collection. The embeddings capture the semantic meaning of the text, including the meaning of OOV words that are represented as combinations of subword embeddings.\n\nBy using subword embeddings, dense retrieval models can handle OOV words more effectively than sparse retrieval models, which may not be able to represent OOV words at all. However, subword embeddings increase the dimensionality of the dense vector representations, which can make computation and storage more challenging. To mitigate this, some dense retrieval models may use dimensionality reduction techniques or other compression strategies to reduce the dimensionality of the embeddings without losing too much information.",
+  "has_answer": false
+}

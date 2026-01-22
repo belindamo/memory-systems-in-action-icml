@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 176,
+  "session_index": 9,
+  "session_id": "sharegpt_5pIFvuH_0",
+  "turn_in_session": 5,
+  "date": "2023/02/07 (Tue) 11:15",
+  "role": "assistant",
+  "content": "To create a Clandly plugin that retrieves user details, you'll need to modify the `onExecute` function to make an API request to your server. You can use a library like `axios` to make HTTP requests.\n\n1. **Install axios:**\n\nIn your terminal, run the following command:\n\n``",
+  "has_answer": false
+}

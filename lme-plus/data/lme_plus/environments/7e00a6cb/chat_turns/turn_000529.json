@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 529,
+  "session_index": 59,
+  "session_id": "sharegpt_vRfbcKe_87",
+  "turn_in_session": 4,
+  "date": "2023/05/30 (Tue) 13:35",
+  "role": "assistant",
+  "content": "Yes, if you make changes to a script that is managed by Supervisor, you will need to reload Supervisor for the changes to take effect.\n\nYou can reload Supervisor by running the following command:\n```\nsudo supervisorctl reload\n```\nThis will tell Supervisor to re-read its configuration files and restart any processes that have been modified.\n\nAlternatively, you can use this command\n```\nsudo service supervisor restart\n```\nIt will restart the supervisor service and reload the new configuration.\n\nPlease note that this will not restart the services themselves, it will just reload the new configuration.\n\nIt's also important to note that if you make a change to your script, and the script is running, you may need to stop the script and start it again to see the changes.\n\nPlease let me know if you have any other questions or if you need further assistance.",
+  "has_answer": false
+}

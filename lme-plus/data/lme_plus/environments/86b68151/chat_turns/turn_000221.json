@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 221,
+  "session_index": 23,
+  "session_id": "sharegpt_7rLq4MQ_9",
+  "turn_in_session": 0,
+  "date": "2023/05/25 (Thu) 14:16",
+  "role": "assistant",
+  "content": "If you're getting an `ApplicationError: No executable found for solver 'cbc'` when running your Pyomo model in Google Colab, it's likely that the CBC solver is not installed or not properly configured on your system.\n\nTo install CBC in Google Colab, you can run the following command:\n```csharp\n!apt-get install -y -qq coinor-cbc\n```\nAfter installing CBC, you may need to add the CBC executable to your system path. You can do this by running the following command:\n```lua\nimport os\nos.environ['PATH'] += ':/usr/bin'\n```\nThis adds the `/usr/bin` directory to your system path, which is where the CBC executable is installed on Google Colab.\n\nAfter running these commands, you should be able to use CBC as a solver in Pyomo by setting the `solver_name` argument to `'cbc'` when calling the `SolverFactory` function:\n```scss\nfrom pyomo.environ import *\n\nmodel = ConcreteModel()\n\nmodel.x = Var(within=NonNegativeReals)\nmodel.y = Var(within=NonNegativeReals)\n\nmodel.c1 = Constraint(expr=model.x + model.y >= 1)\n\nmodel.obj = Objective(expr=model.x + model.y)\n\nsolver = SolverFactory('cbc')\nresults = solver.solve(model)\n\nprint(results)\n```\nI hope this helps! Let me know if you have any other questions.",
+  "has_answer": false
+}

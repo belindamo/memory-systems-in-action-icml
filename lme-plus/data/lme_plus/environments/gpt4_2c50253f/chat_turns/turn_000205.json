@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 205,
+  "session_index": 19,
+  "session_id": "sharegpt_WFKzGQx_0",
+  "turn_in_session": 5,
+  "date": "2023/05/27 (Sat) 10:10",
+  "role": "assistant",
+  "content": "Yes, you can install the `kcadm.sh` CLI on a Linux box without installing the full Keycloak server. You can download the Keycloak server distribution package from the Keycloak website and extract the `kcadm.sh` script from it.\n\nHere are the steps to install the `kcadm.sh` CLI without installing the full Keycloak server:\n\n1. Download the Keycloak server distribution package from the Keycloak website: <https://www.keycloak.org/downloads.html>\n2. Extract the downloaded archive file to a directory of your choice:\n```php\ntar -xzf keycloak-<version>.tar.gz\n```\nReplace `<version>` with the version number of the Keycloak server distribution package that you have downloaded.\n3. Navigate to the `bin` directory inside the extracted Keycloak server distribution directory:\n```bash\ncd keycloak-<version>/bin\n```\n4. Copy the `kcadm.sh` script from the `bin` directory to a directory in your `$PATH` environment variable. For example, you can copy it to `/usr/local/bin`:\n```bash\nsudo cp kcadm.sh /usr/local/bin\n```\nThis will allow you to run the `kcadm.sh` script from any directory on your Linux box.\n5. Set the execute permission on the `kcadm.sh` script:\n```bash\nsudo chmod +x /usr/local/bin/kcadm.sh\n```\nThis will give the execute permission to the `kcadm.sh` script, allowing you to run it.\n\nOnce you have completed these steps, you can use the `kcadm.sh` script to execute Keycloak commands using the CLI.",
+  "has_answer": false
+}

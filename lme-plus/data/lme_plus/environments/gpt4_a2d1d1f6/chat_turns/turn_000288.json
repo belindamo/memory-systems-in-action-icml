@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 288,
+  "session_index": 23,
+  "session_id": "sharegpt_D6wM9yq_0",
+  "turn_in_session": 1,
+  "date": "2023/04/15 (Sat) 04:54",
+  "role": "assistant",
+  "content": "Certainly! Here's the markdown to render a blue square:\n```perl\n![blue square](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22100%22%20height%3D%22100%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20x%3D%220%22%20y%3D%220%22%20width%3D%22100%22%20height%3D%22100%22%20stroke%3D%22black%22%20stroke-width%3D%223%22%20fill%3D%22blue%22%20/%3E%3C/svg%3E%0A)\n```\nAnd here's the rendered image:",
+  "has_answer": false
+}

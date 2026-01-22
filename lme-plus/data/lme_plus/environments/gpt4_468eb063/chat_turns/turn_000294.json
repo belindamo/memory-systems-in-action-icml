@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 294,
+  "session_index": 26,
+  "session_id": "sharegpt_gfhUw40_17",
+  "turn_in_session": 3,
+  "date": "2023/04/11 (Tue) 17:33",
+  "role": "user",
+  "content": "Great. Now, coming back to this one:\n\nSELECT COUNT(DISTINCT user\\_id) AS payers\\_last\\_7\\_days,\n (SELECT COALESCE(COUNT(DISTINCT user\\_id), 0)\n FROM allpayments\n WHERE state = 'paid' AND created\\_at BETWEEN current\\_date - interval '14 days' AND current\\_date - interval '7 days') AS payers\\_previous\\_period,\n (100 - (SELECT COALESCE(COUNT(DISTINCT user\\_id), 0)::float\n FROM allpayments\n WHERE state = 'paid' AND created\\_at BETWEEN current\\_date - interval '14 days' AND current\\_date - interval '7 days') / COUNT(DISTINCT user\\_id)::float \\* 100) AS growth\\_percentage\nFROM allpayments\nWHERE state = 'paid' AND created\\_at >= current\\_date - interval '7 days'\nCould you rewrite it using the table 'payments' instead of 'allmpayments', calling the users 'backers' instead of 'payers'? The only this is that in order to get the user\\_id, you will have to JOIN the table 'contributions' (the contributions table is the only that has the user\\_id. It has a field called 'id' which is equivalent to the field 'contribution\\_id' on the payments table",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 189,
+  "session_index": 18,
+  "session_id": "sharegpt_Us1zWGN_19",
+  "turn_in_session": 6,
+  "date": "2023/05/24 (Wed) 00:07",
+  "role": "assistant",
+  "content": "This structure is more optimal compared to the previous ones, as it separates different object types (Campaign, Ad Group, Keyword, and Product Ad) into their own rows, allowing for better organization and easier management of each object. However, it's essential to consider the trade-offs in terms of data redundancy and the complexity of processing this structure during import.\n\nHere's the structure again for reference:\n\n| Object Type | Campaign ID | Campaign Name | Campaign State | Campaign Budget | Ad Group ID | Ad Group Name | Ad Group Default Bid | Keyword | Match Type | ASIN | SKU | Custom Text |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| Campaign | 1 | Campaign A | Enabled | 1000 |  |  |  |  |  |  |  |  |\n| Ad Group | 1 |  |  |  | 1 | Ad Group 1 | 1.00 |  |  |  |  |  |\n| Keyword | 1 |  |  |  | 1 | Ad Group 1 |  | keywordA1 | Broad |  |  |  |",
+  "has_answer": false
+}

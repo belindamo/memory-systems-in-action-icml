@@ -1,0 +1,55 @@
+{
+  "session_id": "sharegpt_SzQ9LQj_0",
+  "session_index": 37,
+  "date": "2023/05/26 (Fri) 16:02",
+  "turns": [
+    {
+      "role": "user",
+      "content": "In Figma, when using the Pen tool starting to draw a line on top of a frame with Autolayout, is there a way to place the pen line on top of the frame but external to that layer, so it will not interfere in the autolayout?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, in Figma you can place the pen line on top of the frame and keep it separate from the auto-layout by creating a new layer above the frame layer and drawing the line on this new layer. You can also lock the auto-layout frame layer to prevent accidental changes while working on the pen line."
+    },
+    {
+      "role": "user",
+      "content": "How do I lock the frame layer?"
+    },
+    {
+      "role": "assistant",
+      "content": "To lock a layer in Figma, you can do the following:\n\n1. Select the layer you want to lock by clicking on it in the Layers panel.\n2. Right-click on the layer and select \"Lock\" from the context menu, or\n3. Go to the Layers panel, find the lock icon next to the layer name, and click it to toggle the lock state.\n\nWhen a layer is locked, it cannot be edited or selected, but you can still select other layers and work with them. To unlock the layer, simply follow the same steps and click the lock icon again."
+    },
+    {
+      "role": "user",
+      "content": "What's the Figma shortcut to lock the currently selected layer?"
+    },
+    {
+      "role": "assistant",
+      "content": "In Figma, you can lock the currently selected layer using the following shortcut:\n\n* Mac: Command + L\n* Windows: Ctrl + L\n\nThis shortcut will lock the currently selected layer in Figma, making it uneditable and unselectable. To unlock the layer, simply press the same shortcut again."
+    },
+    {
+      "role": "user",
+      "content": "That's not the correct shortcut in Figma 116.5.18."
+    },
+    {
+      "role": "assistant",
+      "content": "My apologies, you are correct. The correct shortcut to lock a layer in Figma as of version 116.5.18 is:\n\n* Mac: Option + Command + L\n* Windows: Alt + Ctrl + L\n\nThis shortcut will lock the currently selected layer in Figma, making it uneditable and unselectable. To unlock the layer, simply press the same shortcut again."
+    },
+    {
+      "role": "user",
+      "content": "That doesn't seem to work."
+    },
+    {
+      "role": "assistant",
+      "content": "I apologize for the incorrect information. As of Figma version 116.5.18, there doesn't seem to be a shortcut to lock the currently selected layer. You can lock a layer by right-clicking on it and selecting \"Lock\", or by clicking on the lock icon next to the layer in the Layers panel."
+    },
+    {
+      "role": "user",
+      "content": "Actually the lock shortcut seems to be Shift + Command + L in Mac"
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for correcting me. The shortcut to lock a layer in Figma on a Mac is indeed:\n\n* Shift + Command + L\n\nThis shortcut will lock the currently selected layer, making it uneditable and unselectable. To unlock the layer, simply press the same shortcut again. I apologize for any confusion caused by my earlier incorrect information."
+    }
+  ]
+}

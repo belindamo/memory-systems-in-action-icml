@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 462,
+  "session_index": 44,
+  "session_id": "sharegpt_CK9naiz_63",
+  "turn_in_session": 11,
+  "date": "2023/05/29 (Mon) 21:50",
+  "role": "user",
+  "content": "Git for Large Files\n\u2022 Git works best with repos that are small and do not contain large files (or binaries).\n\u2022 Every time you (or your build machines) clone the repo, they get the entire repo with its\nhistory from the first commit.\n\u2022 It is great for most situations but can be frustrating if you have large files.\n\u2022 Binary files are even worse because Git cannot optimize how they are stored.\n\u2022 That is why Git LFS was created.\n\u2022 It lets you separate large files of your repos and still has all the benefits of versioning and\ncomparing.\n\u2022 Also, if you are used to storing compiled binaries in your source repos, stop!",
+  "has_answer": false
+}

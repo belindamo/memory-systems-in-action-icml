@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 147,
+  "session_index": 14,
+  "session_id": "sharegpt_tMOb5TT_0",
+  "turn_in_session": 5,
+  "date": "2023/03/26 (Sun) 18:55",
+  "role": "assistant",
+  "content": "Yes, that's correct. If you set `max-height` to a value that is too low, the image may still display at a larger size than you intend.\n\nWhen you set `max-height` to a percentage value, the height of the element will be limited to a percentage of its parent element. So if the parent element has a large height, setting `max-height` to a small percentage will still result in a large image.\n\nTo limit the height of the image more precisely, you can use an absolute value for `max-height`, such as pixels or ems. This will limit the height of the image to a fixed size regardless of the size of the parent element.",
+  "has_answer": false
+}

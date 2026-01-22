@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 113,
+  "session_index": 13,
+  "session_id": "sharegpt_K7G7JSc_0",
+  "turn_in_session": 1,
+  "date": "2023/05/04 (Thu) 16:29",
+  "role": "assistant",
+  "content": "Our project aims to analyze the optimal geometry of Supervised Contrastive Loss (SCL) initially proposed by Khosla et al. (2020) to train classification neural networks. Specifically, we are interested in exploring the neural collapse (NC) phenomenon (Papyan et al., 2020) where the last layer representations and classification head weights align to form an equiangular tight frame (ETF) structure. Although the NC phenomenon was first studied in neural networks optimized with Cross-Entropy (CE) Loss, recent research has demonstrated that the ETF structure is optimal for SCL (Graf et al., 2021).\n\nTo gain a deeper understanding of SCL, we plan to approach the problem from an optimization perspective. Our goal is to characterize and analyze the ETF structure in the data-imbalanced setting, similar to recent work accomplished for CE (Thrampoulidis et al., 2022). This approach has several advantages. First, we can apply an established optimization framework to gain further insights into SCL. Second, we can explore modified geometries due to constraints imposed by modern neural networks, such as Transformers trained via unsupervised means.\n\nOur work serves as a stepping stone in understanding the implicit geometry of unsupervised settings, as modern deep learning has been moving towards larger models trained through unsupervised means. Recent research has suggested increased robustness to distributional imbalances in this setting, and by studying self-similarity metrics like SCL, we can gain insights into unsupervised learning at the core of these models.",
+  "has_answer": false
+}

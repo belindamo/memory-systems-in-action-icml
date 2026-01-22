@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 103,
+  "session_index": 9,
+  "session_id": "sharegpt_V2j1zkI_4",
+  "turn_in_session": 1,
+  "date": "2023/05/21 (Sun) 18:44",
+  "role": "assistant",
+  "content": "Part 3 of the sales call starts with Matt Brown discussing deployment options for the Fellow platform. He explains that they can either deploy the platform in full to all users, which would require everyone to be set up as billable users, or do a partial rollout by providing a CSV list of users to import and have only those users be paid users, while other users can still access the platform. Matt also mentions that they have a quarterly true up system where they can work with the client to adjust the number of licenses based on the number of active users. Nick Sarkesian asks how the true up system works, to which Matt explains that they would flat rate the plan and add any additional users on the day of without any bottleneck, and adjust the billing period accordingly. The discussion then shifts to the possibility of decreasing the number of licenses, which Matt explains would be a missed opportunity for both parties. Matt also explains that Fellow can tell who the active users are versus those who have only signed in once. Eric Cameron then mentions that they will activate pro licenses for their team members in the short term but will not make any enterprise-level decisions until they have reviewed all the documentation that Fellow will send over. He also mentions that they probably wouldn't fully kick off the enterprise-level deployment until the beginning of next year. Matt offers to send over security compliance documentation, information about their Okta integration, SOC 2 MPA, and JIRA integration. Eric asks if Matt can remove Tyler and Alex as admins and add himself, Nick, and Trina as admins, which Matt agrees to do. Finally, Matt mentions that he will send an email confirmation once he has made the changes.",
+  "has_answer": false
+}

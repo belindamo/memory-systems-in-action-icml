@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 266,
+  "session_index": 26,
+  "session_id": "sharegpt_GV76aGD_0",
+  "turn_in_session": 3,
+  "date": "2023/05/28 (Sun) 14:17",
+  "role": "assistant",
+  "content": "To find the voltage across each resistor, we can use Ohm's Law again:\n\nV1 = I \\* R1\nV1 = 0.0005 A \\* 3k\u03a9\nV1 = 1.5 V\n\nV2 = I \\* R2\nV2 = 0.0005 A \\* 10k\u03a9\nV2 = 5 V\n\nV3 = I \\* R3\nV3 = 0.0005 A \\* 5k\u03a9\nV3 = 2.5 V\n\nTherefore, the voltage across each resistor is 1.5 V, 5 V, and 2.5 V respectively.",
+  "has_answer": false
+}

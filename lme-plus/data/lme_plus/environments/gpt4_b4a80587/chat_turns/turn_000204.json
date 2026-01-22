@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 204,
+  "session_index": 18,
+  "session_id": "sharegpt_MhtBvsc_87",
+  "turn_in_session": 14,
+  "date": "2023/05/23 (Tue) 11:19",
+  "role": "assistant",
+  "content": "After the `amplify init` process, you can start adding backend services using the Amplify CLI. You can use the `amplify add <category>` command to add different categories of backend services such as authentication, API, storage, and more.\n\nFor example, to add authentication, you can use the following command:\n```csharp\namplify add auth\n```\nThis will open up a wizard where you can configure your authentication settings, such as the type of authentication, the authentication flow, and the social providers.\n\nTo add API, you can use the following command:\n```csharp\namplify add api\n```\nThis will also open up a wizard where you can configure your API settings, such as the API name, the REST or GraphQL API type, and the data source.\n\nYou can continue adding other backend services as per your app's requirements using the `amplify add <category>` command. Once you have added all the backend services, you can use the `amplify push` command to deploy your changes to the cloud.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 295,
+  "session_index": 26,
+  "session_id": "sharegpt_gfhUw40_17",
+  "turn_in_session": 4,
+  "date": "2023/04/11 (Tue) 17:33",
+  "role": "assistant",
+  "content": "Certainly! Here is the modified query that uses the table `payments` instead of `allpayments`, calls the users `backers` instead of `payers`, and joins the `contributions` table to get the `user_id`:\n```\nSELECT COUNT(DISTINCT c.user_id) AS backers_last_7_days,\n       (SELECT COALESCE(COUNT(DISTINCT c.user_id), 0)\n        FROM payments p\n        JOIN contributions c ON p.contribution_id = c.id\n        WHERE p.state = 'paid' AND p.created_at BETWEEN current_date - interval '14 days' AND current_date - interval '7 days') AS backers_previous_period,\n       (100 - (SELECT COALESCE(COUNT(DISTINCT c.user_id), 0)::float\n               FROM payments p\n               JOIN contributions c ON p.contribution_id = c.id\n               WHERE p.state = 'paid' AND p.created_at BETWEEN current_date - interval '14 days' AND current_date - interval '7 days') / COUNT(DISTINCT c.user_id)::float * 100) AS growth_percentage\nFROM payments p\nJOIN contributions c ON p.contribution_id = c.id\nWHERE p.state = 'paid' AND p.created_at >= current_date - interval '7 days'\n```\nThis will return the number of distinct `user_id`s (via the `contributions` table) that have a `state` of `'paid'` and were created within the last 7 days (including today) as `backers",
+  "has_answer": false
+}

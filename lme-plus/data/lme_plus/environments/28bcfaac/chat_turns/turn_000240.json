@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 240,
+  "session_index": 23,
+  "session_id": "sharegpt_16aQRSz_0",
+  "turn_in_session": 2,
+  "date": "2023/05/25 (Thu) 01:55",
+  "role": "user",
+  "content": "Can you rewrite this function to use the INTERSECT operator from SQL\n\nasync function hasActiveFunction(ownerId: string, edgeConfigIds: string[]) {\n const filter: Record = {};\n const where: string[] = [];\n\n edgeConfigIds.forEach((id, index) => {\n const filterName = `edgeConfigId${index}`;\n where.push(`ARRAY\\_CONTAINS(c.edgeConfigIds, @${filterName})`);\n filter[filterName] = id;\n });\n\n const [fn = null] = await getCosmos().queryDocuments(\n Collection.FUNCTIONS,\n `SELECT TOP 1 \\* FROM c WHERE c.state = \"READY\" AND ARRAY\\_LENGTH(c.edgeConfigIds) = @count AND ${where.join(\n ' AND ',\n )}`,\n {\n ...filter,\n count: where.length,\n },\n {\n partitionKey: ownerId,\n },\n );\n\n return fn;\n}",
+  "has_answer": false
+}

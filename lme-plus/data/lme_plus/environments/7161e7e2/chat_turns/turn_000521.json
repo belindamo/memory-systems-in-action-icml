@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 521,
+  "session_index": 45,
+  "session_id": "sharegpt_vbNrVtS_143",
+  "turn_in_session": 2,
+  "date": "2023/05/30 (Tue) 14:07",
+  "role": "assistant",
+  "content": "Limitations\n-----------\n\nThe Annotation screen has the following limitations:\n\n* Only Tagger and Checker users can access the Annotation screen. Other users do not have access to the screen.\n* Tagger users can only annotate documents that have been assigned to them. They cannot annotate documents that have not been assigned to them.\n* Checker users can only review annotations for tasks that have been assigned to them. They cannot review annotations for tasks that have not been assigned to them.\n* The Annotation screen does not support the annotation of documents in formats other than PDF.\n* The Annotation screen does not support the annotation of documents with more than 100 pages.\n* The Annotation screen does not support the annotation of documents with more than 60 labels per page.\n\nRisk assessment\n---------------\n\nThe following risks have been identified for the Annotation screen:\n\n* Data loss: There is a risk of data loss if the annotation tool fails to save annotations made by Tagger users.\n* Incorrect annotations: There is a risk of incorrect annotations if Tagger users do not follow the correct labeling guidelines.\n* Miscommunication: There is a risk of miscommunication if Tagger and Checker users do not use the commenting feature effectively.\n* User frustration: There is a risk of user frustration if the Annotation screen has a poorly designed user interface.",
+  "has_answer": false
+}

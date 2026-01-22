@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 143,
+  "session_index": 10,
+  "session_id": "sharegpt_JTaoEJT_23",
+  "turn_in_session": 11,
+  "date": "2023/03/14 (Tue) 06:20",
+  "role": "user",
+  "content": "Is backpropagation with \"infinite dimensions\" an existing thing ? By that I mean a kind of backpropagation where loss functon is not defined on a vector space but on something else, like a vector space with infinite values, or some kind of space where the points are infinite vectors.",
+  "has_answer": false
+}

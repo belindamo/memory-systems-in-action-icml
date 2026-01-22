@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 479,
+  "session_index": 46,
+  "session_id": "sharegpt_XaM55h6_29",
+  "turn_in_session": 0,
+  "date": "2023/05/20 (Sat) 22:58",
+  "role": "assistant",
+  "content": "* Major shared techniques with Data2vec include predicting contextualized target representations\n* Encoding non-masked portions of a sample and using a convolutional decoder to predict target representations for masked portions\n* Amortizing computational overhead by reusing each target for multiple masked versions of a training sample\n* Inverse block masking strategy preserves contiguous regions of the sample to provide more context for student predictions\n* Training targets are based on averaging top K FFN blocks of the teacher\n* Teacher weights are an exponentially moving average of student encoder weights\n* Model architecture includes modality-specific feature encoders and a Transformer architecture\n* Asymmetric encoder/decoder architecture with student encoder only encoding unmasked patches or time-steps\n* Random Gaussian noise used to represent masked tokens\n* Student network trained to reconstruct contextualized target representation of teacher network\n* Predictions of student network used to update teacher network\n* Data2vec 2.0 trained on a wide range of tasks including image classification, machine translation, and language modeling\n* Training process involves optimizing the parameters of the model using meta learning to improve performance on a particular task\n* Data preparation, model selection, meta learning, training, and validation steps in training process",
+  "has_answer": false
+}

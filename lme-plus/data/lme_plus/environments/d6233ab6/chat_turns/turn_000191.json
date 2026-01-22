@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 191,
+  "session_index": 20,
+  "session_id": "sharegpt_k4i6Hmp_8",
+  "turn_in_session": 2,
+  "date": "2023/05/25 (Thu) 23:03",
+  "role": "user",
+  "content": "Web search results:\n\n[1] \"The title is a brief, one- to four-word description of the job that reflects its content, purpose, and scope. It should adhere to industry-standard job titles of similar roles. Company. Provide one paragraph about your companys mission, culture, and benefits and what makes your company unique. This paragraph should include the title of the ...\"\nSource: https://www.grammarly.com/blog/job-description/\n\n[2] \"You should include this information in the job summary. 5. Write a job description. Create a strong and concise (usually a couple of sentences) summary of the new position. It should be an overview of the role, its purpose or value and your expectations for it. 6. List job duties.\"\nSource: https://www.indeed.com/career-advice/career-development/how-to-write-your-own-job-description\n\n[3] \"Cut down on fluff \u2014 candidates are overloaded with content daily; keep your job descriptions simple. Your sentences should be punchy (8 to 13 words is ideal). Your bulleted lists should be in the 3 to 7 range. And most of your paragraphs should be 3 or fewer sentences.\"\nSource: https://blog.ongig.com/job-descriptions/how-to-write-a-job-description/\nCurrent date: 1/13/2023\nInstructions: Using the provided web search results, write a comprehensive reply to the given prompt. Make sure to cite results using [[number](URL)] notation after the reference. If the provided search results refer to multiple subjects with the same name, write separate answers for each subject.\nPrompt: Write one paragraph to add in the job description about the company sky dust and rewrite the job description witht the same input but make it more seamless if this information is added as company background",
+  "has_answer": false
+}

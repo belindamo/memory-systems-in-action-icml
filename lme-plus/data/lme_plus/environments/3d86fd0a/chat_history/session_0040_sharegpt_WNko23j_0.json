@@ -1,0 +1,23 @@
+{
+  "session_id": "sharegpt_WNko23j_0",
+  "session_index": 40,
+  "date": "2023/05/26 (Fri) 18:20",
+  "turns": [
+    {
+      "role": "user",
+      "content": "google sheets formulea for e2\\*g2 +k2\\*m2"
+    },
+    {
+      "role": "assistant",
+      "content": "To calculate the product of cell E2 and G2, and then add it to the product of cell K2 and M2 in Google Sheets, you can use the following formula:\n```markdown\n=E2*G2+K2*M2\n```\nThis will multiply the values in cells E2 and G2, then add the product of cells K2 and M2 to that result, giving you the final value."
+    },
+    {
+      "role": "user",
+      "content": "google cloud speech to text pricing"
+    },
+    {
+      "role": "assistant",
+      "content": "Google Cloud Speech-to-Text pricing is based on the number of audio minutes processed by the service. There are two pricing models available: Standard and Advanced.\n\nFor the Standard model, the pricing is as follows:\n\n* $0.006 per 15 seconds of audio processed\n* No minimum fees or upfront commitments\n* Free usage limit of 60 minutes per month\n\nFor the Advanced model, the pricing is as follows:\n\n* $0.012 per 15 seconds of audio processed\n* Minimum monthly commitment of $1,000\n* Free usage limit of 5,000 minutes per month\n\nIn addition to the base pricing, there may be additional charges for other features such as speaker diarization, punctuation, and enhanced models.\n\nIt's also worth noting that there is a free trial available for Google Cloud Speech-to-Text, which provides $300 in credits for a 90-day period. This can be used to test the service and evaluate its cost-effectiveness for your specific use case."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "session_id": "sharegpt_8hPKHyo_0",
+  "session_index": 32,
+  "date": "2023/03/06 (Mon) 13:55",
+  "turns": [
+    {
+      "role": "user",
+      "content": "Please give me a list point summary of the article https://mips.makerdao.com/mips/details/MIP39"
+    },
+    {
+      "role": "assistant",
+      "content": "1. MIP 39 outlines a proposal to change the collateral requirements for MakerDAO's multi-collateral Dai (MCD) system.\n2. The proposal suggests a \"collateral on-ramp\" that would allow new assets to be added as collateral types with lower risk parameters than existing assets.\n3. The collateral on-ramp would be implemented in two phases: the first phase would involve a \"bootstrapping period\" during which new collateral types would be added with low risk parameters, and the second phase would involve gradually increasing the risk parameters over time.\n4. This proposal is intended to increase the diversity of assets that can be used as collateral in the MCD system and reduce the risk of a single asset dominating the system.\n5. The proposal is currently in the \"review\" stage of the Maker Improvement Proposal (MIP) process."
+    }
+  ]
+}

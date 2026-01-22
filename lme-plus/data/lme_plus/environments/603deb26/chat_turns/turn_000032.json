@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 32,
+  "session_index": 2,
+  "session_id": "sharegpt_DjfaDml_11",
+  "turn_in_session": 10,
+  "date": "2023/08/11 (Fri) 00:49",
+  "role": "assistant",
+  "content": "DHTML (Dynamic HTML) events refer to a set of JavaScript events that are used to create interactive and dynamic web pages. These events are triggered by user actions or browser events and can be used to modify the content, behavior, and appearance of a web page in real-time.\n\nHere are some of the commonly used DHTML events:\n\n1. `onmouseover` - Triggered when the mouse cursor moves over an HTML element.\n2. `onmouseout` - Triggered when the mouse cursor moves out of an HTML element.\n3. `onclick` - Triggered when an HTML element is clicked.\n4. `ondblclick` - Triggered when an HTML element is double-clicked.\n5. `onkeydown` - Triggered when a keyboard key is pressed down.\n6. `onkeyup` - Triggered when a keyboard key is released.\n7. `onload` - Triggered when a web page finishes loading.\n8. `onsubmit` - Triggered when an HTML form is submitted.\n9. `onreset` - Triggered when an HTML form is reset.\n10. `onresize` - Triggered when the size of the browser window is changed.\n11. `onscroll` - Triggered when the user scrolls the web page.\n\nBy using DHTML events, developers can create web pages that respond to user actions and browser events in real-time, providing a more interactive and engaging user experience. DHTML events are widely used in web development, especially in the development of modern web applications and user interfaces.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 373,
+  "session_index": 34,
+  "session_id": "sharegpt_gPFzM9v_121",
+  "turn_in_session": 16,
+  "date": "2023/05/27 (Sat) 10:26",
+  "role": "assistant",
+  "content": "The trigger that starts the task when a specific user authenticates to the machine is the \"At log on\" trigger. This trigger can be set using the \"schtasks\" command with the /create switch and the /tn switch to set the task name, the /tr switch to set the task run command, and the /sc switch to set the schedule type to \"At log on\". The /ru switch is used to specify the user for which the task should run.",
+  "has_answer": false
+}

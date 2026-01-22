@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 180,
+  "session_index": 9,
+  "session_id": "sharegpt_5pIFvuH_0",
+  "turn_in_session": 9,
+  "date": "2023/02/07 (Tue) 11:15",
+  "role": "assistant",
+  "content": "Sure, let's modify the plugin to include the following methods: `getUserDetails`, `getUsersAllMeetings`, `getUsersAllPastMeetings`, and `getUsersAllUpcomingMeetings`. We will use the `axios` library to make HTTP requests to your server.\n\n1. **Install axios:**\n\nIn your terminal, run the following command:\n```bash\nnpm install axios @types/axios\n```\n1. **Modify the plugin class:**\n\nUpdate your `src/clandlyPlugin.ts` file to include the new methods:\n```typescript\nimport axios from 'axios';\nimport { ClandlyPlugin } from './clandlyPluginInterface';\n\nexport class MyCustomClandlyPlugin implements ClandlyPlugin {\n  name = 'MyCustomClandlyPlugin';\n  version = '1.0.0';\n  apiUrl: string;\n\n  constructor(apiUrl: string) {\n    this.apiUrl = apiUrl;\n  }\n\n  onInitialize(): void {\n    console.log(`Initializing ${this.name} v${this.version}`);\n  }\n\n  async getUserDetails(userId: string): Promise<any> {\n    const response = await axios.get(`${this.apiUrl}/users/${userId}`);\n    return response.data;\n  }\n\n  async getUsersAllMeetings(userId: string): Promise<any> {\n    const response = await axios.get(`${this.apiUrl}/users/${userId}/meetings`);\n    return response.data;\n  }\n\n  async getUsersAllPastMeetings(userId: string): Promise<any> {\n    const response = await axios.get(`${this.apiUrl}/users/${userId}/meetings/past`);\n    return response.data;\n  }\n\n  async getUsersAllUpcomingMeetings(userId: string): Promise<any> {\n    const response = await axios.get(`${this.apiUrl}/users/${userId}/meetings/upcoming`);\n    return response.data;\n  }\n}\n```\nReplace `apiUrl` with the base URL of your server's API.\n\n1.",
+  "has_answer": false
+}

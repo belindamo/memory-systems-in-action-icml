@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 347,
+  "session_index": 29,
+  "session_id": "sharegpt_0es4qk5_0",
+  "turn_in_session": 3,
+  "date": "2023/03/13 (Mon) 09:47",
+  "role": "assistant",
+  "content": "Yes, that makes sense! So if a customer like Dan creates a subdomain on your website, it would be in the form of `dans-gitbook.gitbook.com`, which uses the custom domain you've assigned to your Vercel deployment, as well as the wildcard subdomain you've configured to allow for custom subdomains.\n\nIf you have any other questions or concerns about running a website with subdomains on Vercel, feel free to ask!",
+  "has_answer": false
+}

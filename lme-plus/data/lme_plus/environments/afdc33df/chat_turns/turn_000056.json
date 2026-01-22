@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 56,
+  "session_index": 6,
+  "session_id": "sharegpt_YWC1MZC_11",
+  "turn_in_session": 4,
+  "date": "2023/05/22 (Mon) 02:12",
+  "role": "assistant",
+  "content": "To set the refresh interval to 1 minute in Elasticsearch, you can use the following API call:\n```bash\nPUT /your_index_name/_settings\n{\n  \"index\": {\n    \"refresh_interval\": \"1m\"\n  }\n}\n```\nIn Django with `django-elasticsearch-dsl` you can add this to the `settings.py` file:\n```python\nELASTICSEARCH_DSL = {\n    'default': {\n        'hosts': 'localhost:9200',\n        'timeout': 30,\n        'refresh_interval': '1m'\n    },\n}\n```\nThis sets the default refresh interval to 1 minute for all indices. Alternatively, you can set the refresh interval for a specific index by specifying the index name instead of \"default\" in the above code.\n\nKeep in mind that setting a low refresh interval can impact performance, as Elasticsearch will need to refresh the index more frequently, which can slow down indexing and search operations. So, make sure to choose an appropriate refresh interval based on your use case and the size of your index.",
+  "has_answer": false
+}

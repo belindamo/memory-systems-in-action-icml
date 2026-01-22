@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 388,
+  "session_index": 35,
+  "session_id": "sharegpt_C0uzhBr_40",
+  "turn_in_session": 5,
+  "date": "2023/05/27 (Sat) 11:00",
+  "role": "assistant",
+  "content": "MySQL did not support materialized views until version 8.0. The feature was added in MySQL 8.0.13 as part of their release. If you are using a version of MySQL earlier than 8.0, you will need to use other solutions such as creating a summary table or using a scheduler to run queries and populate a table.",
+  "has_answer": false
+}

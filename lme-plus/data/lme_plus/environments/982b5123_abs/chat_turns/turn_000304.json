@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 304,
+  "session_index": 25,
+  "session_id": "sharegpt_sE8hWwU_17",
+  "turn_in_session": 16,
+  "date": "2023/05/27 (Sat) 14:20",
+  "role": "assistant",
+  "content": "If the result of the formula is too large to be displayed in Excel, it's possible that Excel is not set to display the number of decimal places needed to show the full result. You can change the number of decimal places that Excel displays by right-clicking on the cell, selecting \"Format Cells...\", going to the \"Number\" tab, and then changing the \"Decimal places\" setting. You may need to increase the number of decimal places to see the full result.",
+  "has_answer": false
+}

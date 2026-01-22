@@ -1,0 +1,31 @@
+{
+  "session_id": "sharegpt_RuLt4Z6_0",
+  "session_index": 16,
+  "date": "2023/05/24 (Wed) 15:13",
+  "turns": [
+    {
+      "role": "user",
+      "content": "reply with one word"
+    },
+    {
+      "role": "assistant",
+      "content": "Sure."
+    },
+    {
+      "role": "user",
+      "content": "qnother'"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry, I don't understand the question. Could you please rephrase it?"
+    },
+    {
+      "role": "user",
+      "content": "one more"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    }
+  ]
+}

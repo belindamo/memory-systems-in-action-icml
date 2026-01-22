@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 211,
+  "session_index": 21,
+  "session_id": "sharegpt_RjO1Toi_31",
+  "turn_in_session": 2,
+  "date": "2023/06/01 (Thu) 12:20",
+  "role": "user",
+  "content": "extract frames and the frame elements from this sentence: {\"sentence\": \"... But there\u2019s no need to look for hidden meanings.\", \"frames\": [{\"name\": \"Existence\", \"elements\": [{\"name\": \"Entity\", \"text\": \"no need\"}]}, {\"name\": \"Required\\_event\", \"elements\": [{\"name\": \"Required\\_situation\", \"text\": \"to look for hidden meanings\"}]}, {\"name\": \"Seeking\", \"elements\": [{\"name\": \"Sought\\_entity\", \"text\": \"for hidden meanings\"}]}]}",
+  "has_answer": false
+}

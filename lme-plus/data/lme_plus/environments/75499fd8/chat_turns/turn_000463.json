@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 463,
+  "session_index": 49,
+  "session_id": "sharegpt_mMNr1qm_0",
+  "turn_in_session": 5,
+  "date": "2023/05/30 (Tue) 12:43",
+  "role": "assistant",
+  "content": "Sure, here's an example function in C++ that can be used to move an object in the scene based on the current time:\n```c++\nvoid updateObjectPosition(float currentTime, Object& obj) {\n    // Compute the new position of the object based on the current time\n    float xPos = sin(currentTime) * 5.0f; // example x position calculation\n    float yPos = obj.position.y; // keep the same y position\n    float zPos = cos(currentTime) * 5.0f; // example z position calculation\n\n    // Update the transformation matrix for the object\n    glm::mat4 translationMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(xPos, yPos, zPos));\n    glm::mat4 rotationMatrix = glm::rotate(glm::mat4(1.0f), glm::radians(obj.rotationAngle), obj.rotationAxis);\n    glm::mat4 scaleMatrix = glm::scale(glm::mat4(1.0f), obj.scale);\n    obj.transformMatrix = translationMatrix * rotationMatrix * scaleMatrix;\n}\n```\nThis function takes in the current time and the object to be moved as input. It calculates a new position for the object based on the current time and updates the transformation matrix for the object. The example position calculation in this function uses sine and cosine functions to create a circular motion around the y-axis, but you can modify this calculation based on your specific needs.\n\nYou would call this function before drawing each frame, passing in the current time and the object that needs to be moved. The updated transformation matrix for the object can then be used to render the object in the correct position and orientation.",
+  "has_answer": false
+}

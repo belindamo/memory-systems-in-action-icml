@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 224,
+  "session_index": 21,
+  "session_id": "sharegpt_KKeKmjV_21",
+  "turn_in_session": 12,
+  "date": "2023/05/24 (Wed) 18:35",
+  "role": "assistant",
+  "content": "In the grammar system that we've defined for Flang so far, we haven't included any rules for past tense. Flang is a highly inflected language, so the way that verbs are conjugated and inflected depends on the person, number, tense, mood, and voice of the verb.\n\nIn Flang, the past tense is formed by adding the ending \"-o\" to the base form of the verb. For example, the past tense of the verb \"fala\" (to walk) would be \"falo\".\n\nHere is an updated version of the grammar rules for Flang that includes past tense:\n\nNouns:\n- Accusative case: nouns are inflected by adding the ending \"-a\" in the accusative case. For example, \"fash\" (house) becomes \"fasha\" in the accusative case.\n- Genitive case: nouns are inflected by adding the ending \"-i\" in the genitive case. For example, \"fash\" (house) becomes \"fashi\" in the genitive case.\n- Instrumental case: nouns are inflected by adding the ending \"-u\" in the instrumental case. For example, \"fash\" (house) becomes \"fash",
+  "has_answer": false
+}

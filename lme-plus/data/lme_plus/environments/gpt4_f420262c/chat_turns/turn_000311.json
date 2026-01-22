@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 311,
+  "session_index": 30,
+  "session_id": "sharegpt_htKfBTv_0",
+  "turn_in_session": 3,
+  "date": "2023/01/19 (Thu) 22:18",
+  "role": "assistant",
+  "content": "A SCORM package is a collection of files that work together to deliver an e-learning course within a learning management system (LMS). These files typically include:\n\n1. Course content: HTML, CSS, JavaScript, images, audio, video, and other multimedia elements that make up the learning experience.\n2. SCO (Shareable Content Objects): Reusable, modular learning units within the course, which can be tracked and reported on individually.\n3. Manifest file (imsmanifest.xml): A crucial file that lists all the resources in the package, defines the structure of the course, and provides instructions for the LMS on how to launch and navigate the content.\n4",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 80,
+  "session_index": 6,
+  "session_id": "sharegpt_z1wJvG1_0",
+  "turn_in_session": 7,
+  "date": "2023/03/09 (Thu) 00:05",
+  "role": "assistant",
+  "content": "The issue seems to be that you are trying to compare an object to a class rather than an instance of the class. Instead of comparing `the_captured_piece` to `piece.Pawn`, you should compare it to an instance of the `Pawn` class, like this:\n```python\nif isinstance(the_captured_piece, Pawn):\n    # do something\n```\nThis code will check if `the_captured_piece` is an instance of the `Pawn` class and execute the code inside the `if` statement if it is.",
+  "has_answer": false
+}

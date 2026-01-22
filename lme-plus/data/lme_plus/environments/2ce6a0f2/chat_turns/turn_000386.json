@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 386,
+  "session_index": 39,
+  "session_id": "sharegpt_2wPZTqA_0",
+  "turn_in_session": 0,
+  "date": "2023/03/08 (Wed) 20:22",
+  "role": "user",
+  "content": "I have one table with code,punchdatetime.this table will not identify whether punchdatetime is inpunch or outpunch,I have another table code, calendardate, start time,end time.this table will have each date shift start and end datetime in start time and endtime columns for that date.for weeklyoffs start time and end time is null.if punches is available for working day or weeklyoffs it should pair the punches and show the details like code,calendardate,startdattime,end datetime,punching,punchout.punches can be picked before 4hours of start time and after 4 hours of endtime,for weeklyoff previous day endtime after 4 hours to next-day.write sqlserver statement for this",
+  "has_answer": false
+}

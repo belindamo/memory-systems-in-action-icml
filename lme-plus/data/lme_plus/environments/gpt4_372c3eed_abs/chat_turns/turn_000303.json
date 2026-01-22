@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 303,
+  "session_index": 28,
+  "session_id": "sharegpt_ExePpP3_77",
+  "turn_in_session": 8,
+  "date": "2023/08/20 (Sun) 14:48",
+  "role": "assistant",
+  "content": "Cryptographic techniques are used in blockchain and other distributed ledger technologies to ensure the security and integrity of the data stored on the distributed ledger. They are based on the principles of cryptography, which is the practice of secure communication in the presence of third parties.\n\nHere are some common cryptographic techniques that are used in blockchain:\n\n1. Hashing: Hashing is a cryptographic technique that is used to transform data into a fixed-size hash value. It is used to secure data and ensure its integrity, as any change to the data will result in a different hash value.\n2. Digital signatures: Digital signatures are used to authenticate the identity of the sender and ensure that the data has not been tampered with. They are created using a combination of the sender's private key and the data being signed.\n3. Public-key cryptography: Public-key cryptography is a cryptographic technique that uses a pair of keys, a public key and a private key, to secure data and enable secure communication. The public key is used to encrypt data, while the private key is used to decrypt it.\n4. Symmetric-key cryptography: Symmetric-key cryptography is a cryptographic technique that uses a single key to both encrypt and decrypt data. It is generally faster than public-key cryptography but requires that both the sender and the receiver have a copy of the key.\n\nOverall, cryptographic techniques are used in blockchain and other distributed ledger technologies to ensure the security and integrity of the data stored on the distributed ledger. They are based on the principles of cryptography and are used to secure data, authenticate identities, and enable secure communication.",
+  "has_answer": false
+}

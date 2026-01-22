@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 200,
+  "session_index": 18,
+  "session_id": "sharegpt_MhtBvsc_87",
+  "turn_in_session": 10,
+  "date": "2023/05/23 (Tue) 11:19",
+  "role": "assistant",
+  "content": "To add Polly from the Amplify Studio console, follow these steps:\n\n1. Click on the \"Add\" button on the top right corner of the Amplify Studio console.\n2. Select \"Backend Environment\" from the list of available options.\n3. Choose your preferred development environment and click on \"Next\".\n4. Follow the prompts to configure your backend environment, including the backend environment name, the type of authentication to use, and the region to deploy to.\n5. Once the backend environment is set up, go to the \"Backend\" section on the left-hand side of the Amplify Studio console.\n6. Click on the \"Add\" button next to \"API\" and select \"Amazon Polly\" from the list of available options.\n7. Follow the prompts to configure your Amazon Polly integration, including the API name, the type of permissions to use, and any additional settings or options.\n8. Click on \"Save\" to save your Amazon Polly API configuration.\n\nOnce you have added the Amazon Polly API, you can start using it in your mobile app by integrating it with your frontend code.",
+  "has_answer": false
+}

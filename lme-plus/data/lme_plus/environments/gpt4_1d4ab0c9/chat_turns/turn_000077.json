@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 77,
+  "session_index": 6,
+  "session_id": "sharegpt_z1wJvG1_0",
+  "turn_in_session": 4,
+  "date": "2023/03/09 (Thu) 00:05",
+  "role": "user",
+  "content": "when I use \n\nif type(the\\_captured\\_piece) == piece.Pawn:\n\ni get the error:\n\nPS G:\\-- USER -- G2\\--PYTHON--\\2 Armies Chess Optimized> & C:/Users/Boss/AppData/Local/Microsoft/WindowsApps/python3.7.exe \"g:/-- USER -- G2/--PYTHON--/2 Armies Chess Optimized/src/main.py\"\npygame 2.1.3 (SDL 2.0.22, Python 3.7.9)\nHello from the pygame community. https://www.pygame.org/contribute.html\n\nTraceback (most recent call last):\n File \"g:/-- USER -- G2/--PYTHON--/2 Armies Chess Optimized/src/main.py\", line 114, in \n main.mainloop()\n File \"g:/-- USER -- G2/--PYTHON--/2 Armies Chess Optimized/src/main.py\", line 93, in mainloop \n if type(the\\_captured\\_piece) == piece.Pawn:\nAttributeError: 'Pawn' object has no attribute 'Pawn'\nPS G:\\-- USER -- G2\\--PYTHON--\\2 Armies Chess Optimized>",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 430,
+  "session_index": 38,
+  "session_id": "sharegpt_nE62dqp_79",
+  "turn_in_session": 12,
+  "date": "2023/05/29 (Mon) 11:30",
+  "role": "assistant",
+  "content": "To determine if users with `null` `immediate_reactions` for their first course module are more likely to have `null` `immediate_reactions` for their next course module, you can modify the query as follows:\n```sql\nSELECT \n  organizations.name AS organization_name,\n  course_module_sessions.course_module_id,\n  (COUNT(CASE WHEN reflect_items.immediate_reactions IS NULL \n      AND reflect_items.updated_at > reflect_items.created_at \n      AND course_module_sessions.completed_at IS NOT NULL\n      THEN 1 END) / \n   (SELECT COUNT(*) \n    FROM praxislabs.reflect_items \n    WHERE reflect_items.updated_at > reflect_items.created_at \n      AND course_module_sessions.completed_at IS NOT NULL)) * 100 \n  AS `Percentage of Null & Updated Rows`\nFROM praxislabs.organizations \nLEFT JOIN praxislabs.users ON organizations.id = users.organization_id \nLEFT JOIN praxislabs.cohorts ON users.cohort_id = cohorts.id \nLEFT JOIN praxislabs.course_module_sessions ON users.id = course_module_sessions.user_id \nLEFT JOIN praxislabs.reflect_items ON course_module_sessions.id = reflect_items.course_module_session_id \nWHERE organizations.name NOT LIKE '%Praxis%' \nGROUP BY organizations.id, course_module_sessions.course_module_id\nORDER BY organizations.id, course_module_sessions.course_module_id;\n```\nIn this query, you can group the data by both `organization` and `course_module`, to see if the pattern of `null` `immediate_reactions` is consistent across organizations and course modules.",
+  "has_answer": false
+}

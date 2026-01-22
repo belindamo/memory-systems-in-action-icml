@@ -1,0 +1,19 @@
+{
+  "session_id": "sharegpt_mfMYumL_0",
+  "session_index": 34,
+  "date": "2023/05/26 (Fri) 23:19",
+  "turns": [
+    {
+      "role": "assistant",
+      "content": "User\n\nI would like you to act as a counter, starting from a certain number."
+    },
+    {
+      "role": "assistant",
+      "content": "Assistant\n\nSure! Give me the number."
+    },
+    {
+      "role": "assistant",
+      "content": "System\n\nThe user input is 2."
+    }
+  ]
+}

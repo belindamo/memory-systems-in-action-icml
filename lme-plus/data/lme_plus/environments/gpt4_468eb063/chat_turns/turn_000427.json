@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 427,
+  "session_index": 37,
+  "session_id": "sharegpt_8M7HcM3_11",
+  "turn_in_session": 10,
+  "date": "2023/04/11 (Tue) 23:18",
+  "role": "assistant",
+  "content": "This output indicates that there are several processes running with the AppArmor profile \"snap.discord.discord\". It's possible that Discord is running multiple processes, which may explain the repeated denial messages in the syslog.\n\nTo check the status of the AppArmor profile, you can run the following command:\n```lua\nsudo aa-status | grep snap.discord.discord\n```\nThis command should show you the current status of the AppArmor profile for the Discord snap package, including whether it is in enforce mode or complain mode. If it is in complain mode, it will log policy violations but not enforce them.",
+  "has_answer": false
+}

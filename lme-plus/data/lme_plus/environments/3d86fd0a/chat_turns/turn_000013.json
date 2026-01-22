@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 13,
+  "session_index": 1,
+  "session_id": "sharegpt_BzV4Iba_0",
+  "turn_in_session": 1,
+  "date": "2023/05/20 (Sat) 05:48",
+  "role": "assistant",
+  "content": "To create documentation of a method in TypeScript that will provide mouse-over information in VS Code, you can use JSDoc comments. JSDoc comments are a standard way of documenting code in JavaScript and TypeScript, and they provide a way to annotate your code with information about the types of parameters, return types, and any additional context or information that can be useful to developers who are reading your code.\n\nTo use JSDoc comments in TypeScript, you can simply add comments to your method using the following format:\n```php\n/**\n * This is a description of your method\n * @param {string} param1 - This is a description of the first parameter\n * @param {number} param2 - This is a description of the second parameter\n * @returns {boolean} This is a description of the return value\n */\nfunction myMethod(param1: string, param2: number): boolean {\n    // Your method code here\n}\n```\nIn this example, the JSDoc comments provide information about the types of the method parameters and return value, as well as a brief description of the method itself. When you hover over the method name in VS Code, you should see the JSDoc comments displayed as a tooltip.\n\nYou can also generate documentation from your JSDoc comments using tools like TypeDoc, which can create a set of HTML pages that provide detailed documentation for your code.",
+  "has_answer": false
+}

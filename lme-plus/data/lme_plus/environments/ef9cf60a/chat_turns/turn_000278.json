@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 278,
+  "session_index": 30,
+  "session_id": "sharegpt_VrUNawI_95",
+  "turn_in_session": 14,
+  "date": "2023/05/25 (Thu) 23:49",
+  "role": "assistant",
+  "content": "Voici une autre solution qui utilise la m\u00e9thode de la division par 2 pour repr\u00e9senter un entier en binaire :\n```python\ndef int_to_binary(n, p):\n    binary_list = []\n    while n > 0:\n        binary_list.append(n % 2)\n        n = n // 2\n    while len(binary_list) < p:\n        binary_list.append(0)\n    binary_list.reverse()\n    return binary_list\n```\nCette fonction utilise une boucle `while` qui tourne jusqu'\u00e0 ce que la valeur de `n` soit inf\u00e9rieure \u00e0 0. A chaque tour de la boucle, nous ajoutons le reste de la division de `n` par 2 \u00e0 la liste `binary_list` et nous divisons `n` par 2.\n\nEnsuite, nous utilisons une autre boucle `while` pour ajouter des z\u00e9ros \u00e0 la liste `binary_list` jusqu'\u00e0 ce que sa longueur atteigne `p`. Finalement, nous inversons la liste pour avoir les bits les plus significatifs en premier.",
+  "has_answer": false
+}

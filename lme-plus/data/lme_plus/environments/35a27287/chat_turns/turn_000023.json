@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 23,
+  "session_index": 2,
+  "session_id": "9aad36bb_2",
+  "turn_in_session": 3,
+  "date": "2023/05/20 (Sat) 03:27",
+  "role": "assistant",
+  "content": "Adding a column to track prescriptions is a great idea. Here's an updated template:\n\n**Worksheet 1: Appointments**\n\n| Date | Doctor/Provider | Reason for Visit | Diagnosis | Follow-up Appointment | Prescriptions |\n| --- | --- | --- | --- | --- | --- |\n| 2/27/2023 | Primary Care Physician | [Insert reason] | [Insert diagnosis] | [Insert follow-up date] | [Insert prescriptions, e.g., \"Medication A (30-day supply)\"] |\n\nYou can add more details to the Prescriptions column, such as:\n\n* Medication name\n* Dosage\n* Frequency\n* Number of refills\n* Refill date\n* Pharmacy information\n\nHere's an example:\n\n**Worksheet 1: Appointments**\n\n| Date | Doctor/Provider | Reason for Visit | Diagnosis | Follow-up Appointment | Prescriptions |\n| --- | --- | --- | --- | --- | --- |\n| 2/27/2023 | Primary Care Physician | Abdominal pain | [Insert diagnosis] | [Insert follow-up date] | \"Medication A (30-day supply, 2x/day, 3 refills, Refill by 3/15/2023, CVS Pharmacy)\" |\n\nAlternatively, you could create a separate worksheet specifically for tracking prescriptions:\n\n**Worksheet 4: Prescriptions**\n\n| Medication | Dosage | Frequency | Number of Refills | Refill Date | Pharmacy |\n| --- | --- | --- | --- | --- | --- |\n| Medication A | 2x/day | 30-day supply | 3 | 3/15/2023 | CVS Pharmacy |\n| Medication B | 1x/day | 60-day supply | 2 | 4/10/2023 | Walgreens |\n\nThis way, you can keep a dedicated record of your prescriptions and easily track when you need to refill them.\n\nRemember to update your spreadsheet regularly to ensure you're staying on top of your medications and appointments!",
+  "has_answer": false
+}

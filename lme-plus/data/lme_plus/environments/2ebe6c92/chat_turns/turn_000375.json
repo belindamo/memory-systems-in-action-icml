@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 375,
+  "session_index": 38,
+  "session_id": "sharegpt_qyQmRMR_0",
+  "turn_in_session": 0,
+  "date": "2023/01/29 (Sun) 04:17",
+  "role": "user",
+  "content": "any comments on the following section:\nFeatures are one of the essential ingredients for building a machine\nlearning model. In the case of structured data, a column repre-\nsents a feature that serves as an individual measurable property\ndescribing the characteristics of one or more entities. In machine\nlearning, the quality and quantity of these features significantly\nimpact how well the model fits the data. Presently, data scientists\ndedicate the bulk of their time while working in isolation and writ-\ning large amounts of code to conduct extensive exploratory data\nanalysis, data preparation, and feature engineering to ensure the\npredictiveness of the model. Present-day systems attempt to solve\nthe problem of data preparation and feature engineering by heavily\nrelying on human-in-the-loop. However, the core of the problem\nof manual data preparation and working in isolation still remains\nunanswered. To address these challenges, we propose KGFarm,\na feature discovery system for data science across the enterprise.\nKGFarm automates data preparation and feature engineering by\nexploiting the experience of data scientists working on similar tasks\nand data. Thus, promoting knowledge sharing within the enter-\nprise. KGFarm employs machine learning and column statistics\nto discover entities alongside their corresponding features across\nschema-less data sources and automate tasks like feature identifi-\ncation, data enrichment, data cleaning, data transformation, and\nfeature selection for a given machine learning problem. We provide\nan in-depth description of KGFarm and compare it with state-of-the-\nart systems for the task of entity discovery and data transformation\nrecommendation to exemplify the effectiveness of our approach",
+  "has_answer": false
+}

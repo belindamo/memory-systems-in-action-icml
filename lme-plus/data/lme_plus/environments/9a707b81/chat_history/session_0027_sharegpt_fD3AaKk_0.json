@@ -1,0 +1,23 @@
+{
+  "session_id": "sharegpt_fD3AaKk_0",
+  "session_index": 27,
+  "date": "2022/03/28 (Mon) 08:48",
+  "turns": [
+    {
+      "role": "user",
+      "content": "Write an SMS message to a Taylormade golf customer that filled out the following survey\n\nLet's get to know you better! How do you swing?\nRight handed\nWhich of the below needs the most improvement?\nDriving\nWhat is your handicap?\n6-10\nAre your current golf clubs custom fit or do they have stock specs?\nStock specs off the rack\nWhat type of products would you like to see recommendations for today?\nDriver\nTell us about your budget goals.\nPrice Conscious\nDo you like personalised or limited edition products?\nYes, l love unique products\nWhat are you looking for help with today?\nMen's\nWhat is your age?\n45\nWhat is your height? Feet/inches\n6' 4\"\nWhat's your on-course style? Shorts vs. pants, curve bill vs flat bill hat, etc.\nCasual"
+    },
+    {
+      "role": "assistant",
+      "content": "\"Hello, thank you for taking the time to fill out our survey. Based on your responses, we recommend checking out our line of drivers, specifically those that are custom fit and feature unique, limited edition designs. We understand that you're price conscious, so we'll make sure to show you options that fit your budget goals. Additionally, we'll be sure to highlight men's options that will help you improve your driving. Thank you for considering TaylorMade for your golfing needs. Let us know if you have any questions or need further assistance.\""
+    },
+    {
+      "role": "user",
+      "content": "Recommend a specific Taylormade driver for them"
+    },
+    {
+      "role": "assistant",
+      "content": "Based on your responses, we recommend checking out the TaylorMade SIM Driver. It features a unique shaping and design, and is highly customizable with various adjustable settings to help you optimize your swing. It's also price competitive compared to similar drivers on the market. Let us know if you have any questions or need further assistance with this product."
+    }
+  ]
+}

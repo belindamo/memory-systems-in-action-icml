@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 167,
+  "session_index": 15,
+  "session_id": "sharegpt_PvScEsS_0",
+  "turn_in_session": 6,
+  "date": "2023/05/18 (Thu) 17:17",
+  "role": "user",
+  "content": "i. Return a list of all patient names\nii. Return a list of all patient addresses , showing each address only once\niii. Write a query to count how many patients have Dr Jenkins as one of their\nregistered doctors\niv. Calculate the average age of all patients\nv. Return all the patients whose last name is \u2018Jones\u2019\nvi. Find the names of the patients that were born before 1 st January 1980\nvii. List all the patients\u2019 names along with their registered doctors\u2019 names\nviii. List all the patients who are currently taking medication. Give the name of\nthe patient, their current medication and the recent condition they are taking the\nmedication for\nix. List all patients, giving their name and date of birth and, if the patient has\nhad a recent condition, provide the medication they are taking. Otherwise, if the\npatient has had no recent condition, return null in the current medication field",
+  "has_answer": false
+}

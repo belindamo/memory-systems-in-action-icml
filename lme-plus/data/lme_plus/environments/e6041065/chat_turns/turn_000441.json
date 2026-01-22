@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 441,
+  "session_index": 38,
+  "session_id": "sharegpt_TuureWP_17",
+  "turn_in_session": 22,
+  "date": "2023/05/29 (Mon) 17:34",
+  "role": "assistant",
+  "content": "The correct answer is one App Service plan. By using a single App Service plan, you can host multiple web apps on a single set of compute resources, minimizing Azure costs. If you used 10 App Service plans, you would be paying for 10 separate sets of compute resources.",
+  "has_answer": false
+}

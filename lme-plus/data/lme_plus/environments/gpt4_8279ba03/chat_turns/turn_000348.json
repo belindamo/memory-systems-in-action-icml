@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 348,
+  "session_index": 29,
+  "session_id": "sharegpt_0es4qk5_0",
+  "turn_in_session": 4,
+  "date": "2023/03/13 (Mon) 09:47",
+  "role": "user",
+  "content": "To add some more context to that, Vercel automatically configures SSL for its customers. When you deploy to Vercel, it will automatically provision SSL with Let's Encrypt for them.\n\nWith that in mind, let's imagine that you're my Gitbook customer Dan. You want to have a better domain for your documentation site: instead of `dans-gitbook.gitbook.com`, you want them to be accessible under `docs.danfletcher.com`. You own the domain `danfletcher.com` and can change its DNS records. How should I go about enabling Dan to achieve this?",
+  "has_answer": false
+}

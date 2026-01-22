@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 243,
+  "session_index": 23,
+  "session_id": "sharegpt_rolT4Nz_28",
+  "turn_in_session": 6,
+  "date": "2023/02/14 (Tue) 04:01",
+  "role": "user",
+  "content": "melspectrogram = extract\\_melspectrogram(x, sr, num\\_mels=13)\n\nmelspectrogram.shape\n\n(13,43)\nNote that the shape of the array (K x T) represents the number of frequency bands (K) and the number of spectral vectors in this representation (here, K=13, T=43). K is a hyperparameter and the recommended values in ASR research are (13, 39, 81, etc). Here, we fix K = 13. On the other hand, T varies from sample to sample depending on the duration of the sample. \n\n# plot and view the spectrogram\n\nfig, ax = plt.subplots(figsize=(10, 2), sharex=True)\n\nimg = librosa.display.specshow(\n melspectrogram, \n sr=sr, \n x\\_axis='time', \n y\\_axis='mel', \n cmap='viridis', \n fmax=4000, \n hop\\_length=80\n)\n\nax.set(title='Log-frequency power spectrogram')\n\nax.label\\_outer()",
+  "has_answer": false
+}

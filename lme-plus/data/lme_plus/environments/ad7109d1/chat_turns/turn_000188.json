@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 188,
+  "session_index": 17,
+  "session_id": "sharegpt_RzNjBHR_0",
+  "turn_in_session": 5,
+  "date": "2023/05/24 (Wed) 18:03",
+  "role": "assistant",
+  "content": "Sure, here's an example database schema for an employee leave management system:\n\n1. Employee Table\n* employee\\_id (Primary Key)\n* first\\_name\n* last\\_name\n* email\n* phone\\_number\n* hire\\_date\n1. Leave Type Table\n* leave\\_type\\_id (Primary Key)\n* name\n* description\n1. Leave Request Table\n* leave\\_request\\_id (Primary Key)\n* employee\\_id (Foreign Key to Employee Table)\n* leave\\_type\\_id (Foreign Key to Leave Type Table)\n* start\\_date\n* end\\_date\n* status (e.g. Pending, Approved, Denied)\n* notes (optional)\n1. Leave Balance Table\n* leave\\_balance\\_id (Primary Key)\n* employee\\_id (Foreign Key to Employee Table)\n* leave\\_type\\_id (Foreign Key to Leave Type Table)\n* balance\n\nExplanation:\n\nThe Employee table contains information about each employee, including their unique ID, name, contact information, and hire date.\n\nThe Leave Type table contains information about each type of leave offered by the company, including the leave type ID, name, and description.\n\nThe Leave Request table tracks each employee's leave requests, including the employee ID, leave type ID, start date, end date, status (pending, approved, denied), and any notes associated with the request.\n\nThe Leave Balance table tracks the remaining leave balance for each employee, for each type of leave. This table is updated automatically when leave requests are approved, and balances are deducted accordingly.\n\nWith this schema, the HR Officer can easily track and approve leave requests for each employee, while also keeping track of their remaining leave balances. The schema can be modified to fit the specific needs of your company, but this should provide a good starting point.",
+  "has_answer": false
+}

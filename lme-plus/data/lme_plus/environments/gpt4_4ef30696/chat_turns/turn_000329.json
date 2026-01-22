@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 329,
+  "session_index": 32,
+  "session_id": "sharegpt_K8mXaIT_0",
+  "turn_in_session": 3,
+  "date": "2022/01/16 (Sun) 16:18",
+  "role": "assistant",
+  "content": "To write a script node in Engati bot, you can follow these steps:\n\n1. Log in to your Engati account and go to the bot builder dashboard.\n2. Click on the \"Add Node\" button to create a new node.\n3. Select \"Script\" as the node type from the list of available options.\n4. In the script editor window that appears, you can write your Node.js code to perform the desired actions.\n5. You can use Engati's built-in libraries and modules to interact with various APIs, databases, and other external services. For example, you can use the \"request\" module to make HTTP requests or the \"mongodb\" module to access a MongoDB database.\n6. Once you have written the script code, click on the \"Save\" button to save the node.\n7. You can connect the script node to other nodes in the conversation flow to create a complete chatbot experience.\n\nNote: Engati supports Node.js version 10.x and higher. Also, you need to ensure that your code is asynchronous and doesn't block the main event loop, as this can cause performance issues with your bot.\n\nIn summary, writing a script node in Engati is a straightforward process. You can use Node.js code to perform complex actions and interact with various services to create a powerful and dynamic chatbot.",
+  "has_answer": false
+}

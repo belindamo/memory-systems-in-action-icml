@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 228,
+  "session_index": 24,
+  "session_id": "sharegpt_4sEBgMJ_5",
+  "turn_in_session": 2,
+  "date": "2023/05/24 (Wed) 19:46",
+  "role": "assistant",
+  "content": "Yes, this script will replace or delete older rows that are duplicated with lower values in a column.\n\nThe script first checks if a row with the same unique identifier (in this case, the video ID) already exists in the archive sheet. If it does not exist, the script appends the row to the archive sheet. If it does exist, the script compares the value of the last column of the existing row (which is assumed to be the view count) with the value of the last column of the current row from the source sheet. If the current row has a higher view count, the script deletes the existing row and appends the current row to the archive sheet. This ensures that only the row with the highest view count is kept in the archive sheet.\n\nIf you want to keep all rows with the same unique identifier, even if they have lower values in a certain column, you can modify the script to append the current row to the archive sheet even if an existing row with the same unique identifier already exists.",
+  "has_answer": false
+}

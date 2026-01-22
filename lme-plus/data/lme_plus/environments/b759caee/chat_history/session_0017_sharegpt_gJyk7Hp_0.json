@@ -1,0 +1,71 @@
+{
+  "session_id": "sharegpt_gJyk7Hp_0",
+  "session_index": 17,
+  "date": "2023/05/23 (Tue) 22:37",
+  "turns": [
+    {
+      "role": "user",
+      "content": "Write a brief text for a gitlab issue in markdown tasking the engineering team with testing and documenting how to connect a data source in Sisense"
+    },
+    {
+      "role": "assistant",
+      "content": "Test and document data source connection in Sisense\n---------------------------------------------------\n\nHello Engineering team,\n\nWe would like to request that you test and document the process for connecting a data source in Sisense.\n\nPlease include the following information in your documentation:\n\n* The type of data source you are connecting (e.g. MySQL database, CSV file, etc.)\n* The steps required to set up the connection\n* Any potential issues or error messages that may occur, and how to troubleshoot them\n* Any relevant configuration or settings that need to be considered\n\nThank you for your help in making it easy for our team to connect and work with data sources in Sisense.\n\nBest, [Your Name]"
+    },
+    {
+      "role": "user",
+      "content": "Remove the formalities and just make it about enumerating the task"
+    },
+    {
+      "role": "assistant",
+      "content": "Test and document data source connection in Sisense\n---------------------------------------------------\n\nPlease test and document the process for connecting a data source in Sisense, including:\n\n* The type of data source being connected (e.g. MySQL database, CSV file, etc.)\n* The steps required to set up the connection\n* Any potential issues or error messages that may occur, and how to troubleshoot them\n* Any relevant configuration or settings that need to be considered\n\nThank you."
+    },
+    {
+      "role": "user",
+      "content": "Format with headers: description, acceptance criteria"
+    },
+    {
+      "role": "assistant",
+      "content": "Test and document data source connection in Sisense\n---------------------------------------------------\n\n### Description\n\nWe would like to request that you test and document the process for connecting a data source in Sisense.\n\n### Acceptance Criteria\n\n* The documentation includes the type of data source being connected (e.g. MySQL database, CSV file, etc.)\n* The documentation includes the steps required to set up the connection\n* The documentation includes any potential issues or error messages that may occur, and how to troubleshoot them\n* The documentation includes any relevant configuration or settings that need to be considered"
+    },
+    {
+      "role": "user",
+      "content": "Provide markdown in code blcok"
+    },
+    {
+      "role": "assistant",
+      "content": "```\n## Test and document data source connection in Sisense\n\n### Description\n\nWe would like to request that you test and document the process for connecting a data source in Sisense. \n\n### Acceptance Criteria\n\n- [ ] The documentation includes the type of data source being connected (e.g. MySQL database, CSV file, etc.)\n- [ ] The documentation includes the steps required to set up the connection\n- [ ] The documentation includes any potential issues or error messages that may occur, and how to troubleshoot them\n- [ ] The documentation includes any relevant configuration or settings that need to be considered\n```"
+    },
+    {
+      "role": "user",
+      "content": "Now generate another issue but with a title of \"Q1 Sisense Internal KT (Installation, Upgrade and Monitoring)\" where \"KT\" means \"knowledge transfer\""
+    },
+    {
+      "role": "assistant",
+      "content": "```\n## Q1 Sisense Internal KT (Installation, Upgrade and Monitoring)\n\n### Description\n\nWe would like to request that you create a knowledge transfer session for the Sisense installation, upgrade and monitoring processes. \n\n### Acceptance Criteria\n\n- [ ] The session covers the process for installing Sisense\n- [ ] The session covers the process for upgrading Sisense\n- [ ] The session covers the process for monitoring Sisense \n- [ ] The session includes any relevant best practices or considerations for these processes\n```"
+    },
+    {
+      "role": "user",
+      "content": "Format as a passive description of the work to be done rather than using \"we would like\""
+    },
+    {
+      "role": "assistant",
+      "content": "```\n## Q1 Sisense Internal KT (Installation, Upgrade and Monitoring)\n\n### Description\n\nA knowledge transfer session is to be created for the Sisense installation, upgrade and monitoring processes. \n\n### Acceptance Criteria\n\n- [ ] The process for installing Sisense is covered in the session\n- [ ] The process for upgrading Sisense is covered in the session\n- [ ] The process for monitoring Sisense is covered in the session \n- [ ] Any relevant best practices or considerations for these processes are included in the session\n```"
+    },
+    {
+      "role": "user",
+      "content": "Put in this format:\n\n# DESCRIPTION\n\n---\n\n## GOAL\n\n---\n\n## SCOPE\n\n---\n\n## ACCEPTANCE CRITERIA\n\n- [ ] Security Standards\n- [ ] Definition of Done Examples\n- [ ] Team Charter\n- [ ] Standard SOP Template\n---\n\n## REVIEW AND VERIFICATION\n\n| Name | EMail Address | Date |\n| --------------------- | ------------------------------- | ---------------- |\n| | | |\n\nAll issues have to be reviewed and accepted by Pillar leads\n\n---\n---"
+    },
+    {
+      "role": "assistant",
+      "content": "Q1 Sisense Internal KT (Installation, Upgrade and Monitoring)\n=============================================================\n\n---\n\nDESCRIPTION\n-----------\n\nA knowledge transfer session is to be created for the Sisense installation, upgrade and monitoring processes.\n\n---\n\nGOAL\n----\n\nThe goal of this knowledge transfer session is to provide team members with the information and skills necessary to properly install, upgrade, and monitor Sisense.\n\n---\n\nSCOPE\n-----\n\nThis knowledge transfer session will cover the processes for installing, upgrading, and monitoring Sisense. It will also include any relevant best practices or considerations for these processes.\n\n---\n\nACCEPTANCE CRITERIA\n-------------------\n\n* The process for installing Sisense is covered in the session\n* The process for upgrading Sisense is covered in the session\n* The process for monitoring Sisense is covered in the session\n* Any relevant best practices or considerations for these processes are included in the session\n\n---\n\nREVIEW AND VERIFICATION\n-----------------------\n\n| Name | EMail Address | Date |\n| --- | --- | --- |\n|  |  |  |\n\nAll issues have to be reviewed and accepted by Pillar leads\n\n---\n\n---"
+    },
+    {
+      "role": "user",
+      "content": "Put that in a code block"
+    },
+    {
+      "role": "assistant",
+      "content": "```\n# Q1 Sisense Internal KT (Installation, Upgrade and Monitoring)\n\n---\n\n## DESCRIPTION\n\nA knowledge transfer session is to be created for the Sisense installation, upgrade and monitoring processes. \n\n---\n\n## GOAL\n\nThe goal of this knowledge transfer session is to provide team members with the information and skills necessary to properly install, upgrade, and monitor Sisense.\n\n---\n\n## SCOPE\n\nThis knowledge transfer session will cover the processes for installing, upgrading, and monitoring Sisense. It will also include any relevant best practices or considerations for these processes.\n\n---\n\n## ACCEPTANCE CRITERIA\n\n- [ ] The process for installing Sisense is covered in the session\n- [ ] The process for upgrading Sisense is covered in the session\n- [ ] The process for monitoring Sisense is covered in the session \n- [ ] Any relevant best practices or considerations for these processes are included in the session\n\n---\n\n## REVIEW AND VERIFICATION\n\n| Name                  | EMail Address                   | Date             |\n| --------------------- | ------------------------------- | ---------------- |\n|                       |                                 |                  |\n\nAll issues have to be reviewed and accepted by Pillar leads\n\n---\n---\n```"
+    }
+  ]
+}

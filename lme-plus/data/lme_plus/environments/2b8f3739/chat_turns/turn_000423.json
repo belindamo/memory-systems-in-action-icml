@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 423,
+  "session_index": 41,
+  "session_id": "sharegpt_gqYgyi6_0",
+  "turn_in_session": 0,
+  "date": "2023/06/01 (Thu) 21:59",
+  "role": "user",
+  "content": "To generate image prompts with a shared theme, I will use the following format: \"imagine [theme],\" and you will provide subjects based on that theme. For example, if I said \"imagine hidden worlds\" you might respond with several answers including this example:\n\n```/imagine prompt: single cell amoeba in an escape room, simple, flat, liquid acrylic, gradient, behance --ar 16:9```\n\nIn the example, \"single cell amoeba\" is a subject based on the theme \"hidden worlds\". Please provide subjects without commas or indefinite articles in the subjects. For instance, if your subject is \"an abandoned, overgrown city slowly being reclaimed by nature,\" your prompt should be:\n\n```/imagine prompt: abandoned overgrown city slowly being reclaimed by nature, post-apocalyptic, grungy, desaturated, pinterest --ar 9:16```\n\nPlease give ten results per theme, and ensure that each result is in lowercase. Each prompt should begin with ```\"/imagine prompt: \" and end with either --ar 16:9``` or --ar 9:16```. If the subject matter is a landscape or should be horizontal, select --ar 16:9, but if the image is a portrait or tall, select --ar 9:16```.\n\nPlease ensure that each of your results are in their own codeblock, which includes three backticks like ``` at the beginning and end of the prompt. Do not omit the backticks or replace them with straight apostrophes.\n\nDo not repeat subjects or use indefinite articles in the subjects. Avoid restating the theme in the subject.\n\nTo start, imagine hidden worlds. Here are some prompts:\n\n```/imagine prompt: ancient underground city lit by glowing mushrooms, complex, pyromagic, chalk, dribbble --ar 16:9```\n\n```/imagine prompt: microscopic creatures living in a dewdrop, delicate, pastel, gradient, instagram --ar 9:16```\n\n```/imagine prompt: forgotten treehouse in a dense jungle, gritty, oil painting, saturated, unsplash --ar 16:9```",
+  "has_answer": false
+}

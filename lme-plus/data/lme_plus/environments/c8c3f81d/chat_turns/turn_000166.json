@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 166,
+  "session_index": 20,
+  "session_id": "sharegpt_heUqexD_0",
+  "turn_in_session": 0,
+  "date": "2023/05/24 (Wed) 12:14",
+  "role": "user",
+  "content": "Here is a feature I'm working on in Unity. What are some suggestions for what we could add to this next?\n\n# Overview\n\n\\_A sandbox to test units against each other\\_\n\nThis scene is for testing the design of RTS units. Units can be assembled from prefabs of parts, sensors, and behaviours. Part categories include weapons (such as lasers and missiles) and movement systems (like wheels, treads, or propellers).\n\n# File descriptions\n\n## Behaviours\n\n### SeekAndDestroy.cs\n\nThis behaviour causes a unit to patrol the area for enemies and attack any enemies found on sight.\n\n## Parts\n\\* Armor.cs - you can add this component to any part or unit. It will give the unit more hit points.\n\\* BasicGun.cs - A gun component. Add as part of a gun prefab to make it shoot. You can set properties of the gun such as the damage, cooldown and range.\n\\* BasicMovement.cs - A movement component. Parts with this component allow the unit to move. You can set properties such as the acceleration, top speed, turning radius, etc.\n\n## Sensors\n\\* Vision.cs - A component that lets the unit detect other units. It sees in a cone in front of the unit.\n\n## Designs\n\\* Peewee - A basic infantry unit with a gun.\n\\* Turret - A stationary, defensive unit with two cannons.\n\n## Other files\n\\* UnitManager.cs\n\\* Unit.cs\n\\* HealthBar.cs",
+  "has_answer": false
+}

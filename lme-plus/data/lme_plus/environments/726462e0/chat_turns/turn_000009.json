@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 9,
+  "session_index": 0,
+  "session_id": "sharegpt_SYm10tk_0",
+  "turn_in_session": 9,
+  "date": "2023/05/20 (Sat) 03:38",
+  "role": "assistant",
+  "content": "Sure, here's the updated formula that uses \"ObjectiveName\" instead of \"Table1[Column]\" and takes into account that your examples have 23 characters instead of 24:\n```scss\nNew Column =\nIF(\n    LEN(ObjectiveName) = 22,     // Check if the length of the string is 22\n    ObjectiveName,               // If it is already in the correct format, leave it as is\n    LEFT(ObjectiveName, 9) &     // Take the first 9 characters (O-22-XXX-)\n    IF(\n        LEN(ObjectiveName) = 23,      // If the length is 23, there is a leading zero that needs to be removed\n        \"ART\" & MID(ObjectiveName, 12, 2),   // Take the two characters after the \"ART\" (e.g. \"13\")\n        \"ART0\" & MID(ObjectiveName, 12, 1)  // Add a leading zero and take the one character after the \"ART\" (e.g. \"4\")\n    ) &\n    MID(ObjectiveName, 14, 6)    // Take the six characters after the \"PI\" (e.g. \"4-K01\")\n)\n```\nAgain, you can replace \"New Column\" with the name of the column where you want to output the transformed values, and \"ObjectiveName\" with the name of the column that contains the original values.",
+  "has_answer": false
+}

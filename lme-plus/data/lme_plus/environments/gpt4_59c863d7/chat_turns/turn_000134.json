@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 134,
+  "session_index": 12,
+  "session_id": "sharegpt_AhS7uI8_351",
+  "turn_in_session": 6,
+  "date": "2023/05/22 (Mon) 23:35",
+  "role": "assistant",
+  "content": "Sure! Here's an example of how you could include React.js to the app:\n\n1. Install React.js and related dependencies via npm:\n```\nnpm install react react-dom\n```\n1. Create a React component, for example, a simple counter component:\n```jsx\nimport React, { useState } from 'react';\n\nfunction Counter() {\n  const [count, setCount] = useState(0);\n\n  const increment = () => setCount(count + 1);\n  const decrement = () => setCount(count - 1);\n\n  return (\n    <div>\n      <h2>Counter</h2>\n      <p>Count: {count}</p>\n      <button onClick={increment}>+</button>\n      <button onClick={decrement}>-</button>\n    </div>\n  );\n}\n\nexport default Counter;\n```\n1. Add the React component to the app:\n```jsx\nimport React from 'react';\nimport ReactDOM from 'react-dom';\nimport Counter from './Counter';\n\nReactDOM.render(\n  <React.StrictMode>\n    <Counter />\n  </React.StrictMode>,\n  document.getElementById('root')\n);\n```\n1. Add a `div` element with an `id` of `root` to the HTML file:\n```html\n<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"utf-8\">\n    <title>My App</title>\n  </head>\n  <body>\n    <div id=\"root\"></div>\n    <script src=\"./index.js\"></script>\n  </body>\n</html>\n```\n1. Finally, run the app with a tool like `webpack` or `parcel`.",
+  "has_answer": false
+}

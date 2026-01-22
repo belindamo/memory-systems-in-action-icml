@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 100,
+  "session_index": 10,
+  "session_id": "sharegpt_snNieAa_15",
+  "turn_in_session": 2,
+  "date": "2023/05/22 (Mon) 00:31",
+  "role": "assistant",
+  "content": "Here is an improved version of the code:\n```\nimport React, { useEffect, useState } from 'react'\nimport './SpaceCat.css'\nimport spaceCat from '../assets/space_cat.png'\nimport spaceCatEye from '../assets/space_cat_eye.png'\n\nexport default function SpaceCat() {\n  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });\n\n  //calculate angle between mouse(mouseX,Y) cursor and center of the box(anchorX,Y)\n  const calcAngle = (mX, mY, aX, aY) => {\n    //normalize vaues (atan2 expects the ray to start from bounding box 0,0) \n    const dX = mX - aX; // mouseX - anchorX \n    const dY = mY - aY;\n    const rad = Math.atan2(dY, dX); //calculate angle between the dx and dy points (in radiant)\n    const deg = rad * 180 / Math.PI; //convert radiant to degrees (for css)\n    return deg;\n  }\n\n  const handleMouseMove = (event) => {\n    setMousePosition({ x: event.clientX, y: event.clientY });\n  }\nuseEffect(() => {\n    const anchor = document.getElementById('anchor'); //get anchor item which is our space cat image\n    const anchorBoundingBox = anchor.getBoundingClientRect();  // create an invisible box around the anchor image\n    const anchorX = anchorBoundingBox.left + anchorBoundingBox.width / 2 ;   // get the x,y coordinates of the center of the box \n    const anchorY = anchorBoundingBox.\n```",
+  "has_answer": false
+}

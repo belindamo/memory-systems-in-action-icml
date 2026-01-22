@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 453,
+  "session_index": 40,
+  "session_id": "sharegpt_kNi3QzP_24",
+  "turn_in_session": 2,
+  "date": "2023/05/29 (Mon) 10:27",
+  "role": "user",
+  "content": "now it give ne the following error massage:Exception in Tkinter callback\nTraceback (most recent call last):\n File \"C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python39\\lib\\tkinter\\\\_\\_init\\_\\_.py\", line 1884, in \\_\\_call\\_\\_\n return self.func(\\*args)\n File \"C:\\Users\\User\\PycharmProjects\\ProjektOne\\main.py\", line 44, in ausgabe\n if canvas.get\\_tk\\_widget() is not None:\nUnboundLocalError: local variable 'canvas' referenced before assignment",
+  "has_answer": false
+}

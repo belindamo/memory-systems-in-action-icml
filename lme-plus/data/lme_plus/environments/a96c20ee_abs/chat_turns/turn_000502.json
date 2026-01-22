@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 502,
+  "session_index": 49,
+  "session_id": "sharegpt_WfPrQcG_0",
+  "turn_in_session": 7,
+  "date": "2023/05/29 (Mon) 16:39",
+  "role": "assistant",
+  "content": "Certainly! Here is an example of how you might use the `live` module to connect to Interactive Brokers and execute trades using TensorTrade:\n```\n# Import the necessary classes and functions\nfrom tensortrade.exchanges import Exchange, Instrument, Order, Trade\nfrom tensortrade.exchanges.live import InteractiveBrokers\n\n# Set up your Interactive Brokers account credentials and API connection\nexchange = Exchange(\n    backend=InteractiveBrokers,\n    account_id=\"my_account_id\",\n    api_key=\"my_api_key\",\n    api_secret=\"my_api_secret\",\n    host=\"127.0.0.1\",\n    port=7497,\n    client_id=123\n)\n\n# Connect to Interactive Brokers\nexchange.connect()\n\n# Define the instrument you want to trade\ninstrument = Instrument(\"AAPL\")\n\n# Create an order to buy 100 shares of AAPL\norder = Order(instrument, 100, Order.Type.MARKET, Order.Side.BUY)\n\n# Submit the order to Interactive Brokers\ntrade = exchange.execute(order)\n\n# Print the details of the trade\nprint(trade)\n\n# Disconnect from Interactive Brokers\nexchange.disconnect()\n```\nThis example shows how to connect to Interactive Brokers, create an order to buy 100 shares of AAPL using a market order, and execute the trade. The `Trade` object returned by the `execute` method contains information about the trade, such as the execution price and the timestamp of the trade.\n\nNote that you will need to install the IB\\_insync library and have an account with Interactive Brokers to use this example. You will also need to obtain API keys and set up the API connection with Interactive Brokers as described in my previous response.\n\nI hope this helps to give you an idea of how to use the `live` module with TensorTrade to connect to Interactive Brokers. Let me know if you have any questions or need further assistance.",
+  "has_answer": false
+}

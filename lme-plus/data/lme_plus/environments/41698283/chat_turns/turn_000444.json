@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 444,
+  "session_index": 42,
+  "session_id": "sharegpt_ZxU6Grv_9",
+  "turn_in_session": 3,
+  "date": "2023/08/20 (Sun) 13:28",
+  "role": "user",
+  "content": "Result of the box plot shows that there are a lot of outliers ranging over a wide area, while most the entries are located in the far right of the grass. Plus there is this from scipy.stats import skew, kurtosis\n\nskewness = skew(df2['asyl\\_app'])\nkurt = kurtosis(df2['asyl\\_app'])\n\nprint(f\"Skewness: {skewness}\")\nprint(f\"Kurtosis: {kurt}\")",
+  "has_answer": false
+}

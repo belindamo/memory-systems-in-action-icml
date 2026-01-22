@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 239,
+  "session_index": 21,
+  "session_id": "sharegpt_D88l1Iv_11",
+  "turn_in_session": 8,
+  "date": "2023/05/25 (Thu) 04:54",
+  "role": "assistant",
+  "content": "To modify the helper columns to be in E30, F30, and G30 on the 'Phase Averages' tab, follow these steps:\n\n1. In cell E30 of the 'Phase Averages' tab, enter the formula to find the average DELTA\\_P2:\n`=AVERAGEIFS(INDEX('Logger input'!$A:$1048576,,MATCH(\"DELTA_P2\",'Logger input'!$1:$1,0)),'Logger input'!$A:$A,\">=\"&C9,'Logger input'!$A:$A,\"<=\"&D9)`\n2. In cell F30 of the 'Phase Averages' tab, enter the formula to find the average TNL\\_TMP:\n`=AVERAGEIFS(INDEX('Logger input'!$A:$1048576,,MATCH(\"TNL_TMP\",'Logger input'!$1:$1,0)),'Logger input'!$A:$A,\">=\"&C9,'Logger input'!$A:$A,\"<=\"&D9)`\n\nNow, let's create the final formula for calculating the ACFM using these helper columns.\n\n1. In cell G30 of the 'Phase Averages' tab, enter the following formula:\n`=IFERROR(((((('Flow input'!E8/0.2953)*6894.76)+('Flow input'!E10*248.84)+(E30*248.84))/((F30-32)*5/9+273.15)*8.314*(1+(2/100)))/(12*0.0254)^2*3.14159*60/4)*35.3147, \"No data\")`\n\nThese changes should provide the correct calculation for ACFM using the helper columns in E30, F30, and G30 on the 'Phase Averages' tab.",
+  "has_answer": false
+}

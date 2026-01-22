@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 168,
+  "session_index": 18,
+  "session_id": "sharegpt_n3kgf14_17",
+  "turn_in_session": 2,
+  "date": "2023/05/24 (Wed) 15:03",
+  "role": "assistant",
+  "content": "The Primary Drivers table has the following attributes:\n\n* `VIN` (string): the VIN of the car associated with the primary driver\n* `Timestamp` (string): the timestamp when the primary driver was registered or updated\n* `PolestarID` (string): the Polestar ID of the primary driver\n* `System` (string): the name of the system that initiated the change (POMS, PolestarID auth API, M2M auth API)\n* `ChangeSource` (string): the source of the change (Event, API)\n* `UserID` (string): the user ID of the person who made the update (if the change was made using Polestar ID auth API)\n* `ClientID` (string): the client ID of the service that made the change (if the change was made using M2M auth API)\n* `EventID` (string): the event ID that caused the change (if the update was based on an event)\n* `EventTimestamp` (string): the timestamp when the event was emitted (if the update was based on an event)\n* `OrderID` (string): the order ID from the event (if the primary driver was registered based on an event from POMS)\n* `PreviousOrderID` (string): the previous order ID (if applicable)\n* `EndTimestamp` (string): the timestamp when the primary driver was removed (if applicable)\n\nThe `VIN` and `Timestamp` attributes are the primary and sort keys, respectively. The other attributes provide additional information about the primary driver and the change. The `System`, `ChangeSource`, `UserID`, `ClientID`, and `EventID` attributes provide information about the system that initiated the change and the source of the change. The `EventTimestamp`, `OrderID`, and `PreviousOrderID` attributes provide information about the event that caused the change, if applicable. The `EndTimestamp` attribute shows when the primary driver was removed, if applicable.",
+  "has_answer": false
+}

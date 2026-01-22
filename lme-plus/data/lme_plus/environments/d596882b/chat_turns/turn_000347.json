@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 347,
+  "session_index": 32,
+  "session_id": "sharegpt_WbCGgx9_0",
+  "turn_in_session": 5,
+  "date": "2023/05/28 (Sun) 10:00",
+  "role": "assistant",
+  "content": "An Account Link is a feature provided by Stripe Connect that allows you to create a link that a user can follow to connect their Stripe account to your platform. When the user clicks on the link, they will be taken to a Stripe-hosted page where they can sign in to their existing Stripe account or create a new one. Once they have connected their account, they will be redirected back to your platform, and you will be able to access the account's details and perform actions on it.\n\nYou might want to use an Account Link when using Stripe Connect with Express because it provides a convenient and secure way for your users to connect their Stripe accounts to your platform without having to share their sensitive Stripe credentials with you. The user's Stripe account information is not accessible by you, but only by the user who created the account.\n\nAn Account Link is particularly useful when you are building a marketplace or platform that allows users to connect their Stripe accounts, for example, so that you can charge them for fees or payouts. It also provides a way for you to onboard and manage multiple users as well as their payments.\n\nYou can create an Account Link in Stripe by generating a link token with the `account_links.create` API call, and then sending it to your user. The user can then follow the link to connect their Stripe account to your platform.",
+  "has_answer": false
+}

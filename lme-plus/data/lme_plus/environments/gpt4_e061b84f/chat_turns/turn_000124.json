@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 124,
+  "session_index": 12,
+  "session_id": "sharegpt_dQPyY7w_0",
+  "turn_in_session": 3,
+  "date": "2023/05/19 (Fri) 01:21",
+  "role": "assistant",
+  "content": "Here is the rest of the `default.conf` file:\n```\nserver {\n    listen 443 ssl;\n    listen [::]:443 ssl;\n    server_name example.com www.example.com;\n\n    ssl_certificate /etc/letsencrypt/live/example.com/fullchain.pem;\n    ssl_certificate_key /etc/letsencrypt/live/example.com/privkey.pem;\n    include /etc/letsencrypt/options-ssl-nginx.conf;\n    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;\n\n    root /var/www/html;\n    index index.php index.html index.htm;\n\n    location / {\n        try_files $uri $uri/ /index.php$is_args$args;\n    }\n\n    location ~ \\.php$ {\n        try_files $uri =404;\n        fastcgi_pass php:9000;\n        fastcgi_index index.php;\n        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;\n        include fastcgi_params;\n    }\n}\n```\n**entrypoint.sh**\n```\n#!/bin/bash\n\n# Wait for the MySQL server to be available\nuntil mysql -h db -u root -p$MYSQL_ROOT_PASSWORD -e \"\"; do\n    >&2 echo \"MySQL is unavailable - sleeping\"\n    sleep 1\ndone\n\n# Check if the certbot certificate exists\nif [ ! -f /etc/letsencrypt/live/example.com/fullchain.pem ]; then\n    # Obtain a new certificate\n    certbot certonly --webroot -w /var/www/html -d example.com -d www.example.com --email you@example.com --agree-tos --non-interactive\nfi\n\n# Start the Nginx server\nnginx -g \"daemon off;\"\n```\n**.env**\n```\nMYSQL_ROOT_PASSWORD=secret\nMYSQL_DATABASE=database\nMYSQL_USER=user\nMYSQL_PASSWORD=password\n```\nYou can then build and start the server using the following commands:\n```\n# Build the PHP image\ndocker-compose build\n\n# Start the server\ndocker-compose up -d\n```",
+  "has_answer": false
+}

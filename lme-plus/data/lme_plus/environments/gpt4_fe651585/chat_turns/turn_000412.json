@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 412,
+  "session_index": 41,
+  "session_id": "sharegpt_XKH6h44_0",
+  "turn_in_session": 0,
+  "date": "2023/03/17 (Fri) 17:24",
+  "role": "user",
+  "content": "```ts\nfunction getMany(\n keys: KvKey[],\n options?: { consistency?: KvConsistencyLevel },\n): Promise[]>;\n```\n\nthis method takes an arbitrary array of keys, and returns a same length array of results. the results can each have a different type. i'd like to have it take a generic argument that lets me specify the value type for each kv entry result, and ensure that the output array's length is the same as the input array.",
+  "has_answer": false
+}

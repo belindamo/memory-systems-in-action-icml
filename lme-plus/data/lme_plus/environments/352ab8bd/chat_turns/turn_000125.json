@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 125,
+  "session_index": 10,
+  "session_id": "answer_sharegpt_NoDZzot_7",
+  "turn_in_session": 0,
+  "date": "2023/05/22 (Mon) 11:51",
+  "role": "assistant",
+  "content": "The \"Experimental Results\" section of the \"To Adapt or Not to Adapt? Real-Time Adaptation for Semantic Segmentation\" submission presents the results of experiments conducted on the OnDA benchmarks and the SHIFT dataset to evaluate the performance of the proposed HAMLET framework for real-time domain adaptation. The experiments showed that the proposed framework was able to significantly improve the trade-off between accuracy and efficiency in online domain adaptation, with an average improvement in framerate of approximately 20% when using the Hardware-Aware Modular Training (HAMT) agent and a further improvement of approximately 4x with the addition of the Active Training Modulation system. The framework was also able to significantly reduce the gap between the performance of models trained on synthetic data and those trained on real data, with a reduction of up to 4 points on the 200mm domain in the Increasing Storm scenario. Overall, the results demonstrated the effectiveness of the proposed framework for real-time domain adaptation.",
+  "has_answer": true
+}

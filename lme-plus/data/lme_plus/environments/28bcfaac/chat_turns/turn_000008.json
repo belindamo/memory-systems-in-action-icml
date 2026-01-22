@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 8,
+  "session_index": 0,
+  "session_id": "sharegpt_hJ27v45_0",
+  "turn_in_session": 8,
+  "date": "2023/05/20 (Sat) 04:04",
+  "role": "user",
+  "content": "[Task]: Find an apple in the kitchen. The workspace tag below refers to global workspace theory which selects some information into itself and then broadcast the information. You can treat workspace as a reduced memory. You should summarize the important information and filter out the unimportant one into the workspace.\n[Observation]: I see a refrigerator, an oven, two tables, three chairs, a wash stand and a wide variety of cutlery.\n[Action]: Check the refrigerator for any apples.\n[Old Workspace]: I entered the kitchen\n[New Workspace]:",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 213,
+  "session_index": 25,
+  "session_id": "sharegpt_XIeVqV1_34",
+  "turn_in_session": 1,
+  "date": "2023/05/26 (Fri) 14:42",
+  "role": "assistant",
+  "content": "To download files from the FTP server and save them in a specific local directory, you can use the `lcd` (local change directory) command before issuing the `get` command. The `lcd` command allows you to change the local directory on your machine where the files will be saved.\n\nFirst, change the local directory to the desired folder where you want to save the files:\n```lua\nftp> lcd /path/to/your/local/folder\n```\nReplace `/path/to/your/local/folder` with the actual path to the folder on your machine where you want to save the files.\n\nThen, download the files as you did before:\n```arduino\nftp> get flag3\nftp> get passwd\nftp> get shadow\n```\nThe files will be saved in the specified local folder. If you want to download files from the `hiddenftpfolder` without overwriting the files you just downloaded, change the local directory again before issuing the `get` commands for the files in the `hiddenftpfolder`.\n\nFor example:\n```lua\nftp> lcd /path/to/another/local/folder\n```\nAnd then download the files from `hiddenftpfolder`. This way, you will avoid overwriting the files you downloaded earlier.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 144,
+  "session_index": 10,
+  "session_id": "sharegpt_oPOTyid_141",
+  "turn_in_session": 20,
+  "date": "2023/03/18 (Sat) 22:29",
+  "role": "assistant",
+  "content": "To implement the function on a plugin, follow these steps:\n\n1. Open the plugin file that you want to modify.\n2. Locate the function that retrieves the products and modify it to include the new function that filters items in stock. You can use the following code as an example:\n```php\nfunction get_products_in_stock() {\n    $args = array(\n        'post_type' => 'product',\n        'meta_query' => array(\n            array(\n                'key' => '_stock_status',\n                'value' => 'instock'\n            )\n        )\n    );\n    $products = get_posts( $args );\n    return $products;\n}\n```\n3. Save the plugin file and upload it to your WordPress site.\n4. Test the plugin to ensure that it retrieves only items in stock.\n\nNote: Please make sure to backup your plugin file before making any changes to it.",
+  "has_answer": false
+}

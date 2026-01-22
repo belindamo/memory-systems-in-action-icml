@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 434,
+  "session_index": 42,
+  "session_id": "sharegpt_3lWzv4B_0",
+  "turn_in_session": 9,
+  "date": "2023/05/28 (Sun) 06:56",
+  "role": "assistant",
+  "content": "Yes, you can run the `robocopy` command every day at 7:00 PM on Windows by creating a scheduled task. Here's how you can do it:\n\n1. Open the Task Scheduler: You can do this by typing \"Task Scheduler\" in the Start menu search bar and clicking on the \"Task Scheduler\" app.\n2. Create a new task: In the Task Scheduler, click on the \"Create Task\" option in the right-side panel.\n3. Configure the general settings: In the \"Create Task\" dialog, provide a name for the task, choose the \"Run whether user is logged on or not\" option, and choose the \"Run with highest privileges\" option.\n4. Configure the triggers: In the \"Triggers\" tab, click on the \"New\" button and choose \"Daily\". Then, set the start time to 7:00 PM and set the recurrence to every 1 day.\n5. Configure the action: In the \"Actions\" tab, click on the \"New\" button, choose \"Start a program\" as the action, and enter the following in the \"Program/script\" field:\n```\ncmd.exe\n```\nIn the \"Add arguments\" field, enter the following:\n```bash\n/c robocopy \\\\lightspeed\\data d:\\serverfolders\\nasbackup /MAXAGE:2023-01-30\n```\n6. Save the task: Click on the \"OK\" button to save the task.\n\nThe task will now run every day at 7:00 PM and copy only the files in `\\\\lightspeed\\data` that have been modified on or after `Jan 30, 2023` to the `d:\\serverfolders\\nasbackup` destination directory.",
+  "has_answer": false
+}

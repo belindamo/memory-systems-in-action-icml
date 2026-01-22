@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 162,
+  "session_index": 17,
+  "session_id": "sharegpt_HYJ27Qb_0",
+  "turn_in_session": 0,
+  "date": "2023/05/23 (Tue) 19:07",
+  "role": "user",
+  "content": "Web search results:\n\n[1] \"Argentina are the world champions. From the moment Lionel Messi put the Copa America holders ahead in the 23rd minute of the 2022 FIFA World Cup final against France, Lionel Scaloni's side looked ...\"\nURL: https://www.sportingnews.com/us/soccer/news/who-won-2022-fifa-world-cup-final-score-result-highlights-qatar/aar5gfviuuapvkmcq3tf7dep\nCurrent date: 17/03/2023\n\nInstructions: Using the provided web search results, write a comprehensive reply to the given query. Make sure to cite results using [[number](URL)] notation after the reference. If the provided search results refer to multiple subjects with the same name, write separate answers for each subject.\nQuery: who won the fifa world cup 2022",
+  "has_answer": false
+}

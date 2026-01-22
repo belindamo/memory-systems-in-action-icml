@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 235,
+  "session_index": 22,
+  "session_id": "sharegpt_CKrsnSI_0",
+  "turn_in_session": 4,
+  "date": "2023/05/23 (Tue) 22:36",
+  "role": "user",
+  "content": "Label consists of a total of 8, and the text column consists of news article data.\nMy goal is to predict test.csv and get the result in submission.csv that consists 'id' and 'label'\nIt is single-label, multiclass classification problem",
+  "has_answer": false
+}

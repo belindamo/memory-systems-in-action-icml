@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 125,
+  "session_index": 10,
+  "session_id": "sharegpt_EuvEEnD_0",
+  "turn_in_session": 15,
+  "date": "2023/03/27 (Mon) 22:28",
+  "role": "assistant",
+  "content": "To make an `input` element with `type=\"text\"` submit its value when the Enter key is pressed, you can use the `keypress` event to detect when the Enter key is pressed and then submit the form containing the input element. Here's an example of how to do this using JavaScript:\n```less\n// Get the input element\nvar input = document.getElementById('my-input');\n\n// Add an event listener for the \"keypress\" event\ninput.addEventListener('keypress', function(event) {\n    // Check if the Enter key was pressed\n    if (event.keyCode === 13) {\n        // Submit the form containing the input element\n        input.form.submit();\n    }\n});\n```\nIn this code, we first get a reference to the input element using `document.getElementById('my-input')`. Then, we add an event listener for the `keypress` event using `input.addEventListener('keypress', function(event) {...})`.\n\nInside the event listener function, we use an `if` statement to check if the `keyCode` property of the `event` object is equal to 13, which is the keycode for the Enter key. If it is, we use the `submit()` method of the form containing the input element to submit the form and send the input value to the server.\n\nBy using this JavaScript code, you can make an `input` element with `type=\"text\"` submit its value when the Enter key is pressed.",
+  "has_answer": false
+}

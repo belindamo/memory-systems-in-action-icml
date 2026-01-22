@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 154,
+  "session_index": 15,
+  "session_id": "sharegpt_6SbI5YJ_0",
+  "turn_in_session": 1,
+  "date": "2023/02/24 (Fri) 07:08",
+  "role": "assistant",
+  "content": "Here is the HTML code for the page you requested:\n```css\n<html>\n  <head>\n    <style>\n      table {\n        width: 100%;\n        border-collapse: collapse;\n      }\n      td, th {\n        border: 1px solid #dddddd;\n        text-align: left;\n        padding: 8px;\n      }\n      th {\n        background-color: #dddddd;\n      }\n      h1 {\n        text-align: center;\n      }\n    </style>\n  </head>\n  <body>\n    <h1>Issues Fixed in Software Release</h1>\n    <table>\n      <tr>\n        <th>Issue Type</th>\n        <th>Summary</th>\n      </tr>\n      <tr>\n        <td>Task</td>\n        <td>Tablet - Display QMD number on main page</td>\n      </tr>\n      <tr>\n        <td>UI Change</td>\n        <td>Tablet - Final Review page has the last digit of work order missing</td>\n      </tr>\n      <tr>\n        <td>Task</td>\n        <td>Tablet - Add SOP guidance reference to Fusion Type selection</td>\n      </tr>\n      <tr>\n        <td>Bug</td>\n        <td>Tablet/API - Issues with API returning failure message but data downloading</td>\n      </tr>\n      <tr>\n        <td>Bug</td>\n        <td>Tablet/API - Issues with not updating changed values/not downloading values at all</td>\n      </tr>\n      <tr>\n        <td>Story</td>\n        <td>Tablet - Test Upload Button</td>\n      </tr>\n      <tr>\n        <td>Story</td>\n        <td>Tablet/Server - Create a button that sends the database to the server and a log on weld.isco-pipe.com that shows sent databases</td>\n      </tr>\n      <tr>\n        <td>Story</td>\n        <td>Tablet - Automatic \"Other\" Field Guessing - Spell check/suggest machines when \"other\" button is pressed</td>\n      </tr>\n    </table>\n  </body>\n</html>\n```",
+  "has_answer": false
+}

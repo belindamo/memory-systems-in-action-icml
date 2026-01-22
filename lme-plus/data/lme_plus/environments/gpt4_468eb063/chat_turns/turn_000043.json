@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 43,
+  "session_index": 3,
+  "session_id": "sharegpt_5jHUxvs_80",
+  "turn_in_session": 5,
+  "date": "2023/03/24 (Fri) 09:14",
+  "role": "assistant",
+  "content": "It's possible that the username format is causing the issue. The `Add-Computer` cmdlet expects the username in the format `username@domain` or `domain\\username`. Since you mentioned that the secret 'intro' only contains the username, it might be the root cause of the error.\n\nTo fix this, you can update the `$domainAdminUsername` assignment to include the domain name as well. Update the script like this:\n```yaml\n# Set variables\n$domainAdminUsername = \"$(intro)\" + \"@nmrp.com\"\n```\nAlternatively, you can update the secret 'intro' in Azure Key Vault to include the domain name in the format `username@domain`.\n\nMake this change and try running the pipeline again.",
+  "has_answer": false
+}

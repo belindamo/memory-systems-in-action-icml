@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 374,
+  "session_index": 33,
+  "session_id": "sharegpt_bhOrPyl_149",
+  "turn_in_session": 0,
+  "date": "2023/05/29 (Mon) 05:53",
+  "role": "assistant",
+  "content": "Azure PowerShell, Azure CLI, and Azure Cloud Shell are three tools used for managing Azure resources. Here are the differences between them:\n\n1. Azure PowerShell: Azure PowerShell is a module that adds Azure-specific commands to PowerShell. It requires PowerShell to function and provides a way to connect to Azure subscriptions and manage resources. It is available on Windows PowerShell and PowerShell Core.\n2. Azure CLI: Azure CLI is a command-line program that allows you to execute administrative commands on Azure resources. It runs on Linux, macOS, and Windows, and provides cross-platform command-line tools for managing Azure resources. It can be installed locally on computers running these operating systems.\n3. Azure Cloud Shell: Azure Cloud Shell is an interactive, browser-accessible shell for managing Azure resources. It provides a browser-based command-line experience and is built with Azure management tasks in mind. It runs on a temporary host provided on a per-session, per-user basis, and requires a resource group, storage account, and Azure File share.\n\nIn summary, Azure PowerShell and Azure CLI are both command-line tools that can be installed locally on your computer, while Azure Cloud Shell is a browser-based shell that runs on a temporary host in Azure. Azure PowerShell provides Azure-specific commands for PowerShell, while Azure CLI provides cross-platform command-line tools for managing Azure resources.",
+  "has_answer": false
+}

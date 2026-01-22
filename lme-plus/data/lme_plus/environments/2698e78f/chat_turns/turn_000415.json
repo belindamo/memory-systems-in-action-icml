@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 415,
+  "session_index": 40,
+  "session_id": "sharegpt_G18Riup_0",
+  "turn_in_session": 3,
+  "date": "2023/11/03 (Fri) 11:20",
+  "role": "assistant",
+  "content": "Here is a bash script that does the following:\n\n1. Gets all secrets in a specified namespace\n2. For each secret, it exports the secret as a YAML file, decodes and encrypts it using SOPS, and stores it as a Google Secret Manager secret\n```bash\n#!/bin/bash\n\n# Set the namespace\nNAMESPACE=\"<namespace>\"\n\n# Get all secrets in the specified namespace\nsecrets=$(kubectl get secrets -n $NAMESPACE -o json | jq -r '.items[].metadata.name')\n\n# Loop through each secret\nfor secret in $secrets; do\n  # Export the secret as a YAML file\n  kubectl get secret $secret -n $NAMESPACE -o yaml > secret.yaml\n\n  # Decode and encrypt the secret using SOPS\n  sops -d secret.yaml > decrypted_secret.yaml\n  sops -e decrypted_secret.yaml > encrypted_secret.yaml\n\n  # Create a Google Secret Manager secret\n  gcloud secrets create $secret --replication-policy=\"automatic\"\n  gcloud secrets versions add $secret --data-file=decrypted_secret.yaml\ndone\n```\nNote: This script assumes that you have the necessary Google Cloud SDK components and dependencies installed, and that you have set up the `gcloud` CLI with the correct credentials and project.",
+  "has_answer": false
+}

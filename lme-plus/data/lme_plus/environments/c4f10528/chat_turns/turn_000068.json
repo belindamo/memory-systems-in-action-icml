@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 68,
+  "session_index": 6,
+  "session_id": "sharegpt_UtXvMMn_18",
+  "turn_in_session": 0,
+  "date": "2023/05/21 (Sun) 16:06",
+  "role": "user",
+  "content": "that was the complete code .. the error message is \" TypeError: expected str, bytes or os.PathLike object, not NoneType\nSay something!\nException in Tkinter callback\nTraceback (most recent call last):\n File \"C:\\Program Files\\Python311\\Lib\\tkinter\\\\_\\_init\\_\\_.py\", line 1948, in \\_\\_call\\_\\_\n return self.func(\\*args)\n ^^^^^^^^^^^^^^^^\n File \"C:\\Users\\Dan.QTIS\\Desktop\\Dan-Special\\Tests\\try2.py\", line 115, in speech\\_to\\_text\\_button\\_clicked\n text = recognizer.recognize\\_google\\_cloud(audio, credentials\\_json=GOOGLE\\_CLOUD\\_SPEECH\\_CREDENTIALS)\n ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n File \"C:\\Users\\Dan.QTIS\\AppData\\Roaming\\Python\\Python311\\site-packages\\speech\\_recognition\\\\_\\_init\\_\\_.py\", line 951, in recognize\\_google\\_cloud\n assert os.environ.get('GOOGLE\\_APPLICATION\\_CREDENTIALS') is not None\n ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\nSay something!\nException in Tkinter callback\nTraceback (most recent call last):\n File \"C:\\Program Files\\Python311\\Lib\\tkinter\\\\_\\_init\\_\\_.py\", line 1948, in \\_\\_call\\_\\_\n return self.func(\\*args)\n ^^^^^^^^^^^^^^^^\n File \"C:\\Users\\Dan.QTIS\\Desktop\\Dan-Special\\Tests\\try2.py\", line 115, in speech\\_to\\_text\\_button\\_clicked\n text = recognizer.recognize\\_google\\_cloud(audio, credentials\\_json=GOOGLE\\_CLOUD\\_SPEECH\\_CREDENTIALS)\n ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n File \"C:\\Users\\Dan.QTIS\\AppData\\Roaming\\Python\\Python311\\site-packages\\speech\\_recognition\\\\_\\_init\\_\\_.py\", line 951, in recognize\\_google\\_cloud\n assert os.environ.get('GOOGLE\\_APPLICATION\\_CREDENTIALS') is not None\n ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\"",
+  "has_answer": false
+}

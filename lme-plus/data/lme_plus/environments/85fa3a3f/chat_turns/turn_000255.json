@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 255,
+  "session_index": 26,
+  "session_id": "sharegpt_mIEL27Q_5",
+  "turn_in_session": 2,
+  "date": "2023/05/25 (Thu) 10:28",
+  "role": "assistant",
+  "content": "Sure! To install jq in the certbot container, you can add the following line to the Dockerfile of the certbot image:\n```sql\nRUN apt-get update && apt-get install -y jq\n```\nHere's the updated Dockerfile:\n```sql\nFROM certbot/dns-google\n\nRUN apt-get update && apt-get install -y jq\n```\nThen, you can rebuild the certbot image with the updated Dockerfile using the following command:\n```bash\ndocker build -t certbot/dns-google:latest .\n```\nAs for running the certbot command once a day using the container's CRON, you can add the following line to the command section of the certbot service in the docker-compose.yml file:\n```bash\ncommand: sh -c \"echo '0 0 * * * /app/certbot_loop.sh' > /etc/cron.d/certbot-cron && crontab /etc/cron.d/certbot-cron && cron -f\"\n```\nThis line sets up a cron job to run the certbot\\_loop.sh script once a day at midnight, and then starts the cron daemon in the foreground so that the container does not exit.\n\nWith these changes, the updated docker-compose.yml file should look like this:\n```javascript\nversion: '3.7'\n\nservices:\n  certbot:\n    build: .\n    container_name: certbot\n    volumes:\n      - ./certs:/etc/letsencrypt\n      - /path/to/your/credentials.json:/etc/letsencrypt/credentials.json:ro\n    command: sh -c \"echo '0 0 * * * /app/certbot_loop.sh' > /etc/cron.d/certbot-cron && crontab /etc/cron.d/certbot-cron && cron -f\"\n    depends_on:\n      - nginx\n  nginx:\n    image: nginx:latest\n    container_name: nginx\n    ports:\n      - \"80:80\"\n      - \"443:443\"\n    volumes:\n      - ./nginx.conf:/etc/nginx/nginx.conf:ro\n      - ./certs:/etc/letsencrypt\n      - ./html:/usr/share/nginx/html\n```\nI hope this helps!",
+  "has_answer": false
+}

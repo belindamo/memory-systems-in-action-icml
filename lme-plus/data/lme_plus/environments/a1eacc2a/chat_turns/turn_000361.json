@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 361,
+  "session_index": 33,
+  "session_id": "sharegpt_efcAzKB_13",
+  "turn_in_session": 10,
+  "date": "2023/05/31 (Wed) 03:42",
+  "role": "assistant",
+  "content": "Here is an example of how you might create the tables for a comprehensive leave management system using SQL:\n```\nCREATE TABLE employees (\n  id INTEGER PRIMARY KEY,\n  first_name VARCHAR(255),\n  last_name VARCHAR(255),\n  email VARCHAR(255) UNIQUE,\n  manager_id INTEGER,\n  FOREIGN KEY (manager_id) REFERENCES employees(id)\n);\n\nCREATE TABLE leave_policies (\n  id INTEGER PRIMARY KEY,\n  name VARCHAR(255),\n  description TEXT,\n  entitlements INTEGER,\n  carryover INTEGER,\n  accrual_rate FLOAT\n);\n\nCREATE TABLE leave_requests (\n  id INTEGER PRIMARY KEY,\n  employee_id INTEGER,\n  start_date DATE,\n  end_date DATE,\n  type VARCHAR(255),\n  status VARCHAR(255),\n  notes TEXT,\n  FOREIGN KEY (employee_id) REFERENCES employees(id)\n);\n\nCREATE TABLE leave_balances (\n  id INTEGER PRIMARY KEY,\n  employee_id INTEGER,\n  policy_id INTEGER,\n  balance INTEGER,\n  FOREIGN KEY (employee_id) REFERENCES employees(id),\n  FOREIGN KEY (policy_id) REFERENCES leave_policies(id)\n);\n```\nThis example creates four tables:\n\n* The `employees` table stores information about each employee, including their name, email address, and manager.\n* The `leave_policies` table stores information about the leave policies that are",
+  "has_answer": false
+}

@@ -1,0 +1,47 @@
+{
+  "session_id": "sharegpt_CIPQtDW_0",
+  "session_index": 11,
+  "date": "2023/03/15 (Wed) 19:42",
+  "turns": [
+    {
+      "role": "user",
+      "content": "It is 10 AM. You're an attendant at a vehicle service shop that specializes on oil changes. An Oil change takes an average of 15 minutes to be completed at this shop. Once completed, a new vehicle can be worked on. If two vehicles are queued to be worked on. What would you tell a 3rd customer that wants to wait for an oil change?"
+    },
+    {
+      "role": "assistant",
+      "content": "I would tell the 3rd customer that they would have to wait approximately 30 minutes for their oil change."
+    },
+    {
+      "role": "user",
+      "content": "What if at this shop you could work on two vehicles at a time. What would you tell the customer then?"
+    },
+    {
+      "role": "assistant",
+      "content": "I would tell the 3rd customer that they would have to wait approximately 15 minutes for their oil change."
+    },
+    {
+      "role": "user",
+      "content": "Establishing that 2 vehicles can be worked on at a time, what would you tell a fourth customer?"
+    },
+    {
+      "role": "assistant",
+      "content": "I would tell the 4th customer that they would have to wait approximately 15 minutes for their oil change."
+    },
+    {
+      "role": "user",
+      "content": "how about a 5th customer, what would you tell them?"
+    },
+    {
+      "role": "assistant",
+      "content": "I would tell the 5th customer that they would have to wait approximately 15 minutes for their oil change."
+    },
+    {
+      "role": "user",
+      "content": "What if the 3rd and 4th customer added themselves to the queue. What would you have told the 5th customer?"
+    },
+    {
+      "role": "assistant",
+      "content": "I would tell the 5th customer that they would have to wait approximately 30 minutes for their oil change."
+    }
+  ]
+}

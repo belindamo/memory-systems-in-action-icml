@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 38,
+  "session_index": 4,
+  "session_id": "sharegpt_YNWdr6V_0",
+  "turn_in_session": 0,
+  "date": "2023/01/24 (Tue) 01:55",
+  "role": "user",
+  "content": "Given:\n1) X wireless power transmitters that beam power to wireless power receivers\n2) X wireless power receivers that receiver power from wireless power transmitters\n3) Each transmitter can beam power to only one receiver at a given time\n4) Any specific transmitter sees only some receivers\n5) A transmitter charges all receivers it sees one by one, for a pre-determined time period\n6) Two transmitters can't charge the same receiver\nPropose a control algorithm for the transmitter to optimize power delivery overall.",
+  "has_answer": false
+}

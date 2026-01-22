@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 235,
+  "session_index": 21,
+  "session_id": "sharegpt_XK3KWPT_0",
+  "turn_in_session": 5,
+  "date": "2023/05/24 (Wed) 14:00",
+  "role": "assistant",
+  "content": "Calculating the adjusted deal values based on the probability % linked to sales stages is a common practice in sales forecasting. Here's a step-by-step process for calculating adjusted deal values:\n\n1. Define the sales stages in your sales process. For example, you might have the following stages: Prospecting, Qualification, Needs Analysis, Proposal, Negotiation, and Closed Won.\n2. Assign a probability percentage to each sales stage. This percentage represents the likelihood that the deal will close successfully at that stage. For example, you might assign the following probabilities: Prospecting - 10%, Qualification - 20%, Needs Analysis - 30%, Proposal - 50%, Negotiation - 70%, Closed Won - 100%.\n3. Assign a dollar value to each deal. This is the total value of the deal if it closes successfully.\n4. Multiply the dollar value of the deal by the probability percentage for each sales stage to calculate the adjusted deal value. For example, if the total value of the deal is $10,000 and it's in the Proposal stage with a probability of 50%, the adjusted deal value would be $5,000 (i.e. $10,000 x 50%).\n5. Sum the adjusted deal values for all deals in each sales stage to calculate the total adjusted value for that stage. For example, if you have five deals in the Proposal stage with adjusted deal values of $5,000, $4,000, $6,000, $2,000, and $8,000, the total adjusted value for the Proposal stage would be $25,000.\n6. Repeat this process for each sales stage to calculate the total adjusted value for all deals in your pipeline.\n\nBy calculating the adjusted deal values based on the probability % linked to sales stages, you can get a more accurate picture of the potential revenue that your sales pipeline represents. This can help you make more informed decisions about resource allocation, forecasting, and other aspects of your sales strategy.",
+  "has_answer": false
+}

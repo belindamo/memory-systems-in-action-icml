@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 263,
+  "session_index": 23,
+  "session_id": "sharegpt_SNshiYQ_11",
+  "turn_in_session": 2,
+  "date": "2023/05/25 (Thu) 00:07",
+  "role": "assistant",
+  "content": "There are several ways to search for Jupyter Notebooks that deal with spatial modeling, specifically for observing a grid of 100 by 100 cells change under specific rules. Here are a few options:\n\n1. GitHub: GitHub is a popular platform for sharing and collaborating on open-source code. You can search for Jupyter Notebooks on GitHub by using keywords related to your problem, such as \"spatial modeling,\" \"grid,\" \"cellular automata,\" \"land-use,\" \"land-cover,\" and \"growth rules.\"\n2. Jupyter Notebook Viewer: Jupyter Notebook Viewer is a website that allows you to search for and view Jupyter Notebooks without having to download them. You can use keywords related to your problem to search for relevant Jupyter Notebooks.\n3. Kaggle: Kaggle is a platform for data science competitions, and it also hosts a large number of Jupyter Notebooks that can be used for learning and experimentation. You can search for Jupyter Notebooks on Kaggle by using keywords related to your problem.\n4. Google: you can use Google to search for Jupyter Notebooks by using keywords related to your problem. This will give you a broad range of results from different sources.\n5. PyViz: PyViz is a community-led ecosystem for creating and sharing interactive and reproducible data visualizations in Python. You can find Jupyter Notebooks that make use of this library and other related libraries that can be used for your problem.\n\nIt's also worth mentioning that you can also try to use libraries such as LandChangePy, PySAL and Rasterio, which are widely used in the land-use and land-cover modeling field and they have a lot of examples and tutorials that can be found online and on their official documentation.\n\nIt's always best to read the description and the code of the Notebook before using it, to make sure it's relevant to your problem and that it's well-explained and well-documented.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 206,
+  "session_index": 19,
+  "session_id": "sharegpt_WFKzGQx_0",
+  "turn_in_session": 11,
+  "date": "2023/02/09 (Thu) 10:41",
+  "role": "assistant",
+  "content": "Sure, here is a one-liner command that will download and extract the `kcadm.sh` script from the Keycloak server distribution package version 15.0.2 and copy it to `/usr/local/bin`:\n```bash\nsudo curl -L https://downloads.jboss.org/keycloak/15.0.2/keycloak-15.0.2.tar.gz | sudo tar -xz -C /usr/local/bin --strip-components=1 keycloak-15.0.2/bin/kcadm.sh\n```\nThis command downloads the Keycloak server distribution package version 15.0.2, extracts the `kcadm.sh` script from the `bin` directory, and copies it to `/usr/local/bin`. The `sudo` command is used to run the command with elevated privileges to allow writing to `/usr/local/bin`.\n\nOnce the command has completed successfully, you can use the `kcadm.sh` script from any directory on your Linux box by simply typing `kcadm.sh` followed by the desired command.",
+  "has_answer": false
+}

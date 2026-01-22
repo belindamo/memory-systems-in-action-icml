@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 149,
+  "session_index": 14,
+  "session_id": "sharegpt_tMOb5TT_0",
+  "turn_in_session": 7,
+  "date": "2023/03/26 (Sun) 18:55",
+  "role": "assistant",
+  "content": "Yes, you're correct. Using percentage values is often the best approach to keep designs responsive, especially when working with elements that are intended to resize based on the size of the viewport.\n\nWhen you use a percentage value for `max-height`, the maximum height of the element will be relative to the height of its parent element, and the element will resize proportionally as the parent element is resized. This can be a good approach to ensure that your designs look good on screens of different sizes.\n\nIn your case, you could try increasing the percentage value of `max-height` to achieve the desired size for your images. Keep in mind that the percentage value will be relative to the height of the parent element, so you may need to adjust the height of the parent element as well in order to get the desired size for your images.",
+  "has_answer": false
+}

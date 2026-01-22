@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 63,
+  "session_index": 7,
+  "session_id": "sharegpt_TpaMHPY_0",
+  "turn_in_session": 1,
+  "date": "2023/05/22 (Mon) 09:13",
+  "role": "assistant",
+  "content": "Here is the CSS for a dark theme version of the web component:\n```css\n.link-card-grid {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));\n  gap: 1rem;\n  padding: 0;\n  background-color: #333;\n}\n\n.link-card > a {\n  width: 100%;\n  text-decoration: none;\n  line-height: 1.4;\n  padding: 1rem 1.3rem;\n  border-radius: 0.35rem;\n  color: white;\n  background-color: #444;\n  opacity: 0.8;\n}\n\np {\n  margin-top: 0.5rem;\n  margin-bottom: 0;\n  color: #bbb;\n}\n\n.link-card {\n  list-style: none;\n  display: flex;\n  padding: 0.15rem;\n  background-color: #444;\n  background-image: var(--accent-gradient);\n  background-position: 100%;\n  background-size: 400%;\n  border-radius: 0.5rem;\n  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);\n  transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);\n}\n\n.link-card:is(:hover, :focus-within) {\n  background-position: 0;\n}\n\n.link-card:is(:hover, :focus-within) h2 {\n  color: white;\n}\n```\nThis will give you a dark theme version of the web component, with a black background and white text. The `link-card` elements will have a dark grey background color, with a gradient applied on hover. The `p` elements will have a light grey color.\n\nI hope this helps! Let me know if you have any questions.",
+  "has_answer": false
+}

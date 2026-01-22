@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 172,
+  "session_index": 18,
+  "session_id": "sharegpt_n3kgf14_17",
+  "turn_in_session": 6,
+  "date": "2023/05/24 (Wed) 15:03",
+  "role": "assistant",
+  "content": "The \"PreviousOrderID\" attribute is needed to implement the rule that a POMS event can only register a primary driver if the order ID is new. This is because the service compares the previous order ID to the current order ID, and if they are the same, the POMS event is not considered new and will not update the primary driver. Without the \"PreviousOrderID\" attribute, the service would not be able to enforce this rule.\n\nIn other words, the \"OrderID\" attribute provides the current order ID, while the \"PreviousOrderID\" attribute provides the order ID of the previous primary driver change (if applicable). These two attributes are needed to determine if a new POMS event is considered new or not.",
+  "has_answer": false
+}

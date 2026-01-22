@@ -1,0 +1,87 @@
+{
+  "session_id": "sharegpt_3lWzv4B_0",
+  "session_index": 42,
+  "date": "2023/05/28 (Sun) 06:56",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I'd like to copy only files that have changed since a particular date, on Windows, what"
+    },
+    {
+      "role": "assistant",
+      "content": "is the best way to do this?\n\nThe best way to copy only files that have changed since a particular date on Windows is to use the built-in command line tool `robocopy`. You can use the `/MAXAGE` option to specify the date and only copy files that have been modified after that date. Here's an example of how you could use `robocopy` to copy only changed files from one directory to another:\n```ruby\nrobocopy source_directory destination_directory /MAXAGE:YYYY-MM-DD\n```\nReplace `source_directory` and `destination_directory` with the actual paths of the source and destination directories, and `YYYY-MM-DD` with the date you want to use as the cutoff."
+    },
+    {
+      "role": "user",
+      "content": "my source will be \\\\lightspeed\\data and the destination will be d:\\serverfolders\\nasbackup"
+    },
+    {
+      "role": "assistant",
+      "content": "Here's an example of the `robocopy` command to copy only changed files from the `\\\\lightspeed\\data` source to the `d:\\serverfolders\\nasbackup` destination directory, using a cutoff date of `2022-01-01`:\n```kotlin\nrobocopy \\\\lightspeed\\data d:\\serverfolders\\nasbackup /MAXAGE:2022-01-01\n```\nThis will copy only files in `\\\\lightspeed\\data` that have been modified after `2022-01-01` to the `d:\\serverfolders\\nasbackup` destination directory."
+    },
+    {
+      "role": "user",
+      "content": "so the users started with the new data yesterday morning which was Jan 30, 2023."
+    },
+    {
+      "role": "assistant",
+      "content": "Here's an example of the `robocopy` command to copy only changed files from the `\\\\lightspeed\\data` source to the `d:\\serverfolders\\nasbackup` destination directory, using a cutoff date of `Jan 30, 2023`:\n```kotlin\nrobocopy \\\\lightspeed\\data d:\\serverfolders\\nasbackup /MAXAGE:2023-01-30\n```\nThis will copy only files in `\\\\lightspeed\\data` that have been modified after `Jan 30, 2023` to the `d:\\serverfolders\\nasbackup` destination directory."
+    },
+    {
+      "role": "user",
+      "content": "so that is after and including the 30th?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, that's correct. The `/MAXAGE` option in `robocopy` specifies that files that have been modified on or after the specified date will be copied. In this case, `2023-01-30` is the cutoff date, so all files in the `\\\\lightspeed\\data` source directory that have been modified on or after `Jan 30, 2023` will be copied to the `d:\\serverfolders\\nasbackup` destination directory."
+    },
+    {
+      "role": "user",
+      "content": "now, can I make that run every day at 7:00 PM?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, you can run the `robocopy` command every day at 7:00 PM on Windows by creating a scheduled task. Here's how you can do it:\n\n1. Open the Task Scheduler: You can do this by typing \"Task Scheduler\" in the Start menu search bar and clicking on the \"Task Scheduler\" app.\n2. Create a new task: In the Task Scheduler, click on the \"Create Task\" option in the right-side panel.\n3. Configure the general settings: In the \"Create Task\" dialog, provide a name for the task, choose the \"Run whether user is logged on or not\" option, and choose the \"Run with highest privileges\" option.\n4. Configure the triggers: In the \"Triggers\" tab, click on the \"New\" button and choose \"Daily\". Then, set the start time to 7:00 PM and set the recurrence to every 1 day.\n5. Configure the action: In the \"Actions\" tab, click on the \"New\" button, choose \"Start a program\" as the action, and enter the following in the \"Program/script\" field:\n```\ncmd.exe\n```\nIn the \"Add arguments\" field, enter the following:\n```bash\n/c robocopy \\\\lightspeed\\data d:\\serverfolders\\nasbackup /MAXAGE:2023-01-30\n```\n6. Save the task: Click on the \"OK\" button to save the task.\n\nThe task will now run every day at 7:00 PM and copy only the files in `\\\\lightspeed\\data` that have been modified on or after `Jan 30, 2023` to the `d:\\serverfolders\\nasbackup` destination directory."
+    },
+    {
+      "role": "user",
+      "content": "I'd like to run this every day, but it seems as time goes on it'd be copying (and overwriting?) the same data unecessarily"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, you are correct. If you run the `robocopy` command every day, it will overwrite the files in the destination directory that haven't changed in the source directory, even though their contents remain the same. To avoid this, you can modify the `robocopy` command to only copy files that have changed by using the `/MIR` (mirror) option:\n```kotlin\nrobocopy \\\\lightspeed\\data d:\\serverfolders\\nasbackup /MAXAGE:2023-01-30 /MIR\n```\nThe `/MIR` option will create a mirror of the source directory in the destination directory and only copy files that have changed since the last run. This will ensure that unchanged files are not overwritten in the destination directory, saving disk space and avoiding unnecessary copying."
+    },
+    {
+      "role": "user",
+      "content": "So here's the deal... recently switched all of the data from a Windows Server to a Synology NAS. The Windows Server was being backed up to a cloud service and we're charged by the amount of data that is backed up, in this case about 1TB. All that 1TB of data is now on the NAS and to back up the same data we'd now be paying for 2TB. So we want to back up only the changes, but the backup software only works on Windows, so we want to keep copying just the changes. If we mirror everything then we'd be paying for double what we really need. This is a short term fix, a few weeks or months and then we'll probably completely change how we back up."
+    },
+    {
+      "role": "assistant",
+      "content": "I understand your situation. In this case, using `robocopy` to only copy changed files is a good solution as a short-term fix, especially if you have a large amount of data and want to avoid paying for backing up the same data twice.\n\nIn addition to the `/MAXAGE` and `/MIR` options that I mentioned earlier, you can also use the `/DCOPY:T` option to copy timestamps along with the files. This will ensure that the modified timestamps of the files in the destination directory are updated to match the source directory:\n```kotlin\nrobocopy \\\\lightspeed\\data d:\\serverfolders\\nasbackup /MAXAGE:2023-01-30 /MIR /DCOPY:T\n```\nBy using the `/MAXAGE`, `/MIR`, and `/DCOPY:T` options, you can create an efficient solution for backing up changed files on a Windows machine and minimize the amount of data you need to pay to store in the cloud."
+    },
+    {
+      "role": "user",
+      "content": "wouldn't the '/mir' switch make it copy all 1TB of data?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, you are correct. The `/MIR` switch in `robocopy` will mirror the source directory to the destination directory, copying all files, including unchanged files. In this case, using `/MIR` would result in copying all 1TB of data and you would end up paying for storing 2TB of data.\n\nInstead, you can use the `/MAXAGE` switch to only copy files modified on or after a specific date, as I mentioned earlier. This way, you will only copy changed files and minimize the amount of data you need to pay to store in the cloud. Here's the updated command:\n```kotlin\nrobocopy \\\\lightspeed\\data d:\\serverfolders\\nasbackup /MAXAGE:2023-01-30 /DCOPY:T\n```"
+    },
+    {
+      "role": "user",
+      "content": "I have a folder on the lighspeed NAS called \"Installers and Drivers\" under data, i.e. \\\\lightspeed\\data\\Installers and Drivers"
+    },
+    {
+      "role": "assistant",
+      "content": "If you want to copy only the files in the `Installers and Drivers` folder from the NAS to your Windows machine, you can specify the path to that folder as the source in the `robocopy` command:\n```kotlin\nrobocopy \\\\lightspeed\\data\\Installers and Drivers d:\\serverfolders\\nasbackup\\Installers and Drivers /MAXAGE:2023-01-30 /DCOPY:T\n```\nThis will only copy the files in the `Installers and Drivers` folder that have changed since January 30, 2023, and preserve the timestamps of the files in the destination directory."
+    },
+    {
+      "role": "user",
+      "content": "isn't it doing to interpret that wrong since there's a space in the path?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, you are correct. The path `\\\\lightspeed\\data\\Installers and Drivers` contains spaces, which can cause issues when used in a command line tool such as `robocopy`. To avoid this issue, you can either escape the spaces in the path using quotes:\n```swift\nrobocopy \"\\\\lightspeed\\data\\Installers and Drivers\" \"d:\\serverfolders\\nasbackup\\Installers and Drivers\" /MAXAGE:2023-01-30 /DCOPY:T\n```\nOr, replace the spaces in the folder name with underscores or another character that is not used in the folder name:\n```kotlin\nrobocopy \\\\lightspeed\\data\\Installers_and_Drivers d:\\serverfolders\\nasbackup\\Installers_and_Drivers /MAXAGE:2023-01-30 /DCOPY:T\n```\nBoth of these options will allow you to copy files from the `Installers and Drivers` folder while avoiding issues caused by spaces in the path."
+    }
+  ]
+}

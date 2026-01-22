@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 258,
+  "session_index": 26,
+  "session_id": "sharegpt_EvgMYt3_11",
+  "turn_in_session": 0,
+  "date": "2023/05/27 (Sat) 09:20",
+  "role": "assistant",
+  "content": "To integrate the given frontend with the provided backend code on a WordPress website page, you need to follow these steps:\n\n1. Create a new WordPress page or edit an existing one where you want to add the paraphrasing tool.\n2. Copy the HTML code and paste it into the WordPress page's HTML editor. You can access the HTML editor by clicking on the 'Text' tab in the WordPress editor.\n3. Copy the CSS code and paste it into the WordPress page's CSS editor. You can access the CSS editor by adding a custom CSS class to the page or by using a plugin like 'Simple Custom CSS'.\n4. Copy the JavaScript code and paste it into a new JavaScript file, for example, 'paraphrase.js'.\n5. Upload the 'paraphrase.js' file to your WordPress website's server in the 'wp-content/themes/your-theme/js/' folder.\n6. Enqueue the 'paraphrase.js' file in the WordPress page by adding the following code to the functions.php file of your WordPress theme:\n```php\nfunction add_paraphrase_script() {\n    wp_enqueue_script( 'paraphrase-script', get_template_directory_uri() . '/js/paraphrase.js', array(), '1.0.0', true );\n}\nadd_action( 'wp_enqueue_scripts', 'add_paraphrase_script' );\n```\n1. Update the apiUrl variable in the 'paraphrase.js' file to the URL of the PHP script that performs the paraphrasing. For example, if the PHP script is located at '<http://example.com/paraphrase.php>', then the apiUrl variable should be updated to:\n```javascript\nconst apiUrl = 'http://example.com/paraphrase.php';\n```\n1. Save the changes and preview the WordPress page to see if the paraphrasing tool is working correctly.\n\nNote: Make sure that your WordPress website's server has the necessary dependencies and libraries installed to support the backend code's requirements.",
+  "has_answer": false
+}

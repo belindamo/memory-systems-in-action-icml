@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 261,
+  "session_index": 26,
+  "session_id": "sharegpt_cxnxUPt_43",
+  "turn_in_session": 7,
+  "date": "2023/02/28 (Tue) 21:36",
+  "role": "user",
+  "content": "You have an Azure virtual machine\nnamed VMI. VM1 was deployed by\nusing a custom Azure Resource\nManager template named\nARM1.json.\nYou receive a notification that VM1\nwill be affected by maintenance.\nYou need to move VM1 to a different\nhost immediately.\nSolution: From the Overview blade\nyou move the virtual machine to a\ndifferent subscription.\nDoes this meet the goal?\nSelect the correct answer\nTrue\nFalse",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 174,
+  "session_index": 15,
+  "session_id": "sharegpt_uDSaCgI_0",
+  "turn_in_session": 7,
+  "date": "2023/05/24 (Wed) 00:03",
+  "role": "assistant",
+  "content": "Yes, you can remove the `og:image:width` and `og:image:height` meta tags, since the size of the image is already specified in the `og:image` tag. And, adding the `twitter:card` and `twitter:image` meta tags to your HTML will ensure that Twitter displays the link preview image correctly. Here's the complete example:\n```php\n<meta property=\"og:image\" content=\"https://www.example.com/image.jpg\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\">\n<meta name=\"twitter:image\" content=\"https://www.example.com/image.jpg\">\n```\nMake sure to replace the URL in the `content` attribute with the URL of your image.",
+  "has_answer": false
+}

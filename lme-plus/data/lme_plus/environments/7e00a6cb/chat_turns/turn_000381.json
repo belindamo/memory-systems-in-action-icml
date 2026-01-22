@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 381,
+  "session_index": 39,
+  "session_id": "sharegpt_ADJyeqs_43",
+  "turn_in_session": 2,
+  "date": "2023/05/27 (Sat) 19:30",
+  "role": "assistant",
+  "content": "To use the `/notify` route in the websub-hub code, you would need to set up a webhook on your website that is triggered whenever new content is published. The webhook would need to be configured to send an HTTP POST request to the `/notify` route on the websub-hub server, with the URL and summary of the updated content in the request body.\n\nFor example, if your websub-hub server is running on `https://www.mywebsite.com`, the webhook might be configured to send a request to `https://www.mywebsite.com/notify` when new content is published on your website. The request would contain the URL and summary of the updated content in the request body, in the following format:\n```\nPOST /notify\n\n{\n  \"url\": \"https://www.mywebsite.com/about\",\n  \"summary\": \"Updated 'About Me' page\"\n}\n```\nWhen the `/notify` route receives this request, it will extract the URL and summary from the request body and call the `hub.publish()` method, passing in the URL and summary as arguments. This will send a notification to the hub on your website, so that it can deliver the notification to all subscribed users.\n\nOnce the notification is successfully sent to the hub, the `/notify` route will return a success response to the webhook, indicating that the notification process was successful. If an error occurs during the notification process, the `/notify` route will return an error response to the webhook, indicating that an error occurred and the webhook should not continue executing any other actions.",
+  "has_answer": false
+}

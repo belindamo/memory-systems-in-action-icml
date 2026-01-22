@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 49,
+  "session_index": 4,
+  "session_id": "sharegpt_zbfgack_7",
+  "turn_in_session": 6,
+  "date": "2023/01/09 (Mon) 18:13",
+  "role": "assistant",
+  "content": "Stretch Goal\n------------\n\n### Start Timer\n\n* Endpoint path: /api/timers/{appointment\\_id}/start/\n* Endpoint method: PUT\n* Headers:\n\t+ Authorization: Bearer token\n* Response: Updated appointment information with timer\\_total set to 0\n* Response shape (JSON):\n```json\n{\n    \"id\": \"integer\",\n    \"customer_name\": \"string\",\n    \"customer_phone\": \"string\",\n    \"vehicle_make\": \"string\",\n    \"vehicle_model\": \"string\",\n    \"vehicle_year\": \"integer\",\n    \"vehicle_color\": \"string\",\n    \"notes\": \"string\",\n    \"is_approved\": \"boolean\",\n    \"timer_total\": \"integer\",\n    \"service_id\": \"integer\"\n}\n```\n\n### Update Timer\n\n* Endpoint path: /api/timers/{appointment\\_id}/update/\n* Endpoint method: PUT\n* Headers:\n\t+ Authorization: Bearer token\n* Request shape (JSON):\n```json\n{\n    \"timer_total\": \"integer\"\n}\n```\n* Response: Updated appointment information with timer\\_total set to provided value\n* Response shape (JSON):\n```json\n{\n    \"id\": \"integer\",\n    \"customer_name\": \"string\",\n    \"customer_phone\": \"string\",\n    \"vehicle_make\": \"string\",\n    \"vehicle_model\": \"string\",\n    \"vehicle_year\": \"integer\",\n    \"vehicle_color\": \"string\",\n    \"notes\": \"string\",\n    \"is_approved\": \"boolean\",\n    \"timer_total\": \"integer\",\n    \"service_id\": \"integer\"\n}\n```",
+  "has_answer": false
+}

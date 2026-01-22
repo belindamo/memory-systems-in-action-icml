@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 77,
+  "session_index": 9,
+  "session_id": "sharegpt_5pJe5Ud_0",
+  "turn_in_session": 1,
+  "date": "2023/05/21 (Sun) 20:15",
+  "role": "assistant",
+  "content": "If you're using a Windows operating system, you can use the command prompt to generate a list of all the folders in a directory and save it to a text file.\n\nHere are the steps:\n\n1. Open the command prompt by pressing the Windows key + R and typing in \"cmd\" in the Run dialog box.\n2. Navigate to the folder whose contents you want to list by typing \"cd folder\\_path\" in the command prompt. Replace \"folder\\_path\" with the actual path to the folder.\n3. Type \"dir /ad /b > folder\\_list.txt\" in the command prompt and press Enter. This will generate a list of all the folders in the current directory and save it to a text file called \"folder\\_list.txt\".\n4. Open the text file to view the list of folders.\n\nNote that the \"/ad\" option specifies that only directories (folders) should be listed, and the \"/b\" option specifies that only the names of the folders should be displayed (without any additional information).",
+  "has_answer": false
+}

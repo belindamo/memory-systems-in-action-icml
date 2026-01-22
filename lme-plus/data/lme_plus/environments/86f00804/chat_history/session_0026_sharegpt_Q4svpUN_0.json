@@ -1,0 +1,71 @@
+{
+  "session_id": "sharegpt_Q4svpUN_0",
+  "session_index": 26,
+  "date": "2023/05/27 (Sat) 03:23",
+  "turns": [
+    {
+      "role": "user",
+      "content": "Given a sentence and some evidence, I want to use the evidence to check if the sentence is correct. The evidence is a list consisting of titles and corresponding sentence. However, the evidence may contain noise or irrelevant information. I hope you can summary useful information and filter noisy in the evidence. The answer should be a slit.\n\nSentence: Adrienne Bailon is an accountant.\nEvidence:\n1. Title:'Adrienne\\_Bailon' Sentence: 'Adrienne Eliza Houghton LRB n\u00e9e Bailon ; born October 24 , 1983 RRB is an American singer songwriter , recording artist , actress , dancer and television personality.'\n2. Title:'Adrienne\\_Bailon' Sentence: 'Adrienne Bailon first became publicly known when she rose to fame as one of the founding members and singer of both 3LW LRB 1999 2007 RRB and Disney 's The Cheetah Girls LRB 2003 2008 RRB.'\n3. Title:'Adrienne\\_Bailon' Sentence: 'Bailon co stars alongside television personality , model and actress Julissa Bermudez in their own reality series , Empire Girls : Julissa and Adrienne which airs on the Style Network.'\n4. Title:'Accountant' Sentence: 'The Big Four auditors are the largest employers of accountants worldwide.'\n5. Title:'Adrienne\\_Bailon' Sentence: 'Aside from her work in 3LW and The Cheetah Girls , Bailon went on to develop her own acting career with roles in The Cheetah Girls films , Coach Carter and the MTV film All You 've Got.'\nAnswer:"
+    },
+    {
+      "role": "assistant",
+      "content": "Useful information:\n\n* Evidence 1 mentions Adrienne Bailon as an American singer, songwriter, recording artist, actress, dancer, and television personality.\n* Evidence 2 mentions Adrienne Bailon as a founding member and singer of 3LW and Disney's The Cheetah Girls.\n* Evidence 3 mentions Bailon co-starring with Julissa Bermudez in their own reality series, Empire Girls: Julissa and Adrienne, which airs on the Style Network.\n* No relevant information is found in Evidence 4.\n\nNoisy/irrelevant information:\n\n* Evidence 1 mentions Bailon's full name, birthdate, and various professions.\n* Evidence 2 mentions the years of 3LW and The Cheetah Girls.\n* Evidence 5 mentions Bailon's work in The Cheetah Girls films, Coach Carter, and the MTV film All You've Got, which are not related to accounting.\n\nFiltered evidence:\n\n1. Title:'Adrienne\\_Bailon' Sentence: 'Adrienne Eliza Houghton LRB n\u00e9e Bailon ; born October 24 , 1983 RRB is an American singer songwriter , recording artist , actress , dancer and television personality.'\n2. Title:'Adrienne\\_Bailon' Sentence: 'Adrienne Bailon first became publicly known when she rose to fame as one of the founding members and singer of both 3LW LRB 1999 2007 RRB and Disney 's The Cheetah Girls LRB 2003 2008 RRB.'\n3. Title:'Adrienne\\_Bailon' Sentence: 'Bailon co stars alongside television personality , model and actress Julissa Bermudez in their own reality series , Empire Girls : Julissa and Adrienne which airs on the Style Network.'"
+    },
+    {
+      "role": "user",
+      "content": "You do not need to choose the evidence. You need to summary the useful information and give me a list."
+    },
+    {
+      "role": "assistant",
+      "content": "Sure, here's a list of useful information based on the evidence:\n\n* Adrienne Bailon is an American singer, songwriter, recording artist, actress, dancer, and television personality.\n* She first became publicly known as a founding member and singer of both 3LW and Disney's The Cheetah Girls.\n* She co-stars alongside Julissa Bermudez in their own reality series, Empire Girls: Julissa and Adrienne, which airs on the Style Network."
+    },
+    {
+      "role": "user",
+      "content": "I want you to make good use of the evidence. Not only can you summary the information, but also can do some reasoning with the evidence, edit wrong information in the evidence, filter irrelevant information, etc."
+    },
+    {
+      "role": "assistant",
+      "content": "Sure, based on the evidence provided, I can summarize the useful information and do some reasoning to verify whether the given sentence is correct or not.\n\nUseful information:\n\n* Adrienne Bailon is an American singer, songwriter, recording artist, actress, dancer, and television personality.\n* She first became publicly known as a founding member and singer of both 3LW and Disney's The Cheetah Girls.\n* She co-stars alongside Julissa Bermudez in their own reality series, Empire Girls: Julissa and Adrienne, which airs on the Style Network.\n\nReasoning:\nNone of the provided evidence supports the given sentence that Adrienne Bailon is an accountant. Therefore, based on the evidence, the sentence is not correct and is likely a false statement. It is possible that the given sentence is based on incorrect information or a misunderstanding about Adrienne Bailon's profession.\n\nFiltered evidence:\n\n1. Title:'Adrienne\\_Bailon' Sentence: 'Adrienne Eliza Houghton LRB n\u00e9e Bailon ; born October 24 , 1983 RRB is an American singer songwriter , recording artist , actress , dancer and television personality.'\n2. Title:'Adrienne\\_Bailon' Sentence: 'Adrienne Bailon first became publicly known when she rose to fame as one of the founding members and singer of both 3LW LRB 1999 2007 RRB and Disney 's The Cheetah Girls LRB 2003 2008 RRB.'\n3. Title:'Adrienne\\_Bailon' Sentence: 'Bailon co stars alongside television personality , model and actress Julissa Bermudez in their own reality series , Empire Girls : Julissa and Adrienne which airs on the Style Network.'"
+    },
+    {
+      "role": "user",
+      "content": "You need to do the reasoning, filtering and summarizing simultaneously and give me only a list."
+    },
+    {
+      "role": "assistant",
+      "content": "Sure, here's a list of useful information based on the evidence after reasoning and filtering:\n\n* Adrienne Bailon is an American singer, songwriter, recording artist, actress, dancer, and television personality.\n* She first became publicly known as a founding member and singer of both 3LW and Disney's The Cheetah Girls.\n* She co-stars alongside Julissa Bermudez in their own reality series, Empire Girls: Julissa and Adrienne, which airs on the Style Network.\n\nBased on the evidence, the given sentence that Adrienne Bailon is an accountant is not correct."
+    },
+    {
+      "role": "user",
+      "content": "Now you know what I want. Can you polish my instruction? My instruction has been proposed above. That is \"Given a sentence and some evidence, I want to use the evidence to check if the sentence is correct. The evidence is a list consisting of titles and corresponding sentence. However, the evidence may contain noise or irrelevant information. I hope you can summary useful information and filter noisy in the evidence. The answer should be a lsit.\""
+    },
+    {
+      "role": "assistant",
+      "content": "Sure, here's a revised version of your instruction that incorporates the feedback we discussed:\n\nGiven a sentence and a list of evidence consisting of titles and corresponding sentences, summarize the useful information and filter out irrelevant or noisy information in the evidence. Use reasoning based on the evidence to determine if the given sentence is correct or not. The output should be a list of useful information, and a conclusion about the correctness of the given sentence based on the evidence."
+    },
+    {
+      "role": "user",
+      "content": "Good job!"
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you, happy to help! If you have any more questions or need further assistance, feel free to ask!"
+    },
+    {
+      "role": "user",
+      "content": "I need a small edit in the revised version of the instruction. The conclusion should be one of \"SUPPORTS\", \"REFUTES\" and \"NOT ENOUGH INFORMATION\" because the evidence may not consist enough information to determince whether the sentence is correct. Can you polish my instruction again?"
+    },
+    {
+      "role": "assistant",
+      "content": "Sure, here's the updated version of the instruction:\n\nGiven a sentence and a list of evidence consisting of titles and corresponding sentences, summarize the useful information and filter out irrelevant or noisy information in the evidence. Use reasoning based on the evidence to determine if the given sentence is correct or not. The output should be a list of useful information, and a conclusion that is either \"SUPPORTS\" (if the evidence confirms the sentence), \"REFUTES\" (if the evidence contradicts the sentence), or \"NOT ENOUGH INFORMATION\" (if the evidence does not provide enough information to determine the correctness of the sentence)."
+    },
+    {
+      "role": "user",
+      "content": "The information list should start with relevant title in the original evidence. Can you polish the instruction again?"
+    },
+    {
+      "role": "assistant",
+      "content": "Sure, here's the updated version of the instruction:\n\nGiven a sentence and a list of evidence consisting of titles and corresponding sentences, summarize the useful information and filter out irrelevant or noisy information in the evidence. The useful information list should start with the title that is most relevant to the given sentence. Use reasoning based on the evidence to determine if the given sentence is correct or not. The output should be a list of useful information, and a conclusion that is either \"SUPPORTS\" (if the evidence confirms the sentence), \"REFUTES\" (if the evidence contradicts the sentence), or \"NOT ENOUGH INFORMATION\" (if the evidence does not provide enough information to determine the correctness of the sentence)."
+    }
+  ]
+}

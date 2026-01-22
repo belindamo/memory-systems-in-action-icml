@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 269,
+  "session_index": 30,
+  "session_id": "541ecc45_1",
+  "turn_in_session": 11,
+  "date": "2023/05/27 (Sat) 07:22",
+  "role": "assistant",
+  "content": "Method 1: Google Tag Manager Debug Mode is a great way to test your tag without affecting your live website. It's a powerful tool that allows you to simulate the tag firing and see the results in real-time.\n\nBy enabling Debug Mode, you'll be able to see exactly what's happening when you submit the form, and you can verify that the tag is firing correctly with the correct event category, action, and label.\n\nRemember to check the GTM debug panel for any errors or warnings, and make sure the tag is firing as expected. If you encounter any issues, you can use the debug panel to troubleshoot and fix the problem.\n\nOnce you've verified that the tag is working correctly, you can disable Debug Mode and feel confident that your form submission event is being tracked accurately in Google Analytics.\n\nIf you have any more questions or need further assistance, feel free to ask. Otherwise, go ahead and test your tag in Debug Mode. Good luck, and I hope everything works out smoothly!",
+  "has_answer": false
+}

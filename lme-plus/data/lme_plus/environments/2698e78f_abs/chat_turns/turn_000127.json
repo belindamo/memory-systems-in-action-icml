@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 127,
+  "session_index": 12,
+  "session_id": "sharegpt_dZJOxsS_0",
+  "turn_in_session": 1,
+  "date": "2023/05/22 (Mon) 21:49",
+  "role": "assistant",
+  "content": "Yes, you can change the color of a specific day in Google Sheets by using conditional formatting. Here's how you can do it:\n\n1. Select the cells you want to format.\n2. Go to the \"Format\" menu, then select \"Conditional formatting\".\n3. In the \"Format cells if\" section, choose \"Custom formula is\".\n4. Enter the formula: `=TEXT(A1, \"dddd\") = \"Sunday\"`, where \"A1\" is the cell reference to the first cell in the selected range.\n5. Choose the color you want to apply to Sundays.\n6. Click \"Done\" to apply the formatting.\n\nNow, all Sundays in your selected column should be displayed in the color you selected.",
+  "has_answer": false
+}

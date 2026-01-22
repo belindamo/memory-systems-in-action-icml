@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 26,
+  "session_index": 3,
+  "session_id": "sharegpt_9HuAoqJ_17",
+  "turn_in_session": 0,
+  "date": "2023/03/18 (Sat) 06:36",
+  "role": "assistant",
+  "content": "The KGpip meta-learning approach is a technique for enhancing the search strategy of existing AutoML systems. It uses large databases of machine learning (ML) pipelines associated with datasets to learn from a large scale database and achieve a high degree of coverage and diversity. The approach uses static program analysis instead of executing the actual pipeline scripts or preparing the actual raw data. The KGpip meta-learning component captures metadata and semantics in a flexible graph format and relies on graph generator models as the database of pipelines.\n\nKGpip mines these large databases of datasets and pipelines using static analysis and filters them into ML pipelines customized for the learner selection problem. The meta-learning approach produces MetaPip, a highly interconnected graph of seen datasets and pipelines",
+  "has_answer": false
+}

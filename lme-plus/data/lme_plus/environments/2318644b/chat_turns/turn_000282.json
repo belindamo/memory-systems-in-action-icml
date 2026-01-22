@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 282,
+  "session_index": 26,
+  "session_id": "sharegpt_iwcVyKX_0",
+  "turn_in_session": 3,
+  "date": "2023/05/28 (Sun) 16:19",
+  "role": "assistant",
+  "content": "Sure, to query more information about the top pools, you can add more fields to the GraphQL query for each pool. Here's an example of a query that retrieves additional information about the top 10 pools sorted by TVL:\n```typescript\n{\n  pools(first: 10, orderBy: totalValueLockedUSD, orderDirection: desc) {\n    id\n    token0 {\n      symbol\n      name\n      decimals\n      totalSupply\n    }\n    token1 {\n      symbol\n      name\n      decimals\n      totalSupply\n    }\n    feeTier\n    tick\n    liquidity\n    sqrtPrice\n    feeGrowthGlobal0X128\n    feeGrowthGlobal1X128\n    totalValueLockedUSD\n    volumeUSD\n  }\n}\n```\nIn this query, we have added more fields to retrieve more detailed information about each pool. For example, we are retrieving the `name`, `decimals`, and `totalSupply` of both tokens in the pool. We are also retrieving the `feeTier`, `tick`, `liquidity`, `sqrtPrice`, `feeGrowthGlobal0X128`, and `feeGrowthGlobal1X128` values of each pool, which can be useful for analyzing the liquidity and trading behavior of each pool. Finally, we are still retrieving the `totalValueLockedUSD` and `volumeUSD` fields to sort the pools by TVL and 24Hr volume.\n\nYou can customize this query to retrieve any additional information that you need by adding or removing fields as necessary.",
+  "has_answer": false
+}

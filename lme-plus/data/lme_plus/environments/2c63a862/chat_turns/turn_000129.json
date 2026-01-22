@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 129,
+  "session_index": 13,
+  "session_id": "0dde26d4_3",
+  "turn_in_session": 11,
+  "date": "2022/03/02 (Wed) 02:12",
+  "role": "assistant",
+  "content": "IFTTT (If This Then That) is an excellent tool for automating various tasks, and setting up an applet to turn off your smart lights when you leave the house is a great idea!\n\nYes, IFTTT does support geolocation-based triggers, which can help you achieve this automation. However, there's a catch: IFTTT no longer supports native geolocation triggers due to changes in iOS and Android policies.\n\nIn the past, IFTTT used to have a \"Location\" channel that allowed you to use your device's location as a trigger. However, with the changes in iOS and Android, IFTTT had to remove this feature to comply with the new policies.\n\nBut don't worry, there's a workaround!\n\nYou can use IFTTT's \"Location Mode\" feature, which is part of the IFTTT app. Location Mode allows you to create a virtual geofence around a location, and IFTTT can detect when you enter or leave that location. Here's how to set it up:\n\n1. Open the IFTTT app and go to the \"Location\" section.\n2. Tap on \"Location Mode\" and create a new location.\n3. Set up the location by defining the address, radius, and trigger type (e.g., \"Leave\" or \"Exit\").\n4. Connect your smart lighting system to IFTTT.\n5. Create a new applet and choose the \"Location\" trigger.\n6. Select the Location Mode you created and set up the trigger to turn off your smart lights when you leave the location.\n\nAlternatively, you can use other location-based services like Google Maps or Foursquare to trigger your IFTTT applet. You can connect these services to IFTTT and use their location-based features to trigger your applet.\n\nKeep in mind that while IFTTT's Location Mode is a great workaround, it might not be as accurate as the native geolocation trigger. You might need to adjust the location settings or trigger types to get the desired results.\n\nI hope this helps you set up your IFTTT applet to turn off your smart lights when you leave the house!",
+  "has_answer": false
+}

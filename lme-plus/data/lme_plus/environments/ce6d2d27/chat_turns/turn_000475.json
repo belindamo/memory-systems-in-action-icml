@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 475,
+  "session_index": 46,
+  "session_id": "sharegpt_g3zTLfd_19",
+  "turn_in_session": 0,
+  "date": "2023/07/13 (Thu) 10:05",
+  "role": "assistant",
+  "content": "I see. In that case, let's update the `FigureCanvasTkAgg`'s `figure` property with the newly generated plot each time the `update_graph` function is called. Here's the updated `update_graph` function that does this:\n```python\ndef update_graph(*args, fig=fig):\n    fig.clf()\n    graph_type = graph_type_var.get()\n    if graph_type == \"pairplot\":\n        pair_grid = sns.pairplot(df, hue='Dataset', kind='reg')\n        canvas_widget.figure = pair_grid.fig\n    elif graph_type == \"histogram\":\n        ax = fig.add_subplot(111)\n        sns.histplot(data=df, x=\"Age\", hue=\"Dataset\", kde=True, ax=ax)\n        canvas_widget.figure = fig\n    elif graph_type == \"boxplot\":\n        ax = fig.add_subplot(111)\n        sns.boxplot(data=df, x=\"Dataset\", y=\"Total_Bilirubin\", ax=ax)\n        canvas_widget.figure = fig\n    canvas_widget.draw_idle()\n```\nNotice how we create a new `ax` object when generating a histogram or a boxplot and add it to the `fig`. Then, we set the `figure` property of the `FigureCanvasTkAgg` to the `fig` object for all three cases. Finally, we call the `draw_idle` method of the `FigureCanvasTkAgg` object to update the plot.\n\nLet me know if this works for you.",
+  "has_answer": false
+}

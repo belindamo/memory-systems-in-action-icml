@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 518,
+  "session_index": 46,
+  "session_id": "sharegpt_egWGFLO_29",
+  "turn_in_session": 10,
+  "date": "2023/06/16 (Fri) 17:35",
+  "role": "assistant",
+  "content": "The Twenty Fifteen theme introduced several changes to the header structure compared to Twenty Fourteen. Here's a detailed explanation of the differences and the reasons behind these changes:\n\n1. Side navigation and sidebar: The most significant change in Twenty Fifteen is the introduction of side navigation and the sidebar. The header, main navigation, and widget area have been moved to a vertical layout on the left side of the page. This new layout is designed to provide better readability and focus on the content, as well as a more distinct and visually appealing design.\n```html\n<div id=\"sidebar\" class=\"sidebar\" style=\"position: relative;\">\n  ...\n</div><!-- .sidebar -->\n```\n1. Site title: In Twenty Fifteen, the site title has been changed from an `<h1>` element to a `<p>` element with the class `.site-title`. This change is to avoid having multiple `<h1>` elements on a single page, which can be confusing for screen readers and not ideal for SEO purposes.\n```html\n<p class=\"site-title\"><a href=\"...\" rel=\"home\">...</a></p>\n```\n1. Secondary toggle button: Twenty Fifteen introduces a new button with the class `.secondary-toggle`. This button is used to toggle the visibility of the widget area and navigation menu on smaller screens, providing a responsive and mobile-friendly design.\n```html\n<button class=\"secondary-toggle\">Menus and\n```",
+  "has_answer": false
+}

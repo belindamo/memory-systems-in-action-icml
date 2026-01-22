@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 292,
+  "session_index": 25,
+  "session_id": "sharegpt_sE8hWwU_17",
+  "turn_in_session": 4,
+  "date": "2023/05/27 (Sat) 14:20",
+  "role": "assistant",
+  "content": "Yes, the two formulas can be combined into a single formula, like this:\n```scss\n=TEXT((((B3-(5/24))-DATE(1899,12,30))*86400)/86400+DATE(1899,12,30),\"MM/DD/YYYY hh:mm:ss AM/PM\")\n```\nThis formula will take the date string in cell B3, convert it to epoch time in GMT-5, and then convert it back to a date string in the format `MM/DD/YYYY hh:mm:ss AM/PM`. Simply copy and paste this formula into a new cell, and the result should be:\n```\n01/17/2023 12:26:31 PM\n```",
+  "has_answer": false
+}

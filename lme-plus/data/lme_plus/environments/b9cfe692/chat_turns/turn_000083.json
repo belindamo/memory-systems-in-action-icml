@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 83,
+  "session_index": 8,
+  "session_id": "sharegpt_ZftWuNK_62",
+  "turn_in_session": 9,
+  "date": "2023/05/24 (Wed) 08:26",
+  "role": "assistant",
+  "content": "The number of cookies that a server can send per response is determined by the browser.\n\nEach browser has its own limits on the number of cookies that can be stored per domain and the total size of cookies that can be stored. For example, as per the specification, the maximum number of cookies that can be stored per domain for Google Chrome is 180 cookies, for Firefox is 150, and for Internet Explorer, it's around 50-60.\n\nIt's worth noting that these limits can change depending on the browser version and the client's device. Additionally, if the number of cookies or the total size of the cookies exceeds the browser's limit, the browser will start to delete the oldest cookies to make room for the new cookies.\n\nIn summary, the number of cookies that a server can send per response is determined by the browser. Each browser has its own limits on the number of cookies that can be stored per domain and the total size of cookies that can be stored. These limits can change depending on the browser version and the client's device.",
+  "has_answer": false
+}

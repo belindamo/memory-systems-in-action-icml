@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 266,
+  "session_index": 29,
+  "session_id": "sharegpt_iwYf36y_5",
+  "turn_in_session": 4,
+  "date": "2023/05/26 (Fri) 09:49",
+  "role": "assistant",
+  "content": "Certainly! Here's the updated `renew-cert.sh` script that includes the CRON scheduling:\n```bash\n#!/bin/bash\n\n# Load credentials\neval \"$(yq e '.credentials[] | \"export CREDENTIAL_\\(.email | ascii_upcase)=\\(.api_key) # \\(.domains)\"' credential.yml)\"\n\n# Renew certificates for each set of credentials\nfor EMAIL in $(yq e '.credentials[].email' credential.yml); do\n  DOMAINS=$(yq e \".credentials[] | select(.email == \\\"$EMAIL\\\") | .domains | join(\\\",\\\")\" credential.yml)\n  GOOGLE_APPLICATION_CREDENTIALS=$key certbot certonly --dns-google --dns-google-propagation-seconds 30 --dns-google-credentials $key -m $EMAIL -d $DOMAINS --agree-tos -n\ndone\n\n# Reload Nginx to use new certificates\ndocker-compose exec nginx nginx -s reload\n\n# Schedule the renewal to run at 3:15 am every day\n(crontab -l 2>/dev/null; echo \"15 3 * * * /path/to/renew-cert.sh >> /var/log/certbot-renew.log 2>&1\") | crontab -\n\nEOF\n```\nIn this updated script, the `crontab -l` command is used to list the current user's crontab entries, and the `echo` command is used to append the new CRON job entry to the existing list of entries. The resulting list is then piped to the `crontab -` command, which installs the new list of entries.\n\nMake sure to replace `/path/to/renew-cert.sh` with the actual path to the script on your server, and ensure that the script is executable by running `chmod +x /path/to/renew-cert.sh`.",
+  "has_answer": false
+}

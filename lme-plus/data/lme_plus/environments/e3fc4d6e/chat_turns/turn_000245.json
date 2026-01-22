@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 245,
+  "session_index": 24,
+  "session_id": "sharegpt_h3YKuXq_0",
+  "turn_in_session": 3,
+  "date": "2023/05/25 (Thu) 19:03",
+  "role": "assistant",
+  "content": "API Documentation: Market Data Endpoint\n\nEndpoint: GET /general/market\\_data\n\nDescription:\nThis endpoint returns market data for supported cryptocurrencies, including a list of networks that can be used for each coin.\n\nRequest Parameters: None\n\nExample Request:\n```bash\nGET /general/market_data\n```\nExample Response:\n```css\nHTTP/1.1 200 OK\n[  {    \"name\": \"Bitcoin\",    \"coin\": \"BTC\",    \"_24hrs\": \"1.046\",    \"network\": [      {        \"id\": 4060,        \"coin\": \"BTC\",        \"network\": \"BNB\",        \"name\": \"Binance Chain (BEP2)\"      },      {        \"id\": 157,        \"coin\": \"BTC\",        \"network\": \"BCH\",        \"name\": \"Bitcoin Cash\"      },      {        \"id\": 175,        \"coin\": \"BTC\",        \"network\": \"BSV\",        \"name\": \"Bitcoin SV\"      },      ...    ]\n  },\n  ...\n]\n```\nResponse Fields:\n\n* name: The name of the cryptocurrency.\n* coin: The symbol or code of the cryptocurrency.\n* \\_24hrs: The percentage change in price over the last 24 hours.\n* network: An array of networks that can be used with the cryptocurrency. Each network object contains the following fields:\n\t+ id: The unique identifier of the network.\n\t+ coin: The symbol or code of the cryptocurrency.\n\t+ network: The symbol or code of the network.\n\t+ name: The name of the network.\n\nError Responses:\n\n* HTTP/1.1 500 Internal Server Error: An error occurred on the server while processing the request.",
+  "has_answer": false
+}

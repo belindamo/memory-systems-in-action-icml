@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 127,
+  "session_index": 11,
+  "session_id": "sharegpt_HatyEzg_0",
+  "turn_in_session": 9,
+  "date": "2023/05/22 (Mon) 11:57",
+  "role": "assistant",
+  "content": "Gimbal lock is a phenomenon that occurs in certain representations of orientation, such as Euler angles, when two or more rotational degrees of freedom become aligned and effectively \"lock\" the orientation representation into a singularity.\n\nEuler angle representation is prone to gimbal lock, meaning that two or more rotational axes become aligned and the orientation becomes ambiguous. This can occur when one of the Euler angles approaches 90 degrees, causing the rotational axes to become aligned.\n\nTherefore, Euler angle representation of orientation is susceptible to gimbal lock. Other representations, such as quaternions, Rodrigues' rotation formula, or rotation matrices, are not prone to gimbal lock.",
+  "has_answer": false
+}

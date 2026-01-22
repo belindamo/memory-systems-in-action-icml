@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 342,
+  "session_index": 32,
+  "session_id": "sharegpt_bph7DTk_7",
+  "turn_in_session": 0,
+  "date": "2023/05/25 (Thu) 08:55",
+  "role": "assistant",
+  "content": "Yes, you are correct. The bonus retries resource should include a reference to the game or games that the bonus retries were used in. This allows you to track which games were played using bonus retries and which were played using regular credits.\n\nHere is an updated snippet for the bonus retries resource that includes a reference to the game:\n```javascript\n{\n  \"fields\": {\n    \"player_id\": {\"type\": \"number\", \"required\": true},\n    \"num_retries\": {\"type\": \"number\", \"default\": 0},\n    \"earned_by_referral\": {\"type\": \"number\", \"default\": 0},\n    \"earned_by_purchase\": {\"type\": \"number\", \"default\": 0},\n    \"used_in_game\": {\"type\": \"boolean\", \"default\": false},\n    \"used_date\": {\"type\": \"datetime\"},\n    \"game_id\": {\"type\": \"number\", \"reference\": \"games.id\"}\n  }\n}\n```\nThis new field, `game_id`, is a reference to the game resource and allows you to associate the bonus retries with a specific game. When a player uses bonus retries to play a game, you can update the `used_in_game` field to `true` and set the `game_id` to the ID of the game that was played using the bonus retries. This way, you can keep track of which games were played using bonus retries and which were played using regular credits.",
+  "has_answer": false
+}

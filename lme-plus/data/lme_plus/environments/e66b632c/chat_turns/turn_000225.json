@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 225,
+  "session_index": 21,
+  "session_id": "sharegpt_9N7Sr9p_1",
+  "turn_in_session": 6,
+  "date": "2023/05/11 (Thu) 13:33",
+  "role": "assistant",
+  "content": "To set up your WS-C3560X-48T-L switch to work with your Asus RT-AC88U router, you will need to perform the following steps:\n\n1. Create two additional VLANs:\n```\nconfigure terminal\nvlan 2\nname VLAN2\nexit\nvlan 3\nname VLAN3\nexit\n```\n1. Assign ports 25 through 36 to VLAN2, and ports 37 through 48 to VLAN3:\n```\ninterface range GigabitEthernet0/25 - 36\nswitchport mode access\nswitchport access vlan 2\nexit\ninterface range GigabitEthernet0/37 - 48\nswitchport mode access\nswitchport access vlan 3\nexit\n```\n1. Enable inter-VLAN routing:\n```\ninterface Vlan1\nno ip address\nexit\ninterface GigabitEthernet0/1\nno ip address\nno shutdown\nexit\ninterface Vlan2\nip address 192.168.2.1 255.255.255.0\nno shutdown\nexit\ninterface Vlan3\nip address 192.168.3.1 255.255.255.0\nno shutdown\nexit\n```\n1. Configure the switch to use the Asus router as its default gateway:\n```\nip default-gateway 192.168.1.1\n```\n1. Configure the switch to act as a DHCP server for VLAN2 and VLAN3:\n```\nip dhcp pool VLAN2\nnetwork 192.168.2.0 255.255.255.0\ndefault-router 192.168.2.1\ndns-server 8.8.8.8\nexit\nip dhcp pool VLAN3\nnetwork 192.168.3.0 255.255.255.0\ndefault-router 192.168.3.1\ndns-server 8.8.8.8\nexit\n```\n1. Configure the switch to use the Asus router's DHCP server for VLAN1:\n```\ninterface Vlan1\nip address dhcp\nno shutdown\nexit\n```\nTo save the configuration changes and apply them, use the \"copy running-config startup-config\" command. This will save the current configuration to the switch's non-volatile memory, and the changes will be applied when the switch is reloaded. You can reload the switch by using the \"reload\" command.\n```\ncopy running-config startup-config\nreload\n```\nNote: You will need to run the \"configure terminal\" command at the beginning of each configuration block to enter global configuration mode.",
+  "has_answer": false
+}

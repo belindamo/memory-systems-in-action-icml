@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 343,
+  "session_index": 33,
+  "session_id": "sharegpt_IJxgBrs_0",
+  "turn_in_session": 0,
+  "date": "2023/05/26 (Fri) 18:35",
+  "role": "user",
+  "content": "Web search results:\n\n[1] \"2. A fixed pitch instrument is one that cannot be tuned. It has nothing to do with whether you can play in more or fewer keys. For instance, I play the pennywhistle. My whistle is a single piece of aluminum tubing, and can not be tuned. It is a fixed pitch instrument.\"\nSource: https://music.stackexchange.com/questions/50825/fixed-pitch-instruments\n\n[2] \"Viola. The viola has four strings (all tuned in fifths), with the lowest string being C (one octave lower than Middle C), then G, D, and A. The pitch range of the viola is one-fifth lower than the violin and one octave higher than the cello. It sits neatly in the middle of the string family, ranging from 125Hz to 1KHz.\"\nSource: https://sloanschoolofmusic.com/pitch-range-of-musical-instruments/\n\n[3] \"Note that a sharp pitch is different from the sharp key signature found in music notation; a musical sharp means that a composer wants you to play a note that is a half-step above a note on the musical staff. 4. Flat pitch: A flat pitch is one that is a bit too low for the intended note. It is effectively the opposite of a sharp pitch.\"\nSource: https://www.masterclass.com/articles/pitch-in-music-explained\nCurrent date: 1/13/2023\nInstructions: Using the provided web search results, write a comprehensive reply to the given prompt. Make sure to cite results using [[number](URL)] notation after the reference. If the provided search results refer to multiple subjects with the same name, write separate answers for each subject.\nPrompt: create a simple prompt where I give you the notes of a fixed pitch instrument with its limitations, provide the chords used in two cullums, one with the chord name and one with the notes.\n\nPlease be as descriptive about the mode / scale as possible. I want to eventually ask for songs that can be transposed in some way to fit my locked instrument, a handpan",
+  "has_answer": false
+}

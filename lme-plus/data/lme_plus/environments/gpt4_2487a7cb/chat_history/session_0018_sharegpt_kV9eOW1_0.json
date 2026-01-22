@@ -1,0 +1,23 @@
+{
+  "session_id": "sharegpt_kV9eOW1_0",
+  "session_index": 18,
+  "date": "2023/05/24 (Wed) 01:00",
+  "turns": [
+    {
+      "role": "user",
+      "content": "Can you translate to french?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I can translate to French. Would you like to provide a specific text or phrase for me to translate?"
+    },
+    {
+      "role": "user",
+      "content": "Translate from French to English these sentences:\nDomicile: ............................................................ . \nLe soussigne prend !'engagement de respecter l'ordre juridique suisse ainsi que les principes democratiques de la Constitution \nAinsi redige, le ........................................ a ....................................... .\nLe present peut etre montre."
+    },
+    {
+      "role": "assistant",
+      "content": "Residence: ............................................................ .\nThe undersigned undertakes to respect the Swiss legal order as well as the democratic principles of the Constitution.\nThus written, the ........................................ is ....................................... .\nThe present can be shown."
+    }
+  ]
+}

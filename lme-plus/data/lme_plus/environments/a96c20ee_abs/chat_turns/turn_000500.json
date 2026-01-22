@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 500,
+  "session_index": 49,
+  "session_id": "sharegpt_WfPrQcG_0",
+  "turn_in_session": 5,
+  "date": "2023/05/29 (Mon) 16:39",
+  "role": "assistant",
+  "content": "TensorTrade includes a `live` module within the `exchanges` package that provides a convenient way to connect to live exchanges and execute trades using the TensorTrade framework.\n\nTo use the `live` module, you will need to install TensorTrade and set up an account with a supported exchange. Currently, the `live` module supports the following exchanges:\n\n* Bitfinex\n* Binance\n* Coinbase\n* Interactive Brokers (using the IB\\_insync library)\n* Kraken\n* Oanda\n\nHere is an example of how you might use the `live` module to connect to an exchange and execute trades using TensorTrade:\n```\n# Import the necessary classes and functions\nfrom tensortrade.exchanges import Exchange, Instrument, Order, Trade\nfrom tensortrade.exchanges.live import Bitfinex\n\n# Set up your exchange account credentials\nexchange = Exchange(\n    backend=Bitfinex,\n    account_id=\"my_account_id\",\n    api_key=\"my_api_key\",\n    api_secret=\"my_api_secret\"\n)\n\n# Connect to the exchange\nexchange.connect()\n\n# Define the instrument you want to trade\ninstrument = Instrument(\"BTC/USD\")\n\n# Create an order to buy 1 BTC\norder = Order(instrument, 1, Order.Type.LIMIT, Order.Side.BUY, price=10000.00)\n\n# Submit the order to the exchange\ntrade = exchange.execute(order)\n\n# Print the details of the trade\nprint(trade)\n\n# Disconnect from the exchange\nexchange.disconnect()\n```\nThis example shows how to connect to the Bitfinex exchange, create an order to buy 1 BTC at a price of $10,000.00, and execute the trade. The `Trade` object returned by the `execute` method contains information about the trade, such as the execution price and the timestamp of the trade.\n\nI hope this helps to give you an idea of how to use the `live` module with TensorTrade. Let me know if you have any questions or need further assistance.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 268,
+  "session_index": 26,
+  "session_id": "sharegpt_x5iwfyV_295",
+  "turn_in_session": 4,
+  "date": "2023/05/25 (Thu) 16:59",
+  "role": "assistant",
+  "content": "Here's an instance method `is_better_than` added to the `Team` class, and the updated `is_upset` function that uses the new method:\n```python\nclass Team:\n    # ... (previous code)\n\n    def is_better_than(self, other_team):\n        return self.ken_pom_score > other_team.ken_pom_score\n\nclass Tournament:\n    # ... (previous code)\n\n    def is_upset(self, a: Team, b: Team):\n        seed_a, seed_b = a.team_seed, b.team_seed\n        historical_upset_rate = self.historical_upset_rate(seed_a, seed_b)\n\n        a_is_better = a.is_better_than(b)\n        better_team = a if a_is_better else b\n        worse_team = b if a_is_better else a\n\n        statistical = self.calculate_win_probability(worse_team, better_team)\n\n        # Noise is added by using historical upset rates rather than team specific KenPom scores\n        probability = (1 - self.noise) * statistical + self.noise * historical_upset_rate\n\n        # If a random number is less than the probability of an upset, return True\n        if np.random.rand() < probability:\n            return True\n        # Otherwise, return False\n        else:\n            return False\n```\nNow, the `is_upset` function uses the `is_better_than` method to compare the KenPom scores of the two teams, which simplifies the code and makes it more readable.",
+  "has_answer": false
+}

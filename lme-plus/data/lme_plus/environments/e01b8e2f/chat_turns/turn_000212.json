@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 212,
+  "session_index": 21,
+  "session_id": "sharegpt_gfI0Mjd_0",
+  "turn_in_session": 3,
+  "date": "2023/05/24 (Wed) 02:33",
+  "role": "assistant",
+  "content": "To search for two criteria using the SUMIF function, you can use the SUMIFS function, which allows you to specify multiple criteria to search for in different ranges.\n\nHere's the syntax for the SUMIFS function:\n```\n=SUMIFS(sum_range, range1, criteria1, [range2], [criteria2], ...)\n```\n* `sum_range`: This is the range of cells that you want to sum.\n* `range1`: This is the first range of cells that you want to search.\n* `criteria1`: This is the value that you want to search for in the first range.\n* `[range2]`: This is the second range of cells that you want to search.\n* `[criteria2]`: This is the value that you want to search for in the second range.\n\nYou can specify as many range/criteria pairs as you like. The function will return the sum of all cells in the sum range that match all of the specified criteria.\n\nFor example, let's say that you have a table with the following data:\n\n|  | A | B | C | D |\n| --- | --- | --- | --- | --- |\n| 1 | Date | Category | Sales | Cost |\n| 2 | 1/1/2022 | Apples | 100 | 50 |\n| 3 | 1/2/2022 | Apples | 200 | 100 |\n| 4 | 1/3/2022 | Oranges | 300 | 150 |\n| 5 | 1/4/2022 | Oranges | 400 | 200 |\n| 6 | 1/5/2022 | Apples | 500 | 250 |\n\nTo search for the sales of apples on a specific date and return the sum, you could use the following formula:\n```\n=SUMIFS(C2:C6, A2:A6, \"1/2/2022\", B2:B6, \"Apples\")\n```\nThis formula would search the range A2:A6 for the value \"1/2/2022\", and the range B2:B6 for the value \"Apples\". It would then return the sum of the cells in the range C2:C6 that correspond to the matching cells in A2:A6 and B2:B6. In this case, the formula would return 200.\n\nI hope this helps! Let me know if you have any questions or if you'd like more information.",
+  "has_answer": false
+}

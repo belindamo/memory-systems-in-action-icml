@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 349,
+  "session_index": 32,
+  "session_id": "sharegpt_WbCGgx9_0",
+  "turn_in_session": 7,
+  "date": "2023/05/28 (Sun) 10:00",
+  "role": "assistant",
+  "content": "To add a capability for U.S. tax reporting to a Stripe Account, you can use the `capabilities.create` API call and set the `capability` parameter to `tax_reporting_us_1099_k`. This will allow the account to have the capability for U.S. tax reporting.\n\nHere is an example of how to add a capability for U.S. tax reporting to a Stripe account using the Stripe Go library:\n```\npackage main\n\nimport (\n\t\"fmt\"\n\t\"os\"\n\n\t\"github.com/stripe/stripe-go\"\n\t\"github.com/stripe/stripe-go/capability\"\n)\n\nfunc main() {\n\tstripe.Key = os.Getenv(\"STRIPE_SECRET_KEY\")\n\taccountId := \"acct_123\"\n\n\tparams := &stripe.CapabilityParams{\n\t\tAccount: stripe.String(accountId),\n\t\tCapability: stripe.String(\"tax_reporting_us_1099_k\"),\n\t}\n\n\tcapability, err := capability.New(params)\n\tif err != nil {\n\t\tfmt.Println(\"Error adding capability:\", err)\n\t\treturn\n\t}\n\n\tfmt.Println(\"Capability ID:\", capability.ID)\n}\n```\nNote that you will need to set `stripe.Key` to your Stripe Secret Key and replace `acct_123` with the actual account ID for which you want to add the capability.\n\nYou can find more information on the available capabilities and how to use them in the Stripe API documentation: <https://stripe.com/docs/api/go#create_capability>\n\nAlso, note that adding this capability to an account does not automatically enable the tax reporting feature, it just gives the account the capability to do so. To enable tax reporting, you should check the Stripe documentation on how to enable the feature, as it can vary depending on the country and region.",
+  "has_answer": false
+}

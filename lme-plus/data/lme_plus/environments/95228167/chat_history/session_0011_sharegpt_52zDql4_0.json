@@ -1,0 +1,15 @@
+{
+  "session_id": "sharegpt_52zDql4_0",
+  "session_index": 11,
+  "date": "2023/05/22 (Mon) 04:18",
+  "turns": [
+    {
+      "role": "user",
+      "content": "Could you generate translates for template:\n\"from :min to :max\"\n\nfor this langs:\nes\nfr\npl\nru\ntr\nua"
+    },
+    {
+      "role": "assistant",
+      "content": "Sure, here are the translations for the template \"from :min to :max\" in the requested languages:\n\nes: desde :min hasta :max\nfr: de :min \u00e0 :max\npl: od :min do :max\nru: \u043e\u0442 :min \u0434\u043e :max\ntr: :min ile :max aras\u0131nda\nua: \u0432\u0456\u0434 :min \u0434\u043e :max"
+    }
+  ]
+}

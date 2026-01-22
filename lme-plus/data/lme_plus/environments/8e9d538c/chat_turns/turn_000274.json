@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 274,
+  "session_index": 26,
+  "session_id": "sharegpt_MoCDhww_0",
+  "turn_in_session": 0,
+  "date": "2023/05/26 (Fri) 01:14",
+  "role": "user",
+  "content": "I'd like you to help me develop a simple browser based game using python and flask and the javascript library d3.\n\nThe game involves controlling a swarm of von Neumann probes that try to colonize a galaxy, which is visualized as a large array of white dots on a black screen. Each von neumann probe is a small green square.\n\nEach probe has options on what it can do: explore, reproduce, collect resources, or upgrade. Users use three slider bars to determine how much of their von neumann probes to allocate into each activity. \n\nPlease write out the software to produce this game.",
+  "has_answer": false
+}

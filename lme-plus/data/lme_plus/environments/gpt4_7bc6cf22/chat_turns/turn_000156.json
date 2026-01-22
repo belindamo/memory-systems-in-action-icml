@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 156,
+  "session_index": 14,
+  "session_id": "sharegpt_Pwr1WrI_29",
+  "turn_in_session": 2,
+  "date": "2023/03/20 (Mon) 04:59",
+  "role": "assistant",
+  "content": "(%DURATIONH%\\*360000) - (%DURATIONM%\\*6000)) / 100\nset /A DURATIONHS=(%DURATION% - (%DURATIONH%\\*360000) - (%DURATIONM%\\*6000) - (%DURATIONS%\\*100))\n\nif %DURATIONH% LSS 10 set DURATIONH=0%DURATIONH%\nif %DURATIONM% LSS 10 set DURATIONM=0%DURATIONM%\nif %DURATIONS% LSS 10 set DURATIONS=0%DURATIONS%\nif %DURATIONHS% LSS 10 set DURATIONHS=0%DURATIONHS%\n\n@echo Service generate in %try% try and %DURATIONM%:%DURATIONS%,%DURATIONHS%\n@echo Service generate in %try% try and %DURATIONM%:%DURATIONS%,%DURATIONHS% >> stat.txt\necho.\npause\n@exit\necho on\n\n@rem Handle errors\n:error\necho.\necho ==========================================================================\n@echo An error occured in GenerateService.bat : %errorLevel%\n@echo Retrying\necho ==========================================================================\necho.\n@goto :run\n\necho off\n```vbnet\n\nCette version du script est optimis\u00e9e pour am\u00e9liorer la lisibilit\u00e9 et simplifier certaines op\u00e9rations. Les principales modifications incluent l'\u00e9limination des espaces inutiles et la simplification de certaines op\u00e9rations arithm\u00e9tiques.\n```",
+  "has_answer": false
+}

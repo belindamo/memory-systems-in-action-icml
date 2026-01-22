@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 296,
+  "session_index": 26,
+  "session_id": "sharegpt_gfhUw40_17",
+  "turn_in_session": 5,
+  "date": "2023/04/11 (Tue) 17:33",
+  "role": "user",
+  "content": "Great. Now coming back to this one:\n\nSELECT COUNT(DISTINCT user\\_id) AS payers\\_last\\_7\\_days,\n (SELECT COALESCE(COUNT(DISTINCT user\\_id), 0)\n FROM allpayments\n WHERE state = 'paid' AND created\\_at BETWEEN current\\_date - interval '14 days' AND current\\_date - interval '7 days') AS payers\\_previous\\_period,\n (100 - (SELECT COALESCE(COUNT(DISTINCT user\\_id), 0)::float\n FROM allpayments\n WHERE state = 'paid' AND created\\_at BETWEEN current\\_date - interval '14 days' AND current\\_date - interval '7 days') / COUNT(DISTINCT user\\_id)::float \\* 100) AS growth\\_percentage\nFROM allpayments\nWHERE state = 'paid' AND created\\_at >= current\\_date - interval '7 days'\nI want to have now a YTD query, which means that I need one column that shows me the payers of the current year up until today, then another column that shows the YTD of last year, and then a third column showing me the growth",
+  "has_answer": false
+}

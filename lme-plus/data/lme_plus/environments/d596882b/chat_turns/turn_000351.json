@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 351,
+  "session_index": 32,
+  "session_id": "sharegpt_WbCGgx9_0",
+  "turn_in_session": 9,
+  "date": "2023/05/28 (Sun) 10:00",
+  "role": "assistant",
+  "content": "The difference between Stripe's tax reporting US 1099-K and 1099-MISC is that they are two different forms that the IRS (Internal Revenue Service) requires to report different types of income.\n\n* The 1099-K form is used to report payment card and third-party network transactions. It is used to report transactions processed through payment card networks such as Visa, Mastercard, and American Express, as well as transactions processed through third-party networks such as PayPal. The form is used to report gross payment card and third-party network transactions to the IRS, and it is typically required for businesses that have processed more than $20,000 in gross payments and have more than 200 transactions in a calendar year.\n* The 1099-MISC form is used to report miscellaneous income, such as rent, prizes, and awards, and it is typically required for businesses that have paid out more than $600 to a non-employee in a calendar year.\n\nBoth forms are used by the IRS to track income and ensure that it is reported and taxed properly. The 1099-K form is specifically used to track income from payment card and third-party network transactions, while the 1099-MISC form is used to track miscellaneous income.\n\nWhen using Stripe, businesses that use Stripe Connect to process payments will be able to generate 1099-K forms for their connected accounts, and businesses that use Stripe to pay out to vendors or independent contractors will be able to generate 1099-MISC forms.",
+  "has_answer": false
+}

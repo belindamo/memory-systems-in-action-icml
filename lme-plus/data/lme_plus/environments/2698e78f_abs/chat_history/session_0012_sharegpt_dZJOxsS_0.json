@@ -1,0 +1,31 @@
+{
+  "session_id": "sharegpt_dZJOxsS_0",
+  "session_index": 12,
+  "date": "2023/05/22 (Mon) 21:49",
+  "turns": [
+    {
+      "role": "user",
+      "content": "Can i make every sunday an identical color in a dated collumn in google sheets?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, you can change the color of a specific day in Google Sheets by using conditional formatting. Here's how you can do it:\n\n1. Select the cells you want to format.\n2. Go to the \"Format\" menu, then select \"Conditional formatting\".\n3. In the \"Format cells if\" section, choose \"Custom formula is\".\n4. Enter the formula: `=TEXT(A1, \"dddd\") = \"Sunday\"`, where \"A1\" is the cell reference to the first cell in the selected range.\n5. Choose the color you want to apply to Sundays.\n6. Click \"Done\" to apply the formatting.\n\nNow, all Sundays in your selected column should be displayed in the color you selected."
+    },
+    {
+      "role": "user",
+      "content": "what if the cells dont have the name of the day, just the date?"
+    },
+    {
+      "role": "assistant",
+      "content": "If the cells only contain the date and not the day name, you can still use conditional formatting with a custom formula to change the color of Sundays. Here's how:\n\n1. Select the cells you want to format.\n2. Go to the \"Format\" menu, then select \"Conditional formatting\".\n3. In the \"Format cells if\" section, choose \"Custom formula is\".\n4. Enter the formula: `=WEEKDAY(A1) = 1`, where \"A1\" is the cell reference to the first cell in the selected range.\n5. Choose the color you want to apply to Sundays.\n6. Click \"Done\" to apply the formatting.\n\nThe formula `=WEEKDAY(A1) = 1` returns \"TRUE\" if the date in cell A1 corresponds to a Sunday, and \"FALSE\" otherwise. By applying this formula to a range of cells, you can format all Sundays in the same way."
+    },
+    {
+      "role": "user",
+      "content": "But i dont want to color saturdays, only sundays, does this do that?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, the formula I provided earlier formats Sundays only, not Saturdays. To clarify, `WEEKDAY(A1) = 1` returns \"TRUE\" if the date in cell A1 is a Sunday and \"FALSE\" otherwise. So, the conditional formatting rule will apply the color you specified to all cells where the formula returns \"TRUE\", which corresponds to Sundays only."
+    }
+  ]
+}

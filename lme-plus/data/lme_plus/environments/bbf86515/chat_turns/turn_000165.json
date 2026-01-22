@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 165,
+  "session_index": 14,
+  "session_id": "sharegpt_14s18aO_178",
+  "turn_in_session": 7,
+  "date": "2023/06/28 (Wed) 16:37",
+  "role": "assistant",
+  "content": "If you want to search for products based on stock status, there are a few different options you can use besides the `_stock` meta key. Here are a few examples:\n\n1. `_stock_status`: This meta key stores the stock status of the product (e.g. \"instock\", \"outofstock\", \"onbackorder\").\n2. `_manage_stock`: This meta key stores whether or not the product's stock is managed (i.e. if it has a finite quantity).\n3. `_stock_quantity`: This meta key stores the current stock quantity of the product.\n\nYou can use these meta keys in a `meta_query` array to search for products based on their stock status. For example:\n```css\n$args['meta_query'][] = [    'key' => '_stock_status',    'value' => 'instock',];\n```\nThis will return all products that are currently in stock.",
+  "has_answer": false
+}

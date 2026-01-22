@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 112,
+  "session_index": 9,
+  "session_id": "sharegpt_LsdZ3UM_0",
+  "turn_in_session": 0,
+  "date": "2023/03/15 (Wed) 07:18",
+  "role": "user",
+  "content": "\"name\": \"Oatmeal with berries\",\n \"ingredients\": [\n { \"name\": \"Oatmeal\", \"amount\": 1, \"unit\": \"cup\", \"calories\": 150 },\n { \"name\": \"Water\", \"amount\": 1.5, \"unit\": \"cups\", \"calories\": 0 },\n { \"name\": \"Frozen berries\", \"amount\": 0.5, \"unit\": \"cup\", \"calories\": 40 }\n ],\n \"calories\": 190,\n \"preparation\": [\n \"1. In a small saucepan, bring the water to a boil.\",\n \"2. Stir in the oatmeal and cook for 1-2 minutes, until it thickens.\",\n \"3. Stir in the frozen berries and cook for another minute.\",\n \"4. Serve hot and enjoy!\"\n ]\n\nadkust the proportions so that the total calorie ammount is 800",
+  "has_answer": false
+}

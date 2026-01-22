@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 173,
+  "session_index": 16,
+  "session_id": "sharegpt_wohQ2LX_0",
+  "turn_in_session": 1,
+  "date": "2023/05/23 (Tue) 19:47",
+  "role": "assistant",
+  "content": "To move a set of distinguished names (DNs) from one Active Directory (AD) organizational unit (OU) to another, you can use the Move-ADObject cmdlet in PowerShell. This cmdlet allows you to move an AD object, such as an OU, from one location in the AD directory to another.\n\nHere's an example of how you might use the Move-ADObject cmdlet to move a set of DNs from one OU to another:\n\n1. First, open PowerShell and run the following command to connect to your AD domain:\n```\nConnect-ADDomain -Server <AD_server_name>\n```\n2. Next, use the Get-ADObject cmdlet to retrieve the DNs of the OUs that you want to move. You can specify the DNs of the OUs using the `-Filter` parameter. For example, the following command retrieves the DNs of all OUs with a name that starts with \"Sales\":\n```\n$sourceOUs = Get-ADObject -Filter 'Name -like \"Sales*\"' -SearchBase '<DN_of_parent_OU>'\n```\n3. Once you have the DNs of the source OUs, you can use the Move-ADObject cmdlet to move them to the destination OU. The following command moves the OUs that were retrieved in the previous step to the destination OU with the DN `<DN_of_destination_OU>`:\n```\nMove-ADObject -Identity $sourceOUs -TargetPath '<DN_of_destination_OU>'\n```\nAfter running this command, the OUs with the DNs specified in the `$sourceOUs` variable will be moved from their current location in the AD directory to the destination OU.",
+  "has_answer": false
+}

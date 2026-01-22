@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 175,
+  "session_index": 16,
+  "session_id": "sharegpt_wohQ2LX_0",
+  "turn_in_session": 3,
+  "date": "2023/05/23 (Tue) 19:47",
+  "role": "assistant",
+  "content": "Yes, you can use Apache Directory Studio to move a set of distinguished names (DNs) from one organizational unit (OU) to another in an Active Directory (AD) directory. Apache Directory Studio is a free, open-source LDAP browser and directory client that allows you to manage and navigate an AD directory.\n\nTo move a set of DNs using Apache Directory Studio, follow these steps:\n\n1. Open Apache Directory Studio and connect to your AD server.\n2. In the LDAP Browser view, navigate to the OU that contains the DNs you want to move.\n3. Right-click on the OU and select \"Move\" from the context menu. This will open the \"Move Entry\" dialog box.\n4. In the \"Move Entry\" dialog box, select the destination OU where you want to move the DNs. You can use the \"Browse\" button to navigate to the destination OU.\n5. Click \"Finish\" to move the DNs from the source OU to the destination OU.\n\nAfter moving the DNs, you can verify that they have been moved to the destination OU by navigating to the destination OU in the LDAP Browser view.",
+  "has_answer": false
+}

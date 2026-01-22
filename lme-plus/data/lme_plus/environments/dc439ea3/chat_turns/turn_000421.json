@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 421,
+  "session_index": 42,
+  "session_id": "sharegpt_Avrogtc_0",
+  "turn_in_session": 3,
+  "date": "2023/05/29 (Mon) 22:30",
+  "role": "assistant",
+  "content": "Sure! Here is a table with all of the functions you listed, with a column indicating whether each function is a part of the ERC-721 standard or a custom function added to the contract:\n\n| Function | Standard |\n| --- | --- |\n| buyAlbum | Custom |\n| buySong | Custom |\n| publicMint | Custom |\n| destroyPublic | Custom |\n| claimAlbum | Custom |\n| tokenURI | Custom |\n| setImportantURIs | Custom |\n| reclaimERC20Token | Custom |\n| reclaimERC721 | Custom |\n| setStartTimes | Custom |\n| setMerkleRoot | Custom |\n| setArtistWallet | Custom |\n| setNFTContract | Custom |\n| setRoyalty | Custom |\n| setQuorum | Custom |\n| setPricePerToken | Custom |\n| setSplitsWallet | Custom |\n| withdrawToSplits | Custom |\n| \\_isContract | Custom |\n| \\_startTokenId | Custom |\n| supportsInterface | Custom |\n| isProofValid | Custom |\n| isProofValid2 | Custom |\n| name | Standard |\n| symbol | Standard |\n| totalSupply | Standard |\n| balanceOf | Standard |\n| ownerOf | Standard |\n| approve | Standard |\n| getApproved | Standard |\n| setApprovalForAll | Standard |\n| isApprovedForAll | Standard |\n| transferFrom | Standard |\n| mint | Optional |\n| burn | Optional |\n| metadata | Optional |\n| enumerable | Optional |\n\nI hope this helps! Let me know if you have any other questions.",
+  "has_answer": false
+}

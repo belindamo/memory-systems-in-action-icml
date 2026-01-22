@@ -1,0 +1,23 @@
+{
+  "session_id": "sharegpt_C8wKLzN_0",
+  "session_index": 30,
+  "date": "2023/05/26 (Fri) 15:07",
+  "turns": [
+    {
+      "role": "user",
+      "content": "give me cheatsheet of shopify variables I can use for liquid like date, order date, etc"
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a cheatsheet of some common Shopify variables you can use in Liquid:\n\n1. `{{ shop.name }}`: The name of the Shopify store.\n2. `{{ shop.url }}`: The URL of the Shopify store.\n3. `{{ customer.name }}`: The name of the customer.\n4. `{{ customer.email }}`: The email address of the customer.\n5. `{{ order.name }}`: The name or number of the order.\n6. `{{ order.order_number }}`: The order number.\n7. `{{ order.created_at | date: \"%B %d, %Y\" }}`: The date the order was created in the format \"Month Day, Year\" (e.g. \"February 23, 2023\").\n8. `{{ order.updated_at | date: \"%B %d, %Y\" }}`: The date the order was last updated in the format \"Month Day, Year\" (e.g. \"February 23, 2023\").\n9. `{{ order.total_price }}`: The total price of the order.\n10. `{{ order.line_items }}`: An array of the line items in the order.\n11. `{{ line_item.product.title }}`: The title of the product associated with a line item.\n12. `{{ line_item.quantity }}`: The quantity of the product associated with a line item.\n13. `{{ line_item.price }}`: The price of the product associated with a line item.\n14. `{{ shipping_address.name }}`: The name associated with the shipping address.\n15. `{{ shipping_address.address1 }}`: The first line of the shipping address.\n16. `{{ shipping_address.city }}`: The city associated with the shipping address.\n17. `{{ shipping_address.province }}`: The province or state associated with the shipping address.\n18. `{{ shipping_address.country }}`: The country associated with the shipping address.\n19. `{{ shipping_address.zip }}`: The ZIP or postal code associated with the shipping address.\n20. `{{ billing_address.name }}`: The name associated with the billing address.\n21. `{{ billing_address.address1 }}`: The first line of the billing address.\n22. `{{ billing_address.city }}`: The city associated with the billing address.\n23. `{{ billing_address.province }}`: The province or state associated with the billing address.\n24. `{{ billing_address.country }}`: The country associated with the billing address.\n25. `{{ billing_address.zip }}`: The ZIP or postal code associated with the billing address.\n\nThese are just a few of the many variables available in Shopify's Liquid templating language. You can find more information on Shopify's Liquid documentation page."
+    },
+    {
+      "role": "user",
+      "content": "liquid date formats"
+    },
+    {
+      "role": "assistant",
+      "content": "Liquid provides several built-in date filters that you can use to format dates in your Shopify theme. Here are some commonly used date formats in Liquid:\n\n1. `%a, %d %b %Y`: Outputs the date in the format \"Sat, 20 Mar 2021\".\n2. `%A, %B %d, %Y`: Outputs the date in the format \"Saturday, March 20, 2021\".\n3. `%Y-%m-%d`: Outputs the date in the format \"2021-03-20\".\n4. `%Y%m%d`: Outputs the date in the format \"20210320\".\n5. `%m/%d/%Y`: Outputs the date in the format \"03/20/2021\".\n6. `%d/%m/%Y`: Outputs the date in the format \"20/03/2021\".\n7. `%Y-%m-%dT%H:%M:%S`: Outputs the date in ISO 8601 format, e.g., \"2021-03-20T14:30:00\".\n\nYou can use these date formats with the `date` filter in Liquid. For example:\n```perl\n{{ \"2021-03-20\" | date: \"%a, %d %b %Y\" }}\n```\nThis would output \"Sat, 20 Mar 2021\". You can also use variables that contain dates, like so:\n```perl\n{{ my_date_variable | date: \"%Y-%m-%d\" }}\n```\nThis would output the date in `my_date_variable` in the format \"2021-03-20\". For more information on Liquid date filters, you can refer to the official Shopify documentation."
+    }
+  ]
+}

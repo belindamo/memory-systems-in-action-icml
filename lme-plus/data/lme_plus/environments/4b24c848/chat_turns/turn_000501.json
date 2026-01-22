@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 501,
+  "session_index": 49,
+  "session_id": "sharegpt_2bdi5Ol_25",
+  "turn_in_session": 6,
+  "date": "2023/10/10 (Tue) 02:13",
+  "role": "assistant",
+  "content": "Threat Brief:\n\nThe financial services industry in Australia is a prime target for cyber attacks due to the sensitive nature of the data they hold and the high value of the assets they manage. Threat actors ranging from nation-state actors to financially motivated criminal groups are actively targeting the industry to steal personal identifiable information (PII) and extort victims.\n\nThe most active threat actors currently targeting the financial services industry in Australia include APT10, Lazarus Group, and FIN7. These threat actors use a range of tactics, techniques, and procedures (TTPs) to carry out their attacks, including phishing and social engineering, malware, command and control infrastructure, fileless malware, network reconnaissance, lateral movement, and data exfiltration.\n\nIt is essential for organizations in the financial services industry to be aware of these TTPs and the threat actors using them and to implement appropriate security measures to protect their systems and data. In this simulation, we will be simulating a cyber incident involving the theft of PII and extortion of an online conveyancing platform provider in Australia. The simulation will provide an opportunity for senior executives to test their response to a cyber crisis and to learn from recent PII breaches involving Australian companies such as Optus and Medibank.\n\nThis threat brief serves as an introduction to the simulation and provides an overview of the TTPs and threat actors that will be included. The simulation will cover the entire attacker lifecycle and will provide opportunities for senior executives to respond to different stages of the attack.",
+  "has_answer": false
+}

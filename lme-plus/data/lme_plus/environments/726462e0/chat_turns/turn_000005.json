@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 5,
+  "session_index": 0,
+  "session_id": "sharegpt_SYm10tk_0",
+  "turn_in_session": 5,
+  "date": "2023/05/20 (Sat) 03:38",
+  "role": "assistant",
+  "content": "I apologize for the error in my previous response. You are correct that the `CONCATENATE()` function can only take two arguments in DAX. Here is an updated version of the formula that uses the `&` operator to concatenate strings instead:\n```scss\nNew Column =\nIF(\n    LEN(Table1[Column]) = 22,     // Check if the length of the string is 22\n    Table1[Column],               // If it is already in the correct format, leave it as is\n    LEFT(Table1[Column], 7) &     // Take the first 7 characters (O-22-XXX-)\n    IF(\n        LEN(Table1[Column]) = 24,      // If the length is 24, there is a leading zero that needs to be removed\n        \"ART\" & MID(Table1[Column], 11, 2),   // Take the two characters after the \"ART\" (e.g. \"13\")\n        \"ART0\" & MID(Table1[Column], 11, 1)  // Add a leading zero and take the one character after the \"ART\" (e.g. \"4\")\n    ) &\n    MID(Table1[Column], 14, 6)    // Take the six characters after the \"PI\" (e.g. \"4-K01\")\n)\n```\nThis formula should work without syntax errors. Again, you can replace \"New Column\" with the name of the column where you want to output the transformed values, and \"Table1[Column]\" with the name of the column that contains the original values.",
+  "has_answer": false
+}

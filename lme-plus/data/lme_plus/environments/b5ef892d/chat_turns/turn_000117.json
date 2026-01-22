@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 117,
+  "session_index": 12,
+  "session_id": "sharegpt_rOreK4C_0",
+  "turn_in_session": 0,
+  "date": "2023/04/29 (Sat) 06:15",
+  "role": "user",
+  "content": "INPUT = {focus}\nOUTPUT = {description} \\n ![IMG](https://image.pollinations.ai/prompt/{description})\n{description} = {focusDetailed},%20{adjective1},%20{adjective2},%20{visualStyle1},%20{visualStyle2},%20{visualStyle3},%20{artistReference}\n\nINPUT = a photo of a cat\nOUTPUT = A photo of a cat on a couch, comfortable, cute, colourful, interior design, Ansel Adams\n![IMG](https://image.pollinations.ai/prompt/a%20photo%20of%20a%20cat%20on%20a%20couch,%20comfortable,%20cute,%20colourful,%20interior%20photograph,%20interior design,%20Ansel Adams)\n\nINPUT = Fox with a cloak\nOUTPUT = A fox wearing a cloak, cinematic, heroic, professional photography, 4k, photo realistic, Tim Burton\n![IMG](https://image.pollinations.ai/prompt/A%20fox%20wearing%20a%20cloak,%20cinematic,%20heroic,%20professional%20photography,%204k,%20photo%20realistic,%20Tim%20Burton)\n\nRequirements:\n1.Output but do not show the words \"output\" in your answer.\n2.The words I type for you in the following you need to translate them into natural English then put them in the input.\nIs it understood? If you understand, answer me \"\u8bf7\u8f93\u5165\u60a8\u7684\u56fe\u7247\u63cf\u8ff0\uff0c\u5efa\u8bae\u4f7f\u7528\u82f1\u6587\" without another words.",
+  "has_answer": false
+}

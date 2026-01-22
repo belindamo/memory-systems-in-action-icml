@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 120,
+  "session_index": 10,
+  "session_id": "sharegpt_EuvEEnD_0",
+  "turn_in_session": 10,
+  "date": "2023/03/27 (Mon) 22:28",
+  "role": "user",
+  "content": "var event\\_data = {\n type: event.type,\n data\\_uuid: event.target.attributes['data-uuid'].nodeValue,\n value: event.target?.value\n };\n\nhow to use ternary so value allways has a value",
+  "has_answer": false
+}

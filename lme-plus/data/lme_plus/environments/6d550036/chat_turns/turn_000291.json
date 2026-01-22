@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 291,
+  "session_index": 27,
+  "session_id": "sharegpt_SbkKtuo_0",
+  "turn_in_session": 0,
+  "date": "2023/05/27 (Sat) 01:44",
+  "role": "user",
+  "content": "given following graph, can you show how many path from node A to node D? Please consider all possible paths.\ngraph = {\n \"nodes\":{\n \"A\": {\"alias\":[\"la, sa\"]},\n \"B\": {\"alias\":[\"sb, bb\"]},\n \"C\": {\"alias\":[\"ca\"]},\n \"D\": {\"alias\":[\"td\", \"md\"]}\n },\n \"edges\":{\n {\"src\":\"A\", \"dst\":\"B\", \"health\": \"ok\", \"lines\":[\"aa1\",\"aa2\"]}\n {\"src\":\"A\", \"dst\":\"C\", \"health\": \"unhealthy\", \"lines\":[\"aa3\", \"aa4\"]}\n {\"src\":\"B\", \"dst\":\"C\", \"health\": \"unhealthy\", \"lines\":[\"aa5\"]}\n {\"src\":\"C\", \"dst\":\"D\", \"health\": \"ok\", \"lines\":[\"aa6\"]}\n {\"src\":\"B\", \"dst\":\"D\", \"health\": \"ok\", \"lines\":[\"aa7\", \"ab8\"]}\n }\n}",
+  "has_answer": false
+}

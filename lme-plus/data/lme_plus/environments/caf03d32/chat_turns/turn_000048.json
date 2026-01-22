@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 48,
+  "session_index": 5,
+  "session_id": "sharegpt_WyLu0ye_0",
+  "turn_in_session": 0,
+  "date": "2023/05/21 (Sun) 18:33",
+  "role": "user",
+  "content": "I want you to act as a software developer. I will provide some specific information about a web app requirements, and it will be your job to come up with an architecture and code for developing good python software. \n\nGeneral purpose:\nI want a system that use users opinion to do trading with criptocurrency named All2Trade\n\nTecnologies involved:\nPython 3 as programming language, Flask and MySQL\n\nWhat is the purpose of the application? The purpose is to make money using the condensed knowledge of the users base.\n\nWho are the users of the application? Everyone whants to help the system to make right decision and want a portion of the revenues.\n\nWhat features do you want to include in the application? the system will be completely automated and minimal.\n\nHow do you want to collect users' opinions? The user will provide the opinion on the future trend of the currency he want through a simple interface.\n\nFor users the use of the platform will be completely free.\nThe business will generates a revenue by trade using users opinion, pay them a small percentage of the payout and taking the difference.",
+  "has_answer": false
+}

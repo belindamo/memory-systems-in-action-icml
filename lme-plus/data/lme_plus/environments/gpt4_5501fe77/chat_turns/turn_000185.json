@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 185,
+  "session_index": 14,
+  "session_id": "sharegpt_a9hxnu5_0",
+  "turn_in_session": 9,
+  "date": "2023/05/24 (Wed) 01:51",
+  "role": "assistant",
+  "content": "For your customer support team, you would likely want to design a form search for the backoffice. The main reason for this is that the customer support team needs to search for specific information within a predefined set of fields, such as payment methods, subscriptions, and acquired products. Form search is well-suited for this type of scenario because it allows users to search for specific information within a predefined set of fields, and can be tailored to match the specific needs of your customer support team.\n\nAdditionally, form search can be more efficient than full-text search when searching for specific information in large data sets, as it narrows the search results to specific fields and can be faster than performing a full-text search.\n\nForm search can also be useful when the data is structured and the customer support team knows exactly what they are looking for, which is the case when customer support is handling customer's calls. This can help the team to quickly and easily find the information they need to assist customers, which can improve the customer service experience and increase productivity.\n\nIn summary, a form search is the best option for your backoffice because it allows customer support team to search specific information in real time with a predefined set of fields, it's efficient, fast, and well suited for the specific needs of your customer support team.",
+  "has_answer": false
+}

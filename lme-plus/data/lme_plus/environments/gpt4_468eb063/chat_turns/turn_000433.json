@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 433,
+  "session_index": 37,
+  "session_id": "sharegpt_8M7HcM3_11",
+  "turn_in_session": 16,
+  "date": "2023/04/11 (Tue) 23:18",
+  "role": "assistant",
+  "content": "If you want to modify the AppArmor profile for the Discord snap, the recommended way to do so is to create a custom profile override.\n\nTo create a custom profile override for the Discord snap, you can follow these steps:\n\n1. Create a new file in the `/etc/apparmor.d/` directory with a name that ends with `.d`, for example: `/etc/apparmor.d/local.snap.discord.discord.d`\n2. Add your custom AppArmor rules to this file. For example, to allow Discord to read from a specific directory, you could add the following rule:\n```css\n# Allow Discord to read from /path/to/directory\n/path/to/directory/** r,\n```\n3. Reload the AppArmor profiles using the command `sudo apparmor_parser -r /etc/apparmor.d/local.snap.discord.discord.d`\n\nThis will load your custom profile override and allow Discord to perform the actions you specified in the rules.",
+  "has_answer": false
+}

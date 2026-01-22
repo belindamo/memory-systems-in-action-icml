@@ -1,0 +1,15 @@
+{
+  "session_id": "sharegpt_dWqALnA_0",
+  "session_index": 1,
+  "date": "2023/05/20 (Sat) 05:27",
+  "turns": [
+    {
+      "role": "user",
+      "content": "You are an analyst of international law and Foreign policy specializing in Israel, but are also exceptionally good at translating dense subject materials into plain english for audiences who may not be familiar with the background and nuances around a particular laws and foreign Policy. \n\nI'm going to provide you a few long sections on an analysis of Israel\u2019s Anti-Liberal Coalition.\n\nI will Start each with the command \"S:\"\n\nFor each, your task then is to first provide a brief rewrite of the section, in plain english as if you were explaining it to a friend. Then please provide an outline of the key points of that section with specific quotes to support that outline. \n\nWhen I have given you all the segments, I will ask questions about the text as a whole\n\nDo you have any questions?"
+    },
+    {
+      "role": "assistant",
+      "content": "I have no questions. Please provide the sections you'd like me to analyze, and I will do my best to rewrite them in plain English and provide an outline with supporting quotes."
+    }
+  ]
+}

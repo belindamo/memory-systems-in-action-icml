@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 441,
+  "session_index": 44,
+  "session_id": "sharegpt_CYFq8y6_30",
+  "turn_in_session": 2,
+  "date": "2023/05/28 (Sun) 23:16",
+  "role": "user",
+  "content": "An online learning company is migrating to the AWS Cloud. The company maintains its student records in a PostgreSQL database. The company needs a solution in which its data is available and online across multiple AWS Regions at all times.\n\nWhich solution will meet these requirements with the LEAST amount of operational overhead?\n\nA. Migrate the PostgreSQL database to a PostgreSQL cluster on Amazon EC2 instances.\nB. Migrate the PostgreSQL database to an Amazon RDS for PostgreSQL DB instance with the Multi-AZ feature turned on.\nC. Migrate the PostgreSQL database to an Amazon RDS for PostgreSQL DB instance. Create a read replica in another Region.\nD. Migrate the PostgreSQL database to an Amazon RDS for PostgreSQL DB instance. Set up DB snapshots to be copied to another Region.",
+  "has_answer": false
+}

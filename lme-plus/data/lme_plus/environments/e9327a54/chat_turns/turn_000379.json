@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 379,
+  "session_index": 34,
+  "session_id": "sharegpt_gPFzM9v_121",
+  "turn_in_session": 22,
+  "date": "2023/05/27 (Sat) 10:26",
+  "role": "assistant",
+  "content": "You can use the \"schtasks\" command to view the properties of a scheduled task and see what command or binary is run when the task is executed. The command \"schtasks /query /tn <task\\_name>\" will display the properties of the task and the \"Task To Run\" field will show the command or binary that is run. You can also use the \"Task Scheduler\" GUI in Windows to view the properties of a scheduled task and see the \"Actions\" tab which will show the command or binary that is run.",
+  "has_answer": false
+}

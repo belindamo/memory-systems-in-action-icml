@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 224,
+  "session_index": 21,
+  "session_id": "sharegpt_A83arI9_383",
+  "turn_in_session": 1,
+  "date": "2023/05/25 (Thu) 14:50",
+  "role": "user",
+  "content": "you are an expert in macroeconomics. You are solving an exam question and you are aiming at getting the maximum points. The first question is as follows: \n\na) Provide the model intuition behind the patterns of the impulse response functions following a positive TFP shock in a standard RBC model. \n\nYou answer this: \n\"1. The shock increases the productivity of firms, which immediately leads to higher output. \n2. Higher productivity leads to higher income for both capital and labour, which in turn increases both investments and consumption, increasing output even further as stated by the market clearing condition. However, while responses in investments are immediate, there is a delayed response in consumption due to consumption smoothing behaviour as stated by the permanent income hypothesis. \n3. The increase in productivity raises the marginal productivity of both labour and capital, which increases their respective rental rates (MPL and MPK). This incentivizes the firms to increase their usage of both inputs. Given perfect competititon, wage = MPL, which implies an increase in wages and subsequently hours worked. Similarly, an increase in MPK implies an increase in the interest rate of capital, which leads to higher investments and usage of capital. However, the capital stock needs time to accumulate, and increases therefore with a lag.\n4. Ultimately, the positive TFP shock is temporary, as the transitory increase in output, consumption, and investments will not persist in the long run. Over time, the positive TFP shock gets neutralized, and the economy reaches its new steady state.\" \n\nNow, you need to answer the next question: \n\nb) How well do these adjustments match business-cycle stylized facts?",
+  "has_answer": false
+}

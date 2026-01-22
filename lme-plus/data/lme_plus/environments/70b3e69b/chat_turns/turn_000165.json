@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 165,
+  "session_index": 17,
+  "session_id": "sharegpt_O8qJclh_0",
+  "turn_in_session": 3,
+  "date": "2023/05/23 (Tue) 23:52",
+  "role": "assistant",
+  "content": "Referencia: \"Tabla 4. Requisitos m\u00ednimos de la aplicaci\u00f3n, Sistema Operativo\"\n\nLa lista de navegadores que se deben admitir es muy antigua, algunas versiones tienen m\u00e1s de 15 a\u00f1os (por ejemplo, Opera 9 se lanz\u00f3 en junio de 2006, un a\u00f1o antes de la introducci\u00f3n del iPhone). Notamos que el requisito dice \"accesible\", y aunque nuestro software sin duda ser\u00eda accesible con versiones razonablemente antiguas de los navegadores, a\u00fan recomendamos encarecidamente no admitir versiones muy antiguas de los navegadores. Importante, las versiones antiguas de los navegadores no protegen contra las vulnerabilidades de seguridad actuales y no admiten protocolos modernos de seguridad web (como TLS 1.2). Adem\u00e1s, usamos tecnolog\u00edas web modernas para brindar a los usuarios, en particular a los licitadores, una experiencia de usuario din\u00e1mica y sensible para asegurarnos de que tengan toda la informaci\u00f3n relevante presentada de manera clara, r\u00e1pida y confiable. El uso de la tecnolog\u00eda web moderna requiere un navegador web moderno. Por lo general, en otros proyectos de subastas de espectro, solo admitimos la \u00faltima versi\u00f3n de los navegadores comunes (donde el soporte significa que podemos garantizar que todas las funcionalidades del software funcionen de manera confiable en el navegador dado). Si es necesario, podemos ampliar nuestro soporte para permitir versiones recientes previas a la \u00faltima.\n\nLa tabla a continuaci\u00f3n brinda una visi\u00f3n general de los navegadores listados y sus respectivas versiones estables m\u00e1s recientes. Tenga en cuenta que, debido a los ciclos de lanzamiento de las versiones de los navegadores son muy cortos, sugerimos cambiar el requisito a simplemente decir: \"Admitir versiones actuales de Microsoft Edge, Mozilla Firefox, Opera, Google Chrome y Safari\".",
+  "has_answer": false
+}

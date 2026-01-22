@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 18,
+  "session_index": 2,
+  "session_id": "sharegpt_1B5KXOT_0",
+  "turn_in_session": 0,
+  "date": "2023/05/11 (Thu) 23:57",
+  "role": "user",
+  "content": "em Statement:\n\u2022 Consider the scenario of Vehicle Booking System they provide services of local, rental based for the\ncustomers on demand.\n\u2022 All the Implementations are in the context of MySQL.\no Establish a schema to support the implementation.\no Use draw.io(or any other suitable tool) to show the logical flow of the data.\no Prepare the Tables like Vehicle Data, Customer\\_Requests, Bookings etc., with suitable constraints\nto store the records.\no Populate the data and display the most frequently Booked Route in Chennai.\no Display the Number of Customers who travelled in each data and in each Route\u201d\no Display the Bookings count is >50 in each Day.\no List out most booked type of Vehicle (SUV, Mini etc.,) in Bangalore City.\no Display the 5 star rated driver details to initiate incentives by Company.\no Comment your observations to suggest betterment customer experience.\no Take any existing Vehicle Providers such as OLA, UBER etc., and observe the process of data\nbase management and list out some of the important and possible implementations for our Project",
+  "has_answer": false
+}

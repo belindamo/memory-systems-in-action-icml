@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 123,
+  "session_index": 11,
+  "session_id": "sharegpt_knx1ayE_0",
+  "turn_in_session": 1,
+  "date": "2023/05/22 (Mon) 14:41",
+  "role": "assistant",
+  "content": "This is a query execution plan for a SELECT statement in TiDB, a distributed SQL database. The plan shows the sequence of operations that the database will perform to execute the query, with each operation represented by a node in the plan tree.\n\nThe top node in the plan tree is a Projection operation, which specifies the columns that will be included in the final query result. Below that is a Limit operation, which limits the number of rows returned by the query. The actual data retrieval is performed by an IndexRangeScan operation, which scans the index `f_bookmark(f_bookmark)` on the `bbbb` table and returns rows within the specified range.\n\nThe `actRows` column indicates the estimated number of rows that will be returned by each operation. The `execution info` column provides additional information about the execution of the operation, such as the time taken and the number of loops. The `memory` and `disk` columns show the estimated amount of memory and disk space used by each operation.",
+  "has_answer": false
+}

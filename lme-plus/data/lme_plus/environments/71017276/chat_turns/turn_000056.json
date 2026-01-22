@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 56,
+  "session_index": 5,
+  "session_id": "sharegpt_jZOf9E5_21",
+  "turn_in_session": 4,
+  "date": "2023/02/06 (Mon) 10:04",
+  "role": "assistant",
+  "content": "Here is an example of HTML and JavaScript code for a basic fundraising counter that displays the percentage of the goal that has been reached:\n```php\n<div id=\"counterContainer\">\n  <p>Raised: <span id=\"raisedAmount\">0</span> of <span id=\"goalAmount\">100</span> goal</p>\n  <div id=\"progressBar\"></div>\n</div>\n\n<style>\n#counterContainer {\n  width: 50%;\n  margin: 0 auto;\n  text-align: center;\n}\n\n#progressBar {\n  height: 20px;\n  background-color: #ddd;\n  width: 0;\n  transition: width 0.5s;\n}\n</style>\n\n<script>\n// Set goal and raised amounts\nlet goalAmount = 100;\nlet raisedAmount = 0;\n\n// Update the counter on page load\ndocument.getElementById(\"goalAmount\").innerHTML = goalAmount;\ndocument.getElementById(\"raisedAmount\").innerHTML = raisedAmount;\n\n// Function to update the progress bar\nfunction updateProgressBar() {\n  let percentage = (raisedAmount / goalAmount) * 100;\n  document.getElementById(\"progressBar\").style.width = percentage + \"%\";\n}\n\n// Example of updating the raised amount\nraisedAmount = 50;\ndocument.getElementById(\"raisedAmount\").innerHTML = raisedAmount;\nupdateProgressBar();\n</script>\n```\nThis code creates a container with a raised amount, goal amount, and a progress bar. The style section sets the look and feel of the elements. The script section updates the raised amount, goal amount, and progress bar.\n\nNote that this is just a basic example and you can customize it to fit your specific needs and design preferences. You can also add additional features such as updating the raised amount dynamically based on real-time data or animating the progress bar for a more visually appealing experience.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 459,
+  "session_index": 49,
+  "session_id": "sharegpt_mMNr1qm_0",
+  "turn_in_session": 1,
+  "date": "2023/05/30 (Tue) 12:43",
+  "role": "assistant",
+  "content": "In Vulkan, Acceleration Structures (AS) are used for efficient ray tracing, which can be used for various purposes such as rendering shadows, reflections, and global illumination in a scene. To move objects in the scene, you would typically update the transformation matrix associated with each object and then rebuild the AS using the updated information.\n\nThe transformation matrix describes the position, rotation, and scale of the object in the scene. When the matrix is updated, the AS needs to be rebuilt to reflect the changes. This involves updating the geometry in the AS to match the new position, orientation, and scale of the object. Depending on the type of AS used, this could involve updating the position of individual vertices or updating the position and orientation of entire bounding boxes.\n\nAfter the AS has been rebuilt, the updated scene can be rendered using the ray tracing capabilities of Vulkan. The rays are traced through the AS to determine which objects are visible in the scene and how they should be rendered based on their properties, such as material and lighting.\n\nOverall, updating the AS is an important step in moving objects in the scene using Vulkan, as it ensures that the ray tracing algorithm accurately reflects the current state of the scene.",
+  "has_answer": false
+}

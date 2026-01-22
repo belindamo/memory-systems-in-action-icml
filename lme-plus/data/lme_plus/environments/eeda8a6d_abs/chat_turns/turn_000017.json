@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 17,
+  "session_index": 2,
+  "session_id": "sharegpt_l7gyE1o_17",
+  "turn_in_session": 3,
+  "date": "2023/05/20 (Sat) 05:03",
+  "role": "user",
+  "content": "Great. Please modify the script to create and mount a 100 GB EBS volume. Please also add a command at the end to print out the public IP of the instance, so that I can quickly connect to it.",
+  "has_answer": false
+}

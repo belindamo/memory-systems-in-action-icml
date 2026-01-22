@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 525,
+  "session_index": 50,
+  "session_id": "sharegpt_gPFzM9v_153",
+  "turn_in_session": 10,
+  "date": "2023/05/15 (Mon) 20:49",
+  "role": "assistant",
+  "content": "To create a new user on a Windows machine using the command prompt, you can use the net user command. The basic syntax for this command is:\n\nnet user [username] [password] /add\n\nFor example, to create a new user called \"newuser\" with the password \"password123\", you would use the following command:\n\nnet user newuser password123 /add\n\nYou can also specify other options with this command, such as the user's full name, and if the user is an administrator or not. For more information and options, you can run the command \"net user /?\" in the command prompt.",
+  "has_answer": false
+}

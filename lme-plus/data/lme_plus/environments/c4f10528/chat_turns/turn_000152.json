@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 152,
+  "session_index": 14,
+  "session_id": "sharegpt_qdtuIN3_0",
+  "turn_in_session": 0,
+  "date": "2023/05/23 (Tue) 00:09",
+  "role": "user",
+  "content": "1) The writer from the proposal document suggested using the methodology of GBAD-MDL, which was first coined in 2003\n a- I want to know the current literature progress related to that method or similar methods like (GBAD-P, GBAD-MPS, or other if available)\n b- I want to know what was wrong with the previous literatures\n c- What is remaining in the current methodologies for the open problem (see below)\n d- I want to know why this method, that was coined in 2003, can still hold good for my use case and what exact changes do I need to make to the existing methodology, to actually contribute to the problem\n2) The open problem that I am addressing is Anomaly detection using knowledge graphs (Domain to test on for now is software developement) and my aim is to find a methodology that can solve this open problem\n - If the proposed methodology (GBAD-MDL) is not a good stratergy according to 1.a, 1.b, 1.c and 1.d, then suggest a new methodology that must satisfy 1.a, 1.b, 1.c and 1.d\n - Please report to me after step 1 and 2 are completed. It is important to me to know the outcome of step 1 and 2 before continuing with the paper\n3) Once the methodology has been set from step 1 and 2. I want the following in the paper:-\n 1) Introduction to anomalies, anomaly detection and anomaly detection in knowledge graphs\n 2) Literature review that answer the questions (1.a, 1.b, 1.c and 1.d)\n 1) The new methodology to be described using formal mathematical equations/expressions with explanation\n 2) The hypothesis for the new methodology to be described using formal mathematical equations/expressions with explanation\n 3) Metrics to prove the hypothesis using implementation results, graphs, charts",
+  "has_answer": false
+}

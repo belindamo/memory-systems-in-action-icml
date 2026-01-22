@@ -1,0 +1,115 @@
+{
+  "session_id": "sharegpt_TuureWP_17",
+  "session_index": 38,
+  "date": "2023/05/29 (Mon) 17:34",
+  "turns": [
+    {
+      "role": "assistant",
+      "content": "The correct answers are:\n\n* An XML manifest file\n* A driveset CSV file\n\nBefore you prepare the drives for an Azure Import/Export job, you need to create two files:\n\n1. An XML manifest file: This file describes the data that you want to import or export, including the type of data, the file paths, and the storage account and container to use. You can create this file manually or by using the AzCopy command-line tool.\n2. A driveset CSV file: This file lists the drives that you will use for the import or export job, including the drive letter, the volume label, and the location of the manifest file. You can create this file manually or by using the Azure Import/Export Tool.\n\nTherefore, the correct answers are:\n\n* An XML manifest file\n* A driveset CSV file"
+    },
+    {
+      "role": "user",
+      "content": "Question 27 of 50\nSingle choice question\nYou have a Recovery Service vault that\nyou use to test backups. The test\nbackups contain two protected virtual\nmachines.\nYou need to delete the Recovery\nServices vault.\nWhat should you do first?\nSelect the correct answer\nFrom the Recovery Service vault, delete the backup data\nModify the disaster recovery properties of each virtual machine\nModify the locks of each virtual machine\nFrom the Recovery Service vault, stop the backup of each backup item"
+    },
+    {
+      "role": "assistant",
+      "content": "Before you can delete a Recovery Service vault, you must unregister the items that are protected by the vault.\n\nTherefore, the correct answer is:\n\nFrom the Recovery Service vault, delete the backup data\n\nYou should first delete the backup data from the Recovery Service vault. This will unregister the protected virtual machines and other items from the vault. After you have deleted the backup data, you can then delete the Recovery Service vault."
+    },
+    {
+      "role": "user",
+      "content": "Question 28 of 50\nSingle choice question\nYou have an Azure subscription\nnamed Subscription1.\nYou have 5 TB of data that you need\nto transter to Subscription1.\nYou plan to use an Azure\nImport/Export job.\nWhat can you use as the destination\nof the imported data?\nSelect the correct answer\nA virtual machine\nAn Azure Cosmos DB database\nAzure File Storage\nThe Azure File Sync Storage Sync Service"
+    },
+    {
+      "role": "assistant",
+      "content": "The correct answer is:\n\nAzure File Storage\n\nYou can use Azure File Storage as the destination of the imported data. Azure Import/Export supports importing data to Azure File Storage using hard disk drives (HDDs) that you prepare and then ship to Azure."
+    },
+    {
+      "role": "user",
+      "content": "Same question with these options\nSelect the correct answer \nAn Azure Cosmos DB database\nAzure Blob Storage\nAzure Data Lake Store\nThe Azure File Sync Storage Sync Service"
+    },
+    {
+      "role": "assistant",
+      "content": "The correct answer is:\n\nAzure Blob Storage\n\nYou can use Azure Blob Storage as the destination of the imported data. Azure Import/Export supports importing data to Azure Blob Storage using hard disk drives (HDDs) that you prepare and then ship to Azure."
+    },
+    {
+      "role": "user",
+      "content": "Question 30 of 50\nSingle choice question\nYou have an Azure subscription\nnamed Subscription1.\nYou deploy a Linux virtual machine\nnamed VM1 to Subscription1\nYou need to monitor the metrics and\nthe logs of VM1.\nWhat should you use?\nSelect the correct answer\nAzure HDInsight\nLinux Diagnostic Extension (LAD) 3.0\nAzure Analysis Services\nThe Azure Performance Diagnostics extension"
+    },
+    {
+      "role": "assistant",
+      "content": "Linux Diagnostic Extension (LAD) 3.0"
+    },
+    {
+      "role": "user",
+      "content": "Question 32 of 50\nSingle choice question\nYou have an Azure virtual machine\nnamed VM1 that runs Windows Server\n2019.\nYou save VM1 as a template named\nTemplate1 to the Azure Resource\nManager library.\nYou plan to deploy a virtual machine\nnamed VM2 from Template1.\nWhat can you configure during the\ndeployment of VM2?\nSelect the correct answer\noperating system\nadministrator username\nVirtual machine size\nresource group"
+    },
+    {
+      "role": "assistant",
+      "content": "You can configure the following during the deployment of VM2 from Template1:\n\n* Administrator username\n\nSo the correct answer is: administrator username"
+    },
+    {
+      "role": "user",
+      "content": "You have an Azure subscription that\ncontains an Azure virtual machine\nnamed VM1. VM1 runs a financial\nreporting app named App1 that\ndoes not support multiple active\ninstances. At the end of each month, CPU\nusage for VM1 peaks when App1 runs.\nYou need to create a scheduled\nrunbook to increase the processor\npertormance of VM1 at the end of\neach month.\nWhat task should you include in the\nrunbook?\nSelect the correct answer\nAdd the Azure Performance Diagnostics agent to VM1.\nModify the VM size property of VM1\nAdd VM1 to a scale set.\nAdd a Desired State Configuration (DSC) extension to VM1"
+    },
+    {
+      "role": "assistant",
+      "content": "The correct answer is \"Modify the VM size property of VM1\". By increasing the size of the virtual machine, it will have access to more processing power and memory, which can improve the performance of App1 during its peak usage at the end of each month. A runbook can be created in Azure Automation to automate the process of resizing the virtual machine at a specific time each month."
+    },
+    {
+      "role": "user",
+      "content": "You have an Azure virtual machine\nnamed VM1 that runs Windows\nServer 2019.\nYou sign in to VM1 as a user named\nUser1 and perform the following\nactions:\nCreate files on drive C.\nCreate files on drive D.\nModify the screen \u015faver timeout.\nChange the desktop background\nYou plan to redeploy VM1\nWhich changes will be lost after you\nredeploy VM1?\nthe modified screen saver timeout\nthe new desktop background\nthe new files on drive D\nthe new files on drive C"
+    },
+    {
+      "role": "assistant",
+      "content": "All changes made by the User1 on VM1, including the new files on drive C and D, will be lost after redeploying VM1 because the redeployment process creates a new VM from the VHD of the original VM, discarding any temporary or permanent changes made to the original VM. The default settings for the screen saver timeout and desktop background will be restored as well."
+    },
+    {
+      "role": "user",
+      "content": "But these are the only available option to choose from\nthe modified screen saver timeout\nthe new desktop background\nthe new files on drive D\nthe new files on drive C"
+    },
+    {
+      "role": "assistant",
+      "content": "In that case, the correct answer would be: the new files on drive C and the new files on drive D."
+    },
+    {
+      "role": "user",
+      "content": "You have an Azure virtual machine\nnamed VM1 that runs Windowvs\nServer 2016.\nYou need to create an alert in Azure\nwhen more than two error events are\nlogged to the System event log on\nVM1 within an hour.\nSolution: You create an Azure Log\nAnalytics workspace and contigure\nthe data settings. You add the\nMicrosoft Monitoring Agent VM\nextensiIon to VM1. You create an\nalert in Azure Monitor and specity\nthe Log Analytics Workspace as the\nSource.\nDoes this meet the goal?\nselect the correct answer\nTrue\nFalse"
+    },
+    {
+      "role": "assistant",
+      "content": "True"
+    },
+    {
+      "role": "user",
+      "content": "What about this Solution: You create an Azure storage account and contigure shared access signatures (SASS). You install the Microsoft Monitoring Agent on VM1. You create an alert in Azure Monitor and specify the storage account as the source.\nDoes this meet the goal"
+    },
+    {
+      "role": "assistant",
+      "content": "False.\n\nThis solution does not meet the goal because it configures an alert based on activity in Azure Storage, not on events logged in the System event log on VM1."
+    },
+    {
+      "role": "user",
+      "content": "Question 38 of 50\nSingle choice question\nYou have a deployment template\nnamed Template1 that is used to\ndeploy 10 Azure web apps.\nYou need to identify what to deploy\nbefore you deploy Template1. The\nsolution must minimize Azure costs.\nWhat should you identify?\nSelect the correct answer\nfive Azure Application Gateways\none App Service plan\n10 App Service plans\none Azure Traffic Manager"
+    },
+    {
+      "role": "assistant",
+      "content": "The correct answer is one App Service plan. By using a single App Service plan, you can host multiple web apps on a single set of compute resources, minimizing Azure costs. If you used 10 App Service plans, you would be paying for 10 separate sets of compute resources."
+    },
+    {
+      "role": "user",
+      "content": "Question 40 of 50\nSingle choice question\nYou need to deploy an Azure virtual\nmachine scale set that contains five\ninstances as quickly as possible.\nWhat should you do?\nSelect the correct answer\nDeploy five virtual machines. Modify the Availability Zones settings for each virtual machine\nDeploy five virtual machines. Modify the Size setting for each virtual machine\nDeploy one virtual machine scale set that is set to VM (virtual machines) orchestration mode\nDeploy one virtual machine scale set that is set to ScaleSetVM orchestration mode"
+    },
+    {
+      "role": "assistant",
+      "content": "Deploy one virtual machine scale set that is set to VM (virtual machines) orchestration mode. This will allow you to deploy a group of identical VMs and manage them as a single resource, with automatic scaling capabilities."
+    },
+    {
+      "role": "user",
+      "content": "Question 42 of 50\nYou plan to automate the deployment\nof a virtual machine scale set that uses\nthe Windows Server 2016 Datacenter\nImage.\nYou need to ensure that when the\nScale set virtual machines are\nprovisioned, they have web server\nComponents installed.\nWhich two actions should you\npertorm?\nEach correct answer presents part of\nthe solution\nSelect the correct answer(s)\nUpload a configuration script\nCreate an automation account\nModify the extensionProfile section of the Azure Resource Manager template\nCreate a new virtual scale set in the Azure portal"
+    },
+    {
+      "role": "assistant",
+      "content": "Correct answers are:\n\n* Upload a configuration script\n* Modify the extensionProfile section of the Azure Resource Manager template\n\nExplanation: To ensure that web server components are installed when the scale set virtual machines are provisioned, you can use the Azure Resource Manager (ARM) template to modify the extensionProfile section of the template and specify a custom script extension that installs the components. You can also upload the configuration script that installs the components and specify its location in the extensionProfile section of the template. The automation account and creating a new virtual scale set are not required to achieve this goal."
+    }
+  ]
+}

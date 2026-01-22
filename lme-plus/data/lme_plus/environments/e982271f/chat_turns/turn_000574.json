@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 574,
+  "session_index": 52,
+  "session_id": "sharegpt_FQi5DlJ_48",
+  "turn_in_session": 5,
+  "date": "2023/05/29 (Mon) 03:22",
+  "role": "assistant",
+  "content": "You can save the data stored in `var user` into session storage by adding a click event listener to the \"View Film Details\" button and then calling the `sessionStorage.setItem` function with the variable `user` as the value.\n\nFor example:\n```javascript\n$(\".View\").on(\"click\", function() {\n    sessionStorage.setItem(\"selectedFilm\", JSON.stringify(user));\n});\n```\nThen in the filmDetails.html file, you can retrieve the data from the session storage by calling `sessionStorage.getItem(\"selectedFilm\")` and parse it as a JSON object.\n```javascript\nvar selectedFilm = JSON.parse(sessionStorage.getItem(\"selectedFilm\"));\n```\nYou can then use the variable `selectedFilm` to access the data stored in the session storage and display it on the filmDetails.html page.",
+  "has_answer": false
+}

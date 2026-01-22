@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 299,
+  "session_index": 26,
+  "session_id": "sharegpt_gfhUw40_17",
+  "turn_in_session": 8,
+  "date": "2023/04/11 (Tue) 17:33",
+  "role": "assistant",
+  "content": "Certainly! Here is the modified query that uses `DATE_TRUNC` to get the year for the previous year's data:\n```\nSELECT COUNT(DISTINCT user_id) AS payers_ytd,\n       (SELECT COALESCE(COUNT(DISTINCT user_id), 0)\n        FROM allpayments\n        WHERE state = 'paid' AND created_at >= DATE_TRUNC('year', CURRENT_DATE - INTERVAL '1 year') AND created_at <= current_date) AS payers_ytd_last_year,\n       (100 * (COUNT(DISTINCT user_id)::float / (SELECT COALESCE(COUNT(DISTINCT user_id), 0)::float\n                                                 FROM allpayments\n                                                 WHERE state = 'paid' AND created_at >= DATE_TRUNC('year', CURRENT_DATE - INTERVAL '1 year') AND created_at <= current_date) - 1)) AS growth_percentage\nFROM allpayments\nWHERE state = 'paid' AND created_at >= DATE_TRUNC('year', CURRENT_DATE) AND created_at <= current_date\n```\nThis will return the number of `payers` for the current year up until today (including today) as `payers_ytd`, the number of `payers` for the same period last year as `payers_ytd_last_year`, and the growth between the two as a percentage in the `growth_percentage` column.\n\nI hope this helps! Let me know if you have any questions or if you'd like further clarification.",
+  "has_answer": false
+}

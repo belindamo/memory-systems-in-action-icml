@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 449,
+  "session_index": 42,
+  "session_id": "sharegpt_bhOrPyl_149",
+  "turn_in_session": 4,
+  "date": "2023/05/29 (Mon) 12:58",
+  "role": "assistant",
+  "content": "Yes, that's correct. Templates in Azure Resource Manager provide a common language for deployments, ensuring consistency regardless of the tool or SDK used. They enable the expression of complex deployments, such as deploying multiple resources in the correct order, and reduce manual, error-prone tasks. Templates are also code, making them shareable, testable, and versionable, and provide a \"paper trail\" for",
+  "has_answer": false
+}

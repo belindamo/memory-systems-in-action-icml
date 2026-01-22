@@ -1,0 +1,71 @@
+{
+  "session_id": "sharegpt_obCC1BP_14",
+  "session_index": 34,
+  "date": "2023/05/20 (Sat) 07:56",
+  "turns": [
+    {
+      "role": "user",
+      "content": "Web search results:\n\n[1] \"Googles service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other languages.\"\nURL: https://translate.google.co.id/?hl=en&tab=wT\n\n[2] \"Get professional translation just for $0.07 per word Get your text translated by proficient translators from English to Spanish and modified by competent editors Text received Machine Translation Editing by translator Expert editing Client check Translation Completed Order now Translate files for $0.07/word\"\nURL: https://www.translate.com/english-spanish\n\n[3] \"wake up ( weyk uhp ) phrase 1. (imperative; used to address one person) a. despi\u00e9rtate (informal) (singular) Wake up! Youll be late for school.\u00a1Despi\u00e9rtate! Vas a llegar tarde a clase. b. despi\u00e9rtese (formal) (singular) Wake up, sir! I think this is your stop.\u00a1Despi\u00e9rtese, se\u00f1or! Creo que esta es su parada. c. despab\u00edlate (informal) (singular)\"\nURL: https://www.spanishdict.com/translate/wake%20up\nCurrent date: 27/2/2023\n\nInstructions: Using the provided web search results, write a comprehensive reply to the given query. Make sure to cite results using [[number](URL)] notation after the reference. If the provided search results refer to multiple subjects with the same name, write separate answers for each subject.\nQuery: Translate this sentence She didn't wake up on time into Spanish\nReply in Espa\u00f1ol"
+    },
+    {
+      "role": "assistant",
+      "content": "La traducci\u00f3n al espa\u00f1ol de la frase \"She didn't wake up on time\" es \"Ella no se despert\u00f3 a tiempo\".\n\nPuedes utilizar diferentes herramientas en l\u00ednea para traducir esta frase, como Google Translate [[1](https://translate.google.co.id/?hl=en&tab=wT)] o Translate.com [[2](https://www.translate.com/english-spanish)]. Tambi\u00e9n puedes encontrar la traducci\u00f3n de palabras y frases espec\u00edficas en diccionarios en l\u00ednea como SpanishDict [[3](https://www.spanishdict.com/translate/wake%20up)]."
+    },
+    {
+      "role": "user",
+      "content": "Web search results:\n\n[1] \"Googles service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other languages.\"\nURL: https://translate.google.com/;)\n\n[2] \"Translate She didnt wake up. See Spanish-English translations with audio pronunciations, examples, and word-by-word explanations. ... Translated by. Show more translations. Word-by-word. she. ella. didnt. no. wake. despertar. el velatorio. up. arriba. Examples. Want to Learn Spanish? Spanish learning for everyone. For free. Translation. The ...\"\nURL: https://www.spanishdict.com/translate/she%20didnt%20wake%20up\n\n[3] \"There was a bit of an argument, but she needed to learn the hard way to wake up on time. Entonces discutimos un poco, pero ella ten\u00eda que aprender por s\u00ed misma a levantarse a tiempo . SL Dab Clock Radio - Wake up to a radio alarm clock Alarm Clock - Set up the alarm clock to wake up on time .\"\nURL: https://www.spanishdict.com/translate/wake%20up%20on%20time\nCurrent date: 27/2/2023\n\nInstructions: Using the provided web search results, write a comprehensive reply to the given query. Make sure to cite results using [[number](URL)] notation after the reference. If the provided search results refer to multiple subjects with the same name, write separate answers for each subject.\nQuery: Translate this sentence She didn't wake up on time into Spanish.\nReply in Espa\u00f1ol"
+    },
+    {
+      "role": "assistant",
+      "content": "Hay varias opciones para traducir la frase \"She didn't wake up on time\" al espa\u00f1ol. Una opci\u00f3n podr\u00eda ser \"Ella no se despert\u00f3 a tiempo\" [[2](https://www.spanishdict.com/translate/she%20didn%27t%20wake%20up)]. Otra opci\u00f3n podr\u00eda ser \"Ella no despert\u00f3 a tiempo\" [[3](https://www.spanishdict.com/translate/wake%20up%20on%20time)]. Ambas opciones son gramaticalmente correctas y significan lo mismo. Adem\u00e1s, se puede usar el servicio de traducci\u00f3n de Google [[1](https://translate.google.com/)] para obtener una traducci\u00f3n adicional de la frase."
+    },
+    {
+      "role": "user",
+      "content": "Make a list of the 20 most common verbs in English"
+    },
+    {
+      "role": "assistant",
+      "content": "Here is a list of the 20 most common verbs in English in order of frequency:\n\n1. be\n2. have\n3. do\n4. say\n5. get\n6. make\n7. go\n8. know\n9. take\n10. see\n11. come\n12. think\n13. look\n14. want\n15. give\n16. use\n17. find\n18. tell\n19. ask\n20. work"
+    },
+    {
+      "role": "user",
+      "content": "Make a list of the 20 most common iregular verbs in English"
+    },
+    {
+      "role": "assistant",
+      "content": "Here are the 20 most common irregular verbs in English:\n\n1. be\n2. have\n3. do\n4. say\n5. go\n6. get\n7. make\n8. know\n9. think\n10. see\n11. come\n12. take\n13. want\n14. use\n15. find\n16. give\n17. tell\n18. work\n19. call\n20. try\n\nNote: Some of the verbs on this list (e.g. be, have, do) are irregular in their conjugation but are also considered helping verbs or auxiliary verbs that are used with other verbs in a sentence."
+    },
+    {
+      "role": "user",
+      "content": "Make 5 sentences using went"
+    },
+    {
+      "role": "assistant",
+      "content": "1. Yesterday, I went to the gym and worked out for two hours.\n2. My family and I went on a road trip last summer and visited several national parks.\n3. After finishing her work, Sarah went to bed early to get a good night's sleep.\n4. We went to the concert last night and had an amazing time.\n5. When I was a child, I went to Disneyland with my parents and siblings."
+    },
+    {
+      "role": "user",
+      "content": "List 5 phrasal verbs using GO"
+    },
+    {
+      "role": "assistant",
+      "content": "1. Go after: To pursue or chase someone or something. Example: He went after the thief who stole his wallet.\n2. Go ahead: To proceed or continue with something. Example: You can go ahead and start the meeting without me.\n3. Go back: To return to a previous location or situation. Example: I need to go back home and get my phone charger.\n4. Go out: To leave one's home or usual place to socialize or do something outside. Example: We're going out for dinner tonight.\n5. Go over: To review or examine something in detail. Example: Let's go over the plan again to make sure we didn't miss anything."
+    },
+    {
+      "role": "user",
+      "content": "Make a conversation between 2 people using phrasal verbs"
+    },
+    {
+      "role": "assistant",
+      "content": "Person 1: Hey, have you heard about the new cafe that just opened up?\nPerson 2: No, I haven't. What's it like?\nPerson 1: I haven't been there yet, but I'm planning to check it out this weekend. Do you want to go with me?\nPerson 2: Sure, let's go there together. What time are you thinking of heading out?\nPerson 1: Let's go in the morning. How about we meet up at 10 AM?\nPerson 2: Sounds good to me. I'll go ahead and put it on my calendar.\nPerson 1: Great! I'll pick you up and we can go there together.\nPerson 2: Sounds like a plan. I'm really looking forward to checking out the new cafe."
+    },
+    {
+      "role": "user",
+      "content": "Make a reading using pharsal verbs"
+    },
+    {
+      "role": "assistant",
+      "content": "John is a student who is struggling to keep up with his coursework. He knows he needs to buckle down and focus, but he can't seem to get motivated. One day, he decides to reach out to his friend Emily, who always seems to be on top of things.\n\nJohn: Hey Emily, I'm really behind on my assignments and I can't seem to catch up. Do you have any tips for me?\n\nEmily: Sure John, have you tried breaking up your tasks into smaller pieces? It can be overwhelming to tackle everything at once.\n\nJohn: That's a good idea, I'll give it a shot. But even when I sit down to work, I get distracted so easily.\n\nEmily: I hear you. Maybe you should log off social media and put your phone away while you study. That way you won't be tempted to scroll through your feed or answer texts.\n\nJohn: Yeah, I guess I should go all in and commit to my studies. But sometimes I feel like I'm in over my head.\n\nEmily: Don't worry, John, you've got this. Just take it one step at a time and don't give up. I believe in you!\n\nJohn: Thanks Emily, you're right. I need to knuckle down and stay focused if I want to succeed.\n\nEmily: Absolutely, John. You can't coast through life, sometimes you need to put in the hard work and grind it out to achieve your goals.\n\nJohn: You're so right. Thanks for your encouragement, Emily. I feel more motivated already."
+    }
+  ]
+}

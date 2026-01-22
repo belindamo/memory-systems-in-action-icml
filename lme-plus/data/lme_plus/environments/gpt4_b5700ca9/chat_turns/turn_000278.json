@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 278,
+  "session_index": 27,
+  "session_id": "sharegpt_6sDqw6L_0",
+  "turn_in_session": 13,
+  "date": "2023/04/06 (Thu) 17:57",
+  "role": "assistant",
+  "content": "If you are using a Technicolor MediaAccess TG789vac v2 router, under the DHCP server settings you have only On/Off option, it means that the DHCP server is enabled or disabled.\n\nHowever, it appears that you are unable to configure the primary and secondary DNS server in the DHCP settings.\n\nIn this case, you can try to configure the DNS settings on the device that you want to use Pi-hole on.\n\nYou can also try to use a different router that allows you to configure the primary and secondary DNS servers.\n\nIf you are using a device that is not able to configure the DNS settings, you can use the Pi-hole's DHCP server, this will allow you to configure the DHCP server to use Pi-hole as the primary DNS server for all the devices that connected to your network.\n\nPlease keep in mind that this will disable your router's DHCP server, so you need to make sure that you have correctly configured the Pi-hole's DHCP server before disabling the router's DHCP server.\n\nLet me know if you have any questions on how to configure Pi-hole's DHCP server.",
+  "has_answer": false
+}

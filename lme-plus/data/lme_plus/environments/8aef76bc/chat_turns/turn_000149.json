@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 149,
+  "session_index": 14,
+  "session_id": "sharegpt_b55pq0c_0",
+  "turn_in_session": 5,
+  "date": "2023/05/23 (Tue) 02:07",
+  "role": "assistant",
+  "content": "Sure, here's the rest of the code for the DAO smart contract:\n```csharp\n// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\nimport \"@openzeppelin/contracts/access/Ownable.sol\";\nimport \"@openzeppelin/contracts/security/Pausable.sol\";\nimport \"@openzeppelin/contracts/proxy/utils/Initializable.sol\";\n\ncontract DAO is Initializable, Ownable, Pausable {\n    uint256 public quorum;\n    uint256 public votingPeriod;\n\n    struct Proposal {\n        address proposer;\n        string description;\n        uint256 votingDeadline;\n        bool executed;\n        uint256 numberOfVotes;\n        int256 currentResult;\n        mapping(address => bool) hasVoted;\n    }\n\n    mapping(uint256 => Proposal) public proposals;\n    uint256 public numProposals;\n\n    event ProposalCreated(uint256 proposalId, address indexed proposer);\n    event Voted(uint256 proposalId, address indexed voter);\n    event ProposalExecuted(uint256 proposalId);\n    event ParametersChanged(uint256 newQuorum, uint256 newVotingPeriod);\n\n    modifier notExecuted(uint256 _proposalId) {\n        require(!proposals[_proposalId].executed, \"Proposal already executed\");\n        _;\n    }\n\n    function initialize(uint256 _quorum, uint256 _votingPeriod) public initializer {\n        require(_quorum > 0\n```",
+  "has_answer": false
+}

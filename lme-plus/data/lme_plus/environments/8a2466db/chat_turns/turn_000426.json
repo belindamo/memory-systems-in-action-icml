@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 426,
+  "session_index": 40,
+  "session_id": "sharegpt_LOF3smB_25",
+  "turn_in_session": 6,
+  "date": "2023/05/28 (Sun) 08:50",
+  "role": "assistant",
+  "content": "The formula for linear thermal expansion, which is the most commonly used form of thermal expansion, is:\n\n\u0394L = \u03b1L\u2080\u0394T\n\nwhere:\n\n* \u0394L is the change in length of a material due to a change in temperature\n* \u03b1 is the coefficient of linear thermal expansion (CTE) of the material, which describes how much the material's length changes per unit change in temperature\n* L\u2080 is the initial length of the material\n* \u0394T is the change in temperature\n\nThis formula assumes that the change in temperature is small and that the CTE is constant over the temperature range of interest. For larger temperature ranges or more complex materials, more sophisticated models may be needed to accurately predict thermal expansion.",
+  "has_answer": false
+}

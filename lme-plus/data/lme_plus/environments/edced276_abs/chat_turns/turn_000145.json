@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 145,
+  "session_index": 12,
+  "session_id": "sharegpt_nuYnG53_0",
+  "turn_in_session": 9,
+  "date": "2023/05/23 (Tue) 11:31",
+  "role": "assistant",
+  "content": "OCR tools, such as Tesseract, Adobe Acrobat, ABBYY FineReader, Google Cloud Vision, and Microsoft OCR, are primarily designed to recognize and extract text from images and PDFs. While they can recognize text in images and PDFs, they are not specifically designed to represent graphs into text.\n\nHowever, there are other tools that are specifically designed to extract data from graphs and convert them into text. These tools are known as graph data extraction tools. They can extract data points from graph images and convert them into a structured format, such as a spreadsheet or a database, which can then be easily analyzed and visualized.\n\nExamples of such tools include WebPlotDigitizer, GraphClick, and PlotDigitizer. These tools can process the image of a graph and extract the underlying data points and can export the data in a variety of formats including CSV, JSON, etc.\n\nIn conclusion, OCR tools are primarily designed to recognize and extract text from images and PDFs, while graph data extraction tools are designed to extract data from graph images and convert it into a structured format.",
+  "has_answer": false
+}

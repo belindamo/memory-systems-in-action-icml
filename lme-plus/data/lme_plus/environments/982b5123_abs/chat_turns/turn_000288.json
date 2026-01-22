@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 288,
+  "session_index": 25,
+  "session_id": "sharegpt_sE8hWwU_17",
+  "turn_in_session": 0,
+  "date": "2023/05/27 (Sat) 14:20",
+  "role": "assistant",
+  "content": "To convert a date string in cell B3 to epoch time and then to GMT-5, you can use this formula:\n```scss\n=(((B3-(5/24))-DATE(1899,12,30))*86400)\n```\nThis formula will give you the number of seconds elapsed since the epoch (12/30/1899 12:00 AM) in GMT-5. To convert this number back to a date string in GMT-5, use the following formula:\n```scss\n=TEXT((((B3-(5/24))-DATE(1899,12,30))*86400)/86400+DATE(1899,12,30),\"MM/DD/YYYY hh:mm:ss AM/PM\")\n```\nPlace the second formula in a new cell, and the result should be:\n```\n01/17/2023 12:26:31 PM\n```\nThis result is the date and time from cell B3, converted to epoch time and then to GMT-5 and kept in the format `MM/DD/YYYY hh:mm:ss AM/PM`.",
+  "has_answer": false
+}

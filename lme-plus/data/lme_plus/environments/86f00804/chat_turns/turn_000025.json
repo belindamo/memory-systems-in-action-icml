@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 25,
+  "session_index": 1,
+  "session_id": "sharegpt_efPCiqy_127",
+  "turn_in_session": 22,
+  "date": "2023/05/20 (Sat) 18:52",
+  "role": "assistant",
+  "content": "The command `cd ~/development` changes the current working directory to a directory called \"development\" in your home directory.\n\nThe command `unzip ~/Downloads/flutter_macos_arm64_3.7.3-stable.zip` unzips the downloaded Flutter archive file named \"flutter\\_macos\\_arm64\\_3.7.3-stable.zip\" that is located in the \"Downloads\" directory of your home directory.\n\nAssuming that you have downloaded the Flutter archive file and placed it in the \"Downloads\" directory, these commands will set you up to start using Flutter for development.",
+  "has_answer": false
+}

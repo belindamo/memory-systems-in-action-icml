@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 128,
+  "session_index": 11,
+  "session_id": "sharegpt_JHGwlee_33",
+  "turn_in_session": 4,
+  "date": "2023/07/22 (Sat) 19:24",
+  "role": "assistant",
+  "content": "You need to add the `$INCLUDE sites-enabled/my_virtual_server` line in the \"default\" file located in the \"/etc/freeradius/3.0/sites-enabled\" directory.\n\nThis file is the main configuration file for the FreeRADIUS server. You can find the following section in the file:\n```\nserver default {\n    listen {\n        ...\n    }\n    authorize {\n    ...\n    }\n    authenticate {\n    ...\n    }\n    ...\n}\n```\nYou should add the `$INCLUDE sites-enabled/my_virtual_server` line inside the \"server default\" block, after the \"authorize\" block.\n\nSo it will look something like this:\n```\nserver default {\n    listen {\n        ...\n    }\n    authorize {\n    ...\n    }\n    $INCLUDE sites-enabled/my_virtual_server\n    authenticate {\n    ...\n    }\n    ...\n}\n```\nMake sure to save your changes and restart the FreeRADIUS service for the changes to take effect.\nIt's recommended to check the official documentation of FreeRADIUS to find out how to include virtual servers.",
+  "has_answer": false
+}

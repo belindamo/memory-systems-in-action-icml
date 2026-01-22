@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 348,
+  "session_index": 33,
+  "session_id": "sharegpt_vbNrVtS_94",
+  "turn_in_session": 5,
+  "date": "2023/05/26 (Fri) 17:24",
+  "role": "assistant",
+  "content": "On the Tasks (Admin, Tagger, Checker View) screen, the following features can be used for task management:\n\n* Progress Tracking: The Admin user can view a progress bar on the task list, which shows the percentage of the task that has been completed. The progress bar should be updated in real-time as documents are annotated and reviewed.\n* Document Outline: The Tagger user can view an outline of the document being annotated, which shows the structure and hierarchy of the content. The outline should be interactive, so that the Tagger can click on a section to navigate to it in the main content area. This can be particularly useful for long documents with many pages.\n* Label Suggestions: The Tagger user can use the label suggestion feature to receive recommendations for labels to apply to the document. The suggestions should be based on the context and content of the document, and should be relevant and accurate. The Tagger should have the option to accept or reject the suggestions, and should also have the ability to customize the settings for the label suggestion feature.",
+  "has_answer": false
+}

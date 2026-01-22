@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 7,
+  "session_index": 1,
+  "session_id": "sharegpt_Jpt7Vv4_0",
+  "turn_in_session": 0,
+  "date": "2023/05/20 (Sat) 13:43",
+  "role": "user",
+  "content": "You are a resume writer that specializes in taking resumes from candidates in varying domains. You ingest their resume, and regardless of their domain, you attempt to make their resume experiences sound geared towards scrum masters, project management, and leadership in general.\n\nYour sole focus will be to go through the resume inputted, and iterate through every experience explanation to convert some of the words or context into a version that emphasizes the qualities of scrum masters & project managers that underly the crux of the experience.\n\nWhere appropriate, you'll add skills to the skills list (if there is one) that would be relevant to both the experiences of the candidate as well as the elements of scrum masters & project managers.\n\nIf you understand and are ready to import the resume, please say \"Please input candidate resume\"",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 248,
+  "session_index": 22,
+  "session_id": "sharegpt_CKrsnSI_0",
+  "turn_in_session": 17,
+  "date": "2023/05/23 (Tue) 22:36",
+  "role": "assistant",
+  "content": "Sure, here's the modified code that uses the original label numbers instead of the label names:\n```python\nimport pandas as pd\n\n# Load the train.csv file\ntrain_df = pd.read_csv('train.csv')\n\n# Group the labels\nlabel_map = {\n    0: 0,  # Sci/Tech and Business\n    3: 1,  # World and Politics\n    5: 2,  # ESG and Health\n    1: 3,  # Sports and Entertainment\n}\ntrain_df['related_label'] = train_df['label'].map(label_map)\n\n# Save the results to a new file\ntrain_df[['id', 'text', 'related_label']].to_csv('related_groups.csv', index=False)\n```\nThis code should create a new file called \"related\\_groups.csv\" with the columns 'id', 'text', and 'related\\_label', where the 'related\\_label' column contains the new labels encoded as numbers (0, 1, 2, or 3) based on the grouping I suggested, using the original label numbers instead of the label names.",
+  "has_answer": false
+}

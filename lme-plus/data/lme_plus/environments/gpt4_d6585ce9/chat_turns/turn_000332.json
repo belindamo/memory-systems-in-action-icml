@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 332,
+  "session_index": 32,
+  "session_id": "b691722f_1",
+  "turn_in_session": 4,
+  "date": "2023/04/15 (Sat) 16:05",
+  "role": "user",
+  "content": "We're building a simple 2D platformer game where the player has to collect coins to increase their score. The score should increase by 10 points for each coin collected, but right now, it's not updating correctly. We've tried using a global variable to store the score, but it's not working as expected. Can you help us figure out why?",
+  "has_answer": false
+}

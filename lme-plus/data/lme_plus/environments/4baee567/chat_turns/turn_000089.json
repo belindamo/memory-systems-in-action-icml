@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 89,
+  "session_index": 8,
+  "session_id": "sharegpt_3E7iMzS_93",
+  "turn_in_session": 3,
+  "date": "2023/05/22 (Mon) 22:34",
+  "role": "user",
+  "content": "update this script please to include usage of all disk on the server not just /home/ also change the used to 50% instead of 90%\n\n#!/bin/bash\n\n# Set the SparkPost API endpoint\nsparkpost\\_api=\"https://api.sparkpost.com/api/v1\"\n\n# Set your SparkPost API key\nsparkpost\\_api\\_key=\"5d4d97f437cb777fdaa63f6c9af1e62230e7f12b\"\n\n# Set the recipient email address\nto=\"es@x10hosting.com\"\n# set the from\nfrom=\"support@x10hosting.com\"\n\n# Set the email subject and message\nsubject=\"Disk space alert\"\nmessage=\"Your home disk space on $(hostname) is over 90% full.\n $(df -h)\n Please take action to free up some space.\"\nmessage=\"${message//$'\\n'/\\\\n}\"\n\n# Check disk usage and get the percentage used\ndisk\\_usage=$(df -h /home/ | tail -1 | awk '{print $5}' | tr -d '%')\nif [ $disk\\_usage -ge 90 ]; then\n # If disk usage is over 90%, send an email via SparkPost API\n\n # Generate the API request payload\n payload=\"{\\\"options\\\":{\\\"sandbox\\\":false},\\\"content\\\":{\\\"from\\\":{\\\"email\\\":\\\"support@x10hosting.com\\\"},\\\"subject\\\":\\\"$subject\\\",\\\"text\\\":\\\"$message\\\"},\\\"recipients\\\":[{\\\"address\\\":{\\\"email\\\":\\\"$to\\\"}}]}\"\n\n # Send the API request and check for errors\n response=$(curl -s -w \"%{http\\_code}\" -o /dev/null -XPOST -H \"Authorization: $sparkpost\\_api\\_key\" -H \"Content-Type: application/json\" -d \"$payload\" \"$sparkpost\\_api/transmissions\")\n if [ \"$response\" == \"200\" ]; then\n echo \"Email sent successfully.\"\n else\n echo \"Error sending email. Response code: $response\"\n fi\nfi",
+  "has_answer": false
+}

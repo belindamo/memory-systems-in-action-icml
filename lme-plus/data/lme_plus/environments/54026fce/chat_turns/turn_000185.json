@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 185,
+  "session_index": 18,
+  "session_id": "sharegpt_14s18aO_178",
+  "turn_in_session": 3,
+  "date": "2023/05/24 (Wed) 09:01",
+  "role": "assistant",
+  "content": "To search for products that are in stock only, you can add a meta query to your existing code to filter the products based on the `_stock` meta field. Here's an updated `if` block that adds the meta query:\n```scss\nif ($stock) {\n    $args['meta_query'][] = [        'key' => '_stock',        'value' => 0,        'compare' => '>',    ];\n}\n```\nThis will filter the products to show only those that have a stock quantity greater than 0.",
+  "has_answer": false
+}

@@ -1,0 +1,63 @@
+{
+  "session_id": "sharegpt_iwcVyKX_0",
+  "session_index": 26,
+  "date": "2023/05/28 (Sun) 16:19",
+  "turns": [
+    {
+      "role": "user",
+      "content": "how to get Top pools by total volume locked (TVL), and 24Hr volume by using Uniswap V3 Subgraph"
+    },
+    {
+      "role": "assistant",
+      "content": "To get the top pools by total volume locked (TVL) and 24Hr volume on Uniswap V3 Subgraph, you can follow these steps:\n\n1. First, you need to identify the Uniswap V3 Subgraph endpoint URL. You can find it on the official Uniswap V3 Subgraph documentation website.\n2. Once you have the endpoint URL, you can use it to query the subgraph using a tool like GraphiQL or any other GraphQL client.\n3. To get the top pools by TVL, you can use the following GraphQL query:\n```typescript\n{\n  pools(first: 10, orderBy: totalValueLockedUSD, orderDirection: desc) {\n    id\n    token0 {\n      symbol\n    }\n    token1 {\n      symbol\n    }\n    totalValueLockedUSD\n  }\n}\n```\nIn this query, we are querying for the top 10 pools ordered by `totalValueLockedUSD` in descending order. We are also returning the pool ID, the symbols of the tokens in the pool (`token0` and `token1`), and the `totalValueLockedUSD` of each pool.\n\n1. To get the top pools by 24Hr volume, you can use the following GraphQL query:\n```php\n{\n  pools(first: 10, orderBy: volumeUSD, orderDirection: desc, where: {volumeUSD_gt: 0}) {\n    id\n    token0 {\n      symbol\n    }\n    token1 {\n      symbol\n    }\n    volumeUSD\n  }\n}\n```\nIn this query, we are querying for the top 10 pools ordered by `volumeUSD` in descending order. We are also returning the pool ID, the symbols of the tokens in the pool (`token0` and `token1`), and the `volumeUSD` of each pool. We are also using the `where` parameter to filter out any pools with a 24Hr volume of zero.\n\n1. Once you have executed the queries, you will receive the data as a JSON response, which you can then parse and display as per your requirements."
+    },
+    {
+      "role": "user",
+      "content": "can you show me how to query more info in top pools"
+    },
+    {
+      "role": "assistant",
+      "content": "Sure, to query more information about the top pools, you can add more fields to the GraphQL query for each pool. Here's an example of a query that retrieves additional information about the top 10 pools sorted by TVL:\n```typescript\n{\n  pools(first: 10, orderBy: totalValueLockedUSD, orderDirection: desc) {\n    id\n    token0 {\n      symbol\n      name\n      decimals\n      totalSupply\n    }\n    token1 {\n      symbol\n      name\n      decimals\n      totalSupply\n    }\n    feeTier\n    tick\n    liquidity\n    sqrtPrice\n    feeGrowthGlobal0X128\n    feeGrowthGlobal1X128\n    totalValueLockedUSD\n    volumeUSD\n  }\n}\n```\nIn this query, we have added more fields to retrieve more detailed information about each pool. For example, we are retrieving the `name`, `decimals`, and `totalSupply` of both tokens in the pool. We are also retrieving the `feeTier`, `tick`, `liquidity`, `sqrtPrice`, `feeGrowthGlobal0X128`, and `feeGrowthGlobal1X128` values of each pool, which can be useful for analyzing the liquidity and trading behavior of each pool. Finally, we are still retrieving the `totalValueLockedUSD` and `volumeUSD` fields to sort the pools by TVL and 24Hr volume.\n\nYou can customize this query to retrieve any additional information that you need by adding or removing fields as necessary."
+    },
+    {
+      "role": "user",
+      "content": "is the network here Ethereum?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, Uniswap V3 is a decentralized exchange built on the Ethereum blockchain, which means that all transactions on the platform are executed on the Ethereum network. Uniswap V3 uses smart contracts to execute trades and manage liquidity pools, and all transactions are recorded on the Ethereum blockchain. Therefore, when using the Uniswap V3 subgraph to query data about the platform, you are querying data that is stored on the Ethereum blockchain."
+    },
+    {
+      "role": "user",
+      "content": "how to get top pools based on total volume locked (TVL) and 24Hr volume together?"
+    },
+    {
+      "role": "assistant",
+      "content": "To get the top pools based on both total volume locked (TVL) and 24Hr volume together, you can use the following GraphQL query:\n```typescript\n{\n  pools(first: 10, orderBy: totalValueLockedUSD, orderDirection: desc) {\n    id\n    token0 {\n      symbol\n    }\n    token1 {\n      symbol\n    }\n    totalValueLockedUSD\n    volumeUSD\n  }\n}\n```\nIn this query, we are querying for the top 10 pools ordered by `totalValueLockedUSD` in descending order. We are also returning the pool ID, the symbols of the tokens in the pool (`token0` and `token1`), the `totalValueLockedUSD` of each pool, and the `volumeUSD` of each pool. By including both `totalValueLockedUSD` and `volumeUSD` in the query and sorting by `totalValueLockedUSD`, we are effectively getting the top pools based on both TVL and 24Hr volume.\n\nYou can adjust the `first` parameter in the query to return more or fewer pools, as necessary. Additionally, you can modify the `orderDirection` parameter to sort the pools in ascending order instead of descending order, depending on your preferences."
+    },
+    {
+      "role": "user",
+      "content": "why the data I am getting is different from https://info.uniswap.org/#/"
+    },
+    {
+      "role": "assistant",
+      "content": "There could be several reasons why the data you are getting from the Uniswap V3 subgraph is different from the data on the Uniswap Info website (<https://info.uniswap.org/#/>). Here are a few possible explanations:\n\n1. Timeframe: The data on the Uniswap Info website is often updated in real-time, while the data on the subgraph may have a slight delay. Additionally, the timeframe of the data may differ between the two sources. For example, the subgraph may provide data for the last 24 hours, while the Uniswap Info website may show data for the last hour.\n2. Metrics: The subgraph and the Uniswap Info website may use different metrics to measure TVL and 24Hr volume. For example, the subgraph may use a different methodology to calculate TVL or may include additional pools in the calculation.\n3. Filters: The subgraph and the Uniswap Info website may apply different filters or criteria when selecting which pools to display. For example, the subgraph may exclude pools with a TVL below a certain threshold, while the Uniswap Info website may include all pools regardless of their TVL.\n4. API errors: Occasionally, there may be issues with the subgraph API that result in incomplete or inaccurate data. If you suspect that the subgraph is not returning accurate data, you can try checking other sources or reaching out to the Uniswap development team for assistance.\n\nIt's also worth noting that the Uniswap V3 subgraph is maintained by a third-party developer and is not an official Uniswap product. While the subgraph is generally reliable, it's possible that there may be occasional discrepancies or errors in the data."
+    },
+    {
+      "role": "user",
+      "content": "can you tell me what metrics and filter they are using"
+    },
+    {
+      "role": "assistant",
+      "content": "The Uniswap Info website uses the following metrics to display data for each pool:\n\n* Total Value Locked (TVL): The total value of all assets locked in a liquidity pool, denominated in USD. This is calculated by multiplying the amount of each asset in the pool by its current price in USD and adding the results together.\n* 24h Volume: The total volume of trades executed in a pool over the last 24 hours, denominated in USD. This is calculated by summing the USD value of all trades executed in the pool over the last 24 hours.\n\nAs for filters, the Uniswap Info website includes all liquidity pools on the Uniswap V3 network, regardless of their TVL or other characteristics. However, it only displays data for pools with a minimum of $10,000 in TVL. This filter helps to exclude small, less liquid pools from the data displayed on the website. Additionally, the website excludes pools that have not had any trading activity in the last 24 hours from the 24h Volume rankings.\n\nIt's worth noting that the Uniswap V3 subgraph, which is a separate tool used for querying data on the Uniswap V3 network, may use slightly different metrics or filters depending on how it is configured. However, the metrics and filters used by the Uniswap Info website are generally considered standard for analyzing liquidity pool data on the Uniswap V3 network."
+    },
+    {
+      "role": "user",
+      "content": "what is the query for top tokens available that includes price point, price change, and TVL"
+    },
+    {
+      "role": "assistant",
+      "content": "Here is a GraphQL query that returns the top tokens on the Uniswap V3 network, sorted by TVL, and includes their current price, price change, and TVL:\n```less\n{\n  tokens(first: 10, orderBy: tradeVolumeUSD, orderDirection: desc) {\n    id\n    symbol\n    derivedETH\n    totalLiquidity\n    tradeVolumeUSD\n    volumeUSD\n    dayData(orderBy: date, orderDirection: desc, first: 2) {\n      priceUSD\n    }\n  }\n}\n```\nIn this query, we are querying for the top 10 tokens on the Uniswap V3 network, sorted by `tradeVolumeUSD` in descending order. We are also returning the token ID, symbol, `derivedETH` (the token's price in ETH), `totalLiquidity` (the TVL of the token), `tradeVolumeUSD` (the 24h trading volume of the token, denominated in USD), and `volumeUSD` (the 24h volume of the token, denominated in USD).\n\nWe are also using a subquery to retrieve the current `priceUSD` of each token. This is done by querying the `dayData` field for the most recent two days and returning the `priceUSD` for the most recent day.\n\nYou can modify the `first` parameter to return more or fewer tokens, and adjust the `orderBy` and `orderDirection` parameters to sort the tokens based on different metrics or in a different order."
+    }
+  ]
+}

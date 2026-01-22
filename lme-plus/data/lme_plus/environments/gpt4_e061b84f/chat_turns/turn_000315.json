@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 315,
+  "session_index": 31,
+  "session_id": "sharegpt_5jHUxvs_80",
+  "turn_in_session": 1,
+  "date": "2023/06/17 (Sat) 01:07",
+  "role": "assistant",
+  "content": "I apologize for the confusion. It seems like there's an issue with the script being executed on the VM. Let's try encoding the script as a Base64 string before passing it to the `az vm run-command invoke` command. This should prevent any issues with special characters in the script.\n\nUpdate the Azure CLI task's `inlineScript` section as follows:\n```yaml\ninlineScript: |\n  # Set variables\n  $domainAdminUsername = \"$(intro)\"\n  $domainAdminPassword = \"$(outro)\"\n  $domain = 'corp.nmrp.com'\n  $ou = 'OU=computers,DC=corp,DC=nmrp,DC=com'\n  $vmName = 'demo-vm-NICK'\n  $resourceGroupName = 'devops-test' # Replace with a variable or parameter if needed\n\n  # Get VM\n  $vm = az vm show --name $vmName --resource-group $resourceGroupName | ConvertFrom-Json\n\n  # Update VM operating system and join domain\n  $joinDomainScript = @'\n  $domainAdminUsername = \"{0}\"\n  $domainAdminPassword = ConvertTo-SecureString \"{1}\" -AsPlainText -Force\n  Add-Computer -DomainName {2} -OUPath {3} -Credential (New-Object System.Management.Automation.PSCredential($domainAdminUsername, $domainAdminPassword)) -Restart\n  '@ -f $domainAdminUsername, $domainAdminPassword, $domain, $ou\n\n  # Encode the script in Base64\n  $joinDomainScriptBase64 = [Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes($joinDomainScript))\n\n  # Execute script on VM\n  $vmResourceId = $vm.id\n  az vm run-command invoke --ids $vmResourceId --command-id 'RunPowerShellScript' --scripts \"powershell -EncodedCommand $joinDomainScriptBase64\"\n```\nThis version of the script encodes the `$joinDomainScript` variable as a Base64 string and passes it to the `az vm run-command invoke` command with the `-EncodedCommand` flag. This should resolve the issue with the script terminator and join the VM to the domain.",
+  "has_answer": false
+}

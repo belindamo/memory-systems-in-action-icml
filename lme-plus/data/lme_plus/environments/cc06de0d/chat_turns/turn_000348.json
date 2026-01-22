@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 348,
+  "session_index": 30,
+  "session_id": "7ff028d8_1",
+  "turn_in_session": 10,
+  "date": "2023/05/28 (Sun) 08:21",
+  "role": "user",
+  "content": "I think I need to adjust the formula to account for the month. Since I want to limit my clothing purchases to $500 per month, I should only consider the purchases made in the current month. Can I use a formula like `=SUMIFS(B:B, MONTH(A:A), MONTH(TODAY()), C:C, \"Clothing\")>400`?",
+  "has_answer": false
+}

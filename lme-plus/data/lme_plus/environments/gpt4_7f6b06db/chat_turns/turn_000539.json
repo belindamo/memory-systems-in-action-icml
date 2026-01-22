@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 539,
+  "session_index": 50,
+  "session_id": "sharegpt_gPFzM9v_153",
+  "turn_in_session": 24,
+  "date": "2023/05/15 (Mon) 20:49",
+  "role": "assistant",
+  "content": "To run a file as an administrator using cmd, you can use the \"runas\" command. The syntax is as follows:\n\nrunas /user:<username> <filepath>\n\nFor example, to run a file called \"example.exe\" located in the C:\\Program Files directory as the administrator, you would use the following command:\n\nrunas /user:administrator \"C:\\Program Files\\example.exe\"\n\nYou will be prompted to enter the administrator's password before the file is executed.",
+  "has_answer": false
+}

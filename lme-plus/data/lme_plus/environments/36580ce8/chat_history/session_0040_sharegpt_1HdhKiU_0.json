@@ -1,0 +1,23 @@
+{
+  "session_id": "sharegpt_1HdhKiU_0",
+  "session_index": 40,
+  "date": "2023/05/28 (Sun) 00:02",
+  "turns": [
+    {
+      "role": "user",
+      "content": "Put these in a table:\n\nUniversity of Aston\nUniversity of Anglia Ruskin\n\"Queen Mary\nUniversity of London\"\nUniversity of Birmingham\nUniversity of Bristol\n\"University of Brighton\nSussex\"\nUniversity of Brunel\nUniversity of Buckingham\nUniversity of Cambridge\nUniversity of Preston\nUniversity of Edge Hill\nUniversity of Exeter\n\"University of Hull\nYork\"\nUniversity of Imperial College London\nUniversity of Keele\nUniversity of University of Kent & Canterbury Christchurch\nKing's College London\nUniversity of Lancaster\nUniversity of Leeds\nUniversity of Leicester\nUniversity of Lincoln\nUniversity of Liverpool\nUniversity of Manchester\nUniversity of Newcastle\nUniversity of Nottingham\nUniversity of East Anglia\nUniversity of Oxford\nUniversity of Plymouth\nUniversity College London\nUniversity of Sheffield\nUniversity of Southampton\nUniversity of University of Sunderland\nSt George's Hospital Medical School\nUniversity of Warwick"
+    },
+    {
+      "role": "assistant",
+      "content": "| University | Location |\n| --- | --- |\n| University of Aston | Aston Triangle, Birmingham |\n| University of Anglia Ruskin | East Road, Cambridge |\n| Queen Mary University of London | Mile End Rd, London |\n| University of Birmingham | Edgbaston, Birmingham |\n| University of Bristol | Senate House, Bristol |\n| University of Brighton Sussex | Falmer, Brighton |\n| University of Brunel | Kingston Lane, Uxbridge |\n| University of Buckingham | Hunter St, Buckingham |\n| University of Cambridge | The Old Schools, Cambridge |\n| University of Central Lancashire | Preston, Lancashire |\n| University of Edge Hill | St Helens Rd, Ormskirk |\n| University of Exeter | Exeter, Devon |\n| University of Hull York | Cottingham Rd, Hull |\n| Imperial College London | Exhibition Rd, London |\n| University of Keele | Keele, Staffordshire |\n| University of Kent Canterbury Christ Church | Canterbury, Kent |\n| King's College London | Strand, London |\n| Lancaster University | Bailrigg, Lancaster |\n| University of Leeds | Woodhouse Lane, Leeds |\n| University of Leicester | University Rd, Leicester |\n| University of Lincoln | Brayford Pool, Lincoln |\n| University of Liverpool | Liverpool, Merseyside |\n| University of Manchester | Oxford Rd, Manchester |\n| Newcastle University | Newcastle upon Tyne, Tyne and Wear |\n| University of Nottingham | University Park, Nottingham |\n| University of East Anglia | Norwich, Norfolk |\n| University of Oxford | University Parks, Oxford |\n| University of Plymouth | Drake Circus, Plymouth |\n| University College London | Gower St, London |\n| University of Sheffield | Western Bank, Sheffield |\n| University of Southampton | University Rd, Southampton |\n| University of Sunderland | Edinburgh Building, Sunderland |\n| St George's Hospital Medical School | Cranmer Terrace, London |\n| University of Warwick | Coventry, Warwickshire |"
+    },
+    {
+      "role": "user",
+      "content": "On the location you can remove the neighbourhood, leave just the city"
+    },
+    {
+      "role": "assistant",
+      "content": "Sure, here is the updated table:\n\n| University | Location |\n| --- | --- |\n| University of Aston | Birmingham |\n| University of Anglia Ruskin | Cambridge |\n| Queen Mary University of London | London |\n| University of Birmingham | Birmingham |\n| University of Bristol | Bristol |\n| University of Brighton Sussex | Brighton |\n| University of Brunel | Uxbridge |\n| University of Buckingham | Buckingham |\n| University of Cambridge | Cambridge |\n| University of Central Lancashire | Preston |\n| University of Edge Hill | Ormskirk |\n| University of Exeter | Exeter |\n| University of Hull York | Hull |\n| Imperial College London | London |\n| University of Keele | Keele |\n| University of Kent Canterbury Christ Church | Canterbury |\n| King's College London | London |\n| Lancaster University | Lancaster |\n| University of Leeds | Leeds |\n| University of Leicester | Leicester |\n| University of Lincoln | Lincoln |\n| University of Liverpool | Liverpool |\n| University of Manchester | Manchester |\n| Newcastle University | Newcastle upon Tyne |\n| University of Nottingham | Nottingham |\n| University of East Anglia | Norwich |\n| University of Oxford | Oxford |\n| University of Plymouth | Plymouth |\n| University College London | London |\n| University of Sheffield | Sheffield |\n| University of Southampton | Southampton |\n| University of Sunderland | Sunderland |\n| St George's Hospital Medical School | London |\n| University of Warwick | Coventry |"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 482,
+  "session_index": 45,
+  "session_id": "sharegpt_wnK2ssX_0",
+  "turn_in_session": 5,
+  "date": "2023/05/30 (Tue) 06:57",
+  "role": "assistant",
+  "content": "The main difference between the Rain100H and Rain100L datasets is the quality of the images. The Rain100H dataset contains higher quality images compared to the Rain100L dataset.\n\nSpecifically, the Rain100H dataset includes 100 high-quality pairs of rainy and corresponding clean images, where the resolution of each image is 720p or higher, and the images are relatively free of compression artifacts. On the other hand, the Rain100L dataset contains 100 pairs of lower-quality rainy and clean images, where the resolution of each image is 400x400 pixels, and the images are relatively more compressed.\n\nThe Rain100H dataset is designed to be more challenging for rain removal algorithms, as it contains more complex rain streaks and a wider variety of scenarios compared to the Rain100L dataset. As a result, the Rain100H dataset is generally considered a more advanced benchmark for evaluating the performance of image rain removal algorithms.",
+  "has_answer": false
+}

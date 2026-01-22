@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 84,
+  "session_index": 8,
+  "session_id": "sharegpt_pPJZzai_0",
+  "turn_in_session": 3,
+  "date": "2023/05/22 (Mon) 02:47",
+  "role": "assistant",
+  "content": "\"Embedding-based retrieval\" models refer to a type of machine learning model used in natural language processing (NLP) and information retrieval tasks. These models are trained to convert words, phrases, or documents into numerical vectors (i.e., embeddings) that capture their semantic meaning in a high-dimensional space.\n\nThe goal of embedding-based retrieval models is to enable efficient and effective matching of queries with relevant documents or passages in a large corpus of text. By representing text as vectors, the model can compare the similarity between query and document vectors to determine the relevance of a given document to a particular query.\n\nThese models have become increasingly popular in recent years due to their ability to capture the semantic relationships between words and phrases, as well as their efficiency in handling large datasets. Examples of embedding-based retrieval models include BERT, Word2Vec, and Doc2Vec.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 443,
+  "session_index": 45,
+  "session_id": "sharegpt_sScldBY_0",
+  "turn_in_session": 7,
+  "date": "2023/05/22 (Mon) 04:01",
+  "role": "assistant",
+  "content": "Here is an example of a Python script using Extron's Global Scripter that can mute a Shure MXA910 microflex advance microphone:\n```python\nimport extron_lib\n\ndef mute_microphone(ipcp_pro, microphone_number):\n    # Send the mute command to the microphone\n    ipcp_pro.SendSerialCommand(f\"<{microphone_number}:AM{0:X}>\")\n\n# Connect to the IPCP Pro 550 control processor\nipcp_pro = extron_lib.IPCP_PRO_550()\nipcp_pro.Connect(\"192.168.1.100\")\n\n# Mute microphone number 1\nmute_microphone(ipcp_pro, 1)\n\n# Disconnect from the IPCP Pro 550 control processor\nipcp_pro.Disconnect()\n```\nIn this example, the `mute_microphone` function takes the IPCP Pro 550 control processor instance and the microphone number as arguments. The function sends the mute command to the microphone using the `SendSerialCommand` method. The `f\"<{microphone_number}:AM{0:X}>\"` string sends the mute command in Extron's serial control protocol format. The `Connect` method connects to the IPCP Pro 550 control processor at the specified IP address. Finally, the `Disconnect` method disconnects from the IPCP Pro 550 control processor.\n\nNote: This is just an example and may not work as is. You may need to consult with an audio/visual integration specialist and modify the script based on your specific setup.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 224,
+  "session_index": 21,
+  "session_id": "sharegpt_d9GL0oF_0",
+  "turn_in_session": 13,
+  "date": "2023/05/24 (Wed) 15:15",
+  "role": "assistant",
+  "content": "A. TCP transmits data at a lower rate, but ensures packet delivery. UDP transmits data at a higher rate, but does not ensure packet delivery.\n\nTCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two protocols that are used for transmitting data over a network. Both protocols belong to the transport layer of the OSI (Open Systems Interconnection) model.\n\nTCP is a connection-oriented protocol, which means that a connection must be established between the sender and the receiver before data can be transmitted. TCP also provides error checking and retransmission of lost data to ensure reliable delivery of data. However, this error checking and retransmission of lost data can result in slower data transmission rates compared to UDP.\n\nUDP is a connectionless protocol, which means that it does not establish a connection before transmitting data. UDP transmits data in the form of packets called datagrams, which are sent without checking for their arrival at the destination. This allows UDP to transmit data at a higher rate, but it does not provide the same level of reliability as TCP. UDP is typically used for applications that do not require reliable data transmission or that can tolerate lost or damaged packets.",
+  "has_answer": false
+}

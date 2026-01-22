@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 243,
+  "session_index": 26,
+  "session_id": "sharegpt_e6daAMu_0",
+  "turn_in_session": 0,
+  "date": "2023/08/28 (Mon) 17:35",
+  "role": "user",
+  "content": "Hello Professor. Could you tell me some concrete implementation steps a project? Following are some recent papers that are relevant to this project.\n- Context-faithful prompt (Zhou et al., 2023) figured out some prompt engineering tricks to improve the reasoning faithfulness. Specifically, they found that formulating the prompts as opinionated questions and including counterfactual examples could elicit more faithful reasoning.\n- ReAct (Yao et al., 2023) ReAct selects demonstration examples to put in the prompt as the \"action items\", and adds natural language instructions as the \"thoughts\". The synergy between reasoning and actions allows LLM to effectively use tools, including an API access to Wikipedia. ReAct achieved high performances on decision-making benchmarks and question-answering benchmarks.\nCan we combine the ideas of these above two papers and come up with a concrete plan to improve the ability of LLM to understand how to use tools?",
+  "has_answer": false
+}

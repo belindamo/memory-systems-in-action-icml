@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 400,
+  "session_index": 36,
+  "session_id": "sharegpt_P01BTRw_0",
+  "turn_in_session": 9,
+  "date": "2023/05/29 (Mon) 03:29",
+  "role": "assistant",
+  "content": "The block that ends up on the consensus branch is determined by the underlying consensus algorithm used by the blockchain network. In the case of Bitcoin, the consensus algorithm is based on the proof-of-work (PoW) mechanism.\n\nWhen two miners discover blocks nearly simultaneously, each block will propagate through the network and be added to different nodes' local copies of the blockchain. Some nodes will receive one block first and consider it to be the valid chain, while others will receive the other block first and consider it to be the valid chain.\n\nAs new blocks are added to each chain, the chain with the most accumulated work (i.e., the longest chain) will become the valid chain. In the PoW consensus algorithm, the accumulated work is measured by the total amount of computational power that has been expended to produce the blocks on that chain. The longer chain is considered the valid chain because it represents the chain that required the most computational effort to produce, and therefore the one that is the most secure.\n\nTherefore, if two miners discover blocks nearly simultaneously, the block that ends up on the consensus branch will be the one that is included in the longest chain. The other block will be orphaned and its transactions will be returned to the memory pool to be included in a future block.\n\nOverall, the consensus algorithm used by the blockchain network determines which block ends up on the consensus branch, based on the accumulated work and the length of each competing chain.",
+  "has_answer": false
+}

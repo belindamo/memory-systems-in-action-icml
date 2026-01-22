@@ -1,0 +1,15 @@
+{
+  "session_id": "sharegpt_maZZMgz_0",
+  "session_index": 1,
+  "date": "2023/05/20 (Sat) 03:42",
+  "turns": [
+    {
+      "role": "user",
+      "content": "autonmous cars localization papers"
+    },
+    {
+      "role": "assistant",
+      "content": "1. \"Probabilistic Robotics\" by Sebastian Thrun, Wolfram Burgard, and Dieter Fox - This book provides a comprehensive overview of robotics and covers topics such as probabilistic robotics, autonomous vehicle localization, and sensor fusion.\n2. \"A Survey of Localization for Mobile Robots\" by Montiel et al. - This paper provides a survey of various localization techniques for mobile robots, including sensor-based methods, map-based methods, and hybrid methods.\n3. \"Visual Localization for Autonomous Vehicles\" by Tung et al. - This paper presents a visual localization method for autonomous vehicles based on a 3D point cloud and a convolutional neural network.\n4. \"A Robust Localization Method for Autonomous Vehicles Using Multi-Sensor Fusion\" by Zhang et al. - This paper proposes a localization method for autonomous vehicles that fuses information from multiple sensors, including GPS, LiDAR, and cameras.\n5. \"Unsupervised Learning of Monocular Depth Estimation and Visual Odometry with Deep Feature Reconstruction\" by Yin et al. - This paper presents an unsupervised learning method for monocular depth estimation and visual odometry, which can be used for localization in autonomous vehicles.\n6. \"Probabilistic Modeling and Detection of Lane Markings for Autonomous Vehicles\" by Naqvi et al. - This paper proposes a lane detection method for autonomous vehicles based on probabilistic modeling, which can be used for localization.\n7. \"Autonomous Vehicle Localization with a Camera and a Laser Range Finder\" by Moon et al. - This paper presents a localization method for autonomous vehicles that uses a camera and a laser range finder, and demonstrates its effectiveness in real-world driving scenarios.\n8. \"Visual-Inertial Localization for Autonomous Driving\" by Lenz et al. - This paper proposes a visual-inertial localization method for autonomous driving, which combines visual and inertial sensor data to achieve robust and accurate localization."
+    }
+  ]
+}

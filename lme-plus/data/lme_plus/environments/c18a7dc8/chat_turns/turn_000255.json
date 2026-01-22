@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 255,
+  "session_index": 25,
+  "session_id": "sharegpt_08DM2vn_41",
+  "turn_in_session": 7,
+  "date": "2023/05/25 (Thu) 14:31",
+  "role": "user",
+  "content": "Now when pressing \"start game\" the user has the option of moving to a location or selecting an object. There must be at least 3 of those options, and when you press each option, you will be faced with another option.\n\nMake a total of 9 pages according to the rules below.\n\n- When you click start game, the first selection screen appears.\n- Before selection, a description of the scene the user will be watching appears.\n- When a particular choice is made, the answer is twofold. If you make a wrong choice, you die without being able to escape the uninhabited island, or you acquire the materials for the raft.\n- There are a total of 8 raft materials mentioned above, and each page provides one option to obtain raft materials.\n- The last 9th page should include the contents of escaping from the uninhabited island by selecting all 8 ingredients.\n\ncan you do it\n \n \n \n \uc9c0\uae08 \ubc88\uc5ed\ud558\uae30",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 111,
+  "session_index": 10,
+  "session_id": "sharegpt_EuvEEnD_0",
+  "turn_in_session": 1,
+  "date": "2023/03/27 (Mon) 22:28",
+  "role": "assistant",
+  "content": "IDL attributes, also known as Interface Definition Language attributes, are used to define the properties and behaviors of HTML elements in a web page. Here are some commonly used IDL attributes:\n\n1. id - Used to give an element a unique identifier within a document.\nExample: <div id=\"myDiv\"></div>\n2. class - Used to specify one or more classes for an element.\nExample: <p class=\"myClass\"></p>\n3. style - Used to define inline styles for an element.\nExample: <span style=\"color: blue; font-size: 14px;\">Text here</span>\n4. title - Used to provide additional information about an element, usually displayed as a tooltip.\nExample: <img src=\"image.jpg\" title=\"This is an image\">\n5. href - Used to specify the URL of a link.\nExample: <a href=\"https://www.example.com\">Link</a>\n6. src - Used to specify the URL of an image or other media element.\nExample: <img src=\"image.jpg\" alt=\"Image\">\n7. alt - Used to provide a text description of an image for accessibility purposes.\nExample: <img src=\"image.jpg\" alt=\"Image description\">\n8. target - Used to specify where to open the linked document.\nExample: <a href=\"https://www.example.com\" target=\"\\_blank\">Link</a>\n9. tabindex - Used to specify the order in which elements are focused when the user presses the Tab key.\nExample: <input type=\"text\" tabindex=\"1\">\n\nThese are just a few examples of IDL attributes that can be used in HTML. There are many more IDL attributes available for different types of HTML elements.",
+  "has_answer": false
+}

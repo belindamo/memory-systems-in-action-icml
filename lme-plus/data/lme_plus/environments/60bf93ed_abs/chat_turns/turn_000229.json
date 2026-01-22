@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 229,
+  "session_index": 23,
+  "session_id": "sharegpt_sVlArkg_51",
+  "turn_in_session": 0,
+  "date": "2023/01/24 (Tue) 10:40",
+  "role": "assistant",
+  "content": "A real-time system is a type of computer system that is designed to process data or control external devices based on time constraints. It is required to produce correct results within a specified time limit, known as the deadline. Real-time systems are used in a variety of applications, including industrial control systems, flight control systems, medical equipment, and multimedia applications. Real-time systems are classified into hard and soft real-time systems based on the consequences of missing the deadline. Hard real-time systems have critical deadlines that cannot be missed, while soft real-time systems can tolerate some deadline misses but may have a degradation in performance.",
+  "has_answer": false
+}

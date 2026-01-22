@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 88,
+  "session_index": 9,
+  "session_id": "sharegpt_K2Cf9Xu_0",
+  "turn_in_session": 1,
+  "date": "2023/05/22 (Mon) 16:39",
+  "role": "assistant",
+  "content": "To create a query that groups the number of contacts created by hour, you can use the SOQL (Salesforce Object Query Language) with the aggregate function COUNT() and the date functions CALENDAR\\_HOUR() and DAY\\_ONLY(). Here's a sample query to help you achieve your goal:\n```scss\nSELECT DAY_ONLY(CreatedDate) day, CALENDAR_HOUR(CreatedDate) hour, COUNT(Id) numberOfContacts\nFROM Contact\nWHERE CreatedDate = LAST_N_DAYS:30\nGROUP BY DAY_ONLY(CreatedDate), CALENDAR_HOUR(CreatedDate)\nHAVING COUNT(Id) > 400\nORDER BY DAY_ONLY(CreatedDate), CALENDAR_HOUR(CreatedDate)\n```\nThis query will:\n\n1. Select the day and hour of the created contacts using the DAY\\_ONLY() and CALENDAR\\_HOUR() functions.\n2. Count the number of contacts created in each hour using the COUNT() function.\n3. Filter the results to only show the data for the last 30 days using the LAST\\_N\\_DAYS keyword.\n4. Group the results by day and hour.\n5. Only show the hours where more than 400 contacts were created using the HAVING clause.\n6. Order the results by day and hour.\n\nYou can adjust the time frame by changing the value in the LAST\\_N\\_DAYS keyword. This query will show if there are any hours where the number of contacts created exceeded your limit of 400 per hour.",
+  "has_answer": false
+}

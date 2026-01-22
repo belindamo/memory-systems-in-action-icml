@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 427,
+  "session_index": 44,
+  "session_id": "sharegpt_E3FiZj3_62",
+  "turn_in_session": 0,
+  "date": "2023/05/30 (Tue) 09:28",
+  "role": "user",
+  "content": "I liked the following structure better\n\u251c\u2500\u2500 app/\n\u2502 \u251c\u2500\u2500 authentication/\n\u2502 \u2502 \u251c\u2500\u2500 \\_\\_init\\_\\_.py\n\u2502 \u2502 \u251c\u2500\u2500 auth.py\n\u2502 \u2502 \u2514\u2500\u2500 azuread.py\n\u2502 \u251c\u2500\u2500 case\\_management/\n\u2502 \u2502 \u251c\u2500\u2500 \\_\\_init\\_\\_.py\n\u2502 \u2502 \u251c\u2500\u2500 case.py\n\u2502 \u2502 \u2514\u2500\u2500 shared\\_case.py\n\u2502 \u251c\u2500\u2500 image\\_review/\n\u2502 \u2502 \u251c\u2500\u2500 \\_\\_init\\_\\_.py\n\u2502 \u2502 \u251c\u2500\u2500 image.py\n\u2502 \u2502 \u2514\u2500\u2500 prediction.py\n\u2502 \u251c\u2500\u2500 logging/\n\u2502 \u2502 \u251c\u2500\u2500 \\_\\_init\\_\\_.py\n\u2502 \u2502 \u251c\u2500\u2500 logger.py\n\u2502 \u2502 \u2514\u2500\u2500 logging.yaml\n\u2502 \u251c\u2500\u2500 utils/\n\u2502 \u2502 \u251c\u2500\u2500 \\_\\_init\\_\\_.py\n\u2502 \u2502 \u251c\u2500\u2500 datastore.py\n\u2502 \u2502 \u2514\u2500\u2500 notifications.py\n\u2502 \u2514\u2500\u2500 main.py\n\u251c\u2500\u2500 requirements.txt\n\u2514\u2500\u2500 README.md",
+  "has_answer": false
+}

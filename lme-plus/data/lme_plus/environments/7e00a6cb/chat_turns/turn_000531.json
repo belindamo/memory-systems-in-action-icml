@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 531,
+  "session_index": 59,
+  "session_id": "sharegpt_vRfbcKe_87",
+  "turn_in_session": 6,
+  "date": "2023/05/30 (Tue) 13:35",
+  "role": "assistant",
+  "content": "To stop a script that is managed by Supervisor, you can use the `supervisorctl` command.\n\nYou can use the `stop` command followed by the name of the script:\n```\nsudo supervisorctl stop script_name\n```\nThis will stop the script and its associated process.\n\nYou can also use the `status` command to check the status of the script and see if it is running or not,\n```\nsudo supervisorctl status script_name\n```\nYou can also use the `stop all` command to stop all the scripts that are managed by Supervisor:\n```\nsudo supervisorctl stop all\n```\nPlease note that stopping a script will not remove it from the Supervisor's configuration, so the script will still be automatically started when the system reboots.\n\nIf you want to completely remove the script from Supervisor's configuration, you can use the `remove` command followed by the name of the script:\n```\nsudo supervisorctl remove script_name\n```\nPlease let me know if you have any other questions or if you need further assistance.",
+  "has_answer": false
+}

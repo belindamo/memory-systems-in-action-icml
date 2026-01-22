@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 199,
+  "session_index": 17,
+  "session_id": "sharegpt_G18Riup_0",
+  "turn_in_session": 9,
+  "date": "2023/05/23 (Tue) 16:13",
+  "role": "assistant",
+  "content": "To switch from using Kubernetes Secrets in a GKE cluster to using the Google Secrets Manager in another GKE cluster, you can follow these steps:\n\n1. Export the secrets from the first cluster: You can use `kubectl` to get the secret objects as YAML, then decode and encrypt them using SOPS.\n```csharp\nkubectl get secret <secret-name> -o yaml > secret.yaml\nsops -d secret.yaml > decrypted_secret.yaml\nsops -e decrypted_secret.yaml > encrypted_secret.yaml\n```\n2. Create a Google Secret Manager secret: You can create a new Google Secret Manager secret using the Google Cloud Console, the `gcloud` CLI, or the Secrets Manager API. You can store the decrypted secret as the plaintext data of the Google Secret Manager secret.\n```sql\ngcloud secrets create <secret-name> --replication-policy=\"automatic\"\ngcloud secrets versions add <secret-name> --data-file=decrypted_secret.yaml\n```\n3. Update the secret references in the second cluster: You can update the existing Kubernetes manifests in the second cluster to reference the Google Secret Manager secret.\n```makefile\napiVersion: v1\nkind: Secret\nmetadata:\n  name: <secret-name>\ntype: Opaque\ndata:\n  # Use the gcloud CLI to retrieve the Google Secret Manager secret and encode it as base64\n  <key>: $(echo -n \"<value>\" | base64)\n```\n4. Apply the updated manifests to the second cluster: You can use `kubectl` to apply the updated manifests to the second cluster.\n```php\nkubectl apply -f <manifest-file>.yaml\n```\nAfter these steps, the secrets in the first cluster should now be available in the second cluster via the Google Secrets Manager API. You can verify that the secrets have been successfully migrated by checking the logs of the pods in the second cluster to see if they can access the secrets correctly.",
+  "has_answer": false
+}

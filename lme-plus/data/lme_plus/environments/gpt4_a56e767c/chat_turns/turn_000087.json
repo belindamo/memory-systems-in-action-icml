@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 87,
+  "session_index": 9,
+  "session_id": "sharegpt_K2Cf9Xu_0",
+  "turn_in_session": 0,
+  "date": "2023/05/22 (Mon) 16:39",
+  "role": "user",
+  "content": "We know our salesforce instance can breakdown if more than 400 per hour join our registry. Those records appear on our contact object. Generate a query that groups by hour so that I can see if in any hour we exceeded our limits.",
+  "has_answer": false
+}

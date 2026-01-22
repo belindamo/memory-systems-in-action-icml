@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 351,
+  "session_index": 29,
+  "session_id": "sharegpt_0es4qk5_0",
+  "turn_in_session": 7,
+  "date": "2023/03/13 (Mon) 09:47",
+  "role": "assistant",
+  "content": "I apologize for the confusion in my previous response. Since you've already configured a wildcard subdomain for Gitbook, you don't need to add the custom domain `docs.danfletcher.com` to the list of domains for your Gitbook project. Instead, you can proceed to step 3 directly.\n\nFor step 3, Vercel will provide you with a DNS verification record that you need to add to the DNS settings for the `danfletcher.com` domain. This DNS record is typically in the form of a TXT record that contains a verification code.\n\nTo add this record, you can follow these general steps:\n\n1. Log in to your domain registrar or DNS provider's control panel for `danfletcher.com`.\n2. Navigate to the DNS settings for the domain.\n3. Add a new TXT record with the name `_vercel` and the value provided by Vercel.\n4. Save the changes and wait for them to propagate.\n\nAfter adding the TXT record, Vercel will verify that you own the domain `danfletcher.com`. Once the verification is complete, Vercel will automatically provision an SSL certificate for the custom domain `docs.danfletcher.com` using Let's Encrypt.\n\nAgain, I apologize for any confusion caused by my previous response. Let me know if you have any further questions!",
+  "has_answer": false
+}

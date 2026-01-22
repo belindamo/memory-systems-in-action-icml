@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 180,
+  "session_index": 19,
+  "session_id": "sharegpt_JlSnb71_23",
+  "turn_in_session": 0,
+  "date": "2023/03/27 (Mon) 18:36",
+  "role": "assistant",
+  "content": "The European Blockchain Service Infrastructure (EBSI) is a decentralized platform facilitating secure cross-border digital public services. As a crucial component of EBSI, verifiable credentials play a pivotal role in establishing trust and preserving users' privacy. With the increasing prevalence of digital documentation, the challenge of securely archiving verifiable credentials for the long term has become more critical.\n\nThis paper introduces a decentralized application designed for the long-term storage of EBSI-issued verifiable credentials. Utilizing the TR-ESOR middleware, which provides comprehensive recommendations for digital document preservation, this application aims to address the storage challenge. The integration of TR-ESOR with various storage systems, such as cloud, local, or decentralized databases, enhances the flexibility and adaptability of the solution.\n\nIn compliance with ACM and IEEE guidelines for influential computer science research papers, this paper offers a concise yet informative introduction to the EBSI framework and verifiable credentials. Furthermore, the paper delves into the challenges associated with archiving verifiable credentials and demonstrates the practicality of the proposed decentralized application in addressing these challenges. By employing state-of-the-art scientific research methodologies, this paper contributes to the advancement of digital credential management and the establishment of trust in decentralized systems.",
+  "has_answer": false
+}

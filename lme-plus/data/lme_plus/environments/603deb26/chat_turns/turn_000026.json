@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 26,
+  "session_index": 2,
+  "session_id": "sharegpt_DjfaDml_11",
+  "turn_in_session": 4,
+  "date": "2023/08/11 (Fri) 00:49",
+  "role": "assistant",
+  "content": "`onload()` is an event handler that is used to execute a piece of JavaScript code when a web page has finished loading. It is a part of the HTML DOM event model, which allows developers to create interactive web pages by responding to user actions and browser events.\n\nThe `onload()` event handler can be attached to the `window` object or any HTML element, such as an image or a video, using the `onload` attribute. For example:\n```php\n<body onload=\"alert('Page loaded!')\">\n  <h1>Welcome to my website</h1>\n  <img src=\"image.jpg\" onload=\"alert('Image loaded!')\">\n</body>\n```\nIn this example, an `onload()` event handler is attached to the `body` element and the `img` element. When the web page finishes loading, the JavaScript code `alert('Page loaded!')` is executed, which displays an alert dialog box with the message \"Page loaded!\". Similarly, when the `img` element finishes loading, the JavaScript code `alert('Image loaded!')` is executed, which displays an alert dialog box with the message \"Image loaded!\".\n\nThe `onload()` event handler is commonly used to perform actions that require the web page or its content to be fully loaded, such as initializing a script or setting up a user interface. By using event handlers like `onload()`, developers can create web pages that provide a rich and dynamic user experience.",
+  "has_answer": false
+}

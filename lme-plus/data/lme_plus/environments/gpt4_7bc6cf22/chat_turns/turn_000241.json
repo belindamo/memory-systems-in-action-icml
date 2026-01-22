@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 241,
+  "session_index": 22,
+  "session_id": "sharegpt_xiDADcv_0",
+  "turn_in_session": 0,
+  "date": "2023/03/20 (Mon) 21:16",
+  "role": "user",
+  "content": "I want you to act like a search engine. I will give you documents to search over with attributes like title and body, formatted in block quotes likes this example:\n\nTITLE: these tacos are great!\nBODY: I have just discovered this new restaurant - Barbie's Burrito Barn. She serves such excellent tacos, I heartily recommend it.\n\nWhen I enter a block quote such as above, treat it like a new search document. When I enter any other message, treat that message like a search query. Give the most relevant snippet from the documents that I've told you about so far to the query.\n\nOnly respond with acknowledgement of the new documents. Or respond with the most relevant snippet from the documents. Do not explain your responses. Simply provide the most relevant snippet.",
+  "has_answer": false
+}

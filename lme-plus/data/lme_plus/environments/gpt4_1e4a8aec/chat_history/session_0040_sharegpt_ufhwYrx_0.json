@@ -1,0 +1,31 @@
+{
+  "session_id": "sharegpt_ufhwYrx_0",
+  "session_index": 40,
+  "date": "2023/04/20 (Thu) 19:59",
+  "turns": [
+    {
+      "role": "user",
+      "content": "Pretend you're an expert in creating digital forms."
+    },
+    {
+      "role": "assistant",
+      "content": "Sure, I can help you with creating digital forms. What specific information or guidance are you looking for?"
+    },
+    {
+      "role": "user",
+      "content": "outline a online form to onboard a radio host job at a community radio station to gather the following information:\n\nWork Email\nBest Email\nPhone Number\nAddress, City, State, Zip\nT-Shirt Size\nHoodie Size\nOnboarding Documents 1, 2, 3\nShow(s)\nShow Start Date"
+    },
+    {
+      "role": "assistant",
+      "content": "Here is an outline for an online form to onboard a radio host job at a community radio station:\n\n1. Personal Information:\n* Work Email (required)\n* Best Email (optional)\n* Phone Number (required)\n* Address, City, State, Zip (required)\n* T-Shirt Size (optional)\n* Hoodie Size (optional)\n2. Onboarding Documents:\n* Onboarding Document 1 (required)\n* Onboarding Document 2 (required)\n* Onboarding Document 3 (required)\n3. Show Information:\n* Show(s) (required)\n* Show Start Date (required)\n\nNote: The form should have a submit button at the end, which when clicked, will send all the filled information to the community radio station.\n\nAs an additional note, to make the form more user-friendly, it's a good idea to clearly label each field, and use appropriate input types (e.g. email, phone number) to make it easy for the user to fill out the form.\nAlso, you may want to consider adding a captcha to prevent spam submissions."
+    },
+    {
+      "role": "user",
+      "content": "Outline a Typeform that uses logic to onboard a radio show host at a community radio station to gather the following information:\n\nFirst Name\nLast Name\nPersonal Email\nWould you like a Radio Kingston Email?\nIf yes what is your desired Radio Kingston Email Address\nWill you use your new Radio Kingston Email as your best method of contacting you?\nPhone Number\nAddress\nCity\nState\nZip Code\nT-Shirt Size\nHoodie Size\nOnboarding Documents 1, 2, 3\nShow Name\nShow Start Date\nResource Page Information"
+    },
+    {
+      "role": "assistant",
+      "content": "Here is an outline for a Typeform that uses logic to onboard a radio show host at a community radio station:\n\n1. Personal Information:\n* First Name (required)\n* Last Name (required)\n* Personal Email (required)\n2. Radio Kingston Email:\n* Would you like a Radio Kingston Email? (Yes/No question)\n\t+ If \"Yes\", ask for:\n\t\t- Desired Radio Kingston Email Address (required)\n\t\t- Will you use your new Radio Kingston Email as your best method of contacting you? (Yes/No question)\n3. Contact Information:\n* Phone Number (required)\n* Address (required)\n* City (required)\n* State (required)\n* Zip Code (required)\n4. Clothing Sizes:\n* T-Shirt Size (optional)\n* Hoodie Size (optional)\n5. Onboarding Documents:\n* Onboarding Document 1 (required)\n* Onboarding Document 2 (required)\n* Onboarding Document 3 (required)\n6. Show Information:\n* Show Name (required)\n* Show Start Date (required)\n* Resource Page Information (required)\n\nNote: The form should have a submit button at the end, which when clicked, will send all the filled information to the community radio station.\n\nAs an additional note, to make the form more user-friendly, it's a good idea to use appropriate input types (e.g. email, phone number) to make it easy for the user to fill out the form.\nAlso, you may want to consider adding a captcha to prevent spam submissions.\nYou can use the logic function of Typeform to make the form interactive and make certain fields appear based on the previous answers."
+    }
+  ]
+}

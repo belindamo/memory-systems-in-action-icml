@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 183,
+  "session_index": 18,
+  "session_id": "sharegpt_dRn7b5l_293",
+  "turn_in_session": 12,
+  "date": "2023/01/21 (Sat) 23:22",
+  "role": "assistant",
+  "content": "Sure, here are some examples of test cases for the StudIQ project:\n\n1. Test case for user authentication:\nDescription: Ensure that only registered users can access the website.\nSteps:\n* Open the website\n* Click on any button that requires authentication (e.g. alumni forum, job listings)\n* Attempt to access the page without logging in\nExpected result: User is redirected to the login page\n2. Test case for course registration:\nDescription: Ensure that users can successfully register for a course\nSteps:\n* Login as a student or teacher\n* Click on the courses page\n* Select a course to register for\n* Click on the \"Register\" button\nExpected",
+  "has_answer": false
+}

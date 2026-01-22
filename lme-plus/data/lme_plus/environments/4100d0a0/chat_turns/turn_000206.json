@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 206,
+  "session_index": 18,
+  "session_id": "sharegpt_t3f69h7_23",
+  "turn_in_session": 2,
+  "date": "2023/05/24 (Wed) 01:27",
+  "role": "assistant",
+  "content": "Yes, AAC audio is widely used in HLS streaming because it is supported by most modern devices and provides good audio quality at relatively low bitrates. Using AAC audio in your AES67 stream would make it easier to convert the stream to HLS later on.\n\nAnd yes, ffmpeg can be used to transcode AAC audio to an HLS-compatible format. ffmpeg can take an input audio stream in AAC format and convert it to a segment-based output format such as HLS using the appropriate options.",
+  "has_answer": false
+}

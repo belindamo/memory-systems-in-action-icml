@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 234,
+  "session_index": 22,
+  "session_id": "sharegpt_2FOskbF_14",
+  "turn_in_session": 5,
+  "date": "2023/06/01 (Thu) 14:12",
+  "role": "assistant",
+  "content": "Sure! On the Arduino Uno, the following pins are PWM (pulse width modulation) enabled:\n\n* Digital pins 3, 5, 6, 9, 10, and 11\n\nYou can use any of these pins to output a PWM signal, which can be used to control the speed of a motor or the brightness of an LED, among other things.\n\nTo use a PWM pin on the Arduino Uno, you can use the `analogWrite` function, which takes two arguments: the pin number and the duty cycle (a value between 0 and 255). For example, to set the duty cycle of the PWM signal on pin 9 to 50%, you can use the following code:\n```\nanalogWrite(9, 128);  // 50% duty cycle\n```\nThe duty cycle is specified as a 8-bit value, where 0 represents a duty cycle of 0% (always off) and 255 represents a duty cycle of 100% (always on). Intermediate values represent intermediate duty cycles.\n\nI hope this helps! Let me know if you have any questions.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 361,
+  "session_index": 29,
+  "session_id": "sharegpt_0es4qk5_0",
+  "turn_in_session": 17,
+  "date": "2023/03/13 (Mon) 09:47",
+  "role": "assistant",
+  "content": "If Dan's domain disallows Let's Encrypt but allows other SSL providers, such as Digicert, then you can use an SSL certificate from Digicert to secure the custom domain associated with Dan's Gitbook project.\n\nTo do this, you would need to generate an SSL certificate from Digicert for `dans-gitbook.vercel.app`, then add the custom domain `docs.danfletcher.com` to the list of domains for your Gitbook project on Vercel, and finally upload the Digicert SSL certificate to Vercel.\n\nOnce the SSL certificate is uploaded, you can then configure the necessary DNS records for the custom domain, including a CNAME record that points `docs.danfletcher.com` to `dans-gitbook.vercel.app`. After the DNS changes propagate, Dan's documentation site should be accessible via the custom domain `docs.danfletcher.com` using the SSL certificate from Digicert.\n\nIt's worth noting that some SSL providers may require additional steps to set up and configure their SSL certificates, so be sure to consult their documentation or support resources to ensure that everything is properly set up.",
+  "has_answer": false
+}

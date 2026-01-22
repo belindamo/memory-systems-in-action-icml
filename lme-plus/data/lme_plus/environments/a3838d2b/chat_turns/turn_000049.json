@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 49,
+  "session_index": 4,
+  "session_id": "sharegpt_SQzWPKF_34",
+  "turn_in_session": 3,
+  "date": "2023/11/29 (Wed) 12:23",
+  "role": "assistant",
+  "content": "Sure, here is the .svg file for the Motor Bracket Footprint:\n```php\n<svg width=\"15mm\" height=\"5mm\" viewBox=\"0 0 15 5\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\">\n  <circle cx=\"3.5\" cy=\"2.5\" r=\"1.5\" fill=\"#000000\" />\n  <circle cx=\"11.5\" cy=\"2.5\" r=\"1.5\" fill=\"#000000\" />\n</svg>\n```\nThis .svg file contains two circle elements, each representing a mounting hole. The circles have a radius of 1.5mm and are placed at the coordinates (3.5, 2.5) and (11.5, 2.5). You can modify the size and position of the circles by changing the values of the `cx`, `cy`, and `r` attributes.\n\nTo save this .svg file, you can copy and paste the code into a text editor, such as Notepad or TextEdit, and save the file with a .svg extension (e.g. \"motor\\_bracket\\_footprint.svg\"). You can then import the .svg file into a vector graphics software or a laser cutting software to view or modify the design.\n\nI hope this helps! Let me know if you have any further questions.",
+  "has_answer": false
+}

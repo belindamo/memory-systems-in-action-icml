@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 431,
+  "session_index": 42,
+  "session_id": "sharegpt_buXamwc_7",
+  "turn_in_session": 2,
+  "date": "2023/05/17 (Wed) 10:19",
+  "role": "assistant",
+  "content": "`certbot.sh` is the bash script that contains the commands to run Certbot with the Google Domains plugin and the YAML credentials file. In the example I provided earlier, this file is mounted as a volume in the Docker container, and the container runs the `bash /app/certbot.sh` command to execute the script.\n\nHere's an example of what the `certbot.sh` script might look like:\n```bash\n#!/bin/bash\n\n# Load the YAML credentials file\neval $(parse_yaml credentials.yaml)\n\n# Iterate through each credential and request a certificate for each domain\nfor cred in ${!credentials[@]}; do\n  api_key=${credentials[$cred].api_key}\n  email=${credentials[$cred].email}\n  for domain in ${credentials[$cred].domains[@]}; do\n    certbot certonly \\\n      --non-interactive \\\n      --agree-tos \\\n      --email $email \\\n      --dns-google \\\n      --dns-google-credentials /app/google.ini \\\n      -d $domain\n  done\ndone\n```\nThis script uses the `parse_yaml` function to load the `credentials.yaml` file into Bash variables. It then iterates through each credential in the file and requests a certificate for each domain using the `certbot` command with the Google Domains plugin.\n\nNote that this script assumes that the `google.ini` file containing your Google Domains API credentials is located in the same directory as the `certbot.sh` script. You'll need to create this file and provide your API key and secret in the following format:\n```makefile\ndns_google_api_key = YOUR_API_KEY\ndns_google_api_secret = YOUR_API_SECRET\n```\nThis file will be mounted as a volume in the Docker container along with the `credentials.yaml` file.",
+  "has_answer": false
+}

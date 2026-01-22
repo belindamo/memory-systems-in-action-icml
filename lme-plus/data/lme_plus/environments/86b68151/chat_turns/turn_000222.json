@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 222,
+  "session_index": 23,
+  "session_id": "sharegpt_7rLq4MQ_9",
+  "turn_in_session": 1,
+  "date": "2023/05/25 (Thu) 14:16",
+  "role": "user",
+  "content": "I modified your code a little as follows:\n\n!pip install pyomo\n!apt-get install -y -qq coinor-cbc\nfrom pyomo.environ import \\*\n\nmodel = ConcreteModel()\n\nmodel.x = Var(within=NonNegativeReals)\nmodel.y = Var(within=NonNegativeReals)\ndef my\\_constraint\\_rule(model):\n return model.x + model.y >= 1\nmodel.my\\_constraint = Constraint(rule=my\\_constraint\\_rule)\n\nmodel.obj = Objective(expr=model.x + model.y)\n\nsolver = SolverFactory('cbc')\nresults = solver.solve(model)\n\nBut the last line yields the error\n\nApplicationError: No executable found for solver 'cbc'",
+  "has_answer": false
+}

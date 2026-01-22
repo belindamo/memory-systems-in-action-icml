@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 400,
+  "session_index": 40,
+  "session_id": "sharegpt_wvOsk6E_9",
+  "turn_in_session": 5,
+  "date": "2023/05/29 (Mon) 22:44",
+  "role": "user",
+  "content": "but for example for t=1, y(1) should be y(1)=b1\\*x(1)+b0\\*x(0)=1/10 \\* 1 + 1/10 \\* 0= 1/10 , but the result of the filter on the output graph is 0, not 1/10",
+  "has_answer": false
+}

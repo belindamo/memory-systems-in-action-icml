@@ -1,0 +1,23 @@
+{
+  "session_id": "sharegpt_KSCdclV_0",
+  "session_index": 26,
+  "date": "2023/06/08 (Thu) 00:57",
+  "turns": [
+    {
+      "role": "user",
+      "content": "\u8acb\u544a\u8a34\u621115\u500b\u8179\u75db\u7684\u7406\u5b78\u6aa2\u67e5\u9805\u76ee\uff0c\u8acb\u4ee5\u82f1\u6587\u56de\u7b54\uff0c\u4e26\u5229\u7528\u4ee5\u4e0b\u7bc4\u4f8b\u683c\u5f0f\u56de\u8986\uff0cRebouding pain(None/Rebounding pain +)"
+    },
+    {
+      "role": "assistant",
+      "content": "1. Abdominal tenderness (None/Tenderness +)\n2. Abdominal distension (None/Distension +)\n3. Guarding (None/Guarding +)\n4. Rigidity (None/Rigidity +)\n5. Palpable masses (None/Mass +)\n6. Liver span (Normal/Increased/Decreased)\n7. Spleen size (Normal/Enlarged)\n8. Bowel sounds (Normal/Absent/Hypoactive/Hyperactive)\n9. Percussion tenderness (None/Tenderness +)\n10. Murphy's sign (Negative/Positive)\n11. McBurney's point tenderness (None/Tenderness +)\n12. Obturator sign (Negative/Positive)\n13. Psoas sign (Negative/Positive)\n14. Rovsing's sign (Negative/Positive)\n15. Blumberg's sign (Negative/Positive)"
+    },
+    {
+      "role": "user",
+      "content": "\u8acb\u544a\u8a34\u621120\u500b\u8179\u75db\u7684\u7406\u5b78\u6aa2\u67e5\u9805\u76ee\uff0c\u8acb\u4ee5\u82f1\u6587\u56de\u7b54\uff0c\u4e26\u5229\u7528\u4ee5\u4e0b\u7bc4\u4f8b\u683c\u5f0f\u56de\u8986\uff0cRebouding pain(None/Rebounding pain +)"
+    },
+    {
+      "role": "assistant",
+      "content": "1. Abdominal tenderness (None/Tenderness +)\n2. Abdominal distension (None/Distension +)\n3. Guarding (None/Guarding +)\n4. Rigidity (None/Rigidity +)\n5. Palpable masses (None/Mass +)\n6. Liver span (Normal/Increased/Decreased)\n7. Spleen size (Normal/Enlarged)\n8. Bowel sounds (Normal/Absent/Hypoactive/Hyperactive)\n9. Percussion tenderness (None/Tenderness +)\n10. Murphy's sign (Negative/Positive)\n11. McBurney's point tenderness (None/Tenderness +)\n12. Obturator sign (Negative/Positive)\n13. Psoas sign (Negative/Positive)\n14. Rovsing's sign (Negative/Positive)\n15. Blumberg's sign (Negative/Positive)\n16. Gastrointestinal bleeding (None/Positive)\n17. Hematemesis (None/Positive)\n18. Melena (None/Positive)\n19. Rectal bleeding (None/Positive)\n20. Anal fissures (None/Present)"
+    }
+  ]
+}

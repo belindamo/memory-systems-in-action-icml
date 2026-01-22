@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 266,
+  "session_index": 27,
+  "session_id": "sharegpt_6sDqw6L_0",
+  "turn_in_session": 1,
+  "date": "2023/04/06 (Thu) 17:57",
+  "role": "assistant",
+  "content": "1. First, you will need to have a Raspberry Pi board and power supply.\n2. Next, you will need to install the Raspbian operating system on the Raspberry Pi. You can download the Raspbian image from the official Raspberry Pi website and use a tool like \"Etcher\" to burn the image to an SD card.\n3. Once the Raspbian is installed, connect your Raspberry Pi to your router via Ethernet cable and power on the device.\n4. Open a terminal window on your Raspberry Pi and run the command \"curl -sSL <https://install.pi-hole.net> | bash\" to install the Pi-hole software.\n5. Follow the prompts during the installation process to configure your network settings and select the ad-blocking lists you want to use.\n6. Once the installation is complete, you can access the Pi-hole web interface by entering the IP address of your Raspberry Pi into a web browser.\n7. To configure your router to use Pi-hole as its DNS server, you will need to log into your router's web interface and update the DNS settings. The specific steps to do this will vary depending on your router model.\n\nNote: This is a high-level overview of the process. It is recommended that you consult the official Pi-hole documentation for detailed instructions on setting up and configuring the software.",
+  "has_answer": false
+}

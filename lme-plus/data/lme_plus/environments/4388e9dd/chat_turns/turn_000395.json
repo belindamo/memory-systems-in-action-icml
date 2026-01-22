@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 395,
+  "session_index": 36,
+  "session_id": "sharegpt_P01BTRw_0",
+  "turn_in_session": 4,
+  "date": "2023/05/29 (Mon) 03:29",
+  "role": "user",
+  "content": "Consider Bob the merchant deciding whether or not to accept the CA\u2192 B transaction. What Bob is really interested in is whether or not the other chain will catch up. Why, then, does he simply check how many confirmations CA\u2192 B has received, instead of computing the difference in length between the two chains?",
+  "has_answer": false
+}

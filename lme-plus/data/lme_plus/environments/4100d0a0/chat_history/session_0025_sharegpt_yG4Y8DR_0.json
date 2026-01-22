@@ -1,0 +1,15 @@
+{
+  "session_id": "sharegpt_yG4Y8DR_0",
+  "session_index": 25,
+  "date": "2023/05/25 (Thu) 14:03",
+  "turns": [
+    {
+      "role": "user",
+      "content": "Is available CVSS for each CVE?"
+    },
+    {
+      "role": "assistant",
+      "content": "The Common Vulnerability Scoring System (CVSS) is a standardized method for rating the severity of security vulnerabilities in software. The CVSS score is usually provided for each Common Vulnerabilities and Exposures (CVE) entry. CVE is a database that contains identifiers for publicly known cybersecurity vulnerabilities.\n\nWhen a new CVE is published, it often includes an associated CVSS score to help organizations understand the severity of the vulnerability and prioritize remediation efforts. However, there might be cases where a CVE does not have an immediate CVSS score upon release. In such cases, the score may be added later as the vulnerability is analyzed further.\n\nYou can find CVEs along with their CVSS scores on websites like the National Vulnerability Database (NVD) (<https://nvd.nist.gov/>) or MITRE's CVE database (<https://cve.mitre.org/>). Keep in mind that CVSS scores are just one aspect of assessing a vulnerability's risk, and organizations should consider additional factors such as the specific context of their environment and available mitigations when prioritizing security efforts."
+    }
+  ]
+}

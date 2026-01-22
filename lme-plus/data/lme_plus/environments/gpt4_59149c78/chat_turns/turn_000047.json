@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 47,
+  "session_index": 4,
+  "session_id": "sharegpt_zbfgack_7",
+  "turn_in_session": 4,
+  "date": "2023/01/09 (Mon) 18:13",
+  "role": "assistant",
+  "content": "Customer Endpoints\n------------------\n\n### Submit Inquiry\n\n* Endpoint path: /api/inquiries/\n* Endpoint method: POST\n* Request shape (JSON):\n```json\n{\n    \"customer_name\": \"string\",\n    \"customer_phone\": \"string\",\n    \"service_id\": \"integer\"\n}\n```\n* Response: New inquiry information\n* Response shape (JSON):\n```json\n{\n    \"id\": \"integer\",\n    \"customer_name\": \"string\",\n    \"customer_phone\": \"string\",\n    \"service_id\": \"integer\"\n}\n```",
+  "has_answer": false
+}

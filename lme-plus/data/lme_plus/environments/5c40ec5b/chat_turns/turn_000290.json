@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 290,
+  "session_index": 32,
+  "session_id": "sharegpt_7y4qwfF_11",
+  "turn_in_session": 2,
+  "date": "2023/09/04 (Mon) 00:52",
+  "role": "assistant",
+  "content": "For step 2, you should choose \"Custom VPS\" as the server provider since Azure is not listed as a preconfigured provider in Forge.\n\nOnce you have selected \"Custom VPS,\" you will be prompted to enter your Azure server details, such as the IP address, SSH user, and SSH port. You can find this information in the Azure portal, under the virtual machine settings for your server.\n\nAfter you have entered the server details and added your SSH key, you can continue with the rest of the steps to configure your server and upload your front-end and back-end files.",
+  "has_answer": false
+}

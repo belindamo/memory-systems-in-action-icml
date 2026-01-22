@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 296,
+  "session_index": 31,
+  "session_id": "sharegpt_XZHZyoB_23",
+  "turn_in_session": 0,
+  "date": "2023/05/26 (Fri) 16:18",
+  "role": "assistant",
+  "content": "Here is a table that shows which TCP or UDP details correspond to the right protocols:\n\n| Detail | TCP | UDP |\n| --- | --- | --- |\n| Packet without the need for a data channel |  | X |\n| Requires the client and the server to establish a connection before sending the packet | X |  |\n| Used to reliably share files between devices | X |  |\n| Appropriate for streaming operations with minimal latency |  | X |\n\nTCP (Transmission Control Protocol) is a connection-oriented protocol that requires the client and the server to establish a connection before sending data. It is used for applications that require guaranteed delivery of data, such as file sharing and web browsing. TCP ensures that all packets are received by the destination and that they are received in the correct order by adding a sequence number to each packet and acknowledging the receipt of each packet. If a packet is lost or corrupted, TCP will retransmit the packet until it is successfully delivered.\n\nUDP (User Datagram Protocol) is a connectionless protocol that does not require the client and the server to establish a connection before sending data. It is used for applications that do not require guaranteed delivery of data, such as real-time audio and video streaming. UDP does not provide the same level of reliability as",
+  "has_answer": false
+}

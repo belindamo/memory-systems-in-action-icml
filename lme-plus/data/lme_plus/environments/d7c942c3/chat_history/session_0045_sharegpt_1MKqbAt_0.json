@@ -1,0 +1,31 @@
+{
+  "session_id": "sharegpt_1MKqbAt_0",
+  "session_index": 45,
+  "date": "2023/05/09 (Tue) 02:30",
+  "turns": [
+    {
+      "role": "user",
+      "content": "write a cronus zen script with 5 different mods for call of duty mobile"
+    },
+    {
+      "role": "assistant",
+      "content": "Here is a Cronus Zen script with five different mods for Call of Duty Mobile:\n```\n// Cronus Zen Script for Call of Duty Mobile\n\n// Mod 1: Rapid Fire\n\n// Press and hold the left mouse button to rapidly fire your weapon.\n\nif (GetButtonState(Mouse_Left))\n{\n  SetButtonState(Mouse_Left, false);\n  SetButtonState(Mouse_Left, true);\n}\n\n// Mod 2: Auto Sprint\n\n// Automatically sprint when you move forward.\n\nif (GetButtonState(W))\n{\n  SetButtonState(Sprint, true);\n}\nelse\n{\n  SetButtonState(Sprint, false);\n}\n\n// Mod 3: Quick Scope\n\n// Quickly scope in and out with the right mouse button.\n\nif (GetButtonState(Mouse_Right))\n{\n  SetButtonState(Mouse_Right, false);\n  SetButtonState(Scope, true);\n  Sleep(100);\n  SetButtonState(Scope, false);\n}\n\n// Mod 4: Auto Heal\n\n// Automatically use a medkit when your health is low.\n\nif (GetPlayerHealth() < 50)\n{\n  SetButtonState(Use_Medkit, true);\n  Sleep(100);\n  SetButtonState(Use_Medkit, false);\n}\n\n// Mod 5: Jump Shot\n\n// Jump and shoot at the same time with the left mouse button.\n\nif (GetButtonState(Mouse_Left))\n{\n  SetButtonState(Space, true);\n}\nelse\n{\n  SetButtonState(Space, false);\n}\n```\nI hope this helps! Let me know if you have any questions or need further assistance."
+    },
+    {
+      "role": "user",
+      "content": "can you write that same script but for an xbox one controller"
+    },
+    {
+      "role": "assistant",
+      "content": "Certainly! Here is the same Cronus Zen script, modified to work with an Xbox One controller:\n```\n// Cronus Zen Script for Call of Duty Mobile (Xbox One controller)\n\n// Mod 1: Rapid Fire\n\n// Press and hold the left trigger to rapidly fire your weapon.\n\nif (GetButtonState(LT))\n{\n  SetButtonState(LT, false);\n  SetButtonState(LT, true);\n}\n\n// Mod 2: Auto Sprint\n\n// Automatically sprint when you move forward.\n\nif (GetButtonState(DPad_Up))\n{\n  SetButtonState(Sprint, true);\n}\nelse\n{\n  SetButtonState(Sprint, false);\n}\n\n// Mod 3: Quick Scope\n\n// Quickly scope in and out with the right trigger.\n\nif (GetButtonState(RT))\n{\n  SetButtonState(RT, false);\n  SetButtonState(Scope, true);\n  Sleep(100);\n  SetButtonState(Scope, false);\n}\n\n// Mod 4: Auto Heal\n\n// Automatically use a medkit when your health is low.\n\nif (GetPlayerHealth() < 50)\n{\n  SetButtonState(X, true);\n  Sleep(100);\n  SetButtonState(X, false);\n}\n\n// Mod 5: Jump Shot\n\n// Jump and shoot at the same time with the left trigger.\n\nif (GetButtonState(LT))\n{\n  SetButtonState(A, true);\n}\nelse\n{\n  SetButtonState(A, false);\n}\n```\nI hope this helps! Let me know if you have any questions or need further assistance."
+    },
+    {
+      "role": "user",
+      "content": "can you add another 5 mods to that script"
+    },
+    {
+      "role": "assistant",
+      "content": "Certainly! Here are five additional mods that you can add to the Cronus Zen script for Call of Duty Mobile on an Xbox One controller:\n```\n// Mod 6: Auto Reload\n\n// Automatically reload when you run out of ammo.\n\nif (GetAmmo() == 0)\n{\n  SetButtonState(X, true);\n  Sleep(100);\n  SetButtonState(X, false);\n}\n\n// Mod 7: Auto Swap\n\n// Automatically swap to your secondary weapon when you run out of ammo.\n\nif (GetAmmo() == 0)\n{\n  SetButtonState(B, true);\n  Sleep(100);\n  SetButtonState(B, false);\n}\n\n// Mod 8: Quick Revive\n\n// Quickly revive a fallen teammate with the left bumper button.\n\nif (GetButtonState(LB))\n{\n  SetButtonState(LB, false);\n  SetButtonState(Y, true);\n  Sleep(100);\n  SetButtonState(Y, false);\n}\n\n// Mod 9: Auto Mantle\n\n// Automatically mantle over objects with the A button.\n\nif (GetButtonState(A))\n{\n  SetButtonState(A, false);\n  SetButtonState(Mantle, true);\n  Sleep(100);\n  SetButtonState(Mantle, false);\n}\n\n// Mod 10: Quick Equip\n\n// Quickly switch your equipped weapon with the right bumper button.\n\nif (GetButtonState(RB))\n{\n  SetButtonState(RB, false);\n  SetButtonState(Dpad_Right, true);\n  Sleep(100);\n  SetButtonState(Dpad_Right, false);\n}\n```\nI hope this helps! Let me know if you have any questions or need further assistance."
+    }
+  ]
+}

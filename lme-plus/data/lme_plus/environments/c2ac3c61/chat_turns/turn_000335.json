@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 335,
+  "session_index": 31,
+  "session_id": "sharegpt_jjOK6l1_113",
+  "turn_in_session": 2,
+  "date": "2023/05/26 (Fri) 11:07",
+  "role": "assistant",
+  "content": "Sure, here's an updated table with the missing pros and cons:\n\n| Architecture Type | Sub-Architecture Types | Pros | Cons |\n| --- | --- | --- | --- |\n| Native Desktop Application | C++ or MFC, C# or .NET, Java Swing, WinForms, WPF | Can offer good performance and integration with the operating system's features. | Can be more complex and time-consuming to develop, and may require different versions for different operating systems. |\n| Cross-Platform Desktop App | Electron, Qt, JavaFX, .NET Core | Can save time and resources by using a single codebase for multiple operating systems. | May not offer the same level of performance or integration with the operating system's features as a native desktop application. |\n| Web-Based Desktop Application | Single Page Applications (SPA), Progressive Web Apps (PWA), | Can be relatively easy to develop and deploy, and can offer good compatibility across different operating systems. | May not offer the same level of performance or integration with the operating system's features as a native desktop application. |\n|  | WebViews, Frameworks |  |  |\n| Hybrid Desktop Application | Electron with web view, JavaFX with WebView or JCEF, QtWebEngine | Can offer the best of both worlds in terms of performance and compatibility. | May be more complex to develop and maintain. |",
+  "has_answer": false
+}

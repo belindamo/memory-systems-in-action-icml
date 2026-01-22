@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 310,
+  "session_index": 29,
+  "session_id": "sharegpt_doyZgOa_0",
+  "turn_in_session": 5,
+  "date": "2023/07/02 (Sun) 04:15",
+  "role": "assistant",
+  "content": "Sure! Here are the columns for each table based on the data you need for the website <https://bxgs.co.kr/>:\n\n1. Members:\n* Member ID (Primary Key)\n* Username\n* Password\n* Email\n* First Name\n* Last Name\n* Address\n* Phone Number\n2. Products:\n* Product ID (Primary Key)\n* Product Name\n* Description\n* Image URL\n* Price\n* Availability (In Stock/Out of Stock)\n3. Orders:\n* Order ID (Primary Key)\n* Member ID (Foreign Key)\n* Order Date\n* Total Cost\n* Order Status (Pending/Shipped/Delivered/Cancelled)\n4. Shopping Cart:\n* Cart ID (Primary Key)\n* Member ID (Foreign Key)\n* Product ID (Foreign Key)\n* Quantity\n* Total Cost\n5. Product Reviews:\n* Review ID (Primary Key)\n* Product ID (Foreign Key)\n* Member ID (Foreign Key)\n* Review Text\n* Rating (1-5)\n* Review Date\n6. Work Reviews:\n* Review ID (Primary Key)\n* Member ID (Foreign Key)\n* Review Text\n* Rating (1-5)\n* Review Date\n7. Bulletin Board:\n* Post ID (Primary Key)\n* Member ID (Foreign Key)\n* Post Text\n* Post Date\n* Post Time\n8. One-on-One Inquiry:\n* Inquiry ID (Primary Key)\n* Member ID (Foreign Key)\n* Inquiry Text\n* Inquiry Date\n* Inquiry Time\n9. Member Information Changes:\n* Change ID (Primary Key)\n* Member ID (Foreign Key)\n* Field Changed\n* New Value\n* Change Date\n* Change Time\n\nThese are the minimum columns you'll need for each table. You may need to add additional columns depending on the complexity of your project and the data you need to store.",
+  "has_answer": false
+}

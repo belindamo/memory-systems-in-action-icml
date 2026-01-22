@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 257,
+  "session_index": 26,
+  "session_id": "sharegpt_mIEL27Q_5",
+  "turn_in_session": 4,
+  "date": "2023/05/25 (Thu) 10:28",
+  "role": "assistant",
+  "content": "Sure! Here's an updated docker-compose.yml file that includes the changes:\n```javascript\nversion: '3.7'\n\nservices:\n  certbot:\n    image: certbot/dns-google\n    container_name: certbot\n    volumes:\n      - ./certs:/etc/letsencrypt\n      - /path/to/your/credentials.json:/etc/letsencrypt/credentials.json:ro\n    command: sh -c \"apt-get update && apt-get install -y jq && echo '0 0 * * * /app/certbot_loop.sh' > /etc/cron.d/certbot-cron && crontab /etc/cron.d/certbot-cron && cron -f\"\n    depends_on:\n      - nginx\n  nginx:\n    image: nginx:latest\n    container_name: nginx\n    ports:\n      - \"80:80\"\n      - \"443:443\"\n    volumes:\n      - ./nginx.conf:/etc/nginx/nginx.conf:ro\n      - ./certs:/etc/letsencrypt\n      - ./html:/usr/share/nginx/html\n```\nIn this updated version, we've added the following changes to the certbot service:\n\n1. We've added the `apt-get update && apt-get install -y jq` command to install jq in the container.\n2. We've added the `echo '0 0 * * * /app/certbot_loop.sh' > /etc/cron.d/certbot-cron && crontab /etc/cron.d/certbot-cron && cron -f` command to set up the cron job and start the cron daemon in the foreground.\n\nNote that we've combined all these commands into a single `sh -c` command to simplify the command section of the service.\n\nI hope this helps!",
+  "has_answer": false
+}

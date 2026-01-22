@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 297,
+  "session_index": 28,
+  "session_id": "sharegpt_iPtGMPH_0",
+  "turn_in_session": 8,
+  "date": "2023/05/26 (Fri) 23:02",
+  "role": "user",
+  "content": "ldap\n\n if(ok){\n if(\"%{reply:Ldap-Group-Name}\" =~ /^cn=.\\*,cn=(.\\*),ou=Client,dc=dev-ldap,dc=fnsmalaysia,dc=com$/){\n update reply{\n Ldap-Group-Name := \"%{1}\"\n Reply-Message := reply:Reply-Message\n }\n if(ok){\n if(reply:Auth-Type == \"Reject\"){\n update reply{\n Reply-Message := \"This is the reject after checking the group name\"\n }\n }else{\n update reply{\n Auth-Type := reply:Auth-Type\n Reply-Message := reply:Reply-Message\n }\n bsa\\_cancel\n reject\n }\n }else{\n bsa\\_cancel\n reject\n }\n }else{\n update reply{\n Reply-Message := \"Unknown group name.\"\n }\n reject\n }\n }",
+  "has_answer": false
+}

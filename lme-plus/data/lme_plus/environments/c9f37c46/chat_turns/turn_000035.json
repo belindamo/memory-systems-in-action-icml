@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 35,
+  "session_index": 3,
+  "session_id": "sharegpt_hi2xiJT_14",
+  "turn_in_session": 4,
+  "date": "2023/05/20 (Sat) 19:59",
+  "role": "user",
+  "content": "Additional instruction. Please strictly follow each of them.\n1. When it comes to writing content, two factors are crucial, \"perplexity\" and \"burstiness.\" Perplexity measures the complexity of the text. Separately, burstiness compares the variations of sentences. Humans tend to write with greater burstiness, for example, with some longer or more complex sentences alongside shorter ones. Al sentences tend to be more uniform. Therefore, when writing the article, I need it to have a good amount of perplexity and burstiness. \n2. You are to write in a tone that was written 100% human. \n3. Do not repeat or rephrase any content in the article. All must be uniquely written. \n4. You must rewrite in a logical and organized manner, using subheadings, bullet points, tables and other tools to break up the text and make it easier to read. \n5. You should edit and proofread the articles carefully, check for spelling and grammar errors and make sure that the content flows logically. You are to fix grammar errors like Grammarly.com \n6. You will use a plagiarism checker like duplichecker.com to make sure that the content is original and not copied from other sources. \n7. The language should be easy to understand for homeowners who are not familiar with legal terms. \n8. The tone should be professional and understanding of the target persona, while also providing clear and concise information on the topic.\n9. Generate the output in markdown format. Do you understand?",
+  "has_answer": false
+}

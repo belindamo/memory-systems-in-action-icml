@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 475,
+  "session_index": 46,
+  "session_id": "sharegpt_dC2lLD9_0",
+  "turn_in_session": 3,
+  "date": "2022/03/20 (Sun) 19:18",
+  "role": "assistant",
+  "content": "Sure, you have chosen to construct a residential building. The cost of construction is 100 funds.\n\nAfter construction, the city's population has increased by 10, and the current city status:\nPopulation: 10\nFunds: 900\nIncome: 0\nAvailable Buildings:\n\n* Residential (100 funds, +10 population)\n* Park (50 funds, +5 population)\n* Factory (200 funds, +15 population, +50 income)\n\nAs the population grows, new buildings will become available to construct.",
+  "has_answer": false
+}

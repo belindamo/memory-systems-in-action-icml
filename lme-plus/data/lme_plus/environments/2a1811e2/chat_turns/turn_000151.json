@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 151,
+  "session_index": 14,
+  "session_id": "sharegpt_tMOb5TT_0",
+  "turn_in_session": 9,
+  "date": "2023/03/26 (Sun) 18:55",
+  "role": "assistant",
+  "content": "There is no minimum value that you can use for `max-height` to prevent the CSS from being ignored. You can use any percentage value, including a value of 0%.\n\nIf you're finding that the `max-height` property is not having the desired effect on your images, it may be because other CSS properties are conflicting with it, or because the parent element is not the correct size. In some cases, you may need to adjust the values of other CSS properties or modify the HTML structure of the page to achieve the desired result.",
+  "has_answer": false
+}

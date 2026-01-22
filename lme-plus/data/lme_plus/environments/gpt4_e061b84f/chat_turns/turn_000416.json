@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 416,
+  "session_index": 41,
+  "session_id": "sharegpt_E3FiZj3_62",
+  "turn_in_session": 3,
+  "date": "2023/06/17 (Sat) 19:42",
+  "role": "assistant",
+  "content": "The datastore model of the case could look something like this:\n```python\nfrom google.cloud import ndb\n\nclass Case(ndb.Model):\n    created_by = ndb.StringProperty(required=True)\n    created_on = ndb.DateTimeProperty(auto_now_add=True)\n    updated_on = ndb.DateTimeProperty(auto_now=True)\n    name = ndb.StringProperty(required=True)\n    description = ndb.TextProperty()\n    images = ndb.JsonProperty(required=True) # a list of dictionaries containing image urls and metadata\n    status = ndb.StringProperty(choices=['open', 'closed'], default='open')\n```\nThis model includes information about the creator of the case, the creation and update times, the name and description of the case, the images associated with the case, and the status of the case (open or closed). The `images` property is a JSON serialized list of dictionaries containing information about each image associated with the case, including the URL and any relevant metadata.",
+  "has_answer": false
+}

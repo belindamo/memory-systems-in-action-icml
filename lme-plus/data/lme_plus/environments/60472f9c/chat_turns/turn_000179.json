@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 179,
+  "session_index": 18,
+  "session_id": "sharegpt_x5iwfyV_295",
+  "turn_in_session": 1,
+  "date": "2023/05/23 (Tue) 23:06",
+  "role": "user",
+  "content": "from this code extract a method is\\_upset(a,b) whic returns true if a beating b would be an upset\n\n def select\\_winner(self, i, round\\_win\\_counts, upset\\_rates):\n # Calculate the probability of an upset based on historical seed win rates\n i\\_team = self.teams[i]\n j\\_team = self.teams[i + 1]\n i\\_is\\_better\\_score = i\\_team.ken\\_pom\\_score > j\\_team.ken\\_pom\\_score\n better\\_index = i if i\\_is\\_better\\_score else i + 1\n worse\\_index = i + 1 if i\\_is\\_better\\_score else i\n historical = upset\\_rates[(i, i + 1)]\n statistical = self.calculate\\_win\\_probability(\n self.teams[worse\\_index],\n self.teams[better\\_index]\n )\n\n # noise is added by using historical upset rates rather than team specific kenpom scores\n probability = (1 - self.noise) \\* statistical + self.noise \\* historical\n\n # If a random number is less than the probability of an upset, return the underdog\n if np.random.rand() < probability:\n index = i + 1 if i\\_is\\_better\\_score else i\n upset = True\n # Otherwise, return the favorite\n else:\n index = i if round\\_win\\_counts[i] > round\\_win\\_counts[i + 1] else i + 1\n upset = False\n\n return index, upset",
+  "has_answer": false
+}

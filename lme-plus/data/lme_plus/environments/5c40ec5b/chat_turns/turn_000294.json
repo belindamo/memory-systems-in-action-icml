@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 294,
+  "session_index": 32,
+  "session_id": "sharegpt_7y4qwfF_11",
+  "turn_in_session": 6,
+  "date": "2023/09/04 (Mon) 00:52",
+  "role": "assistant",
+  "content": "To create a new virtual machine in Azure, you can follow these steps:\n\n1. Log in to the Azure portal at <https://portal.azure.com>.\n2. In the left-hand menu, click on \"Virtual machines\" to view a list of your virtual machines.\n3. Click on the \"+ Add\" button at the top of the page to create a new virtual machine.\n4. In the \"Basics\" tab of the \"Create a virtual machine\" form, enter the following details:\n* Subscription: Choose the Azure subscription that you want to use.\n* Resource group: Create a new resource group or choose an existing one.\n* Virtual machine name: Enter a name for your virtual machine.\n* Region: Choose the region where you want to host your virtual machine.\n* Image: Choose the operating system image that you want to use for your virtual machine.\n* Size: Choose the virtual machine size based on your requirements.\n1. Click on the \"Next: Disks\" button to configure your virtual machine's storage options.\n2. Click on the \"Next: Networking\" button to configure your virtual machine's networking options.\n3. Click on the \"Next: Management\" button to configure your virtual machine's management options.\n4. Click on the \"Review + create\" button to review your virtual machine's settings and create it.\n5. Once your virtual machine is created, you can connect to it using SSH or RDP, depending on the operating system you chose. You can find the connection details in the virtual machine overview page in the Azure portal.\n\nOnce you have created your virtual machine, you can follow the previous steps to configure it in Forge and upload your front-end and back-end files.",
+  "has_answer": false
+}

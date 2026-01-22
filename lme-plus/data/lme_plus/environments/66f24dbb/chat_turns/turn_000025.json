@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 25,
+  "session_index": 4,
+  "session_id": "sharegpt_XfeER1N_0",
+  "turn_in_session": 3,
+  "date": "2023/05/21 (Sun) 05:51",
+  "role": "assistant",
+  "content": "To automatically mount an NFS share on boot without blocking the boot process on Debian using systemd, you will need to create a `systemd` mount unit file.\n\nFirst, create a file called `nfsshare.mount` in the `/etc/systemd/system` directory with the following contents, replacing `192.168.1.100:/nfsshare` with the address and path of your NFS share and `/mnt/nfs` with the mount point on your local machine:\n```\n[Unit]\nDescription=NFS mount of 192.168.1.100:/nfsshare\n\n[Mount]\nWhat=192.168.1.100:/nfsshare\nWhere=/mnt/nfs\nType=nfs\nOptions=nofail,bg,soft,intr,nfsvers=3,tcp\n\n[Install]\nWantedBy=multi-user.target\n```\nThis file tells `systemd` to mount the NFS share located at `192.168.1.100:/nfsshare` to the `/mnt/nfs` directory on your local machine using the specified options. The `nofail` option tells `systemd` to continue booting even if the NFS share fails to mount. The `bg` option tells `systemd` to mount the share in the background, so it doesn't block the boot",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 27,
+  "session_index": 1,
+  "session_id": "sharegpt_LgJ688S_0",
+  "turn_in_session": 7,
+  "date": "2023/05/20 (Sat) 12:20",
+  "role": "assistant",
+  "content": "The `TypeError: run_simple() got an unexpected keyword argument 'localhost'` error usually occurs when you pass an invalid or unexpected parameter to the `run_simple()` method in Flask.\n\nIn the case of the error message you mentioned, it seems that you have passed the `localhost` argument to the `run_simple()` method, which is not a valid parameter for this method.\n\nHere's an example of how to properly use the `run_simple()` method with the `host` and `port` parameters:\n```javascript\nfrom werkzeug.serving import run_simple\nfrom myapp import app\n\nif __name__ == '__main__':\n    run_simple('localhost', 5000, app)\n```\nIn the above example, we're importing the `run_simple()` method from the `werkzeug.serving` module, and passing it the `localhost` value as the `host` parameter, `5000` as the `port` parameter, and `app` as the Flask application object.\n\nMake sure that you're passing the `host` and `port` parameters to the `run_simple()` method correctly, as shown in the example above. If you're still having issues, please provide more information about your Flask application and the code that's causing the error, so that I can help you better.",
+  "has_answer": false
+}

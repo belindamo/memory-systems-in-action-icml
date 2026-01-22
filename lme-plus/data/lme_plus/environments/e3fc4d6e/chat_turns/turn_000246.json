@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 246,
+  "session_index": 24,
+  "session_id": "sharegpt_h3YKuXq_0",
+  "turn_in_session": 4,
+  "date": "2023/05/25 (Thu) 19:03",
+  "role": "user",
+  "content": "To send a token u will need to firstly get the breaakdown this will show the fee charged and the amount \nthe user will received if it send the token. \n the endpoint is /account/trade\\_breakdown , is a post request , \n params are token: user token to access, type=\"withdraw\", \n amount=\"amount of token to send out\" , asset = the name of the coin , network = the network response are \n assetUnits: number;\n withdrawFee: number;\n\n seconly send a confirmation OTP email to user email before you submit it\nthe endpoint is POST /account/withdrawal\\_otp\nthe params are asset\\_units, address, memo, asset, asset\\_units: is the amount of token token sending out e.g 0.00045\naddress; the recipient address, memo= optional but if the network of the coin selected has a memoRegex as a value u will need to provide it \nwhile asset is the name of the token sending out eg BTC\n\n thirdly, is to send a token out\n the endpoint is /account/send\\_token , is a post request , \n params are token: user token to access, \n amount=\"50\" , \n asset =USDT ,\n network = TRX,\n address=TNesdhhhsiiiiiieggelins\nmemo= optional but if the network of the coin selected has a memoRegex as a value u will need to provide \notp= is the code received by the user in step 2\n\n this.response.data = {\n amount: `the amount of token user will received`,\n asset,\n address,\n memo,\n description=Your payment has been sent to address\n };",
+  "has_answer": false
+}

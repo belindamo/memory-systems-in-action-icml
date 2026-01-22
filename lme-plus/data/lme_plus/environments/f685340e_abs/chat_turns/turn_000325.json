@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 325,
+  "session_index": 29,
+  "session_id": "sharegpt_RReCreP_0",
+  "turn_in_session": 4,
+  "date": "2023/05/23 (Tue) 15:14",
+  "role": "user",
+  "content": "Here is an example text element - \n\n\"bTGzk\": {\n \"properties\": {\n \"text\": {\n \"entries\": {\n \"0\": \"Welcome to my fun webpage!\"\n },\n \"type\": \"TextExpression\"\n },\n \"height\": 150,\n \"left\": 200,\n \"top\": 200,\n \"width\": 400,\n \"zindex\": 3\n },\n \"type\": \"Text\",\n \"id\": \"bTGzi\",\n \"default\\_name\": \"Text A\",\n \"style\": \"Text\\_body\\_large\\_\"\n }\n\n\"bTGzk\" is a unique id to represent the key of this element child. The properties contain visual properties. the id \"bTGzi\" is the reference id used when any other workflows reference this element.",
+  "has_answer": false
+}

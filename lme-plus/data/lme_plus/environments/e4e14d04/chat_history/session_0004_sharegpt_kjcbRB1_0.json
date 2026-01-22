@@ -1,0 +1,39 @@
+{
+  "session_id": "sharegpt_kjcbRB1_0",
+  "session_index": 4,
+  "date": "2023/05/28 (Sun) 03:13",
+  "turns": [
+    {
+      "role": "user",
+      "content": "can I search google for only .exe or .msi extensions\\"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, you can search Google for files with specific extensions such as .exe or .msi. You can do this by using advanced search operators.\n\nTo search for files with a specific extension, enter the following into the Google search bar:\n```makefile\nsite:example.com filetype:exe\n```\nIn this example, replace \"example.com\" with the website you want to search and \"exe\" with the file extension you are looking for. This will return all files with the .exe extension on the specified website.\n\nYou can also search for multiple file types at once by separating them with the OR operator. For example:\n```makefile\nsite:example.com filetype:exe OR filetype:msi\n```\nThis will return all files with either the .exe or .msi extension on the specified website."
+    },
+    {
+      "role": "user",
+      "content": "how could I search Google for spreadsheets with email addresses in them?"
+    },
+    {
+      "role": "assistant",
+      "content": "To search for spreadsheets with email addresses in them on Google, you can use advanced search operators.\n\nFirst, enter the following query into the Google search bar:\n```makefile\nfiletype:xls OR filetype:xlsx OR filetype:ods\n```\nThis will search for files with the file extensions .xls, .xlsx, or .ods, which are commonly used for spreadsheets.\n\nTo further refine the search to include only spreadsheets with email addresses in them, add the following query to the end of the search:\n```python\n\"email address\" OR \"e-mail address\"\n```\nThis will search for spreadsheets that contain the exact phrase \"email address\" or \"e-mail address\". You can modify the phrase to better fit your specific search, such as searching for specific domain names or email formats.\n\nSo the full search query would be:\n```vbnet\nfiletype:xls OR filetype:xlsx OR filetype:ods \"email address\" OR \"e-mail address\"\n```\nThis should return spreadsheets that contain email addresses in them."
+    },
+    {
+      "role": "user",
+      "content": "\\mposter syndrome may be a familiar or unfamiliar phrase for you. We are going to kick off this session by reflecting on what you already know (or don\u2019t know) about imposter syndrome. Read the following statements and indicate whether the statements are true or false. We\u2019ll come back to your answers later in the session.\n\n \nFlag question: Question 1\nQuestion 11 pts\nOnly unsuccessful people experience imposter syndrome.\nGroup of answer choices\n\nTrue\n\nFalse\n \nFlag question: Question 2\nQuestion 21 pts\nImposter syndrome can explain why some people experience self-doubt when starting something new.\nGroup of answer choices\n\nTrue\n\nFalse\n \nFlag question: Question 3\nQuestion 31 pts\nAvoiding responsibility because you are afraid of feedback is an effect of imposter syndrome.\nGroup of answer choices\n\nTrue\n\nFalse\nNo new data to save. Last checked at 6:57am syndrome may be a familiar or unfamiliar phrase for you. We are going to kick off this session by reflecting on what you already know (or don\u2019t know) about imposter syndrome. Read the following statements and indicate whether the statements are true or false. We\u2019ll come back to your answers later in the session. Imposter syndrome is the belief that one\u2019s success, achievements or situation are not deserved. This belief is accompanied by feelings of inadequacy, unworthiness or fraudulence\n\nSuccessful people are often challenged with imposter syndrome and it can affect the quality of their work or negatively affect their viewpoint. This video will explain more about imposter syndrome. \n\nImposter syndrome is the belief that one\u2019s success, achievements or situation are not deserved. This belief is accompanied by feelings of inadequacy, unworthiness or fraudulence\n\nSuccessful people are often challenged with imposter syndrome and it can affect the quality of their work or negatively affect their viewpoint. This video will explain more about imposter syndrome. \n\nImposter syndrome is the belief that one\u2019s success, achievements or situation are not deserved. This belief is accompanied by feelings of inadequacy, unworthiness or fraudulence\n\nSuccessful people are often challenged with imposter syndrome and it can affect the quality of their work or negatively affect their viewpoint. This video will explain more about imposter syndrome. \n\nImposter syndrome is the belief that one\u2019s success, achievements or situation are not deserved. This belief is accompanied by feelings of inadequacy, unworthiness or fraudulence\n\nSuccessful people are often challenged with imposter syndrome and it can affect the quality of their work or negatively affect their viewpoint. This video will explain more about imposter syndrome."
+    },
+    {
+      "role": "assistant",
+      "content": "Sure, I can help you with that!\n\nHere are the correct answers to the true/false questions about imposter syndrome:\n\nQuestion 1: False. Imposter syndrome can affect anyone, regardless of their level of success or accomplishments.\n\nQuestion 2: True. Imposter syndrome often causes self-doubt, especially when someone is starting something new or facing a new challenge.\n\nQuestion 3: True. People with imposter syndrome may avoid responsibility or shy away from feedback because they are afraid of being exposed as a fraud.\n\nI hope this helps! Let me know if you have any more questions."
+    },
+    {
+      "role": "user",
+      "content": "\\As we learned from the video, imposter syndrome is experienced by many but talked about by few. Let's take a few minutes and reflect on what we have learned. \n\n \nFlag question: Question 1\nQuestion 11 pts\nWho can experience imposter syndrome?\n\nView keyboard shortcuts\n\np\n\nView keyboard shortcuts\n\nAccessibility Checker\n\n0 words\n\n</>\nSwitch to the html editor\n\nFullscreen\n \nFlag question: Question 2\nQuestion 21 pts\nUsing the information from the video, do your best to complete these two sentences:\n\nSomeone experiencing imposter syndrome may have feelings like\u2026\n\nPeople experiencing imposter syndrome think that \u2026\nView keyboard shortcuts\n\np\n\nView keyboard shortcuts\n\nAccessibility Checker\n\n0 words\n\n</>\nSwitch to the html editor\n\nFullscreen\n \nFlag question: Question 3\nQuestion 31 pts\nWhat is something about imposter syndrome that you found interesting?\n\nView keyboard shortcuts\nEdit\nView\nInsert\nFormat\nTools\nTable\n12pt\nParagraph\np\n\nView keyboard shortcuts\n\nAccessibility Checker\n\n0 words\n\n</>\nSwitch to the html editor\n\nFullscreen\nNot saved"
+    },
+    {
+      "role": "assistant",
+      "content": "Sure, I can assist you with that!\n\nHere are the answers to the reflection questions:\n\nQuestion 1: Anyone can experience imposter syndrome, regardless of their background, education, or level of success.\n\nQuestion 2: Someone experiencing imposter syndrome may have feelings like inadequacy, self-doubt, fear of failure, or feeling like a fraud. People experiencing imposter syndrome think that they are not deserving of their accomplishments and that they are just pretending to be competent.\n\nQuestion 3: This is subjective, but some interesting things about imposter syndrome are that it is a common experience among high-achievers, it can cause people to sabotage themselves or hold back from taking risks, and it can be treated with therapy or self-reflection techniques."
+    }
+  ]
+}

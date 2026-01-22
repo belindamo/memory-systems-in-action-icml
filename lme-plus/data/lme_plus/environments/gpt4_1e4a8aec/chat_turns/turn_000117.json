@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 117,
+  "session_index": 10,
+  "session_id": "sharegpt_6MvsZ2t_0",
+  "turn_in_session": 5,
+  "date": "2023/03/25 (Sat) 01:50",
+  "role": "assistant",
+  "content": "To graph the country's sales numbers against each other, follow these steps:\n\n1. In the Excel worksheet, select the cells that contain the `VLOOKUP` formulas that you used to sum the sales numbers for each country.\n2. Click the `Insert` tab, and then click the `Column` button in the `Charts` group.\n3. In the `Column` chart types, select the chart type that you want to use (e.g., `Clustered Column` or `Stacked Column`).\n4. In the `Column Chart` dialog box, select the range of cells that contains the `VLOOKUP` formulas as the data source, and then click `OK`.\n5. Excel will create a column chart that compares the sales numbers for each country.\n\nAlternatively, you can create a pivot chart by following these steps:\n\n1. In the Excel worksheet, click the `Analyze` tab in the `PivotTable Tools` ribbon.\n2. In the `Tools` group, click the `PivotChart` button, and then select the type of chart that you want to create (e.g., `Column`, `Line`, or `Pie`).\n3. In the `Create PivotChart` dialog box, select the range of cells that contains the pivot table as the data source, and then click `OK`.\n4. Excel will create a pivot chart that compares the sales numbers for each country.\n\nBy using either a column chart or a pivot chart, you can easily compare the sales numbers for different countries in Excel.",
+  "has_answer": false
+}

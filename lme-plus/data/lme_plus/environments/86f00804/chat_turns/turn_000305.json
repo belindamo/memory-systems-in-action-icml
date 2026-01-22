@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 305,
+  "session_index": 26,
+  "session_id": "sharegpt_Q4svpUN_0",
+  "turn_in_session": 0,
+  "date": "2023/05/27 (Sat) 03:23",
+  "role": "user",
+  "content": "Given a sentence and some evidence, I want to use the evidence to check if the sentence is correct. The evidence is a list consisting of titles and corresponding sentence. However, the evidence may contain noise or irrelevant information. I hope you can summary useful information and filter noisy in the evidence. The answer should be a slit.\n\nSentence: Adrienne Bailon is an accountant.\nEvidence:\n1. Title:'Adrienne\\_Bailon' Sentence: 'Adrienne Eliza Houghton LRB n\u00e9e Bailon ; born October 24 , 1983 RRB is an American singer songwriter , recording artist , actress , dancer and television personality.'\n2. Title:'Adrienne\\_Bailon' Sentence: 'Adrienne Bailon first became publicly known when she rose to fame as one of the founding members and singer of both 3LW LRB 1999 2007 RRB and Disney 's The Cheetah Girls LRB 2003 2008 RRB.'\n3. Title:'Adrienne\\_Bailon' Sentence: 'Bailon co stars alongside television personality , model and actress Julissa Bermudez in their own reality series , Empire Girls : Julissa and Adrienne which airs on the Style Network.'\n4. Title:'Accountant' Sentence: 'The Big Four auditors are the largest employers of accountants worldwide.'\n5. Title:'Adrienne\\_Bailon' Sentence: 'Aside from her work in 3LW and The Cheetah Girls , Bailon went on to develop her own acting career with roles in The Cheetah Girls films , Coach Carter and the MTV film All You 've Got.'\nAnswer:",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 301,
+  "session_index": 29,
+  "session_id": "sharegpt_1hK2wZj_13",
+  "turn_in_session": 7,
+  "date": "2023/04/29 (Sat) 16:07",
+  "role": "user",
+  "content": "how to change this piece of code to support sharp notes\n\n # Convert the note to a MIDI note value\n note\\_num = 60 + (ord(note) - ord('A'))\n duration = int(duration)",
+  "has_answer": false
+}

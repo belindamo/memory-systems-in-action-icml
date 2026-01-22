@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 470,
+  "session_index": 45,
+  "session_id": "sharegpt_a9hxnu5_0",
+  "turn_in_session": 7,
+  "date": "2023/05/05 (Fri) 22:55",
+  "role": "assistant",
+  "content": "Form search is a type of search functionality that allows users to search for specific information by filling out a form with predefined fields and options. The form typically includes one or more input fields where users can enter their search criteria, and may also include additional fields that allow users to further refine their search. The form search results will be based on the specific fields and options selected by the user, and will not take into account other information within the documents.\n\nForm search is typically used to search structured data, such as databases, spreadsheets, and other types of structured documents. It is often used in situations where the data is organized in a specific way, and the user needs to search for specific information within that structure. For example, a form search may be used on a database of customer information to search for customers by name, address, or other specific criteria.\n\nForm search can be useful when the user knows exactly what they are looking for and when the data is structured, but it can be less flexible and less accurate than full-text search when the data is unstructured or the user is not exactly sure what they are looking for.",
+  "has_answer": false
+}

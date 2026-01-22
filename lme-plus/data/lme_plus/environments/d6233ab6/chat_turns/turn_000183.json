@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 183,
+  "session_index": 18,
+  "session_id": "sharegpt_hRCFRol_0",
+  "turn_in_session": 1,
+  "date": "2023/05/25 (Thu) 14:07",
+  "role": "assistant",
+  "content": "| Measure | Value | Unit |\n| --- | --- | --- |\n| Power Loss @ 90\u00b0C | 3.60 | kW |\n| Power Loss @ 60\u00b0C | 4.2 | kW |\n| Power Loss @ ambient temperature | 8.1 | kW |\n| Power Loss (reverse) | < 3.60 | kW |\n| Temperature @ 1h 6' (P&T test) | 85 | \u00b0C |\n| Power @ 1h 6' (P&T test) | 2.8 | kW |\n| Temperature @ 2h (P&T test) | ~110 | \u00b0C |\n| Power @ 2h (P&T test) | 5.3 | kW |\n\nThe test report is for the P&T + Lube test of the 755 Front Agri Axle with reduced oil level (-0.5 lt.) and ELF SF3 oil. The test measures power loss, temperature raise, and lubrication performance. The test results show that the axle partially passed the test, with significantly lower power loss values compared to reference tests. However, there were issues with the P&T test as the temperature curves became irregular after 1h:6', with no stabilization, and power loss step-up. The lubrication test showed no signs of lubrication problems, and the oil level was always above the minimum oil level in all compartments. It is advised not to further reduce the oil level unless the power loss step-up issue is solved.",
+  "has_answer": false
+}

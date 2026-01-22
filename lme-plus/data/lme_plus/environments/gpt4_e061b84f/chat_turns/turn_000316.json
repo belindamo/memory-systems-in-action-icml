@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 316,
+  "session_index": 31,
+  "session_id": "sharegpt_5jHUxvs_80",
+  "turn_in_session": 2,
+  "date": "2023/06/17 (Sat) 01:07",
+  "role": "user",
+  "content": "\"message\": \"#< CLIXML\\nSystem.Management.Automation.PSCustomObjectSystem.Object1Preparing modules for first use.0-1-1Completed-1 2Preparing modules for first use.0-1-1Completed-1 ~~New-Object : Exception calling \\\".ctor\\\" with \\\"2\\\" argument(s): \\\"Cannot process argument because the value of argument \\_x000D\\_\\_x000A\\_~~~~\\\"userName\\\" is not valid. Change the value of the \\\"userName\\\" argument and run the operation again.\\\"\\_x000D\\_\\_x000A\\_~~~~At line:3 char:97\\_x000D\\_\\_x000A\\_~~~~+ ... Credential (New-Object System.Management.Automation.PSCredential($dom ...\\_x000D\\_\\_x000A\\_~~~~+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\\_x000D\\_\\_x000A\\_~~ ~~+ CategoryInfo : InvalidOperation: (:) [New-Object], MethodInvocationException\\_x000D\\_\\_x000A\\_~~ ~~+ FullyQualifiedErrorId : ConstructorInvokedThrowException,Microsoft.PowerShell.Commands.NewObjectCommand\\_x000D\\_\\_x000A\\_~~ ~~\\_x000D\\_\\_x000A\\_~~\",",
+  "has_answer": false
+}

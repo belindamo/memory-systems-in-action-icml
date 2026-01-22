@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 281,
+  "session_index": 25,
+  "session_id": "sharegpt_4PwGTCZ_0",
+  "turn_in_session": 8,
+  "date": "2023/05/26 (Fri) 07:49",
+  "role": "user",
+  "content": "select all id\\_product with id\\_lang 7 from ps\\_product\\_lang and create a query that will ouput in different columns - \n\n1. id\\_products\n2. description\n3. description\\_short\n4. link\\_rewrite\n5. meta\\_description\n6. meta\\_title\n7. name",
+  "has_answer": false
+}

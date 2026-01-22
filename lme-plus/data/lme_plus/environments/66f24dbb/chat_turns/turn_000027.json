@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 27,
+  "session_index": 5,
+  "session_id": "sharegpt_y8kXaF9_0",
+  "turn_in_session": 1,
+  "date": "2023/05/22 (Mon) 04:32",
+  "role": "assistant",
+  "content": "You can create two input fields side by side in HTML using a combination of HTML and CSS. Here is an example of how to do it:\n```html\n<!DOCTYPE html>\n<html>\n<head>\n\t<title>Two Input Fields Side by Side</title>\n\t<style>\n\t\tform {\n\t\t\tdisplay: flex;\n\t\t\tflex-direction: row;\n\t\t\talign-items: center;\n\t\t}\n\t\t\n\t\tlabel {\n\t\t\tmargin-right: 10px;\n\t\t}\n\t</style>\n</head>\n<body>\n\t<form>\n\t\t<label for=\"MID\">MID:</label>\n\t\t<input type=\"text\" id=\"MID\" name=\"MID\">\n\t\t<label for=\"Descriptor\">Descriptor:</label>\n\t\t<input type=\"text\" id=\"Descriptor\" name=\"Descriptor\">\n\t</form>\n</body>\n</html>\n```\nIn this example, the form is styled using CSS `flexbox` to display the input fields side by side. The `label` element is used to provide a text label for each input field. The `for` attribute of the `label` element is used to associate the label with the corresponding input field using the `id` attribute.\n\nYou can modify the styling to suit your specific requirements.",
+  "has_answer": false
+}

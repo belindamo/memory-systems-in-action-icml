@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 227,
+  "session_index": 21,
+  "session_id": "sharegpt_RjO1Toi_31",
+  "turn_in_session": 18,
+  "date": "2023/06/01 (Thu) 12:20",
+  "role": "user",
+  "content": "extract frames and the frame elements from this sentence: {\"sentence\": \"( Telegram, 09.13.22) \u201cFor more than six months I have been openly and regularly declaring that if we continue to fight the way we troops have been fighting under the leadership of the Russian Defense Ministry, then we will eventually suffer a crushing defeat in this war.\", \"frames\": [{\"name\": \"Measure\\_duration\", \"elements\": [{\"name\": \"Count\", \"text\": \"six\"}, {\"name\": \"Unit\", \"text\": \"months\"}]}, {\"name\": \"Statement\", \"elements\": [{\"name\": \"Speaker\", \"text\": \"I\"}, {\"name\": \"Manner\", \"text\": \"openly and regularly\"}, {\"name\": \"Message\", \"text\": \"that if we continue to fight the way we troops have been fighting under the leadership of the Russian Defense Ministry, then we will eventually suffer a crushing defeat in this war\"}]}, {\"name\": \"Activity\\_ongoing\", \"elements\": [{\"name\": \"Agent\", \"text\": \"we\"}, {\"name\": \"Activity\", \"text\": \"to fight the way we troops have been fighting under the leadership of the Russian Defense Ministry\"}]}, {\"name\": \"Hostile\\_encounter\", \"elements\": [{\"name\": \"Side\\_1\", \"text\": \"we\"}, {\"name\": \"Manner\", \"text\": \"the way we troops have been fighting\"}]}, {\"name\": \"Hostile\\_encounter\", \"elements\": [{\"name\": \"Manner\", \"text\": \"the way\"}, {\"name\": \"Side\\_1\", \"text\": \"we troops\"}, {\"name\": \"Manner\", \"text\": \"under the leadership of the Russian Defense Ministry\"}]}, {\"name\": \"Catastrophe\", \"elements\": [{\"name\": \"Patient\", \"text\": \"we\"}, {\"name\": \"Time\", \"text\": \"eventually\"}, {\"name\": \"Undesirable\\_event\", \"text\": \"a crushing defeat in this war\"}]}, {\"name\": \"Hostile\\_encounter\", \"elements\": [{\"name\": \"\", \"text\": \"N/A\"}]}]}",
+  "has_answer": false
+}

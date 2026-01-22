@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 314,
+  "session_index": 26,
+  "session_id": "sharegpt_Q4svpUN_0",
+  "turn_in_session": 9,
+  "date": "2023/05/27 (Sat) 03:23",
+  "role": "assistant",
+  "content": "Sure, here's a revised version of your instruction that incorporates the feedback we discussed:\n\nGiven a sentence and a list of evidence consisting of titles and corresponding sentences, summarize the useful information and filter out irrelevant or noisy information in the evidence. Use reasoning based on the evidence to determine if the given sentence is correct or not. The output should be a list of useful information, and a conclusion about the correctness of the given sentence based on the evidence.",
+  "has_answer": false
+}

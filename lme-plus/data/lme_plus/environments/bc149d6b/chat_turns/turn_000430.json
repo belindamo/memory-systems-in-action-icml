@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 430,
+  "session_index": 42,
+  "session_id": "sharegpt_uzwG36E_1",
+  "turn_in_session": 4,
+  "date": "2023/05/29 (Mon) 14:50",
+  "role": "assistant",
+  "content": "fetch('<https://jsonplaceholder.typicode.com/posts>');\nconst posts = await response.json();\n\nreturn {\nposts: posts.map((post: { id: number; title: string }) => ({\nid: post.id,\ntitle: post.title,\n})),\n};\n};\n\n// Update the Page component to receive metadata instead of params\nconst Page: React.FC<PostListMetadata> = ({ posts }) => {\n// ...\n};\n```vbnet\n\nWith this setup, the `generateMetadata` function for the `/posts` page fetches the list of all posts during the build process. The fetched posts are passed as metadata to the page component, which then renders the list of posts with links to their respective pages.\n\nNow you have a simple blog app that uses the JSONPlaceholder API to fetch data and statically generates pages for all the blog posts. This example demonstrates how to use `generateStaticParams` and `generateMetadata` functions in Next.js 13 with TypeScript to fetch and display data from an external API.\n```",
+  "has_answer": false
+}

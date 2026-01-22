@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 413,
+  "session_index": 40,
+  "session_id": "sharegpt_zTdyJU5_0",
+  "turn_in_session": 1,
+  "date": "2023/04/27 (Thu) 09:13",
+  "role": "assistant",
+  "content": "To create an axis in Autodesk Inventor and use program utilities, you can follow these steps:\n\n1. Open Autodesk Inventor and create a new part file.\n2. Click on the \"Axis\" tool from the \"3D Model\" tab of the toolbar or from the \"Create\" dropdown menu.\n3. Click on the face or edge where you want to create the axis.\n4. Define the orientation and location of the axis by specifying two points or using other options like \"Parallel\" or \"Perpendicular\" to existing geometry.\n5. Click \"OK\" to create the axis.\n\nTo use program utilities in Inventor, you can access a variety of tools that help you to work more efficiently with your models. Here are a few examples:\n\n1. \"Measure\" tool: Use this tool to measure distances, angles, and other properties of your geometry. You can access it from the \"Inspect\" dropdown menu or by using the shortcut key \"M\".\n2. \"Pattern\" tool: Use this tool to create patterns of features or components, such as a linear or circular pattern. You can access it from the \"Pattern\" dropdown menu or by using the shortcut key \"P\".\n3. \"Mirror\" tool: Use this tool to create a mirrored copy of a feature or component. You can access it from the \"Pattern\" dropdown menu or by using the shortcut key \"M\".\n4. \"Extrude\" tool: Use this tool to create a 3D solid from a 2D sketch. You can access it from the \"3D Model\" tab or by using the shortcut key \"E\".\n5. \"Fillet\" tool: Use this tool to add a rounded edge to a sharp corner. You can access it from the \"3D Model\" tab or by using the shortcut key \"F\".\n\nBy using these and other program utilities in Autodesk Inventor, you can create and modify 3D models more efficiently and accurately.",
+  "has_answer": false
+}

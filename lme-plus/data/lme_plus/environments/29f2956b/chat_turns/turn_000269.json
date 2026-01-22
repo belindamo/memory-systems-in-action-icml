@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 269,
+  "session_index": 26,
+  "session_id": "sharegpt_eMCJFR7_229",
+  "turn_in_session": 4,
+  "date": "2023/05/24 (Wed) 09:20",
+  "role": "assistant",
+  "content": "To use this code in a REACT application, you would need to make HTTP requests to an endpoint on your ASP.NET Core MVC application that exposes the authorization check methods.\n\nHere is an example of how you could make the HTTP request using the Fetch API in REACT:\n```javascript\nfetch('https://yourmvcapp.com/api/authorization/checkauthorization', {\n    method: 'POST',\n    headers: {\n        'Content-Type': 'application/json'\n    },\n    body: JSON.stringify({\n        PersonLogin: 'user1',\n        AzLocalRightName: 'CreateInvoice',\n        ResourceID: '9dc82a8b-2a11-4f1e-8b0e-8a5636d02a07',\n        InvoiceAmount: 100,\n        Country: 'Norway'\n    })\n})\n.then(response => response.json())\n.then(data => {\n    if (data.isAuthorized) {\n        // Access granted, do something\n    } else {\n        // Access denied, show error message\n    }\n})\n.catch(error => {\n    // Handle error\n})\n```\nYou would replace the URL with the endpoint of your ASP.NET Core MVC application and the body with the data you want to pass to the authorization check method.\n\nYou could also use a library like Axios to make the HTTP requests, which provides additional features like interceptors and request cancellation.",
+  "has_answer": false
+}

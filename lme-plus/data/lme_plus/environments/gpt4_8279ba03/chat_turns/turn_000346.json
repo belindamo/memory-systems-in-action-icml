@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 346,
+  "session_index": 29,
+  "session_id": "sharegpt_0es4qk5_0",
+  "turn_in_session": 2,
+  "date": "2023/03/13 (Mon) 09:47",
+  "role": "user",
+  "content": "Good question - Vercel will automatically generate a URL which will be something like 'dans-gitbook.vercel.app', but Vercel allows customers to assign custom domains to their Vercel deployments. In this case, I've assigned a custom domain of 'gitbook.com', as well as a wildcard subdomain of '\\*.gitbook.com'. This allows for custom subdomains. Does that make sense?",
+  "has_answer": false
+}

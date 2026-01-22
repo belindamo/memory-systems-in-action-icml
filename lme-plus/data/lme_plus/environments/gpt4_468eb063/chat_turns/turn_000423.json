@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 423,
+  "session_index": 37,
+  "session_id": "sharegpt_8M7HcM3_11",
+  "turn_in_session": 6,
+  "date": "2023/04/11 (Tue) 23:18",
+  "role": "assistant",
+  "content": "I apologize for the confusion again. The correct command to check the AppArmor profile for the Discord snap package is:\n```lua\nsudo aa-status | grep snap.discord.discord\n```\nThis command will show you the status of the AppArmor profile for the Discord snap package. If the profile is in enforce mode, it means that it is actively enforcing access control rules for the application.\n\nIf the profile is not found, it's possible that the profile is being generated dynamically at runtime, as I mentioned earlier. In that case, you may need to create a custom profile to control access to specific resources for the Discord snap package.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 438,
+  "session_index": 42,
+  "session_id": "sharegpt_3lWzv4B_0",
+  "turn_in_session": 13,
+  "date": "2023/05/28 (Sun) 06:56",
+  "role": "assistant",
+  "content": "I understand your situation. In this case, using `robocopy` to only copy changed files is a good solution as a short-term fix, especially if you have a large amount of data and want to avoid paying for backing up the same data twice.\n\nIn addition to the `/MAXAGE` and `/MIR` options that I mentioned earlier, you can also use the `/DCOPY:T` option to copy timestamps along with the files. This will ensure that the modified timestamps of the files in the destination directory are updated to match the source directory:\n```kotlin\nrobocopy \\\\lightspeed\\data d:\\serverfolders\\nasbackup /MAXAGE:2023-01-30 /MIR /DCOPY:T\n```\nBy using the `/MAXAGE`, `/MIR`, and `/DCOPY:T` options, you can create an efficient solution for backing up changed files on a Windows machine and minimize the amount of data you need to pay to store in the cloud.",
+  "has_answer": false
+}

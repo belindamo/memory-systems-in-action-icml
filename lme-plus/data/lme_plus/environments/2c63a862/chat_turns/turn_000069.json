@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 69,
+  "session_index": 8,
+  "session_id": "sharegpt_JlSnb71_23",
+  "turn_in_session": 2,
+  "date": "2022/03/02 (Wed) 20:51",
+  "role": "assistant",
+  "content": "The European Blockchain Service Infrastructure (EBSI) is a decentralized platform that enables secure cross-border digital public services. A critical component of EBSI is the implementation of verifiable credentials, as defined by the W3C Verifiable Credentials Data Model standard (<https://www.w3.org/TR/vc-data-model/>). Verifiable credentials play a pivotal role in establishing trust and preserving users' privacy within the EBSI ecosystem.\n\nWith the increasing prevalence of digital documentation, the challenge of securely archiving verifiable credentials for the long term has become more critical. This paper introduces a decentralized application designed for the long-term storage of EBSI-issued verifiable credentials, following the TR-ESOR recommendations (<https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03125/BSI_TR_03125_V1_2_1.pdf?__blob=publicationFile&v=2>), a middleware proposed by the German Federal Office for Information Security (BSI) for long-term storage of digital documents.\n\nBy integrating the TR-ESOR middleware with various storage systems, such as cloud, local, or decentralized databases, the proposed decentralized application enhances the flexibility and adaptability of the long-term storage solution for EBSI-issued verifiable credentials. The paper offers a concise yet informative introduction to the EBSI framework, the W3C Verifiable Credentials Data Model, and the TR-ESOR recommendations, while also addressing the challenges associated with archiving verifiable credentials.\n\nIn compliance with ACM and IEEE guidelines for influential computer science research papers, this paper employs state-of-the-art scientific research methodologies to contribute to the advancement of digital credential management and the establishment of trust in decentralized systems.",
+  "has_answer": false
+}

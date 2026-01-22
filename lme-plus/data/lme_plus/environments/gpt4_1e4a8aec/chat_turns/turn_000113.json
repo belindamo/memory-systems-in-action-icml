@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 113,
+  "session_index": 10,
+  "session_id": "sharegpt_6MvsZ2t_0",
+  "turn_in_session": 1,
+  "date": "2023/03/25 (Sat) 01:50",
+  "role": "assistant",
+  "content": "To write a script in Excel that automatically returns and sums sales numbers per country using `VLOOKUP` and a pivot table, follow these steps:\n\n1. In the Excel worksheet, create a table with the following columns: `Country`, `Sales`, and `Date`.\n2. In the `Country` column, enter the name of each country where you have made sales.\n3. In the `Sales` column, enter the sales numbers for each country.\n4. In the `Date` column, enter the date on which each sale was made.\n5. Select the cells in the table, and then click the `Insert` tab.\n6. In the `Tables` group, click `PivotTable`, and then select `PivotTable` from the drop-down menu.\n7. In the `Create PivotTable` dialog box, select the cells in the table as the data source, and then click `OK`.\n8. In the `PivotTable Fields` pane, drag the `Country` field to the `Rows` area, and then drag the `Sales` field to the `Values` area.\n9. In the `PivotTable Fields` pane, click the `Value Field Settings` button, and then select `Sum` from the drop-down menu.\n10. In a new cell, enter the `VLOOKUP` function, which has the following syntax: `=VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])`.\n11. In the `lookup_value` argument, enter the name of the country that you want to look up.\n12. In the `table_array` argument, enter the range of cells that contains the pivot table.\n13. In the `col_index_num` argument, enter the number of the column in the pivot table that contains the sales numbers.\n14. In the `range_lookup` argument, enter `TRUE` if you want the `VLOOKUP` function to return an approximate match, or `FALSE` if you want the function to return an exact match.\n15. Press `Enter` to calculate the `VLOOKUP` function, and then repeat the process for each country that you want to look up.\n\nBy using the `VLOOKUP` function together with a pivot table, you can easily and quickly sum sales numbers per country in Excel.",
+  "has_answer": false
+}

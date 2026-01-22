@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 245,
+  "session_index": 25,
+  "session_id": "sharegpt_uDSaCgI_0",
+  "turn_in_session": 2,
+  "date": "2023/05/24 (Wed) 23:45",
+  "role": "user",
+  "content": "I used og:graph html on my page - my og:image is 1200x628 pixels, but on twitter when I tweet a link to the page, the preview image defaults to 360x360 pixels. \nDo I need to add  to my code to ensure that twitter shows my link preview image at 1200x628 pixels?",
+  "has_answer": false
+}

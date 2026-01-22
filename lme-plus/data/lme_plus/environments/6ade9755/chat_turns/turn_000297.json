@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 297,
+  "session_index": 28,
+  "session_id": "sharegpt_BghMUHh_0",
+  "turn_in_session": 11,
+  "date": "2023/05/24 (Wed) 16:18",
+  "role": "assistant",
+  "content": "To create a keyboard shortcut to open the Terminal app in macOS using Automator:\n\n1. Open the Automator app. You can find it in the Applications > Automator folder or by searching for it in Spotlight.\n2. Choose \"Service\" as the type of document to create.\n3. In the Library on the left, find the \"Utilities\" category and select the \"Run AppleScript\" action.\n4. Copy and paste the following AppleScript code into the action:\n```perl\ntell application \"Terminal\"\n    activate\nend tell\n```\n5. Save the service by going to \"File\" > \"Save\" and giving it a descriptive name, such as \"Open Terminal.\"\n6. To assign a keyboard shortcut to this service, go to \"System Preferences\" > \"Keyboard\" > \"Shortcuts\" > \"Services.\"\n7. Find the service you just created in the list on the right and click on it.\n8. Click the \"Add Shortcut\" button and press the desired keyboard combination. For example, you can use \"Command + Option + T.\"\n9. Close System Preferences.\n\nNow, you can use the keyboard shortcut you created to quickly open the Terminal app.",
+  "has_answer": false
+}

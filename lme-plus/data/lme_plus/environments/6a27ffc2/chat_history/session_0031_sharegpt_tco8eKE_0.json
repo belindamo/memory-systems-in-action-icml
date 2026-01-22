@@ -1,0 +1,39 @@
+{
+  "session_id": "sharegpt_tco8eKE_0",
+  "session_index": 31,
+  "date": "2023/05/24 (Wed) 15:13",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I want you to act as a a kindle that can simulate a digital book reading. I will type in the name of the book and you will generate the first page. Afterwards I may type in a specific page number, chapter title, list the table of contents, preface, ask to go to the next or previous page, or even change books entirely and you will follow that command and display the result. I may also ask you to provide meaningful commentary on a section or specific excerpt, and you will oblige and output the result. Lastly, I may ask you to find specific scenes or describe specific parts of the book. When I ask you for this, you will not provide commentary, you will only find the corresponding scene, and display that page of the book. You will only provide original commentary if I include the token 'commentary'. At the top of every page, include the book title, chapter, and page number. I want you to only reply with the terminal output inside one unique code block, and nothing else. Make sure the chapter and page number stay within the terminal output, and make sure to display the full page of the page in the book every time, and stop once reaching the the last line of the page. Do no write explanations. Do not type commands unless I instruct you to do so. When I need to tell you something in English I will do so by putting text inside curly brackets {like this}. {Brave New World}"
+    },
+    {
+      "role": "assistant",
+      "content": "```\nBrave New World\nChapter 1\nPage 1\n\nA squat grey building of only thirty-four stories. Over the main entrance the words, CENTRAL LONDON HATCHERY AND CONDITIONING CENTRE, and, in a shield, the World State's motto, COMMUNITY, IDENTITY, STABILITY. The enormous room on the ground floor faced towards the north. Cold for all the summer beyond the panes, for all the tropical heat of the room itself, a harsh thin light glared through the windows, hungrily seeking some draped lay figure, some pallid shape of academic goose-flesh, but finding only the glass and nickel and bleakly shining porcelain of a laboratory. Wintriness responded to wintriness. \"And this,\" said the Director opening the door, \"is the Fertilizing Room.\"\n```"
+    },
+    {
+      "role": "user",
+      "content": "{Find me the scene in where they describe the drug SOMA}"
+    },
+    {
+      "role": "assistant",
+      "content": "```\nBrave New World\nChapter 2\nPage 15\n\n\"But I don't want comfort. I want God, I want poetry, I want real danger, I want freedom, I want goodness. I want sin.\"\n\n\"In fact,\" said Mustapha Mond, \"you're claiming the right to be unhappy.\"\n\n\"All right then,\" said the Savage defiantly, \"I'm claiming the right to be unhappy.\"\n\n\"Not to mention the right to grow old and ugly and impotent; the right to have syphilis and cancer; the right to have too little to eat; the right to be lousy; the right to live in constant apprehension of what may happen tomorrow; the right to catch typhoid; the right to be tortured by unspeakable pains of every kind.\" There was a long silence.\n\n\"I claim them all,\" said the Savage at last.\n\nMustapha Mond shrugged his shoulders. \"You're welcome,\" he said.\n\nAnd then, brushing the objection aside, \"Actual happiness always looks pretty squalid in comparison with the overcompensations for misery. And, of course, stability isn't nearly so spectacular as instability. And being contented has none of the glamour of a good fight against misfortune, none of the picturesqueness of a struggle with temptation, or a fatal overthrow by passion or doubt. Happiness is never grand.\"\n\n\"But it's the only thing that counts,\" said the Savage.\n\n\"Not at all,\" said the Controller. \"Happiness is the useful illusion, the spoonful of sugar, that makes the medicine go down. The coaxing little opiate that the civilized man takes to secure his muddle-headed contentment. Not the natural happiness that comes from a healthy body or a happy mind, but the manufactured happiness that comes from a bottle of soma. Take a holiday from reality whenever you like, and come back to it refreshed, and with a readjusted will.\"\n```"
+    },
+    {
+      "role": "user",
+      "content": "{Find me the scene in the book where they talk about how people are made in tubes in factories}"
+    },
+    {
+      "role": "assistant",
+      "content": "```\nBrave New World\nChapter 1\nPage 3\n\nBut there was no need to worry about anything as long as one obeyed the rules of the game. The rules were simple, few, and flexible, and the penalties for breaking them were extremely harsh. The most important rule was: No one was allowed to be unhappy.\n\n\"Of course not,\" the Director of Hatcheries and Conditioning said, when Lenina Crowne had protested. \"What do you think we are? Civilized?\"\n\nThe World State had no use for individuals who didn't know how to be happy, who were unhappy for no good reason. There were special schools where they taught you how to be happy, how to be a good Alpha or Beta or Gamma or Delta or Epsilon, how to be a good member of the society in which you lived.\n\n\"But how do they make the babies?\" asked Lenina.\n\nThe Director of Hatcheries and Conditioning looked surprised. \"In the factory, of course,\" he said.\n```"
+    },
+    {
+      "role": "user",
+      "content": "{Provide a summary of chapter 1}"
+    },
+    {
+      "role": "assistant",
+      "content": "```\nBrave New World\nChapter 1\nPage 1\n\nIn the first chapter of Brave New World, the reader is introduced to the concept of the World State, a futuristic society in which human beings are bred and conditioned to fulfill specific societal roles. The chapter opens with a description of the Central London Hatchery and Conditioning Centre, a building where human beings are produced in test tubes and raised in incubators. The Director of the Hatchery takes a group of students on a tour of the facility, explaining the process by which the society's citizens are created and conditioned to fulfill their predetermined roles. The chapter ends with the Director leading the students into the Fertilizing Room,\n```"
+    }
+  ]
+}

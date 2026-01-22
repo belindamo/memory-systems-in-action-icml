@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 14,
+  "session_index": 1,
+  "session_id": "sharegpt_HdWyKUy_0",
+  "turn_in_session": 2,
+  "date": "2023/05/20 (Sat) 19:24",
+  "role": "user",
+  "content": "from given atomic sentences, make anki flashcards to memorize all the information they have. The flashcards should be atomic. And follow the format below\n[format]\nQ : [Question. Only ask one concept at one question.]\nA : [Compact Answer. Make Answer compact so that I can memorize it easily]\nExtra : [more rich explanation of the question. Make sure I can understand the answer]",
+  "has_answer": false
+}

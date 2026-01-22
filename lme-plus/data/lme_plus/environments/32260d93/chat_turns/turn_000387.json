@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 387,
+  "session_index": 34,
+  "session_id": "sharegpt_8jxRz9U_0",
+  "turn_in_session": 7,
+  "date": "2023/05/28 (Sun) 13:53",
+  "role": "assistant",
+  "content": "Here is the updated function that will display the first 5 policies of each topic:\n```php\nfunction custom_post_list_shortcode() {\n    $terms = get_terms( array(\n        'taxonomy' => 'topic',\n        'hide_empty' => false,\n    ) );\n    $output = '';\n    foreach ( $terms as $term ) {\n        $output .= '<h2>' . $term->name . '</h2>';\n        $args = array(\n            'post_type' => 'policy',\n            'posts_per_page' => 5,\n            'tax_query' => array(\n                array(\n                    'taxonomy' => 'topic',\n                    'field' => 'slug',\n                    'terms' => $term->slug,\n                ),\n            ),\n        );\n        $query = new WP_Query( $args );\n        if ( $query->have_posts() ) {\n            $output .= '<ul>';\n            while ( $query->have_posts() ) {\n                $query->the_post();\n                $output .= '<li><a href=\"' . get_the_permalink() . '\">' . get_the_title() . '</a></li>';\n            }\n            wp_reset_postdata();\n            $output .= '</ul>';\n        } else {\n            $output .= 'No policies found for this topic.';\n        }\n    }\n    return $output;\n}\nadd_shortcode( 'custom_post_list', 'custom_post_list_shortcode' );\n```\nThis shortcode will display all the terms in the taxonomy \"topic\" as an <h2> and then it will list the first 5 policies of each topic as a hyperlinked list.\nYou can use the shortcode [custom\\_post\\_list] in any post or page to display the list of policies.\nMake sure that the taxonomy \"topic\" has been registered for the custom post type \"policy\" before using this shortcode.",
+  "has_answer": false
+}

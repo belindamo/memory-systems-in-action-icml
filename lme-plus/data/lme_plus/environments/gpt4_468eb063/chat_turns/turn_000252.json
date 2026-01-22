@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 252,
+  "session_index": 21,
+  "session_id": "sharegpt_4vpTf3p_0",
+  "turn_in_session": 7,
+  "date": "2023/04/11 (Tue) 19:18",
+  "role": "assistant",
+  "content": "To get the total sales number across all regions:\n```\nSELECT SUM(Sales)\nFROM sales_transaction_summary\n```\nTo break down by customer type:\n```\nSELECT Customer Type, SUM(Sales)\nFROM sales_transaction_summary\nGROUP BY Customer Type\n```",
+  "has_answer": false
+}

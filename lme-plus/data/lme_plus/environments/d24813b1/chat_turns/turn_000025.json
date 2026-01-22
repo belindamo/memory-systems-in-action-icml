@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 25,
+  "session_index": 2,
+  "session_id": "sharegpt_JeaDWry_0",
+  "turn_in_session": 3,
+  "date": "2023/05/20 (Sat) 19:30",
+  "role": "assistant",
+  "content": "Sure, here is the rest of the modified HTML code:\n```\n        <h2 id=\"OTPendingAP_Count\">0</h2>\n        <p>OT Pending Approval</p>\n        <div class=\"spinner\" style=\"display: none\" id=\"l4\"></div>\n      </div>\n    </div>\n    <div class=\"col-md-2 col-sm-3 col-xs-6\" id=\"VioPendingAP_div\">\n      <div class=\"ind-main-cn Zoom\" onclick=\"ViewGridData(5)\">\n        <div class=\"ico-container icon-con4\"><i class=\"fa fa-exclamation-triangle faicon\" aria-hidden=\"true\"></i></div>\n        <h2 id=\"VioPendingAP_Count\">0</h2>\n        <p>Violations Pending Approval</p>\n        <div class=\"spinner\" style=\"display: none\" id=\"l5\"></div>\n      </div>\n    </div>\n    <div class=\"col-md-2 col-sm-3 col-xs-6\" id=\"ShifftError_div\">\n      <div class=\"ind-main-cn Zoom\" onclick=\"ViewGridData(6)\">\n        <div class=\"ico-container icon-con5\"><i class=\"fa fa-pencil-square faicon\" aria-hidden=\"true\"></i></div>\n        <h2 id=\"ShifftError_Count\">0</h2>\n        <p>Shift Errors</p>\n        <div class=\"spinner\" style=\"display: none\" id=\"l6\"></div>\n      </div>\n    </div>\n  </div>\n</div>\n```\nThis layout should now be responsive and adapt to the width of the screen on different devices.\n\nI hope this helps! Let me know if you have any questions.",
+  "has_answer": false
+}

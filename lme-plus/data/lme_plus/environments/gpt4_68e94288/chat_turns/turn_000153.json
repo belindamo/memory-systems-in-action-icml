@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 153,
+  "session_index": 15,
+  "session_id": "sharegpt_6SbI5YJ_0",
+  "turn_in_session": 0,
+  "date": "2023/02/24 (Fri) 07:08",
+  "role": "user",
+  "content": "Display the following data as a HTML page with a professional look. This page will display the issues fixed in a software release. Data: Issue Type Summary\nTask Tablet - Display QMD number on main page\nUI Change Tablet - Final Review page has the last digit of work order missing\nTask Tablet - Add SOP guidance reference to Fusion Type selection\nBug Tablet/API - Issues with API returning failure message but data downloading\nBug Tablet/API - Issues with not updating changed values/not downloading values at all\nStory Tablet - Test Upload Button\nStory Tablet/Server - Create a button that sends the database to the server and a log on weld.isco-pipe.com that shows sent databases\nStory Tablet - Automatic \"Other\" Field Guessing - Spell check/suggest machines when \"other\" button is pressed",
+  "has_answer": false
+}

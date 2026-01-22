@@ -1,0 +1,23 @@
+{
+  "session_id": "sharegpt_6tlM8nx_0",
+  "session_index": 37,
+  "date": "2023/05/27 (Sat) 08:52",
+  "turns": [
+    {
+      "role": "user",
+      "content": "could you please reword what I said to make it great employee feedback?"
+    },
+    {
+      "role": "assistant",
+      "content": "Certainly! Here's a possible rewording of your statement to provide constructive feedback to your teammate:\n\n\"I appreciate your willingness to help me with the video, but I did not find the information regarding the OCBC/RBC expenses that you mentioned. In the future, it would be helpful if we could double-check and confirm details before sharing them with each other to ensure that we both have the most accurate information. This will help us build trust and strengthen our communication as a team. Thank you for your support.\""
+    },
+    {
+      "role": "user",
+      "content": "could you say the same thing but more human-like and less like an email"
+    },
+    {
+      "role": "assistant",
+      "content": "Sure, here's a more casual and conversational rewording of your feedback:\n\n\"Hey, thanks for trying to help me out with the video! I just wanted to mention that I didn't hear anything about the OCBC/RBC expenses like you mentioned earlier. No big deal, but I just wanted to suggest that maybe we can check things together before sharing info to avoid any confusion. That way we can keep each other in the loop and build more trust as a team. Thanks again for your help!\""
+    }
+  ]
+}

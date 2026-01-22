@@ -1,0 +1,31 @@
+{
+  "session_id": "sharegpt_BK0BcTz_0",
+  "session_index": 34,
+  "date": "2023/05/25 (Thu) 01:32",
+  "turns": [
+    {
+      "role": "user",
+      "content": "Hi chat, I am preparing a e-book for an australian property buyers' agent company. This ebook will be shared online and via social media channels. The goal of this ebook is to attract new clients, and it will contain a curated selection of seven appealing suburbs for property investment in Brisbane. The structure of the e-book will be: 1. title page 2. contents 3. methodology 4. market trends 5. suburb selections 6. call to action. The data used in our suburb level market analysis is: sale volume by price segment, median house prices over time, suburb vacancy rates, region vacancy rates, median rent, a social advantage/disadvantage decile, region unemployment rate, weekly household income, household income state decile, % family households, average household size, property type proportion breakdown (i.e. detached house, townhouse, apartment, etc.), age segment breakdown, inventory on market (months of stock on market), ownership type breakdown (i.e. owned outright, mortgaged, rented, etc.). I would like you to produce a 300 words for the market trends section of this ebook. To do this, I will begin to provide you with information for each of the 7 suburbs. My next prompt will contain information for the first suburb. I would like you to acknowledge receival of this data and then ask for the next suburb. Continue this process until I have provided you with information for all 7 suburbs, delivered in separate prompts. At this point, you will produce 300 words of text regarding market trends for these suburbs in Brisbane. Keep the text engaging and make it accessible to a broad audience. Please confirm that you understand these instructions and begin by requesting the first suburb."
+    },
+    {
+      "role": "assistant",
+      "content": "I understand the instructions and I'm ready to begin. Please provide me with information for the first suburb."
+    },
+    {
+      "role": "user",
+      "content": "SUBURB SNAPSHOT\nPowered by suburbtrends\n\u279c Chermside West, QLD\nPrice Segments last 24 months\n$400k-$600k\n$600k-$800k\n$800k-1m\n$1m-$1.2m\n$1.2m-1.4m\n$1.4m-1.6m\n$1.6m-1.8m\n$1.8m-2m |\nO\nVACANCY\nWeekly\nHousehold\nincome\n$2,124\n1.9%\n1%\nChermside West Chermside Region\nTownhouse\n2.7%\nMedian House Price - $870,000\n10 20\n2m\nMinimal\n0\nUnit/Apartment\n8.2%\nDetached House\n4m\n30\n89.4%\nDecile within QLD\n.........................\nOther\n0.0%\nInventory Risk - Months of Stock on\n40\n6m\nMedian\nRent\n$610\nChermside West - 1.73m\n% of Sales\n\u2193\n8m\n50\nPROPERTY\nTYPE\n9 10\nSevere\nQ1, 2023\nSEARCH PARTY\nPROPERTY\nMedian Price over the last 15 months\n1,000,000\n750,000\n500,000\n250,000\nNov 21\nDec 21\n\u0e23\n2,000\n1,500\n1,000\n500\nO\nJan 22\nFeb 22\nMar 22\nSocial Advantage/\nDisadvantage Rating within QLD\n..........................\nOWNERSHIP\nApr 22\nTYPE\nMay 22\nFamily Households\n(2+ people, one adult, both related)\nJun 22\n76.5%\n9 10\nRented\n24.2%\nJul 22\nAug 22\nPopulation by age segment\nSep 22\nOct 22\nOther\n4.6%\nNov 22\nDec 22\n0-14 15-24 25-44 45-64 65-84\nPopulation Growth (Chermside Region 2016-2021): 7.62%\nJan 23\nRegion\nUnemployment\nRate\n4.5%\nAverage\nHousehold\nSize\n2.7\nFeb 23\n85+\nFully Owned\n35.5%\nMortgaged\n35.8%"
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for the information on Chermside West, QLD. Please provide the data for the second suburb."
+    },
+    {
+      "role": "user",
+      "content": "SUBURB SNAPSHOT\nPowered by suburbtrends\n\u279c Mitchelton, QLD\nPrice Segments last 24 months\n$600k-800k\n$800k-1m\n$1m-$1.2m\n$1.2m-1.4m\n$1.4m-1.6m\n$1.6m-1.8m\n$1.8m-2m\n$2m-2.2m\n$2.2m-$2.4m\n1%\nO\nVACANCY\nWeekly\nHousehold\nincome\n1%\nMitchelton The Gap - Enoggera Region\n$2,228\nTownhouse\n3.2%\nMedian House Price - $1,000,000\nUnit/Apartment\n19.0%\n2m\nMinimal\n10\n0\n4m\n20\nDetached House\n77.8%\nOther\n0.0%\nDecile within QLD\n30\nInventory Risk - Months of Stock on\n.........................\n6m\nMitchelton - 2.21m\nMedian\nRent\n$575\nQ1, 2023\n% of Sales\n8m\n\u2193\n40\nPROPERTY\nTYPE\n9 10\nSevere\nMedian Price over the last 15 months\n$1,250,000\n$1,000,000\n$750,000\n$500,000\n$250,000\nSEARCH PARTY\nPROPERTY\n3,000\n$0\n\u00a1\u00a1\n2,000\nNov 21\n1,000\nDec 21\nO\nSocial Advantage/\nDisadvantage Rating within QLD\n..........................\nJan 22\nFeb 22\nMar 22\nOWNERSHIP\nApr 22\nFamily Households\n(2+ people, one adult, both related)\nTYPE\nMay 22\nJun 22\n70.6%\n9 10\nPopulation by age segment\nJul 22\nAug 22\nRented\n37.1%\nSep 22\nOct 22\nNov 22\nDec 22\nRegion\nUnemployment\nRate\n4.2%\nJan 23\n0-14 15-24 25-44 45-64 65-84\nPopulation Growth (The Gap Enoggera Region 2016-2021): 8.34%\nOther\n2.2%\nO\nAverage\nHousehold\nSize\n2.6\nFeb 23\n85+\nFully Owned\n24.0%\nMortgaged\n36.4%"
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for the information on Mitchelton, QLD. Please provide the data for the third suburb."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 1,
+  "session_index": 0,
+  "session_id": "sharegpt_7tOPXDd_50",
+  "turn_in_session": 1,
+  "date": "2023/05/20 (Sat) 00:12",
+  "role": "assistant",
+  "content": "The section describes the design of a Model Predictive Control (MPC) scheme that aims to stabilize the system towards a specific equilibrium point denoted by (\u0304u,\ud835\udf12,y), where \u0304u is a control input, \ud835\udf12 is the state, and y is the output. The controller achieves this objective by suitably acting on the control input u while taking advantage of the LSTM network as a prediction model for the system.\n\nThe MPC scheme solves an optimization problem at each sampling time k with the objective of minimizing a cost function J(U(k)) subject to constraints that the control input remains within a bound and the predicted states follow the system dynamics. The future state predictions, \ud835\udf12(k+i), with i \u2208 {1,...,N}, are obtained by iterating the LSTM model (4) starting from the current state estimated by the state observer (19), that is, \ud835\udf12(k)=\u0302\ud835\udf12(k).\n\nThe cost function is a quadratic function of the predicted states and control inputs, with tuning parameters Q, R, and P. Matrix P is chosen to satisfy the Lyapunov condition under the assumption that \ud835\udf0c(A\ud835\udeff)<1, where A\ud835\udeff is the discretized system matrix, and q is the spectral radius of matrix Q. The control input applied to the system is only the first element of the optimal control sequence U(k|k) obtained from solving the optimization problem, according to the Receding Horizon principle.\n\nTheorem 4 guarantees the asymptotic stability of the equilibrium point (\u0304u,\ud835\udf12,y) under the proposed control law. The stability analysis relies on the assumption that the plant behaves according to the system model (4) with \ud835\udf0c(A\ud835\udeff)<1 and the state observer satisfies certain conditions.",
+  "has_answer": false
+}

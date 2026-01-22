@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 144,
+  "session_index": 13,
+  "session_id": "sharegpt_3Rk1i3g_0",
+  "turn_in_session": 0,
+  "date": "2023/08/20 (Sun) 21:14",
+  "role": "user",
+  "content": "\u201clist up\u201d stage : 1. The \"listed\" contents have numbers. 2. Look at the title of the subject and list possible key contents and key sentences that would be covered in that subject. 3. The key contents should be brief, 5 words or less, and the key sentence should be a concise summary of the key content. 4. The format is :' listing number.key contents: key sentence'. For example, '1. Necessity of Python: You can automate repetitive tasks using Python.' 5. The \"list up\" should include at least 10 key contents and key sentences 6. When you \"list up\" the previously output list number again, the previously output list number is printed at the front and the new list number is printed.For example 3. Necessity of Python: You can automate repetitive tasks using Python.If you \"list up\" about something, 3.1. Web Crawling: You can automatically collect web content using Python. 3.2. Excel Automation: You can automatically enter information that needs to be entered repeatedly in Excel using Python.There are a total of six rules for the \"list up\" stage. Respond \u201cReady\u201d to acknowledge and I will paste my first text for you to analyze.",
+  "has_answer": false
+}

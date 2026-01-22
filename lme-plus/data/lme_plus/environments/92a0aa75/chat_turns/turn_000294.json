@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 294,
+  "session_index": 27,
+  "session_id": "sharegpt_U9Sujf2_9",
+  "turn_in_session": 3,
+  "date": "2023/05/27 (Sat) 08:22",
+  "role": "user",
+  "content": "Please just answer my following question, and only if necessary, update the schema :\nHow do I store the list of websites to be crawled with this schema ? I would love to prime it with a single url and let it crawl recursively indefinitely without scanning twice a website, and still be abble to add websites to the list on demand. I also want multiple crawler to work in parallel and not step on each other toes.",
+  "has_answer": false
+}

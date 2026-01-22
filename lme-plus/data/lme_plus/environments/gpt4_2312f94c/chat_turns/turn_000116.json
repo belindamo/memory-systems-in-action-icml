@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 116,
+  "session_index": 11,
+  "session_id": "sharegpt_Aeo2AOL_0",
+  "turn_in_session": 0,
+  "date": "2023/03/15 (Wed) 11:30",
+  "role": "user",
+  "content": "given this function, return it with scala doc and inline documentation\n private def generateRegex(charMatrix: Array[Array[Long]], distinctDatums: Set[String]): String = {\n if (distinctDatums.size > MAX\\_DISTINCT\\_SET) {\n val charSizes = distinctDatums.map(\\_.trim.length)\n val maxElementSize = charSizes.max\n val minElementSize = charSizes.min\n\n val regexBuilder = new ListBuffer[String]\n (0 until MAX\\_CHARS\\_TO\\_ANALYZE).foreach {\n charPos =>\n val charArray = charMatrix.map(\\_(charPos))\n val regexToAdd = getValidChars(charArray) match {\n case Some(\".\") => Some(\".\")\n case Some(validChars) =>\n val resultRegex = reduceRegex(validChars)\n if (resultRegex.replaceAllLiterally(\"\\\\\",\"\").length == 1) Some(resultRegex)\n else Some(s\"[$resultRegex]\")\n case \\_ => None\n }\n regexToAdd match {\n case Some(value) =>\n // From min size in this column, start adding '?' on each regex\n if (charPos >= minElementSize) {\n regexBuilder.append(s\"$value?\")\n } else {\n regexBuilder.append(value)\n }\n case \\_ => ()\n }\n }\n\n // If max size in this column > number of chars to analyze, put .\\*\n if (maxElementSize >= MAX\\_CHARS\\_TO\\_ANALYZE) {\n regexBuilder.append(\".\\*\")\n }\n val combinedTokens = combineConsecutiveTokens(regexBuilder).mkString\n \"^(?>\" + combinedTokens + \")$\"\n }\n else distinctDatums.map(escapeRegex).mkString(\"^(\", \"|\", \")$\")\n\n }",
+  "has_answer": false
+}

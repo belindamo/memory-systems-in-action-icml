@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 178,
+  "session_index": 9,
+  "session_id": "sharegpt_5pIFvuH_0",
+  "turn_in_session": 7,
+  "date": "2023/02/07 (Tue) 11:15",
+  "role": "assistant",
+  "content": "Sure, let's modify the plugin to include the following methods: `getUserDetails`, `getUsersAllMeetings`, `getUsersAllPartMeetings`, and `getUsersAllUpcomingMeetings`. We will use the `axios` library to make HTTP requests to your server.\n\n1. \\*\\*Install",
+  "has_answer": false
+}

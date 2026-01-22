@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 440,
+  "session_index": 42,
+  "session_id": "sharegpt_3lWzv4B_0",
+  "turn_in_session": 15,
+  "date": "2023/05/28 (Sun) 06:56",
+  "role": "assistant",
+  "content": "Yes, you are correct. The `/MIR` switch in `robocopy` will mirror the source directory to the destination directory, copying all files, including unchanged files. In this case, using `/MIR` would result in copying all 1TB of data and you would end up paying for storing 2TB of data.\n\nInstead, you can use the `/MAXAGE` switch to only copy files modified on or after a specific date, as I mentioned earlier. This way, you will only copy changed files and minimize the amount of data you need to pay to store in the cloud. Here's the updated command:\n```kotlin\nrobocopy \\\\lightspeed\\data d:\\serverfolders\\nasbackup /MAXAGE:2023-01-30 /DCOPY:T\n```",
+  "has_answer": false
+}

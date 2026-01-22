@@ -1,0 +1,23 @@
+{
+  "session_id": "sharegpt_HqvhA3G_0",
+  "session_index": 21,
+  "date": "2023/05/07 (Sun) 12:32",
+  "turns": [
+    {
+      "role": "user",
+      "content": "Hey, tell me a lie"
+    },
+    {
+      "role": "assistant",
+      "content": "The sky is purple."
+    },
+    {
+      "role": "user",
+      "content": "That is a bad lie it is too obvious. Tell me a subtle lie"
+    },
+    {
+      "role": "assistant",
+      "content": "All politicians are honest and always have their constituents best interests at heart."
+    }
+  ]
+}

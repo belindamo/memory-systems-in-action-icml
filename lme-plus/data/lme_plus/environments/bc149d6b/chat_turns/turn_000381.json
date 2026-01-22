@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 381,
+  "session_index": 37,
+  "session_id": "sharegpt_6SxtjIQ_0",
+  "turn_in_session": 5,
+  "date": "2023/05/29 (Mon) 09:59",
+  "role": "assistant",
+  "content": "If you are running your Deno application inside a Kubernetes cluster, and you want to access the environment variables defined in the Kubernetes configuration, you need to set those environment variables in the container that is running your Deno application.\n\nOne way to do this is by defining environment variables in your Kubernetes deployment manifest file. You can define environment variables using the `env` section in your deployment manifest file, like this:\n```yaml\napiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: your-deployment\nspec:\n  replicas: 1\n  selector:\n    matchLabels:\n      app: your-app\n  template:\n    metadata:\n      labels:\n        app: your-app\n    spec:\n      containers:\n        - name: your-container\n          image: your-image\n          env:\n            - name: ENV_VAR_1\n              value: value1\n            - name: ENV_VAR_2\n              value: value2\n```\nIn this example, we're defining two environment variables, `ENV_VAR_1` and `ENV_VAR_2`, with values `value1` and `value2`, respectively. These environment variables will be set in the container that is running your Deno application.\n\nTo access these environment variables in your Deno file, you can use the `Deno.env.get()` function as described in my previous answer. Your Deno application will be able to access these environment variables as long as they are set in the container running your application.",
+  "has_answer": false
+}

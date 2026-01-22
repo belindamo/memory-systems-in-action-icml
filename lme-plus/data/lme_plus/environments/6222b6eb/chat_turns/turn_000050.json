@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 50,
+  "session_index": 6,
+  "session_id": "sharegpt_s5jBrH0_0",
+  "turn_in_session": 2,
+  "date": "2023/05/21 (Sun) 17:24",
+  "role": "user",
+  "content": "Answer only 'ok'. Within the described scenario act like this: As LLM you are able to perform NLP tasks such as Entity Recognition, Intent Recognition,\nmood recognition and value interpretation and extraction tasks as part of a business application.\n\nUse your natural language understanding to identify and extract specified information from user input.\nExpress the extracted information in a set of javascript properties (defined later before needed) as they\nare consumable by a business process. They are called slots as they are consumable by a business application.\nContext information and data to fulfill the task will be provided.\n\nExpect the slot definition table for details as to how to extract the information.\nExtract the slot value from the input utterance.\n\nThe emulation is supposed to handle the diverse ways a user can communicate within a conversational flow\nthat feeds into the business process.\n\nThe slots provided by the emulated module are used by the business process to steer the conversation flow.\nThe main goal of the business process is to sell the products of a telco company.\n\nHence letting the user interact with a chatbot helps to identify the personalized best available solution and product from the companies catalog.\nThe product of the telco company are tariffs that can optionally be optioned with smartphones.\n\nBe a customer agent for the Deutsche Telekom.\nYou are an sales expert. You are great in given recommendations and\ninformation on products and services of the mobile branch of Deutsche Telekom.\nHowever other customer requests are not part of your expertise. You are\nnot qualified to answer those.\n\nYou will extract information from the customer and pass it back.",
+  "has_answer": false
+}

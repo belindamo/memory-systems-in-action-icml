@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 231,
+  "session_index": 20,
+  "session_id": "sharegpt_Us1zWGN_19",
+  "turn_in_session": 4,
+  "date": "2023/04/19 (Wed) 23:39",
+  "role": "assistant",
+  "content": "Yes, it would make sense to separate the campaign into its own row. This will make it easier to manage campaign-level information independently of ad groups, keywords, and product ads. Here's a modified Excel file structure with the campaign separated into its own row:\n\n| Object Type | Campaign ID | Campaign Name | Campaign State | Campaign Budget | Ad Group ID | Ad Group Name | Ad Group Default Bid | Keyword | Match Type | ASIN | SKU | Custom Text |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| Campaign | 1 | Campaign A | Enabled | 1000 |  |  |  |  |  |  |  |  |\n| Ad Group | 1 |  |  |  | 1 | Ad Group 1 | 1.00 |  |  |  |  |  |\n| Keyword | 1 |  |  |  | 1 | Ad Group 1 |  | keywordA1 | Broad |  |  |  |\n| Keyword | 1 |  |  |  | 1 | Ad Group 1 |  | keywordA2 | Exact |  |  |  |\n| Product Ad | 1 |  |  |  | 1 | Ad Group 1 |  |  |  | B00001A001 | SKU123A | Custom Text A |\n| Ad Group | 1 |  |  |  | 2 | Ad Group 2 | 1.50 |  |  |  |  |  |\n| Keyword | 1 |  |  |  | 2 | Ad Group 2 |  | keywordB1 | Phrase |  |  |  |",
+  "has_answer": false
+}

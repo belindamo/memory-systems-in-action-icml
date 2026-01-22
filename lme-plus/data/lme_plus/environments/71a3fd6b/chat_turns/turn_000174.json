@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 174,
+  "session_index": 18,
+  "session_id": "sharegpt_n3kgf14_17",
+  "turn_in_session": 8,
+  "date": "2023/05/24 (Wed) 15:03",
+  "role": "assistant",
+  "content": "The primary driver module is a service that tracks the user, identified by a Polestar ID, who is the primary driver of a car. The service listens to events from Polestar's Order Management System (POMS) and saves the Polestar ID of the driver specified in the \"Driver\" field of the event as the car's primary driver, if the event contains a valid VIN and Polestar ID. The VIN and Polestar ID are considered valid if they exist in Volvo's factory order system (Vehicle Internet Sale & Traceability Application, or VISTA) and the Polestar ID service, respectively. The service allows other systems to update a car's primary driver through an API, and maintains a history for primary drivers. The service enforces the rule that a POMS update can only overwrite an API update if the order ID is new. It also stores all events it receives in an \"event store\" for replay purposes.",
+  "has_answer": false
+}

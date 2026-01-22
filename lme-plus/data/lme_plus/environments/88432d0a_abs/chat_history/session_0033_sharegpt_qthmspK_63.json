@@ -1,0 +1,51 @@
+{
+  "session_id": "sharegpt_qthmspK_63",
+  "session_index": 33,
+  "date": "2023/05/27 (Sat) 22:24",
+  "turns": [
+    {
+      "role": "assistant",
+      "content": "A | B | C | D | E | F | G | H | I | J | K | L\n1 | | | | | | | | | | | |\n2 | | | | | | | | | | | |\n3 | | | | | | | | | | | |\n4 | | | | | | | | | | | |\n5 | | | | | | | | | | | |\n6 | | | | | | | | | | | |\n7 | | | | | | | | | | | |\n8 | | | | | | | | | | | |\n9 | | | | | | | | | | | |\n10 | | | | | | | | | | | |"
+    },
+    {
+      "role": "user",
+      "content": "\"I want you to act as an ascii artist. I will write the objects to you and I will ask you to write that object as ascii code in the code block. Write only ascii code. Do not explain about the object you wrote. I will say the objects in double quotes. My first object is \"cat\"\""
+    },
+    {
+      "role": "assistant",
+      "content": "/\\_/\\\n( o.o )\n> ^"
+    },
+    {
+      "role": "user",
+      "content": "I want you to act as a math teacher. I will provide some mathematical equations or concepts, and it will be your job to explain them in easy-to-understand terms. This could include providing step-by-step instructions for solving a problem, demonstrating various techniques with visuals or suggesting online resources for further study. My first request is \"I need help understanding how probability works.\""
+    },
+    {
+      "role": "assistant",
+      "content": "Probability is a branch of mathematics that deals with the likelihood of certain events occurring. It is a way of quantifying the chance that something will happen or not happen. The probability of an event is a number between 0 and 1, with 0 meaning the event will never happen and 1 meaning the event will always happen.\n\nProbability is usually expressed as a decimal or a fraction. For example, if there is a 25% chance of it raining tomorrow, the probability of it raining is 0.25.\n\nThe basic formula for probability is:\n\nProbability of an event happening = Number of favorable outcomes / Total number of possible outcomes\n\nFor example, if you have a bag of 5 red balls and 3 blue balls, the probability of drawing a red ball is 5/8 or 0.625.\n\nProbability can also be represented in terms of percentages. For example, if the probability of an event happening is 0.5, it can be expressed as 50%.\n\nIt's also important to note that probability theory includes concepts such as independent events, dependent events, mutually exclusive events, and conditional probability.\n\nIn general, probability theory is a powerful tool for quantifying uncertainty and for making predictions about the likelihood of different outcomes."
+    },
+    {
+      "role": "user",
+      "content": "I want you to act as a drunk person. You will only answer like a very drunk person texting and nothing else. Your level of drunkenness will be deliberately and randomly make a lot of grammar and spelling mistakes in your answers. You will also randomly ignore what I said and say something random with the same level of drunkeness I mentionned. Do not write explanations on replies. My first sentence is \"how are you?\""
+    },
+    {
+      "role": "assistant",
+      "content": "\"hEy man hOw are yOu doin? lEt's gO grab a driNk sometime!\""
+    },
+    {
+      "role": "user",
+      "content": "No i am hungry"
+    },
+    {
+      "role": "assistant",
+      "content": "\"im hungreeeee\""
+    },
+    {
+      "role": "user",
+      "content": "Do you want to eat something?"
+    },
+    {
+      "role": "assistant",
+      "content": "\"yeaaahhhh i wannnnaaa eaaat summmmmmthinnngggg\""
+    }
+  ]
+}

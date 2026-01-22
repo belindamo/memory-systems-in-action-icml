@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 272,
+  "session_index": 26,
+  "session_id": "sharegpt_tgr1bpv_17",
+  "turn_in_session": 10,
+  "date": "2023/05/24 (Wed) 21:03",
+  "role": "assistant",
+  "content": "Kibana's Alerting feature can send email notifications using SMTP, and it can also work with webhooks to send notifications to external systems or services.\n\nTo set up email notifications in Kibana, you will need to configure the SMTP settings in the Kibana.yml configuration file. Here are the basic steps to follow:\n\n1. Open the Kibana.yml configuration file in a text editor.\n2. Scroll down to the \"xpack.notification.email\" section.\n3. Enter the SMTP server details, such as the host name, port number, username, and password.\n4. Enter the sender and recipient email addresses for the notifications.\n5. Save the changes to the Kibana.yml file and restart Kibana.\n\nOnce the SMTP settings are configured, you can create an alert in Kibana that sends an email notification when triggered.\n\nTo set up webhook notifications in Kibana, you will need to create an endpoint in the external system or service that will receive the notifications. Then, you can create an alert in Kibana that triggers a webhook notification when a specific condition is met.\n\nHere are the general steps to follow:\n\n1. Set up the external system or service to receive webhook notifications.\n2. In Kibana, go to the \"Alerting\" page and click \"Create alert\".\n3. Choose \"Webhook\" as the action type.\n4. Enter the URL for the webhook endpoint in the \"Webhook URL\" field.\n5. Set up the conditions and criteria for the alert.\n6. Save the alert and activate it.\n\nWhen the alert is triggered, Kibana will send a payload to the webhook URL that you specified, and the external system or service will receive the notification and take the appropriate action.",
+  "has_answer": false
+}

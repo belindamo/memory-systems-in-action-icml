@@ -1,0 +1,23 @@
+{
+  "session_id": "sharegpt_lfQALre_0",
+  "session_index": 0,
+  "date": "2023/05/20 (Sat) 03:58",
+  "turns": [
+    {
+      "role": "user",
+      "content": "how can i easily find peoples birthdays on salesforce"
+    },
+    {
+      "role": "assistant",
+      "content": "You can find people's birthdays in Salesforce by using the Contacts or Leads object and adding a custom field for \"Birthday.\" Then, you can use the Salesforce report builder to create a report that displays the birthday information for the contacts and leads in your database. Additionally, you can add a Birthday field to your page layout so that you can see the information on the record detail page."
+    },
+    {
+      "role": "user",
+      "content": "give me the steps for it for my caseload"
+    },
+    {
+      "role": "assistant",
+      "content": "Here are the steps to add birthdays to your Salesforce Contacts or Leads:\n\n1. Create a custom field: Go to the \"Setup\" menu and click on \"Objects and Fields.\" Select \"Contact\" or \"Lead\" and click on \"Fields.\" Click the \"New\" button to create a new custom field. Choose \"Date\" as the data type and give the field a label such as \"Birthday.\"\n2. Add the custom field to your page layout: Go to the \"Page Layouts\" section for the Contact or Lead object and edit the layout that you use for your caseload. Drag the \"Birthday\" field from the \"Available Fields\" section to the \"Contact Detail\" section.\n3. Add birthday data: Go to the Contacts or Leads tab and open each record. Enter the person's birthday in the \"Birthday\" field.\n4. Create a report: Go to the \"Reports\" tab and click the \"New Report\" button. Select the \"Contacts\" or \"Leads\" object. Add the \"Birthday\" field to the report and choose the desired date format. You can also add filters to the report to limit the results to only show people with upcoming birthdays.\n5. Schedule the report: If desired, you can schedule the report to be automatically sent to you on a regular basis, such as monthly or weekly, so that you can stay up-to-date on your caseload's birthdays.\n\nThis way, you can easily view and manage your caseload's birthdays in Salesforce."
+    }
+  ]
+}

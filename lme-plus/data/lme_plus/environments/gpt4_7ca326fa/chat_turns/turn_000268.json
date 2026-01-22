@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 268,
+  "session_index": 28,
+  "session_id": "sharegpt_GCpH2ci_0",
+  "turn_in_session": 0,
+  "date": "2022/06/25 (Sat) 11:00",
+  "role": "user",
+  "content": "Can you help me understand how diffusion models for image generation work? I understand the basic idea--that a model is trained to remove noise added to an image and then later uses that same training data to construct an image from pure noise. I understand that this is done using a Markov model but I don't understand Markov models well enough to have a conceptual understanding of how this works",
+  "has_answer": false
+}

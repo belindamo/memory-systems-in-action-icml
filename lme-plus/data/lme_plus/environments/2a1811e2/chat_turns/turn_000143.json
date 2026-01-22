@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 143,
+  "session_index": 14,
+  "session_id": "sharegpt_tMOb5TT_0",
+  "turn_in_session": 1,
+  "date": "2023/03/26 (Sun) 18:55",
+  "role": "assistant",
+  "content": "To limit the height of images within the `.card` class, you can add the `max-height` property directly to the `img` selector:\n```css\n.card img {\n  border-radius: 2em;\n  max-width: 90%;\n  max-height: 200px; /* set your desired max-height here */\n  padding: 0.5em;\n}\n```\nAdjust the value of `max-height` to your desired height. The `max-height` property limits the height of the image, while the `max-width` property limits the width of the image.",
+  "has_answer": false
+}

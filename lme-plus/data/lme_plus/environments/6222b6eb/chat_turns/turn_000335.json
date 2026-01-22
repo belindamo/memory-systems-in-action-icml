@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 335,
+  "session_index": 30,
+  "session_id": "answer_sharegpt_H9PiM5G_0",
+  "turn_in_session": 9,
+  "date": "2023/05/27 (Sat) 13:33",
+  "role": "assistant",
+  "content": "Sentinel-2 is a European Space Agency (ESA) Earth observation mission that provides high-resolution optical imagery of the Earth's surface. The mission consists of two satellites, Sentinel-2A and Sentinel-2B, which operate in a tandem configuration. The coverage of Sentinel-2 Level 2 data refers to the area of the Earth's surface that is imaged by the satellites and for which Level 2 data is available.\n\nSentinel-2 Level 2 data is available for global coverage, with a revisit time of five days at the equator and a spatial resolution of 10 meters for the visible and near-infrared bands, and 20 meters for the shortwave-infrared bands. This means that the entire Earth's surface is imaged every five days, and the data is available with a spatial resolution of 10 meters for visible and near-infrared bands and 20 meters for shortwave-infrared bands.\n\nThe coverage of Sentinel-2 Level 2 data is also affected by the cloud cover, as the cloud cover can prevent the satellite from collecting data in certain areas. In addition, the coverage can be affected by the data provider's acquisition schedule and the data availability.\n\nIt's recommended to check the data provider documentation and know the data temporal and spatial coverage, to check if it is suitable for your study area and study purpose. Data can be obtained from the European Space Agency's Copernicus Open Access Hub, which provides free and open access to Sentinel-2 data.",
+  "has_answer": false
+}

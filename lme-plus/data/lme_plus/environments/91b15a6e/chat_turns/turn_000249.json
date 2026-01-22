@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 249,
+  "session_index": 23,
+  "session_id": "7cfeb89c_2",
+  "turn_in_session": 11,
+  "date": "2023/05/24 (Wed) 13:37",
+  "role": "assistant",
+  "content": "When calculating the discount, it's generally more accurate to calculate it as a percentage of the original price, not the sale price. Here's why:\n\nLet's say you're buying an item that was originally $100, but it's now on sale for $80. If you want to know the discount as a percentage, you should calculate it based on the original price:\n\nDiscount = (Original price - Sale price) / Original price\n= ($100 - $80) / $100\n= $20 / $100\n= 20% discount\n\nIf you calculated the discount as a percentage of the sale price, you'd get a different result:\n\nDiscount = (Sale price - New price) / Sale price\n= ($80 - $80) / $80\n= $0 / $80\n= 0% discount (which is incorrect!)\n\nBy calculating the discount as a percentage of the original price, you get a more accurate representation of the savings. In this case, you're saving 20% of the original price, which is a significant discount!\n\nSo, always calculate discounts as a percentage of the original price to get a clear picture of the savings. Happy shopping, and I hope you find some amazing deals this weekend!",
+  "has_answer": false
+}

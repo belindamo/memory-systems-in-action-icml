@@ -1,0 +1,23 @@
+{
+  "session_id": "sharegpt_1uJqr9O_0",
+  "session_index": 10,
+  "date": "2023/06/12 (Mon) 19:55",
+  "turns": [
+    {
+      "role": "user",
+      "content": "Make ascii art of a car"
+    },
+    {
+      "role": "assistant",
+      "content": "/\\_/\\  \n/ o o \\\n( \" )\n~(\\*)~/\n/|> <|  \n//| vv |\\\n// | | \\\n// / \\ \\\n`(`/ `)-\\ /-~~~`"
+    },
+    {
+      "role": "user",
+      "content": "Translate this text into emoji - \"I love driving fast cars\""
+    },
+    {
+      "role": "assistant",
+      "content": "\ud83d\ude97\ud83d\udca8\ud83d\udc95"
+    }
+  ]
+}

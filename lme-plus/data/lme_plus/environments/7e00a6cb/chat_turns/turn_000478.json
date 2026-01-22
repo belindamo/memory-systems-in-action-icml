@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 478,
+  "session_index": 52,
+  "session_id": "sharegpt_u56nuOp_5",
+  "turn_in_session": 4,
+  "date": "2023/05/29 (Mon) 09:51",
+  "role": "assistant",
+  "content": "Sure, here are some example links you can use for the friend pictures:\n\n* <https://via.placeholder.com/100x100/FF0000/FFFFFF>\n* <https://via.placeholder.com/100x100/00FF00/FFFFFF>\n* <https://via.placeholder.com/100x100/0000FF/FFFFFF>\n* <https://via.placeholder.com/100x100/FFFF00/FFFFFF>\n* <https://via.placeholder.com/100x100/FF00FF/FFFFFF>\n\nThese links will generate 100x100 pixel images with different background colors. You can use them in the \"img\" tag for each friend, like this:\n```php\n<ul>\n  <li><img src=\"https://via.placeholder.com/100x100/FF0000/FFFFFF\" alt=\"Friend 1\"></li>\n  <li><img src=\"https://via.placeholder.com/100x100/00FF00/FFFFFF\" alt=\"Friend 2\"></li\n```",
+  "has_answer": false
+}

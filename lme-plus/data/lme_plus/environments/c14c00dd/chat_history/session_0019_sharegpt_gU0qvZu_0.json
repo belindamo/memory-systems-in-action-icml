@@ -1,0 +1,23 @@
+{
+  "session_id": "sharegpt_gU0qvZu_0",
+  "session_index": 19,
+  "date": "2023/05/23 (Tue) 23:50",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I want you to be my personal branding consultant. I will state some of my previous experience , educational background, and my technical skills. Afterward, I will ask you to make a paragraph consisted of maximum 300 words to promote myself as I want to land a job in geotechnical engineering.\n\nHere are my educational background:\n- I am graduated from Civil Engineering Master Program in Institut Teknologi Bandung specialized in Geotechnical Engineering. My thesis research is about vacuum consolidation for soft soil improvement.\n\nHere are my previous professional experience\n- In January to November 2020, I worked in P.T. NSE as a junior geotechnical engineer. Designed a shallow foundation and mini pile for airport facilities, evaluated field and laboratory soil investigation data and developed soil design parameters, evaluated slope stability using GeoSlope and PLAXIS with static and dynamic analysis, evaluated soil liquefaction potential in airport side, develop engineer estimates and bill of quantity for runway expansion projects\n\n- From November 2020 to present, I am currently working in P.T. AECOM Indonesia, a multinational company, as a junior engineer. My latest project is about document and project control for port restoration in Palu, Central Sulawesi.\n\nHere are some of my technical skills (beside of Microsoft Office):\n- PLAXIS, \n- Lpile, \n- Group, \n- Geostudio, \n- Settle3D,\n- and Abaqus.\n\nNow please make a personal branding paragraph for me. Thank you"
+    },
+    {
+      "role": "assistant",
+      "content": "I am a highly skilled and motivated geotechnical engineer with a Master's degree in Civil Engineering from Institut Teknologi Bandung with a specialization in Geotechnical Engineering. My thesis research on vacuum consolidation for soft soil improvement showcases my expertise and passion in the field. With two years of professional experience, I have a proven track record of delivering projects in a timely and efficient manner. I have worked as a junior geotechnical engineer at P.T. NSE, where I designed shallow foundations and mini piles for airport facilities, evaluated soil investigation data and slope stability, and developed soil design parameters. Currently, I work as a junior engineer at P.T. AECOM Indonesia, a multinational company, where I am responsible for document and project control for a port restoration project. My technical skills in PLAXIS, Lpile, Group, Geostudio, Settle3D, and Abaqus, along with my proficiency in Microsoft Office, make me a valuable asset to any organization. I am eager to bring my expertise, passion, and drive to a new challenge in the field of geotechnical engineering."
+    },
+    {
+      "role": "user",
+      "content": "I'm sorry I have a revision. Please summary my background and make me a personal branding with maximum of 300 characters"
+    },
+    {
+      "role": "assistant",
+      "content": "Geotech engr w/ Master's from ITB & 2 yrs exp in designing shallow foundations, evaluating soil data, & project control. Skilled in PLAXIS, Lpile, Geostudio, & Microsoft Office. Passionate & eager to bring expertise to new challenges in the field."
+    }
+  ]
+}

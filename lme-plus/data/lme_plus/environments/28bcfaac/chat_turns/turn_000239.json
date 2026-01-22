@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 239,
+  "session_index": 23,
+  "session_id": "sharegpt_16aQRSz_0",
+  "turn_in_session": 1,
+  "date": "2023/05/25 (Thu) 01:55",
+  "role": "assistant",
+  "content": "In SQL, you can use the INTERSECT operator to find the common elements between two arrays, and then compare the count of the common elements to the count of the original arrays to check if they have the same elements. Here's an example query:\n```\nWITH array1 AS (SELECT ARRAY[1, 2, 3]::integer[] as arr),\n     array2 AS (SELECT ARRAY[3, 2, 1]::integer[] as arr)\nSELECT COUNT(*) = (SELECT COUNT(*) FROM array1)\nFROM array1\nINTERSECT\nSELECT * FROM array2;\n```\nThis query creates two arrays, `array1` and `array2`, and then uses the INTERSECT operator to find the common elements between the two arrays. It then compares the count of the common elements to the count of the original arrays to check if they have the same elements, regardless of order.\nIf the result is true, then the array have the same elements regardless of the order.",
+  "has_answer": false
+}

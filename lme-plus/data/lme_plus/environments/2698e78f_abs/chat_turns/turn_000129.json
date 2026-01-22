@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 129,
+  "session_index": 12,
+  "session_id": "sharegpt_dZJOxsS_0",
+  "turn_in_session": 3,
+  "date": "2023/05/22 (Mon) 21:49",
+  "role": "assistant",
+  "content": "If the cells only contain the date and not the day name, you can still use conditional formatting with a custom formula to change the color of Sundays. Here's how:\n\n1. Select the cells you want to format.\n2. Go to the \"Format\" menu, then select \"Conditional formatting\".\n3. In the \"Format cells if\" section, choose \"Custom formula is\".\n4. Enter the formula: `=WEEKDAY(A1) = 1`, where \"A1\" is the cell reference to the first cell in the selected range.\n5. Choose the color you want to apply to Sundays.\n6. Click \"Done\" to apply the formatting.\n\nThe formula `=WEEKDAY(A1) = 1` returns \"TRUE\" if the date in cell A1 corresponds to a Sunday, and \"FALSE\" otherwise. By applying this formula to a range of cells, you can format all Sundays in the same way.",
+  "has_answer": false
+}

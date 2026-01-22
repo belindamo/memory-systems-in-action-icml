@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 16,
+  "session_index": 2,
+  "session_id": "sharegpt_bitlG4U_0",
+  "turn_in_session": 3,
+  "date": "2023/05/20 (Sat) 10:44",
+  "role": "assistant",
+  "content": "Sure, here is an updated version of the HTML module for displaying a post, with the entire contents of the post wrapped in a link, and with multiple posts displayed as a list:\n```\n<ul class=\"post-list\">\n  <li class=\"post\">\n    <a href=\"link-url\">\n      <img src=\"image-url\" alt=\"Post Image\">\n      <ul class=\"categories\">\n        <li>Category 1</li>\n        <li>Category 2</li>\n        <li>Category 3</li>\n      </ul>\n      <p class=\"description\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a faucibus condimentum, ipsum velit congue augue, vel auctor velit velit a quam.</p>\n      <p class=\"author\">Author: John Doe</p>\n    </a>\n  </li>\n  <li class=\"post\">\n    <a href=\"link-url\">\n      <img src=\"image-url\" alt=\"Post Image\">\n      <ul class=\"categories\">\n        <li>Category 1</li>\n        <li>Category 2</li>\n        <li>Category 3</li>\n      </ul>\n      <p class=\"description\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a faucibus condimentum, ipsum velit congue augue, vel auctor velit velit a quam.</p>\n      <p class=\"author\">Author: Jane Doe</p>\n    </a>\n  </li>\n</ul>\n```\nThis module uses a `ul` with a class of \"post-list\" to contain all of the post items. Each post is wrapped in a `li` element with a class of \"post\". Inside each `li`, there is an `a` tag that wraps around all of the elements of the post, making the entire post clickable. Inside each `a` tag, there is an image, an unordered list of \"categories\", a paragraph with a class of \"description\" for the post's text, a paragraph with a class of \"author\" for the author's name.\nYou can modify this as per your requirement, it is just an example, you can add class to each element and can style it with css as per your design.",
+  "has_answer": false
+}

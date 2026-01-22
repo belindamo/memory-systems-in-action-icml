@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 221,
+  "session_index": 21,
+  "session_id": "sharegpt_9N7Sr9p_1",
+  "turn_in_session": 2,
+  "date": "2023/05/11 (Thu) 13:33",
+  "role": "assistant",
+  "content": "The \"no shutdown\" command is used to enable a network interface on a Cisco device. When an interface is shut down, it is disabled and cannot be used to transmit or receive data. The \"no shutdown\" command brings the interface back up, allowing it to transmit and receive data again.\n\nFor example, if you wanted to enable interface GigabitEthernet0/1 on a Cisco device, you would use the command \"no shutdown\" as follows:\n```\nswitch# configure terminal\nswitch(config)# interface GigabitEthernet0/1\nswitch(config-if)# no shutdown\nswitch(config-if)# exit\n```\nThis would bring the GigabitEthernet0/1 interface up, allowing it to transmit and receive data. If you wanted to disable the interface again, you would use the \"shutdown\" command as follows:\n```\nswitch# configure terminal\nswitch(config)# interface GigabitEthernet0/1\nswitch(config-if)# shutdown\nswitch(config-if)# exit\n```\nThis would bring the GigabitEthernet0/1 interface down, disabling it and preventing it from transmitting or receiving data.",
+  "has_answer": false
+}

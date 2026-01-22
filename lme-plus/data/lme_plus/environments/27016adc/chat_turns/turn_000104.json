@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 104,
+  "session_index": 9,
+  "session_id": "sharegpt_XxwMP9O_0",
+  "turn_in_session": 3,
+  "date": "2023/05/22 (Mon) 13:45",
+  "role": "assistant",
+  "content": "To create custom report types in Salesforce, you can follow these steps:\n\n1. Go to the \"Setup\" menu by clicking on the gear icon in the upper right-hand corner of the screen.\n2. Under the \"Create\" section of the left-hand navigation menu, click on \"Report Types\".\n3. Click the \"New Custom Report Type\" button.\n4. Select the primary object for your report type. This will be the object that you want to include in your report. For example, you might choose the Account object as your primary object.\n5. Choose whether you want to include related objects in your report type. Related objects are objects that have a relationship with the primary object. For example, you might choose to include the Opportunity object as a related object.\n6. Choose the fields that you want to include in your report type. You can select fields from the primary object and related objects.\n7. Choose the report type category. This is the category that your report type will appear in when you create a new report.\n8. Save your custom report type.\n\nAfter creating your custom report type, you can use it to create reports that include data from multiple objects. When you create a report, select the custom report type you created as the report type. Then, you can choose the fields you want to include in your report and add filters and groupings to analyze the data.",
+  "has_answer": false
+}

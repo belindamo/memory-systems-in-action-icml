@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 33,
+  "session_index": 2,
+  "session_id": "541ecc45_2",
+  "turn_in_session": 9,
+  "date": "2023/05/26 (Fri) 17:57",
+  "role": "assistant",
+  "content": "\"Add to Cart Rate\" is not a default metric in Google Analytics, but you can create a custom metric or calculation to track it. Here's how:\n\n**Method 1: Custom Metric**\n\n1. Go to the **Admin** tab in Google Analytics.\n2. Click on **Custom Definitions** > **Custom Metrics**.\n3. Click the **New Custom Metric** button.\n4. Enter a name for your custom metric, such as \"Add to Cart Rate\".\n5. Select **Calculation** as the metric type.\n6. Enter the following formula: `{{Add to Cart Events}} / {{Product Page Views}}`\n7. Set the formatting to **Percentage**.\n8. Click **Save**.\n\nThis custom metric will calculate the Add to Cart Rate as a percentage of users who added to cart out of the total product page views.\n\n**Method 2: Calculated Metric**\n\n1. Go to the **Reports** tab in Google Analytics.\n2. Click on **Conversions** > **Ecommerce** > **Overview**.\n3. Click on the **Add to Cart** event in the **Events** tab.\n4. Click the **Create a calculated metric** button.\n5. Enter a name for your calculated metric, such as \"Add to Cart Rate\".\n6. Enter the following formula: `addtocart / productpageview`\n7. Set the formatting to **Percentage**.\n8. Click **Save**.\n\nThis calculated metric will also calculate the Add to Cart Rate as a percentage of users who added to cart out of the total product page views.\n\nOnce you've created the custom metric or calculated metric, you can add a widget to your dashboard to track it. To do this:\n\n1. Go to the **Dashboards** tab.\n2. Click the **Add Widget** button.\n3. Select **Metric** as the widget type.\n4. Choose the custom metric or calculated metric you created.\n5. Configure the widget settings as desired.\n6. Click **Save**.\n\nNow you should see the Add to Cart Rate metric in your dashboard, tracking the percentage of users who add to cart after viewing the product page.\n\nIf you have any issues or need further assistance, feel free to ask!",
+  "has_answer": false
+}

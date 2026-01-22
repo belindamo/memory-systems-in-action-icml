@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 352,
+  "session_index": 33,
+  "session_id": "sharegpt_vbNrVtS_94",
+  "turn_in_session": 9,
+  "date": "2023/05/26 (Fri) 17:24",
+  "role": "assistant",
+  "content": "On the Tasks (Admin, Tagger, Checker View) screen, the following features can be used for task management:\n\n* Custom Labels: The Admin user can create custom labels for the Tagger user to use when annotating the documents. The custom labels should be specific to the needs of the project and should be relevant and accurate. The Tagger user should be able to view a list of the available labels and select the appropriate one when annotating the document.\n* Label Definitions: The Tagger user should be able to view the definitions or descriptions of the labels, so that they can understand the meaning and context of each label. The definitions should be clear and concise, and should provide examples of how the label should be applied.\n* Label Hierarchy: The Tagger user should be able to view the hierarchy or relationships between the labels, so that they can understand how the labels fit into the overall structure of the data. The label hierarchy should be visually represented, such as in a tree or graph structure, and should be easy to understand and navigate.",
+  "has_answer": false
+}

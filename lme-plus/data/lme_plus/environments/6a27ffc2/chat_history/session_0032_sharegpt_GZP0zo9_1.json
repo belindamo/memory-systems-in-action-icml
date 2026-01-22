@@ -1,0 +1,27 @@
+{
+  "session_id": "sharegpt_GZP0zo9_1",
+  "session_index": 32,
+  "date": "2023/05/24 (Wed) 11:34",
+  "turns": [
+    {
+      "role": "assistant",
+      "content": "The November 2022 release of Visual Studio Code includes several updates and improvements, such as the ability to customize the auto-reveal behavior of the Explorer, hide badges on the Activity bar and Panel, and use audio cues in notebooks and diff view. The release also adds new features for managing unsafe repositories, creating CPU profiles for JavaScript, and debugging Jupyter notebooks. Other updates include support for remote tunnels, GPU access in Dev Containers, and improved accessibility features."
+    },
+    {
+      "role": "user",
+      "content": "what does it do in case of unsafe repositories?"
+    },
+    {
+      "role": "assistant",
+      "content": "In the November 2022 release of Visual Studio Code, there is a new feature that allows users to manage unsafe repositories. This feature prevents Git operations from being performed on folders that are not owned by the user, which can help protect against potential security risks. Users can configure the behavior of this feature by setting the appropriate options in the settings editor."
+    },
+    {
+      "role": "user",
+      "content": "what is auto-reveal behavior in Explorer?"
+    },
+    {
+      "role": "assistant",
+      "content": "The auto-reveal behavior in the Explorer refers to the way in which files are automatically scrolled into view when they are selected or opened. In the November 2022 release of Visual Studio Code, users now have the ability to customize this behavior by using the new explorer.autoRevealExclude setting. This setting allows users to specify which files should be excluded from auto-reveal, using glob patterns for matching. This can be useful for excluding large or unimportant files from auto-reveal, which can help improve the performance and usability of the Explorer."
+    }
+  ]
+}

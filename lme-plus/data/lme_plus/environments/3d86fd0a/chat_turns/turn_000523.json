@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 523,
+  "session_index": 53,
+  "session_id": "sharegpt_qCpHDRF_0",
+  "turn_in_session": 0,
+  "date": "2023/05/29 (Mon) 16:52",
+  "role": "user",
+  "content": "write a powershell script to count the number of PDF files within an array of multiple subfolders, and write the output using Export-CSV. The output should consist of the folder name and the number of PDF files within each folder. Display a progress bar that indicates once for each subfolder.",
+  "has_answer": false
+}

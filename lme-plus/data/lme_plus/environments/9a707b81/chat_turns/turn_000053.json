@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 53,
+  "session_index": 4,
+  "session_id": "sharegpt_uYiyT6n_0",
+  "turn_in_session": 3,
+  "date": "2022/02/26 (Sat) 08:38",
+  "role": "assistant",
+  "content": "SQL User Defined Functions:\n\nSQL User Defined Functions (UDFs) are custom functions created by users to perform specific tasks that are not available in the standard SQL functions. UDFs can be used to simplify complex queries, improve performance, and make code more readable. There are two types of UDFs in SQL: Scalar UDFs and Table-valued UDFs.\n\nScalar UDFs:\n\nScalar UDFs return a single value and can be used in SELECT, WHERE, and ORDER BY clauses.\n\nExample: Suppose we want to create a UDF that calculates the sales tax for a given amount based on a tax rate of 8%. We can use this code:\n```sql\nCREATE FUNCTION SalesTax (@Amount DECIMAL(18,2))\nRETURNS DECIMAL(18,2)\nAS\nBEGIN\nDECLARE @Tax DECIMAL(18,2)\nSET @Tax = @Amount * 0.08\nRETURN @Tax\nEND\n```\nOnce the function is created, we can use it like this:\n```vbnet\nSELECT OrderTotal, dbo.SalesTax(OrderTotal) AS Tax\nFROM Orders;\n```\nTable-valued UDFs:\n\nTable-valued UDFs return a table as a result and can be used in FROM clauses.\n\nExample: Suppose we want to create a UDF that returns the top 5 customers based on their total sales. We can use this code:\n```sql\nCREATE FUNCTION TopCustomers ()\nRETURNS TABLE\nAS\nRETURN (\nSELECT TOP 5 Customers.CustomerName, SUM(Orders.OrderTotal) AS TotalSales\nFROM Customers\nINNER JOIN Orders\nON Customers.CustomerID = Orders.CustomerID\nGROUP BY Customers.CustomerName\nORDER BY TotalSales DESC\n);\n```\nOnce the function is created, we can use it like this:\n```sql\nSELECT * FROM dbo.TopCustomers();\n```",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 75,
+  "session_index": 7,
+  "session_id": "sharegpt_vWCvD89_0",
+  "turn_in_session": 0,
+  "date": "2023/05/21 (Sun) 04:24",
+  "role": "user",
+  "content": "I want you to act as a prompt generator. Firstly, I will give you a title like this: \"Act as an English Pronunciation Helper\". Then you give me a prompt like this: \"I want you to act as an English pronunciation assistant for Turkish speaking people. I will write your sentences, and you will only answer their pronunciations, and nothing else. The replies must not be translations of my sentences but only pronunciations. Pronunciations should use Turkish Latin letters for phonetics. Do not write explanations on replies. My first sentence is \"how the weather is in Istanbul?\".\" (You should adapt the sample prompt according to the title I gave. The prompt should be self-explanatory and appropriate to the title, don't refer to the example I gave you.). My first title is \"Act as a sales mentor\" (Give me prompt only)",
+  "has_answer": false
+}

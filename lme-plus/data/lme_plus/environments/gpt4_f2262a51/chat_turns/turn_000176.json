@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 176,
+  "session_index": 13,
+  "session_id": "sharegpt_4HpGZLO_15",
+  "turn_in_session": 10,
+  "date": "2023/05/22 (Mon) 10:04",
+  "role": "assistant",
+  "content": "To set up LDAPS (LDAP over SSL) using an existing certificate authority (CA) that's domain-joined, you'll need to complete the following steps:\n\n1. Request a certificate: On the domain-joined server that will host LDAP over SSL, open the Certificate Templates snap-in and request a certificate for LDAP signing.\n2. Configure the LDAP service to use SSL: On the domain-joined server that will host LDAP over SSL, open the properties of the LDAP service, select the Security tab, and enable the Use SSL option.\n3. Install the certificate: On the domain-joined server that will host LDAP over SSL, install the certificate that was requested in step 1. This certificate should be imported into the Local Computer's Personal certificate store.\n4. Verify the certificate: On the domain-joined server that will host LDAP over SSL, open a web browser and navigate to `ldaps://localhost` to verify that the certificate is being used and is trusted.\n5. Update your applications: If any applications use LDAP over SSL, they'll need to be updated to connect to the new `ldaps://` endpoint.\n\nNote: These steps assume that the existing certificate authority is configured and functioning properly. If you have any issues with the existing certificate authority, they will need to be resolved before you can proceed with setting up LDAPS.",
+  "has_answer": false
+}

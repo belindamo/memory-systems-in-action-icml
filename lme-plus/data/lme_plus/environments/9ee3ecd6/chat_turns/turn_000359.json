@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 359,
+  "session_index": 36,
+  "session_id": "2f097fba_2",
+  "turn_in_session": 3,
+  "date": "2023/05/27 (Sat) 08:50",
+  "role": "assistant",
+  "content": "The Anker PowerCore 10,000 is a popular and reliable portable power bank.\n\nThe Anker PowerCore 10,000 supports fast charging, but it's essential to understand the specifics to ensure it's compatible with your phone's fast charging feature.\n\nThe PowerCore 10,000 has two USB ports:\n\n1. **QuickCharge 3.0 port**: This port supports Qualcomm's QuickCharge 3.0 technology, which can charge compatible devices up to 18W. This means it can charge your phone up to 80% in about 35 minutes, depending on the device.\n2. **PowerIQ port**: This port uses Anker's proprietary PowerIQ technology, which can detect the connected device's charging speed and adjust the output accordingly. It can deliver up to 2.4A of power, which is suitable for most smartphones.\n\nTo determine if the PowerCore 10,000 supports your phone's fast charging feature, you'll need to check your phone's specifications. Here are a few popular fast charging technologies:\n\n* **QuickCharge (QC)**: Supported by the PowerCore 10,000's QC 3.0 port.\n* **VOOC (Voltage Open Loop Multi-step Constant-Current Charging)**: Not natively supported by the PowerCore 10,000, but it may still charge your phone quickly using the PowerIQ port.\n* **PowerDelivery (PD)**: Not supported by the PowerCore 10,000.\n* **Adaptive Fast Charging (AFC)**: May be supported by the PowerCore 10,000's PowerIQ port, but it depends on the specific implementation.\n\nIf your phone supports QuickCharge, the PowerCore 10,000's QC 3.0 port should work seamlessly. If your phone uses a different fast charging technology, it may still charge quickly using the PowerIQ port, but it might not reach the maximum possible speed.\n\nTo confirm, please check your phone's specifications or manufacturer's website to see which fast charging technology it supports. If you're still unsure, feel free to provide your phone model, and I can try to help you determine compatibility.",
+  "has_answer": false
+}

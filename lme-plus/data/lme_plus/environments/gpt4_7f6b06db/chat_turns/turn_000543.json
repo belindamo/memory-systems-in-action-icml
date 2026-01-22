@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 543,
+  "session_index": 50,
+  "session_id": "sharegpt_gPFzM9v_153",
+  "turn_in_session": 28,
+  "date": "2023/05/15 (Mon) 20:49",
+  "role": "assistant",
+  "content": "There are several types of logon triggers:\n\n1. Logon: This trigger occurs when a user logs on to a computer interactively, either locally or over a network.\n2. Remote Interactive Logon: This trigger occurs when a user logs on to a computer using Remote Desktop or Remote Assistance.\n3. Network Logon: This trigger occurs when a user logs on to a computer over a network, such as when accessing a shared folder or using a network service.\n4. Batch Logon: This trigger occurs when a user logs on to a computer to run a scheduled task or batch file.\n5. Service Logon: This trigger occurs when a service starts running under a specific user account.\n6. Unlock: This trigger occurs when a user unlocks a computer after it has been locked.\n7. Console Connect: This trigger occurs when a user connects to a computer through the console session.\n8. Remote Connect: This trigger occurs when a user connects to a computer remotely through a Remote Desktop or Remote Assistance session.\n9. Remote Disconnect: This trigger occurs when a user disconnects from a Remote Desktop or Remote Assistance session.\n10. Terminal Connect: This trigger occurs when a user connects to a computer through a terminal session.\n11. Terminal Disconnect: This trigger occurs when a user disconnects from a terminal session.",
+  "has_answer": false
+}

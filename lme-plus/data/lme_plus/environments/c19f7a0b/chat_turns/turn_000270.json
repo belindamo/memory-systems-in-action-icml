@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 270,
+  "session_index": 26,
+  "session_id": "sharegpt_x5iwfyV_295",
+  "turn_in_session": 6,
+  "date": "2023/05/25 (Thu) 16:59",
+  "role": "assistant",
+  "content": "Here's a cleaned-up version of the `get_midpoint_win_rate` method:\n```python\n    @staticmethod\n    def get_midpoint_win_rate(seed1, seed2):\n        if seed1 == seed2:\n            return 0.5\n\n        lower_seed, higher_seed = sorted((seed1, seed2))\n\n        left_tuple_win_rate = None\n        right_tuple_win_rate = None\n\n        for (lower, higher), win_rate in HISTORICAL_SEED_WIN_RATES.items():\n            if (lower, higher) == (lower_seed, higher_seed):\n                left_tuple_win_rate = win_rate\n                right_tuple_win_rate = win_rate\n            elif (lower, higher) == (higher_seed, lower_seed):\n                left_tuple_win_rate = 1 - win_rate\n                right_tuple_win_rate = 1 - win_rate\n\n            if left_tuple_win_rate is not None and right_tuple_win_rate is not None:\n                break\n\n        if left_tuple_win_rate is None or right_tuple_win_rate is None:\n            raise ValueError(f\"Win rate data not available for seeds {seed1} and {seed2}\")\n\n        win_rate = (left_tuple_win_rate + right_tuple_win_rate) / 2\n        return win_rate\n```\nThis version of the method simplifies the logic within the loop by checking for both the `(lower_seed, higher_seed)` and `(higher_seed, lower_seed)` tuples at once, and breaks out of the loop once both win rates have been found.",
+  "has_answer": false
+}

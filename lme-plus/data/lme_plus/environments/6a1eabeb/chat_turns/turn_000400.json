@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 400,
+  "session_index": 38,
+  "session_id": "sharegpt_AScF7Wc_0",
+  "turn_in_session": 11,
+  "date": "2023/05/30 (Tue) 19:15",
+  "role": "assistant",
+  "content": "11. Leave request notification table:\n```\nCREATE TABLE LeaveRequestNotification (\n    NotificationID INT PRIMARY KEY,\n    RequestID INT,\n    EmployeeID INT,\n    NotificationType VARCHAR(50),\n    NotificationDate DATE,\n    FOREIGN KEY (RequestID) REFERENCES LeaveRequest(RequestID),\n    FOREIGN KEY (EmployeeID) REFERENCES Employee(EmployeeID)\n);\n```\n12. Leave approval notification table:\n```\nCREATE TABLE LeaveApprovalNotification (\n    NotificationID INT PRIMARY KEY,\n    ApprovalID INT,\n    EmployeeID INT,\n    NotificationType VARCHAR(50),\n    NotificationDate DATE,\n    FOREIGN KEY (ApprovalID) REFERENCES LeaveApproval(ApprovalID),\n    FOREIGN KEY (EmployeeID) REFERENCES Employee(EmployeeID)\n);\n```\n13. Leave balance notification table:\n```\nCREATE TABLE LeaveBalanceNotification (\n    NotificationID INT PRIMARY KEY,\n    BalanceID INT,\n    EmployeeID INT,\n    NotificationType VARCHAR(50),\n    NotificationDate DATE,\n    FOREIGN KEY (BalanceID) REFERENCES LeaveBalance(BalanceID),\n    FOREIGN KEY (EmployeeID) REFERENCES Employee(EmployeeID)\n);\n```\n14. Leave calendar table:\n```\nCREATE TABLE LeaveCalendar (\n    CalendarID INT PRIMARY KEY,\n    RequestID INT,\n    LeaveType VARCHAR(50),\n    StartDate DATE,\n    EndDate DATE,\n    FOREIGN KEY (RequestID) REFERENCES LeaveRequest(RequestID)\n);\n```\nThese additional SQL codes can be used to create tables for notifications, leave request documents, return-to-work, and leave cancellations, and leave calendar, which can be important for a comprehensive leave management system. The key is to ensure that the relationships between the tables are defined correctly and that the data is being stored and accessed in a secure manner.",
+  "has_answer": false
+}

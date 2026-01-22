@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 435,
+  "session_index": 41,
+  "session_id": "sharegpt_2FOskbF_34",
+  "turn_in_session": 5,
+  "date": "2023/04/30 (Sun) 09:24",
+  "role": "assistant",
+  "content": "Sure, here are the revised .svg files for the L298N Footprint, Caster Wheel Footprint, Infrared Footprint, and Arduino Footprint, with added rectangles around the border:\n\nL298N Footprint:\n```\n<svg width=\"43mm\" height=\"43mm\" viewBox=\"0 0 43 43\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"0\" y=\"0\" width=\"43\" height=\"43\" fill=\"#FFFFFF\" />\n  <circle cx=\"3\" cy=\"3\" r=\"1.5\" fill=\"#000000\" />\n  <circle cx=\"40\" cy=\"3\" r=\"1.5\" fill=\"#000000\" />\n  <circle cx=\"3\" cy=\"40\" r=\"1.5\" fill=\"#000000\" />\n  <circle cx=\"40\" cy=\"40\" r=\"1.5\" fill=\"#000000\" />\n</svg>\n```\nCaster Wheel Footprint:\n```\n<svg width=\"31mm\" height=\"37mm\" viewBox=\"0 0 31 37\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"0\" y=\"0\" width=\"31\" height=\"37\" fill=\"#FFFFFF\" />\n  <circle cx=\"4\" cy=\"4\" r=\"2\" fill=\"#000000\" />\n  <circle cx=\"27\" cy=\"4\" r=\"2\" fill=\"#000000\" />\n  <circle cx=\"4\" cy=\"33\" r=\"2\" fill=\"#000000\" />\n  <circle cx=\"27\" cy=\"33\" r=\"2\" fill=\"#000000\" />\n</svg>\n```\nInfrared Footprint:\n```\n<svg width=\"96.5mm\" height=\"20.5mm\" viewBox=\"0 0 96.5\n```",
+  "has_answer": false
+}

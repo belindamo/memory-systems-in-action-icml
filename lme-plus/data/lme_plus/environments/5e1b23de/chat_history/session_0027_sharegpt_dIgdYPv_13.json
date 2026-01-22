@@ -1,0 +1,27 @@
+{
+  "session_id": "sharegpt_dIgdYPv_13",
+  "session_index": 27,
+  "date": "2023/11/01 (Wed) 14:51",
+  "turns": [
+    {
+      "role": "assistant",
+      "content": "| Company Name | Domain Name |\n| --- | --- |\n| 1-800 Contacts | 1800contacts.com |\n| 1-800-Flowers | 1800flowers.com |\n| 2253 Apparel Co | N/A |\n| 2Modern | 2modern.com |\n| 3 day blinds | 3dayblinds.com |\n| 3Wire Group, Inc | 3wire.com |\n| A Bar Above | abarabove.com |\n| AccuSpire | accuspire.com |\n| Acuity Brands | acuitybrands.com |\n| Adoreme | adoreme.com |\n| Aed Brands | N/A |\n| AG Jeans | agjeans.com |\n| Agri Beef Company | agribeef.com |\n| Albertsons Companies | albertsons.com |\n| Aleva Stores | alevastores.com |\n| Alpha Industries | alphaindustries.com |\n| Alvord Unified School District/Hillcrest High School | alvordschools.org |\n| Amazon | amazon.com |\n| American Eagle Outfitters | ae.com |\n| American Leather | americanleather.com |\n| Amyris | amyris.com |\n| Andie | andieswim.com |\n| Anine Bing | aninebing.com |\n| Anthropologie | anthropologie.com |\n| Aplasticbag.com | aplasticbag.com |\n| Appleseed | appleseeds.com |\n| Ariat International | ariat.com |\n| Arlo Technologies Inc | arlo.com |\n| Asics Corp | asics.com |\n| Asset Marketing Services | assetmarketingsystems.com |\n| ASUS | asus.com |\n| Asus Computer International Inc. | asus.com |\n| AT&T | att.com |\n| Athleta, Inc. | athleta.com |\n| Athletic Greens | athleticgreens.com |\n| Aunt Fannie's | auntfannies.com |\n| Avatco | N/A |\n| Aventon | aventon.com |\n| Avery Products Corporation | avery.com |\n| Avlis-co Inc. | avlis.com |\n| Awe Inspired | aweinspired.com |\n| B&H Photo | bhphotovideo.com |\n| Backcountry | backcountry.com |\n| Backyard X-Scapes | backyardxscapes.com |\n| Bag Borrow or Steal | bagborroworsteal.com |\n| Balanced Nutritionals | balancednutritionals.com |\n| Ban.do | bando.com |\n| Bath & Body Works | bathandbodyworks.com |\n| BAZIC Products | bazicproducts.com |\n| Beauty Care Choices | beautycarechoices.com |\n| Beis | beistravel.com |\n| Belkin Inc. | belkin.com |\n| Bella Dahl | belladahl.com |\n| Benchmade Knife Company Inc | benchmade.com |\n| Betabrand | betabrand.com |\n| Better Being | betterbeing.com |\n| Better Than Booze | betterthanbooze.com |\n| B-Glowing | b-glowing.com |\n| BIOLYTE | biolyte.com |"
+    },
+    {
+      "role": "user",
+      "content": "Separate just the \"Domain Name\" column and put it into a copyable code block"
+    },
+    {
+      "role": "assistant",
+      "content": "1800contacts.com\n1800flowers.com\nN/A\n2modern.com\n3dayblinds.com\n3wire.com\nabarabove.com\naccuspire.com\nacuitybrands.com\nadoreme.com\nN/A\nagjeans.com\nagribeef.com\nalbertsons.com\nalevastores.com\nalphaindustries.com\nalvordschools.org\namazon.com\nae.com\namericanleather.com\namyris.com\nandieswim.com\naninebing.com\nanthropologie.com\naplasticbag.com\nappleseeds.com\nariat.com\narlo.com\nasics.com\nassetmarketingsystems.com\nasus.com\nasus.com\natt.com\nathleta.com\nathleticgreens.com\nauntfannies.com\nN/A\naventon.com\navery.com\navlis.com\naweinspired.com\nbhphotovideo.com\nbackcountry.com\nbackyardxscapes.com\nbagborroworsteal.com\nbalancednutritionals.com\nbando.com\nbathandbodyworks.com\nbazicproducts.com\nbeautycarechoices.com\nbeistravel.com\nbelkin.com\nbelladahl.com\nbenchmade.com\nbetabrand.com\nbetterbeing.com\nbetterthanbooze.com\nb-glowing.com\nbiolyte.com\nblenderseyewear.com\nblindsgalore.com\nbluebell.com\nblueridgehome.com\nbodyautoparts.com\nboehringer-ingelheim.com\nbollmanhats.com\nbonafide.com\nbooking.com\nbossaudio.com\nboxed.com\nbrooklinen.com\nbrooksrunning.com\nbrother-usa.com\nbosch-home.com/us/\nbuckle.com\nbumkins.com\nburkedecor.com\nbuyautoparts.com\nbyheart.com"
+    },
+    {
+      "role": "user",
+      "content": "Reformat into a code block"
+    },
+    {
+      "role": "assistant",
+      "content": "```css\n1-800contacts.com\n1800flowers.com\nN/A\n2modern.com\n3dayblinds.com\n3wire.com\nabarabove.com\naccuspire.com\nacuitybrands.com\nadoreme.com\nN/A\nagjeans.com\nagribeef.com\nalbertsons.com\nalevastores.com\nalphaindustries.com\nalvordschools.org\namazon.com\nae.com\namericanleather.com\namyris.com\nandieswim.com\naninebing.com\nanthropologie.com\naplasticbag.com\nappleseeds.com\nariat.com\narlo.com\nasics.com\nN/A\nasus.com\nasus.com\natt.com\nathleta.com\nathleticgreens.com\nauntfannies.com\nN/A\naventon.com\navery.com\navlis.com\naweinspired.com\nbhphotovideo.com\nbackcountry.com\nbackyardxscapes.com\nbagborroworsteal.com\nbalancednutritionals.com\nbando.com\nbathandbodyworks.com\nbazicproducts.com\nbeautycarechoices.com\nbeistravel.com\nbelkin.com\nbelladahl.com\nbenchmade.com\nbetabrand.com\nbetterbeing.com\nbetterthanbooze.com\nb-glowing.com\nbiolyte.com\nblenderseyewear.com\nblindsgalore.com\nbluebell.com\nblueridgehome.com\nbodyautoparts.com\nboehringer-ingelheim.com\nbollmanhats.com\ngobonafide.com\nbooking.com\nbossaudio.com\nboxed.com\nbrooklinen.com\nbrooksrunning.com\nbrother-usa.com\nbosch-home.com/us\nbuckle.com\nbumkins.com\nburkedecor.com\nbuyautoparts.com\nbyheart.com\n```"
+    }
+  ]
+}

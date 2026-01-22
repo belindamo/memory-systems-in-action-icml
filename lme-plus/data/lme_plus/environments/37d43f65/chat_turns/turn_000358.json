@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 358,
+  "session_index": 32,
+  "session_id": "sharegpt_wwPcW8o_0",
+  "turn_in_session": 0,
+  "date": "2023/05/26 (Fri) 07:54",
+  "role": "user",
+  "content": "I have a relational database for my product EmpowerID named EmpowerID in Microsoft Azure SQL. My database has a table named Account with a unique identifer of type in called accountID and of type guid named AccountGUID. I have another table named Group with a unique identifier of type in called GroupID and of type guid named GroupGUID. The membership of accounts in groups is stored in the GroupAccount table which has the foreign Key GroupID and AccountID. Nested group memberships are stored in a table named GroupMemberGroup which has the GroupID and the MemberGroupID columns. How can I get my relational data from my Microsoft sql database into a neo4j graph database to view the graph representation of group memberships",
+  "has_answer": false
+}

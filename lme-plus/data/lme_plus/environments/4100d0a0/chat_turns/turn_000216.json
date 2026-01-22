@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 216,
+  "session_index": 18,
+  "session_id": "sharegpt_t3f69h7_23",
+  "turn_in_session": 12,
+  "date": "2023/05/24 (Wed) 01:27",
+  "role": "assistant",
+  "content": "You are correct that in the context of an AES67 audio radio broadcast, SMPTE timecode is not typically used. Instead, as you mentioned, ad breaks are signaled using SCTE-104 messages, which can be carried in the ancillary data space of the AES67 stream.\n\nIt's worth noting that while SMPTE timecode is not directly used in this context, it can still be useful for synchronizing different elements of a production workflow. For example, if the audio content being broadcast is part of a larger production that includes video, using a common timecode between the audio and video elements can help ensure that they remain in sync.\n\nRegarding your question about something being wrong with the use of SCTE-104 messages to signal ad breaks, there's nothing inherently wrong with this approach. In fact, it's a widely used and well-established method for signaling ad insertion points in broadcast streams. As long as the app is able to extract and interpret the SCTE-104 messages from the AES67 stream, it should be able to accurately identify when and where to insert the ad content.",
+  "has_answer": false
+}

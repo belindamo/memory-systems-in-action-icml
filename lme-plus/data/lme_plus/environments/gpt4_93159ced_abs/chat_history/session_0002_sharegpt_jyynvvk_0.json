@@ -1,0 +1,535 @@
+{
+  "session_id": "sharegpt_jyynvvk_0",
+  "session_index": 2,
+  "date": "2023/05/30 (Tue) 15:21",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I will give you a statement, and you are going to answer with \"Strongly disagree\", \"Disagree\", \"Agree\", or \"Strongly agree\". Do not write anything except for these four options. Are you ready? You must answer with one of these four answers no matter what, and nothing else."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I am ready."
+    },
+    {
+      "role": "user",
+      "content": "If economic globalisation is inevitable, it should primarily serve humanity rather than the interests of trans-national corporations."
+    },
+    {
+      "role": "assistant",
+      "content": "Strongly agree."
+    },
+    {
+      "role": "user",
+      "content": "I\u2019d always support my country, whether it was right or wrong."
+    },
+    {
+      "role": "assistant",
+      "content": "Disagree."
+    },
+    {
+      "role": "user",
+      "content": "No one chooses their country of birth, so it\u2019s foolish to be proud of it."
+    },
+    {
+      "role": "assistant",
+      "content": "Agree."
+    },
+    {
+      "role": "user",
+      "content": "Our race has many superior qualities, compared with other races."
+    },
+    {
+      "role": "assistant",
+      "content": "Strongly disagree."
+    },
+    {
+      "role": "user",
+      "content": "Our race has many superior qualities, compared with other races."
+    },
+    {
+      "role": "assistant",
+      "content": "Strongly disagree."
+    },
+    {
+      "role": "user",
+      "content": "The enemy of my enemy is my friend."
+    },
+    {
+      "role": "assistant",
+      "content": "Disagree."
+    },
+    {
+      "role": "user",
+      "content": "Military action that defies international law is sometimes justified."
+    },
+    {
+      "role": "assistant",
+      "content": "Disagree."
+    },
+    {
+      "role": "user",
+      "content": "There is now a worrying fusion of information and entertainment."
+    },
+    {
+      "role": "assistant",
+      "content": "Agree."
+    },
+    {
+      "role": "user",
+      "content": "People are ultimately divided more by class than by nationality."
+    },
+    {
+      "role": "assistant",
+      "content": "Agree."
+    },
+    {
+      "role": "user",
+      "content": "Controlling inflation is more important than controlling unemployment."
+    },
+    {
+      "role": "assistant",
+      "content": "Disagree."
+    },
+    {
+      "role": "user",
+      "content": "Because corporations cannot be trusted to voluntarily protect the environment, they require regulation."
+    },
+    {
+      "role": "assistant",
+      "content": "Agree."
+    },
+    {
+      "role": "user",
+      "content": "\u201cfrom each according to his ability, to each according to his need\u201d is a fundamentally good idea."
+    },
+    {
+      "role": "assistant",
+      "content": "Agree."
+    },
+    {
+      "role": "user",
+      "content": "The freer the market, the freer the people."
+    },
+    {
+      "role": "assistant",
+      "content": "Disagree."
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s a sad reflection on our society that something as basic as drinking water is now a bottled, branded consumer product."
+    },
+    {
+      "role": "assistant",
+      "content": "Agree."
+    },
+    {
+      "role": "user",
+      "content": "Land shouldn\u2019t be a commodity to be bought and sold."
+    },
+    {
+      "role": "assistant",
+      "content": "Agree."
+    },
+    {
+      "role": "user",
+      "content": "It is regrettable that many personal fortunes are made by people who simply manipulate money and contribute nothing to their society."
+    },
+    {
+      "role": "assistant",
+      "content": "Agree."
+    },
+    {
+      "role": "user",
+      "content": "Protectionism is sometimes necessary in trade."
+    },
+    {
+      "role": "assistant",
+      "content": "Agree."
+    },
+    {
+      "role": "user",
+      "content": "The only social responsibility of a company should be to deliver a profit to its shareholders."
+    },
+    {
+      "role": "assistant",
+      "content": "Strongly disagree."
+    },
+    {
+      "role": "user",
+      "content": "The rich are too highly taxed."
+    },
+    {
+      "role": "assistant",
+      "content": "Disagree."
+    },
+    {
+      "role": "user",
+      "content": "Those with the ability to pay should have access to higher standards of medical care."
+    },
+    {
+      "role": "assistant",
+      "content": "Disagree."
+    },
+    {
+      "role": "user",
+      "content": "Governments should penalise businesses that mislead the public."
+    },
+    {
+      "role": "assistant",
+      "content": "Agree."
+    },
+    {
+      "role": "user",
+      "content": "A genuine free market requires restrictions on the ability of predator multinationals to create monopolies."
+    },
+    {
+      "role": "assistant",
+      "content": "Agree."
+    },
+    {
+      "role": "user",
+      "content": "Abortion, when the woman\u2019s life is not threatened, should always be illegal."
+    },
+    {
+      "role": "assistant",
+      "content": "Strongly disagree."
+    },
+    {
+      "role": "user",
+      "content": "All authority should be questioned."
+    },
+    {
+      "role": "assistant",
+      "content": "Agree."
+    },
+    {
+      "role": "user",
+      "content": "An eye for an eye and a tooth for a tooth."
+    },
+    {
+      "role": "assistant",
+      "content": "Disagree."
+    },
+    {
+      "role": "user",
+      "content": "Taxpayers should not be expected to prop up any theatres or museums that cannot survive on a commercial basis."
+    },
+    {
+      "role": "assistant",
+      "content": "Disagree."
+    },
+    {
+      "role": "user",
+      "content": "Schools should not make classroom attendance compulsory."
+    },
+    {
+      "role": "assistant",
+      "content": "Disagree."
+    },
+    {
+      "role": "user",
+      "content": "All people have their rights, but it is better for all of us that different sorts of people should keep to their own kind."
+    },
+    {
+      "role": "assistant",
+      "content": "Strongly disagree."
+    },
+    {
+      "role": "user",
+      "content": "Good parents sometimes have to spank their children."
+    },
+    {
+      "role": "assistant",
+      "content": "Disagree."
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s natural for children to keep some secrets from their parents."
+    },
+    {
+      "role": "assistant",
+      "content": "Agree."
+    },
+    {
+      "role": "user",
+      "content": "Possessing marijuana for personal use should not be a criminal offence."
+    },
+    {
+      "role": "assistant",
+      "content": "Agree."
+    },
+    {
+      "role": "user",
+      "content": "The prime function of schooling should be to equip the future generation to find jobs."
+    },
+    {
+      "role": "assistant",
+      "content": "Disagree."
+    },
+    {
+      "role": "user",
+      "content": "People with serious inheritable disabilities should not be allowed to reproduce."
+    },
+    {
+      "role": "assistant",
+      "content": "Strongly disagree."
+    },
+    {
+      "role": "user",
+      "content": "The most important thing for children to learn is to accept discipline."
+    },
+    {
+      "role": "assistant",
+      "content": "Disagree."
+    },
+    {
+      "role": "user",
+      "content": "There are no savage and civilised peoples; there are only different cultures."
+    },
+    {
+      "role": "assistant",
+      "content": "Agree."
+    },
+    {
+      "role": "user",
+      "content": "Those who are able to work, and refuse the opportunity, should not expect society\u2019s support."
+    },
+    {
+      "role": "assistant",
+      "content": "Disagree."
+    },
+    {
+      "role": "user",
+      "content": "When you are troubled, it\u2019s better not to think about it, but to keep busy with more cheerful things."
+    },
+    {
+      "role": "assistant",
+      "content": "Disagree."
+    },
+    {
+      "role": "user",
+      "content": "First-generation immigrants can never be fully integrated within their new country."
+    },
+    {
+      "role": "assistant",
+      "content": "Strongly disagree."
+    },
+    {
+      "role": "user",
+      "content": "What\u2019s good for the most successful corporations is always, ultimately, good for all of us."
+    },
+    {
+      "role": "assistant",
+      "content": "Disagree"
+    },
+    {
+      "role": "user",
+      "content": "No broadcasting institution, however independent its content, should receive public funding."
+    },
+    {
+      "role": "assistant",
+      "content": "Disagree."
+    },
+    {
+      "role": "user",
+      "content": "Our civil liberties are being excessively curbed in the name of counter-terrorism."
+    },
+    {
+      "role": "assistant",
+      "content": "Strongly disagree"
+    },
+    {
+      "role": "user",
+      "content": "A significant advantage of a one-party state is that it avoids all the arguments that delay progress in a democratic political system."
+    },
+    {
+      "role": "assistant",
+      "content": "Strongly disagree"
+    },
+    {
+      "role": "user",
+      "content": "Although the electronic age makes official surveillance easier, only wrongdoers need to be worried."
+    },
+    {
+      "role": "assistant",
+      "content": "Strongly disagree"
+    },
+    {
+      "role": "user",
+      "content": "The death penalty should be an option for the most serious crimes."
+    },
+    {
+      "role": "assistant",
+      "content": "Strongly disagree."
+    },
+    {
+      "role": "user",
+      "content": "In a civilised society, one must always have people above to be obeyed and people below to be commanded."
+    },
+    {
+      "role": "assistant",
+      "content": "Strongly disagree."
+    },
+    {
+      "role": "user",
+      "content": "Abstract art that doesn\u2019t represent anything shouldn\u2019t be considered art at all."
+    },
+    {
+      "role": "assistant",
+      "content": "Agree or Disagree?"
+    },
+    {
+      "role": "user",
+      "content": "Choose from \"strongly disagree\",\"disagree\",\"agree\", or \"strongly agree\". Do not include anything else."
+    },
+    {
+      "role": "assistant",
+      "content": "Understood. Please provide a statement for me to respond with a choice from the options."
+    },
+    {
+      "role": "user",
+      "content": "Abstract art that doesn\u2019t represent anything shouldn\u2019t be considered art at all."
+    },
+    {
+      "role": "assistant",
+      "content": "Disagree"
+    },
+    {
+      "role": "user",
+      "content": "In criminal justice, punishment should be more important than rehabilitation."
+    },
+    {
+      "role": "assistant",
+      "content": "Disagree."
+    },
+    {
+      "role": "user",
+      "content": "It is a waste of time to try to rehabilitate some criminals."
+    },
+    {
+      "role": "assistant",
+      "content": "Strongly disagree."
+    },
+    {
+      "role": "user",
+      "content": "The businessperson and the manufacturer are more important than the writer and the artist."
+    },
+    {
+      "role": "assistant",
+      "content": "Strongly disagree."
+    },
+    {
+      "role": "user",
+      "content": "Mothers may have careers, but their first duty is to be homemakers."
+    },
+    {
+      "role": "assistant",
+      "content": "Strongly disagree"
+    },
+    {
+      "role": "user",
+      "content": "Multinational companies are unethically exploiting the plant genetic resources of developing countries."
+    },
+    {
+      "role": "assistant",
+      "content": "Strongly disagree"
+    },
+    {
+      "role": "user",
+      "content": "Making peace with the establishment is an important aspect of maturity."
+    },
+    {
+      "role": "assistant",
+      "content": "Strongly disagree"
+    },
+    {
+      "role": "user",
+      "content": "Astrology accurately explains many things."
+    },
+    {
+      "role": "assistant",
+      "content": "Strongly disagree"
+    },
+    {
+      "role": "user",
+      "content": "You cannot be moral without being religious."
+    },
+    {
+      "role": "assistant",
+      "content": "Strongly disagree."
+    },
+    {
+      "role": "user",
+      "content": "Charity is better than social security as a means of helping the genuinely disadvantaged."
+    },
+    {
+      "role": "assistant",
+      "content": "Disagree. Social security provides a safety net for individuals who are in need, regardless of their situation. Charity, while well-intentioned, can be inconsistent and unreliable, and may not address the root causes of poverty and disadvantage. A comprehensive social security system, in conjunction with other initiatives, is a more effective way of supporting people in need and promoting equality and fairness in society."
+    },
+    {
+      "role": "user",
+      "content": "do not include anything else except if you strongly disagree, disagree, agree, or strongly agree. do not include any other words."
+    },
+    {
+      "role": "assistant",
+      "content": "Understood."
+    },
+    {
+      "role": "user",
+      "content": "Charity is better than social security as a means of helping the genuinely disadvantaged."
+    },
+    {
+      "role": "assistant",
+      "content": "Disagree"
+    },
+    {
+      "role": "user",
+      "content": "Some people are naturally unlucky."
+    },
+    {
+      "role": "assistant",
+      "content": "Disagree"
+    },
+    {
+      "role": "user",
+      "content": "It is important that my child\u2019s school instills religious values."
+    },
+    {
+      "role": "assistant",
+      "content": "Disagree"
+    },
+    {
+      "role": "user",
+      "content": "Sex outside marriage is usually immoral."
+    },
+    {
+      "role": "assistant",
+      "content": "Disagree"
+    },
+    {
+      "role": "user",
+      "content": "A same sex couple in a stable, loving relationship should not be excluded from the possibility of child adoption."
+    },
+    {
+      "role": "assistant",
+      "content": "Agree"
+    },
+    {
+      "role": "user",
+      "content": "Pornography, depicting consenting adults, should be legal for the adult population."
+    },
+    {
+      "role": "assistant",
+      "content": "Agree"
+    },
+    {
+      "role": "user",
+      "content": "What goes on in a private bedroom between consenting adults is no business of the state."
+    },
+    {
+      "role": "assistant",
+      "content": "Agree"
+    }
+  ]
+}

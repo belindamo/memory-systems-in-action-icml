@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 315,
+  "session_index": 30,
+  "session_id": "sharegpt_IJzrTj7_0",
+  "turn_in_session": 3,
+  "date": "2023/05/25 (Thu) 23:04",
+  "role": "assistant",
+  "content": "Yes, Salesforce CPQ can obtain real-time product and pricing information stored in the ERP through integration with NetSuite. By using middleware or custom-built integration solutions, the two systems can communicate with each other to ensure that Salesforce CPQ has access to the most up-to-date product and pricing information stored in NetSuite ERP.\n\nThis integration allows Salesforce CPQ to automatically pull product catalog data, including pricing, from NetSuite ERP in real-time. As a result, sales teams can generate accurate and consistent quotes for customers, reducing errors and ensuring all quotes are based on the latest product and pricing information.\n\nTo achieve this real-time data synchronization, you might need to work with a skilled developer or an integration partner experienced with both Salesforce CPQ and NetSuite ERP to help set up the appropriate data connections, mappings, and workflows between the two systems.",
+  "has_answer": false
+}

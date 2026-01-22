@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 379,
+  "session_index": 37,
+  "session_id": "sharegpt_6SxtjIQ_0",
+  "turn_in_session": 3,
+  "date": "2023/05/29 (Mon) 09:59",
+  "role": "assistant",
+  "content": "To access environment variables in a Deno file, you can use the `Deno.env.get()` function. This function returns the value of the specified environment variable or `undefined` if the variable is not set.\n\nHere's an example of how to use `Deno.env.get()` to access environment variables in a Deno file:\n```typescript\nconst envVar1 = Deno.env.get(\"ENV_VAR_1\");\nconst envVar2 = Deno.env.get(\"ENV_VAR_2\");\n\nif (!envVar1) {\n  throw new Error(\"ENV_VAR_1 is not set\");\n}\n\nconsole.log(`ENV_VAR_1: ${envVar1}`);\nconsole.log(`ENV_VAR_2: ${envVar2}`);\n```\nIn this example, we're using `Deno.env.get()` to retrieve the values of two environment variables named `ENV_VAR_1` and `ENV_VAR_2`. If `ENV_VAR_1` is not set, the script throws an error. Otherwise, it prints out the values of both environment variables using `console.log()`.\n\nNote that you need to run your Deno file with the `--allow-env` flag to allow access to environment variables. Here's an example command to run your Deno file:\n```css\ndeno run --allow-env your_file.ts\n```\nReplace `your_file.ts` with the name of your Deno file. This command grants permission to access environment variables when running your script.",
+  "has_answer": false
+}

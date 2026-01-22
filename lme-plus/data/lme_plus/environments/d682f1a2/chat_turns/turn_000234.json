@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 234,
+  "session_index": 23,
+  "session_id": "sharegpt_JTaoEJT_23",
+  "turn_in_session": 0,
+  "date": "2023/05/27 (Sat) 01:12",
+  "role": "assistant",
+  "content": "Here are the adapted sigmoid-like transformed values for the adjectives and things, using the transformed scores from 0.0 to 1.0:\n\n0.0000: Terrible - Spoiled food that is dangerous to eat\n0.0250: Awful - A very rude and unhelpful customer service representative\n0.1000: Poor - A poorly written book with numerous grammatical errors and a weak plot\n0.2250: Mediocre - A disappointing movie that has a few redeeming qualities, such as a strong performance from a supporting actor\n0.4000: Below average - A meal at a restaurant that is mediocre and not worth the price\n0.5000: Average - An average day at work, where nothing particularly good or bad happens\n0.6000: Decent - A helpful tutorial that covers the basics of a topic but lacks depth\n0.7750: Good - A well-designed app that occasionally has minor bugs or usability issues\n0.9000: Great - A beautiful and engaging piece of art that resonates with many people\n0.9750: Excellent - An excellent and inspiring TED talk that leaves a lasting impact on the audience\n1.0000: Outstanding - A life-changing event, such as the birth of a child or achieving a lifelong dream\n\nThese examples now have sigmoid-like transformed values that provide a more intuitive mapping to the desired range of 0.0 to 1.0.",
+  "has_answer": false
+}

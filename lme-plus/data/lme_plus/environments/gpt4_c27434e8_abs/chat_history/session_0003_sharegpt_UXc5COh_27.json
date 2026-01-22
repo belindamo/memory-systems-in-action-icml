@@ -1,0 +1,91 @@
+{
+  "session_id": "sharegpt_UXc5COh_27",
+  "session_index": 3,
+  "date": "2023/05/23 (Tue) 23:43",
+  "turns": [
+    {
+      "role": "assistant",
+      "content": "* **MLS listing or pending sales are not required**. If included, adjust active listing(s) to reflect list-to-sale price ratio based on 1004MC data if statistically relevant. Adjust pending sale(s) to reflect contract price if possible.\n* In some markets, compliance with this requirement may not be possible due to lack of data, in which case an explanation is required. (Do not include non-comparable listings/pendings.)\n\nMLS/Pendings: not required, adjust active to reflect list-to-sale, adjust pendings to contract price if possible, explanation required if not possible, do not include non-comparable."
+    },
+    {
+      "role": "user",
+      "content": "Revise, as ideally each sentence should have word(s) emphasized to help drive clarity or understanding"
+    },
+    {
+      "role": "assistant",
+      "content": "* **MLS listings or pending sales are not mandatory.** If included, please follow these guidelines:\n\t+ Adjust active listings to reflect the **list-to-sale price ratio** based on data from the 1004MC, if there are enough data points to be statistically relevant.\n\t+ Adjust pending sales to reflect the **contract price** whenever possible.\n* In some markets, compliance with these guidelines may not be possible due to a lack of data. In such cases, an explanation is required. (Do not include listings or pendings that are not truly comparable to the subject property.)\n\nMLS/Pendings: not mandatory, adjust active to list-to-sale ratio (if relevant), adjust pendings to contract price, explanation required if data lacking, exclude non-comparable."
+    },
+    {
+      "role": "user",
+      "content": "Revise again, so that each sentence contains a bolded word or set of words that help the reader understand what the sentence is about quicker and with more clarity"
+    },
+    {
+      "role": "assistant",
+      "content": "* **MLS listings and pending sales are optional**. If included, please follow these steps:\n\t+ Adjust active listings to reflect the **market's list-to-sale price ratio** using 1004MC data, if statistically relevant.\n\t+ Reflect the **pending sale's contract price** in your adjustment, if possible.\n* In some cases, it may not be possible to follow these steps due to a lack of data. In such instances, please **provide an explanation**. (Do not include listings or pendings that are not truly comparable to the subject property.)\n\nMLS/Pendings: optional, adjust active to market's list-to-sale ratio (if relevant), adjust pendings to contract price, provide explanation if data lacking, exclude non-comparable."
+    },
+    {
+      "role": "user",
+      "content": "For the below language, provide a more concise version of it, then summarize it in a few short words:\n\u2022 Comments required when a significant variance exists between the as measured living area and that which is posted in county records.\n\u2022 Comments required on any atypical property characteristic that may impact the subject's marketability e.g. backing a freeway etc."
+    },
+    {
+      "role": "assistant",
+      "content": "* Comments required if significant variance exists between measured and posted living area in county records.\n* Comments required on any atypical property characteristics affecting marketability (e.g. backing a freeway).\n\nComments: significant variance in living area, atypical property characteristics impacting marketability."
+    },
+    {
+      "role": "user",
+      "content": "Do the same for this as it relates to Additions & Conversions: \u2022 Appraiser must comment on any additions and/or conversions to the structure, and whether permits were located.\n\u2022 Address the quality (professional or workmanlike manner), of the addition/conversion as well as any possible health/safety issues associated with them.\n\u2022 Include the additions/conversions in the floorplan.\n\u2022 Include in value if built in a professional manner and if market accepted."
+    },
+    {
+      "role": "assistant",
+      "content": "* Appraiser must comment on additions/conversions, permit status.\n* Address quality, health/safety issues of additions/conversions.\n* Include in floorplan, value if professional and market-accepted.\n\nAdditions/Conversions: comment on permit status, address quality/health/safety, include in floorplan, value if professional and market-accepted."
+    },
+    {
+      "role": "user",
+      "content": "Do the same for this as it relates to Time Adjustments: If page one indicates increasing or decreasing values, time adjustments are to be addressed.\n\n\u2022 Warranted time adjustments are to be adequately supported and calculated from the contract date and not the settlement date.\no Support may be from the 1004MC if there is sufficient data to be statistically relevant. Please cite the data source if the 1004MC is not utilized for support."
+    },
+    {
+      "role": "assistant",
+      "content": "* Address time adjustments if page one indicates increasing/decreasing values.\n* Warranted time adjustments must be supported, calculated from contract date (not settlement date).\n* Support may come from 1004MC if statistically relevant, cite data source if not used.\n\nTime Adjustments: address if page one indicates change, warranted adjustments supported (contract date), 1004MC support if relevant, cite data source if not used."
+    },
+    {
+      "role": "user",
+      "content": "Do the same for this as it relates to Zoning: For properties with legal/non-conforming zoning, the appraiser is to include comments to indicate WHY it is considered non-conforming, if this is common and typical for the area and address the zoning\u2019s impact on marketability and market value."
+    },
+    {
+      "role": "assistant",
+      "content": "* For properties with legal/non-conforming zoning, appraiser must comment on:\n\t+ Reason for non-conformity (if common/typical for area)\n\t+ Zoning's impact on marketability and market value.\n\nZoning: comment on reason for non-conformity (if common/typical), impact on marketability/value."
+    },
+    {
+      "role": "user",
+      "content": "Do the same for this as it relates to Final Value Reconciliation: In your final reconciliation, please let the reader know which comparable sale(s) were given greatest weight and why. In some instances, it may be beneficial to let the reader know which sale(s) received the least amount (or no) weight and why."
+    },
+    {
+      "role": "assistant",
+      "content": "* In final reconciliation, indicate which comparable sale(s) received greatest weight and why. If necessary, indicate least (or no) weight and why.\n\nFinal Value Reconciliation: indicate greatest/least weight, why."
+    },
+    {
+      "role": "user",
+      "content": "Do the same for this as it relates to the Appraisal Report's Exhibits: Attach a copy of your appraiser\u2019s license and E&O Insurance with each order."
+    },
+    {
+      "role": "assistant",
+      "content": "* Attach appraiser's license and E&O insurance with each order.\n\nAppraisal Report's Exhibits: attach appraiser's license, E&O insurance."
+    },
+    {
+      "role": "user",
+      "content": "Do the same for this as it relates to FHA report sketch requirements: \u2022 The appraiser is not required to sketch the distances between the well and septic, however, he or she should be mindful of FHA's minimum distance requirements between private wells and sources of pollution (septic systems). Please comment on the distances, if discernible. Otherwise, comment that the distances were not discernable.\n\u2022 Sketches to include dimensions of the home, patios, porches, garages, breezeways, outbuildings, basements and other offsets (pools). State \u201ccovered\u201d or \u201cuncovered\u201d to indicate a roof or no roof (such as over a patio), and any other attachments or outbuildings."
+    },
+    {
+      "role": "assistant",
+      "content": "* Appraiser should be aware of FHA's well/septic distance requirements, comment on distances if discernible, otherwise state not discernible.\n* Sketches to include dimensions of home, patios, porches, garages, breezeways, outbuildings, basements, and offsets (pools), state \"covered\" or \"uncovered\", and indicate any other attachments/outbuildings.\n\nFHA Report Sketch Requirements: comment on well/septic distances (if discernible), include home/outbuilding dimensions, state roof status, indicate attachments/outbuildings."
+    },
+    {
+      "role": "user",
+      "content": "Do the same for this as it relates to FHA report photograph requirements: \u2022 Interior photographs to include the bedrooms.\n\u2022 Comp photos to include the side yard, if possible."
+    },
+    {
+      "role": "assistant",
+      "content": "* Interior photographs must include bedrooms.\n* Comparable photos should include side yard if possible.\n\nFHA Report Photograph Requirements: interior photos include bedrooms, comp photos include side yard (if possible)."
+    }
+  ]
+}

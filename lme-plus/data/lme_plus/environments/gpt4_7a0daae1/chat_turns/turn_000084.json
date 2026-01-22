@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 84,
+  "session_index": 8,
+  "session_id": "sharegpt_n3kgf14_29",
+  "turn_in_session": 8,
+  "date": "2023/03/09 (Thu) 19:50",
+  "role": "assistant",
+  "content": "Yes, that is correct. When a change is made through the API, the system making the change must submit the name of the system as part of the request. The system name must be valid and match the client ID. The name is then stored in the \"System\" attribute of the DynamoDB table. Examples of system names could include \"Change of Ownership\" and \"Polestar app\". This allows the service to track which system initiated the change and associate it with the corresponding client ID.",
+  "has_answer": false
+}

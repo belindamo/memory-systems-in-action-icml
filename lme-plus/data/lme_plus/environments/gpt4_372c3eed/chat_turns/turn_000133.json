@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 133,
+  "session_index": 13,
+  "session_id": "sharegpt_E6mafmR_0",
+  "turn_in_session": 3,
+  "date": "2021/08/20 (Fri) 09:51",
+  "role": "assistant",
+  "content": "Here is an example data model for the Primary Driver module using DynamoDB:\n```\nTable name: PrimaryDrivers\n\nPrimary key: \n    VIN (string) - the VIN of the car associated with the primary driver\n\nSort key: \n    Timestamp (string) - the timestamp when the primary driver was registered or updated\n\nAttributes:\n    PolestarID (string) - the Polestar ID of the primary driver\n    System (string) - the system that made the update (POMS, PolestarID auth API, M2M auth API)\n    UserID (string) - the user ID of the person who made the update (if the change was made using Polestar ID auth API)\n    ClientID (string) - the client ID of the service that made the change (if the change was made using M2M auth API)\n    EventID (string) - the event ID that caused the change (if the update was based on an event)\n    EventTimestamp (string) - the timestamp when the event was emitted (if the update was based on an event)\n    OrderID (string) - the order ID from the event (if the primary driver was registered based on an event from POMS)\n    EndTimestamp (string) - the timestamp when the primary driver was removed (if applicable)\n```\nIn this model, the VIN is the primary key and the Timestamp is the sort key. This allows for efficient querying and sorting based on VIN and timestamp. The attributes provide all the relevant information about the primary driver, including the system that made the update, the event ID and timestamp (if applicable), and the end timestamp (if the primary driver was removed).\n\nNote that this is just one possible data model for the Primary Driver module. Other data models may be more suitable depending on the specific requirements and use cases of the service.",
+  "has_answer": false
+}

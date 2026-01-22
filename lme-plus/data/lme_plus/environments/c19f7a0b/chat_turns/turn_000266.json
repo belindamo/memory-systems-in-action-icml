@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 266,
+  "session_index": 26,
+  "session_id": "sharegpt_x5iwfyV_295",
+  "turn_in_session": 2,
+  "date": "2023/05/25 (Thu) 16:59",
+  "role": "assistant",
+  "content": "Here's a new method `is_upset` extracted from the given code:\n```python\nclass Tournament:\n\n    # ... (previous code)\n\n    def is_upset(self, a: Team, b: Team):\n        seed_a, seed_b = a.team_seed, b.team_seed\n        historical_upset_rate = self.historical_upset_rate(seed_a, seed_b)\n\n        a_is_better_score = a.ken_pom_score > b.ken_pom_score\n        better_team = a if a_is_better_score else b\n        worse_team = b if a_is_better_score else a\n\n        statistical = self.calculate_win_probability(worse_team, better_team)\n\n        # Noise is added by using historical upset rates rather than team specific KenPom scores\n        probability = (1 - self.noise) * statistical + self.noise * historical_upset_rate\n\n        # If a random number is less than the probability of an upset, return True\n        if np.random.rand() < probability:\n            return True\n        # Otherwise, return False\n        else:\n            return False\n```\nThe `is_upset` function takes two `Team` objects, `a` and `b`, and determines if `a` beating `b` would be considered an upset. It returns `True` if it's an upset and `False` otherwise.",
+  "has_answer": false
+}

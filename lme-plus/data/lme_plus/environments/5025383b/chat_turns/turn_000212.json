@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 212,
+  "session_index": 25,
+  "session_id": "sharegpt_XIeVqV1_34",
+  "turn_in_session": 0,
+  "date": "2023/05/26 (Fri) 14:42",
+  "role": "user",
+  "content": "the problem i have succesfully downlaod but how can i save them in a specefied directory the issue im having if i download nothidden it replaces my hiddenfiles, -rw-rw-rw- 1 1001 0 3563 Mar 03 2022 passwd\n-rw-rw-rw- 1 1001 0 2074 Mar 03 2022 shadow\n226 Directory send OK.\nftp> cd ..\n250 Directory successfully changed.\nftp> ls\n200 EPRT command successful. Consider using EPSV.\n150 Here comes the directory listing.\ndrwxr-xr-x 2 0 0 4096 Feb 01 2021 hiddenftpfolder\ndrwxr-xr-x 2 0 0 4096 Jan 28 2022 nothidden\n226 Directory send OK.\nftp> cd nothidden\n250 Directory successfully changed.\nftp> ls\n200 EPRT command successful. Consider using EPSV.\n150 Here comes the directory listing.\n-rw-r--r-- 1 0 0 24 Jan 28 2022 flag3\n-rw-r--r-- 1 0 0 3487 Jan 28 2022 passwd\n-rw-r--r-- 1 0 0 1992 Jan 28 2022 shadow\n226 Directory send OK.\nftp> get flag3\nlocal: flag3 remote: flag3\n200 EPRT command successful. Consider using EPSV.\n150 Opening BINARY mode data connection for flag3 (24 bytes).\n100% |\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*| 24 28.33 KiB/s 00:00 ETA\n226 Transfer complete.\n24 bytes received in 00:00 (8.43 KiB/s)\nftp> get passwd\nlocal: passwd remote: passwd\n200 EPRT command successful. Consider using EPSV.\n150 Opening BINARY mode data connection for passwd (3487 bytes).\n100% |\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*| 3487 8.39 MiB/s 00:00 ETA\n226 Transfer complete.\n3487 bytes received in 00:00 (2.39 MiB/s)\nftp> get shadow\nlocal: shadow remote: shadow\n200 EPRT command successful. Consider using EPSV.\n150 Opening BINARY mode data connection for shadow (1992 bytes).\n100% |\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*| 1992 1.98 MiB/s 00:00 ETA\n226 Transfer complete.\n1992 bytes received in 00:00 (780.93 KiB/s)",
+  "has_answer": false
+}

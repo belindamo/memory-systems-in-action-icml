@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 293,
+  "session_index": 26,
+  "session_id": "sharegpt_gfhUw40_17",
+  "turn_in_session": 2,
+  "date": "2023/04/11 (Tue) 17:33",
+  "role": "assistant",
+  "content": "Certainly! Here is the modified query that uses the table `payment_service.catalog_payments` instead of `allpayments`, calls the users `subscribers` instead of `payers`, and uses `status` instead of `state`:\n```\nSELECT COUNT(DISTINCT user_id) AS subscribers_last_7_days,\n       (SELECT COALESCE(COUNT(DISTINCT user_id), 0)\n        FROM payment_service.catalog_payments\n        WHERE status = 'paid' AND created_at BETWEEN current_date - interval '14 days' AND current_date - interval '7 days') AS subscribers_previous_period,\n       (100 - (SELECT COALESCE(COUNT(DISTINCT user_id), 0)::float\n               FROM payment_service.catalog_payments\n               WHERE status = 'paid' AND created_at BETWEEN current_date - interval '14 days' AND current_date - interval '7 days') / COUNT(DISTINCT user_id)::float * 100) AS growth_percentage\nFROM payment_service.catalog_payments\nWHERE status = 'paid' AND created_at >= current_date - interval '7 days'\n```\nThis will return the number of distinct `user_id`s that have a `status` of `'paid'` and were created within the last 7 days (including today) as `subscribers_last_7_days`, and the number of distinct `user_id`s that have a",
+  "has_answer": false
+}

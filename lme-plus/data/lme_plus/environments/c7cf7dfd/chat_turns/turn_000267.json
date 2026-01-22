@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 267,
+  "session_index": 27,
+  "session_id": "sharegpt_BLxHzg8_0",
+  "turn_in_session": 3,
+  "date": "2023/05/26 (Fri) 11:43",
+  "role": "assistant",
+  "content": "To run a SELECT statement using the Snowflake Web API, you can use the Snowflake REST API to execute a SQL statement and retrieve the results.\n\nHere's an example cURL command that demonstrates how to run a SELECT statement using the Snowflake Web API:\n```vbnet\ncurl -X POST \\\n  'https://<ACCOUNT_NAME>.snowflakecomputing.com/rest/v1/query/executing' \\\n  -H 'Authorization: Bearer <TOKEN>' \\\n  -H 'Content-Type: application/json' \\\n  -d '{\n        \"sqlText\": \"SELECT * FROM <TABLE_NAME>\",\n        \"sequenceId\": 0,\n        \"isInternal\": false,\n        \"binds\": [],\n        \"describeOnly\": false,\n        \"parameters\": [],\n        \"clientData\": {\n            \"APP_ID\": \"my_app_id\",\n            \"APP_VERSION\": \"1.0.0\",\n            \"APP_NAME\": \"my_app_name\",\n            \"APP_HOST\": \"my_app_host\"\n        }\n    }'\n```\nIn this example, you'll need to replace `<ACCOUNT_NAME>` with your Snowflake account name, `<TOKEN>` with a valid Snowflake access token, and `<TABLE_NAME>` with the name of the table you want to query. You can obtain an access token by authenticating with the Snowflake Web API using your Snowflake account credentials.\n\nWhen you run this command, Snowflake will execute the SQL statement and return the results in JSON format. You can parse the JSON response to retrieve the results of the SELECT statement.\n\nNote that the Snowflake Web API has some limitations and is intended for use in automated or programmatic workflows rather than interactive use. If you need to run queries interactively, you may prefer to use a Snowflake client or the Snowflake web UI.",
+  "has_answer": false
+}

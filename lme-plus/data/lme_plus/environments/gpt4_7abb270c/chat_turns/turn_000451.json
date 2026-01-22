@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 451,
+  "session_index": 46,
+  "session_id": "sharegpt_5tdvozz_0",
+  "turn_in_session": 6,
+  "date": "2023/03/04 (Sat) 14:26",
+  "role": "user",
+  "content": "Here is a draft of the data model that I have design, can you give some suggestions based on this? \n\nUser\n---------\n- jira id: string\n- discord id: string\n- type: UserType\n- excludedRules: EventRule[]\n\nEventRule\n--------\n- type: string // webhook event type\n- targets: UserType[]\n- exclusion: User[]\n- includeInvokedUser: boolean\n\nUserType\n-------\n- users: User[]\n- name: string\n- registeredRules: EventRule[]\n\nrelations are, between User and EventRule there is many to many, between UserType to EventRule there is many to many, and from UserType to User there is one to many.",
+  "has_answer": false
+}

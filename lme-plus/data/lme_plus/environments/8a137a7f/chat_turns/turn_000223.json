@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 223,
+  "session_index": 21,
+  "session_id": "sharegpt_d9GL0oF_0",
+  "turn_in_session": 12,
+  "date": "2023/05/24 (Wed) 15:15",
+  "role": "user",
+  "content": "What is the difference in data transmission delivery and reliability between TCP and UDP?\nA. TCP transmits data at a higher rate and ensures packet delivery. UDP retransmits lost data to ensure applications receive the data on the remote end.\nB. TCP requires the connection to be established before transmitting data. UDP transmits data at a higher rate without ensuring packet delivery.\nC. UDP sets up a connection between both devices before transmitting data. TCP uses the three-way handshake to transmit data with a reliable connection.\nD. UDP is used for multicast and broadcast communication. TCP is used for unicast communication and transmits data at a higher rate with error checking.",
+  "has_answer": false
+}

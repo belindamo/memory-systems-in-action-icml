@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 58,
+  "session_index": 6,
+  "session_id": "sharegpt_8lprfdF_0",
+  "turn_in_session": 4,
+  "date": "2023/05/21 (Sun) 09:54",
+  "role": "user",
+  "content": "import React from 'react';\nimport { StyleSheet, Text, TouchableOpacity, View, FlatList } from 'react-native';\nimport tw from 'tailwind-react-native-classnames';\nimport { Icon } from 'react-native-elements';\nimport { useDispatch } from 'react-redux';\nimport { useNavigation } from '@react-navigation/native';\nimport { setDestination } from '../slices/navSlice';\nimport { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';\nimport {GOOGLE\\_MAPS\\_APIKEY} from \"@env\";\n\n// import Icon from 'react-native-ionicons';\n//react redux which is a hook\nconst data = [ \n {\n id:\"123\",\n icon:\"home\",\n location: \"Home\",\n destination: \"Sector G-9/1, Street 49, Islamabad\",\n },\n {\n id:\"456\",\n icon:\"briefcase\",\n location: \"Work\",\n destination: \"Sector I-9, STP, Islamabad\",\n },\n {\n id:\"789\",\n icon:\"business\",\n location: \"Business\",\n destination: \"Olympus, F-11, Islamabad\",\n },\n {\n id:\"101\",\n icon:\"football\",\n location: \"Game\",\n destination: \"Total, F-6, Islamabad\",\n },\n\n];\nconst NavFavourites = () => {\n return (\n  item.id}\n ItemSeparatorComponent = {() => (\n \n )}\n renderItem = {({ item: {location, destination, icon } }) => (\n \n{location}\n{destination}\n \n )}\n />\n );\n\n};\nexport default NavFavourites;\n\nconst styles = StyleSheet.create({})",
+  "has_answer": false
+}

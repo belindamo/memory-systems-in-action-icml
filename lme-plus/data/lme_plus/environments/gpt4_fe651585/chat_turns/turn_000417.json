@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 417,
+  "session_index": 41,
+  "session_id": "sharegpt_XKH6h44_0",
+  "turn_in_session": 5,
+  "date": "2023/03/17 (Fri) 17:24",
+  "role": "assistant",
+  "content": "Yes, the returned array from the `getMany` function is still mutable. The `readonly` modifier only affects the input `keys` array and doesn't affect the output array's mutability.",
+  "has_answer": false
+}

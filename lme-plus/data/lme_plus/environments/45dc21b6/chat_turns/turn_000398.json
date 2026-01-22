@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 398,
+  "session_index": 40,
+  "session_id": "sharegpt_E69B6Mu_0",
+  "turn_in_session": 5,
+  "date": "2023/05/30 (Tue) 10:29",
+  "role": "assistant",
+  "content": "Here is an example of the directory tree for a Docker Compose server with Nginx, Letsencrypt certbot, vhost, PHP 8.1, and MariaDB:\n```\n.\n\u251c\u2500\u2500 Dockerfile\n\u251c\u2500\u2500 docker-compose.yml\n\u251c\u2500\u2500 default.conf\n\u251c\u2500\u2500 entrypoint.sh\n\u251c\u2500\u2500 .env\n\u251c\u2500\u2500 src\n\u2502   \u251c\u2500\u2500 index.php\n\u2502   \u2514\u2500\u2500 ...\n\u2514\u2500\u2500 certs\n    \u251c\u2500\u2500 live\n    \u2502   \u2514\u2500\u2500 example.com\n    \u251c\u2500\u2500 options-ssl-nginx.conf\n    \u251c\u2500\u2500 ssl-dhparams.pem\n    \u2514\u2500\u2500 ...\n```",
+  "has_answer": false
+}

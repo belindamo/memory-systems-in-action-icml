@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 329,
+  "session_index": 29,
+  "session_id": "sharegpt_RReCreP_0",
+  "turn_in_session": 8,
+  "date": "2023/05/23 (Tue) 15:14",
+  "role": "user",
+  "content": "You can also represent a shape. Here is an example of a shape element - \n\n\"bTGzy\": {\n \"properties\": {\n \"height\": 50,\n \"left\": 50,\n \"top\": 50,\n \"width\": 50,\n \"zindex\": 6,\n \"border\\_roundness\": 50,\n \"bgcolor\": \"rgb(255,125,125,0.8)\"\n },\n \"type\": \"Shape\",\n \"id\": \"bTGzz\",\n \"default\\_name\": \"Shape A\"\n }\n\nNotice the type is Shape here.",
+  "has_answer": false
+}

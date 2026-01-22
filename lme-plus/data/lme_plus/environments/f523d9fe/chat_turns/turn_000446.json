@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 446,
+  "session_index": 45,
+  "session_id": "sharegpt_h10ilNn_0",
+  "turn_in_session": 0,
+  "date": "2023/05/29 (Mon) 21:17",
+  "role": "user",
+  "content": "generate a list for: Smoothie Bowl, Avocado Toast,\n\ninstructions without proportions,\nyou HAVE to include the calories\n\nuse this structure: \n\nDish Name: Dish\nIngredients: \n1. ingredient (ammount) (unit)\n2. ingredient (ammount) (unit)\nPreparation time: min,\nCalories: number,\nPreparation Instructions: \n1. instruction\n2. instruction",
+  "has_answer": false
+}

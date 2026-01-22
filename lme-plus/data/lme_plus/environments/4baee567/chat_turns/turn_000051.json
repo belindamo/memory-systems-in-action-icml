@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 51,
+  "session_index": 4,
+  "session_id": "sharegpt_xasomVD_53",
+  "turn_in_session": 1,
+  "date": "2023/05/21 (Sun) 14:37",
+  "role": "user",
+  "content": "Ok, I want you to remember all the risks, task categories and tools we have generated previously. We are now going to generate a long list of possible maintenance tasks. Tasks can be one out of two types: #1 Maintenance tasks directly related to one of the risks we have generated, or #2 General maintenance tasks that home owners who want to take really good care of their home should do yearly.\n\nI want to start with only creating tasks related to our risk list (#1), and we'll come back to general tasks (#2) later on.\n\nTask name: Give each task a short and self-explanatory name.\nTask type: #1 or #2 from above. (All tasks right now will be #1 since we're waiting with #2). \nTask category: Leave this empty for all tasks right now. \nWhy Explanation: Help the user understand why they should do this task, to motivate them to take action. \nRisk lowered: Reference one of the risks you have generated before. It's important that absolutely all #1 tasks have a link to one or more Risks that you have generated before.\nImportance of task to lower risk: Number from 1-10 indicating how important the task is to take good care of your home over time. \nDetailed instructions: Give detailed, step by step instructions, on how to do the task. \nSeason: Each task should be linked to a season (Winter, Spring, Summer, Fall. If there isn't a good reason to do it in a specific season, just put it somewhere.)\nSeason relevance explanation: Explain why the task should be done in this season. (If there isn't a good explanation, leave blank. \nTools needed for task: List all tools needed to perform the task from the tools list we generated earlier.\n\nI want the format Airtable-ready. Let's start with 20 tasks.",
+  "has_answer": false
+}

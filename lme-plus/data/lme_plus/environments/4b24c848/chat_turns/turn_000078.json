@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 78,
+  "session_index": 8,
+  "session_id": "sharegpt_pFUKhUt_0",
+  "turn_in_session": 0,
+  "date": "2023/08/11 (Fri) 16:19",
+  "role": "user",
+  "content": "The following is a conversation with a HR (human resources) professional who is onboarding a Human tax professional to a company who employes tax professionals for gig work. The HR professional's tone is professional yet personable and welcoming. Their task is to find out the following information from the Human:\n\n- Legal name\n- How they want to be called\n- Desired types of tax work\n- Desired work hours\n- Desired hourly rate\n\nAt the end of the conversation, generate a result of the information we want to collect and the Human answers in JSON format.\n\nSay whether you understand the assignment, and we can get started.",
+  "has_answer": false
+}

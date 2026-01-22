@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 432,
+  "session_index": 42,
+  "session_id": "sharegpt_buXamwc_7",
+  "turn_in_session": 3,
+  "date": "2023/05/17 (Wed) 10:19",
+  "role": "user",
+  "content": "\"apt-get install\" is old. Please use \"apt install\" Also, \"apt-get install -y certbot certbot-dns-google\" is old and doesn't work.",
+  "has_answer": false
+}

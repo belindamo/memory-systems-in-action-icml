@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 158,
+  "session_index": 15,
+  "session_id": "sharegpt_7vXEdO9_99",
+  "turn_in_session": 5,
+  "date": "2023/05/24 (Wed) 18:07",
+  "role": "user",
+  "content": "I would like the policies to not be defined in C# code but rather managed centrally and then evaluated using a rego rule that looks at the JSON data of user to application right assignments and their constraints",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 569,
+  "session_index": 52,
+  "session_id": "sharegpt_FQi5DlJ_48",
+  "turn_in_session": 0,
+  "date": "2023/05/29 (Mon) 03:22",
+  "role": "user",
+  "content": "$(document).ready(function () {\n $(\"#create-post-form\").submit(function (e) {\n e.preventDefault();\n var dvdTitle = $(\"#dvdTitle\").val();\n var maxPrice = $(\"#maxPrice\").val();\n var category = $(\"#exampleSelect\").val();\n\n \n\n if (maxPrice == \"\" && category == null) {\n\n $.ajax({\n type: \"GET\",\n url: \"http://localhost:8081/filmtitle\",\n data: {\n dvdTitle: dvdTitle,\n\n },\n success: function (data) {\n sessionStorage.setItem(\"searchResults\", JSON.stringify(data));\n window.location.assign(\"searchResults.html\");\n\n // Open a new page with the search results\n //window.open(\"results.php?data=\" + data, \"\\_blank\");\n }\n });\n\n }\n\n else {\n $.ajax({\n type: \"GET\",\n url: \"http://localhost:8081/categoryname\",\n data: {\n dvdTitle: dvdTitle,\n maxPrice: maxPrice,\n category: category\n },\n success: function (data) {\n sessionStorage.setItem(\"searchResults\", JSON.stringify(data));\n window.location.assign(\"searchResults.html\");\n\n // Open a new page with the search results\n //window.open(\"results.php?data=\" + data, \"\\_blank\");\n }\n });\n }\n });\n });\n\ngiven the code above and the code given below\nSearch for DVD title:\n\nMax Price:\n\nSelect Category\n\nSearch\nHow do I show an error message dvdTitle is empty and category is null?",
+  "has_answer": false
+}

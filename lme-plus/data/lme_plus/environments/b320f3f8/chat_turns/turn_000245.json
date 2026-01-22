@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 245,
+  "session_index": 24,
+  "session_id": "sharegpt_3w5VLHY_0",
+  "turn_in_session": 1,
+  "date": "2023/05/25 (Thu) 13:44",
+  "role": "assistant",
+  "content": "The probability of quads against quads in heads-up Texas Hold'em is extremely low, but it is not zero.\n\nTo calculate this probability, we need to consider the number of ways that both players can make quads and the number of possible board combinations.\n\nAssuming that both players are dealt a pocket pair, the probability of one player making quads on the flop is approximately 0.25%, or 1 in 400. The probability of the other player also making quads on the flop is the same.\n\nSo, the probability of both players making quads on the flop is approximately (0.0025)^2, or 0.00000625, or about 1 in 160,000.\n\nIf neither player makes quads on the flop, the probability of one of them making quads on the turn is approximately 0.45%, or 1 in 220. The probability of the other player also making quads on the turn is the same.\n\nSo, the probability of both players making quads on the turn is approximately (0.0045)^2, or 0.00002025, or about 1 in 49,000.\n\nIf neither player makes quads on the turn, the probability of one of them making quads on the river is approximately 2.17%, or 1 in 46. The probability of the other player also making quads on the river is the same.\n\nSo, the probability of both players making quads on the river is approximately (0.0217)^2, or 0.00047189, or about 1 in 2,100.\n\nTherefore, the overall probability of quads against quads in heads-up Texas Hold'em is the sum of these three probabilities, which is approximately 0.00049819, or about 1 in 2,007.",
+  "has_answer": false
+}

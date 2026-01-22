@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 292,
+  "session_index": 26,
+  "session_id": "sharegpt_iwcVyKX_0",
+  "turn_in_session": 13,
+  "date": "2023/05/28 (Sun) 16:19",
+  "role": "assistant",
+  "content": "Here is a GraphQL query that returns the top tokens on the Uniswap V3 network, sorted by TVL, and includes their current price, price change, and TVL:\n```less\n{\n  tokens(first: 10, orderBy: tradeVolumeUSD, orderDirection: desc) {\n    id\n    symbol\n    derivedETH\n    totalLiquidity\n    tradeVolumeUSD\n    volumeUSD\n    dayData(orderBy: date, orderDirection: desc, first: 2) {\n      priceUSD\n    }\n  }\n}\n```\nIn this query, we are querying for the top 10 tokens on the Uniswap V3 network, sorted by `tradeVolumeUSD` in descending order. We are also returning the token ID, symbol, `derivedETH` (the token's price in ETH), `totalLiquidity` (the TVL of the token), `tradeVolumeUSD` (the 24h trading volume of the token, denominated in USD), and `volumeUSD` (the 24h volume of the token, denominated in USD).\n\nWe are also using a subquery to retrieve the current `priceUSD` of each token. This is done by querying the `dayData` field for the most recent two days and returning the `priceUSD` for the most recent day.\n\nYou can modify the `first` parameter to return more or fewer tokens, and adjust the `orderBy` and `orderDirection` parameters to sort the tokens based on different metrics or in a different order.",
+  "has_answer": false
+}

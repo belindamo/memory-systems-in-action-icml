@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 126,
+  "session_index": 11,
+  "session_id": "sharegpt_JHGwlee_33",
+  "turn_in_session": 2,
+  "date": "2023/07/22 (Sat) 19:24",
+  "role": "assistant",
+  "content": "The code in the \"default\" file located in \"/etc/freeradius/3.0/sites-enabled\" is the default configuration for the FreeRADIUS server. This code is executed when a client tries to connect to the server and no specific virtual server is defined for the client.\n\nYou don't need to remove the default file, but you will need to include your new virtual server, \"my\\_virtual\\_server\" in the default file so that the server knows to use it for authentication.\n\nYou can include your new virtual server by adding the following line at the end of the default file:\n```\n$INCLUDE sites-enabled/my_virtual_server\n```\nThis will tell the server to include the configurations in your new virtual server file when it's processing the requests.\n\nIt's recommended to check the official documentation of FreeRADIUS to find out how to include virtual servers.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 343,
+  "session_index": 25,
+  "session_id": "sharegpt_KyDTtHX_0",
+  "turn_in_session": 2,
+  "date": "2022/03/09 (Wed) 08:52",
+  "role": "user",
+  "content": "Explain \"Value-blindness - there is no way for a UTXO script to provide fine-grained control over the amount that can be withdrawn. For example, one powerful use case of an oracle contract would be a hedging contract, where A and B put in $1000 worth of BTC and after 30 days the script sends $1000 worth of BTC to A and the rest to B. This would require an oracle to determine the value of 1 BTC in USD, but even then it is a massive improvement in terms of trust and infrastructure requirement over the fully centralized solutions that are available now. However, because UTXO are all-or-nothing, the only way to achieve this is through the very inefficient hack of having many UTXO of varying denominations (eg. one UTXO of 2k for every k up to 30) and having O pick which UTXO to send to A and which to B.\"",
+  "has_answer": false
+}

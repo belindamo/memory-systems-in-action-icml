@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 449,
+  "session_index": 45,
+  "session_id": "sharegpt_57Bupsp_0",
+  "turn_in_session": 0,
+  "date": "2023/03/17 (Fri) 03:49",
+  "role": "user",
+  "content": "Design a file sync service in which a user can upload a file to the cloud and it gets synced across all of his/her devices.\nbe creative and dive into the product details and add constraints and features you think would be important.\n\nCore Requirements:\n- Sync all the files across all the devices of the user\n- A file could be at max 4GB big\n- The upload and downloads should be efficient and resumable\n- User's bandwidth is critical, so be efficient.\n\nHigh-Level Requirements:\n- make your high-level components operate with high availability\n- ensure that the data in your system is durable, no matter what happens\n- define how your system would behave while scaling up and scaling-down\n- make your system cost-effective and provide a justification for the same\n- describe how capacity planning helped you make a good design decision\n- think about how other services will interact with your service\n\nMicro Requirements\n- ensure the data in your system is never going in an inconsistent state\n- ensure your system is free of deadlocks (if applicable)\n- ensure that the throughput of your system is not affected by locking, if it does, state how it would affect\n\nDesign Document:\nCreate a design document for this system/feature stating all critical design decisions, tradeoffs, components, services, and communications. Also specify how your system handles at scale, and what will eventually become a chokepoint.\n\nDo not create unnecessary components, just to make the design look complicated. A good design is always simple and elegant.",
+  "has_answer": false
+}

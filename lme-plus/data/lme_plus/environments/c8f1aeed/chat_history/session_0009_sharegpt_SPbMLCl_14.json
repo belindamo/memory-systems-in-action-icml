@@ -1,0 +1,39 @@
+{
+  "session_id": "sharegpt_SPbMLCl_14",
+  "session_index": 9,
+  "date": "2023/05/21 (Sun) 09:35",
+  "turns": [
+    {
+      "role": "user",
+      "content": "Here is also some sample data. \n\nSAMPLE:\n{\n \"\\_id\": {\n \"$oid\": \"616d59f848cb8e05802df908\"\n },\n \"specialtyAreas\": [\n {\n \"$oid\": \"6156a3590041b25122e0c227\"\n }\n ],\n \"experience\": [\n \"test hdjkhj dsadas \",\n \"test2jjjj\",\n \"jhbhghj\",\n \"kkkkkk\",\n \"Cambridge\\_AQA\"\n ],\n \"status\": \"active\",\n \"npi\": \"12345\",\n \"staffCostId\": {\n \"$oid\": \"611a33b45f3446134fc414b5\"\n },\n \"specializationId\": {\n \"$oid\": \"615a8a9fa803cd5aa0549405\"\n },\n \"aboutDoctor\": \"Doctor cookie\",\n \"userId\": {\n \"$oid\": \"616d59f648cb8e05802df906\"\n },\n \"calendarId\": \"egvqisi9w4br2rcl3wa8m6eja\",\n \"createdAt\": {\n \"$date\": {\n \"$numberLong\": \"1634556408189\"\n }\n },\n \"updatedAt\": {\n \"$date\": {\n \"$numberLong\": \"1676968769579\"\n }\n },\n \"\\_\\_v\": 0,\n \"workHours\": [\n {\n \"queue\": false,\n \"appointments\": true,\n \"startTime\": 0,\n \"endTime\": 1320\n },\n {\n \"queue\": true,\n \"appointments\": true,\n \"startTime\": 3060,\n \"endTime\": 4498\n },\n {\n \"queue\": true,\n \"appointments\": true,\n \"startTime\": 5400,\n \"endTime\": 5640\n },\n {\n \"queue\": true,\n \"appointments\": true,\n \"startTime\": 5700,\n \"endTime\": 6840\n },\n {\n \"queue\": false,\n \"appointments\": true,\n \"startTime\": 8820,\n \"endTime\": 10080\n }\n ],\n \"overRide\": {\n \"available\": [\n {\n \"startTime\": \"2021-11-07T02:00:00.000Z\",\n \"endTime\": \"2021-11-06T04:00:00.000Z\",\n \"queue\": false,\n \"appointments\": true\n }\n ],\n \"unavailable\": [\n \"2022-01-03\",\n \"2022-01-10\",\n \"2022-01-17\"\n ]\n },\n \"rating\": 3.75,\n \"specialization\": \"Family Medicine\",\n \"isEmailUpdating\": false,\n \"notificationPreferences\": {\n \"notifyWhenOnline\": true,\n \"emailNotification\": {\n \"patientAssignment\": true,\n \"appointmentCreation\": true,\n \"appointmentCancelation\": true,\n \"appointmentUpdation\": true,\n \"appointmentReminderFirst\": true,\n \"appointmentReminderSecond\": true\n },\n \"textNotification\": {\n \"patientAssignment\": true,\n \"appointmentCreation\": true,\n \"appointmentCancelation\": true,\n \"appointmentUpdation\": true,\n \"appointmentReminderFirst\": true,\n \"appointmentReminderSecond\": true\n }\n },\n \"shortBio\": \"\",\n \"nonWorkingDays\": [\n 1,\n 5\n ]\n}"
+    },
+    {
+      "role": "assistant",
+      "content": "This sample data represents a doctor's profile with various attributes such as specialty areas, experience, NPI, working hours, exceptions, rating, and notification preferences. Here's a brief overview of some key data points:\n\n* `specialtyAreas`: This field stores the doctor's specialty area IDs.\n* `experience`: An array containing various experiences or qualifications of the doctor.\n* `npi`: The National Provider Identifier for the doctor.\n* `workHours`: An array of objects containing the doctor's working hours, with fields such as `queue`, `appointments`, `startTime`, and `endTime`.\n* `overRide`: An object containing the doctor's availability exceptions. The `available` field stores an array of objects specifying the doctor's exceptional availability, while the `unavailable` field stores an array of dates when the doctor is entirely unavailable.\n* `rating`: The doctor's average rating.\n* `specialization`: The doctor's area of specialization, such as \"Family Medicine.\"\n* `notificationPreferences`: An object containing the doctor's notification preferences for email and text notifications.\n* `shortBio`: A brief description or biography of the doctor.\n* `nonWorkingDays`: An array of integers representing the days of the week when the doctor is not working (e.g., 1 for Monday, 5 for Friday).\n\nThis data can be used to manage a doctor's profile, schedule, and"
+    },
+    {
+      "role": "user",
+      "content": "Given the above documentation. Can you give me a few sample documents matching the given sample that have valid 40 hour work weeks with various upcoming exceptions?"
+    },
+    {
+      "role": "assistant",
+      "content": "Here are three sample documents with valid 40-hour work weeks and various upcoming exceptions:\n\n1. Doctor A:\n```javascript\n{\n  \"_id\": {\n    \"$oid\": \"1234567890abcdef12345678\"\n  },\n  \"specialtyAreas\": [\n    {\n      \"$oid\": \"6156a3590041b25122e0c227\"\n    }\n  ],\n  // Other fields...\n  \"workHours\": [\n    {\n      \"day\": \"Monday\",\n      \"startTime\": \"08:00\",\n      \"endTime\": \"17:00\",\n      \"queue\": false,\n      \"appointments\": true\n    },\n    {\n      \"day\": \"Tuesday\",\n      \"startTime\": \"08:00\",\n      \"endTime\": \"17:00\",\n      \"queue\": false,\n      \"appointments\": true\n    },\n    {\n      \"day\": \"Wednesday\",\n      \"startTime\": \"08:00\",\n      \"endTime\": \"17:00\",\n      \"queue\": false,\n      \"appointments\": true\n    },\n    {\n      \"day\": \"Thursday\",\n      \"startTime\": \"08:00\",\n      \"endTime\": \"17:00\",\n      \"queue\": false,\n      \"appointments\": true\n    },\n    {\n      \"day\": \"Friday\",\n      \"startTime\": \"08:00\",\n      \"endTime\": \"17:\n```"
+    },
+    {
+      "role": "user",
+      "content": "You seem to be using the FE format, and you should be using the DB format for work hours. See the documentation for details on this."
+    },
+    {
+      "role": "assistant",
+      "content": "Apologies for the confusion. Here are three sample documents using the DB format for work hours:\n\n1. Doctor A:\n```javascript\n{\n  \"_id\": {\n    \"$oid\": \"1234567890abcdef12345678\"\n  },\n  \"specialtyAreas\": [\n    {\n      \"$oid\": \"6156a3590041b25122e0c227\"\n    }\n  ],\n  // Other fields...\n  \"workHours\": [\n    {\n      \"queue\": false,\n      \"appointments\": true,\n      \"startTime\": 480,  // 08:00\n      \"endTime\": 1020    // 17:00\n    },\n    {\n      \"queue\": false,\n      \"appointments\": true,\n      \"startTime\": 1920, // 08:00 (next day)\n      \"endTime\": 2460    // 17:00 (next day)\n    },\n    {\n      \"queue\": false,\n      \"appointments\": true,\n      \"startTime\": 3360, // 08:00 (next day)\n      \"endTime\": 3900    // 17:00 (next day)\n    },\n    {\n      \"queue\": false,\n      \"appointments\": true,\n      \"startTime\": 4800, // 08:00 (next day)\n      \"endTime\": 5340    // 17:00 (next day)\n    },\n    {\n      \"queue\": false,\n      \"appointments\": true\n```"
+    },
+    {
+      "role": "user",
+      "content": "continue"
+    },
+    {
+      "role": "assistant",
+      "content": "```javascript\n      \"startTime\": 6240, // 08:00 (next day)\n      \"endTime\": 6780    // 17:00 (next day)\n    }\n  ],\n  \"overRide\": {\n    \"available\": [\n      {\n        \"startTime\": \"2023-04-03T12:00:00.000Z\",\n        \"endTime\": \"2023-04-03T16:00:00.000Z\",\n        \"queue\": false,\n        \"appointments\": true\n      }\n    ],\n    \"unavailable\": [\n      \"2023-04-04\"\n    ]\n  },\n  // Other fields...\n}\n```\n1. Doctor B:\n```javascript\n{\n  \"_id\": {\n    \"$oid\": \"234567890abcdef12345678\"\n  },\n  \"specialtyAreas\": [\n    {\n      \"$oid\": \"6156a3590041b25122e0c227\"\n    }\n  ],\n  // Other fields...\n  \"workHours\": [\n    {\n      \"queue\": false,\n      \"appointments\": true,\n      \"startTime\": 480,  // 08:00\n      \"endTime\": 960     // 16:00\n    },\n    {\n      \"queue\": false,\n      \"appointments\": true,\n      \"startTime\": 1920, // 08:00 (next day)\n      \"endTime\": 2400    // 16:00 (next day)\n    },\n    {\n```"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 157,
+  "session_index": 14,
+  "session_id": "sharegpt_Pwr1WrI_29",
+  "turn_in_session": 3,
+  "date": "2023/03/20 (Mon) 04:59",
+  "role": "user",
+  "content": "ce script me donne cette erreur \nStartTime: 11:55:46:87\nGenerate try: 1\nAttempting to download metadata from 'http://localhost:6800/service' using WS-Metadata Exchange or DISCO.\nMicrosoft (R) Service Model Metadata Tool\n[Microsoft (R) Windows (R) Communication Foundation, Version 4.8.3928.0]\nCopyright (c) Microsoft Corporation. All rights reserved.\n\nError: Cannot obtain Metadata from http://localhost:6800/service\n\nIf this is a Windows (R) Communication Foundation service to which you have access, please check that you have enabled metadata publishing at the specified address. For help enabling metadata publishing, please refer to the MSDN documentation at http://go.microsoft.com/fwlink/?LinkId=65455.\nWS-Metadata Exchange Error\n URI: http://localhost:6800/service\n\n Metadata contient une r\u00e9f\u00e9rence qui ne peut pas \u00eatre r\u00e9solue : 'http://localhost:6800/service'.\n\n Il n'existait pas de point de terminaison \u00e0 l'\u00e9coute sur http://localhost:6800/service pouvant accepter le message. Ceci est souvent d\u00fb \u00e0 une adresse ou une action SOAP incorrecte. S'il est pr\u00e9sent, voir l'\u00e9l\u00e9ment InnerException pour plus d'informations.\n\n Le serveur distant a retourn\u00e9 une erreur\u00a0: (404) Introuvable.\nHTTP GET Error\n URI: http://localhost:6800/service\n\n Une erreur s'est produite lors du t\u00e9l\u00e9chargement de 'http://localhost:6800/service'.\n\n Le d\u00e9lai d'attente de l'op\u00e9ration a expir\u00e9.\n\nIf you would like more help, type \"svcutil /?\"\nReturn code : 3",
+  "has_answer": false
+}

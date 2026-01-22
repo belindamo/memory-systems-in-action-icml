@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 324,
+  "session_index": 32,
+  "session_id": "sharegpt_MXRpmHy_0",
+  "turn_in_session": 3,
+  "date": "2023/04/11 (Tue) 13:11",
+  "role": "assistant",
+  "content": "There are several ways to check for stationarity in a time series, but some common methods include:\n\n1. Visual inspection: Plot the time series data and look for trends or patterns that change over time. If the mean or variance of the data appear to change over time, then the data is likely non-stationary.\n2. Augmented Dickey-Fuller (ADF) test: This is a statistical test that can be used to determine if a time series is stationary. The test statistic compares the level of a time series to a lagged version of itself, and if the test statistic is less than a critical value, then the null hypothesis of non-stationarity can be rejected.\n3. KPSS test: It is an alternative for ADF test and It is a test for the null hypothesis that the time series is trend stationary\n4. Hurst Exponent, it can be calculated using fractal dimension, It is a statistical test that helps to determine whether a time series has a long-term memory or not, Stationary time series are said to have no memory and the Hurst Exponent will be 0.5\n\nIn general, a stationary time series will have a constant mean, a constant variance, and a constant autocorrelation structure over time. These 3 properties can be tested separately or combined with stationarity test such as ADF and KPSS tests.",
+  "has_answer": false
+}

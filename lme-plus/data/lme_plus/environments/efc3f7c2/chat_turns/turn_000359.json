@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 359,
+  "session_index": 31,
+  "session_id": "sharegpt_bhZR2Sv_0",
+  "turn_in_session": 4,
+  "date": "2023/05/26 (Fri) 21:55",
+  "role": "user",
+  "content": "Let's further assume in both the training data set and when the model is applied our clients may not necessarily take 8 weeks of intervention from T1 to T8. Rather, they may drop out at anytime so the time sequence should be T1 to TN. And the goal of the system is to always feed the next best (defined as the course that is able to improve their psychological test result) course to the client. Please suggest necessary modification to the model",
+  "has_answer": false
+}

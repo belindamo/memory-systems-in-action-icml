@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 181,
+  "session_index": 16,
+  "session_id": "sharegpt_PxwLrQl_0",
+  "turn_in_session": 5,
+  "date": "2023/05/24 (Wed) 14:51",
+  "role": "assistant",
+  "content": "Interactive States of the App Bars Dynamic Island Component:\n\n| Element | State | Property | Color Token |\n| --- | --- | --- | --- |\n| Navigation Bar | Default | Background | primary |\n| Navigation Bar | Hover | Background | secondary |\n| Navigation Bar | Active | Background | accent |\n| Navigation Bar | Focus | Border | focus |\n| Navigation Bar | Disabled | Background | disabled |\n| Option | Default | Text color | primary |\n| Option | Hover | Text color | secondary |\n| Option | Active | Text color | accent |\n| Option | Focus | Border | focus |\n| Option | Disabled | Text color | disabled |\n\nNote: The table above describes a possible design for the interactive states of the App Bars Dynamic Island component. The actual design may vary depending on the specific requirements and style of the app. The color tokens are place holders and should be changed accordingly to the design system.\n\nIn the table above, for each element (Navigation Bar, Option), the state (Default, Hover, Active, Focus, Disabled) is described. For each state, the property that changes (background, text color, border), and the color token (hex, RGB or color name) that corresponds to the element and state. For example, when the Navigation Bar is in its default state, the background color is primary. When an option is in hover state, the text color is secondary.",
+  "has_answer": false
+}

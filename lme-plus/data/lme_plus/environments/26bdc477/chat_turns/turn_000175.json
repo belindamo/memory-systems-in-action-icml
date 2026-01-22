@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 175,
+  "session_index": 15,
+  "session_id": "sharegpt_G18Riup_0",
+  "turn_in_session": 11,
+  "date": "2023/03/07 (Tue) 07:24",
+  "role": "assistant",
+  "content": "Here is a bash script that does the following:\n\n1. Gets all secrets in a specified namespace\n2. For each secret, it exports the secret as a YAML file, decodes it using SOPS, and stores it as a Google Secret Manager secret\n3. Updates the secret references in the second cluster to reference the Google Secret Manager secret\n4. Applies the updated manifests to the second cluster\n```bash\n#!/bin/bash\n\n# Set the namespace\nNAMESPACE=\"<namespace>\"\n\n# Get all secrets in the specified namespace\nsecrets=$(kubectl get secrets -n $NAMESPACE -o json | jq -r '.items[].metadata.name')\n\n# Loop through each secret\nfor secret in $secrets; do\n  # Export the secret as a YAML file\n  kubectl get secret $secret -n $NAMESPACE -o yaml > secret.yaml\n\n  # Decode the secret using SOPS\n  sops -d secret.yaml > decrypted_secret.yaml\n\n  # Create a Google Secret Manager secret\n  gcloud secrets create $secret --replication-policy=\"automatic\"\n  gcloud secrets versions add $secret --data-file=decrypted_secret.yaml\n\n  # Update the secret references in the second cluster\n  echo \"apiVersion: v1\nkind: Secret\nmetadata:\n  name: $secret\ntype: Opaque\ndata:\" > secret-ref.yaml\n  keys=$(yq r secret.yaml data | awk '{print $1}')\n  for key in $keys; do\n    value=$(gcloud secrets versions access latest --secret=$secret | base64)\n    echo \"  $key: $value\" >> secret-ref.yaml\n  done\n\n  # Apply the updated manifests to the second cluster\n  kubectl apply -f secret-ref.yaml\ndone\n```\nNote: This script assumes that you have the necessary Google Cloud SDK components and dependencies installed, and that you have set up the `gcloud` CLI with the correct credentials and project.",
+  "has_answer": false
+}

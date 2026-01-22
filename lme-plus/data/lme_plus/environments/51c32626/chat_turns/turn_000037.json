@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 37,
+  "session_index": 3,
+  "session_id": "sharegpt_qLhP2Ty_0",
+  "turn_in_session": 7,
+  "date": "2023/05/20 (Sat) 12:13",
+  "role": "assistant",
+  "content": "The PayPal API does not prevent the user from changing the values of a recurring subscription, such as the amount. However, you can set the `auto_bill_amount` parameter in the `merchant_preferences` object to `YES`, which will automatically bill the payer the amount specified in the plan for each billing cycle, regardless of any changes made to the payer's account.\n\nHere's an example:\n```rust\nmerchant_preferences: {\n    auto_bill_amount: 'YES',\n    cancel_url: 'https://example.com/cancel',\n    return_url: 'https://example.com/return',\n    notify_url: 'https://example.com/notify'\n  }\n```\nIt's also a good practice to keep track of changes to the billing agreement, such as updates to the payer's information or changes to the plan, using the PayPal IPN (Instant Payment Notification) system. The IPN system sends notifications to your server whenever a change is made to the billing agreement, allowing you to update your records accordingly.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 215,
+  "session_index": 18,
+  "session_id": "sharegpt_t3f69h7_23",
+  "turn_in_session": 11,
+  "date": "2023/05/24 (Wed) 01:27",
+  "role": "user",
+  "content": "What SMPTE timecode used for in this context? the feed is just an AES67 audio radio broadcast. FOr ad stiching in the app, the stream is expect to signal the ad breaks, by maybe a SCTE-104 implementation, which may be added to the UDP packet. Would you tell something is wrong here?",
+  "has_answer": false
+}

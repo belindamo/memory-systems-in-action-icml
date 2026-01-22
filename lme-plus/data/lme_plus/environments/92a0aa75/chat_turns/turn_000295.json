@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 295,
+  "session_index": 27,
+  "session_id": "sharegpt_U9Sujf2_9",
+  "turn_in_session": 4,
+  "date": "2023/05/27 (Sat) 08:22",
+  "role": "assistant",
+  "content": "To achieve your requirements, you can create a new collection called `crawl_queue` and make a few adjustments to the existing schema. Here's how:\n\n**New collections:**\n\n1. `crawl_queue`\n\n**Fields and relationships:**\n\n1. `crawl_queue` collection:\n\t* \\_id (ObjectId)\n\t* website\\_id (ObjectId, reference to `websites._id` or `classic_websites._id`)\n\t* website\\_type (string, either \"immersive\" or \"classic\")\n\t* crawl\\_status (string, e.g., \"pending\", \"crawling\", \"crawled\")\n\t* assigned\\_crawler\\_id (string, optional, identifier of the assigned crawler)\n\t* timestamp (Date, time when the website was added to the queue)\n\n**How to use the schema:**\n\n1. When starting the crawl with a single URL, add an entry to the `crawl_queue` with the URL's corresponding `website_id`, `website_type`, and `crawl_status` set to \"pending\".\n2. When a crawler is ready to process a new website, it should query the `crawl_queue` for an entry with `crawl_status` set to \"pending\" and without an `assigned_crawler_id`. The crawler should then update the `assigned_crawler_id` field with its own identifier and change the `crawl_status` to \"crawling\". This ensures that multiple crawlers won't step on each other's toes.\n3. After a website is crawled, the crawler should update the corresponding `crawl_queue` entry's `crawl_status` to \"crawled\". If the crawled website contains new links, add them to the respective collections (`websites` or `classic_websites`) and create new entries in the `crawl_queue` with `crawl_status` set to \"pending\".\n4. To add a new website on-demand, simply create a new entry in the `crawl_queue` with the `website_id`, `website_type`, and `crawl_status` set to \"pending\".\n\nThis schema and approach allow you to manage a list of websites to be crawled, prevent duplicate crawls, and enable multiple crawlers to work in parallel without conflicts.",
+  "has_answer": false
+}

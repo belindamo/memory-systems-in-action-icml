@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 205,
+  "session_index": 21,
+  "session_id": "sharegpt_zdDMlRC_0",
+  "turn_in_session": 0,
+  "date": "2023/04/16 (Sun) 08:49",
+  "role": "user",
+  "content": "Our company uses Jira. One of our customers is using ServiceNow. My boss asked me to build a software to keep tickets in sync, such as when customer creates a ticket in ServiceNow, this software creates a ticket in Jira. When someone updates the ticket in Jira, those changes are also propagates to ServiceNow. How would you build this ?",
+  "has_answer": false
+}

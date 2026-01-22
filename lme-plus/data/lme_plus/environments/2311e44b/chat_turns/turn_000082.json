@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 82,
+  "session_index": 8,
+  "session_id": "sharegpt_pPJZzai_0",
+  "turn_in_session": 1,
+  "date": "2023/05/22 (Mon) 02:47",
+  "role": "assistant",
+  "content": "The passage discusses recent advances in the field of training embedding-based retrieval models for open-domain questions. Such models aim to retrieve relevant information to support answers to open-ended questions. The author notes that progress has been made in this area when direct supervision is available or when models are pre-trained on task-specific data.\n\nHowever, the author argues that their work demonstrates a way to train dense retrieval models without the need for direct supervision or extensive pretraining. This is made possible by using the ELI5 dataset, which provides a diverse set of questions and answers. By using this dataset, the author claims that they can make dense retrieval models more accessible. In other words, they can make it easier for researchers to develop and use these models without requiring specialized expertise or resources.",
+  "has_answer": false
+}

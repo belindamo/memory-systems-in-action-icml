@@ -1,0 +1,59 @@
+{
+  "session_id": "sharegpt_cxnxUPt_43",
+  "session_index": 26,
+  "date": "2023/02/28 (Tue) 21:36",
+  "turns": [
+    {
+      "role": "assistant",
+      "content": "Correct answers are:\n\n* Upload a configuration script\n* Modify the extensionProfile section of the Azure Resource Manager template\n\nExplanation: To ensure that web server components are installed when the scale set virtual machines are provisioned, you can use the Azure Resource Manager (ARM) template to modify the extensionProfile section of the template and specify a custom script extension that installs the components. You can also upload the configuration script that installs the components and specify its location in the extensionProfile section of the template. The automation account and creating a new virtual scale set are not required to achieve this goal."
+    },
+    {
+      "role": "user",
+      "content": "Question 43 of 50\nSingle choice question\nYou create an App Service plan named\nPlan1 and an Azure web app named\nwebapp1.\nYou discover that the option to create\na staging slot is unavailable.\nYou need to create a staging slot tor\nPlan1.\nWhat should you do first?\nSelect the correct answer\nFrom Plan1, scale up the App Service plan\nFrom webapp1, modify the Application settings\nFrom webapp1, add a custom domain\nFrom Plan1, scale out the App Service plan"
+    },
+    {
+      "role": "assistant",
+      "content": "From Plan1, scale up the App Service plan."
+    },
+    {
+      "role": "user",
+      "content": "Question 44 of 50\nSingle choice question\nYou plan to move a distributed on-\npremises app named App1 to an\nAzure subscription.\nAfter the planned move, App1 will be\nhosted on several Azure virtual\nmachines.\nYou need to ensure that App1 always\nruns on at least eight virtual machines\nduring planned Azure maintenance.\nWhat should you create?\nSelect the correct answer\none virtual machine scale set that has 10 virtual machines instances\none Availability Set that has three fault domains and one update domain\none Availability Set that has 10 update domains and one fault domain\none virtual machine scale set that has 12 virtual machines instances"
+    },
+    {
+      "role": "assistant",
+      "content": "To ensure that App1 always runs on at least eight virtual machines during planned Azure maintenance, you should create one virtual machine scale set that has eight or more virtual machine instances.\n\nTherefore, the correct answer is:\none virtual machine scale set that has 8 or more virtual machine instances."
+    },
+    {
+      "role": "user",
+      "content": "You have an Azure virtual machine\nnamed VM1 that runs Windows\nServer 2016.\nYou need to create an alert in Azure\nwhen more than two error events are\nlogged to the System event log on\nVM1 within an hour.\nSolution: You create an event\nsubscription on VM1. You create an\nalert in Azure Monitor and specify\nVM1 as the source\nDoes this meet the goal?\nSelect the correct answer\nTrue\nFalse"
+    },
+    {
+      "role": "assistant",
+      "content": "False.\n\nCreating an event subscription on VM1 will not meet the goal of creating an alert in Azure when more than two error events are logged to the System event log on VM1 within an hour. The event subscription will allow the event data to be sent to another service such as Azure Event Grid, Azure Event Hub or Azure Logic Apps for further processing. However, it does not create an alert in Azure Monitor as required. To create an alert in Azure Monitor, a metric or log query needs to be created, and the source needs to be specified as either a metric or log source."
+    },
+    {
+      "role": "user",
+      "content": "You have an Azure virtual machine\nnamed VMI. VM1 was deployed by\nusing a custom Azure Resource\nManager template named\nARM1.json.\nYou receive a notification that VM1\nwill be affected by maintenance.\nYou need to move VM1 to a different\nhost immediately.\nSolution: From the Overview blade\nyou move the virtual machine to a\ndifferent subscription.\nDoes this meet the goal?\nSelect the correct answer\nTrue\nFalse"
+    },
+    {
+      "role": "assistant",
+      "content": "False.\n\nMoving the virtual machine to a different subscription will not achieve the goal of moving the virtual machine to a different host. To move the virtual machine to a different host, you need to use the \"Redeploy\" option in the Azure portal."
+    },
+    {
+      "role": "user",
+      "content": "Question 49 of 50\nSingle choice question\nYou have an Azure subscription that\nContains a web app named webapp1\nYou need to add a custom domain\nnamed www.contoso.com to\nwebapp1.\nWhat should you do first?\nSelect the correct answer\nCreate a DNS record\nAdd a connection string\nUpload a certificate\nStop webapp1"
+    },
+    {
+      "role": "assistant",
+      "content": "Create a DNS record."
+    },
+    {
+      "role": "user",
+      "content": "Question 50 of 50\nYou have an Azure Kubernetes Service\n(AKS) cluster named AKS1.\nYou need to configure cluster\nautoscaler for AKS1.\nWhich two tools should you use? Each\nCorrect answer presents a complete\nsolution.\nNOTE: Each correct selection is worth one point.\nSelect the correct answer(s)\nthe kubectl command\nthe az aks command\nthe Azure portal\nthe Set-AzVm cmdlet\nthe Set-AzAks cmdlet"
+    },
+    {
+      "role": "assistant",
+      "content": "To configure cluster autoscaler for AKS1, you should use the following two tools:\n\n1. the kubectl command: This is a command-line tool used to deploy and manage applications on Kubernetes clusters, including AKS1. It can be used to create and configure horizontal pod autoscalers (HPAs) for AKS1.\n2. the az aks command: This is a command-line tool specifically designed for managing AKS clusters in Azure. It can be used to enable and configure the cluster autoscaler for AKS1.\n\nTherefore, the correct answer is:\n\n* the kubectl command\n* the az aks command"
+    }
+  ]
+}

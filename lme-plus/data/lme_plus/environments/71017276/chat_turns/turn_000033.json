@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 33,
+  "session_index": 3,
+  "session_id": "sharegpt_4PwGTCZ_0",
+  "turn_in_session": 5,
+  "date": "2023/02/04 (Sat) 06:53",
+  "role": "assistant",
+  "content": "To select all images for all products in the PrestaShop database, with the main image in a column called \"main\\_image\" and additional images in separate columns, you can use the following SQL query:\n```\nSELECT p.id_product, i1.id_image as main_image, i2.id_image as additional_image_1,i3.id_image as additional_image_2,i4.id_image as additional_image_3,i5.id_image as additional_image_4\nFROM ps_product p\nLEFT JOIN ps_image i1 ON p.id_product = i1.id_product and i1.cover = 1\nLEFT JOIN ps_image i2 ON p.id_product = i2.id_product and i2.cover = 0\nLEFT JOIN ps_image i3 ON p.id_product = i3.id_product and i3.cover = 0\nLEFT JOIN ps_image i4 ON p.id_product = i4.id_product and i4.cover = 0\nLEFT JOIN ps_image i5 ON p.id_product = i5.id_product and i5.cover = 0\nORDER BY p.id_product;\n```\nThis query uses LEFT JOIN to combine the data from the \"ps\\_product\" table (where the product IDs are stored) and the \"ps\\_image\" table (where the image information is stored) and using the cover field to determine if it is the main image or not.\nIt will return the product ID, main image id in the column \"main\\_image\" and additional images ids in columns \"additional\\_image\\_1\", \"additional\\_image\\_2\", \"additional\\_image\\_3\", \"additional\\_image\\_4\" for all products in the database, ordered by product ID.\nPlease note that you can increase or decrease the number of additional images columns as you wish.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 37,
+  "session_index": 1,
+  "session_id": "sharegpt_LgJ688S_0",
+  "turn_in_session": 17,
+  "date": "2023/05/20 (Sat) 12:20",
+  "role": "assistant",
+  "content": "Yes, you can configure your Flask application to run on the default HTTP port (80) instead of port 8080. This way, you don't need to specify the port number in the URL when accessing your application.\n\nTo do this, you can modify your `app.run()` statement as follows:\n```arduino\napp.run(host='aira.aramis.ai', port=80)\n```\nNote that on Unix-based systems, you need root privileges to bind to ports below 1024, so you may need to run your application as a superuser by using `sudo`.\n\nAfter running the application with the modified `app.run()` statement, you should be able to access it in your web browser by going to `http://aira.aramis.ai/`.\n\nIf you still see the port number in the URL after making this change, you may need to update your web server configuration to proxy requests to your Flask application. For example, if you are using Apache or Nginx, you can configure them to proxy requests from `http://aira.aramis.ai/` to `http://127.0.0.1:80/`. This way, the user's browser will not see the port number in the URL.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 8,
+  "session_index": 0,
+  "session_id": "sharegpt_7tOPXDd_50",
+  "turn_in_session": 8,
+  "date": "2023/05/20 (Sat) 00:12",
+  "role": "user",
+  "content": "The steps in the Algorithm 1 are explained below. Algorithm 1 Policy gradient algorithm. Input: Initialize policy parameter \u03b8= \u03b80 , with \u03b80 \u2208 \n0 ,learning rate, its update rule \u03b1, m := 0 , the number of episodes K and the number of epochs N. Output: policy \u03c0(\u00b7|\u00b7, \u03b8) and \nfor m = 1,\u2026, N do 1. Collect u k t , x k t for T time steps for K trajectories along with J( x k T ) , also for K trajectories. 2. Update the policy, using a policy gradient estimate \u03b8m +1 = \u03b8m + \u03b1m 1 K \f K k =1 \u0010 (J( \u03c4\u03c4\u03c4k ) \u2212b) \u2207 \u03b8\f T \u22121 t=0 log \u000e\u03c0( u k t | \u02c6 x k t , \u03b8) \u000f\u0011 3. m := m + 1 Initialization: The RNN policy network and its weights \u03b8are initialized, along with the algorithm\u2019s hyperparameters such as learning rate, number of episodes and number of epochs.\nTraining loop: The weights on the RNN are updated by a policy gradient scheme for a total of N epochs. In Step 1 K trajectories are computed, each trajectory consists of T time steps, and states and control actions are collected. In Step 2 the weights of the RNN are updated based on the policy gradient framework. In Step 3 , either the algorithm terminates or returns to Step 1.",
+  "has_answer": false
+}

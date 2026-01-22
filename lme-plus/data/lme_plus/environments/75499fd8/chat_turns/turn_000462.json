@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 462,
+  "session_index": 49,
+  "session_id": "sharegpt_mMNr1qm_0",
+  "turn_in_session": 4,
+  "date": "2023/05/30 (Tue) 12:43",
+  "role": "user",
+  "content": "Can you generate an example function to move one object in the scene? The function will be called before drawing every frame, and will receive the current time, which can be used to compute the position of the object. Feel free to ask questions if it isn't clear.",
+  "has_answer": false
+}

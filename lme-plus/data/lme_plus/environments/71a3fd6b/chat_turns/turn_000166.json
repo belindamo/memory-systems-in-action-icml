@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 166,
+  "session_index": 18,
+  "session_id": "sharegpt_n3kgf14_17",
+  "turn_in_session": 0,
+  "date": "2023/05/24 (Wed) 15:03",
+  "role": "assistant",
+  "content": "The primary driver module is a service that tracks the user, identified by a Polestar ID, who is the primary driver of a car. The service listens to events from Polestar's Order Management System (POMS) and saves the Polestar ID of the driver specified in the \"Driver\" field of the event as the car's primary driver, if the event contains a valid VIN and Polestar ID. The VIN and Polestar ID are considered valid if they exist in Volvo's factory order system (Vehicle Internet Sale & Traceability Application, or VISTA) and the Polestar ID service, respectively.\n\nThe service also allows other systems to update a car's primary driver through an API. There are two versions of the API: one with M2M authentication and one with Polestar ID authentication (OAuth). Using the Polestar ID Auth. version, the user can only edit a car's primary driver if they have access to the logged-in primary driver's credentials.\n\nThe service maintains a history for primary drivers, including the system that made the update, the timestamp of when the primary driver was registered, the user ID (if the change was made using Polestar ID auth API), the client ID of the service that made the change (if the change was made using M2M auth API), and the event ID that caused the change. It also saves the timestamp when the event was emitted, if the update was based on an event.\n\nA POMS update can only overwrite an API update if the order ID is new. This is because the service saves the previous order ID, and if the previous order ID is the same as the current order ID, the POMS event is not considered new and will not update the primary driver.\n\nThe service stores all the events it receives in an \"event store\" for replay purposes. It also allows for the removal of a primary driver from a car without registering a new one.",
+  "has_answer": false
+}

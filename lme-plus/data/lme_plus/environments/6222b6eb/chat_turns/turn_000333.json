@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 333,
+  "session_index": 30,
+  "session_id": "answer_sharegpt_H9PiM5G_0",
+  "turn_in_session": 7,
+  "date": "2023/05/27 (Sat) 13:33",
+  "role": "assistant",
+  "content": "Level 2 data is not always available for every location and time period. The availability of Level 2 data depends on a variety of factors, including the data provider, the sensor used to collect the data, and the specific data set. Some data providers may have more extensive coverage than others, and some data sets may be more widely available than others.\n\nAdditionally, the availability of Level 2 data can depend on the data provider's acquisition schedule, for example, some providers may have a regular acquisition schedule for certain areas, while others may only collect data on an as-needed basis.\n\nIt's also important to note that the temporal coverage of the data can affect the availability, as some providers may not have Level 2 data available for certain time periods due to cloud cover, sensor malfunction, or other issues.\n\nIt's recommended to check the data provider documentation and know the data temporal and spatial coverage, to check if it is suitable for your study area and study purpose. In case it's not available, you can consider other data providers, or use Level 1 data and apply the atmospheric correction yourself.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 437,
+  "session_index": 43,
+  "session_id": "sharegpt_v794bYN_0",
+  "turn_in_session": 0,
+  "date": "2023/05/29 (Mon) 14:59",
+  "role": "user",
+  "content": "Provide a list of jobs for Speech Language Pathologists in the following format:\n\n[Job Name hyperlinked to a Google search for the term]\n \u2022 A one-sentence description of the job responsibilities.\n\u2022 A one-sentence description of job satisfaction for the job\n\u2022 Average salary for the job\n\u2022 Average salary for the job in the Tri-State Area\nPlease capitalize the job name and format it as a hyperlink by enclosing it in square brackets and immediately following it with the URL in parentheses.",
+  "has_answer": false
+}

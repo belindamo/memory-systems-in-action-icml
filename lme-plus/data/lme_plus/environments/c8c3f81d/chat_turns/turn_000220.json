@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 220,
+  "session_index": 26,
+  "session_id": "sharegpt_gmOSkOC_0",
+  "turn_in_session": 4,
+  "date": "2023/05/25 (Thu) 10:56",
+  "role": "user",
+  "content": "Now consider the Back-Propagation algorithm as feedback and the Neural Network as a closed loop system during training (Non-Convex Optimization). How might Root-Locus techniques be used to analyze the stability of the Neural Network? How stability be correlated with error landscape problems? How might Root-Locus or other feedback analysis techniques be used to model and avoided error landscape problems that might be related to instability of the Neural Network as feedback system during back-propagation?",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 408,
+  "session_index": 44,
+  "session_id": "sharegpt_RVk16qK_0",
+  "turn_in_session": 7,
+  "date": "2023/09/22 (Fri) 00:28",
+  "role": "assistant",
+  "content": "Stereo images are a type of image that captures the same scene from two different viewpoints. This is typically done using a stereo camera system, which consists of two cameras mounted side-by-side, with each camera capturing a slightly different perspective of the same scene. The resulting pair of images, known as a stereo pair, can be used to create a 3D representation of the scene, as the differences between the two images can be used to calculate depth information.\n\nRegular images, on the other hand, are simply single images that capture a scene from a single viewpoint. They are the most common type of image and are used in a wide variety of applications, from photography to computer vision.\n\nOne key difference between stereo images and regular images is that stereo images provide additional depth information that can be used to create 3D representations of scenes, whereas regular images do not. Stereo imaging is commonly used in applications such as 3D modeling, robotics, and computer vision, where the ability to accurately estimate depth and distance is important.",
+  "has_answer": false
+}

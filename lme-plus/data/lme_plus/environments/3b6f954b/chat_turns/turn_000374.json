@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 374,
+  "session_index": 39,
+  "session_id": "sharegpt_fVujVyX_0",
+  "turn_in_session": 2,
+  "date": "2023/05/28 (Sun) 10:34",
+  "role": "user",
+  "content": "do the same with those informations : servers are ubuntu types , and command are : sudo apt update\nsudo apt -y full-upgrade\n[ -f /var/run/reboot-required ] && sudo reboot -f\nsudo apt install curl apt-transport-https -y\ncurl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/k8s.gpg\ncurl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -\necho \"deb https://apt.kubernetes.io/ kubernetes-xenial main\" | sudo tee /etc/apt/sources.list.d/kubernetes.list\nsudo apt update\nsudo apt install wget curl vim git kubelet kubeadm kubectl -y\nsudo apt-mark hold kubelet kubeadm kubectl\n$ kubectl version --client && kubeadm version\nsudo swapoff -a\n\nNow disable Linux swap space permanently in /etc/fstab. Search for a swap line and add # (hashtag) sign in front of the line.\n\n# Enable kernel modules\nsudo modprobe overlay\nsudo modprobe br\\_netfilter\n\n# Add some settings to sysctl\nsudo tee /etc/sysctl.d/kubernetes.conf<",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 189,
+  "session_index": 18,
+  "session_id": "sharegpt_1o6lFsF_0",
+  "turn_in_session": 5,
+  "date": "2023/05/23 (Tue) 20:03",
+  "role": "assistant",
+  "content": "The specific compressor settings for drum channels will depend on the particular drum kit, the sound you're aiming for, and the acoustics of the room. However, here are some general guidelines that you can use as a starting point:\n\n1. Kick Drum: Set the attack time to around 10-30 ms to let the initial transient of the kick drum through. Set the release time to around 100-200 ms to allow the compressor to release smoothly. Set the ratio to around 4:1 to 6:1 to even out the level of the kick drum.\n2. Snare Drum: Set the attack time to around 5-10 ms to let the initial transient of the snare through. Set the release time to around 100-200 ms to allow the compressor to release smoothly. Set the ratio to around 3:1 to 5:1 to even out the level of the snare.\n3. Toms: Set the attack time to around 10-20 ms to let the initial transient of the toms through. Set the release time to around 100-200 ms to allow the compressor to release smoothly. Set the ratio to around 3:1 to 5:1 to even out the level of the toms.\n4. Overhead and Room Mics: These mics capture the overall sound of the drum kit, so you'll want to use a more subtle compression approach. Set the attack time to around 10-30 ms to let the initial transient of the cymbals through. Set the release time to around 100-200 ms to allow the compressor to release smoothly. Set the ratio to around 2:1 to 3:1 to even out the level of the overall drum sound.\n\nAgain, these are just general guidelines and you may need to adjust the compressor settings based on the specific drum kit and the sound you're going for. It's always a good idea to listen carefully and make adjustments based on what sounds good to your ears.",
+  "has_answer": false
+}

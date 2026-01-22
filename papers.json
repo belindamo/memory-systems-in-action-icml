@@ -1,0 +1,150 @@
+{
+    "papers": [
+      {
+        "title": "A-MEM: Agentic Memory for LLM Agents",
+        "authors": "Wujiang Xu, Zujie Liang, Kai Mei",
+        "year": 2025,
+        "url": "https://arxiv.org/pdf/2502.12110",
+        "abstract": "Proposes a novel agentic memory system, A-MEM, for dynamic memory structuring in LLM agents.",
+        "summary": "This paper proposes a novel agentic memory system, which could serve as a baseline for comparison in the proposed research.",
+        "relevance": "medium"
+      },
+      {
+        "title": "Memory in Large Language Models: Mechanisms",
+        "authors": "Dianxing Zhang, Wendong Li, Kani Song",
+        "year": 2025,
+        "url": "https://arxiv.org/html/2509.18868v1",
+        "abstract": "Focuses on the role of factual memory and process management in long-horizon interactions, emphasizing the insufficiency of memory alone and proposing mechanisms for better memory handling.",
+        "summary": "This paper explores the mechanisms of memory in LLMs, which is directly relevant to the proposal's focus on memory systems. It addresses the same problem of improving agent performance in long-horizon tasks.",
+        "relevance": "medium"
+      },
+      {
+        "title": "Evaluating Memory in LLM Agents via Incremental Multi-turn",
+        "authors": "Yuanzhe Hu, Yu Wang, Julian McAuley",
+        "year": 2025,
+        "url": "https://arxiv.org/abs/2507.05257",
+        "abstract": "Presents MemoryAgentBench, a benchmark designed for memory agents, transforming existing long-context datasets for evaluation.",
+        "summary": "This paper presents a benchmark for evaluating memory agents, which is directly relevant to the evaluation aspect of the proposal.",
+        "relevance": "medium"
+      },
+      {
+        "title": "MemInsight: Autonomous Memory Augmentation for LLM Agents",
+        "authors": "Unknown",
+        "year": 2025,
+        "url": "https://www.semanticscholar.org/paper/MemInsight%3A-Autonomous-Memory-Augmentation-for-LLM-Salama-Cai/c6661578fea389a909644ba51dddeb692fed075f",
+        "abstract": "Describes MemInsight, a system for autonomous memory augmentation, with evaluation metrics for effectiveness.",
+        "summary": "This paper describes a system for autonomous memory augmentation, which could serve as a baseline for comparison in the proposed research.",
+        "relevance": "medium"
+      },
+      {
+        "title": "Evo-Memory: Benchmarking LLM Agent Test-time Learning",
+        "authors": "Tianxin Wei, Noveen Sachdeva, Benjamin Coleman",
+        "year": 2025,
+        "url": "https://arxiv.org/html/2511.20857v1",
+        "abstract": "Introduces Evo-Memory, a streaming benchmark for evaluating self-evolving memory in LLM agents.",
+        "summary": "This paper introduces a streaming benchmark for evaluating memory in LLM agents, which is directly relevant to the evaluation aspect of the proposal.",
+        "relevance": "medium"
+      },
+      {
+        "title": "Memory-Augmented Large Language Model-Based Agent",
+        "authors": "Unknown",
+        "year": 2025,
+        "url": "https://openreview.net/forum?id=0GMt2OWeCb",
+        "abstract": "Proposes a memory-augmented LLM agent with cross-task learning and dynamic retrieval to improve adaptability.",
+        "summary": "This paper proposes a memory-augmented LLM agent, which could serve as a baseline for comparison in the proposed research.",
+        "relevance": "medium"
+      },
+      {
+        "title": "A Survey on the Memory Mechanism of Large Language Models",
+        "authors": "Unknown",
+        "year": 2025,
+        "url": "https://www.semanticscholar.org/paper/A-Survey-on-the-Memory-Mechanism-of-Large-Language-Zhang-Dai/b6ab16c8eade03a39830493071d99fc48a736fac",
+        "abstract": "Provides a comprehensive survey on memory mechanisms in LLM-based agents, reviewing design and evaluation strategies.",
+        "summary": "This survey provides a comprehensive overview of memory mechanisms in LLMs, which is relevant to the proposal's focus on memory systems.",
+        "relevance": "medium"
+      },
+      {
+        "title": "Memory-Driven Multimodal Chain of Thought for Embodied Tasks",
+        "authors": "Unknown",
+        "year": 2024,
+        "url": "https://openreview.net/forum?id=Z1Va3Ue4GF&noteId=Apa0c3T6mm",
+        "abstract": "Presents a framework that integrates multimodal memory with chain-of-thought reasoning to improve long-horizon planning in embodied agents.",
+        "summary": "This paper uses similar methods (memory integration) but applies them to a different problem (embodied agents). It demonstrates the generalizability of memory-based approaches.",
+        "relevance": "medium"
+      },
+      {
+        "title": "MIRIX: Multi-Agent Memory System for LLM-Based Agents",
+        "authors": "Unknown",
+        "year": 2025,
+        "url": "https://www.semanticscholar.org/paper/MIRIX%3A-Multi-Agent-Memory-System-for-LLM-Based-Wang-Chen/a38a3460a68c50270548977e66162e92f195334c",
+        "abstract": "Describes a modular, multi-agent memory system that addresses critical challenges in AI memory, focusing on multi-agent collaboration.",
+        "summary": "This paper describes a multi-agent memory system, which could serve as a baseline for comparison in the proposed research.",
+        "relevance": "medium"
+      },
+      {
+        "title": "Benchmarking and Enhancing Long-Term Memory in LLMs",
+        "authors": "Mohammad Tavakoli, Alireza Salemi, Carrie Ye",
+        "year": 2025,
+        "url": "https://arxiv.org/html/2510.27246v1",
+        "abstract": "Introduces BEAM, a benchmark with long dialogues and diverse memory probes for evaluating long-term memory.",
+        "summary": "This paper introduces a benchmark for evaluating long-term memory, which is directly relevant to the evaluation aspect of the proposal.",
+        "relevance": "medium"
+      },
+      {
+        "title": "Probing the Limits of Endurance in Long-Horizon Tasks",
+        "authors": "Unknown",
+        "year": 2025,
+        "url": "https://openreview.net/forum?id=dAn82lpLx4",
+        "abstract": "Investigates the endurance of LLM agents in long-horizon tasks, focusing on memory and tool augmentation challenges.",
+        "summary": "This paper directly addresses the challenges of memory in long-horizon tasks, which is a core aspect of the proposal.",
+        "relevance": "medium"
+      },
+      {
+        "title": "Measuring Long Horizon Execution in LLMs",
+        "authors": "Akshit Sinha, Arvindh Arun, Shashwat Goel",
+        "year": 2025,
+        "url": "https://arxiv.org/html/2509.09677v1",
+        "abstract": "Proposes methods to isolate and measure the execution capabilities of LLMs in long-horizon tasks, addressing the challenges of maintaining coherence and memory over time.",
+        "summary": "This paper focuses on measuring the execution capabilities of LLMs in long-horizon tasks, which aligns with the proposal's focus on evaluating memory systems in agentic tasks.",
+        "relevance": "medium"
+      },
+      {
+        "title": "Mem0: Building Production-Ready AI Agents with Scalable Memory",
+        "authors": "Prateek Chhikara, Dev Khant, Saket Aryan",
+        "year": 2025,
+        "url": "https://arxiv.org/abs/2504.19413",
+        "abstract": "Introduces Mem0, a scalable, memory-centric architecture designed to improve decision-making by dynamically extracting and consolidating memories.",
+        "summary": "This paper introduces a scalable, memory-centric architecture, which could serve as a baseline for comparison in the proposed research.",
+        "relevance": "medium"
+      },
+      {
+        "title": "A Benchmark for Memory and Continual Learning in LLMs",
+        "authors": "Qingyao Ai, Yichen Tang, Changyue Wang",
+        "year": 2025,
+        "url": "https://arxiv.org/pdf/2510.17281",
+        "abstract": "Introduces a benchmark for evaluating memory and continual learning in LLMs, focusing on long-term memory capabilities and continual adaptation.",
+        "summary": "This paper provides a benchmark for evaluating memory capabilities, which is directly relevant to the evaluation aspect of the proposal.",
+        "relevance": "medium"
+      },
+      {
+        "title": "Towards More Comprehensive Evaluation on the Memory Capabilities of LLMs",
+        "authors": "Unknown",
+        "year": 2025,
+        "url": "https://aclanthology.org/2506.21605v1",
+        "abstract": "Presents MemBench, a multi-aspect memory evaluation benchmark.",
+        "summary": "This paper presents a multi-aspect memory evaluation benchmark, which is directly relevant to the evaluation aspect of the proposal.",
+        "relevance": "medium"
+      },
+      {
+        "title": "Hierarchical Memory for High-Efficiency Long-Term Reasoning",
+        "authors": "Haoran Sun, Shaoning Zeng",
+        "year": 2025,
+        "url": "https://arxiv.org/abs/2507.22925",
+        "abstract": "Proposes a hierarchical memory architecture (H-MEM) that organizes memory in a multi-level fashion, aiming to enhance long-term reasoning capabilities.",
+        "summary": "This paper proposes a hierarchical memory architecture, which could serve as a baseline for comparison in the proposed research.",
+        "relevance": "medium"
+      }
+    ],
+    "synthesis": "The research proposal aims to evaluate SOTA memory systems on agentic tasks versus needle-in-the-haystack tasks. The identified papers provide a comprehensive overview of the current research landscape, offering various perspectives and methodologies relevant to the proposal. Several papers directly address the problem of memory systems in long-horizon and agentic tasks, highlighting the challenges and proposing new frameworks (e.g., 'Improving Planning of Agents for Long-Horizon Tasks' [https://arxiv.org/html/2503.09572v3], 'Memory in Large Language Models: Mechanisms' [https://arxiv.org/html/2509.18868v1], 'Probing the Limits of Endurance in Long-Horizon Tasks' [https://openreview.net/forum?id=dAn82lpLx4]). These papers offer alternative solutions and insights into the core problem. A significant portion of the literature focuses on evaluation and benchmarking, which is crucial for the proposal's objective. Papers like 'HeroBench' [https://arxiv.org/html/2508.12782v1], 'Measuring Long Horizon Execution in LLMs' [https://arxiv.org/html/2509.09677v1], 'A Benchmark for Memory and Continual Learning in LLMs' [https://arxiv.org/pdf/2510.17281], 'Evaluating Memory in LLM Agents via Incremental Multi-turn' [https://arxiv.org/abs/2507.05257], 'Evo-Memory' [https://arxiv.org/html/2511.20857v1], 'Benchmarking and Enhancing Long-Term Memory in LLMs' [https://arxiv.org/html/2510.27246v1], and 'Towards More Comprehensive Evaluation on the Memory Capabilities of LLMs' [https://aclanthology.org/2506.21605v1] offer various benchmarks and metrics that can be adapted or compared for the proposed evaluation. Furthermore, several papers introduce or compare different memory architectures, serving as 'direct competitors/baselines' or 'similar methods' for the research. Examples include 'A-MEM: Agentic Memory for LLM Agents' [https://arxiv.org/pdf/2502.12110], 'MemInsight: Autonomous Memory Augmentation for LLM Agents' [https://www.semanticscholar.org/paper/MemInsight%3A-Autonomous-Memory-Augmentation-for-LLM-Salama-Cai/c6661578fea389a909644ba51dddeb692fed075f], 'Hierarchical Memory for High-Efficiency Long-Term Reasoning' [https://arxiv.org/abs/2507.22925], 'Mem0: Building Production-Ready AI Agents with Scalable Memory' [https://arxiv.org/abs/2504.19413], 'MIRIX: Multi-Agent Memory System for LLM-Based Agents' [https://www.semanticscholar.org/paper/MIRIX%3A-Multi-Agent-Memory-System-for-LLM-Based-Wang-Chen/a38a3460a68c50270548977e66162e92f195334c], and 'Memory-Augmented Large Language Model-Based Agent' [https://openreview.net/forum?id=0GMt2OWeCb]. These papers explore dynamic, hierarchical, and multi-agent memory systems, which directly inform the comparison of vector-based retrieval, knowledge graphs, and hybrid GraphRAG approaches mentioned in the proposal. Finally, papers like 'Memory-Driven Multimodal Chain of Thought for Embodied Tasks' [https://openreview.net/forum?id=Z1Va3Ue4GF&noteId=Apa0c3T6mm] and 'ReAcTree: Hierarchical Task Planning with Dynamic Tree' [https://openreview.net/forum?id=KgKN7F0PyQ] demonstrate similar methods applied to different agentic contexts (embodied agents, hierarchical planning), showcasing the generalizability of memory system research. The 'Survey on the Memory Mechanism of Large Language Models' [https://www.semanticscholar.org/paper/A-Survey-on-the-Memory-Mechanism-of-Large-Language-Zhang-Dai/b6ab16c8eade03a39830493071d99fc48a736fac] provides a valuable overview of the current landscape, helping to contextualize the proposed work within the broader field of LLM memory research. Overall, these papers confirm the existence of the research gap identified in the proposal regarding the performance of memory systems in agentic tasks compared to needle-in-the-haystack tasks, and provide a rich set of baselines, evaluation methodologies, and architectural comparisons to inform the proposed research.",
+    "gaps": []
+  }

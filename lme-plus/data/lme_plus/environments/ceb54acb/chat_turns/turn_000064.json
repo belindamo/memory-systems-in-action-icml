@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 64,
+  "session_index": 6,
+  "session_id": "sharegpt_mWFmQxk_0",
+  "turn_in_session": 10,
+  "date": "2023/05/22 (Mon) 13:52",
+  "role": "user",
+  "content": "#Now that we have our data with tweets about academic writing anxiety and their metadata, lets try and apply some topic modelling to extract relevant topics from these tweets. \n#Lets try and LDA based topic model on this \n\n# Create a id2word dictionary\nid2word = Dictionary(clean\\_tweets\\_df['tokens'])\n\nprint(len(id2word))\n\n# Filtering Extremes\nid2word.filter\\_extremes(no\\_below=100, no\\_above=0.7)\nprint(len(id2word))\n\n# Creating a corpus object \ncorpus = [id2word.doc2bow(d) for d in clean\\_tweets\\_df['tokens']]\n\n# Instantiating a Base LDA model \nbase\\_model = LdaMulticore(corpus=corpus, num\\_topics=3, id2word=id2word, workers=2, passes=5, random\\_state=42)\n#Filtering the words\nwords = [re.findall(r'\\\"([^\\\"]\\*)\\\"',t[1]) for t in base\\_model.print\\_topics()]\n\n# Create Topics\ntopics = [' '.join(t[0:10]) for t in words]\n\n# Getting the topics\nfor id, t in enumerate(topics): \n print(f\"------ Topic {id} ------\")\n print(t, end=\"\\n\\n\")\n\n# Obtain topic probabilities for each tweet\ntopic\\_probabilities = base\\_model.get\\_document\\_topics(corpus)",
+  "has_answer": false
+}

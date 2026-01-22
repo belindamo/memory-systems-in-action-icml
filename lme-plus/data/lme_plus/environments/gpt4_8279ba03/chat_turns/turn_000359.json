@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 359,
+  "session_index": 29,
+  "session_id": "sharegpt_0es4qk5_0",
+  "turn_in_session": 15,
+  "date": "2023/03/13 (Mon) 09:47",
+  "role": "assistant",
+  "content": "Yes, that's correct. If `danfletcher.com` has a CAA record that disallows Let's Encrypt, then Vercel will not be able to provision an SSL certificate for any custom domains associated with the `danfletcher.com` domain.\n\nIn this case, Dan would need to remove or modify the CAA record to allow Let's Encrypt or use another SSL provider that is allowed by the CAA record. Once that is done, he can then proceed with creating the necessary DNS records and configuring the custom domain on Vercel as we discussed earlier.\n\nIt's always important to check the DNS settings of the domain you're planning to use for a custom domain to ensure that everything is properly configured and any necessary changes are made before proceeding with the setup process.",
+  "has_answer": false
+}

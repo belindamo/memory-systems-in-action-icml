@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 442,
+  "session_index": 38,
+  "session_id": "sharegpt_TuureWP_17",
+  "turn_in_session": 23,
+  "date": "2023/05/29 (Mon) 17:34",
+  "role": "user",
+  "content": "Question 40 of 50\nSingle choice question\nYou need to deploy an Azure virtual\nmachine scale set that contains five\ninstances as quickly as possible.\nWhat should you do?\nSelect the correct answer\nDeploy five virtual machines. Modify the Availability Zones settings for each virtual machine\nDeploy five virtual machines. Modify the Size setting for each virtual machine\nDeploy one virtual machine scale set that is set to VM (virtual machines) orchestration mode\nDeploy one virtual machine scale set that is set to ScaleSetVM orchestration mode",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 79,
+  "session_index": 9,
+  "session_id": "sharegpt_bhOrPyl_149",
+  "turn_in_session": 2,
+  "date": "2023/05/21 (Sun) 07:02",
+  "role": "assistant",
+  "content": "Azure Resource Manager (ARM) is a service provided by Microsoft Azure for managing and organizing resources in Azure. It allows you to create, update, and delete resources in a single, coordinated operation. ARM provides a consistent management layer for performing tasks through various tools, such as Azure PowerShell, Azure CLI, Azure portal, REST API, and client SDKs.\n\nAzure PowerShell is a module that you add to Windows PowerShell or PowerShell Core to enable you to connect to your Azure subscription and manage resources. It provides a set of Azure-specific commands that allow you to manage Azure resources through PowerShell.\n\nAzure CLI is a command-line program that allows administrators and developers to execute administrative commands on Azure resources. It provides cross-platform command-line tools for managing Azure resources and can be installed locally on computers running Linux, macOS, or Windows.\n\nAzure Cloud Shell is an interactive, browser-accessible shell for managing Azure resources. It provides a browser-based command-line experience and is built with Azure management tasks in mind. Cloud Shell is temporary and requires a new or existing Azure Files share to be mounted. It offers an integrated graphical text editor based on the open-source Monaco Editor and authenticates automatically for instant access to your resources.",
+  "has_answer": false
+}

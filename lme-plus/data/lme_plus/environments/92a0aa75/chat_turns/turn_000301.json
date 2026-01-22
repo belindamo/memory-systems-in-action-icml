@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 301,
+  "session_index": 27,
+  "session_id": "sharegpt_U9Sujf2_9",
+  "turn_in_session": 10,
+  "date": "2023/05/27 (Sat) 08:22",
+  "role": "assistant",
+  "content": "fields necessary to store information about immersive and classic websites, their relationships, game engines, platforms, and web crawling activities. It enables you to:\n\n1. Manage metadata and properties for immersive and classic websites.\n2. Track and analyze crawl events, errors, and relationships between websites.\n3. Store information about game engines and platforms associated with immersive websites.\n4. Maintain a crawl queue that supports recursive crawling, on-demand addition of websites, and multiple parallel crawlers without conflicts.\n\nBy using this schema, you can effectively index immersive websites, manage crawl activities, and optimize your search engine for the unique challenges posed by WebXR-supported sites.",
+  "has_answer": false
+}

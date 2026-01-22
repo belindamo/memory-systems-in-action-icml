@@ -1,0 +1,19 @@
+{
+  "session_id": "sharegpt_I9Aziqq_1",
+  "session_index": 48,
+  "date": "2023/05/30 (Tue) 12:48",
+  "turns": [
+    {
+      "role": "assistant",
+      "content": "Mercedes-Benz finished 2022 with strong sales in Top-End and Battery Electric Vehicles (BEVs), with a total of 540,800 deliveries (+17%) in Q4. Despite ongoing COVID measures, semiconductor, and logistic bottlenecks, Mercedes-Benz Passenger Cars delivered 2,043,900 vehicles (-1%) to customers. BEV sales more than doubled to 117,800 units (+124%) in 2022, representing 15% of overall Mercedes-Benz Cars retail unit sales. Mercedes-Benz is on its way to an all-electric future, with plans for a high-power charging network of over 10,000 chargers worldwide. Top-End sales rose 14% in Q4 to 83,800 units, driven by AMG, Mercedes-Maybach, and G-Class. The EQS was successful in attracting new customers to the Top-End segment, with 19,200 deliveries to U.S. customers. Mercedes-Maybach achieved its best sales year with 21,600 units (+37%) delivered, with plans to become electric with the launch of the EQS SUV in 2023. Core luxury deliveries reached 1,101,800 units (+4%). The GLC was the best-selling model with 342,900 units (+3%) in 2022, with its successor model launching mid-year. The C-Class, E-Class, and CLA also performed well."
+    },
+    {
+      "role": "user",
+      "content": "You act as an AI system that has been trained to analyze the below text for style, voice, and tone then use NLP to create a VoiceParagraph.\nA VoiceParagraph prompts a future AI system to write in that same style, voice and tone.\nHere is the input text:\nMercedes-Benz finishes 2022 with strong Top-End and Battery Electric Vehicle deliveries\u2028\u2028 Ramping up electrification: Mercedes-Benz Passenger Cars (MBPC) Battery Electric Vehicle (BEV) retail sales more than doubled to 117,800 units (+124%) in 2022. New global high-power charging network to support all electric strategy\u2028 Strong year end: MBPC Q4 2022 deliveries to customers reach 540,800 (+17%) with Top-End vehicle sales at 83,800 (+14%)\u2028 Full year retail sales at prior-year level: MBPC at 2,043,900 (-1%) deliveries, impacted by COVID measures, semiconductor and logistic bottlenecks\u2028 Top-End Vehicles demand: Best sales year for Mercedes-Maybach (+37%); S-Class deliveries up 5%\u2028 The world's most valuable luxury automotive brand finished 2022 with a strong final quarter, delivering 540,800 Mercedes-Benz Passenger Cars (+17%) to customers and achieving a rise in Top-End and Battery Electric Vehicle (BEV) sales. The October to December period marked the best quarter in 2022 for Top-End vehicles with sales up 14% thanks to robust demand in most regions, despite ongoing COVID measures, semiconductor and logistic bottlenecks throughout the year.\u2028\u2028 In a challenging 2022, Mercedes-Benz Passenger Cars delivered 2,043,900 vehicles (-1%) to customers. On its way towards an all-electric future, Mercedes-Benz global deliveries of xEV models (PHEVs and BEVs including smart) reached 319,200 units (+19%), representing 15% of overall Mercedes-Benz Cars retail unit sales in 2022. Mercedes-Benz Passenger Cars more than doubled BEV deliveries to 117,800 units (+124%). Including smart, almost every second Mercedes-Benz Cars xEV-sale was a Battery Electric Vehicle (44%)."
+    },
+    {
+      "role": "assistant",
+      "content": "VoiceParagraph:\n\n\"In a strong, confident voice, report on the successful end of 2022 for Mercedes-Benz. Highlight the growth in battery electric vehicle sales and the commitment to electrification, while acknowledging the challenges faced due to COVID, semiconductors and logistics. Emphasize the solid performance of the top-end vehicles, including the best sales year for Mercedes-Maybach and a rise in S-Class deliveries. Convey the brand's position as the world's most valuable luxury automotive brand and its dedication to customer satisfaction.\""
+    }
+  ]
+}

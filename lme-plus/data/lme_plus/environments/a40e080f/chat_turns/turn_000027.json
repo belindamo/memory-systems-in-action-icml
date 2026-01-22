@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 27,
+  "session_index": 1,
+  "session_id": "sharegpt_A1DX4pW_3",
+  "turn_in_session": 3,
+  "date": "2023/05/20 (Sat) 03:20",
+  "role": "user",
+  "content": "#complete only parts c and d\nPart (c)\nDo the parties retweet each other at the same rates?\n\nCalcuate the counts of retweets by each party (\"party\\_cong\\_retweet\\_counts\").\nCalculate and display the joint probability of party and whether the retweet comes from a MoC. Call this table \"party\\_cong\\_retweet\\_joint\".\nCalculate the conditional probability of retweeting a MoC conditioning on the party. Feel free to use the marginal probabilities you already calculated in Part (a).\nWhich party has the higher conditional probability of retweeting a MoC? Why did we need to calculate the conditional probability instead of just using the joint probabilities to answer the question \"Do the parties retweet each other at the same rates?\"\n\n\u200b\nPart (d)\nIf party and rewteeting a MoC are independent in the population you described in 1(c), then the joint distribuiton of these measurements should be close to the product of the marginal probabilities.\n\nCreate the probabilities we would expect to see if party and MoC retweeting were independent (call this table \"party\\_cong\\_retweet\\_indep\"). Recall the function np.outer is useful for this purpose.\n\nDisplay this table and comment if it looks like the table of joint probabilities from 1(c).",
+  "has_answer": false
+}

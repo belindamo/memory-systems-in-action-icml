@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 152,
+  "session_index": 14,
+  "session_id": "sharegpt_CMplLnT_29",
+  "turn_in_session": 0,
+  "date": "2023/05/30 (Tue) 00:37",
+  "role": "assistant",
+  "content": "I apologize for that. Here's an updated version of the code with a fixed wave:\n```javascript\nlet waveCount = 2;\nlet waveLength = 200;\nlet waveSpeed = 0.5;\nlet waveAmplitude = 50;\nlet waveColor;\n\nlet boatImg;\nlet boatX;\nlet boatY;\n\nlet wavePoints = [];\n\nfunction preload() {\n  boatImg = loadImage('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Paperboat.svg/1155px-Paperboat.svg.png');\n}\n\nfunction setup() {\n  createCanvas(800, 400);\n  boatX = -100;\n  boatY = height / 2 + 50;\n  waveColor = color(255, 255, 255, 100);\n}\n\nfunction draw() {\n  background(0, 136, 204);\n  drawWaves();\n  image(boatImg, boatX, boatY, 100, 100);\n  boatX += 2;\n  if (boatX > width + 100) {\n    boatX = -100;\n  }\n}\n\nfunction drawWaves() {\n  let waveX;\n  let waveY;\n  let curveOffset;\n\n  // Add new point to wave points array\n  waveX = frameCount * waveSpeed;\n  waveY = height / 2 + sin(waveX / waveLength * TWO_PI) * waveAmplitude;\n  curveOffset = sin(waveX / waveLength * TWO_PI) * waveAmplitude / 2;\n  wavePoints.push({x: waveX, y: waveY + curveOffset});\n\n  // Remove oldest point if we've reached the maximum number of points\n  if (wavePoints.length > width) {\n    wavePoints.shift();\n  }\n\n  // Draw line connecting all points\n  noFill();\n  stroke(waveColor);\n  strokeWeight(5);\n  beginShape();\n  curveVertex(0, height/2);\n  for (let i = 0; i < wavePoints.length; i++) {\n    curveVertex(wavePoints[i].x, wavePoints[i].y);\n  }\n  curveVertex(width, height/2);\n  endShape();\n}\n```\nI removed the randomization of the wave height and set it back to using `sin` with `waveAmplitude` as the height of the wave. The `curveOffset` is used to make the wave curve up and down like a real ocean wave. The boat image and movement remain the same as in the previous version.",
+  "has_answer": false
+}

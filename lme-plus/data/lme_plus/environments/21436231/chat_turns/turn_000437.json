@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 437,
+  "session_index": 42,
+  "session_id": "sharegpt_3lWzv4B_0",
+  "turn_in_session": 12,
+  "date": "2023/05/28 (Sun) 06:56",
+  "role": "user",
+  "content": "So here's the deal... recently switched all of the data from a Windows Server to a Synology NAS. The Windows Server was being backed up to a cloud service and we're charged by the amount of data that is backed up, in this case about 1TB. All that 1TB of data is now on the NAS and to back up the same data we'd now be paying for 2TB. So we want to back up only the changes, but the backup software only works on Windows, so we want to keep copying just the changes. If we mirror everything then we'd be paying for double what we really need. This is a short term fix, a few weeks or months and then we'll probably completely change how we back up.",
+  "has_answer": false
+}

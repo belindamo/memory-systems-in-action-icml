@@ -1,0 +1,15 @@
+{
+  "session_id": "sharegpt_6nMbTDR_0",
+  "session_index": 42,
+  "date": "2021/06/01 (Tue) 05:55",
+  "turns": [
+    {
+      "role": "user",
+      "content": "If I want to publish an infographic with text on twitter, which is the maximum size I could use to keep it readable doing zoom?"
+    },
+    {
+      "role": "assistant",
+      "content": "Twitter recommends that infographics with text be no larger than 1024x512 pixels to ensure they are easily readable on all devices. However, it's also important to consider the file size of the image, as Twitter has a file size limit of 5MB. So you need to balance resolution and file size to achieve a good quality of the image while also being able to share it."
+    }
+  ]
+}

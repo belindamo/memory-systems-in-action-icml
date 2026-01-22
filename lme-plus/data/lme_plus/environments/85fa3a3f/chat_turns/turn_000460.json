@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 460,
+  "session_index": 43,
+  "session_id": "sharegpt_3WzI4bW_0",
+  "turn_in_session": 5,
+  "date": "2023/05/29 (Mon) 23:47",
+  "role": "assistant",
+  "content": "To double the tempo of the \"My Song\" example posted above, you could change the meter value from `M:4/4` to `M:2/2` and change the note length value from `L:1/4` to `L:1/8`. This would halve the duration of each beat and double the number of beats per measure, effectively doubling the tempo of the song.\n\nHere is how the modified ABC music file would look:\n```\nX:1\nT:My Song\nM:2/2\nL:1/8\nK:G\n|:D2|G2B2 d2g2|B2d2 g2b2|d2g2 B2d2|g2b2 d3B|\nG2B2 d2g2|B2d2 g2b2|d2g2 B2d2|g2b2 d3g|\nd2g2 b2d2|g2b2 d2g2|B2d2 g2b2|d2g2 B2d2|\ng2b2 d3:|\n```\nThis file should play the \"My Song\" melody at twice the original tempo.",
+  "has_answer": false
+}

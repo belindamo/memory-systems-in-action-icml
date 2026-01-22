@@ -1,0 +1,31 @@
+{
+  "session_id": "sharegpt_3Rk1i3g_0",
+  "session_index": 13,
+  "date": "2023/08/20 (Sun) 21:14",
+  "turns": [
+    {
+      "role": "user",
+      "content": "\u201clist up\u201d stage : 1. The \"listed\" contents have numbers. 2. Look at the title of the subject and list possible key contents and key sentences that would be covered in that subject. 3. The key contents should be brief, 5 words or less, and the key sentence should be a concise summary of the key content. 4. The format is :' listing number.key contents: key sentence'. For example, '1. Necessity of Python: You can automate repetitive tasks using Python.' 5. The \"list up\" should include at least 10 key contents and key sentences 6. When you \"list up\" the previously output list number again, the previously output list number is printed at the front and the new list number is printed.For example 3. Necessity of Python: You can automate repetitive tasks using Python.If you \"list up\" about something, 3.1. Web Crawling: You can automatically collect web content using Python. 3.2. Excel Automation: You can automatically enter information that needs to be entered repeatedly in Excel using Python.There are a total of six rules for the \"list up\" stage. Respond \u201cReady\u201d to acknowledge and I will paste my first text for you to analyze."
+    },
+    {
+      "role": "assistant",
+      "content": "Ready. I'm ready to help you with your \"list up\" task. Please paste your first text for analysis."
+    },
+    {
+      "role": "user",
+      "content": "\"Print\" stage : write a detailed description of the contents listed in the \"list up\" step. The rules for this step are: 1. Use short sentences 2. Include examples 3. Write sentences that progress in a more concrete manner as the paragraph continues 4. The overall length should be more than 200 words. 5. If the maximum response length is reached, type \"Keep showing\" and you will continue the description. 6. \"Print\" rules are based on contents of the thesis or scientific contents, write the source or a method to search for the source in parentheses ( ). There are a total of six rules for the \"print\" stage. Respond \u201cReady\u201d to acknowledge and I will paste my first text for you to analyze."
+    },
+    {
+      "role": "assistant",
+      "content": "Ready, please paste the text for analysis."
+    },
+    {
+      "role": "user",
+      "content": "\"list up\" about\u3000\u52d5\u753b\u7de8\u96c6\u306e\u526f\u696d\u306b\u3064\u3044\u3066"
+    },
+    {
+      "role": "assistant",
+      "content": "Sure, here are ten key contents and key sentences about \"Side jobs in video editing\":\n\n1. Introduction to video editing: Learn the basics of video editing.\n2. Video editing software: Choose the right software for your needs.\n3. Color correction: Adjust color to enhance the mood.\n4. Sound design: Add sound effects to enhance the experience.\n5. Motion graphics: Create visually appealing animated titles.\n6. Rendering: Export the final product to the desired format.\n7. Client communication: Understand the client's needs and preferences.\n8. Time management: Prioritize tasks to meet deadlines.\n9. Marketing: Promote your services to potential clients.\n10. Pricing: Determine fair prices for your services.\n\nReady for me to move on to the \"print\" stage?"
+    }
+  ]
+}

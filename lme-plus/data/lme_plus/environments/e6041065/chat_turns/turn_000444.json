@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 444,
+  "session_index": 38,
+  "session_id": "sharegpt_TuureWP_17",
+  "turn_in_session": 25,
+  "date": "2023/05/29 (Mon) 17:34",
+  "role": "user",
+  "content": "Question 42 of 50\nYou plan to automate the deployment\nof a virtual machine scale set that uses\nthe Windows Server 2016 Datacenter\nImage.\nYou need to ensure that when the\nScale set virtual machines are\nprovisioned, they have web server\nComponents installed.\nWhich two actions should you\npertorm?\nEach correct answer presents part of\nthe solution\nSelect the correct answer(s)\nUpload a configuration script\nCreate an automation account\nModify the extensionProfile section of the Azure Resource Manager template\nCreate a new virtual scale set in the Azure portal",
+  "has_answer": false
+}

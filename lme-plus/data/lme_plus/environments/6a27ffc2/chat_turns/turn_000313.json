@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 313,
+  "session_index": 32,
+  "session_id": "sharegpt_GZP0zo9_1",
+  "turn_in_session": 4,
+  "date": "2023/05/24 (Wed) 11:34",
+  "role": "assistant",
+  "content": "The auto-reveal behavior in the Explorer refers to the way in which files are automatically scrolled into view when they are selected or opened. In the November 2022 release of Visual Studio Code, users now have the ability to customize this behavior by using the new explorer.autoRevealExclude setting. This setting allows users to specify which files should be excluded from auto-reveal, using glob patterns for matching. This can be useful for excluding large or unimportant files from auto-reveal, which can help improve the performance and usability of the Explorer.",
+  "has_answer": false
+}

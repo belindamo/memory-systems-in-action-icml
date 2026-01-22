@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 392,
+  "session_index": 42,
+  "session_id": "sharegpt_xfPJOnE_0",
+  "turn_in_session": 3,
+  "date": "2023/09/18 (Mon) 05:22",
+  "role": "assistant",
+  "content": "To modify the pitch of a white noise layer instrument in Logic Pro, you can use the pitch bend function or transpose the MIDI notes.\n\n1. Using the Pitch Bend function:\n\t* Click on the software instrument track to select it.\n\t* In the Piano Roll Editor, select the notes you want to modify.\n\t* Click on the Pitch Bend button in the toolbar (it looks like a line with an arrow pointing up and down).\n\t* Click and drag the pitch bend line up or down to raise or lower the pitch of the selected notes.\n2. Transposing the MIDI notes:\n\t* Click on the software instrument track to select it.\n\t* In the Piano Roll Editor, select the notes you want to transpose.\n\t* Click and drag the notes up or down to raise or lower their pitch.\n\t* Alternatively, you can use the Transpose function in the MIDI Transform window to transpose all selected notes by a specific interval.\n\nYou can also use the ES2's pitch controls to adjust the overall pitch of the instrument. In the Global section of the ES2 interface, you can adjust the Master Tune or the Pitch Bend Range to change the pitch of the instrument across all notes.",
+  "has_answer": false
+}

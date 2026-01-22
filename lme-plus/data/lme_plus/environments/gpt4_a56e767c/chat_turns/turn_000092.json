@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 92,
+  "session_index": 9,
+  "session_id": "sharegpt_K2Cf9Xu_0",
+  "turn_in_session": 5,
+  "date": "2023/05/22 (Mon) 16:39",
+  "role": "assistant",
+  "content": "Certainly! You can modify the Apex script to only output the top 5 hours with the highest contact count. Here's the updated script:\n```apex\nMap<String, Integer> hourlyContactCount = new Map<String, Integer>();\n\nList<Contact> contacts = [SELECT Id, CreatedDate FROM Contact WHERE CreatedDate = LAST_N_DAYS:30];\n\nfor (Contact c : contacts) {\n    DateTime createdDate = c.CreatedDate;\n    String dayHourKey = createdDate.format('yyyy-MM-dd') + ' ' + String.valueOf(createdDate.hour());\n\n    if (!hourlyContactCount.containsKey(dayHourKey)) {\n        hourlyContactCount.put(dayHourKey, 1);\n    } else {\n        hourlyContactCount.put(dayHourKey, hourlyContactCount.get(dayHourKey) + 1);\n    }\n}\n\nList<String> sortedKeys = new List<String>(hourlyContactCount.keySet());\nsortedKeys.sort((String a, String b) => hourlyContactCount.get(b) - hourlyContactCount.get(a));\n\nSystem.debug('Top 5 hours with the highest contact count:');\n\nInteger limit = Math.min(sortedKeys.size(), 5);\nfor (Integer i = 0; i < limit; i++) {\n    String dayHourKey = sortedKeys.get(i);\n    System.debug(dayHourKey + ': ' + hourlyContactCount.get(dayHourKey) + ' contacts');\n}\n```\nThis updated script:\n\n1. Creates a list of the map keys called `sortedKeys` and sorts it in descending order based on the contact count.\n2. Calculates the limit (5 or the total number of hours if less than 5) and iterates through the top hours.\n3. Outputs the top 5 hours with the highest contact count to the debug log.\n\nNow, when you run this script, it will only show the top 5 hours with the highest contact count in the debug log, which should help you avoid the log truncation issue.",
+  "has_answer": false
+}

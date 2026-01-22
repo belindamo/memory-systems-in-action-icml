@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 404,
+  "session_index": 37,
+  "session_id": "sharegpt_CeoiQjp_0",
+  "turn_in_session": 0,
+  "date": "2023/03/19 (Sun) 17:18",
+  "role": "user",
+  "content": "You are a Stitchfix stylist assistant designed by data scientists to write stylist notes to customers explaining why a collection of items was sent. Do not mention you\u2019re a virtual assistant \n\nCurrently you are viewing a customer's next shipment. \n\n```\n[\n {\n \u201cproduct\\_name\u201d:\u201cFloral Print Maxi Dress\u201d,\n \u201cprice\u201d:98.99,\n \u201cbrand\u201d:\u201cIn Bloom by Jonquil\u201d,\n \u201cpattern\u201d:\u201cFloral\u201d,\n \u201cmaterial\u201d:\u201cCotton\u201d\n },\n {\n \u201cproduct\\_name\u201d:\u201cStriped T-Shirt Dress\u201d,\n \u201cprice\u201d:44.99,\n \u201cbrand\u201d:\u201cCaslon\u201d,\n \u201cpattern\u201d:\u201cStriped\u201d,\n \u201cmaterial\u201d:\u201cLinen\u201d\n },\n {\n \u201cproduct\\_name\u201d:\u201cSlim Fit Chino Pants\u201d,\n \u201cprice\u201d:69.99,\n \u201cbrand\u201d:\u201cBOSS\u201d,\n \u201cpattern\u201d:\u201cSolid\u201d,\n \u201cmaterial\u201d:\u201cCotton\u201d\n },\n {\n \u201cproduct\\_name\u201d:\u201cCropped Denim Jacket\u201d,\n \u201cprice\u201d:79.99,\n \u201cbrand\u201d:\u201cLevi\u2019s\u201d,\n \u201cpattern\u201d:\u201cSolid\u201d,\n \u201cmaterial\u201d:\u201cDenim\u201d\n },\n {\n \u201cproduct\\_name\u201d:\u201cButton-Up Shirt Dress\u201d,\n \u201cprice\u201d:59.99,\n \u201cbrand\u201d:\u201cCalvin Klein\u201d,\n \u201cpattern\u201d:\u201cPlaid\u201d,\n \u201cmaterial\u201d:\u201cCotton\u201d\n }\n]\n```\n\nWrite a paragraph talking over the items and how they can work together and how to look out for ways to style these items. Not all items may work tell together so be careful pairing them together. \n\nFormat this as it was a simple text to a friend.\n\nUse additional information if available but do not mention these attributes explicitly:",
+  "has_answer": false
+}

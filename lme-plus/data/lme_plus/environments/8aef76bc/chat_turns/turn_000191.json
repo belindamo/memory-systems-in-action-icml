@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 191,
+  "session_index": 18,
+  "session_id": "ultrachat_522146",
+  "turn_in_session": 3,
+  "date": "2023/05/23 (Tue) 11:53",
+  "role": "assistant",
+  "content": "Sure, a trailing stop order is a dynamic stop order that adjusts the stop price based on the stock's price movements. It works by setting a percent or dollar amount that adjusts with the stock price. \n\nFor example, let's say an investor bought a stock for $50 per share and set a trailing stop order of 10%. If the stock's price rises to $55, the trailing stop order would be triggered and set the stop price at $49.50 ($55 - 10% of $55). If the stock's price then increases to $60, the trailing stop order would adjust the stop price to $54 ($60 - 10% of $60). \n\nOn the other hand, if the stock's price decreases from $55 to $53, the stop price would remain unchanged at $49.50, which is 10% below the previous high of $55. This ensures that the investor is protected against significant losses while also allowing for potential gains if the stock continues to rise.\n\nTrailing stop orders are popular with investors who want to protect their positions while allowing for potential upside. They are especially useful for investors who can't constantly monitor their investments, as the order automatically adjusts to the current market conditions. However, it's important to note that trailing stop orders do not guarantee profits or prevent losses in volatile markets.",
+  "has_answer": false
+}

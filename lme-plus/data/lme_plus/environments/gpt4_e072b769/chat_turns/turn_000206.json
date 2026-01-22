@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 206,
+  "session_index": 21,
+  "session_id": "sharegpt_zdDMlRC_0",
+  "turn_in_session": 1,
+  "date": "2023/04/16 (Sun) 08:49",
+  "role": "assistant",
+  "content": "To build a software that can keep tickets in sync between Jira and ServiceNow, you would first need to integrate with both Jira and ServiceNow's APIs. This would allow your software to create, read, update, and delete tickets in both systems.\n\nOnce you have integrated with both APIs, you can use webhooks to listen for events in one system and trigger actions in the other. For example, you could set up a webhook in ServiceNow that listens for new tickets being created, and when a new ticket is created, the webhook can trigger your software to create a corresponding ticket in Jira.\n\nYour software would then need to keep track of the relationship between tickets in Jira and ServiceNow, so that it knows which Jira ticket corresponds to which ServiceNow ticket, and vice versa. This would allow your software to propagate changes made in one system to the corresponding ticket in the other system.\n\nOverall, building this kind of software would require experience with APIs, webhooks, and ticketing systems like Jira and ServiceNow. It would also require some careful design and planning to ensure that the syncing between the two systems is handled correctly.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 370,
+  "session_index": 34,
+  "session_id": "sharegpt_SDJ5YwZ_0",
+  "turn_in_session": 0,
+  "date": "2023/03/15 (Wed) 23:16",
+  "role": "user",
+  "content": "Act as a content creator for e-learning course content. The product has the following structure:\n- Top level: Course\n- 2nd level: Module\n- 3rd level: Screen\n\nA course can have multiple modules.\nA module can have multiple screens.\nA screen can have multiple components. This is where the content lives.\n\nThese are the supported components within a screen:\n- Text\n- Image\n\nHere are some examples:\n\nCourse: Giving feedback\nModule 1: Giving feedback\nScreen 1:\n- Text: Giving feedback: it's getting more and more important\n- Image: Image from a person giving feedback to another person\n- Text: \"\"\"\n\nWhat is the best way to give feedback to your colleagues? You don't want to be offensive. But you want your colleagues to take you seriously.\n\nIn this module we take a deep dive into giving feedback to your colleagues. Good luck! \ud83d\udca1\n\"\"\"\nScreen 2: \n- Text: \"\"\"\n\nOur most important feedback tips\n\n1. ORGANISE IT\nPlan a certain moment for this. And tell your collegue about it. You could do that during a meeting or a team day. But why not giving it one-one-one? Make sure you create a great feedback-moment. Walk or sit down for a while or get a cup of coffee.\n\"\"\"\n- Image: Image of a manager and employee talking with each other.\n\nMake a course about \"Hospitality in the hotel industry\". Respond with the same structure and be creative.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 3,
+  "session_index": 0,
+  "session_id": "sharegpt_SYm10tk_0",
+  "turn_in_session": 3,
+  "date": "2023/05/20 (Sat) 03:38",
+  "role": "assistant",
+  "content": "You can use the following DAX formula in Power BI to transform the column:\n```less\nNew Column = \nIF(\n    LEN(Table1[Column]) = 22,     // Check if the length of the string is 22\n    Table1[Column],               // If it is already in the correct format, leave it as is\n    CONCATENATE(                  // Otherwise, transform it to the correct format\n        LEFT(Table1[Column], 7),  // Take the first 7 characters (O-22-XXX-)\n        IF(\n            LEN(Table1[Column]) = 24,      // If the length is 24, there is a leading zero that needs to be removed\n            CONCATENATE(\"ART\", MID(Table1[Column], 11, 2)),   // Take the two characters after the \"ART\" (e.g. \"13\")\n            CONCATENATE(\"ART0\", MID(Table1[Column], 11, 1))  // Add a leading zero and take the one character after the \"ART\" (e.g. \"4\")\n        ),\n        MID(Table1[Column], 14, 6)    // Take the six characters after the \"PI\" (e.g. \"4-K01\")\n    )\n)\n```\nThis formula first checks if the length of the string is already 22 characters. If it is, it leaves it as is. If not, it transforms the string to the correct format using the `LEFT`, `MID`, and `CONCATENATE` functions.\n\nIn particular, the formula checks whether there is a leading zero before the ART code, and adds it if necessary. It then combines the first 7 characters with the corrected ART code and the last 6 characters to form the final string.\n\nYou can replace \"New Column\" with the name of the column where you want to output the transformed values, and \"Table1[Column]\" with the name of the column that contains the original values.",
+  "has_answer": false
+}

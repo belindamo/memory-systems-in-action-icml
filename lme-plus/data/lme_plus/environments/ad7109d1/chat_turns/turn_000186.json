@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 186,
+  "session_index": 17,
+  "session_id": "sharegpt_RzNjBHR_0",
+  "turn_in_session": 3,
+  "date": "2023/05/24 (Wed) 18:03",
+  "role": "assistant",
+  "content": "Here's a potential structure for an employee leave management system app:\n\n1. Login/Registration Screen: This is the first screen the user sees when they open the app. Employees can log in using their credentials or register if they are new to the company.\n2. Dashboard: After logging in, employees are taken to the dashboard screen. Here, they can view their leave balance, submit new leave requests, view the status of their existing requests, and view any upcoming leave that has been approved.\n3. Leave Request Screen: Employees can select the type of leave they want to request (e.g. vacation, sick leave, personal leave, etc.), specify the date range of the leave, and provide a reason for the request.\n4. Leave History Screen: This screen displays a history of all leave requests made by the employee, along with the status of each request.\n5. Approvals Screen: Managers can view pending leave requests and approve or deny them. This screen also allows managers to view their team's leave balances and approve or deny leave requests for team members.\n6. Reports Screen: This screen allows HR and managers to view reports on leave balances, usage, and trends across the company or specific departments.\n7. Settings Screen: This screen allows employees to update their personal information, change their password, and modify their notification preferences.\n8. Help/Support Screen: This screen provides employees with resources and support for any questions or issues they may encounter while using the app.\n\nOverall, the app should be user-friendly and easy to navigate. The user interface should be clean and simple, with intuitive buttons and clear instructions. The app should also be secure, with strong encryption and protection of employee data.",
+  "has_answer": false
+}

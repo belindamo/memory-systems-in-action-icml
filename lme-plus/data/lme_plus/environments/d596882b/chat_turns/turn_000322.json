@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 322,
+  "session_index": 30,
+  "session_id": "sharegpt_mANdO1O_0",
+  "turn_in_session": 0,
+  "date": "2023/05/27 (Sat) 15:27",
+  "role": "user",
+  "content": "Write me a basic Javascript game that shows a 2D grid of a warehouse floor. The player is a bot on the floor, and needs to move around a maze of objects. Random packages appear in different parts of the maze, and must be delivered to other locations as quickly as possible. For each successful delivery, the player is awarded a score. Other bots are wandering around the maze; the player must avoid colliding into them.",
+  "has_answer": false
+}

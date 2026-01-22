@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 0,
+  "session_index": 0,
+  "session_id": "sharegpt_vbNrVtS_259",
+  "turn_in_session": 0,
+  "date": "2023/05/20 (Sat) 02:14",
+  "role": "assistant",
+  "content": "Here is a sample layout for the Specific Task screen:\n\nTitle: Specific Task\n\nHeader:\n\n* Task Name\n* Task ID\n* Task Description\n* Task Tagger\n* Task Checker\n* Task Due Date\n\nBody:\n\n* Table of Documents\n\t+ Document Name\n\t+ Document ID\n\t+ Document Status (Not Started, In Progress, Ready for Review, In Review, Complete, Rejected)\n\t+ Document Tagger\n\t+ Document Assigned Date\n* Change Task Status button (if all documents have been tagged)\n\nFooter:\n\n* Back to Task Management button\n\nThe status of each document could be indicated using different colors, to make it easier to identify the current state of each document. For example:\n\n* Not Started: Light Gray\n* In Progress: Yellow\n* Ready for Review: Light Green\n* In Review: Dark Green\n* Complete: Blue\n* Rejected: Red\n\nThis color scheme is intended to provide clear and easily recognizable visual cues for the different statuses. Additionally, the use of color contrast between the status and the background can help ensure that the status information is easy to see for all users, including those with color blindness.",
+  "has_answer": false
+}

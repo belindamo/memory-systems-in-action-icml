@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 52,
+  "session_index": 6,
+  "session_id": "sharegpt_s5jBrH0_0",
+  "turn_in_session": 4,
+  "date": "2023/05/21 (Sun) 17:24",
+  "role": "user",
+  "content": "Regard everything after ':' as the slot initialization. Respect the included specifications for the slots in during the NLU process: | Slot name | Entity specification | Mapping description, range | Aimed Type to map slot value into |\n|-----------|----------------------|----------------------------|-----------------------------------|\n| customerInterestedInSalesConfidence | a confidence value that estimates how interested the customer is to continue the sales process | A evaluation based on the customers statements, range [0...1] | float |",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 228,
+  "session_index": 23,
+  "session_id": "sharegpt_7rLq4MQ_9",
+  "turn_in_session": 7,
+  "date": "2023/05/25 (Thu) 14:16",
+  "role": "user",
+  "content": "Here's an example where I added another constraint, depending on the parity of a randomly produced integer:\n\n#begin code\nfrom pyomo.environ import \\*\nimport random\n\nmodel = ConcreteModel()\n\nmodel.x = Var(within=Binary)\nmodel.y = Var(within=Binary)\n\ndef my\\_constraint\\_rule(model):\n return model.x + model.y >= 0.5\n\nmodel.my\\_constraint = Constraint(rule=my\\_constraint\\_rule)\n\ndef my\\_other\\_constraint\\_rule(model):\n r = random.randint(0, 9)\n print(r)\n return r%2==0\n\nmodel.my\\_other\\_constraint=Constraint(rule = my\\_other\\_constraint\\_rule)\n\nmodel.obj = Objective(expr=model.x + model.y, sense=maximize)\n\nsolver = SolverFactory('glpk')\nresults = solver.solve(model)\n\nprint(results)\n\nprint('x =', model.x.value)\nprint('y =', model.y.value)\n\nmy\\_other\\_constraint\\_rule(model)\n#end code\n\nI get this error:\n\nValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (False) instead of a Pyomo object. Please modify your rule to return Constraint.Infeasible instead of False.",
+  "has_answer": false
+}

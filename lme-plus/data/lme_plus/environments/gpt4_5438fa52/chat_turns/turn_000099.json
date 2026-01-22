@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 99,
+  "session_index": 12,
+  "session_id": "sharegpt_ni8QFie_11",
+  "turn_in_session": 4,
+  "date": "2023/05/27 (Sat) 13:58",
+  "role": "assistant",
+  "content": "Use Case 1: Submit game review\nActor: Customer\nBasic Flow:\n\n1. Customer navigates to the game's page on Steam\n2. Customer clicks on the \"Write a review\" button\n3. Customer selects a rating and writes a review\n4. Customer submits the review\n\nAlternative Flow 1: Review is denied due to violation of guidelines\n\n* Customer is informed of the guideline violation and is prompted to edit their review before resubmitting it.\n\nAlternative Flow 2: Review is pending moderation\n\n* Customer is informed that the review is pending moderation and will be published once it's approved.\n\nAlternative Flow 3: Review is approved and published\n\n* Customer is informed that the review has been approved and is now visible on the game's page on Steam.\n\nAlternative Flow 4: Customer updates the review\n\n* Customer can update their review as many times as they want before the game is released.\n\nAlternative Flow 5: Customer deletes the review\n\n* Customer can delete the review at any time if they change their mind.",
+  "has_answer": false
+}

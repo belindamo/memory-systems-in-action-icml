@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 2,
+  "session_index": 0,
+  "session_id": "sharegpt_SYm10tk_0",
+  "turn_in_session": 2,
+  "date": "2023/05/20 (Sat) 03:38",
+  "role": "user",
+  "content": "i have a table with the following rows:\nO-22-040-ART13-PI3-K08\nO-22-082-ART13-PI3-K09\nO-22-048-ART13-PI3-K010\nO-22-082-ART13-PI3-K011\nO-22-055-ART12-PI4-K08\nO-22-040-ART12-PI4-K09\nO-22-073-ART4-PI4-K01\nO-22-073-ART4-PI4-K02\n\nI have to transform the data using a power BI DAX formula. \nThe count of the characters in each line should be 22.\nThe format should be something like \nO-22-056-ART12-PI4-K02\nO-22-055-ART12-PI4-K03\nO-22-055-ART12-PI4-K04\n\nsome of the formulas have a wrong format, such as \nO-22-082-ART13-PI3-K011, which should be O-22-082-ART13-PI3-K11 or\nO-22-073-ART4-PI4-K01, which should be O-22-073-ART04-PI4-K01.\n\nHow can i transform the column using power bi DAX logic?",
+  "has_answer": false
+}

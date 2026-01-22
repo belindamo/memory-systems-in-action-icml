@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 331,
+  "session_index": 29,
+  "session_id": "sharegpt_RReCreP_0",
+  "turn_in_session": 10,
+  "date": "2023/05/23 (Tue) 15:14",
+  "role": "user",
+  "content": "Here is an example of a workflow child - \n\n\"bTGzh\": {\n \"properties\": {\n \"element\\_id\": \"bTGzc\"\n },\n \"type\": \"ButtonClicked\",\n \"id\": \"bTGzf\",\n \"actions\": {\n \"0\": {\n \"properties\": {\n \"element\\_id\": \"bTGzi\"\n },\n \"type\": \"HideElement\",\n \"id\": \"bTGzl\"\n }\n }\n }\n\nYou can see that the dictionary key to access this workflow child is \"bTGzh\". In the properties of this element, you see the input element id that represents the initial trigger. Then, in the actions, you see the properties that represents the element involved in the action, the type of action, and the id of the action. Notice that when a workflow refers to other elements, it uses those elements' reference ids. This action is of type \"HideElement\". So, when the input element is clicked, then \"HideElement\" is called on the element inside the action properties.",
+  "has_answer": false
+}

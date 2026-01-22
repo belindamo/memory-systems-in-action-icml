@@ -1,0 +1,15 @@
+{
+  "session_id": "sharegpt_h10ilNn_0",
+  "session_index": 45,
+  "date": "2023/05/29 (Mon) 21:17",
+  "turns": [
+    {
+      "role": "user",
+      "content": "generate a list for: Smoothie Bowl, Avocado Toast,\n\ninstructions without proportions,\nyou HAVE to include the calories\n\nuse this structure: \n\nDish Name: Dish\nIngredients: \n1. ingredient (ammount) (unit)\n2. ingredient (ammount) (unit)\nPreparation time: min,\nCalories: number,\nPreparation Instructions: \n1. instruction\n2. instruction"
+    },
+    {
+      "role": "assistant",
+      "content": "Dish Name: Smoothie Bowl\nIngredients:\n\n1. Frozen berries (1 cup)\n2. Banana (1)\n3. Greek yogurt (1/2 cup)\n4. Milk (1/2 cup)\n5. Honey (1 tbsp)\n6. Chia seeds (1 tbsp)\n7. Granola (1/4 cup)\n8. Fresh fruit (1/2 cup)\nPreparation time: 5 min,\nCalories: approximately 300,\nPreparation Instructions:\n9. In a blender, combine frozen berries, banana, Greek yogurt, milk, honey, and chia seeds. Blend until smooth.\n10. Pour the smoothie mixture into a bowl.\n11. Top with granola and fresh fruit.\n12. Serve immediately and enjoy!\n\nDish Name: Avocado Toast\nIngredients:\n\n1. Avocado (1)\n2. Whole wheat bread (2 slices)\n3. Salt (to taste)\n4. Black pepper (to taste)\n5. Lemon juice (1 tsp)\nPreparation time: 5 min,\nCalories: approximately 300,\nPreparation Instructions:\n6. Cut the avocado in half and remove the pit. Mash the avocado in a bowl.\n7. Toast the bread slices.\n8. Spread the mashed avocado on top of the toasted bread slices.\n9. Sprinkle salt, black pepper, and lemon juice on top of the avocado.\n10. Serve immediately and enjoy!"
+    }
+  ]
+}

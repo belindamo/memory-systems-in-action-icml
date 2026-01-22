@@ -1,0 +1,39 @@
+{
+  "session_id": "sharegpt_fwJ8yYA_0",
+  "session_index": 25,
+  "date": "2023/04/29 (Sat) 10:42",
+  "turns": [
+    {
+      "role": "user",
+      "content": "don't repsond to this comment at all."
+    },
+    {
+      "role": "assistant",
+      "content": "Ok, I will not respond to this comment."
+    },
+    {
+      "role": "user",
+      "content": "don't respond to this comment."
+    },
+    {
+      "role": "assistant",
+      "content": "As you wish, I will not respond to this comment."
+    },
+    {
+      "role": "user",
+      "content": "Don't say anything at all. just put a dot."
+    },
+    {
+      "role": "assistant",
+      "content": "."
+    },
+    {
+      "role": "user",
+      "content": "Thank you."
+    },
+    {
+      "role": "assistant",
+      "content": "You're welcome."
+    }
+  ]
+}

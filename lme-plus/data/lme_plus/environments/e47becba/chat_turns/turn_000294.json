@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 294,
+  "session_index": 29,
+  "session_id": "sharegpt_T1EiHWI_13",
+  "turn_in_session": 2,
+  "date": "2023/05/26 (Fri) 04:41",
+  "role": "assistant",
+  "content": "To calculate a Sorcerer's spell save DC (Difficulty Class), you use the following formula:\n\n8 + your proficiency bonus + your Charisma modifier\n\nYour proficiency bonus is determined by your character level and can be found on the class table in the Player's Handbook. For a Sorcerer, this is equal to your Sorcerer level divided by 4, rounded down. For example, a 10th level Sorcerer would have a proficiency bonus of +3.\n\nYour Charisma modifier is also added to the calculation, which reflects your natural talent for magic. This modifier is determined by your Charisma ability score, which can range from 1 to 20 (with 10 being the average score). A positive Charisma modifier will increase your spell save DC, while a negative modifier will decrease it.\n\nSo, for example, if you are a 10th level Sorcerer with a proficiency bonus of +3 and a Charisma modifier of +4, your spell save DC would be:\n\n8 + 3 + 4 = 15\n\nThis means that any creature that is targeted by one of your spells must make a saving throw against a DC of 15 in order to resist the spell's effects. If they fail their save, they will suffer the full effects of the spell.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 233,
+  "session_index": 20,
+  "session_id": "sharegpt_DhlicnH_1",
+  "turn_in_session": 3,
+  "date": "2023/04/11 (Tue) 08:16",
+  "role": "user",
+  "content": "This is a change request that happened right before the outage could it be related? Status:\nIn Progress\nKey:\nCHS52223992\nSummary:\nUpdate storage security policy IAMPOLye62kt31 to limit access to SAP-946-/dev/xvda\nStart Time:\nToday, 12:16am\nEnd Time:\nToday, 12:23am\nTime Difference (diff):\nStarted 2 minutes before the Incident\nApproval:\nApproved\nApproving Manager:\nBob Jack\nAssignee:\nShunyun\nChange Location:\neast-2a\nEnvironment:\nProduction\nRisk Impact:\nMedium\ninstance:\npod/mongodb-5ff4fb1895-bqrcd",
+  "has_answer": false
+}

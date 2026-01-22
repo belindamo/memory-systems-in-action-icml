@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 512,
+  "session_index": 46,
+  "session_id": "sharegpt_egWGFLO_29",
+  "turn_in_session": 4,
+  "date": "2023/06/16 (Fri) 17:35",
+  "role": "assistant",
+  "content": "Here's a detailed breakdown of the changes in the header markup of Twenty Fourteen compared to Twenty Thirteen and the reasons behind these changes:\n\n1. Header structure: The header structure in Twenty Fourteen has been reorganized, introducing a new `<div>` element with the class `.header-main`. This new wrapper element groups the site title, search toggle, and primary navigation together, making it easier to style and manage the layout of the header components.\n```html\n<div class=\"header-main\">\n  ...\n</div>\n```\n1. Site title: The site title markup in Twenty Fourteen is simplified compared to Twenty Thirteen. The site description and the `.home-link` class have been removed, making the markup more concise.\n\nTwenty Thirteen:\n```html\n<a class=\"home-link\" href=\"...\" title=\"...\" rel=\"home\">\n  <h1 class=\"site-title\">...</h1>\n  <h2 class=\"site-description\">...</h2>\n</a>\n```\nTwenty Fourteen:\n```html\n<h1 class=\"site-title\"><a href=\"...\" rel=\"home\">...</a></h1>\n```\n1. Search toggle: In Twenty Fourteen, a search toggle button has been added to the header. This button, when clicked, reveals a search form, providing users with a convenient way to search the site without taking up too much space in the header",
+  "has_answer": false
+}

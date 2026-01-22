@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 103,
+  "session_index": 9,
+  "session_id": "sharegpt_SPbMLCl_14",
+  "turn_in_session": 1,
+  "date": "2023/05/21 (Sun) 09:35",
+  "role": "assistant",
+  "content": "This sample data represents a doctor's profile with various attributes such as specialty areas, experience, NPI, working hours, exceptions, rating, and notification preferences. Here's a brief overview of some key data points:\n\n* `specialtyAreas`: This field stores the doctor's specialty area IDs.\n* `experience`: An array containing various experiences or qualifications of the doctor.\n* `npi`: The National Provider Identifier for the doctor.\n* `workHours`: An array of objects containing the doctor's working hours, with fields such as `queue`, `appointments`, `startTime`, and `endTime`.\n* `overRide`: An object containing the doctor's availability exceptions. The `available` field stores an array of objects specifying the doctor's exceptional availability, while the `unavailable` field stores an array of dates when the doctor is entirely unavailable.\n* `rating`: The doctor's average rating.\n* `specialization`: The doctor's area of specialization, such as \"Family Medicine.\"\n* `notificationPreferences`: An object containing the doctor's notification preferences for email and text notifications.\n* `shortBio`: A brief description or biography of the doctor.\n* `nonWorkingDays`: An array of integers representing the days of the week when the doctor is not working (e.g., 1 for Monday, 5 for Friday).\n\nThis data can be used to manage a doctor's profile, schedule, and",
+  "has_answer": false
+}

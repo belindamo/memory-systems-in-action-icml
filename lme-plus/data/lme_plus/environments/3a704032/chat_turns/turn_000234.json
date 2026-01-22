@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 234,
+  "session_index": 23,
+  "session_id": "sharegpt_zvmX9pX_29",
+  "turn_in_session": 3,
+  "date": "2023/05/26 (Fri) 08:43",
+  "role": "user",
+  "content": "another content to table: Stylize\n Light\nThis Midjourney Bot has been trained to produce images that favor artistic color, composition, and forms. The --stylize or --s parameter influences how strongly this training is applied. Low stylization values produce images that closely match the prompt but are less artistic. High stylization values create images that are very artistic but less connected to the prompt.\n--stylize's default value is 100 and accepts integer values 0\u20131000 when using the default [V4 model].\n\nDifferent Midjourney Version Models have different stylize ranges.\n\nVersion 4 Version 3 Test / Testp niji\nStylize default 100 2500 2500 NA\nStylize Range 0\u20131000 625\u201360000 1250\u20135000 NA\nCommon Stylize Settings\nprompt example: /imagine prompt illustrated figs --s 100\n\n--stylize 50\nMidjourney style parameter example. Image of the prompt Vibrant California Poppies with style=50\n\ud83d\udd8c\ufe0f Style Low\n--stylize 100 (default)\nMidjourney stylize parameter example. Image of the prompt Vibrant California Poppies with style=100\n\ud83d\udd8c\ufe0f Style Med\n--stylize 250\nMidjourney stylize parameter example. Image of the prompt Vibrant California Poppies with style=250\n\ud83d\udd8c\ufe0f Style High\n--stylize 750\nMidjourney stylize parameter example. Image of the prompt Vibrant California Poppies with style=750\n\ud83d\udd8c\ufe0f Style Very High\nHow to Switch Stylization Values\nUse the Stylize Parameter\nAdd --stylize  or --s  to the end of your prompt.\n\nAnimated Gif showing how to use the Midjourney style parameter.\n\nUse the Settings Command\nType /settings and select your preferred stylize value from the menu.\n\n\ud83d\udd8c\ufe0f Style Low \ud83d\udd8c\ufe0f Style Med \ud83d\udd8c\ufe0f Style High \ud83d\udd8c\ufe0f Style Very High",
+  "has_answer": false
+}

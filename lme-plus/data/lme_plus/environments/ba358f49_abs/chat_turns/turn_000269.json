@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 269,
+  "session_index": 25,
+  "session_id": "sharegpt_HRpe8C8_0",
+  "turn_in_session": 16,
+  "date": "2023/05/26 (Fri) 06:33",
+  "role": "user",
+  "content": "Bay clinic is a medical centre in Brazil that operates with a unique mission of blending research and education with clinical and hospital care. The medical center has a huge head force of 25,000 employees, and as a result of the combined effort of those employees, the medical center has been able to handle approximately 3 million visits so far. In recent times, the hospital was incurring losses despite having the finest doctors available and not lacking scheduled appointments. To investigate the reason for the anomaly, a sample data dump of appointments \nmedicalcentre.csv is hereby presented. The collected data provides information on the patient\u2019s age, gender, \nappointment date, various diseases, etc. To cut costs, predict if a patient will show up on the appointment day or not (i.e., predict the appointment status) by completing the following: \nA. Data Wrangling & Feature Engineering (45 marks): \n1. Prepare the data for downstream processes, e.g., deal with missing values, duplicates 2. Determine the frequency of distinct values in each feature set \n3. Initialize a function to plot relevant features within the dataset to visualize for outliers 4. Count the frequency of negative Age feature observations, and remove them \n5. The values within AwaitingTime are negative, transform them into positive values \n6. ML algorithm requires the variables to be coded into its equivalent integer codes. Encode the string \ncategorical values into an integer code\n \n7. Separate the date features into date components \n8. ML algorithms work best when the input data are scaled to a narrow range around zero. Rescale the age feature with a normalizing (e.g., min\\_max normalization) or standardization (e.g., z\\_score \nstandardization) function. \n9. Conduct variability comparison between features using a correlation matrix & drop correlated features\n \n\nexplain 'Determine the frequency of distinct values in each feature set'",
+  "has_answer": false
+}

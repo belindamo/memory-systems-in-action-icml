@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 231,
+  "session_index": 21,
+  "session_id": "sharegpt_D88l1Iv_11",
+  "turn_in_session": 0,
+  "date": "2023/05/25 (Thu) 04:54",
+  "role": "assistant",
+  "content": "I apologize for the confusion earlier. The issue is with the named ranges in the formula, which should be replaced with actual cell references. Here's the corrected formula:\n\n`=IFERROR(((((('Flow input'!E8/0.2953)*6894.76)+('Flow input'!E10*248.84)+(AVERAGEIFS('Logger input'!X:X,'Logger input'!A:A,\">=\"&'Phase Averages'!C9,'Logger input'!A:A,\"<=\"&'Phase Averages'!D9))*248.84))/((AVERAGEIFS('Logger input'!Y:Y,'Logger input'!A:A,\">=\"&'Phase Averages'!C9,'Logger input'!A:A,\"<=\"&'Phase Averages'!D9)-32)*5/9+273.15)*8.314*(1+(2/100)))/(12*0.0254)^2*3.14159*60/4)*35.3147, \"No data\")`\n\nIn this formula:\n\n* Replace 'Logger input'!X:X with the column reference for DELTA\\_P2 in the 'Logger input' tab.\n* Replace 'Logger input'!Y:Y with the column reference for TNL\\_TMP in the 'Logger input' tab.\n* Replace 'Logger input'!A:A with the column reference for Time in the 'Logger input' tab.\n\nThis should resolve the error and provide the correct calculation for ACFM.",
+  "has_answer": false
+}

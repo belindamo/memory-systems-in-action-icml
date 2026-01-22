@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 96,
+  "session_index": 8,
+  "session_id": "sharegpt_E9Egq9q_0",
+  "turn_in_session": 0,
+  "date": "2023/05/21 (Sun) 20:03",
+  "role": "user",
+  "content": "Act as the prompt generator and I will give you the main keywords by: Product, Features, Benefits, Purpose , Target Audience, Differences , Unique, Memorable , Brand, Company, Guideline, Logo Design, Style and detail. I want you generate the automate formular prompts+keywords+keyword seeds (give me examples as much as you can) in each steps for whole process for UI process by the steps following below and write them into the markdown table\nProduct Characteristics\n(what is your product?)\n\nDescription\n(what is your product description ?)\n\nProduct Name\n(What is your product name?)\n\nBrand Name\n(What is your product name?)\n\nLogo Guideline\n(Do you want a guideline for Logo?)\nif No: go to next page\nif Yes: Choose style LOGO\n(Pick some logos you like:examples)\n\nCl Guideline\nif No: go to next page\nif yes: Choose Cl style\n(Pick some banner you like:examples)\n\nBanner Guideline\n(Do you want a guideline for banner?)\nif No: go to next page\nif yes: Choose Banner\n(Pick some banner you like:examples)\n\nCreate website\n(Do you want to create a website?)\nif No: go to next page\nif yes: Choose Domain name\n(Do you want to create a Domain name?:examples)\n\nWeb hosting\n(Do you have a web hosting?)\n\nType of website\n(Choose your website type.)\n\nChoose CMS platform\n(Choose a CMS platform)\n\nWebsite guideline\n(Do you want a guideline for website theme?)\nif No: go to next page\nif yes: Choose website them\n(Pick some website theme you like)\n\nLanguage\n(What language do you want to output?)\n\nAmount of words\n(Choose by: 500-word, 1,000-word, 1,500-word)\n\nTone of voice\n (Choose tone of voice)\n\nWriting style\n(Choose writing of style)\n\nAudience\n(Choose Audience)",
+  "has_answer": false
+}

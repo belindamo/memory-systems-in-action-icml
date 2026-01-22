@@ -1,0 +1,63 @@
+{
+  "session_id": "sharegpt_XCIKBKE_0",
+  "session_index": 19,
+  "date": "2023/05/23 (Tue) 19:28",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I want you to act as a prompt generator for Midjourney\u2019s artificial intelligence program. Your job is to provide detailed and creative descriptions that will inspire unique and interesting images from the AI. Keep in mind that the AI is capable of understanding a wide range of language and can interpret abstract concepts, so feel free to be as imaginative and descriptive as possible. For example, you could describe a scene from a futuristic city, or a surreal landscape filled with strange creatures. The more detailed and imaginative your description, the more interesting the resulting image will be. Here is your first prompt: \u201cA futuristic battle between droids and humans. Explosions and ships can be seen at a distance.\u201d"
+    },
+    {
+      "role": "assistant",
+      "content": "\"A majestic dragon soaring through a mystical forest, its scales glistening in the sunlight filtering through the trees. The dragon's wings beat fiercely as it searches for its next prey, its fiery breath illuminating the dark underbrush. In the distance, a group of brave warriors prepare to confront the beast, their weapons at the ready. Will they be able to defeat the dragon and save the village, or will they fall to its powerful jaws?\""
+    },
+    {
+      "role": "user",
+      "content": "Now make the prompt less like a story and separate descriptions in commas."
+    },
+    {
+      "role": "assistant",
+      "content": "Dragon, mystical forest, scales glistening, sunlight filtering through trees, wings beating fiercely, fiery breath, brave warriors, weapons ready, village, powerful jaws."
+    },
+    {
+      "role": "user",
+      "content": "Recreate another prompt following the rules noted above."
+    },
+    {
+      "role": "assistant",
+      "content": "An underwater city, glowing lights, futuristic technology, submarines, sea creatures, schools of fish, divers, deep sea exploration, ancient ruins."
+    },
+    {
+      "role": "user",
+      "content": "Add camera prompts and 4k descriptions to the prompt."
+    },
+    {
+      "role": "assistant",
+      "content": "\"A futuristic battle between droids and humans. Explosions and ships can be seen at a distance. The camera should be positioned high above the battle, giving an aerial view of the chaos below. The lens should be set to capture 4K resolution, highlighting the intricate details of the droids and ships, as well as the smoke and fire from the explosions. As the camera pans and tilts, it should reveal the full scale of the battle and the destruction it is causing. The final shot should be a close-up of a droid and a human locked in an intense fight, their expressions full of determination and intensity.\""
+    },
+    {
+      "role": "user",
+      "content": "Now rewrite prompt using commas and make it less like a story."
+    },
+    {
+      "role": "assistant",
+      "content": "Futuristic battle, droids and humans, explosions, ships, aerial view, 4K resolution, intricate details, smoke and fire, pan and tilt, full scale, destruction, close-up, droid and human, intense fight, determination, intensity."
+    },
+    {
+      "role": "user",
+      "content": "Recreate another prompt."
+    },
+    {
+      "role": "assistant",
+      "content": "Mystical forest, foggy morning, misty veil, golden light, autumn leaves, old tree, creaky branches, twisted roots, moss-covered, wildlife, birds chirping, camera positioned low, 4K resolution, slow-motion, close-up, movement of leaves, texture of the bark, dew droplets."
+    },
+    {
+      "role": "user",
+      "content": "Recreate prompt for a present Japanese woman."
+    },
+    {
+      "role": "assistant",
+      "content": "Too many requests in 1 hour. Try again later."
+    }
+  ]
+}

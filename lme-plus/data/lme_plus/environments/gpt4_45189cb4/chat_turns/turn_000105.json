@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 105,
+  "session_index": 9,
+  "session_id": "sharegpt_MxT7oAc_0",
+  "turn_in_session": 7,
+  "date": "2023/01/22 (Sun) 11:29",
+  "role": "assistant",
+  "content": "To make the background appear infinite on the bottom, you can use a background image that has a repeating pattern. Here's an example:\n\n1. Create a background image with a repeating pattern. You can use an image editor like Photoshop or GIMP to create the pattern. Save the image as a PNG, GIF or JPG.\n2. Add the background image to the CSS of your HTML document using the `background-image` property. Set the `background-repeat` property to `repeat` so that the image is repeated both horizontally and vertically.\n3. Set the height of the body to `100%` so that it covers the entire height of the viewport.\n\nHere's an example code snippet:\n```css\nbody {\n  background-image: url(\"pattern.png\");\n  background-repeat: repeat;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n}\n```\nIn this example, the `background-image` property points to the image file `pattern.png`, which has a repeating pattern. The `background-repeat` property is set to `repeat` to repeat the image both horizontally and vertically. Finally, the `height` property is set to `100%` to cover the entire height of the viewport.",
+  "has_answer": false
+}

@@ -1,0 +1,31 @@
+{
+  "session_id": "sharegpt_DlVSong_0",
+  "session_index": 37,
+  "date": "2023/05/27 (Sat) 20:54",
+  "turns": [
+    {
+      "role": "user",
+      "content": "This CSV file is my kanban: \"Card Name\",\"Card ID\",\"Short Card ID\",\"Card URL\",\"Board Name\",\"Board ID\",\"List Name\",\"List ID\",\"Members\",\"Labels\",\"Card Created Date\",\"Due Date\",\"Description\",\"Checklist Items Total\",\"Checklist Items Completed\",\"Attachments\",\"Location\",\"Votes\",\"Number of Comments\",\"Last Activity Date\"\n\"Personal\",\"64218c51dd4c689dcfc1e91b\",17,\"https://trello.com/c/zZlvniNm/17-personal\",\"Kanban\",\"626364fa6e00365da32e2121\",\"Projects\",\"62636505e0613831f6703a01\",\"\",\"green\",\"2023-03-27 13:30\",,\"\",,,\"\",,0,\"0 comments\",\"2023-03-27T12:32:06.230Z\"\n\"Medical\",\"64218d1c5118b3ce86dabf94\",18,\"https://trello.com/c/F4MILwGU/18-medical\",\"Kanban\",\"626364fa6e00365da32e2121\",\"Projects\",\"62636505e0613831f6703a01\",\"\",\"red\\_dark\",\"2023-03-27 13:33\",,\"\",,,\"\",,0,\"0 comments\",\"2023-03-27T12:34:19.357Z\"\n\"Learn Photoshop\",\"64218c49ca0224ca87302482\",16,\"https://trello.com/c/1mt7PB97/16-learn-photoshop\",\"Kanban\",\"626364fa6e00365da32e2121\",\"Projects\",\"62636505e0613831f6703a01\",\"\",\"purple\",\"2023-03-27 13:30\",,\"\",,,\"\",,0,\"0 comments\",\"2023-03-27T12:34:37.023Z\"\n\"Learn Stable Diffusion\",\"64218c415cc230c3d1a44fca\",15,\"https://trello.com/c/4DHazBpd/15-learn-stable-diffusion\",\"Kanban\",\"626364fa6e00365da32e2121\",\"Projects\",\"62636505e0613831f6703a01\",\"\",\"orange\",\"2023-03-27 13:29\",,\"\",,,\"\",,0,\"0 comments\",\"2023-03-27T12:34:39.674Z\"\n\"Adobe Stock Images\",\"64204ceecf16eaeaa721bf64\",13,\"https://trello.com/c/VIgWOcRZ/13-adobe-stock-images\",\"Kanban\",\"626364fa6e00365da32e2121\",\"Projects\",\"62636505e0613831f6703a01\",\"\",\"yellow\\_light\",\"2023-03-26 14:47\",,\"\",,,\"\",,0,\"0 comments\",\"2023-03-27T12:34:31.637Z\"\n\"Create Online Shop\",\"64204d17e8d2bf0949d7025c\",14,\"https://trello.com/c/PZpaMnyo/14-create-online-shop\",\"Kanban\",\"626364fa6e00365da32e2121\",\"Projects\",\"62636505e0613831f6703a01\",\"\",\"blue\",\"2023-03-26 14:48\",,\"\",,,\"\",,0,\"0 comments\",\"2023-03-27T12:33:41.353Z\"\n\"Personal Budget\",\"63d27acb7d1daa23068c12c3\",9,\"https://trello.com/c/6cYZlmHa/9-personal-budget\",\"Kanban\",\"626364fa6e00365da32e2121\",\"To Do\",\"626c9f82ebb1497dc1dfb9af\",\"\",\"green\",\"2023-01-26 13:06\",\"2023-03-28\",\"\",,,\"\",,0,\"0 comments\",\"2023-03-27T12:31:56.982Z\"\n\"Do images for Adobe Stock\",\"63ebf4cb5fe58f3791acda3e\",12,\"https://trello.com/c/N1qzmxEY/12-do-images-for-adobe-stock\",\"Kanban\",\"626364fa6e00365da32e2121\",\"To Do\",\"626c9f82ebb1497dc1dfb9af\",\"\",\"yellow\",\"2023-02-14 20:53\",,\"\",,,\"\",,0,\"0 comments\",\"2023-03-27T12:32:31.849Z\"\n\"Get Automatic 1111 working with Dreamlike Photoreal 2.0 model\",\"63eba5111147b269f0d9d778\",10,\"https://trello.com/c/MTu3xfBg/10-get-automatic-1111-working-with-dreamlike-photoreal-20-model\",\"Kanban\",\"626364fa6e00365da32e2121\",\"Done\",\"626cf08b5a0ea97bf7d28fad\",\"\",\"\",\"2023-02-14 15:13\",,\"Midjourney-alike model\",,,\"\",,0,\"0 comments\",\"2023-03-26T13:47:13.533Z\""
+    },
+    {
+      "role": "assistant",
+      "content": "This appears to be a CSV file containing data related to a kanban board. Each row represents a card on the board and contains various details such as the card name, card ID, card URL, board name, board ID, list name, list ID, members, labels, creation date, due date, description, checklist items, attachments, location, votes, number of comments, and last activity date. This information could be used to analyze the performance of the kanban board and identify areas for improvement."
+    },
+    {
+      "role": "user",
+      "content": "What are the cards on the \"Projects\" list?"
+    },
+    {
+      "role": "assistant",
+      "content": "Based on the provided CSV file, I can see that there are multiple cards on the \"Projects\" list, but I can't tell which ones are currently in that list. This is because the CSV file only provides the details of each card, including the list it belongs to, but it doesn't provide a snapshot of the current state of the board.\n\nTo see the current cards in the \"Projects\" list, you would need to access the Trello board directly. If you have access to the board, you can navigate to it and view the \"Projects\" list to see the current cards on it."
+    },
+    {
+      "role": "user",
+      "content": "No, each card on the list has the data saying it's on the Projects list"
+    },
+    {
+      "role": "assistant",
+      "content": "Apologies for the confusion in my previous response. You are correct that the CSV file contains information about the cards on the \"Projects\" list. To answer your question, the cards on the \"Projects\" list are:\n\n* Personal\n* Learn Photoshop\n* Learn Stable Diffusion\n* Adobe Stock Images\n* Create Online Shop\n\nAll of these cards have the list name \"Projects\" and the list ID \"62636505e0613831f6703a01\" in the CSV file."
+    }
+  ]
+}

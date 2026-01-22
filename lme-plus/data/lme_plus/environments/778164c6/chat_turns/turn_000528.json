@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 528,
+  "session_index": 48,
+  "session_id": "sharegpt_84De5zv_0",
+  "turn_in_session": 9,
+  "date": "2023/05/30 (Tue) 15:41",
+  "role": "assistant",
+  "content": "Yes, I apologize for the confusion. The \"joycontrol\" repository you mentioned is a different project that allows you to simulate Joy-Con signals to control the Nintendo Switch.\n\nThe joycontrol project works by sending raw Bluetooth HID reports to the Nintendo Switch over a Bluetooth Low Energy (BLE) connection. These reports mimic the data that is sent by an actual Joy-Con controller and are used by the Switch to determine which buttons are being pressed and how the sticks are being moved.\n\nHere is a high-level overview of how the joycontrol library works:\n\n1. Scan for the Nintendo Switch over BLE: The library uses the Bluetooth API of the operating system to scan for BLE devices. It looks for a device with a specific Bluetooth address that is known to belong to the Nintendo Switch.\n2. Connect to the Switch: Once the Nintendo Switch is found, the library establishes a connection by creating a Bluetooth socket and sending a connection request to the Switch.\n3. Send control data: Once the connection is established, the library can send raw Bluetooth HID reports to",
+  "has_answer": false
+}

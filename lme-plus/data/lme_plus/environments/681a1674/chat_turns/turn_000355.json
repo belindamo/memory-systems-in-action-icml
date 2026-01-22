@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 355,
+  "session_index": 36,
+  "session_id": "sharegpt_GDzajZq_17",
+  "turn_in_session": 2,
+  "date": "2023/05/27 (Sat) 17:29",
+  "role": "assistant",
+  "content": "Sure, here are the drawbacks mentioned for each mode:\n\n1. Empirical Mode (EM)\n* Hard for simple empirical models to meet the accuracy requirements of water quality parameters concentration estimation\n* Poor generalities due to regional and temporal constraints\n* Requires a lot of field water quality sampling data as the basis to assure relatively higher accuracy\n2. Analytical Mode (AM)\n* Composition of water body and radiation transmission procedure is rather complex because many factors need to be measured for the model to be established\n* Spectral resolution of most satellite sensors and those measured near the ground are inconsistent, leading to difficulties in model research\n* Quantitative remote sensing inversion based on the analytical mode is difficult to achieve and is limited in practical applications\n3. Semi-Empirical Mode (SEM)\n* None mentioned in the paragraph\n4. Artificial Intelligence (AI) Mode\n* Establishing a neural network for water quality retrieval requires a large number of samples to be trained with extensive experiences, otherwise there may be under-learning or over-learning situations, which greatly limit the neural network model inversion accuracy\n* Increase in the number of training samples will make SVM algorithms difficult to implement and run slowly.",
+  "has_answer": false
+}

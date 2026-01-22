@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 137,
+  "session_index": 10,
+  "session_id": "answer_sharegpt_NoDZzot_7",
+  "turn_in_session": 12,
+  "date": "2023/05/22 (Mon) 11:51",
+  "role": "assistant",
+  "content": "After reviewing the paper \"To Adapt or Not to Adapt? Real-Time Adaptation for Semantic Segmentation\" and considering the feedback from the reviewers, the Program Chair has decided to reject the paper.\n\nOverall, the reviewers found that the proposed approach in the paper offers some improvements in the trade-off between accuracy and efficiency in online domain adaptation for semantic segmentation, but these improvements are modest and do not fully justify the complexity of the proposed approach. Additionally, the relevance of the problem addressed in the submission was questioned, as real-time domain adaptation is not a practical concern in most deployment scenarios.\n\nBased on these criticisms, the Program Chair has determined that the paper does not meet the standards for acceptance to the conference and will not be included in the proceedings.",
+  "has_answer": false
+}

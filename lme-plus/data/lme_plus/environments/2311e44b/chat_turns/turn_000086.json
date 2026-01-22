@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 86,
+  "session_index": 8,
+  "session_id": "sharegpt_pPJZzai_0",
+  "turn_in_session": 5,
+  "date": "2023/05/22 (Mon) 02:47",
+  "role": "assistant",
+  "content": "Dense retrieval models are a type of information retrieval model that use dense vector representations (i.e., embeddings) to compare the similarity between a query and a set of candidate documents. These models are often used for open-domain question answering tasks and can be contrasted with sparse retrieval models, which rely on traditional bag-of-words representations of documents.\n\nIn dense retrieval models, the query and document are represented as dense vectors in a high-dimensional space, where the similarity between the vectors is computed using methods such as cosine similarity or dot product. The documents are ranked based on their similarity to the query, and the top-ranked documents are returned as the answer.\n\nDense retrieval models have become increasingly popular in recent years due to their ability to capture the semantic relationships between words and phrases, as well as their efficiency in handling large datasets. Examples of dense retrieval models include DPR (Dense Passage Retrieval) and SOTA (State-of-the-Art) models such as T5, BART, and ELECTRA.",
+  "has_answer": false
+}

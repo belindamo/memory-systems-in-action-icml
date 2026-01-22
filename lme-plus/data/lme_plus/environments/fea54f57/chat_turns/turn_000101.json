@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 101,
+  "session_index": 9,
+  "session_id": "sharegpt_IJ9ivDN_0",
+  "turn_in_session": 2,
+  "date": "2023/05/22 (Mon) 15:38",
+  "role": "user",
+  "content": "Here is my draft: Procedural skills training is essential for all practicing surgeons. Robot-Assisted Minimally Invasive Surgery pulls the operator from the patient's bedside and into a computer terminal, potentially thousands of miles away, with little inertial or haptic feedback compared to traditional surgery. As such, it is paramount that robot surgeon operators receive a breath of performance feedback whenever possible, while also receiving a concise performance rating that can track the operator's procedural efficacy over time. The current standard model for surgical skills assessments heavily relies on senior surgeons' subjective observations and expert opinions in a time-consuming grading process that is inherently inconsistent due to biases in human interpretations. This research proposes the use of passive stereo imaging and a locally connected convolutional neural network to 1) indirectly extract patient side manipulator kinematics, 2) find direct correlations between the minimally invasive surgical robot pose over the duration of the operation and the approximate skill level of the operator to provide consistent, quantifiable, and automated key insights into a surgeon's ability to perform on the set of three standard tasks outlined by the JIGSAWS dataset. The proposed kinematic extraction network model approximates ground truth position data recorded by the robotic surgical system through machine learning, working to minimize the euclidean distance loss function. Our model uses VGG19 as a pre-trained base accepting the left and right endoscopic view as inputs, then incorporates trainable locally connected two-dimensional layers, concatenated, locally connected, and flattened with a 5% dropout to generalize binocular spacial determination of the two tools. Our current model estimates kinematics with a correlation error of less than 8 millimeters across both robot arms for each of the three training tasks.",
+  "has_answer": false
+}

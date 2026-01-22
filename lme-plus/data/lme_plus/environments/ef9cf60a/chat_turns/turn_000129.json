@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 129,
+  "session_index": 14,
+  "session_id": "sharegpt_Ha6kIaj_0",
+  "turn_in_session": 2,
+  "date": "2023/05/22 (Mon) 15:16",
+  "role": "user",
+  "content": "rewrite this:\nFig \\ref{fig:perf\\_breakdown} include the breakdown of speedups over the baseline version. Note that the workloads that are based on low-level PM instructions show better speed up compared to the transaction based ones because they write data back more frequently and thus improve much more with the use of PMWeaver",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 473,
+  "session_index": 42,
+  "session_id": "sharegpt_TymNw01_0",
+  "turn_in_session": 0,
+  "date": "2023/05/30 (Tue) 02:19",
+  "role": "user",
+  "content": "You are a pro coder, explain me each and everything of below python code in steps in easy language. You should tell what each step is getting used in code.\n\nimport re\n\nimport azure.durable\\_functions as df\nimport logging\n\ndef orchestrator\\_function(context: df.DurableOrchestrationContext):\n workspace\\_ids = context.get\\_input()['id']\n tasks = []\n for workspace in workspace\\_ids:\n tasks.append(context.call\\_activity(\"ScrapingTask\",workspace))\n outputs = yield context.task\\_all(tasks)\n logging.info(\"Finnished\")\n return \"Success\"\n\nmain = df.Orchestrator.create(orchestrator\\_function)Share Prompt",
+  "has_answer": false
+}

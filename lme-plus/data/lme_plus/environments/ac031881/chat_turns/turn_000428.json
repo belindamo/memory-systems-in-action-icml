@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 428,
+  "session_index": 38,
+  "session_id": "sharegpt_nE62dqp_79",
+  "turn_in_session": 10,
+  "date": "2023/05/29 (Mon) 11:30",
+  "role": "assistant",
+  "content": "To calculate the overall percentage across organizations, you can modify the query as follows:\n```vbnet\nSELECT \n  (COUNT(CASE WHEN reflect_items.immediate_reactions IS NULL \n      AND reflect_items.updated_at > reflect_items.created_at \n      AND course_module_sessions.completed_at is NOT NULL\n      THEN 1 END) / \n   (SELECT COUNT(*) FROM praxislabs.reflect_items \n    JOIN praxislabs.course_module_sessions \n    ON reflect_items.course_module_session_id = course_module_sessions.id\n    JOIN praxislabs.users \n    ON course_module_sessions.user_id = users.id\n    JOIN praxislabs.organizations \n    ON users.organization_id = organizations.id\n    WHERE organizations.name NOT LIKE '%Praxis%' \n    AND reflect_items.updated_at > reflect_items.created_at \n    AND course_module_sessions.completed_at is NOT NULL)) * 100 \n  AS `Percentage of Null & Updated Rows`\nFROM praxislabs.reflect_items \nJOIN praxislabs.course_module_sessions \nON reflect_items.course_module_session_id = course_module_sessions.id\nJOIN praxislabs.users \nON course_module_sessions.user_id = users.id\nJOIN praxislabs.organizations \nON users.organization_id = organizations.id\nWHERE organizations.name NOT LIKE '%Praxis%' \nAND reflect_items.updated_at > reflect_items.created_at \nAND course_module_sessions.completed_at is NOT NULL\nLIMIT 1;\n```\nThis query calculates the percentage of `reflect_items` rows where `immediate_reactions` is null and `updated_at` is greater than `created_at` and `course_module_sessions` is completed (`completed_at` is not null), but only for organizations whose name does not contain the word 'Praxis'. The numerator of the percentage is the count of the rows that match these criteria and the denominator is the count of all the `reflect_items` rows that match the criteria for the non-Praxis organizations. The result is displayed as `Percentage of Null & Updated Rows`.",
+  "has_answer": false
+}

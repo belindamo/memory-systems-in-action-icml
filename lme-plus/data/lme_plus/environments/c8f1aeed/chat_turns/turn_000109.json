@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 109,
+  "session_index": 9,
+  "session_id": "sharegpt_SPbMLCl_14",
+  "turn_in_session": 7,
+  "date": "2023/05/21 (Sun) 09:35",
+  "role": "assistant",
+  "content": "```javascript\n      \"startTime\": 6240, // 08:00 (next day)\n      \"endTime\": 6780    // 17:00 (next day)\n    }\n  ],\n  \"overRide\": {\n    \"available\": [\n      {\n        \"startTime\": \"2023-04-03T12:00:00.000Z\",\n        \"endTime\": \"2023-04-03T16:00:00.000Z\",\n        \"queue\": false,\n        \"appointments\": true\n      }\n    ],\n    \"unavailable\": [\n      \"2023-04-04\"\n    ]\n  },\n  // Other fields...\n}\n```\n1. Doctor B:\n```javascript\n{\n  \"_id\": {\n    \"$oid\": \"234567890abcdef12345678\"\n  },\n  \"specialtyAreas\": [\n    {\n      \"$oid\": \"6156a3590041b25122e0c227\"\n    }\n  ],\n  // Other fields...\n  \"workHours\": [\n    {\n      \"queue\": false,\n      \"appointments\": true,\n      \"startTime\": 480,  // 08:00\n      \"endTime\": 960     // 16:00\n    },\n    {\n      \"queue\": false,\n      \"appointments\": true,\n      \"startTime\": 1920, // 08:00 (next day)\n      \"endTime\": 2400    // 16:00 (next day)\n    },\n    {\n```",
+  "has_answer": false
+}

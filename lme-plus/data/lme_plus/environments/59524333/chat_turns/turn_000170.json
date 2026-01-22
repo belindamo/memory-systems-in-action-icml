@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 170,
+  "session_index": 16,
+  "session_id": "sharegpt_7gIKsqO_104",
+  "turn_in_session": 1,
+  "date": "2023/03/15 (Wed) 12:33",
+  "role": "assistant",
+  "content": "Here it is:\n```\nconst buttonList = document.querySelectorAll('input[type=button]');\nconst telInput = document.querySelector('input[type=tel]');\ntelInput.tabIndex = -1;\ntelInput.focus();\n\nconst addClass = (className) => (el) => el.classList.add(className);\nconst removeClass = (className) => (el) => el.classList.remove(className);\nconst setValue = (el, value) => (el.value += value);\n\nconst setupButtonEventListeners = (button) => {\n  button.addEventListener(\"mousedown\", addClass(\"ativa\"));\n  button.addEventListener(\"mouseup\", removeClass(\"ativa\"));\n  button.addEventListener(\"keydown\", (e) => {\n    if (e.key === \" \" || e.key === \"Enter\") addClass(\"ativa\")(button);\n  });\n  button.addEventListener(\"keyup\", removeClass(\"ativa\"));\n  button.addEventListener(\"click\", () => setValue(telInput, button.value));\n};\n\nbuttonList.forEach((button, index) => {\n  button.tabIndex = index + 1;\n  setupButtonEventListeners(button);\n});\n\nconst firstButton = buttonList[0];\nfirstButton.addEventListener(\"keydown\", (e) => {\n  if (e.key === \"Tab\" && e.shiftKey) {\n    e.preventDefault();\n    telInput.focus();\n  }\n});\n\nconst setupInputEventListeners = (el) => {\n  el.addEventListener(\"keydown\", addClass(\"ativa\"));\n  el.addEventListener(\"keyup\", removeClass(\"ativa\"));\n};\nsetupInputEventListeners(telInput);\n```",
+  "has_answer": false
+}

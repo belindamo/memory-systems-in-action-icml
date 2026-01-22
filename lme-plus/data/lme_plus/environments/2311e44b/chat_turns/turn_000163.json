@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 163,
+  "session_index": 15,
+  "session_id": "sharegpt_YAiYuAD_7",
+  "turn_in_session": 2,
+  "date": "2023/05/23 (Tue) 15:51",
+  "role": "assistant",
+  "content": "The owner or Global Administrator of the external SharePoint site can grant API permissions to the Azure AD application using the \"Certification\" method by either request or manual steps.\n\nTo request API permissions, the owner or Global Administrator of the SharePoint site can follow these steps:\n\n1. Provide the Azure AD application's client ID to the owner or Global Administrator of the external SharePoint site.\n2. The owner or Global Administrator of the external SharePoint site can then navigate to the SharePoint site's API management page and request API access for the Azure AD application by entering the client ID.\n3. The owner or Global Administrator of the SharePoint site will then approve the request for API access.\n\nTo grant API permissions manually, the owner or Global Administrator of the SharePoint site can follow these steps:\n\n1. Navigate to the SharePoint site's API management page.\n2. Search for the Azure AD application in the list of registered applications.\n3. Select the Azure AD application and grant it the necessary API permissions.\n\nOnce the Azure AD application has been granted API permissions, it can use its client ID and certification to obtain an access token from the Azure AD token endpoint and access the SharePoint site's REST API.",
+  "has_answer": false
+}

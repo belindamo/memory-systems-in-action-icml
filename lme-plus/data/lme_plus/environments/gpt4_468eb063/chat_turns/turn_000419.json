@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 419,
+  "session_index": 37,
+  "session_id": "sharegpt_8M7HcM3_11",
+  "turn_in_session": 2,
+  "date": "2023/04/11 (Tue) 23:18",
+  "role": "assistant",
+  "content": "No, the main configuration files for AppArmor are located in the `/etc/apparmor.d` directory, and there is no other place where the AppArmor policy can be configured.\n\nHowever, it's possible that the AppArmor profile for Discord is being generated dynamically, at runtime, by the snapd daemon. In that case, the profile would not be stored in the `/etc/apparmor.d` directory, but in a different location that is managed by snapd.\n\nYou can check if this is the case by running the following command:\n```lua\nsudo snap debug sandbox-features discord\n```\nThis command will show you the security features that are enabled for the Discord snap package, including the AppArmor profile, if one is being used.\n\nIf you see that AppArmor is enabled for Discord, but there is no profile in the `/etc/apparmor.d` directory, you can try creating a profile manually, as I described earlier. However, keep in mind that manually creating an AppArmor profile can be a complex task, and it's possible to create a profile that is too permissive or too restrictive, which can lead to security issues or application malfunctions.",
+  "has_answer": false
+}

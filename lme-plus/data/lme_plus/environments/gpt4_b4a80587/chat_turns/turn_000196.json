@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 196,
+  "session_index": 18,
+  "session_id": "sharegpt_MhtBvsc_87",
+  "turn_in_session": 6,
+  "date": "2023/05/23 (Tue) 11:19",
+  "role": "assistant",
+  "content": "To add backend services to your mobile app using Amplify Studio, follow these steps:\n\n1. Open your Amplify Studio project and navigate to the \"Backend\" section on the left-hand side of the screen.\n2. Click the \"Add Backend\" button.\n3. Choose the backend service you want to add. Amplify Studio supports a variety of backend services, including authentication, APIs, storage, and more.\n4. Follow the on-screen instructions to configure the backend service. Depending on the service you choose, you may need to provide additional information such as API endpoints or AWS credentials.\n5. Once you have configured the backend service, click the \"Create\" button to add it to your mobile app project.\n6. Repeat these steps for each backend service you want to add to your mobile app project.\n\nOnce you have added the necessary backend services to your mobile app project, you can use the Amplify CLI or Amplify Studio to connect your frontend application to the backend services and manage your app's API, data storage, authentication, and other backend functionality.",
+  "has_answer": false
+}

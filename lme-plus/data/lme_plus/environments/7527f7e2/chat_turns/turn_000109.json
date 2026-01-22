@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 109,
+  "session_index": 10,
+  "session_id": "sharegpt_6fTnCnw_37",
+  "turn_in_session": 0,
+  "date": "2023/05/21 (Sun) 23:39",
+  "role": "assistant",
+  "content": "Sure, here is the hierarchy with bullet points again:\n\n* Sentence:\n\t+ Clause (Independent or Dependent)\n\t\t- Subject (if present)\n\t\t\t* Word (Noun, Pronoun, if present)\n\t\t\t\t+ Letter\n\t\t\t* Phrase (Noun, if present)\n\t\t- Predicate\n\t\t\t* Verb Phrase (Main Verb, Auxiliary Verb, if present)\n\t\t\t\t+ Word (Verb, if present)\n\t\t\t\t\t- Letter\n\t\t\t\t+ Phrase (Verb, if present)\n\t\t- Object (if present)\n\t\t\t* Word (Noun, Pronoun, if present)\n\t\t\t\t+ Letter\n\t\t\t* Phrase (Noun, if present)\n\t\t- Complement (if present)\n\t\t\t* Word (Noun, Pronoun, Adjective, if present)\n\t\t\t\t+ Letter\n\t\t\t* Phrase (Adjective, if present)\n\t\t- Modifier (Adjective, Adverb, if present)\n\t\t\t* Word (Adjective, Adverb, if present)\n\t\t\t\t+ Letter\n\t\t\t* Phrase (Adjective, Adverb, if present)\n\t+ Phrase (Noun, Verb, Adjective, Adverb, Prepositional, Gerund, Infinitive, if present)\n\t\t- Word (Noun, Verb, Adjective, Adverb, if present)\n\t\t\t* Letter\n\nPlease let me know if you have any other question.",
+  "has_answer": false
+}

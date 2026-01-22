@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 229,
+  "session_index": 20,
+  "session_id": "sharegpt_Us1zWGN_19",
+  "turn_in_session": 2,
+  "date": "2023/04/19 (Wed) 23:39",
+  "role": "assistant",
+  "content": "Assuming that the campaign state can be modified independently of ad groups and keywords within, you can adjust the Excel file structure to include an additional column for the campaign state.\n\nHere's the suggested structure for the Excel file:\n\n| Object Type | Campaign ID | Campaign Name | Campaign State | Campaign Budget | Ad Group ID | Ad Group Name | Ad Group Default Bid | Keyword | Match Type | ASIN | SKU | Custom Text |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| Keyword | 1 | Campaign A | Enabled | 1000 | 1 | Ad Group 1 | 1.00 | keywordA1 | Broad |  |  |  |\n| Keyword | 1 | Campaign A | Enabled | 1000 | 1 | Ad Group |  |  |  |  |  |  |",
+  "has_answer": false
+}

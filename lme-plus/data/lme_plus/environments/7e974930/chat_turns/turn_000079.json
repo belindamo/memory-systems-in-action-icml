@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 79,
+  "session_index": 6,
+  "session_id": "sharegpt_SM5D9NQ_0",
+  "turn_in_session": 1,
+  "date": "2023/03/24 (Fri) 20:14",
+  "role": "assistant",
+  "content": "Here is an example of HTML and CSS that uses flexbox to display a list of links in a condensed form:\n\nHTML:\n```\n<div class=\"container\">\n  <div class=\"link-container\">\n    <a href=\"#\" class=\"link\">Link 1</a>\n    <a href=\"#\" class=\"link\">Link 2</a>\n    <a href=\"#\" class=\"link\">Link 3</a>\n    <!-- Add more links here -->\n  </div>\n</div>\n```\nCSS:\n```\n.container {\n  display: flex;\n  flex-wrap: wrap;\n}\n\n.link-container {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n}\n\n.link {\n  flex-basis: 30%;\n  margin: 5px;\n  text-align: center;\n}\n```\nThis will create a container that uses flexbox to display the links in a row, wrapping them to the next line as needed, and using `justify-content: space-between;` to distribute the links evenly across the row. Each link will take up 30% of the available space, and have a 5px margin around it.",
+  "has_answer": false
+}

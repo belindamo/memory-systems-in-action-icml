@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 461,
+  "session_index": 45,
+  "session_id": "sharegpt_BjNAdNQ_0",
+  "turn_in_session": 0,
+  "date": "2023/05/30 (Tue) 09:48",
+  "role": "user",
+  "content": "Web search results:\n\n[1] \"The Supreme Court of California is the highest and final court of appeals in the courts of the U.S. state of California.It is headquartered in San Francisco at the Earl Warren Building, but it regularly holds sessions in Los Angeles and Sacramento. Its decisions are binding on all other California state courts. Since 1850, the court has issued many influential decisions in a variety of areas ...\"\nSource: https://en.wikipedia.org/wiki/Supreme\\_Court\\_of\\_California\nCurrent date: 1/14/2023\nInstructions: Using the provided web search results, write a comprehensive reply to the given prompt. Make sure to cite results using [[number](URL)] notation after the reference. If the provided search results refer to multiple subjects with the same name, write separate answers for each subject.\nPrompt: write a 400 words speech about reducing taxes that sounds like Arnold Schwarzenegger",
+  "has_answer": false
+}

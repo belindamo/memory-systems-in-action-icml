@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 72,
+  "session_index": 8,
+  "session_id": "sharegpt_qRdLQvN_7",
+  "turn_in_session": 8,
+  "date": "2023/05/21 (Sun) 09:27",
+  "role": "assistant",
+  "content": "Here is the continued example:\n```\ndef update_chart_display(time_range, reset_button, relayout_data):\n    # filter the dataframe by the selected time range\n    df_filtered = df[(df['date'] >= time_range[0]) & (df['date'] <= time_range[1])]\n    # create a list of shapes to add to the chart\n    shapes = []\n    # check if the reset button was clicked\n    if reset_button:\n        # clear the alarm message and hide the draggable line\n        alarm_message = \"\"\n    else:\n        # add a vertical line at the position of the mouse click\n        shapes.append({\n            'type': 'line',\n            'x0': relayout_data['xaxis.range[0]'],\n            'y0': 0,\n            'x1': relayout_data['xaxis.range[0]'],\n            'y1': 1,\n            'xref': 'x',\n            'yref': 'paper',\n            'line': {\n                'color': 'red',\n                'width': 2,\n                'dash': 'dash'\n            }\n        })\n        # add a condition to check if the line is within the y-range of the chart\n        if 'xaxis.range[0]' in relayout_data and \\\n           relayout_data['xaxis.range[0]]'] >= df['low'].min() and \\\n           relayout_data['xaxis.range[0]]'] <= df['high'].max():\n            alarm_message = \"ALARM: Stop trading!\"\n        else:\n            alarm_message = \"\"\n    # update the chart with the filtered data and the list of shapes\n    chart = dcc.Graph(id='stock-chart', figure={\n        'data': [go.Candlestick(\n            x=df_filtered['date'],\n            open=df_filtered['open'],\n            high=df_filtered['high\n```",
+  "has_answer": false
+}

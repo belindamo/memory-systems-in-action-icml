@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 130,
+  "session_index": 11,
+  "session_id": "sharegpt_JHGwlee_33",
+  "turn_in_session": 6,
+  "date": "2023/07/22 (Sat) 19:24",
+  "role": "assistant",
+  "content": "I apologize for any confusion, you are correct. The `$INCLUDE` directive should be added to the `radiusd.conf` file, which is the main configuration file for the FreeRADIUS server.\n\nThis file is usually located at `/etc/freeradius/3.0/radiusd.conf` or `/etc/raddb/radiusd.conf`.\n\nIn the `radiusd.conf` file, you will find the following section:\n```\n#  Instantiating modules\n#\n#  Instantiating modules is done in this section. This is where you specify\n#  which modules are loaded and in which order.\n#\n#  Each module type (auth, acct, preacct) has its own section.\n#\n#  The modules available to the server are found in the 'mods-enabled'\n#  directory.\n```\nYou should add the following line at the end of the `radiusd.conf` file:\n```\n$INCLUDE sites-enabled/my_virtual_server\n```\nThis will tell the server to include the configurations in your new virtual server file when it's processing the requests.\n\nMake sure to save your changes and restart the FreeRADIUS service for the changes to take effect. And it's recommended to check the official documentation of FreeRADIUS to find out how to include virtual servers.",
+  "has_answer": false
+}

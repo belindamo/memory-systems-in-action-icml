@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 80,
+  "session_index": 9,
+  "session_id": "sharegpt_U8CljCM_315",
+  "turn_in_session": 8,
+  "date": "2023/05/21 (Sun) 20:45",
+  "role": "assistant",
+  "content": "Sure, I can help you with that. Here is a table for the \"Order Registering\" form:\n\n| Category | Field title | Field type | Required | Description |\n| --- | --- | --- | --- | --- |\n| General | Order Number | Text | Yes | Unique identifier for the order |\n| General | Order Date | Date | Yes | Date the order was placed |\n| General | Delivery Date | Date | Yes | Date the order is expected to be delivered |\n| General | Customer Name | Text | Yes | Name of the customer placing the order |\n| General | Customer Code | Text | No | Code assigned to the customer |\n| General | Order Status | Dropdown | Yes | Status of the order (e.g. Pending, In Progress, Completed) |\n| General | Order Priority | Dropdown | Yes | Priority level of the order (e.g. High, Medium, Low) |\n| Product | Product Name | Text | Yes | Name of the product being ordered |\n| Product | Product Code | Text | No | Code assigned to the product |\n| Product | Product Type | Dropdown | Yes | Type of the product being ordered (e.g. Yarn, Fabric, Accessories) |\n| Product | Product Quantity | Number | Yes | Quantity of the product being ordered |\n| Product | Product Price | Number | Yes | Price per unit of the product being ordered |\n| Payment | Payment Method | Dropdown | Yes | Method of payment for the order (e.g. Cash, Credit Card, Bank Transfer) |\n| Payment | Payment Status | Dropdown | Yes | Status of payment for the order (e.g. Paid, Unpaid, Partially Paid) |\n\nLet me know if you need any further help!",
+  "has_answer": false
+}

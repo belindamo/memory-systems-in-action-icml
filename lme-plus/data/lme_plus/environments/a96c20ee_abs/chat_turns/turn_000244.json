@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 244,
+  "session_index": 25,
+  "session_id": "sharegpt_uDSaCgI_0",
+  "turn_in_session": 1,
+  "date": "2023/05/24 (Wed) 23:45",
+  "role": "assistant",
+  "content": "To create a Twitter card image, the recommended size is 1200x628 pixels. You can include this image in your HTML code using the `<meta>` tag and the `name` attribute set to `twitter:image`. Here is an example:\n```php\n<meta name=\"twitter:card\" content=\"summary_large_image\">\n<meta name=\"twitter:image\" content=\"https://www.example.com/image.jpg\">\n```\nIn this example, the `twitter:card` property is set to `summary_large_image`, which tells Twitter to display the image as a large summary card. The `twitter:image` property specifies the URL of the image you want to display.\n\nNote that you will also need to include other `<meta>` tags in your HTML to provide additional information for the Twitter card, such as the title, description, and Twitter handle. You can find more information on the required properties and how to set them in Twitter's documentation: <https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started>.",
+  "has_answer": false
+}

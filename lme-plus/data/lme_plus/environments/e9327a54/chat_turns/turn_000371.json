@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 371,
+  "session_index": 34,
+  "session_id": "sharegpt_gPFzM9v_121",
+  "turn_in_session": 14,
+  "date": "2023/05/27 (Sat) 10:26",
+  "role": "assistant",
+  "content": "You can use the command \"schtasks /query /?\" to see the list of schedule types available with the schtasks command. Another way is you can use the command \"schtasks /create /?\" to see the list of schedule types while creating a new task. It will list all the triggers you can use to schedule the task.",
+  "has_answer": false
+}

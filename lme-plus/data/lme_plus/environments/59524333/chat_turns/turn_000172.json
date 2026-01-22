@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 172,
+  "session_index": 16,
+  "session_id": "sharegpt_7gIKsqO_104",
+  "turn_in_session": 3,
+  "date": "2023/03/15 (Wed) 12:33",
+  "role": "assistant",
+  "content": "You can use a forEach method by creating an array of objects that contains the event type and the action to be performed, then looping through the array and calling `addEventListener` for each event type and action.\n\nHere is an example of how you can refactor the code to use a forEach method:\n```\nconst telEvents = [\n  {event: \"keydown\", action: e => {\n    if (e.key === \" \" || e.key === \"Enter\") telInput.classList.add(\"ativa\")\n  }},\n  {event: \"keyup\", action: () => telInput.classList.remove(\"ativa\")},\n];\n\ntelEvents.forEach(({event, action}) => {\n    telInput.addEventListener(event, action);\n});\n```\nYou can see that I create an array called `telEvents` that contains two objects, one for each event listener. Then I use a forEach loop to go through each object in the array and add the event listener to the telInput element.",
+  "has_answer": false
+}

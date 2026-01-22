@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 233,
+  "session_index": 23,
+  "session_id": "sharegpt_zvmX9pX_29",
+  "turn_in_session": 2,
+  "date": "2023/05/26 (Fri) 08:43",
+  "role": "assistant",
+  "content": "Sure, here is a table that organizes the information provided in the previous content:\n\n| Stop Percentage | Description | Example |\n| --- | --- | --- |\n| 10-100 | The --stop parameter can be used to finish a Job partway through the process. Lower values will result in blurrier, less detailed results. | /imagine prompt splatter art painting of acorns --stop 90 |\n| N/A | The --stop parameter does not affect a Job while upscaling. However, stopping will produce a softer, less detailed initial image that will influence the level of detail in the final upscaled result. | N/A |\n| 20 | Comparison of the initial grid image and the upscaled version of an image using stop 20 | --stop 20 |\n| 80 | Comparison of the initial grid image and the upscaled version of an image using stop 80 | --stop 80 |\n| 90 | Comparison of the initial grid image and the upscaled version of an image using stop 90 | --stop 90 |\n| 100 | Comparison of the initial grid image and the upscaled version of an image using stop 100 | --stop 100 |\n\nNote:\n\n* The table is based on the information provided and I have rephrased it a bit for clarity.\n* The last two rows of the table are examples of how the stop parameter affects the upscaling process.\n* The Animated Gif showing how the Midjourney Stop parameter is typed could not be added to table format as it's not text but a visual representation.",
+  "has_answer": false
+}

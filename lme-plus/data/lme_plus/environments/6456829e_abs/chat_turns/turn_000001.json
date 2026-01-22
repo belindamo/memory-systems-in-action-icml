@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 1,
+  "session_index": 0,
+  "session_id": "sharegpt_lfQALre_0",
+  "turn_in_session": 1,
+  "date": "2023/05/20 (Sat) 03:58",
+  "role": "assistant",
+  "content": "You can find people's birthdays in Salesforce by using the Contacts or Leads object and adding a custom field for \"Birthday.\" Then, you can use the Salesforce report builder to create a report that displays the birthday information for the contacts and leads in your database. Additionally, you can add a Birthday field to your page layout so that you can see the information on the record detail page.",
+  "has_answer": false
+}

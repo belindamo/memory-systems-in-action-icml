@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 165,
+  "session_index": 15,
+  "session_id": "sharegpt_YAiYuAD_7",
+  "turn_in_session": 4,
+  "date": "2023/05/23 (Tue) 15:51",
+  "role": "assistant",
+  "content": "Sure, here's a step-by-step guide with examples and URL links for granting API permissions to an Azure AD application using the \"Certification\" method.\n\nRequesting API Permissions:\n\n1. Provide the Azure AD application's client ID to the owner or Global Administrator of the external SharePoint site. This client ID is available in the Azure portal for the Azure AD application.\n2. The owner or Global Administrator of the external SharePoint site can then navigate to the SharePoint site's API management page by going to the SharePoint Admin Center, clicking on \"API access\" under \"Settings\", and then clicking on \"Request API access\".\n3. The owner or Global Administrator of the external SharePoint site will then enter the client ID for the Azure AD application in the \"Request API access\" page and submit the request.\n4. The owner or Global Administrator of the SharePoint site will then approve the request for API access.\n\nGranting API Permissions Manually:\n\n1. Navigate to the SharePoint site's API management page by going to the SharePoint Admin Center, clicking on \"API access\" under \"Settings\", and then clicking on \"Apps with access to SharePoint\".\n2. Search for the Azure AD application in the list of registered applications.\n3. Select the Azure AD application and grant it the necessary API permissions by clicking on \"Grant Permissions\".\n4. You may also need to add the necessary permissions for the SharePoint REST API on the Azure portal for the Azure AD application, which can be found under \"API Permissions\" in the Azure portal for the Azure AD application.\n\nOnce the Azure AD application has been granted API permissions, it can use its client ID and certification to obtain an access token from the Azure AD token endpoint and access the SharePoint site's REST API.\n\nPlease note that these steps may vary based on the specific version of SharePoint and the specific Azure AD instance being used.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 125,
+  "session_index": 11,
+  "session_id": "sharegpt_yI9gjck_62",
+  "turn_in_session": 7,
+  "date": "2023/05/22 (Mon) 21:37",
+  "role": "assistant",
+  "content": "You have decided to build housing to increase population.\n\nBuilding housing will cost $50000 each and will increase the population by 20 people.\n\nThe new city status:\nPopulation: 3210 (increased by 20)\nFunds: -950000\nIncome: 1000000 + tax revenue (72% happiness \\* $1000/resident)\nEducation Level: 61%\nEmployment Rate: 85%\nCrime Rate: 8%\nHealth Level: 30%\nBirth rate: 6.625%\nHappiness level: 72%\nTax Revenue: $241250 (72% happiness \\* $1000/resident)\n\nPlease let me know if you want to make any other actions in your city.",
+  "has_answer": false
+}

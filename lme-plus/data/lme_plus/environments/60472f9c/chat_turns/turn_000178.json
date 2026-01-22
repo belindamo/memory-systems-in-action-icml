@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 178,
+  "session_index": 18,
+  "session_id": "sharegpt_x5iwfyV_295",
+  "turn_in_session": 0,
+  "date": "2023/05/23 (Tue) 23:06",
+  "role": "assistant",
+  "content": "Here's a modified version of the `Tournament` class with a new function `select_winner_simple` that takes in two teams and selects a winner using the win probability and the historical upset rates:\n```python\nclass Tournament:\n\n    # ... (previous code)\n\n    def select_winner_simple(self, team1: Team, team2: Team):\n        seed1, seed2 = team1.team_seed, team2.team_seed\n        historical_upset_rate = self.historical_upset_rate(seed1, seed2)\n\n        team1_is_better_score = team1.ken_pom_score > team2.ken_pom_score\n        better_team = team1 if team1_is_better_score else team2\n        worse_team = team2 if team1_is_better_score else team1\n\n        statistical = self.calculate_win_probability(worse_team, better_team)\n\n        # Noise is added by using historical upset rates rather than team specific KenPom scores\n        probability = (1 - self.noise) * statistical + self.noise * historical_upset_rate\n\n        # If a random number is less than the probability of an upset, return the underdog\n        if np.random.rand() < probability:\n            return worse_team\n        # Otherwise, return the favorite\n        else:\n            return better_team\n```\nThe new `select_winner_simple` function takes in two `Team` objects and computes the upset probability using the historical upset rates and the win probability. It then selects a winner based on these probabilities.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 103,
+  "session_index": 10,
+  "session_id": "sharegpt_ET9WzdL_33",
+  "turn_in_session": 0,
+  "date": "2023/03/19 (Sun) 04:43",
+  "role": "assistant",
+  "content": "Kingsman's Cost of Finance Comparison\n\n| Provider | Loan Amount | Interest Rate | Interest Paid | Cost of Finance |\n| --- | --- | --- | --- | --- |\n| My Organization | S$100,000 | 10% p.a. | S$12,776 | S$12,776 |\n| Local Bank | S$3,758,059.16 | 10% p.a. | S$375,805.92 | S$375,805.92 |\n\nNote:\n\n* Interest charged for my organization = 90% \\* S$90,000 \\* (14/365) \\* 10% = S$12,776 (for 52 invoices)\n* Interest charged for local bank = S$3,758,059.16 \\* 10% = S$375,805.92.",
+  "has_answer": false
+}

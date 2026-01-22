@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 320,
+  "session_index": 30,
+  "session_id": "sharegpt_MDWggeV_0",
+  "turn_in_session": 12,
+  "date": "2023/05/26 (Fri) 03:48",
+  "role": "user",
+  "content": "in running: aov\\_results <- aov(Strength ~ Time\\*Test + Error(name/Test), data = anovatest2)\n it gives me this error: Error in `contrasts<-`(`\\*tmp\\*`, value = contr.funs[1 + isOF[nn]]) : \n contrasts can be applied only to factors with 2 or more levels",
+  "has_answer": false
+}

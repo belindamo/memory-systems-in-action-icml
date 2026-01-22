@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 13,
+  "session_index": 1,
+  "session_id": "sharegpt_I5HWvry_0",
+  "turn_in_session": 5,
+  "date": "2023/07/12 (Wed) 02:43",
+  "role": "assistant",
+  "content": "To create a content source in SharePoint, you need to follow these steps:\n\n1. Open the SharePoint Central Administration website.\n2. Click on the \"Manage service applications\" link under the \"Application Management\" section.\n3. Click on the \"Search Service Application\" link.\n4. Click on the \"Content Sources\" link under the \"Crawling\" section.\n5. Click on the \"New Content Source\" button.\n6. In the \"Content Source\" dialog box, enter a name for the content source.\n7. Select the type of content you want to crawl, such as \"SharePoint sites\" or \"Web sites\".\n8. In the \"Start Addresses\" field, enter the URL of the network share location that you want to crawl. The URL should be in the format of `\\\\server_name\\folder_name`.\n9. Select the \"Crawl settings\" and \"Crawl schedule\" as per your requirement\n10. Click on \"OK\" to create the content source.\n\nOnce the content source is created, SharePoint will start crawling the content on the network share location according to the schedule you specified. The content will be indexed and will be searchable within the SharePoint search functionality.\n\nNote: You may need to have permissions to create content sources and also ensure that the network share location is accessible by the sharepoint crawlers.",
+  "has_answer": false
+}

@@ -1,0 +1,15 @@
+{
+  "session_id": "sharegpt_iYOIYVD_0",
+  "session_index": 49,
+  "date": "2023/05/20 (Sat) 07:16",
+  "turns": [
+    {
+      "role": "user",
+      "content": "i'm designing a video game about vacationing. we have created a list of vacation activities, including their title and duration. there are other properties mentioned, but you can ignore those.\n\nplease look through the CSV, and generate a new CSV by filling in the \"Specific Title\" row with a more specific themed example \u2014 such as starbucks, ice skating, hiking, meditating \u2014 depending on the duration and existing title.\n\nfor example, the first row of the CSV is:\n\nEat Indoors,1,\n\nHere is a valid output for this row:\n\nEat Indoors,1,Starbucks\n\nBelow is the full CSV. Please reply with your updated CSV that fills out the \"Specific Title\" I requested above:\n\nTitle,Duration,Specific Title\nEat Indoors,1,\nEat Indoors,1,\nEat Outside,1,\nEat Outside,1,\nEat Indoors,2,\nEat Indoors,2,\nEat Outside,2,\nEat Outside,2,\nEat Indoors,3,\nEat Indoors,3,\nEat Outside,3,\nEat Outside,3,\nSleep Indoors,1,\nSleep Indoors,1,\nSleep Outside,1,\nSleep Outside,1,\nSleep Indoors,2,\nSleep Indoors,2,\nSleep Outside,2,\nSleep Outside,2,\nSleep Indoors,3,\nSleep Indoors,3,\nSleep Outside,3,\nSleep Outside,3,\nPlay Indoors,1,\nPlay Indoors,1,\nPlay Outside,1,\nPlay Outside,1,\nPlay Indoors,2,\nPlay Indoors,2,\nPlay Outside,2,\nPlay Outside,2,\nPlay Indoors,3,\nPlay Indoors,3,\nPlay Outside,3,\nPlay Outside,3,"
+    },
+    {
+      "role": "assistant",
+      "content": "Title,Duration,Specific Title\nEat Indoors,1,Starbucks\nEat Indoors,1,Bakery\nEat Outside,1,Picnic\nEat Outside,1,Beach\nEat Indoors,2,Italian Restaurant\nEat Indoors,2,Steakhouse\nEat Outside,2,Hiking\nEat Outside,2,Bike Ride\nEat Indoors,3,Sushi Restaurant\nEat Indoors,3,BBQ\nEat Outside,3,Kayaking\nEat Outside,3,Fishing\nSleep Indoors,1,Hotel Room\nSleep Indoors,1,Airbnb\nSleep Outside,1,Camping Tent\nSleep Outside,1,Treehouse\nSleep Indoors,2,Luxury Suite\nSleep Indoors,2,Hostel\nSleep Outside,2,Glamping Tent\nSleep Outside,2,Yurt\nSleep Indoors,3,Villa\nSleep Indoors,3,Chalet\nSleep Outside,3,Caravan\nSleep Outside,3,Cabin\nPlay Indoors,1,Video Games\nPlay Indoors,1,Board Games\nPlay Outside,1,Swimming\nPlay Outside,1,Volleyball\nPlay Indoors,2,Arcade Games\nPlay Indoors,2,Pool Table\nPlay Outside,2,Surfing\nPlay Outside,2,Beach Volleyball\nPlay Indoors,3,Karaoke\nPlay Indoors,3,Escape Room\nPlay Outside,3,Scuba Diving\nPlay Outside,3,Skydiving"
+    }
+  ]
+}

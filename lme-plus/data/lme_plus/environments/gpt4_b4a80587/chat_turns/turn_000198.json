@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 198,
+  "session_index": 18,
+  "session_id": "sharegpt_MhtBvsc_87",
+  "turn_in_session": 8,
+  "date": "2023/05/23 (Tue) 11:19",
+  "role": "assistant",
+  "content": "If you don't see the \"Backend\" section on Amplify Studio, it's possible that you haven't created an Amplify app yet, or you haven't linked your app with an Amplify environment.\n\nTo create a new Amplify app, follow these steps:\n\n1. Go to the Amplify Console in the AWS Management Console.\n2. Click on the \"Get started\" button, or select \"Create App\" from the top navigation bar.\n3. Give your app a name, and select the type of app you want to create (in this case, a mobile app).\n4. Choose your preferred Git provider or select \"Manual\" if you don't want to use one.\n5. If you're using a Git provider, follow the prompts to connect your Git repository to Amplify.\n6. Choose your Amplify environment settings (e.g. region, editor, etc.).\n7. Click on the \"Create app\" button to create your new Amplify app.\n\nOnce you have created your Amplify app, you should be able to see the \"Backend\" section in Amplify Studio. From there, you can add backend resources such as APIs, databases, and storage.",
+  "has_answer": false
+}

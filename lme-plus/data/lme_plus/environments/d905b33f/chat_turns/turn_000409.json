@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 409,
+  "session_index": 38,
+  "session_id": "sharegpt_m2jtopG_0",
+  "turn_in_session": 3,
+  "date": "2023/05/28 (Sun) 06:24",
+  "role": "assistant",
+  "content": "Sure, here's the updated watchlist code based on your specifications:\n```json\n\"watchlist\": [\n  \"KRAKEN:TOTAL2\",\n  \"KRAKEN:XBTUSD\",\n  \"KRAKEN:BCHEUR\",\n  \"KRAKEN:XMRXBT\",\n  \"KRAKEN:XMRUSD\",\n  \"KRAKEN:ETHUSD\",\n  \"KRAKEN:AVAXXBT\",\n  \"KRAKEN:AVAXUSD\",\n  \"KRAKEN:AAVEXBT\",\n  \"KRAKEN:KNCXBT\",\n  \"KRAKEN:ETHXBT\",\n  \"KRAKEN:MKRUSD\",\n  \"BINANCE:CAKEBTC\",\n  \"BINANCE:SOLBTC\",\n  \"BINANCE:SOLUSDT\",\n  \"BINANCE:TRXBTC\",\n  \"BITTREX:LBCBTC\",\n  \"BINANCE:DOGEUSDT\",\n  \"BINANCE:ADAUSDT\",\n  \"KRAKEN:XMREUR\",\n  \"BINANCE:BNBUSDT\",\n  \"BINANCE:UNIUSDT\",\n  \"BINANCE:COMPBTC\",\n  \"BINANCE:ALGOBTC\",\n  \"BINANCE:BCHUSDT\",\n  \"BINANCE:XRPUSDT\",\n  \"NYSE:PFE\",\n  \"ICEUS:DXY\",\n  \"CBOE:DJIA\",\n  \"NYSEARCA:SPYG\",\n  \"CBOT:C1!\",\n  \"ICEUS:KC1!\",\n  \"NYMEX:CL1!\",\n  \"CBOT:ZW1!\",\n  \"COMEX:SI1!\",\n  \"COMEX:GC1!\",\n  \"BINANCE:XRPBUSD\",\n  \"BINANCE:RUBBUSD\"\n]\n```\nThis updated watchlist code includes the tickers from Kraken for the cryptocurrencies that are available on the exchange. Additionally, it replaces the invalid tickers with valid ones from different exchanges, such as CBOE for DJIA, NYSEARCA for SPY, BINANCE for XRPBUSD and RUBBUSD, and different contract symbols for futures commodities. Note that the \"TOTAL2\" ticker on Kraken represents the same metric as \"TOTAL\" on Binance.",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 346,
+  "session_index": 33,
+  "session_id": "sharegpt_vbNrVtS_94",
+  "turn_in_session": 3,
+  "date": "2023/05/26 (Fri) 17:24",
+  "role": "assistant",
+  "content": "On the Tasks (Admin, Tagger, Checker View) screen, the following features can be used for task management:\n\n* Notifications: The Admin and DS users will receive notifications when a task is completed, so that they can review the results and take any necessary next steps. The Tagger and Checker users will also receive notifications when a task is reassigned or when their attention is required for a document in review.\n* Review History: The Checker user can view a history of the annotations that have been reviewed and approved, as well as any comments or feedback provided. This can be useful for tracking progress and identifying any patterns or trends in the data.\n* Conflict Resolution: If the Tagger user encounters a label conflict while annotating a document, they can use the conflict resolution tool to resolve the issue. This could involve selecting the correct label from a list of options, or entering a new label manually. The conflict resolution tool should be easy to use and should provide clear guidance to the Tagger on how to proceed.",
+  "has_answer": false
+}

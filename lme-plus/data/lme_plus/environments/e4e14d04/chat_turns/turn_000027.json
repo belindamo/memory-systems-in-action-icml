@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 27,
+  "session_index": 4,
+  "session_id": "sharegpt_kjcbRB1_0",
+  "turn_in_session": 3,
+  "date": "2023/05/28 (Sun) 03:13",
+  "role": "assistant",
+  "content": "To search for spreadsheets with email addresses in them on Google, you can use advanced search operators.\n\nFirst, enter the following query into the Google search bar:\n```makefile\nfiletype:xls OR filetype:xlsx OR filetype:ods\n```\nThis will search for files with the file extensions .xls, .xlsx, or .ods, which are commonly used for spreadsheets.\n\nTo further refine the search to include only spreadsheets with email addresses in them, add the following query to the end of the search:\n```python\n\"email address\" OR \"e-mail address\"\n```\nThis will search for spreadsheets that contain the exact phrase \"email address\" or \"e-mail address\". You can modify the phrase to better fit your specific search, such as searching for specific domain names or email formats.\n\nSo the full search query would be:\n```vbnet\nfiletype:xls OR filetype:xlsx OR filetype:ods \"email address\" OR \"e-mail address\"\n```\nThis should return spreadsheets that contain email addresses in them.",
+  "has_answer": false
+}

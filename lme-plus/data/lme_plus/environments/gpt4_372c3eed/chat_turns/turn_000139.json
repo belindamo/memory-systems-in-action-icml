@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 139,
+  "session_index": 13,
+  "session_id": "sharegpt_E6mafmR_0",
+  "turn_in_session": 9,
+  "date": "2021/08/20 (Fri) 09:51",
+  "role": "assistant",
+  "content": "If the `System` and `SystemName` attributes are to be the same, the data model can be updated as follows:\n```\nTable name: PrimaryDrivers\n\nPrimary key: \n    VIN (string) - the VIN of the car associated with the primary driver\n\nSort key: \n    Timestamp (string) - the timestamp when the primary driver was registered or updated\n\nAttributes:\n    PolestarID (string) - the Polestar ID of the primary driver\n    System (string) - the name of the system that initiated the change (POMS, PolestarID auth API, M2M auth API)\n    UserID (string) - the user ID of the person who made the update (if the change was made using Polestar ID auth API)\n    ClientID (string) - the client ID of the service that made the change (if the change was made using M2M auth API)\n    EventID (string) - the event ID that caused the change (if the update was based on an event)\n    EventTimestamp (string) - the timestamp when the event was emitted (if the update was based on an event)\n    OrderID (string) - the order ID from the event (if the primary driver was registered based on an event from POMS)\n    EndTimestamp (string) - the timestamp when the primary driver was removed (if applicable)\n```\nIn this updated model, the `System` attribute now stores the name of the system that initiated the change, rather than just the type of system (event or API). This simplifies the model by removing the need for a separate `SystemName` attribute.",
+  "has_answer": false
+}

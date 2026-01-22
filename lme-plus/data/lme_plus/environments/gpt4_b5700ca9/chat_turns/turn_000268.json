@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 268,
+  "session_index": 27,
+  "session_id": "sharegpt_6sDqw6L_0",
+  "turn_in_session": 3,
+  "date": "2023/04/06 (Thu) 17:57",
+  "role": "assistant",
+  "content": "If you are receiving the error message \"static IP needed,\" it means that the Pi-hole software is unable to automatically determine the static IP address of your Raspberry Pi on the network. To resolve this issue, you will need to manually configure a static IP address for your Raspberry Pi.\n\nYou can do this by editing the \"dhcpcd.conf\" file on your Raspberry Pi:\n\n1. Open a terminal window on your Raspberry Pi and enter the command \"sudo nano /etc/dhcpcd.conf\" to open the file in the nano text editor.\n2. Scroll to the bottom of the file and add the following lines, replacing \"x\" with the appropriate values for your network:\ninterface eth0\nstatic ip\\_address=x.x.x.x/x\nstatic routers=x.x.x.x\nstatic domain\\_name\\_servers=x.x.x.x\n3. Press \"CTRL+X\" to exit, press \"Y\" to save the changes and press \"Enter\" to confirm the filename.\n4. Restart the dhcpcd service by entering the command \"sudo service dhcpcd restart\"\n\nOnce you've done this, you should be able to proceed with the Pi-hole installation without encountering the \"static IP needed\" error message.\n\nPlease be aware that the above steps are for Raspbian, if you are using a different operating system, you may need to refer to its documentation.",
+  "has_answer": false
+}

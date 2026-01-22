@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 420,
+  "session_index": 38,
+  "session_id": "sharegpt_nE62dqp_79",
+  "turn_in_session": 2,
+  "date": "2023/05/29 (Mon) 11:30",
+  "role": "assistant",
+  "content": "The cause of this issue is likely due to the difference in filtering between the numerator and denominator in the query.\n\nIn the numerator, you are counting the number of rows where `reflect_items.immediate_reactions` is `NULL` and `reflect_items.updated_at` is greater than `reflect_items.created_at` and `course_module_sessions.completed_at` is not `NULL`.\n\nIn the denominator, you are counting the number of rows in `praxislabs.reflect_items` where `reflect_items.updated_at` is greater than `reflect_items.created_at`.\n\nThe difference in filtering between the two results in a numerator that includes a smaller subset of rows compared to the denominator, which could lead to a percentage greater than 100%.\n\nTo resolve this issue, you may need to adjust the filtering conditions in either the numerator or the denominator to ensure that they are consistent with one another.",
+  "has_answer": false
+}

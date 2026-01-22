@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 406,
+  "session_index": 38,
+  "session_id": "sharegpt_m2jtopG_0",
+  "turn_in_session": 0,
+  "date": "2023/05/28 (Sun) 06:24",
+  "role": "user",
+  "content": "I have the following tickers inside of tradingview watchlist code:\n\n \"watchlist\": [\n \"BITFINEX:XMRBTCLONGS\",\n \"BITFINEX:XMRBTCSHORTS\",\n \"KRAKEN:XMRBTC\",\n \"KRAKEN:BTCUSD\"\n ],\n\nCan you give me a new block of code for a watchlist that includes the tickers below?\n\n TOTAL\nBTCUSD\nBCHBTC\nXMRBTC\nXMRUSD\nETHUSD\nAVAXBTC\nAVAXUSD\nAAVEBTC\nKNCBTC\nETHBTC\nMKRUSDT\nCAKEBTC\nSOLBTC\nSOLUSD\nTRXBTC\nLBCUSD\nDOGEBTC\nDOGEUSD\nADAUSD\nXMREUR\nBNBBUSD\nUNIUSD\nCOMPBTC\nALGOBTC\nBCHUSD\nXRPUSD\nPFE\nDXY\nDJI\nQQQ\nSPY\nCORN\nCOFFEE\nUSOIL\nWHEAT\nLBS1!\nGOLD\nSILVER\nBTCRUB\nRUBUSD\n\nYou'll need to look up a good exchange for each ticker and format it like the code I provided",
+  "has_answer": false
+}

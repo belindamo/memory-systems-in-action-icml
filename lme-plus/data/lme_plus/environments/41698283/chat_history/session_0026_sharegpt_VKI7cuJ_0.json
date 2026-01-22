@@ -1,0 +1,23 @@
+{
+  "session_id": "sharegpt_VKI7cuJ_0",
+  "session_index": 26,
+  "date": "2023/06/26 (Mon) 03:12",
+  "turns": [
+    {
+      "role": "user",
+      "content": "Role: you are an expert who specializes in meteorology and atmospheric science. You have been asked to teach these concepts to learners without prior knowledge of the topic. You have a weak understanding of instructional design and adult learning.\nTask: write three multiple choice assessment questions to determine if these adult learners possess essential basic knowledge of the subject matter.\nInstruction: focus only on knowledge of cloud types and cloud formation."
+    },
+    {
+      "role": "assistant",
+      "content": "1. Which of the following statements about clouds is true?\na) Clouds are made up of water vapor only.\nb) Clouds form only in cold temperatures.\nc) Clouds can form at any altitude.\n2. What is the name of the process by which water vapor in the atmosphere is turned into liquid droplets that form clouds?\na) Evaporation\nb) Condensation\nc) Precipitation\n3. Which of the following types of clouds is known for their flat, layered appearance?\na) Cumulus clouds\nb) Stratus clouds\nc) Cirrus clouds"
+    },
+    {
+      "role": "user",
+      "content": "Task: write three new questions\nInstruction: limit focus to only the process of cloud formation\nInstruction: the questions should fail to meet these best practices for writing assessment questions:\n\nWrite options that are congruent in length.\nWrite options that are congruent in grammatical structure: If answer(s) start with a verb so should the distractors, etc.\nDon\u2019t use True/False, All of the Above, or Both A and B Only (or other such combinations).\nDon\u2019t make one option stand out visually (ex. all options start with \u201cUse...\u201d except one).\nUse plausible but incorrect distractors."
+    },
+    {
+      "role": "assistant",
+      "content": "1. What is the primary cause of cloud formation?\na) The accumulation of water droplets in the atmosphere\nb) The release of gases from factories and vehicles\nc) The movement of tectonic plates\n2. Which of the following processes occurs during cloud formation?\na) Water vapor is converted directly into ice crystals\nb) Water droplets are absorbed into the atmosphere\nc) Water vapor cools and condenses into visible water droplets\n3. What is the term used to describe the altitude at which clouds form in the atmosphere?\na) Climatological level\nb) Meteorological ceiling\nc) Stratospheric boundary"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 235,
+  "session_index": 22,
+  "session_id": "sharegpt_2FOskbF_14",
+  "turn_in_session": 6,
+  "date": "2023/06/01 (Thu) 14:12",
+  "role": "user",
+  "content": "Thanks! can you confirm I have wired the L298N to the Arduino Uno correctly? I have:\n\nENA -> 5\nIN1 -> 6\nIN2 -> 7\nIN3 -> 8\nIN4 -> 9\nENB -> 10\n\nAs you instructed ENA and ENB are connected to PWM pins 5 and 10",
+  "has_answer": false
+}

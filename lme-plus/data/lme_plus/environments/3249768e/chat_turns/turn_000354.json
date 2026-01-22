@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 354,
+  "session_index": 36,
+  "session_id": "ultrachat_147793",
+  "turn_in_session": 3,
+  "date": "2023/05/28 (Sun) 11:22",
+  "role": "assistant",
+  "content": "Yes, there are some downsides to using immutable data structures in LISP. One of the main drawbacks is that creating a new immutable data structure requires copying the entire existing structure. This can be inefficient for large data structures. \n\nAdditionally, immutable data structures may not be suitable for some types of applications that require frequent updates to data. In these cases, using mutable data structures may be more efficient.\n\nAnother consideration is that immutability can make debugging more challenging since it can be difficult to determine when and where a data structure was modified.\n\nOverall, while immutability offers many benefits in LISP, it is important to carefully consider the specific application and data requirements before choosing to use immutable data structures.",
+  "has_answer": false
+}

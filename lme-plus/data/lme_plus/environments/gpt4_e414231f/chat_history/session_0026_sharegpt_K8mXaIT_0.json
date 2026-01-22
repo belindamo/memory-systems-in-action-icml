@@ -1,0 +1,39 @@
+{
+  "session_id": "sharegpt_K8mXaIT_0",
+  "session_index": 26,
+  "date": "2023/03/09 (Thu) 20:38",
+  "turns": [
+    {
+      "role": "user",
+      "content": "How to build bot using engati platform"
+    },
+    {
+      "role": "assistant",
+      "content": "Engati is a popular chatbot building platform that allows you to create and deploy bots across various platforms such as Facebook Messenger, WhatsApp, Slack, and many more. Here's a general guide on how to build a bot using Engati:\n\n1. Sign up for an account on Engati website: Go to Engati website and sign up for an account. You can choose the type of account you want to sign up for, such as a free account or a paid one.\n2. Create a new bot: Once you have signed up for an account, click on the \"Create Bot\" button on the dashboard. Give your bot a name, and select the platform you want to create the bot for. You can choose from various platforms such as Facebook, WhatsApp, Slack, and more.\n3. Design the bot: Once you have selected the platform, you can start designing the bot. You can add different elements such as text, images, videos, and more to create a conversation flow for your bot.\n4. Add responses: After designing the conversation flow, you can add responses to the bot for various user inputs. You can use Engati's Natural Language Processing (NLP) engine to train your bot to understand user inputs and respond accordingly.\n5. Test the bot: Once you have designed and added responses to the bot, you can test it by using the \"Preview\" button on the dashboard. You can test the bot on various platforms and make changes as required.\n6. Deploy the bot: Once you are satisfied with the bot's performance, you can deploy it on the platform you have selected. Engati makes it easy to deploy bots across various platforms, and you can do it with just a few clicks.\n7. Monitor the bot: After deploying the bot, you can monitor its performance using Engati's analytics dashboard. You can track user engagement, conversation history, and more to make changes and improve the bot's performance.\n\nThat's it! These are the basic steps to build a bot using Engati. Of course, there are many advanced features and customization options available on Engati that you can explore to make your bot more powerful and efficient."
+    },
+    {
+      "role": "user",
+      "content": "How can i write script node in Engati bot"
+    },
+    {
+      "role": "assistant",
+      "content": "To write a script node in Engati bot, you can follow these steps:\n\n1. Log in to your Engati account and go to the bot builder dashboard.\n2. Click on the \"Add Node\" button to create a new node.\n3. Select \"Script\" as the node type from the list of available options.\n4. In the script editor window that appears, you can write your Node.js code to perform the desired actions.\n5. You can use Engati's built-in libraries and modules to interact with various APIs, databases, and other external services. For example, you can use the \"request\" module to make HTTP requests or the \"mongodb\" module to access a MongoDB database.\n6. Once you have written the script code, click on the \"Save\" button to save the node.\n7. You can connect the script node to other nodes in the conversation flow to create a complete chatbot experience.\n\nNote: Engati supports Node.js version 10.x and higher. Also, you need to ensure that your code is asynchronous and doesn't block the main event loop, as this can cause performance issues with your bot.\n\nIn summary, writing a script node in Engati is a straightforward process. You can use Node.js code to perform complex actions and interact with various services to create a powerful and dynamic chatbot."
+    },
+    {
+      "role": "user",
+      "content": "Example of a script node in engati bot builder?"
+    },
+    {
+      "role": "assistant",
+      "content": "Sure, here is an example of a script node in Engati bot builder:\n\nSuppose you want to build a script node that sends a message to a user's email address. You can use the following Node.js code to accomplish this:\n```javascript\nconst nodemailer = require('nodemailer');\n\nconst transporter = nodemailer.createTransport({\n  service: 'gmail',\n  auth: {\n    user: 'youremail@gmail.com',\n    pass: 'yourpassword'\n  }\n});\n\nconst mailOptions = {\n  from: 'youremail@gmail.com',\n  to: '{{context.userProfile.email}}',\n  subject: 'Test email from Engati bot',\n  text: 'This is a test email sent from Engati bot'\n};\n\ntransporter.sendMail(mailOptions, function(error, info){\n  if (error) {\n    console.log(error);\n  } else {\n    console.log('Email sent: ' + info.response);\n  }\n});\n```\nIn this code, we are using the `nodemailer` module to send an email to the user's email address. We create a transporter object by providing our Gmail credentials, and then we define the email message using the `mailOptions` object. Finally, we use the `sendMail()` method to send the email and log the result.\n\nTo use this code in Engati, you can create a script node and paste this code into the script editor window. You can then connect this node to other nodes in the conversation flow to trigger the email sending action.\n\nNote that in the `mailOptions` object, we are using Engati's context variable `{{context.userProfile.email}}` to dynamically populate the user's email address. This is because Engati stores the user's email address in the `userProfile` context variable, which we can access using the double curly braces syntax."
+    },
+    {
+      "role": "user",
+      "content": "Can i integrate Shopify with Engati"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, you can integrate Shopify with Engati using Engati's webhook feature. Here's a general overview of how to do it:\n\n1. Log in to your Engati account and go to the bot builder dashboard.\n2. Create a new node that triggers when a user places an order or performs an action in Shopify. You can do this by using Shopify's webhook feature to send a notification to a webhook URL that you provide.\n3. In the Shopify webhook settings, specify the webhook URL as the Engati webhook URL. This URL is provided in the Engati dashboard under the \"Integrations\" section.\n4. In the Engati webhook node, you can write Node.js code to handle the incoming webhook data and trigger a response in your bot. You can use Engati's built-in libraries and modules to interact with the Shopify API and perform various actions, such as sending a confirmation message to the user or updating the user's order status.\n5. Test the webhook integration by performing an action in Shopify that triggers the webhook, such as placing an order or updating a customer record.\n6. Once you have tested the webhook integration, you can deploy it to your live Shopify store and start using it to automate various tasks and interactions with your customers.\n\nNote that the specific steps and code required for the webhook integration may vary depending on your specific use case and requirements. However, Engati provides a flexible and powerful webhook feature that allows you to easily integrate with Shopify and other external services."
+    }
+  ]
+}

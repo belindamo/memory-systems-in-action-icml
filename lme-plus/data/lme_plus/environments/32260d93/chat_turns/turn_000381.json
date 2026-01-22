@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 381,
+  "session_index": 34,
+  "session_id": "sharegpt_8jxRz9U_0",
+  "turn_in_session": 1,
+  "date": "2023/05/28 (Sun) 13:53",
+  "role": "assistant",
+  "content": "Here is an example function that you can use to create a shortcode for displaying a list of custom posts:\n```php\nfunction custom_post_list_shortcode( $atts ) {\n    $atts = shortcode_atts( array(\n        'number_of_posts' => 5,\n        'category' => '',\n        'taxonomy' => '',\n    ), $atts, 'custom_post_list' );\n \n    $args = array(\n        'post_type' => 'custom_post',\n        'posts_per_page' => $atts['number_of_posts'],\n    );\n \n    if ( ! empty( $atts['category'] ) ) {\n        $args['category_name'] = $atts['category'];\n    }\n \n    if ( ! empty( $atts['taxonomy'] ) ) {\n        $args['tax_query'] = array(\n            array(\n                'taxonomy' => $atts['taxonomy'],\n                'field'    => 'slug',\n                'terms'    => $atts['taxonomy'],\n            ),\n        );\n    }\n \n    $query = new WP_Query( $args );\n \n    if ( $query->have_posts() ) {\n        $output = '<ul>';\n        while ( $query->have_posts() ) {\n            $query->the_post();\n            $output .= '<li><a href=\"' . get_the_permalink() . '\">' . get_the_title() . '</a></li>';\n        }\n        wp_reset_postdata();\n        $output .= '</ul>';\n    } else {\n        $output = 'No custom posts found.';\n    }\n \n    return $output;\n}\nadd_shortcode( 'custom_post_list', 'custom_post_list_shortcode' );\n```\nYou can use the shortcode [custom\\_post\\_list number\\_of\\_posts=\"5\" category=\"category-slug\" taxonomy=\"taxonomy-slug\"] to display the list of custom post.\nYou can use it in any post or page and you can change number\\_of\\_posts, category and taxonomy as per your requirement.",
+  "has_answer": false
+}

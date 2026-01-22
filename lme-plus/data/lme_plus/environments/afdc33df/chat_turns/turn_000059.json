@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 59,
+  "session_index": 6,
+  "session_id": "sharegpt_YWC1MZC_11",
+  "turn_in_session": 7,
+  "date": "2023/05/22 (Mon) 02:12",
+  "role": "user",
+  "content": "i set my referesh\\_interval to 1min but my model is connected to dsl\\_drf document so when ever i inserted row to table it is automatically indexed to elastic search so what can i do so that a 10row get index at a time",
+  "has_answer": false
+}

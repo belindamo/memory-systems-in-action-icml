@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 525,
+  "session_index": 59,
+  "session_id": "sharegpt_vRfbcKe_87",
+  "turn_in_session": 0,
+  "date": "2023/05/30 (Tue) 13:35",
+  "role": "assistant",
+  "content": "`update-rc.d` is a command-line tool that is used to manage the system startup scripts on Debian and Ubuntu Linux distributions. It is used to add, remove, or modify the startup links that control the automatic start and stop of system services at boot and shutdown.\n\nIt's used to create, remove and manage the symbolic links that are placed in the /etc/rc[runlevel].d/ directories. These links point to the actual service scripts in the /etc/init.d/ directory.\n\nThe `update-rc.d` command is typically used to configure services to start and stop automatically at boot and shutdown. It can be used to add new services to the system startup or remove existing services from the system startup.\n\nThe basic syntax for the `update-rc.d` command is:\n```\nupdate-rc.d [-n] [-f] [--remove] scriptname defaults|remove|{start|stop} N\n```\n* `scriptname`: The name of the service script in the /etc/init.d/ directory\n* `defaults`, `remove`, `start`, `stop`: The action to perform.\n* `N`: The runlevel number, usually it's \"defaults\"\n\nFor example, the command `sudo update-rc.d supervisor defaults` will create the symbolic links in the /etc/rc[runlevel].d/ directories that point to the /etc/init.d/supervisor script, this will make supervisor start automatically when the system boots.\n\nPlease let me know if you have any other questions or if you need further assistance.",
+  "has_answer": false
+}

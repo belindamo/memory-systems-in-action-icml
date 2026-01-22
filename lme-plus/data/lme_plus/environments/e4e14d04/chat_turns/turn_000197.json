@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 197,
+  "session_index": 20,
+  "session_id": "sharegpt_isQJkCz_17",
+  "turn_in_session": 8,
+  "date": "2023/05/28 (Sun) 01:46",
+  "role": "assistant",
+  "content": "You can add a video background to a `div` using HTML5's `<video>` element and CSS. Here's an example:\n```html\n<div class=\"video-background\">\n  <video autoplay muted loop>\n    <source src=\"video.mp4\" type=\"video/mp4\">\n    Your browser does not support the video tag.\n  </video>\n</div>\n```\nIn this example, we're creating a `div` with a class of `video-background`. Inside the `div`, we're adding a `<video>` element with three attributes: `autoplay`, `muted`, and `loop`. These attributes will cause the video to start playing automatically, mute the audio, and loop the video when it reaches the end.\n\nWe're also adding a `<source>` element inside the `<video>` element with the path to the video file and its MIME type. Finally, we're adding a fallback message for browsers that do not support the `<video>` element.\n\nTo make the `div` fill the entire screen, you can add the following CSS:\n```css\n.video-background {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  z-index: -1;\n}\n\n.video-background video {\n  object-fit: cover;\n}\n```\nThis will position the `div` at the top-left corner of the screen, with a width and height of 100% to cover the entire screen. The `z-index` property is set to -1 to make sure the video stays in the background.\n\nThe `object-fit: cover` property in the `video` selector is used to make the video fill the entire `div` without distorting its aspect ratio.\n\nNote that different video formats may be required for different browsers. It's a good practice to provide multiple `<source>` elements with different video formats to ensure the video will play on different browsers.",
+  "has_answer": false
+}

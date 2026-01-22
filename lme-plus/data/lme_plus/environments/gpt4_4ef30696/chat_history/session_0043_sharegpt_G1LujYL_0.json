@@ -1,0 +1,47 @@
+{
+  "session_id": "sharegpt_G1LujYL_0",
+  "session_index": 43,
+  "date": "2022/01/16 (Sun) 06:28",
+  "turns": [
+    {
+      "role": "user",
+      "content": "---------------------------\nApplication Error\n---------------------------\nException EOleSysError in module epub2pdf.exe at 0013E81D.\n\nClass not registered.\n---------------------------\nOK \n---------------------------\n\nWhen I try to start old application on Windows 10 I get following error."
+    },
+    {
+      "role": "assistant",
+      "content": "This error message suggests that the application is attempting to use a component or module (epub2pdf.exe) that is not properly registered on the system. This component is likely a COM object or ActiveX control that the application relies on, but is not present or properly configured on the system.\n\nOne possible solution is to try re-registering the component by running the command \"regsvr32 epub2pdf.exe\" from the command prompt. If that doesn't work, you may need to contact the application vendor for further assistance or try to find a newer version of the application that is compatible with Windows 10."
+    },
+    {
+      "role": "user",
+      "content": "Are there any ways to identify which component is not properly registered on the system?"
+    },
+    {
+      "role": "assistant",
+      "content": "One way to identify which component is not properly registered on the system is to look at the error message more closely. In this case, the error message specifically states that the class \"epub2pdf.exe\" is not registered. This tells you that the component in question is likely a file with the name \"epub2pdf.exe\".\n\nAnother way to identify the unregistered component is to use tools such as Dependency Walker or Process Monitor to see what dependencies the application has and which ones are not being met. These tools can help you identify which DLLs or other files the application is trying to load, and which ones are missing or not registered.\n\nAdditionally, you can also check the event viewer for application logs to find more information about the error which might give more details about which component is not properly registered.\n\nOnce you have identified the unregistered component, you can then try to register it using the \"regsvr32\" command or contact the application vendor for assistance."
+    },
+    {
+      "role": "user",
+      "content": "Here is some more information about this program that may help diagnose the problem.\n\nEpub to PDF Converter is a free PDF converter software to batch convert EPUB, DOC, DOCX, DJVU, MOBI, CHM, RTF, HTML and TXT to PDF document.\n\nEpub to PDF Converter is easy-to-use. Just add e-book files such as EPUB, CHM or MOBI files to the list, set output directory, then click the Convert button to start converting. The conversion will complete in a few minutes.\n\nAdditionally, Epub to PDF Converter can add watermark, passwords, restrictions and certain information such as title, subject, author or keywords to the output PDF documents.\n\nEpub to PDF Converter doesn't support DRM protected ePub or mobi documents for copyright reasons. The output PDF pages may be blank if the source files are DRM protected.\n\nEpub to PDF Converter doesn't require Adobe Acrobat Reader installed. Epub to PDF Converter doesn't depend on any print driver so it will not install any print driver on your computer.\n\nEpub to PDF Converter works on Windows XP, Windows Vista, Windows 7 and Windows 8, both 32-bit and 64-bit versions.\n\nVersion 1.1 added support for converting Word document (\\*.doc, \\*.docx) to PDF document. It supports almost all the popular e-book formats now.\n\nClick the download button above to download Epub to PDF Converter full version. Full version means the file is complete and doesn't require other PDF software, plug-in or printer to run. Full version also means Epub to PDF Converter software doesn't have any watermark, nag screen, time expiration or function limitations."
+    },
+    {
+      "role": "assistant",
+      "content": "Based on the information provided, it seems that the application \"Epub to PDF Converter\" is a software tool that allows you to convert various e-book formats, such as EPUB, MOBI, and CHM, to PDF. It also has the ability to add watermarks and other information to the output PDF documents.\n\nIt appears that the application is designed to work on Windows operating systems, specifically Windows XP, Windows Vista, Windows 7, and Windows 8, both in 32-bit and 64-bit versions.\n\nGiven that the error message specifically mentions the file \"epub2pdf.exe\" and the fact that the program is called \"Epub to PDF Converter\", it's likely that this file is a crucial component of the program.\n\nIt's possible that the issue with the program is that the file \"epub2pdf.exe\" is either missing or not properly registered on your Windows 10 system.\n\nYou can try re-registering the component by running the command \"regsvr32 epub2pdf.exe\" from the command prompt, if that doesn't work, you may need to contact the application vendor for further assistance or try to find a newer version of the application that is compatible with Windows 10."
+    },
+    {
+      "role": "user",
+      "content": "I tested this program on 2 independent computers. Both of them run Windows 10. On one of them the problemem does not exitst."
+    },
+    {
+      "role": "assistant",
+      "content": "It's possible that the issue is specific to the computer where the problem is occurring, and may be caused by a missing or outdated system component, or a conflict with another program or driver on the system.\n\nIt's also possible that the problem is caused by a specific configuration on that computer that is different from the other computer where the program is working correctly.\n\nTry the following steps:\n\n1. Check the system requirements for the program and ensure that the computer where the program is not working meets those requirements.\n2. Check if there are any updates available for the program and install them.\n3. Try running the program in compatibility mode or as an administrator.\n4. Check if there are any other programs or drivers on the computer that may be conflicting with the program.\n5. Check the system for any malware or viruses that may be causing issues.\n6. Try reinstalling the program to see if that resolves the issue.\n\nIf none of the above steps resolve the issue, it may be helpful to gather more information about the problem such as the version of the operating system, and the version of the program, and any other software and hardware configuration that may be relevant and contact the support of the software vendor for more help."
+    },
+    {
+      "role": "user",
+      "content": "Here is list of all files for this program:\ndefault.xml\nDocUtils.dll\nepub2pdf.exe\nlibdjvulibre.dll\nlibeay32.dll\nlibjpeg.dll\nlibssl32.dll\nlibtiff.dll\nlibz.dll\nLicense.txt\nmsvcp100.dll\nmsvcr100.dll\nreadme.url\nssleay32.dll\ntmpPrint.rtf\ntx20.dll\ntx20\\_bmp.flt\ntx20\\_css.dll\ntx20\\_doc.dll\ntx20\\_dox.dll\ntx20\\_gif.flt\ntx20\\_htm.dll\ntx20\\_ic.dll\ntx20\\_ic.ini\ntx20\\_jpg.flt\ntx20\\_obj.dll\ntx20\\_pdf.dll\ntx20\\_png.flt\ntx20\\_rtf.dll\ntx20\\_tif.flt\ntx20\\_tls.dll\ntx20\\_wnd.dll\ntx20\\_xml.dll\ntx4ole20.ocx\nunrar.dll"
+    },
+    {
+      "role": "assistant",
+      "content": "From the list of files provided, it appears that this program is dependent on several dynamic link libraries (dlls) and one activex control (ocx) to function properly. It seems that the problem may be related to one of these dependencies not being properly registered or missing on the system where the program is not working.\n\nOne way to troubleshoot this issue would be to manually register these dependencies using the regsvr32 command in the command prompt.\n\nHere are the steps to do this:\n\n1. Open the Command Prompt as an administrator.\n2. Type the command `cd <path_to_program_folder>` and press Enter. This will change the current directory to the folder where the program files are located.\n3. Type the command `regsvr32 <dll_file_name>` and press Enter. Replace <dll\\_file\\_name> with the name of the dll file (e.g. msvcp100.dll, msvcr100.dll etc). Repeat this step for all the dll files listed in the program folder.\n4. Type the command `regsvr32 <ocx_file_name>` and press Enter. Replace <ocx\\_file\\_name> with the name of the ocx file (e.g. tx4ole20.ocx).\n5. Close the command prompt and try running the program again to see if the issue is resolved.\n\nIt's also possible that the problem is related to missing files that are not included in this list, which would require further troubleshooting.\nIn case if this does not work, it's best to contact the software vendor for further help."
+    }
+  ]
+}

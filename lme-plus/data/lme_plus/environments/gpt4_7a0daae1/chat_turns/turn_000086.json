@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 86,
+  "session_index": 8,
+  "session_id": "sharegpt_n3kgf14_29",
+  "turn_in_session": 10,
+  "date": "2023/03/09 (Thu) 19:50",
+  "role": "assistant",
+  "content": "Here is an example of what the data in the \"PrimaryDrivers\" table could look like:\n\n| VIN | Timestamp | PolestarID | System | ChangeSource | UserID | ClientID | EventID | EventTimestamp | OrderID | PreviousOrderIDs | EndTimestamp |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 123 | 2022-12-11T12:00:00 | 101 | POMS | Event |  |  | e1 | 2022-12-11T11:00:00 | o1 |  |  |\n| 123 | 2022-12-11T12:15:00 | 102 | Polestar app | API | u1 |  |  |  |  | [o1] | 2022-12-11T12:14:59 |\n| 123 | 2022-12-11T12:30:00 | 103 | Change of Ownership | API | u2 | c1 |  |  |  | [o1, o2] | 2022-12-11T12:29:59 |\n\nIn this example, the \"PrimaryDrivers\" table has three entries for the car with VIN \"123\". The first entry was created based on an event from POMS with event ID \"e1\" and order ID \"o1\". This event registered \"101\" as the primary driver for the car. The second entry was created when the primary driver was updated using the Polestar app, with user ID \"u1\". The previous order ID, \"o1\", is stored in the \"PreviousOrderIDs\" attribute. The third entry was created when the primary driver was updated using the \"Change of Ownership\" system, with client ID \"c1\" and user ID \"u2\". The previous order IDs, \"o1\" and \"o2\", are stored in the \"PreviousOrderIDs\" attribute.",
+  "has_answer": false
+}

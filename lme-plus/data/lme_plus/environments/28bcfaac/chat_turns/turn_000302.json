@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 302,
+  "session_index": 28,
+  "session_id": "sharegpt_d9GL0oF_15",
+  "turn_in_session": 12,
+  "date": "2023/05/25 (Thu) 21:41",
+  "role": "assistant",
+  "content": "C. Add or remove an 802.1Q trunking header.\nD. Match the destination MAC address to the MAC address table.\n\nThe data plane of a network device refers to the part of the device that is responsible for forwarding packets through the network. The data plane performs actions such as receiving incoming packets, examining their headers to determine their destination, and forwarding them to the appropriate output interface.\n\nTwo actions that occur within the data plane are adding or removing an 802.1Q trunking header and matching the destination MAC address to the MAC address table.\n\n802.1Q is a standard for VLAN (Virtual LAN) tagging that allows multiple VLANs to be carried over a single physical link. When a packet is transmitted over a trunk link, an 802.1Q header is added to the packet to identify the VLAN to which the packet belongs. This header is added or removed by the data plane as the packet is transmitted between different devices.\n\nThe MAC address table, also known as the forwarding table or the switching table, is a data structure that stores the MAC addresses of devices that are connected to the network and the interfaces through which they can be reached. When a packet arrives at a network device, the data plane looks up the destination MAC address in the MAC address table to determine which interface to use to forward the packet. This process is known as MAC-level forwarding, and it is an essential part of the data plane's function.",
+  "has_answer": false
+}

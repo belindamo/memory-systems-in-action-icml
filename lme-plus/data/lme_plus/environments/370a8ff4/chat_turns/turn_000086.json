@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 86,
+  "session_index": 8,
+  "session_id": "sharegpt_SaUokxc_63",
+  "turn_in_session": 2,
+  "date": "2023/01/05 (Thu) 21:41",
+  "role": "assistant",
+  "content": "Yes, if you want to store the `syncEnabled` property in the Square integration document in MongoDB, you would need to update the schema for the `SquareIntegration` model. You would also need to update any API endpoints that interact with the `SquareIntegration` document to include the `syncEnabled` property.\n\nFor example, if you want to update the `createSquareIntegration` and `updateSquareIntegration` API endpoints to include the `syncEnabled` property, you would need to update the `SquareIntegration` schema and the `createSquareIntegration` and `updateSquareIntegration` controller methods in the server-side code. You would also need to update any client-side code that interacts with these API endpoints to include the `syncEnabled` property in the request payload.\n\nAdditionally, if you want to display the `syncEnabled` property in the `ManageAPIAccessPage` component, you would need to update the client-side code to include the `syncEnabled` property in the `integration` state object and to render the toggle in the component's JSX.",
+  "has_answer": false
+}

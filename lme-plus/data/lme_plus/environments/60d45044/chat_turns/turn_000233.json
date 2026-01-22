@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 233,
+  "session_index": 21,
+  "session_id": "sharegpt_D88l1Iv_11",
+  "turn_in_session": 2,
+  "date": "2023/05/25 (Thu) 04:54",
+  "role": "assistant",
+  "content": "Certainly! I'll modify the formula to look for the correct columns in the 'Logger input' tab based on the column names in row 1. Here's the updated formula using the INDEX and MATCH functions to find the right columns:\n\n`=IFERROR(((((('Flow input'!E8/0.2953)*6894.76)+('Flow input'!E10*248.84)+(AVERAGEIFS(INDEX('Logger input'!1:1048576,,MATCH(\"DELTA_P2\",'Logger input'!1:1,0)),'Logger input'!A:A,\">=\"&'Phase Averages'!C9,'Logger input'!A:A,\"<=\"&'Phase Averages'!D9))*248.84))/((AVERAGEIFS(INDEX('Logger input'!1:1048576,,MATCH(\"TNL_TMP\",'Logger input'!1:1,0)),'Logger input'!A:A,\">=\"&'Phase Averages'!C9,'Logger input'!A:A,\"<=\"&'Phase Averages'!D9)-32)*5/9+273.15)*8.314*(1+(2/100)))/(12*0.0254)^2*3.14159*60/4)*35.3147, \"No data\")`\n\nThis formula uses the MATCH function to find the column number for \"DELTA\\_P2\" and \"TNL\\_TMP\" in row 1 of the 'Logger input' tab, and the INDEX function to reference the entire column for the AVERAGEIFS function. The rest of the formula remains unchanged.\n\nPlease note that this formula assumes that the Time column is in column A on the 'Logger input' tab. If the Time column is in a different column, you'll need to replace 'Logger input'!A:A with the appropriate column reference.",
+  "has_answer": false
+}

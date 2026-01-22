@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 74,
+  "session_index": 8,
+  "session_id": "sharegpt_dXzPvS4_0",
+  "turn_in_session": 6,
+  "date": "2023/05/22 (Mon) 04:06",
+  "role": "user",
+  "content": "Read the github latest api docs here: https://docs.github.com/en/rest?apiVersion=2022-11-28 and find the best way to create a python function that can login with some github authentication from environment variables and gets the list of repositories, list of files in each repository. Also include a function that can check if the github python module or rest api calls (which ever you prefer) have the correct permissions.",
+  "has_answer": false
+}

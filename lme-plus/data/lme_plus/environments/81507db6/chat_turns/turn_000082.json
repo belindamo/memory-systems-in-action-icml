@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 82,
+  "session_index": 9,
+  "session_id": "sharegpt_eZEcMAv_0",
+  "turn_in_session": 1,
+  "date": "2023/07/21 (Fri) 06:54",
+  "role": "assistant",
+  "content": "Assuming you want to create a currency format that is standard across all lengths of currency, and you want to use the Excel formula \"TEXTE(RECHERCHEV(A2;'2023'!A:AR;5;0);\"#.###.###,00\")&\" \"&\"DA\"\" to do so, here's what you can do:\n\n1. Open Microsoft Excel and create a new workbook.\n2. In the first cell, type the number that you want to format as currency. For example, you can type \"1000\" without the quotes.\n3. In the second cell, type the formula \"TEXTE(RECHERCHEV(A2;'2023'!A:AR;5;0);\"#.###.###,00\")&\" \"&\"DA\"\" without the quotes.\n4. Replace \"A2\" in the formula with the cell reference that contains the number you want to format as currency. For example, if you typed \"1000\" in cell A1, then replace \"A2\" in the formula with \"A1\".\n5. Press Enter to apply the formula to the cell.\n6. The cell should now display the formatted currency value.\n\nThe formula you provided appears to be in French, so it may not work if your Excel settings are in a different language. Additionally, the formula appears to reference a specific worksheet (\"'2023'!A:AR\" in the RECHERCHEV function), so you may need to adjust that part of the formula to match your own worksheet.",
+  "has_answer": false
+}

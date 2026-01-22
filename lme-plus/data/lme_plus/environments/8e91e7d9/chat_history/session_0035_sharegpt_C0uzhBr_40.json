@@ -1,0 +1,31 @@
+{
+  "session_id": "sharegpt_C0uzhBr_40",
+  "session_index": 35,
+  "date": "2023/05/27 (Sat) 11:00",
+  "turns": [
+    {
+      "role": "user",
+      "content": "so if underlying dataset is million what is the best interval to use"
+    },
+    {
+      "role": "assistant",
+      "content": "The interval for refreshing a materialized view depends on various factors such as the size of the underlying tables, the frequency of updates, the available system resources, and the desired query performance.\n\nIf the underlying dataset is in millions, refreshing the materialized view every 2 minutes may not be feasible or efficient, as it could put a significant load on the system and affect the query performance. In such cases, you may want to consider refreshing the materialized view less frequently, such as once per hour, or even less frequently depending on the specific use case.\n\nIt is recommended to perform some testing and analysis to determine the optimal refresh interval for the materialized view based on the specific requirements and constraints of the system."
+    },
+    {
+      "role": "user",
+      "content": "how to run refresh materialized view every 5 minute in mysql"
+    },
+    {
+      "role": "assistant",
+      "content": "In MySQL, there is no direct support for materialized views. However, you can simulate materialized views using tables and triggers.\n\nTo refresh the materialized view every 5 minutes, you can create a MySQL event that runs the `REFRESH` statement on the materialized view every 5 minutes.\n\nHere's an example code to create an event that refreshes the materialized view `sales_summary` every 5 minutes:\n```sql\nCREATE EVENT refresh_sales_summary\nON SCHEDULE\n    EVERY 5 MINUTE\nDO\nBEGIN\n    REFRESH MATERIALIZED VIEW sales_summary;\nEND;\n```\nThis code creates an event named `refresh_sales_summary` that runs every 5 minutes and refreshes the `sales_summary` materialized view.\n\nNote that in order to use events, you must have the `EVENT` privilege, and the MySQL event scheduler must be enabled. You can enable the event scheduler by running the following command:\n```sql\nSET GLOBAL event_scheduler = ON;\n```\nThis command enables the event scheduler for the current session. To enable it permanently, you can add the following line to your MySQL configuration file:\n```ini\nevent_scheduler=ON\n```\nMake sure to test the event thoroughly before deploying it to production."
+    },
+    {
+      "role": "user",
+      "content": "is mysql support materialized view"
+    },
+    {
+      "role": "assistant",
+      "content": "MySQL did not support materialized views until version 8.0. The feature was added in MySQL 8.0.13 as part of their release. If you are using a version of MySQL earlier than 8.0, you will need to use other solutions such as creating a summary table or using a scheduler to run queries and populate a table."
+    }
+  ]
+}

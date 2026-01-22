@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 46,
+  "session_index": 4,
+  "session_id": "sharegpt_SQzWPKF_34",
+  "turn_in_session": 0,
+  "date": "2023/11/29 (Wed) 12:23",
+  "role": "user",
+  "content": "This is perfect. Here are a few more components:\n\n\"Caster Wheel Footprint\": measures 31mm by 37mm. Within this rectangular footprint are 4 mounting holes, all 4 holes have a 2mm radius. There is a mounting hole in each of the 4 corners set in from the sides by 4mm.\n\n\"Infrared Footprint\": measures 96.5mm by 20.5mm, let these measurements be the x and y axis, respectively. Within this rectangular footprint are 4 mounting holes, all 4 holes have a 1.5 mm radius. All 4 holes are in a line at y = 4.25mm Along this axis the holes are placed along the x axis at the following locations: 7, 24, 72.5, 89.5mm. \n\nThe next component will be referred to as the \"Arduino footprint\", it has dimensions of 68.6mm by 53.4mm. This time the mounting holes have a radius of 1.3mm and are located at coordinates (15.24, 2.54), (15.24, 50.8), (66.04, 17.78), (66.04, 45.72)\n\nThe final component is \"motor bracket footprint\" with dimensions 15mm by 5mm with 2 mounting holes, of radius 1.5mm, at coordinates (3.5, 2.5) and (11.5, 2.5)\n\nCan you create additional SVG files for each of these components?",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 40,
+  "session_index": 4,
+  "session_id": "sharegpt_QP630pA_5",
+  "turn_in_session": 4,
+  "date": "2023/05/25 (Thu) 16:21",
+  "role": "assistant",
+  "content": "| Command | Description |\n| --- | --- |\n| `/show <Job ID #>` | Revives a Job using the specified Job ID. |\n| `/show <Job ID #> to <channel/server>` | Moves a Job to the specified channel or server using the specified Job ID. |\n| `/show <Job ID #> refresh` | Refreshes an old Job with new variations, upscaling, or newer parameters and features using the specified Job ID. |\n\nNote: `/show` only works for your own jobs.\n\nTo find a Job ID:\n\n| Method | Description |\n| --- | --- |\n| On the Web | Select ... > Copy... > Job ID in the member gallery. |\n| From the URL | The last part of the URL when viewing an image in the member gallery. |\n| From the File Name | The last part of the file name when viewing an image downloaded from the member gallery. |\n\nAnimated Gif Showing how to use the Midjourney Show command is also provided.",
+  "has_answer": false
+}

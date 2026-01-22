@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 190,
+  "session_index": 18,
+  "session_id": "sharegpt_MhtBvsc_87",
+  "turn_in_session": 0,
+  "date": "2023/05/23 (Tue) 11:19",
+  "role": "assistant",
+  "content": "Yes, you can also add the backend services from the Amplify Console on AWS. Here are the steps to add a service using the Amplify Console:\n\n1. Go to the Amplify Console dashboard and select the app you want to add the service to.\n2. In the left-hand navigation, select \"Backend environments\".\n3. Click on the environment you want to add the service to.\n4. Click on \"Add backend API, function or resource\".\n5. Select the service you want to add, such as Amazon Polly.\n6. Follow the prompts to configure the service and add it to your Amplify app.\n\nNote that the steps may vary slightly depending on the service you are adding, but this should give you a general idea of how to add backend services from the Amplify Console.",
+  "has_answer": false
+}

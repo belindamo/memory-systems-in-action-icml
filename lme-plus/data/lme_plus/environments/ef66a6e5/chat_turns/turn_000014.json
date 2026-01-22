@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 14,
+  "session_index": 2,
+  "session_id": "sharegpt_bitlG4U_0",
+  "turn_in_session": 1,
+  "date": "2023/05/20 (Sat) 10:44",
+  "role": "assistant",
+  "content": "Sure, here is an example of an HTML module for displaying a post with an image, a list of categories, a description, an author name, and a link:\n```\n<div class=\"post\">\n  <img src=\"image-url\" alt=\"Post Image\">\n  <ul class=\"categories\">\n    <li>Category 1</li>\n    <li>Category 2</li>\n    <li>Category 3</li>\n  </ul>\n  <p class=\"description\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a faucibus condimentum, ipsum velit congue augue, vel auctor velit velit a quam.</p>\n  <p class=\"author\">Author: John Doe</p>\n  <a href=\"link-url\">Read More</a>\n</div>\n```\nThis module uses a div with a class of \"post\" to contain all of the elements. Within this div, there is an image, an unordered list of \"categories\", a paragraph with a class of \"description\" for the post's text, a paragraph with a class of \"author\" for the author's name, and a link with a \"Read More\" text.\nYou can modify this as per your requirement, it is just an example, you can add class to each element and can style it with css as per your design.",
+  "has_answer": false
+}

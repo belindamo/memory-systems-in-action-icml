@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 70,
+  "session_index": 7,
+  "session_id": "sharegpt_TpaMHPY_0",
+  "turn_in_session": 8,
+  "date": "2023/05/22 (Mon) 09:13",
+  "role": "user",
+  "content": "If I had set CSS `dropdown-container:hover .dropdown-content {display: block;}` so content will appear when it hover. But if I set it in JS to make the content disappear by `display:none` in its style.display, then this hover effect also be removed. Why? Can I just use Css rules to make the dropdown-content disappear after selecting?",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 57,
+  "session_index": 6,
+  "session_id": "sharegpt_MxT7oAc_11",
+  "turn_in_session": 8,
+  "date": "2023/05/24 (Wed) 03:12",
+  "role": "assistant",
+  "content": "To add a logo next to the header, you can include an image element within the header element, like this:\n```html\n<body>\n  <header>\n    <img src=\"your-logo.png\" alt=\"logo\">\n    <h1>Denti.AI Hygenius</h1>\n    <h2>shared dialog</h2>\n  </header>\n  <!-- rest of your code -->\n</body>\n```\nIn this example, I added an `img` element before the `h1` element inside the `header` element. I set the `src` attribute to the URL or path of your logo image, and the `alt` attribute to a brief description of your logo.\n\nYou can then style the logo using CSS, for example by setting its `width` or `height` properties, or by positioning it using `float` or `display: inline-block`.",
+  "has_answer": false
+}

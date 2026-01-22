@@ -1,0 +1,15 @@
+{
+  "session_id": "sharegpt_tyWrGhj_0",
+  "session_index": 12,
+  "date": "2023/05/20 (Sat) 23:33",
+  "turns": [
+    {
+      "role": "user",
+      "content": "Create a 5 word title with the first three words being the subject and the last 2 being the predicate. The first word must be a verb ending in \"-ing\". The second word must be a preposition. The third word should be a possessive adjective, a noun or a pronoun. The last 2 words should describe the subject matter"
+    },
+    {
+      "role": "assistant",
+      "content": "\"Exploring the World's Wonders\""
+    }
+  ]
+}

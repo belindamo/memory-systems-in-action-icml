@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 430,
+  "session_index": 38,
+  "session_id": "sharegpt_TuureWP_17",
+  "turn_in_session": 11,
+  "date": "2023/05/29 (Mon) 17:34",
+  "role": "user",
+  "content": "You have an Azure subscription that\ncontains an Azure virtual machine\nnamed VM1. VM1 runs a financial\nreporting app named App1 that\ndoes not support multiple active\ninstances. At the end of each month, CPU\nusage for VM1 peaks when App1 runs.\nYou need to create a scheduled\nrunbook to increase the processor\npertormance of VM1 at the end of\neach month.\nWhat task should you include in the\nrunbook?\nSelect the correct answer\nAdd the Azure Performance Diagnostics agent to VM1.\nModify the VM size property of VM1\nAdd VM1 to a scale set.\nAdd a Desired State Configuration (DSC) extension to VM1",
+  "has_answer": false
+}

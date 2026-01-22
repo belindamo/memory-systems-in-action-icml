@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 137,
+  "session_index": 12,
+  "session_id": "sharegpt_miOKGt1_13",
+  "turn_in_session": 8,
+  "date": "2023/05/22 (Mon) 17:58",
+  "role": "assistant",
+  "content": "No, the estimated cost provided by an admissible heuristic function needs to be less than or equal to the true cost of the path to the goal in order for the heuristic to be admissible.\n\nAn admissible heuristic function provides a lower bound on the true cost of the path to the goal. That is, the estimated cost is guaranteed to be less than or equal to the actual cost of the optimal path. An admissible heuristic function never overestimates the true cost, but it may sometimes underestimate it.\n\nFor example, consider a pathfinding problem where the true cost of the optimal path is 10. If an admissible heuristic function estimates the cost to be 7, it is guaranteed that the actual cost of the optimal path is at least 7. However, the true cost of the optimal path could be greater than 7, but it will never be less than 7.\n\nBy using an admissible heuristic function in an informed search algorithm like A\\*, the algorithm is guaranteed to find the optimal path from the starting node to the goal node, provided that the heuristic is admissible and the search space is finite.",
+  "has_answer": false
+}

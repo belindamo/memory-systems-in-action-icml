@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 169,
+  "session_index": 15,
+  "session_id": "sharegpt_YAiYuAD_7",
+  "turn_in_session": 8,
+  "date": "2023/05/23 (Tue) 15:51",
+  "role": "assistant",
+  "content": "Yes, it's possible to create a custom solution using C# to automate the process of granting API permissions to an Azure AD application.\n\nHere's a high-level overview of the steps involved in creating such a solution:\n\n1. Create an Azure AD application: You'll need to create an Azure AD application in the Azure portal and obtain its client ID.\n2. Implement a web API: You'll need to implement a web API using C# that can be called by the SharePoint owner/admin to grant API permissions to the Azure AD application.\n3. Send a request: The Azure AD application owner can send a request to the SharePoint owner/admin to call the web API and grant API permissions.\n4. Authorize API permissions: The SharePoint owner/admin can call the web API and authorize API permissions for the Azure AD application.\n5. Obtain an access token: The Azure AD application can then use its client ID and certification to obtain an access token from the Azure AD token endpoint and access the SharePoint site's REST API.\n\nThis is just a high-level overview, and a custom solution developer would need to create a more detailed design and implementation plan, taking into account specific requirements and constraints.\n\nPlease note that this is a complex solution, and you may want to consider working with a custom solution developer or consulting firm to ensure that the solution meets your specific needs and requirements.",
+  "has_answer": false
+}

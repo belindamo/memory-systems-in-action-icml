@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 166,
+  "session_index": 17,
+  "session_id": "sharegpt_O8qJclh_0",
+  "turn_in_session": 4,
+  "date": "2023/05/23 (Tue) 23:52",
+  "role": "user",
+  "content": "2) General Software Requirements\nIn many instances, the requirements listed for the software are very specific to a certain implementation of a feature. This limits the ability of the provider to innovate and in our view restricts the provider's ability to meet the needs of the Institute effectively. For example, on page 9:\nCuando un Licitante reciba un mensaje de texto o un archivo digital en su Bandeja de Trabajo, e\u0301ste se presentara\u0301 en forma de ventana emergente (pop-up) y se debera\u0301 realizar una accio\u0301n de aceptacio\u0301n (checkbox) para proceder con su lectura, descarga y desbloqueo de la Aplicacio\u0301n, independientemente de que se archiven en su Bandeja de Trabajo para posteriores consultas.\nThis describes the general feature of notifying the bidder that a message has been received, and ensuring that the message is read. There are alternative ways to implement this feature that may or may not include a pop-up window. The provider may have an alternative workflow that they have designed, built, and tested thoroughly and that may have proven effective and practical in previous auctions. Forcing the provider to change this workflow will increase the cost of implementation and introduce a opportunity for software defects. We suggest to allow tenderers to suggest alternative implementations for software requirements that achieve the same goals when responding to the RFP. \nIn general, being very specific about implementation details of software can favor a vendor who happens to already have implemented a feature in a particular way. \nGiving vendors more flexibility for implementing details of software features allows for a more fair and competitive process when selecting a vendor, and helps protect IFT from perceptions of favoritism.",
+  "has_answer": false
+}

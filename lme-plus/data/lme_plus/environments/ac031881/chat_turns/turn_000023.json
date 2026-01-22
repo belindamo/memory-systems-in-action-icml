@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 23,
+  "session_index": 1,
+  "session_id": "sharegpt_LgJ688S_0",
+  "turn_in_session": 3,
+  "date": "2023/05/20 (Sat) 12:20",
+  "role": "assistant",
+  "content": "Yes, you can change the URL of your Flask web app by specifying a different value for the `host` and `port` parameters when you run the `app.run()` function in your Flask application.\n\nHere's an example:\n```python\nfrom flask import Flask\n\napp = Flask(__name__)\n\n# Define your Flask routes here\n\nif __name__ == '__main__':\n    app.run(host='localhost', port=8080)\n```\nIn the above code, you can change `host='localhost'` to `host='medicalsite'` or any other name you want to use as your hostname, and you can change `port=8080` to any other number you want to use as your port number.\n\nSo, for example, if you want your Flask app to run on the URL `http://medicalsite:8080/`, you would change the `app.run()` line to:\n```arduino\napp.run(host='medicalsite', port=8080)\n```\nNote that you may need to update your `/etc/hosts` file or DNS settings to ensure that the new hostname is properly mapped to your local IP address.",
+  "has_answer": false
+}

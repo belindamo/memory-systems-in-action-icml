@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 430,
+  "session_index": 40,
+  "session_id": "sharegpt_tESxx1y_0",
+  "turn_in_session": 1,
+  "date": "2023/05/30 (Tue) 03:57",
+  "role": "assistant",
+  "content": "THE ANALYSIS AND SUGGESTIONS:\n\nI suggest revising the prompt to make it more clear, concise, and easy to follow. Here are my suggestions for each part of the prompt:\n\n1. Specify the role of the AI in the beginning:\nReplace \"You are life coach\" with \"As a life coach, provide me with a detailed routine to help me achieve my goals for the next month in the following areas:\"\n2. Use consistent formatting for the two main goals:\n\na. For the weight loss goal:\ni. Reword and reformat: \"1. Weight Loss (10 kg): Allocate a maximum of 1.5 hours per day.\"\nii. Combine sub-points: \"1.1. Provide a daily workout and diet plan based on this objective.\"\n\nb. For the linear algebra goal:\ni. Reword and reformat: \"2. Learn Linear Algebra: Allocate a maximum of 1 hour per day.\"\nii. Combine sub-points: \"2.1. Provide a daily study plan, including detailed homework assignments for each day.\"\n\n--\n\nREVISED PROMPT:\n\nAs a life coach, provide me with a detailed routine to help me achieve my goals for the next month in the following areas:\n\n1. Weight Loss (10 kg): Allocate a maximum of 1.5 hours per day.\n1.1. Provide a daily workout and diet plan based on this objective.\n2. Learn Linear Algebra: Allocate a maximum of 1 hour per day.\n2.1. Provide a daily study plan, including detailed homework assignments for each day.",
+  "has_answer": false
+}

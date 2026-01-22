@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 206,
+  "session_index": 18,
+  "session_id": "sharegpt_MhtBvsc_87",
+  "turn_in_session": 16,
+  "date": "2023/05/23 (Tue) 11:19",
+  "role": "assistant",
+  "content": "Sure! Here are the steps to add authentication to your app using Amplify CLI:\n\n1. Open your terminal and navigate to your app's root directory.\n2. Run the command `amplify add auth`. This will launch the Amplify CLI wizard for adding authentication.\n3. Choose the default authentication configuration: `Default configuration`.\n4. Choose the authentication flow: `Username-Password (AWS Cognito User Pool)`.\n5. Leave the advanced settings as default and press Enter.\n6. Choose the sign in and sign up configuration: `Username`.\n7. Leave the multi-factor authentication (MFA) configuration as default and press Enter.\n8. Leave the email based user alias configuration as default and press Enter.\n9. Leave the password policy configuration as default and press Enter.\n10. Choose the default security configuration: `Allow access to unauthenticated users`.\n11. Leave the OAuth configuration as default and press Enter.\n12. Review the configuration and type `Y` to confirm the changes.\n\nThis will add authentication to your app using AWS Cognito User Pool with the default configuration. You can customize the configuration based on your app's requirements.",
+  "has_answer": false
+}

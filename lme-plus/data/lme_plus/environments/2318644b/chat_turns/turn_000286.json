@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 286,
+  "session_index": 26,
+  "session_id": "sharegpt_iwcVyKX_0",
+  "turn_in_session": 7,
+  "date": "2023/05/28 (Sun) 16:19",
+  "role": "assistant",
+  "content": "To get the top pools based on both total volume locked (TVL) and 24Hr volume together, you can use the following GraphQL query:\n```typescript\n{\n  pools(first: 10, orderBy: totalValueLockedUSD, orderDirection: desc) {\n    id\n    token0 {\n      symbol\n    }\n    token1 {\n      symbol\n    }\n    totalValueLockedUSD\n    volumeUSD\n  }\n}\n```\nIn this query, we are querying for the top 10 pools ordered by `totalValueLockedUSD` in descending order. We are also returning the pool ID, the symbols of the tokens in the pool (`token0` and `token1`), the `totalValueLockedUSD` of each pool, and the `volumeUSD` of each pool. By including both `totalValueLockedUSD` and `volumeUSD` in the query and sorting by `totalValueLockedUSD`, we are effectively getting the top pools based on both TVL and 24Hr volume.\n\nYou can adjust the `first` parameter in the query to return more or fewer pools, as necessary. Additionally, you can modify the `orderDirection` parameter to sort the pools in ascending order instead of descending order, depending on your preferences.",
+  "has_answer": false
+}

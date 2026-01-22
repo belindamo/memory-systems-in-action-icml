@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 204,
+  "session_index": 19,
+  "session_id": "sharegpt_WFKzGQx_0",
+  "turn_in_session": 9,
+  "date": "2023/02/09 (Thu) 10:41",
+  "role": "assistant",
+  "content": "Sure, here are the detailed steps to install the `kcadm.sh` standalone version on Linux:\n\n1. Download the Keycloak server distribution package:\n```bash\nwget https://downloads.jboss.org/keycloak/15.0.2/keycloak-15.0.2.tar.gz\n```\n2. Extract the downloaded archive file to a directory of your choice:\n```\ntar -xzf keycloak-15.0.2.tar.gz\n```\n3. Navigate to the `bin` directory inside the extracted Keycloak server distribution directory:\n```bash\ncd keycloak-15.0.2/bin\n```\n4. Copy the `kcadm.sh` script from the `bin` directory to a directory in your `$PATH` environment variable. For example, you can copy it to `/usr/local/bin`:\n```bash\nsudo cp kcadm.sh /usr/local/bin\n```\nThis will allow you to run the `kcadm.sh` script from any directory on your Linux box.\n5. Set the execute permission on the `kcadm.sh` script:\n```bash\nsudo chmod +x /usr/local/bin/kcadm.sh\n```\n6. Test that the `kcadm.sh` script is working properly by running the following command:\n```\nkcadm.sh version\n```\nThis should output the version of Keycloak that you have installed.\n\nThat's it! You have now installed the standalone `kcadm.sh` script on your Linux box. You can use this script to manage Keycloak instances as described in the Keycloak documentation.",
+  "has_answer": false
+}

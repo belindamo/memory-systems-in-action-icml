@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 81,
+  "session_index": 8,
+  "session_id": "sharegpt_pPJZzai_0",
+  "turn_in_session": 0,
+  "date": "2023/05/22 (Mon) 02:47",
+  "role": "user",
+  "content": "Explain the following passage:\n\nIn particular, training embedding-based retrieval models to gather supporting evidence for open-domain questions is relatively new research area: the last few months have seen some significant progress in cases where direct supervision is available, or with extensive task-specific pretraining. Here, we show how the ELI5 dataset allows us to train a dense retrieval system without access to either, making dense retrieval models more accessible.",
+  "has_answer": false
+}

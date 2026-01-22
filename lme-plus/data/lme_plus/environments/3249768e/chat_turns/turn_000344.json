@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 344,
+  "session_index": 35,
+  "session_id": "sharegpt_9mSixCe_16",
+  "turn_in_session": 3,
+  "date": "2023/05/28 (Sun) 09:36",
+  "role": "assistant",
+  "content": "In the pro forma net income calculation, we don't multiply New Income Before Tax by (1 + Sales Growth Rate) because we already accounted for the growth rate when we calculated the New Earnings Before Interest and Taxes (EBIT).\n\nEBIT is the company's earnings before taking into account interest and taxes. By multiplying EBIT by (1 + Sales Growth Rate), we are incorporating the expected growth in the company's earnings before considering the interest and tax expenses. Once we have the New EBIT, we can subtract the interest expense to find the New Income Before Tax, which represents the company's earnings before taxes.\n\nAfter finding the New Income Before Tax, we calculate the New Income Tax Expense by multiplying it by the tax rate. Subtracting the New Income Tax Expense from the New Income Before Tax gives us the New Net Income.\n\nSince the growth rate has already been considered in the calculation of New EBIT, there is no need to multiply New Income Before Tax by (1 + Sales Growth Rate) again, as it would result in an overestimation of the company's earnings growth.",
+  "has_answer": false
+}

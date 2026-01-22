@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 183,
+  "session_index": 16,
+  "session_id": "sharegpt_PxwLrQl_0",
+  "turn_in_session": 7,
+  "date": "2023/05/24 (Wed) 14:51",
+  "role": "assistant",
+  "content": "Title and Content of the App Bars Dynamic Island Component:\n\n| Element | Title/Content | Font Size (px) | Font Size (rem) | Font Weight | Type Token |\n| --- | --- | --- | --- | --- | --- |\n| Title | Main Title | 20 | 1.5 | Bold | Headline |\n| Content | Option Label | 14 | 1 | Regular | Body |\n\nNote: The table above describes a possible design for the title and content of the App Bars Dynamic Island component. The actual design may vary depending on the specific requirements and style of the app. The type tokens are place holders and should be changed accordingly to the design system.\n\nIn the table above, for each element (Title, Content) the text that it contains is described. For each element, the font size in pixels and rem, font weight, and the type token that corresponds to the element. For example, for the Title element, the font size is 20 pixels, 1.5 rem, font weight is bold and the type token is Headline. For the Content element, the font size is 14 pixels, 1 rem, font weight is regular and the type token is Body.",
+  "has_answer": false
+}

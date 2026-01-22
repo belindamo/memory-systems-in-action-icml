@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 577,
+  "session_index": 52,
+  "session_id": "sharegpt_FQi5DlJ_48",
+  "turn_in_session": 8,
+  "date": "2023/05/29 (Mon) 03:22",
+  "role": "user",
+  "content": "$(document).ready(function () {\n\n var searchResults = JSON.parse(sessionStorage.getItem(\"searchResults\"));\n \n for (var i = 0; i < searchResults.length; i++) {\n var user = searchResults[i];\n var card = `\n \n <p class=\"card-text\">` + user.title + `</p>\n </div>\n \n \n ` + user.release\\_year + `\n </div>\n\n \n ` + user.rating + `\n </div>\n \n <a href=\"filmDetails.html\" class=\"btn btn-primary View\">View Film Details</a>\n </div>\n </div>`;\n $(\"#posts\").append(card);\n $(\".View\").on(\"click\", function() {\n console.log(user)\n sessionStorage.setItem(\"selectedFilm\", JSON.stringify(user));\n });\n\n }\n \n })\n\n \n \n\ngiven the code above why am I only getting the same index even if click the \"view film details\" button on another card?",
+  "has_answer": false
+}

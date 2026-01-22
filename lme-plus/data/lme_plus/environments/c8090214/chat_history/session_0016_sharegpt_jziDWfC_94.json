@@ -1,0 +1,111 @@
+{
+  "session_id": "sharegpt_jziDWfC_94",
+  "session_index": 16,
+  "date": "2023/12/10 (Sun) 21:29",
+  "turns": [
+    {
+      "role": "user",
+      "content": "51 What type of database access is MOST APPROPRIATE for a researcher examining secular trends in\nPneumocystis jirovecii pneumonia?\na. File system access\nb. Live database, read-only\nc. Shadow (i.e. replica) only\nd. System administrator access"
+    },
+    {
+      "role": "assistant",
+      "content": "b. Live database, read-only.\n\nThis type of access allows the researcher to access the necessary data for their analysis without being able to make changes or modify the data in any way. It also ensures the integrity of the data and prevents accidental or intentional alteration. File system access and system administrator access would provide too much access and control, while shadow access only provides a replica of the data without the ability to interact with the original source."
+    },
+    {
+      "role": "user",
+      "content": "52 A software tester is evaluating an application, but has no access to the source code. She designs tests\nbased on what the software is supposed to do, according to the project requirements. One characteristic\nof this type of testing is:\na. It is a form of static testing.\nb. It is composed of code reviews and structural assessment.\nc. Testers generally do not have to have technical knowledge of the relevant programming\nlanguages.\nd. Tests usually involve small code fragments, such as a module or a class."
+    },
+    {
+      "role": "assistant",
+      "content": "The characteristic of the type of testing described in the scenario is:\nc. Testers generally do not have to have technical knowledge of the relevant programming languages.\n\nThis type of testing is called black box testing, where testers evaluate the software's functionality and behavior based on its input and output without knowledge of its internal workings. This type of testing focuses on the software's external behavior, and testers do not require knowledge of the programming language or the software's internal structure."
+    },
+    {
+      "role": "user",
+      "content": "53 Although information retrieval primarily deals with unstructured data, queries often benefit from the use\nof supplementary information which accompanies documents, known as\na. Corpus\nb. Index\nc. Metadata\nd. Relevancy"
+    },
+    {
+      "role": "assistant",
+      "content": "c. Metadata"
+    },
+    {
+      "role": "user",
+      "content": "55 An implementer of Electronic Health Records requires using the New York Heart Association\u2019s Classes of\nHeart Failure (shown below) to stratify patients. This is an example of a/an\nClass Patient Symptoms\n1 No limitation of physical\nactivity.\n2 Slight limitation of\nphysical activity.\n3 Marked limitation of\nphysical activity.\n4 Unable to carry on any\nphysical activity\nwithout discomfort\n\na. Controlled vocabulary\nb. Ontogeny\nc. Semantic encoding\nd. Taxonomy"
+    },
+    {
+      "role": "assistant",
+      "content": "Answer: d. Taxonomy.\n\nThe New York Heart Association's classes of heart failure is an example of a taxonomy, which is a hierarchical classification scheme used to organize and classify concepts or objects. In this case, the taxonomy is used to stratify heart failure patients based on their symptoms."
+    },
+    {
+      "role": "user",
+      "content": "56 Certain users of a clinical information system are often provided with early or extra training. These\n\u201csuper-users\u201d\na. Are responsible for maintaining passwords and access levels\nb. Attenuate security concerns\nc. May help train other users\nd. Set up interfaces with other clinical systems"
+    },
+    {
+      "role": "assistant",
+      "content": "c. May help train other users.\n\nSuper-users are typically experienced and highly skilled users of a clinical information system who receive extra training to assist with system implementation and to provide ongoing support to other users. They are not responsible for maintaining passwords and access levels or setting up interfaces with other clinical systems, although they may help to attenuate security concerns by monitoring user activity and reporting suspicious behavior to system administrators."
+    },
+    {
+      "role": "user",
+      "content": "57 A test for lupus is 90% sensitive and 90% specific in a population where the prevalence of Lupus is\n10%. If a patient has a positive test, what is the approximate likelihood that he has lupus?\na. Zero\nb. Less than 1%\nc. 50%\nd. 99%"
+    },
+    {
+      "role": "assistant",
+      "content": "This problem requires the use of Bayes' theorem. Let's assume we have 1000 people in the population, and 10% of them have lupus, which means 100 people have lupus.\n\nOf these 100 people with lupus, the test will correctly identify 90% of them as positive, so 90 people will test positive.\n\nOf the 900 people without lupus, the test will incorrectly identify 10% of them as positive, which means 90 people without lupus will test positive.\n\nTherefore, out of the 180 people who test positive (90 true positives + 90 false positives), only 90 actually have lupus.\n\nSo the approximate likelihood that a patient with a positive test result has lupus is 90/180 = 0.5 or 50%.\n\nTherefore, the correct answer is c. 50%."
+    },
+    {
+      "role": "user",
+      "content": "58 The Leapfrog group, founded with support from the Agency for Healthcare Research and Quality, was\ncreated in response to:\na. Multiple large failed EHR implementations\nb. The 1999 Institute of Medicine report, \u201cTo Err Is Human\u201d\nc. The death of Libby Zion, a young woman who died possibly as a result of harmful drug\ninteractions.\nd. Wachter\u2019s \u201cDigital Doctor\u201d discussion of alert fatigue"
+    },
+    {
+      "role": "assistant",
+      "content": "b. The 1999 Institute of Medicine report, \u201cTo Err Is Human\u201d"
+    },
+    {
+      "role": "user",
+      "content": "59 A novel therapy claims that it can reduce the incidence of palpitations in patients using albuterol. In a\nsmall study, 20 individuals were evenly divided into 2 groups. One group received therapy and the other\ndid not. Five patients in the therapy group and six in the control group had palpitations. What is the\nrelative risk reduction associated with the therapy?\na. 5%\nb. 17%\nc. 50%\nd. 500%"
+    },
+    {
+      "role": "assistant",
+      "content": "The relative risk reduction (RRR) can be calculated as follows:\n\nRRR = (risk in the control group - risk in the treatment group) / risk in the control group\n\nThe risk of palpitations in the control group is 6/10 = 0.6, and the risk in the treatment group is 5/10 = 0.5. Substituting these values into the formula gives:\n\nRRR = (0.6 - 0.5) / 0.6 = 0.17 or 17%\n\nTherefore, the relative risk reduction associated with the therapy is 17%. Answer: (b)"
+    },
+    {
+      "role": "user",
+      "content": "60 Ideas from Sigmund Freud, Magnus Hirschfeld and Carl Jung were gathered by the American Psychiatric\nAssociation when compiling this standard:\na. The Criminal Justice Mental Health Standards (CJMHS)\nb. The Diagnostic and Statistical Manual of Mental Disorders (DSM)\nc. The National Alliance on Mental Illness (NAMI)\nd. The Standards of Reporting of Neurological Disorders (STROND)"
+    },
+    {
+      "role": "assistant",
+      "content": "b. The Diagnostic and Statistical Manual of Mental Disorders (DSM)"
+    },
+    {
+      "role": "user",
+      "content": "61 Which of the following methods of alternative dispute resolution requires the LEAST intervention from\nparties not involved in the conflict?\na. Arbitration\nb. Litigation\nc. Mediation\nd. negotiation"
+    },
+    {
+      "role": "assistant",
+      "content": "Answer: c. Mediation\n\nExplanation:\n\nMediation is a form of alternative dispute resolution where a neutral third party, called a mediator, helps the parties in a dispute reach a mutually acceptable agreement. The mediator's role is to facilitate communication and negotiation between the parties, but ultimately the decision-making power rests with the parties themselves. Unlike arbitration, where the arbitrator makes a decision that is binding on the parties, mediation results in a non-binding agreement that the parties can either accept or reject. Unlike litigation, where a judge or jury imposes a decision on the parties, mediation allows the parties to craft their own solution to the dispute. Therefore, mediation requires the least intervention from parties not involved in the conflict."
+    },
+    {
+      "role": "user",
+      "content": "62 When recruiting, internal candidates are associated with:\na. Better morale as a result of promoting from within\nb. Greater recruiting costs\nc. Improved diversity\nd. Newer and fresh insights"
+    },
+    {
+      "role": "assistant",
+      "content": "a. Better morale as a result of promoting from within."
+    },
+    {
+      "role": "user",
+      "content": "63 Which of the following is LEAST important in promoting safety of Clinical Decision Support systems?\n\na. comprehensive auditing facility\nb. downtime procedures\nc. updated medical knowledge repository\nd. usability testing"
+    },
+    {
+      "role": "assistant",
+      "content": "All of the options listed are important in promoting safety of Clinical Decision Support (CDS) systems. However, if one has to be chosen as the least important, it would be downtime procedures. While downtime procedures are important in ensuring that CDS systems can be restored in case of a system failure or unexpected downtime, they do not directly contribute to the safety of the system when it is operational. The other options listed - comprehensive auditing facility, updated medical knowledge repository, and usability testing - are all critical in ensuring the safety and effectiveness of CDS systems."
+    },
+    {
+      "role": "user",
+      "content": "64 Which of the following is least likely to be an explicit part of a controlled vocabulary?\n\na. Concept identifiers (codes)\nb. Definitions of terms\nc. Post-coordinated terms\nd. Relationships between terms"
+    },
+    {
+      "role": "assistant",
+      "content": "c. Post-coordinated terms"
+    }
+  ]
+}

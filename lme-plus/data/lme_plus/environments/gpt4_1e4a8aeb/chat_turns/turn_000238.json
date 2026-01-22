@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 238,
+  "session_index": 22,
+  "session_id": "sharegpt_JzpPjZJ_0",
+  "turn_in_session": 5,
+  "date": "2023/04/18 (Tue) 21:56",
+  "role": "assistant",
+  "content": "Besides the `MaxFileSec` option, there are several other options available for controlling log rotation for a service in systemd.\n\n1. `SystemMaxUse`: This option sets the maximum disk space that can be used by all journal files. When the limit is reached, the oldest files will be rotated and deleted to make space for new ones.\n2. `SystemKeepFree`: This option sets the minimum amount of free disk space that should be kept available on the system. When the amount of free space falls below this limit, the oldest files will be rotated and deleted to make space.\n3. `SystemMaxFileSize`: This option sets the maximum size of an individual journal file. When the file size reaches this limit, it will be rotated and a new file will be created.\n4. `SystemMaxFiles`: This option sets the maximum number of journal files that can be stored on disk. When the limit is reached, the oldest files will be rotated and deleted to make space for new ones.\n\nTo set these options for a specific service, you can add them to the `.service` file for that service. For example:\n```makefile\n[Service]\nSystemMaxUse=50M\nSystemKeepFree=100M\nSystemMaxFileSize=10M\nSystemMaxFiles=5\n```\nIn this example, the service will rotate its journal files when any one of the conditions is met: the total disk space used by all journal files exceeds 50 megabytes, the amount of free disk space falls below 100 megabytes, an individual journal file reaches 10 megabytes in size, or there are more than 5 journal files on disk.\n\nNote that these options apply to all journal files created by the `journald` service, not just the files created by the specific service. To set these options only for a specific service, you can create a separate directory for that service's logs and set the options for that directory in the `journald.conf` file. For more information, see the `journald.conf` manual page (`man journald.conf`).",
+  "has_answer": false
+}

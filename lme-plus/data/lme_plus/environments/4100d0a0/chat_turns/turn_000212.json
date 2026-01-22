@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 212,
+  "session_index": 18,
+  "session_id": "sharegpt_t3f69h7_23",
+  "turn_in_session": 8,
+  "date": "2023/05/24 (Wed) 01:27",
+  "role": "assistant",
+  "content": "If the app is simply stitching audio ads to the received AES67 stream and delivering the result in HLS to the end user, then it may not be necessary to implement the Precision Time Protocol (PTP) standard. PTP is typically used in professional broadcast environments to synchronize the timing of audio and video streams, to ensure that they are correctly aligned and lip-synced.\n\nHowever, if the app is processing multiple audio streams simultaneously or combining audio from multiple sources, then it may be necessary to implement PTP to ensure that the timing of the audio streams is synchronized correctly. In this case, the app would need to be able to handle PTP messages and use the timing information to synchronize the audio streams.\n\nIn general, whether or not PTP is necessary will depend on the specific requirements of the application and the environment in which it is being used.",
+  "has_answer": false
+}

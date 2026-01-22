@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 55,
+  "session_index": 6,
+  "session_id": "sharegpt_35udPn0_1",
+  "turn_in_session": 0,
+  "date": "2023/05/25 (Thu) 08:55",
+  "role": "assistant",
+  "content": "What is Strike and what is its relationship with Bitcoin's Lightning Network?\n\nStrike is a mobile application that combines the traditional financial system with Bitcoin's Lightning Network capabilities. It allows users to send money instantly and almost free of charge around the world, without the need for the sender or the recipient to handle Bitcoin the asset. Strike uses Bitcoin the network, or rather the Lightning Network built on top of Bitcoin, to send and convert the funds. Strike works by connecting the user's conventional bank account to the app, then debiting the funds and converting them into Bitcoin on the Lightning Network, which is then sent to the recipient's account in their local currency. Strike leverages the Lightning Network's capabilities without exposing users to Bitcoin the asset unless they choose to use it. Strike paves the way for the future of remittance payments, effectively driving the cost of sending cross-border payments to zero.",
+  "has_answer": false
+}

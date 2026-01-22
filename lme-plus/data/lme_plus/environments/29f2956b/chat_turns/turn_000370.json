@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 370,
+  "session_index": 34,
+  "session_id": "sharegpt_PEcIUeK_101",
+  "turn_in_session": 6,
+  "date": "2023/05/26 (Fri) 20:26",
+  "role": "user",
+  "content": "getting this error: KeyError Traceback (most recent call last)\n in \n 7 \n 8 df\\_reactions = df.apply(extract\\_reactions, axis=1).explode()\n----> 9 df\\_summary = df\\_reactions.groupby(['sender', 'recipient', 'timestamp', 'index']).size().reset\\_index(name='count')\n\n2 frames\n/usr/local/lib/python3.8/dist-packages/pandas/core/groupby/grouper.py in get\\_grouper(obj, key, axis, level, sort, observed, mutated, validate, dropna)\n 860 in\\_axis, level, gpr = False, gpr, None\n 861 else:\n--> 862 raise KeyError(gpr)\n 863 elif isinstance(gpr, Grouper) and gpr.key is not None:\n 864 # Add key to exclusions\n\nKeyError: 'sender'",
+  "has_answer": false
+}

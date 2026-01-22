@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 60,
+  "session_index": 4,
+  "session_id": "sharegpt_bnUL4PZ_0",
+  "turn_in_session": 4,
+  "date": "2023/05/24 (Wed) 17:41",
+  "role": "user",
+  "content": "To view one or more targets against a portfolio, select and load from the subscribed\n targets on top.\n \n\n\n\n\nTargets {{ targetsStatus }}\n\n\n\n {{ createOrdersTooltip }}\n\n\n\n \n Would you like to cancel the changes and overrides you made?\n \n\n This page will be refreshed with new data:\n * {{ eventType }}\n Would you like to save your own changes before refreshing?",
+  "has_answer": false
+}

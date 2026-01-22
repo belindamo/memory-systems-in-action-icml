@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 136,
+  "session_index": 10,
+  "session_id": "sharegpt_JTaoEJT_23",
+  "turn_in_session": 4,
+  "date": "2023/03/14 (Tue) 06:20",
+  "role": "assistant",
+  "content": "Here are the adverb + adjective pairs and their corresponding sigmoid-transformed pairs:\n\nTerribly bad (0.0000) - Terribly bad\nVery awful (0.0250) - Very awful\nQuite poor (0.1000) - Quite poor\nSomewhat mediocre (0.2250) - Somewhat mediocre\nFairly below average (0.4000) - Fairly below average\nPerfectly average (0.5000) - Perfectly average\nReasonably decent (0.6000) - Reasonably decent\nVery good (0.7750) - Very good\nExtremely great (0.9000) - Extremely great\nIncredibly excellent (0.9750) - Incredibly excellent\nAbsolutely outstanding (1.0000) - Absolutely outstanding\n\nThese are the adverb + adjective pairs transformed using the sigmoid-like function, providing a more intuitive mapping between the original pairs and the range from \"bad\" (0.0) to \"good\" (1.0).",
+  "has_answer": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 195,
+  "session_index": 17,
+  "session_id": "sharegpt_G18Riup_0",
+  "turn_in_session": 5,
+  "date": "2023/05/23 (Tue) 16:13",
+  "role": "assistant",
+  "content": "You can modify the script to only get secrets that are annotated with the `sops.k8s.pgp.mozilla.org/encrypted` annotation, which indicates that the secret is managed by SOPS. Here is the updated script:\n```bash\n#!/bin/bash\n\n# Set the namespace\nNAMESPACE=\"<namespace>\"\n\n# Get all secrets in the specified namespace\nsecrets=$(kubectl get secrets -n $NAMESPACE -o json | jq -r '.items[] | select(.metadata.annotations.\"sops.k8s.pgp.mozilla.org/encrypted\" == \"true\") | .metadata.name')\n\n# Loop through each secret\nfor secret in $secrets; do\n  # Export the secret as a YAML file\n  kubectl get secret $secret -n $NAMESPACE -o yaml > secret.yaml\n\n  # Decode and encrypt the secret using SOPS\n  sops -d secret.yaml > decrypted_secret.yaml\n  sops -e decrypted_secret.yaml > encrypted_secret.yaml\n\n  # Create a Google Secret Manager secret\n  gcloud secrets create $secret --replication-policy=\"automatic\"\n  gcloud secrets versions add $secret --data-file=decrypted_secret.yaml\ndone\n```\nThis script only processes secrets that have the `sops.k8s.pgp.mozilla.org/encrypted` annotation set to `true`.",
+  "has_answer": false
+}

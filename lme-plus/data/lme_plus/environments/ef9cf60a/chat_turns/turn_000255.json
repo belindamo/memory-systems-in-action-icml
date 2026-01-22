@@ -1,0 +1,10 @@
+{
+  "turn_global_index": 255,
+  "session_index": 28,
+  "session_id": "sharegpt_zGF0EmX_25",
+  "turn_in_session": 0,
+  "date": "2023/05/25 (Thu) 17:15",
+  "role": "assistant",
+  "content": "61. Type \"nano filename\" to open the \"filename\" file in the nano text editor.\n62. Type \"vi filename\" to open the \"filename\" file in the vi text editor.\n63. Type \"emacs filename\" to open the \"filename\" file in the emacs text editor.\n64. In nano, press \"Ctrl + O\" to save the changes made to the file and \"Ctrl + X\" to exit the editor.\n65. In vi, press \"Esc\" to enter command mode, type \":w\" to save the changes made to the file, and \":q\" to exit the editor. To save and exit the editor in one step, type \":wq\".\n66. In emacs, press \"Ctrl + X\" followed by \"Ctrl + S\" to save the changes made to the file and \"Ctrl + X\" followed by \"Ctrl + C\" to exit the editor.\n67. In nano, press \"Ctrl + G\" to display the help menu and the available keyboard shortcuts.\n68. In vi, press \"Esc\" to enter command mode, type \":help\" to display the help menu, and \":q\" to exit the help menu.\n69. In emacs, press \"Ctrl + H\" followed by \"Ctrl + T\" to display the tutorial and \"Ctrl + X\" followed by \"Ctrl + H\" to display the help menu.\n70. In nano, press \"Alt + Shift + U\" to undo the last action and \"Alt + Shift + E\" to redo the last action.\n71. In vi, press \"Esc\" to enter command mode, type \"u\" to undo the last action and \"Ctrl + R\" to redo the last action.\n72. In emacs, press \"Ctrl + \\_\" to undo the last action and \"Ctrl + G\" followed by \"Ctrl + \\_\" to redo the last action.\n73. In nano, press \"Ctrl + K\" to cut the selected text, \"Ctrl + U\" to paste the cut text, and \"Ctrl + W\" to search for a specific text string.\n74. In vi, press \"Esc\" to enter command mode, type \"dd\" to cut the current line, \"p\" to paste the cut text, and \"/\" followed by the text string to search for it.\n75. In emacs, press \"Ctrl + K\" to cut the selected text, \"Ctrl + Y\" to paste the cut text, and \"Ctrl + S\" to search for a specific text string.",
+  "has_answer": false
+}
