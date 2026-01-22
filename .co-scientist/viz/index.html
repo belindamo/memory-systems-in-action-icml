@@ -250,7 +250,15 @@
         // AI Co-Scientist Visualization Script
 const TREE_DATA = {
   "project_path": "/Users/bmo/make-co-scientist-skill/memory-test-project",
-  "hypothesis": null,
+  "hypothesis": {
+    "primary": "H1 (Translation): Agentic retrieval (LME+) will achieve QA accuracy within 5% of static retrieval (LME best = 72%), but at 2-3x higher latency/cost.",
+    "secondary": [
+      "H2 (Method Ranking): Simple filesystem access will outperform specialized MCP memory tools in agentic contexts.",
+      "H3 (Retrieval Gating): Memory tool effectiveness is modulated by retrieval quality\u2014tools provide no benefit when retrieval fails (Recall@10=0) or succeeds excellently (Recall@10>0.8)."
+    ],
+    "success_criteria": "LME+ accuracy >= 67%",
+    "failure_criteria": "LME+ accuracy < 67% OR cost > 5x static"
+  },
   "variables": null,
   "stage_history": [
     {
@@ -260,9 +268,26 @@ const TREE_DATA = {
       "started": "2026-01-22T14:41:49.303292",
       "completed": "2026-01-22T14:41:53.124072",
       "outcome": "success"
+    },
+    {
+      "stage": 1,
+      "iteration": 1,
+      "tree_file": "stage_1_iter_1.json",
+      "started": "2026-01-22T15:03:41.798183",
+      "completed": "2026-01-22T15:04:35.002903",
+      "outcome": "success"
     }
   ],
   "trees": {
+    "stage_1_iter_1": {
+      "stage": 1,
+      "iteration": 1,
+      "nodes": {},
+      "root_ids": [],
+      "created_at": "2026-01-22T15:03:41.798177",
+      "completed_at": "2026-01-22T15:04:35.002898",
+      "outcome": "success"
+    },
     "stage_0_iter_1": {
       "stage": 0,
       "iteration": 1,
@@ -274,6 +299,7 @@ const TREE_DATA = {
     }
   },
   "layouts": {
+    "stage_1_iter_1": {},
     "stage_0_iter_1": {}
   }
 };

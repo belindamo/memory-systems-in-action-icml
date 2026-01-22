@@ -109,7 +109,9 @@ ReAct agent with tools for memory queries and/or filesystem access.
 |------|---------|
 | Dataset | [LongMemEval](https://github.com/xiaowu0162/LongMemEval) |
 | Hardware | MacBook Pro M4 Max, 64GB |
-| Budget | ~$350 total |
+| Initial Budget | $10 |
+| Validation Set | 20 questions |
+| Priority Methods | Filesystem, Built-in MCP, Oracle |
 
 ## References
 

@@ -9,6 +9,44 @@
     "success_criteria": "LME+ accuracy >= 67%",
     "failure_criteria": "LME+ accuracy < 67% OR cost > 5x static"
   },
-  "variables": null,
-  "resource_budget": null
+  "variables": {
+    "independent": {
+      "memory_method": [
+        "Built-in MCP",
+        "Stella v5 MCP",
+        "Filesystem",
+        "Compression",
+        "Oracle"
+      ],
+      "filesystem_access": [
+        true,
+        false
+      ]
+    },
+    "dependent": [
+      "qa_accuracy",
+      "time_seconds",
+      "tokens",
+      "cost_usd",
+      "tool_calls"
+    ],
+    "control": {
+      "agent": "ReAct",
+      "llm": "GPT-4o",
+      "judge": "GPT-4o",
+      "dataset": "LongMemEval_S",
+      "seed": 42
+    }
+  },
+  "resource_budget": {
+    "max_budget_usd": 10,
+    "initial_validation_questions": 20,
+    "methods_to_test": 3,
+    "max_time_per_task_seconds": 300,
+    "priority_methods": [
+      "Filesystem",
+      "Built-in MCP",
+      "Oracle"
+    ]
+  }
 }
