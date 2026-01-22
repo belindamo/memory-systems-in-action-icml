@@ -5,7 +5,9 @@
     "node-66c5275a": {
       "id": "node-66c5275a",
       "parent_id": null,
-      "children": [],
+      "children": [
+        "node-0a5b6b5d"
+      ],
       "step": 1,
       "stage": 3,
       "plan": "Oracle baseline: Establish upper bound with perfect retrieval (20 samples)",
@@ -18,6 +20,27 @@
         "maximize": true,
         "cost_usd": 0.17,
         "avg_time_seconds": 1.9
+      },
+      "is_buggy": false,
+      "plots": [],
+      "commit_hash": "9e54bcc"
+    },
+    "node-0a5b6b5d": {
+      "id": "node-0a5b6b5d",
+      "parent_id": "node-66c5275a",
+      "children": [],
+      "step": 2,
+      "stage": 3,
+      "plan": "Filesystem: Direct file access with list/read/search tools (20 samples)",
+      "code": "#!/usr/bin/env python3\n\"\"\"\nExperiment Node 2: Filesystem Access\nTests H2: Simple filesystem access outperforms specialized memory tools\n\"\"\"\nimport subprocess\nimport sys\n\ndef run():\n    \"\"\"Run Filesystem experiment on 20 validation samples\"\"\"\n    cmd = [\n        sys.executable, \"code/main.py\",\n        \"--memory\", \"filesystem\",\n        \"--samples\", \"20\",\n        \"--output\", \"results/node_2_filesystem\"\n    ]\n\n    result = subprocess.run(cmd, capture_output=True, text=True)\n    print(result.stdout)\n    if result.stderr:\n        print(result.stderr, file=sys.stderr)\n\n    return result.returncode\n\nif __name__ == \"__main__\":\n    sys.exit(run())\n",
+      "term_out": "",
+      "analysis": "Filesystem severely underperformed: 25% vs Oracle 80%. Agent gave up on 15/20 questions. Higher cost (/bin/zsh.19 vs /bin/zsh.17) due to inefficient search. H2 REJECTED: Filesystem does NOT outperform specialized tools in this setting. Tools need semantic search, not just file listing.",
+      "metric": {
+        "value": 0.25,
+        "name": "accuracy",
+        "maximize": true,
+        "cost_usd": 0.19,
+        "avg_time_seconds": 2.6
       },
       "is_buggy": false,
       "plots": [],

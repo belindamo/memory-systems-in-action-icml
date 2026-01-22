@@ -312,6 +312,14 @@ const TREE_DATA = {
       "started": "2026-01-22T15:05:06.306940",
       "completed": "2026-01-22T15:09:10.111670",
       "outcome": "success"
+    },
+    {
+      "stage": 3,
+      "iteration": 1,
+      "tree_file": "stage_3_iter_1.json",
+      "started": "2026-01-22T15:09:52.338740",
+      "completed": null,
+      "outcome": null
     }
   ],
   "trees": {
@@ -333,6 +341,39 @@ const TREE_DATA = {
       "completed_at": "2026-01-22T15:04:35.002898",
       "outcome": "success"
     },
+    "stage_3_iter_1": {
+      "stage": 3,
+      "iteration": 1,
+      "nodes": {
+        "node-66c5275a": {
+          "id": "node-66c5275a",
+          "parent_id": null,
+          "children": [],
+          "step": 1,
+          "stage": 3,
+          "plan": "Oracle baseline: Establish upper bound with perfect retrieval (20 samples)",
+          "code": "#!/usr/bin/env python3\n\"\"\"\nExperiment Node 1: Oracle Baseline\nTests upper bound performance with perfect retrieval\n\"\"\"\nimport subprocess\nimport sys\n\ndef run():\n    \"\"\"Run Oracle experiment on 20 validation samples\"\"\"\n    cmd = [\n        sys.executable, \"code/main.py\",\n        \"--memory\", \"oracle\",\n        \"--samples\", \"20\",\n        \"--output\", \"results/node_1_oracle_baseline\"\n    ]\n\n    result = subprocess.run(cmd, capture_output=True, text=True)\n    print(result.stdout)\n    if result.stderr:\n        print(result.stderr, file=sys.stderr)\n\n    return result.returncode\n\nif __name__ == \"__main__\":\n    sys.exit(run())\n",
+          "term_out": "",
+          "analysis": "Oracle baseline achieved 80% accuracy, establishing upper bound. Even with perfect retrieval, agent makes errors (over-elaboration, missing details). 4 failures suggest judge is strict or task ceiling is 80%. Key insight: Perfect retrieval \u2260 perfect answers.",
+          "metric": {
+            "value": 0.8,
+            "name": "accuracy",
+            "maximize": true,
+            "cost_usd": 0.17,
+            "avg_time_seconds": 1.9
+          },
+          "is_buggy": false,
+          "plots": [],
+          "commit_hash": "9e54bcc"
+        }
+      },
+      "root_ids": [
+        "node-66c5275a"
+      ],
+      "created_at": "2026-01-22T15:09:52.338733",
+      "completed_at": null,
+      "outcome": null
+    },
     "stage_0_iter_1": {
       "stage": 0,
       "iteration": 1,
@@ -346,6 +387,12 @@ const TREE_DATA = {
   "layouts": {
     "stage_2_iter_1": {},
     "stage_1_iter_1": {},
+    "stage_3_iter_1": {
+      "node-66c5275a": {
+        "x": 140.0,
+        "y": 50
+      }
+    },
     "stage_0_iter_1": {}
   }
 };
