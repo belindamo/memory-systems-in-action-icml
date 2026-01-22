@@ -1,171 +1,118 @@
-# LME+ Memory Systems Overview
+# LME+: Do Memory Tools Help Agents?
 
-## Experiments: What This Lets You Say (Cleanly)
+**Core Question:** Do memory tools actually help agents, or is a filesystem all you need?
 
-- Whether retrieval improvements correlate with agent gains
-- Where gains fail to transfer
-- The latency / cost tax of agenticity
-- Retrieval vs. memory: Whether memory helps only after retrieval is solved
-- How results vary based on 3 different memory methods: tools, compression, or filesystem
+## The Gap
 
+Memory systems are evaluated on static retrieval benchmarks, but agents use memory dynamically. We don't know:
+1. Do static retrieval gains translate to agentic gains?
+2. How do MCP tools vs filesystem vs compression compare when retrieval is agentic?
+3. What's the cost/latency tax of agenticity?
 
----
+## Hypotheses
 
-### Table 1 — Agent Memory / Storage Comparison (Sample-Averaged)
+### H1: Translation (Primary)
+> Agentic retrieval (LME+) will achieve QA accuracy within 5% of static retrieval (LME best = 72%), but at 2-3x higher latency/cost.
 
-| ID | Agent Variant | Retrieval / Memory | File System | Compression | Avg Time (s) | Avg Tokens | Avg Cost | Avg Judge Score | Notes |
-|----|---------------|-------------------|-------------|-------------|--------------|------------|----------|-----------------|-------|
-| A  | ReAct | Built-in Memory MCP | ❌ | ❌ | | | | | baseline |
-| B  | ReAct | Memory MCP-2 | ❌ | ❌ | | | | | |
-| C  | ReAct | Built-in Memory MCP | ✅ | ❌ | | | | | |
-| D  | ReAct | Memory MCP-2| ✅ | ❌ | | | | | |
-| E  | ReAct | ❌ | ❌ | Compression v1 | | | | | |
-| F  | ReAct | ❌ | ❌ | Compression v2 | | | | | |
-| O  | ReAct (Oracle) | Gold answer after 1 query | ❌ | ❌ | ~min | ~min | ~min | max | judge sanity check |
+| Criterion | Threshold |
+|-----------|-----------|
+| Success | LME+ accuracy ≥ 67% |
+| Failure | LME+ accuracy < 67% OR cost > 5x static |
 
-Memory MCP-2 is Stella v5, Round-based, K=V+fact
+### H2: Method Ranking
+> Simple filesystem access will outperform specialized MCP memory tools in agentic contexts.
 
----
+Based on [Letta's finding](https://www.letta.com/blog/benchmarking-ai-agent-memory): filesystem (74%) beats specialized tools on LoCoMo.
 
-### Table 2 — Chat-to-Agentic Translation Comparison for End-to-End QA: LME vs LME+ (Core Claim)
-
-*Comparing static retrieval (LME) vs agentic retrieval (LME+) on the same task.*
-*All scores are **end-to-end QA accuracy** with GPT-4o as reader/actor.*
-
-#### LME Published Baselines (Static Retrieval, from paper Table 10)
-
-| ID | Config | Value | Key Design | QA@5 | QA@10 | Notes |
-|----|--------|-------|------------|------|-------|-------|
-| L1 | Stella V5 | Round | K = V | 0.615 | **0.670** | baseline |
-| L2 | Stella V5 | Round | K = V + fact | 0.657 | **0.720** | best round config |
-| L3 | Stella V5 | Session | K = V | 0.670 | 0.676 | session baseline |
-| L4 | Stella V5 | Session | K = V + fact | **0.714** | 0.700 | best overall |
-
-#### LME+ Agentic Variants (Maps to Table 1)
-
-| ID | Table 1 Row | Memory System | Agentic | QA Score | Time (s) | Tokens | Cost |
-|----|-------------|---------------|---------|----------|----------|--------|------|
-| A | A | Built-in Memory MCP | ✅ | — | — | — | — |
-| B | B | Memory MCP-2 | ✅ | — | — | — | — |
-| C | C | Built-in MCP + Filesystem | ✅ | — | — | — | — |
-| D | D | Memory MCP-2 + Filesystem | ✅ | — | — | — | — |
-| O | O | Oracle (perfect retrieval if MCP is called) | ✅ | — | — | — | — |
-
-**Method Definitions:**
-- **LME (L1–L4):** Static retrieval → read → answer. No iteration. QA@5/QA@10 = accuracy when given top-5 or top-10 retrieved items.
-- **LME+ (A–D):** Agentic memory with **dynamic retrieval** — agent issues queries, refines searches, reads from memory.
-- **O (Oracle):** Gold evidence provided directly — upper bound.
-
-**Key Question:** Does agentic retrieval (LME+) match or beat LME's best static config (L4 = 0.714)?
+### H3: Retrieval Gating
+> Memory tool effectiveness is modulated by retrieval quality—tools provide no benefit when retrieval fails (Recall@10 = 0) or succeeds excellently (Recall@10 > 0.8).
 
 ---
 
-### Table 3 — Per-Sample Translation Analysis (Key Evidence Table)
+## Experiment Design
 
-**This is the proof table.**
+### Memory Methods Under Test
 
-| Sample ID | Δ Retrieval (R2−R1) | Δ Judge Score (R2−R1) | Δ Time | Δ Tokens | Δ Cost | Translation? |
-|-----------|---------------------|----------------------|--------|----------|--------|--------------|
-| s₁ | | | | | | |
-| s₂ | | | | | | |
-| … | | | | | | |
+| ID | Method | Memory | Filesystem | Compression |
+|----|--------|--------|------------|-------------|
+| A | Built-in MCP | ✅ | ❌ | ❌ |
+| B | Stella v5 MCP | ✅ | ❌ | ❌ |
+| C | MCP + Filesystem | ✅ | ✅ | ❌ |
+| D | Filesystem only | ❌ | ✅ | ❌ |
+| E | Compression | ❌ | ❌ | ✅ |
+| O | Oracle | Gold | ❌ | ❌ |
 
-#### Interpretation Rule
+### LME Baselines (Static Retrieval)
 
-| Condition | Meaning |
-|-----------|---------|
-| ✅ Translation | Δretrieval ↑ **and** Δagent score ↑ |
-| ❌ No translation | Δretrieval ↑ **but** Δagent score ≈ 0 |
-| ⚠️ Negative | Δretrieval ↑ **but** agent worsens (overhead / misuse) |
+| Config | QA@5 | QA@10 | Notes |
+|--------|------|-------|-------|
+| Stella V5, K=V | 0.615 | 0.670 | baseline |
+| Stella V5, K=V+fact | 0.657 | **0.720** | best round |
+| Session, K=V+fact | **0.714** | 0.700 | best overall |
 
----
-
-### Table 4 — Retrieval-Gated Stratification (Based on LME Recall@10)
-
-**Stratify samples by LME retrieval quality, then compare LME vs LME+ scores.**
-
-| Stratum | Recall@10 Range | NDCG@10 Range | LME Score | LME+ Score | Δ | Takeaway |
-|---------|-----------------|---------------|-----------|------------|---|----------|
-| **Failed** | 0.0 | any | | | | retrieval bottleneck — gold evidence not retrieved |
-| **Partial** | (0, 0.5] | < 0.4 | | | | partial retrieval — some evidence, low rank |
-| **Good** | (0.5, 0.8] | 0.4–0.6 | | | | decent retrieval — agent quality matters |
-| **Excellent** | > 0.8 | > 0.6 | | | | agent bottleneck — retrieval solved, agent fumbles |
-
-**LME Reference Scores** (Stella V5 1.5B, Value=Round, K=V+fact):
-- Recall@10: **0.784**, NDCG@10: **0.536**
-- GPT-4o End-to-End QA (Top-10): **72.0%**
-
-**Error Distribution** (from LME paper):
-- 15–19% of errors: correct retrieval but wrong generation → **agent bottleneck**
-- ~90% of correct answers required correct retrieval → **retrieval is necessary**
+**Target to beat:** 72% (best static config)
 
 ---
 
-### Table 5 — BrowseComp Results (Dynamic Memory Add + Retrieve)
+## Results
 
-*BrowseComp tests a different paradigm: agent actively writes AND reads memories during the task.*
+### Table 1: Method Comparison
 
-| ID | Memory System | Write Ops | Read Ops | QA Score | Time (s) | Tokens | Cost | Notes |
-|----|---------------|-----------|----------|----------|----------|--------|------|-------|
-| BC1 | Built-in MCP | ✅ | ✅ | — | — | — | — | |
-| BC2 | Memory MCP-2 | ✅ | ✅ | — | — | — | — | |
-| BC3 | Filesystem only | ✅ | ✅ | — | — | — | — | |
-| BC4 | Hybrid (MCP + FS) | ✅ | ✅ | — | — | — | — | |
+| ID | Method | QA Score | Time (s) | Tokens | Cost | vs LME |
+|----|--------|----------|----------|--------|------|--------|
+| A | Built-in MCP | — | — | — | — | — |
+| B | Stella v5 MCP | — | — | — | — | — |
+| C | MCP + Filesystem | — | — | — | — | — |
+| D | Filesystem only | — | — | — | — | — |
+| E | Compression | — | — | — | — | — |
+| O | Oracle | — | — | — | — | — |
 
-**Key Question:** Does letting the agent manage its own memory (add + retrieve) help vs. read-only retrieval?
+### Table 2: Retrieval-Gated Analysis
+
+| Stratum | Recall@10 | LME Score | LME+ Score | Δ |
+|---------|-----------|-----------|------------|---|
+| Failed | 0.0 | — | — | — |
+| Partial | (0, 0.5] | — | — | — |
+| Good | (0.5, 0.8] | — | — | — |
+| Excellent | > 0.8 | — | — | — |
+
+### Table 3: Translation Analysis
+
+| Condition | Count | % |
+|-----------|-------|---|
+| ✅ Translated (retrieval ↑, agent ↑) | — | — |
+| ❌ No translation (retrieval ↑, agent ≈) | — | — |
+| ⚠️ Negative (retrieval ↑, agent ↓) | — | — |
 
 ---
 
-### Table 6 — Benchmark Comparison: Memory Paradigms
+## Method
 
-*Progression from retrieval → end-to-end QA → agentic QA (based on LME paper structure)*
+### LME+ Benchmark
+Converts LongMemEval from static retrieval to agentic retrieval:
+- **LME:** Single query → top-k → answer
+- **LME+:** Agent issues queries, reformulates, iterates → answer
 
-| Paradigm | Benchmark | Memory Ops | Agent | Metric | What It Tests |
-|----------|-----------|------------|-------|--------|---------------|
-| **Retrieval** | LME | Read (static) | ❌ | Recall@k, NDCG@k | Can we find the right evidence? |
-| **End-to-End QA** | LME | Read (static) | ❌ | QA Accuracy | Can LLM answer given retrieved context? |
-| **Agentic QA, Dynamic Retrieval** | LME+ | Read (dynamic) | ✅ | QA Accuracy | Does iterative search improve QA? |
-| **Agentic QA, Dynamic Update + Retrieval** | BrowseComp | Read + Write | ✅ | QA Accuracy | Does memory management improve QA? |
+### Agent Architecture
+ReAct agent with tools for memory queries and/or filesystem access.
 
-#### Paradigm Differences
+### Evaluation
+- 500 questions from LongMemEval_S
+- LLM judge (GPT-4o) for answer correctness
+- Log: accuracy, time, tokens, cost per sample
 
-| Paradigm | Query Strategy | # Queries | Query Reformulation | Memory Read | Memory Write | Agent Loop |
-|----------|----------------|-----------|---------------------|-------------|--------------|------------|
-| **Retrieval (LME)** | Single | 1 | ❌ | Static top-k | ❌ | ❌ |
-| **E2E QA (LME)** | Single | 1 | ❌ | Static top-k | ❌ | ❌ |
-| **Agentic QA (LME+)** | Multiple | 1+ | ✅ Agent reformulates | Dynamic | ❌ | ✅ ReAct |
-| **Agentic + Memory (BrowseComp)** | Multiple | 1+ | ✅ Agent reformulates | Dynamic | ✅ Agent writes | ✅ ReAct |
+---
 
-#### What Changes Between Paradigms
+## Resources
 
-| Transition | What's Added | Key Question |
-|------------|--------------|--------------|
-| Retrieval → E2E QA | LLM reading step | Can LLM extract answer from context? |
-| E2E QA → Agentic QA | **Multiple reformulated queries** | Does query refinement find better evidence? |
-| Agentic QA → BrowseComp | **Agent-controlled memory writes** | Does storing intermediate results help? |
+| Item | Details |
+|------|---------|
+| Dataset | [LongMemEval](https://github.com/xiaowu0162/LongMemEval) |
+| Hardware | MacBook Pro M4 Max, 64GB |
+| Budget | ~$350 total |
 
-#### Example Query Patterns
+## References
 
-| Paradigm | Query Flow |
-|----------|------------|
-| **LME** | `"What restaurant did I mention?"` → top-10 → answer |
-| **LME+** | `"restaurant"` → partial results → `"restaurant recommendation last week"` → better results → answer |
-| **BrowseComp** | Browse → store `{user likes Italian}` → later query `"Italian restaurants"` → retrieve stored fact → answer |
-
-#### Key Insight
-
-```
-LME Retrieval     → Single query, retrieval quality
-LME E2E QA        → Single query, reading quality  
-LME+ Agentic QA   → Multiple queries, query refinement quality
-BrowseComp        → Multiple queries + memory management quality
-```
-
-**The Core Question:** Does letting the agent reformulate queries (LME+) or manage memory (BrowseComp) improve over single-query retrieval?
-
-### Table 7 - Memory Comparisons
-
-- Tool-based
-- Filesystem-based
-- In-context with compression
-
+- [LongMemEval paper](https://arxiv.org/abs/2410.10813)
+- [Letta Memory Benchmark](https://www.letta.com/blog/benchmarking-ai-agent-memory)
+- [Memory in the Age of AI Agents](https://arxiv.org/abs/2512.13564)

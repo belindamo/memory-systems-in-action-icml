@@ -1,6 +1,14 @@
 {
   "project_path": "/Users/bmo/make-co-scientist-skill/memory-test-project",
-  "hypothesis": null,
+  "hypothesis": {
+    "primary": "H1 (Translation): Agentic retrieval (LME+) will achieve QA accuracy within 5% of static retrieval (LME best = 72%), but at 2-3x higher latency/cost.",
+    "secondary": [
+      "H2 (Method Ranking): Simple filesystem access will outperform specialized MCP memory tools in agentic contexts.",
+      "H3 (Retrieval Gating): Memory tool effectiveness is modulated by retrieval quality\u2014tools provide no benefit when retrieval fails (Recall@10=0) or succeeds excellently (Recall@10>0.8)."
+    ],
+    "success_criteria": "LME+ accuracy >= 67%",
+    "failure_criteria": "LME+ accuracy < 67% OR cost > 5x static"
+  },
   "variables": null,
   "resource_budget": null
 }
