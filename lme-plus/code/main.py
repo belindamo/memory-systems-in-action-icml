@@ -22,6 +22,10 @@ def load_questions(data_dir: Path, sample_ids=None, samples=None):
     with open(questions_file) as f:
         questions = json.load(f)
 
+    # Filter out questions without environment directories
+    env_dir = data_dir / "environments"
+    questions = [q for q in questions if (env_dir / q['question_id']).exists()]
+
     # Filter by specific IDs if provided
     if sample_ids:
         id_set = set(sample_ids.split(','))
