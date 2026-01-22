@@ -1,5 +1,14 @@
 {
-  "current_stage": -1,
-  "current_iteration": 0,
-  "entries": []
+  "current_stage": 0,
+  "current_iteration": 1,
+  "entries": [
+    {
+      "stage": 0,
+      "iteration": 1,
+      "tree_file": "stage_0_iter_1.json",
+      "started": "2026-01-22T14:41:49.303292",
+      "completed": "2026-01-22T14:41:53.124072",
+      "outcome": "success"
+    }
+  ]
 }
