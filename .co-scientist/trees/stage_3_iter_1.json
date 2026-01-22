@@ -7,7 +7,8 @@
       "parent_id": null,
       "children": [
         "node-0a5b6b5d",
-        "node-ebf73f5f"
+        "node-ebf73f5f",
+        "node-b839c49c"
       ],
       "step": 1,
       "stage": 3,
@@ -63,6 +64,27 @@
         "maximize": true,
         "cost_usd": 0.5,
         "avg_time_seconds": 2.6
+      },
+      "is_buggy": false,
+      "plots": [],
+      "commit_hash": "d754b6d"
+    },
+    "node-b839c49c": {
+      "id": "node-b839c49c",
+      "parent_id": "node-66c5275a",
+      "children": [],
+      "step": 4,
+      "stage": 3,
+      "plan": "Oracle 50 samples: Validate upper bound pattern holds at scale",
+      "code": "#!/usr/bin/env python3\n\"\"\"\nExperiment Node 4: Oracle Baseline (50 samples)\nScale up to validate 80% accuracy pattern holds\n\"\"\"\nimport subprocess\nimport sys\n\ndef run():\n    \"\"\"Run Oracle experiment on 50 validation samples\"\"\"\n    cmd = [\n        sys.executable, \"code/main.py\",\n        \"--memory\", \"oracle\",\n        \"--samples\", \"50\",\n        \"--output\", \"results/node_4_oracle_50\"\n    ]\n\n    result = subprocess.run(cmd, capture_output=True, text=True)\n    print(result.stdout)\n    if result.stderr:\n        print(result.stderr, file=sys.stderr)\n\n    return result.returncode\n\nif __name__ == \"__main__\":\n    sys.exit(run())\n",
+      "term_out": "",
+      "analysis": "Oracle scaled to 90% at 50 samples (vs 80% at 20). Upper bound confirmed. Only 5 failures out of 50. This establishes ceiling for agentic QA on LME+.",
+      "metric": {
+        "value": 0.9,
+        "name": "accuracy",
+        "maximize": true,
+        "cost_usd": 0.43,
+        "avg_time_seconds": 1.7
       },
       "is_buggy": false,
       "plots": [],

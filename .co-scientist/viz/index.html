@@ -348,7 +348,10 @@ const TREE_DATA = {
         "node-66c5275a": {
           "id": "node-66c5275a",
           "parent_id": null,
-          "children": [],
+          "children": [
+            "node-0a5b6b5d",
+            "node-ebf73f5f"
+          ],
           "step": 1,
           "stage": 3,
           "plan": "Oracle baseline: Establish upper bound with perfect retrieval (20 samples)",
@@ -365,6 +368,48 @@ const TREE_DATA = {
           "is_buggy": false,
           "plots": [],
           "commit_hash": "9e54bcc"
+        },
+        "node-0a5b6b5d": {
+          "id": "node-0a5b6b5d",
+          "parent_id": "node-66c5275a",
+          "children": [],
+          "step": 2,
+          "stage": 3,
+          "plan": "Filesystem: Direct file access with list/read/search tools (20 samples)",
+          "code": "#!/usr/bin/env python3\n\"\"\"\nExperiment Node 2: Filesystem Access\nTests H2: Simple filesystem access outperforms specialized memory tools\n\"\"\"\nimport subprocess\nimport sys\n\ndef run():\n    \"\"\"Run Filesystem experiment on 20 validation samples\"\"\"\n    cmd = [\n        sys.executable, \"code/main.py\",\n        \"--memory\", \"filesystem\",\n        \"--samples\", \"20\",\n        \"--output\", \"results/node_2_filesystem\"\n    ]\n\n    result = subprocess.run(cmd, capture_output=True, text=True)\n    print(result.stdout)\n    if result.stderr:\n        print(result.stderr, file=sys.stderr)\n\n    return result.returncode\n\nif __name__ == \"__main__\":\n    sys.exit(run())\n",
+          "term_out": "",
+          "analysis": "Filesystem severely underperformed: 25% vs Oracle 80%. Agent gave up on 15/20 questions. Higher cost (/bin/zsh.19 vs /bin/zsh.17) due to inefficient search. H2 REJECTED: Filesystem does NOT outperform specialized tools in this setting. Tools need semantic search, not just file listing.",
+          "metric": {
+            "value": 0.25,
+            "name": "accuracy",
+            "maximize": true,
+            "cost_usd": 0.19,
+            "avg_time_seconds": 2.6
+          },
+          "is_buggy": false,
+          "plots": [],
+          "commit_hash": "12378fd"
+        },
+        "node-ebf73f5f": {
+          "id": "node-ebf73f5f",
+          "parent_id": "node-66c5275a",
+          "children": [],
+          "step": 3,
+          "stage": 3,
+          "plan": "Built-in MCP: Keyword-based memory search (20 samples)",
+          "code": "#!/usr/bin/env python3\n\"\"\"\nExperiment Node 3: Built-in MCP\nTests keyword-based memory search tool\n\"\"\"\nimport subprocess\nimport sys\n\ndef run():\n    \"\"\"Run Built-in MCP experiment on 20 validation samples\"\"\"\n    cmd = [\n        sys.executable, \"code/main.py\",\n        \"--memory\", \"builtin_mcp\",\n        \"--samples\", \"20\",\n        \"--output\", \"results/node_3_builtin_mcp\"\n    ]\n\n    result = subprocess.run(cmd, capture_output=True, text=True)\n    print(result.stdout)\n    if result.stderr:\n        print(result.stderr, file=sys.stderr)\n\n    return result.returncode\n\nif __name__ == \"__main__\":\n    sys.exit(run())\n",
+          "term_out": "",
+          "analysis": "Built-in MCP achieved 70% accuracy, much better than Filesystem (25%) but below Oracle (80%). Cost is 3x Oracle (/bin/zsh.50 vs /bin/zsh.17) due to retrieving top-k sessions. 10% gap from Oracle suggests retrieval quality matters. H2 REVISED: Memory tools > filesystem, but at higher cost.",
+          "metric": {
+            "value": 0.7,
+            "name": "accuracy",
+            "maximize": true,
+            "cost_usd": 0.5,
+            "avg_time_seconds": 2.6
+          },
+          "is_buggy": false,
+          "plots": [],
+          "commit_hash": "d754b6d"
         }
       },
       "root_ids": [
@@ -389,8 +434,16 @@ const TREE_DATA = {
     "stage_1_iter_1": {},
     "stage_3_iter_1": {
       "node-66c5275a": {
-        "x": 140.0,
+        "x": 330.0,
         "y": 50
+      },
+      "node-0a5b6b5d": {
+        "x": 140.0,
+        "y": 200
+      },
+      "node-ebf73f5f": {
+        "x": 520.0,
+        "y": 200
       }
     },
     "stage_0_iter_1": {}
