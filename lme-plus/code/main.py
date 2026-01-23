@@ -14,6 +14,7 @@ from adapters.oracle import OracleAdapter
 from adapters.filesystem import FilesystemAdapter
 from adapters.builtin_mcp import BuiltinMCPAdapter
 from adapters.stella_v5 import StellaV5Adapter
+from adapters.hybrid import HybridAdapter
 from judge import LLMJudge
 
 
@@ -49,6 +50,8 @@ def create_adapter(memory_type: str, data_dir: Path, filesystem: bool):
         return BuiltinMCPAdapter(data_dir, enable_filesystem=filesystem)
     elif memory_type == "stella_v5":
         return StellaV5Adapter(data_dir)
+    elif memory_type == "hybrid":
+        return HybridAdapter(data_dir)
     else:
         raise ValueError(f"Unknown memory type: {memory_type}")
 
@@ -147,7 +150,7 @@ def run_evaluation(args):
 def main():
     parser = argparse.ArgumentParser(description="LME+ Evaluation")
     parser.add_argument("--memory", "-m", required=True,
-                        choices=["oracle", "filesystem", "builtin_mcp", "stella_v5"],
+                        choices=["oracle", "filesystem", "builtin_mcp", "stella_v5", "hybrid"],
                         help="Memory system to use")
     parser.add_argument("--samples", "-n", type=int, default=50,
                         help="Number of samples to run")
