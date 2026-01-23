@@ -350,7 +350,8 @@ const TREE_DATA = {
           "parent_id": null,
           "children": [
             "node-0a5b6b5d",
-            "node-ebf73f5f"
+            "node-ebf73f5f",
+            "node-b839c49c"
           ],
           "step": 1,
           "stage": 3,
@@ -372,7 +373,9 @@ const TREE_DATA = {
         "node-0a5b6b5d": {
           "id": "node-0a5b6b5d",
           "parent_id": "node-66c5275a",
-          "children": [],
+          "children": [
+            "node-056a9c0c"
+          ],
           "step": 2,
           "stage": 3,
           "plan": "Filesystem: Direct file access with list/read/search tools (20 samples)",
@@ -393,7 +396,9 @@ const TREE_DATA = {
         "node-ebf73f5f": {
           "id": "node-ebf73f5f",
           "parent_id": "node-66c5275a",
-          "children": [],
+          "children": [
+            "node-143b3f85"
+          ],
           "step": 3,
           "stage": 3,
           "plan": "Built-in MCP: Keyword-based memory search (20 samples)",
@@ -410,6 +415,69 @@ const TREE_DATA = {
           "is_buggy": false,
           "plots": [],
           "commit_hash": "d754b6d"
+        },
+        "node-b839c49c": {
+          "id": "node-b839c49c",
+          "parent_id": "node-66c5275a",
+          "children": [],
+          "step": 4,
+          "stage": 3,
+          "plan": "Oracle 50 samples: Validate upper bound pattern holds at scale",
+          "code": "#!/usr/bin/env python3\n\"\"\"\nExperiment Node 4: Oracle Baseline (50 samples)\nScale up to validate 80% accuracy pattern holds\n\"\"\"\nimport subprocess\nimport sys\n\ndef run():\n    \"\"\"Run Oracle experiment on 50 validation samples\"\"\"\n    cmd = [\n        sys.executable, \"code/main.py\",\n        \"--memory\", \"oracle\",\n        \"--samples\", \"50\",\n        \"--output\", \"results/node_4_oracle_50\"\n    ]\n\n    result = subprocess.run(cmd, capture_output=True, text=True)\n    print(result.stdout)\n    if result.stderr:\n        print(result.stderr, file=sys.stderr)\n\n    return result.returncode\n\nif __name__ == \"__main__\":\n    sys.exit(run())\n",
+          "term_out": "",
+          "analysis": "Oracle scaled to 90% at 50 samples (vs 80% at 20). Upper bound confirmed. Only 5 failures out of 50. This establishes ceiling for agentic QA on LME+.",
+          "metric": {
+            "value": 0.9,
+            "name": "accuracy",
+            "maximize": true,
+            "cost_usd": 0.43,
+            "avg_time_seconds": 1.7
+          },
+          "is_buggy": false,
+          "plots": [],
+          "commit_hash": "fb54951"
+        },
+        "node-056a9c0c": {
+          "id": "node-056a9c0c",
+          "parent_id": "node-0a5b6b5d",
+          "children": [],
+          "step": 5,
+          "stage": 3,
+          "plan": "Filesystem 50 samples: Validate underperformance pattern",
+          "code": "#!/usr/bin/env python3\n\"\"\"\nExperiment Node 5: Filesystem (50 samples)\nValidate that filesystem underperformance holds at scale\n\"\"\"\nimport subprocess\nimport sys\n\ndef run():\n    \"\"\"Run Filesystem experiment on 50 validation samples\"\"\"\n    cmd = [\n        sys.executable, \"code/main.py\",\n        \"--memory\", \"filesystem\",\n        \"--samples\", \"50\",\n        \"--output\", \"results/node_5_filesystem_50\"\n    ]\n\n    result = subprocess.run(cmd, capture_output=True, text=True)\n    print(result.stdout)\n    if result.stderr:\n        print(result.stderr, file=sys.stderr)\n\n    return result.returncode\n\nif __name__ == \"__main__\":\n    sys.exit(run())\n",
+          "term_out": "",
+          "analysis": "Filesystem scaled to 32% at 50 samples (vs 25% at 20). Underperformance confirmed at scale. Agent gives up on most questions without semantic search.",
+          "metric": {
+            "value": 0.32,
+            "name": "accuracy",
+            "maximize": true,
+            "cost_usd": 0.35,
+            "avg_time_seconds": 2.3
+          },
+          "is_buggy": false,
+          "plots": [],
+          "commit_hash": "0a26ce5"
+        },
+        "node-143b3f85": {
+          "id": "node-143b3f85",
+          "parent_id": "node-ebf73f5f",
+          "children": [],
+          "step": 6,
+          "stage": 3,
+          "plan": "Built-in MCP 50 samples: Validate 70% accuracy pattern",
+          "code": "#!/usr/bin/env python3\n\"\"\"\nExperiment Node 6: Built-in MCP (50 samples)\nValidate that MCP 70% pattern holds at scale\n\"\"\"\nimport subprocess\nimport sys\n\ndef run():\n    \"\"\"Run Built-in MCP experiment on 50 validation samples\"\"\"\n    cmd = [\n        sys.executable, \"code/main.py\",\n        \"--memory\", \"builtin_mcp\",\n        \"--samples\", \"50\",\n        \"--output\", \"results/node_6_builtin_mcp_50\"\n    ]\n\n    result = subprocess.run(cmd, capture_output=True, text=True)\n    print(result.stdout)\n    if result.stderr:\n        print(result.stderr, file=sys.stderr)\n\n    return result.returncode\n\nif __name__ == \"__main__\":\n    sys.exit(run())\n",
+          "term_out": "",
+          "analysis": "Built-in MCP scaled to 62% at 50 samples (vs 70% at 20). Performance drop suggests 20-sample batch was easier. Cost .62 (3.8x Oracle). Gap from Oracle (90% vs 62% = 28%) demonstrates critical importance of retrieval quality.",
+          "metric": {
+            "value": 0.62,
+            "name": "accuracy",
+            "maximize": true,
+            "cost_usd": 1.62,
+            "avg_time_seconds": 3.1
+          },
+          "is_buggy": false,
+          "plots": [],
+          "commit_hash": "94e43ec"
         }
       },
       "root_ids": [
@@ -434,15 +502,27 @@ const TREE_DATA = {
     "stage_1_iter_1": {},
     "stage_3_iter_1": {
       "node-66c5275a": {
-        "x": 330.0,
+        "x": 520.0,
         "y": 50
       },
       "node-0a5b6b5d": {
         "x": 140.0,
         "y": 200
       },
+      "node-056a9c0c": {
+        "x": 140.0,
+        "y": 350
+      },
       "node-ebf73f5f": {
         "x": 520.0,
+        "y": 200
+      },
+      "node-143b3f85": {
+        "x": 520.0,
+        "y": 350
+      },
+      "node-b839c49c": {
+        "x": 900.0,
         "y": 200
       }
     },
