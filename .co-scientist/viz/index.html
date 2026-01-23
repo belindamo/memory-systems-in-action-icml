@@ -419,7 +419,9 @@ const TREE_DATA = {
         "node-b839c49c": {
           "id": "node-b839c49c",
           "parent_id": "node-66c5275a",
-          "children": [],
+          "children": [
+            "node-381612b1"
+          ],
           "step": 4,
           "stage": 3,
           "plan": "Oracle 50 samples: Validate upper bound pattern holds at scale",
@@ -478,6 +480,26 @@ const TREE_DATA = {
           "is_buggy": false,
           "plots": [],
           "commit_hash": "94e43ec"
+        },
+        "node-381612b1": {
+          "id": "node-381612b1",
+          "parent_id": "node-b839c49c",
+          "children": [],
+          "step": 7,
+          "stage": 3,
+          "plan": "Oracle 50 fixed: Validate bug fix impact",
+          "code": "#!/usr/bin/env python3\n\"\"\"\nExperiment Node 7: Oracle 50 (Fixed)\nRerun with bug fixes to validate results\n\"\"\"\nimport subprocess\nimport sys\n\ndef run():\n    \"\"\"Run Oracle experiment with fixed formatting\"\"\"\n    cmd = [\n        sys.executable, \"code/main.py\",\n        \"--memory\", \"oracle\",\n        \"--samples\", \"50\",\n        \"--output\", \"results/node_7_oracle_50_fixed\"\n    ]\n\n    result = subprocess.run(cmd, capture_output=True, text=True)\n    print(result.stdout)\n    if result.stderr:\n        print(result.stderr, file=sys.stderr)\n\n    return result.returncode\n\nif __name__ == \"__main__\":\n    sys.exit(run())\n",
+          "term_out": "",
+          "analysis": "Fixed version: 90% accuracy (same as buggy). Newline bug had zero impact on Oracle. 48/50 questions consistent with buggy run.",
+          "metric": {
+            "value": 0.9,
+            "name": "accuracy",
+            "maximize": true,
+            "cost_usd": 0.44
+          },
+          "is_buggy": false,
+          "plots": [],
+          "commit_hash": "63a48e9"
         }
       },
       "root_ids": [
@@ -524,6 +546,10 @@ const TREE_DATA = {
       "node-b839c49c": {
         "x": 900.0,
         "y": 200
+      },
+      "node-381612b1": {
+        "x": 900.0,
+        "y": 350
       }
     },
     "stage_0_iter_1": {}
