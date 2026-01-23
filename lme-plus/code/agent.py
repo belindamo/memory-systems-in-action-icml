@@ -1,6 +1,7 @@
 """
 ReAct Agent using OpenAI function calling
 """
+import json
 import openai
 from typing import Any, Dict, List, Tuple
 
@@ -77,7 +78,7 @@ class ReActAgent:
             tool_calls_count += len(message.tool_calls)
             for tool_call in message.tool_calls:
                 function_name = tool_call.function.name
-                function_args = eval(tool_call.function.arguments)
+                function_args = json.loads(tool_call.function.arguments)
 
                 # Call adapter
                 result = self.adapter.execute_tool(function_name, function_args)

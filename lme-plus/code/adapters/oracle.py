@@ -78,7 +78,7 @@ class OracleAdapter:
         if not sessions_content:
             return "No relevant information found."
 
-        return "\\n\\n---\\n\\n".join(sessions_content)
+        return "\n\n---\n\n".join(sessions_content)
 
     def _find_session_file(self, session_id: str) -> Path:
         """Find the session file by session_id"""
@@ -104,4 +104,4 @@ class OracleAdapter:
             lines.append(f"{role}: {content}")
             lines.append("")
 
-        return "\\n".join(lines)
+        return "\n".join(lines)

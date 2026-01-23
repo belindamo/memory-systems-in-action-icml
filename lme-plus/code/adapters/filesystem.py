@@ -101,7 +101,7 @@ class FilesystemAdapter:
                 num_turns = len(data.get("turns", []))
                 lines.append(f"[{idx}] {date} - {session_id} ({num_turns} turns)")
 
-        return "\\n".join(lines)
+        return "\n".join(lines)
 
     def _read_session(self, session_index: int) -> str:
         """Read a specific session by index"""
@@ -153,7 +153,7 @@ class FilesystemAdapter:
             "Use read_session(index) to view full content."
         ]
 
-        return "\\n".join(lines)
+        return "\n".join(lines)
 
     def _format_session(self, session_data: Dict) -> str:
         """Format session data for LLM context"""
@@ -169,4 +169,4 @@ class FilesystemAdapter:
             lines.append(f"{role}: {content}")
             lines.append("")
 
-        return "\\n".join(lines)
+        return "\n".join(lines)

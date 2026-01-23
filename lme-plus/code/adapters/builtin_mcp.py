@@ -119,7 +119,7 @@ class BuiltinMCPAdapter:
             lines.append("=" * 60)
             lines.append(self._format_session(session_data))
 
-        return "\\n".join(lines)
+        return "\n".join(lines)
 
     def _read_session(self, session_index: int) -> str:
         """Read a specific session by index"""
@@ -151,4 +151,4 @@ class BuiltinMCPAdapter:
             lines.append(f"{role}: {content}")
             lines.append("")
 
-        return "\\n".join(lines)
+        return "\n".join(lines)
