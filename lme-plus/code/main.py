@@ -13,6 +13,7 @@ from agent import ReActAgent
 from adapters.oracle import OracleAdapter
 from adapters.filesystem import FilesystemAdapter
 from adapters.builtin_mcp import BuiltinMCPAdapter
+from adapters.stella_v5 import StellaV5Adapter
 from judge import LLMJudge
 
 
@@ -46,6 +47,8 @@ def create_adapter(memory_type: str, data_dir: Path, filesystem: bool):
         return FilesystemAdapter(data_dir)
     elif memory_type == "builtin_mcp":
         return BuiltinMCPAdapter(data_dir, enable_filesystem=filesystem)
+    elif memory_type == "stella_v5":
+        return StellaV5Adapter(data_dir)
     else:
         raise ValueError(f"Unknown memory type: {memory_type}")
 

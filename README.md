@@ -60,15 +60,18 @@ Based on [Letta's finding](https://www.letta.com/blog/benchmarking-ai-agent-memo
 
 | ID | Method | QA Score | Time (s) | Tokens | Cost | vs LME (72%) |
 |----|--------|----------|----------|--------|------|--------------|
-| **O** | **Oracle (Gold)** | **90%** | 1.7 | 3,217 | $0.44 | **+18pp** |
-| **A** | **Built-in MCP** | **62%** | 3.1 | 9,875 | $1.53 | **-10pp** |
-| **D** | **Filesystem only** | **26%** | 2.3 | 3,717 | $0.36 | **-46pp** |
+| **O** | **Oracle (Gold)** | **90%** | 1.7 | 3,344 | $0.44 | **+18pp** |
+| **A** | **Built-in MCP (Keyword)** | **62%** | 3.8 | 12,823 | $1.62 | **-10pp** |
+| **B** | **Stella V5 (Dense)** | **26%** 🔴 | 2.4 | 6,444 | $0.82 | **-46pp** |
+| **D** | **Filesystem only** | **32%** | 2.4 | 2,639 | $0.35 | **-40pp** |
 
 **Key Findings:**
 - ✅ Oracle establishes 90% ceiling (not 100% due to judge/agent errors)
 - ✅ MCP achieves 62%, close to LME target of 67% (-5pp)
-- ❌ Filesystem catastrophically fails at 26% (no semantic search)
+- 🔴 **SHOCKING:** Stella V5 (dense) = 26%, same as Filesystem! Dense embeddings FAILED
+- ❌ Filesystem fails at 32% (no semantic search)
 - 💡 28pp gap (Oracle vs MCP) = retrieval quality bottleneck
+- 💡 Keyword search (MCP) >> Dense embeddings (Stella V5) by 36pp!
 
 ### Hypothesis Validation
 
