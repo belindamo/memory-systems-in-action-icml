@@ -1,0 +1,85 @@
+\begin{thebibliography}{10}
+
+\bibitem{chen2024hindsight}
+Junda Chen, Yifan Wang, Shichun Liu, et~al.
+\newblock Hindsight is 20/20: Building agent memory that retains, recalls, and
+  reflects.
+\newblock {\em arXiv preprint arXiv:2512.12818}, 2024.
+
+\bibitem{karpukhin2020dpr}
+Vladimir Karpukhin, Barlas O{\u{g}}uz, Sewon Min, et~al.
+\newblock Dense passage retrieval for open-domain question answering.
+\newblock {\em Conference on Empirical Methods in Natural Language Processing
+  (EMNLP)}, 2020.
+
+\bibitem{khattab2020colbert}
+Omar Khattab and Matei Zaharia.
+\newblock Colbert: Efficient and effective passage search via contextualized
+  late interaction over bert.
+\newblock {\em Special Interest Group on Information Retrieval (SIGIR)}, 2020.
+
+\bibitem{langchain}
+LangChain.
+\newblock Langchain: Building applications with llms.
+\newblock \url{https://langchain.com}, 2023.
+
+\bibitem{letta2024}
+Letta.
+\newblock Benchmarking ai agent memory.
+\newblock \url{https://www.letta.com/blog/benchmarking-ai-agent-memory}, 2024.
+
+\bibitem{liu2024memory}
+Shichun Liu, Yifan Wang, Junda Chen, et~al.
+\newblock Memory in the age of ai agents.
+\newblock {\em arXiv preprint arXiv:2512.13564}, 2024.
+
+\bibitem{maharana2024locomo}
+Adyasha Maharana and Mohit Bansal.
+\newblock Evaluating very long-term conversational memory of llm agents.
+\newblock {\em Annual Meeting of the Association for Computational Linguistics
+  (ACL)}, 2024.
+
+\bibitem{openai2023chatgpt}
+OpenAI.
+\newblock Chatgpt: Optimizing language models for dialogue.
+\newblock \url{https://openai.com/blog/chatgpt}, 2023.
+
+\bibitem{packer2023memgpt}
+Charles Packer, Vivian Fang, Shishir~G Patil, et~al.
+\newblock Memgpt: Towards llms as operating systems.
+\newblock {\em arXiv preprint arXiv:2310.08560}, 2023.
+
+\bibitem{thakur2021beir}
+Nandan Thakur, Nils Reimers, Andreas R{\"u}ckl{\'e}, et~al.
+\newblock Beir: A heterogeneous benchmark for zero-shot evaluation of
+  information retrieval models.
+\newblock {\em Neural Information Processing Systems (NeurIPS)}, 2021.
+
+\bibitem{wang2024memr3}
+Yifan Wang, Shichun Liu, Junda Chen, et~al.
+\newblock Memr3: Memory retrieval via reflective reasoning for llm agents.
+\newblock {\em arXiv preprint arXiv:2512.20237}, 2024.
+
+\bibitem{wu2024longmemeval}
+Xiaowu Wu, Yifan Wang, Yuheng Zhao, Junda Chen, et~al.
+\newblock Longmemeval: Benchmarking chat assistants on long-term interactive
+  memory.
+\newblock {\em arXiv preprint arXiv:2410.10813}, 2024.
+
+\bibitem{yao2023react}
+Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, et~al.
+\newblock React: Synergizing reasoning and acting in language models.
+\newblock {\em International Conference on Learning Representations (ICLR)},
+  2023.
+
+\bibitem{stella2024}
+Dun Zhang.
+\newblock Stella: Efficient multi-task dense retrieval.
+\newblock 2024.
+
+\bibitem{zhou2024hybrid}
+Wei Zhou, Li~Zhang, Ming Wang, et~al.
+\newblock A systematic review of retrieval-augmented generation systems.
+\newblock {\em arXiv preprint arXiv:2507.18910}, 2024.
+
+\end{thebibliography}
