@@ -249,7 +249,7 @@
     <script>
         // AI Co-Scientist Visualization Script
 const TREE_DATA = {
-  "project_path": "/Users/bmo/make-co-scientist-skill/memory-test-project",
+  "project_path": "/Users/bmo/make-co-scientist-skill/memory-systems-in-action",
   "hypothesis": {
     "primary": "H1 (Translation): Agentic retrieval (LME+) will achieve QA accuracy within 5% of static retrieval (LME best = 72%), but at 2-3x higher latency/cost.",
     "secondary": [
@@ -326,11 +326,53 @@ const TREE_DATA = {
       "iteration": 1,
       "tree_file": "stage_4_iter_1.json",
       "started": "2026-01-22T16:38:43.082185",
-      "completed": "2026-01-22T16:40:13.632505",
+      "completed": "2026-01-23T23:23:07.040191",
+      "outcome": "loop_back",
+      "loop_reason": "ICML Review W2: Missing baselines from 2024 literature (MemR3, Hindsight, proper BM25, other embeddings). Need to update literature review and add citations."
+    },
+    {
+      "stage": 0,
+      "iteration": 2,
+      "tree_file": "stage_0_iter_2.json",
+      "started": "2026-01-23T23:23:07.041236",
+      "completed": "2026-01-23T23:24:22.088766",
       "outcome": "success"
+    },
+    {
+      "stage": 1,
+      "iteration": 2,
+      "tree_file": "stage_1_iter_2.json",
+      "started": "2026-01-23T23:24:25.201934",
+      "completed": "2026-01-23T23:31:22.589453",
+      "outcome": "success"
+    },
+    {
+      "stage": 2,
+      "iteration": 2,
+      "tree_file": "stage_2_iter_2.json",
+      "started": "2026-01-23T23:31:27.407028",
+      "completed": "2026-01-23T23:50:16.024899",
+      "outcome": "success"
+    },
+    {
+      "stage": 3,
+      "iteration": 2,
+      "tree_file": "stage_3_iter_2.json",
+      "started": "2026-01-23T23:50:25.317961",
+      "completed": null,
+      "outcome": null
     }
   ],
   "trees": {
+    "stage_0_iter_2": {
+      "stage": 0,
+      "iteration": 2,
+      "nodes": {},
+      "root_ids": [],
+      "created_at": "2026-01-23T23:23:07.041233",
+      "completed_at": "2026-01-23T23:24:22.088761",
+      "outcome": "success"
+    },
     "stage_2_iter_1": {
       "stage": 2,
       "iteration": 1,
@@ -355,8 +397,99 @@ const TREE_DATA = {
       "nodes": {},
       "root_ids": [],
       "created_at": "2026-01-22T16:38:43.082177",
-      "completed_at": "2026-01-22T16:40:13.632497",
-      "outcome": "success"
+      "completed_at": "2026-01-23T23:23:07.040185",
+      "outcome": "loop_back"
+    },
+    "stage_3_iter_2": {
+      "stage": 3,
+      "iteration": 2,
+      "nodes": {
+        "node-7353c2ad": {
+          "id": "node-7353c2ad",
+          "parent_id": null,
+          "children": [],
+          "step": 1,
+          "stage": 3,
+          "plan": "BM25 with IDF at 100 questions - tests if proper BM25 beats frequency counting",
+          "code": "#!/usr/bin/env python3\n\"\"\"\nExperiment: BM25 Retrieval (100 questions)\n\nHypothesis: Proper BM25 with IDF weighting will outperform simple frequency counting.\nTests whether the ICML review concern about \"not real BM25\" is valid.\n\nRun: cd lme-plus && python experiments/node_12_bm25_100.py\n\"\"\"\nimport subprocess\nimport sys\n\nif __name__ == \"__main__\":\n    cmd = [\n        sys.executable, \"code/main.py\",\n        \"--memory\", \"bm25\",\n        \"--samples\", \"100\",\n        \"--output\", \"results/node_12_bm25_100\",\n        \"--data\", \"data/lme_plus\"\n    ]\n    print(f\"Running: {' '.join(cmd)}\")\n    subprocess.run(cmd, cwd=\"/Users/bmo/make-co-scientist-skill/memory-systems-in-action/lme-plus\")\n",
+          "term_out": "",
+          "analysis": "",
+          "metric": null,
+          "is_buggy": false,
+          "plots": [],
+          "commit_hash": null
+        },
+        "node-99cd8393": {
+          "id": "node-99cd8393",
+          "parent_id": null,
+          "children": [],
+          "step": 2,
+          "stage": 3,
+          "plan": "BGE embeddings at 100 questions - tests alternative embedding model",
+          "code": "#!/usr/bin/env python3\n\"\"\"\nExperiment: BGE Embeddings (100 questions)\n\nHypothesis: BGE-large may perform differently than Stella V5 on conversational QA.\nTests whether the embedding model choice matters (ICML W2).\n\nRun: cd lme-plus && python experiments/node_13_bge_100.py\n\"\"\"\nimport subprocess\nimport sys\n\nif __name__ == \"__main__\":\n    cmd = [\n        sys.executable, \"code/main.py\",\n        \"--memory\", \"bge\",\n        \"--samples\", \"100\",\n        \"--output\", \"results/node_13_bge_100\",\n        \"--data\", \"data/lme_plus\"\n    ]\n    print(f\"Running: {' '.join(cmd)}\")\n    subprocess.run(cmd, cwd=\"/Users/bmo/make-co-scientist-skill/memory-systems-in-action/lme-plus\")\n",
+          "term_out": "",
+          "analysis": "",
+          "metric": null,
+          "is_buggy": false,
+          "plots": [],
+          "commit_hash": null
+        },
+        "node-518b2aa1": {
+          "id": "node-518b2aa1",
+          "parent_id": null,
+          "children": [],
+          "step": 3,
+          "stage": 3,
+          "plan": "MCP filesystem tools at 100 questions - tests proper read/write/grep tools",
+          "code": "#!/usr/bin/env python3\n\"\"\"\nExperiment: MCP Filesystem Tools (100 questions)\n\nHypothesis: Proper MCP-style filesystem tools (list, read, grep, search) will\noutperform the original simple filesystem adapter due to better tool design\nmatching what agents are trained on.\n\nRun: cd lme-plus && python experiments/node_14_mcp_filesystem_100.py\n\"\"\"\nimport subprocess\nimport sys\n\nif __name__ == \"__main__\":\n    cmd = [\n        sys.executable, \"code/main.py\",\n        \"--memory\", \"mcp_filesystem\",\n        \"--samples\", \"100\",\n        \"--output\", \"results/node_14_mcp_filesystem_100\",\n        \"--data\", \"data/lme_plus\"\n    ]\n    print(f\"Running: {' '.join(cmd)}\")\n    subprocess.run(cmd, cwd=\"/Users/bmo/make-co-scientist-skill/memory-systems-in-action/lme-plus\")\n",
+          "term_out": "",
+          "analysis": "",
+          "metric": null,
+          "is_buggy": false,
+          "plots": [],
+          "commit_hash": null
+        },
+        "node-32a9d777": {
+          "id": "node-32a9d777",
+          "parent_id": null,
+          "children": [],
+          "step": 4,
+          "stage": 3,
+          "plan": "Keyword (freq) at 100 questions - baseline comparison at larger scale",
+          "code": "#!/usr/bin/env python3\n\"\"\"\nExperiment: Keyword (frequency) at 100 questions\n\nScale up the original keyword experiment to 100 questions for fair comparison\nwith BM25 and other new methods.\n\nRun: cd lme-plus && python experiments/node_15_keyword_100.py\n\"\"\"\nimport subprocess\nimport sys\n\nif __name__ == \"__main__\":\n    cmd = [\n        sys.executable, \"code/main.py\",\n        \"--memory\", \"builtin_mcp\",\n        \"--samples\", \"100\",\n        \"--output\", \"results/node_15_keyword_100\",\n        \"--data\", \"data/lme_plus\"\n    ]\n    print(f\"Running: {' '.join(cmd)}\")\n    subprocess.run(cmd, cwd=\"/Users/bmo/make-co-scientist-skill/memory-systems-in-action/lme-plus\")\n",
+          "term_out": "",
+          "analysis": "",
+          "metric": null,
+          "is_buggy": false,
+          "plots": [],
+          "commit_hash": null
+        },
+        "node-4d3af960": {
+          "id": "node-4d3af960",
+          "parent_id": null,
+          "children": [],
+          "step": 5,
+          "stage": 3,
+          "plan": "Oracle at 100 questions - upper bound at larger scale",
+          "code": "#!/usr/bin/env python3\n\"\"\"\nExperiment: Oracle at 100 questions\n\nScale up Oracle to 100 questions to establish upper bound at larger scale.\n\nRun: cd lme-plus && python experiments/node_16_oracle_100.py\n\"\"\"\nimport subprocess\nimport sys\n\nif __name__ == \"__main__\":\n    cmd = [\n        sys.executable, \"code/main.py\",\n        \"--memory\", \"oracle\",\n        \"--samples\", \"100\",\n        \"--output\", \"results/node_16_oracle_100\",\n        \"--data\", \"data/lme_plus\"\n    ]\n    print(f\"Running: {' '.join(cmd)}\")\n    subprocess.run(cmd, cwd=\"/Users/bmo/make-co-scientist-skill/memory-systems-in-action/lme-plus\")\n",
+          "term_out": "",
+          "analysis": "",
+          "metric": null,
+          "is_buggy": false,
+          "plots": [],
+          "commit_hash": null
+        }
+      },
+      "root_ids": [
+        "node-7353c2ad",
+        "node-99cd8393",
+        "node-518b2aa1",
+        "node-32a9d777",
+        "node-4d3af960"
+      ],
+      "created_at": "2026-01-23T23:50:25.317955",
+      "completed_at": null,
+      "outcome": null
     },
     "stage_3_iter_1": {
       "stage": 3,
@@ -526,6 +659,24 @@ const TREE_DATA = {
       "completed_at": "2026-01-22T16:37:44.993409",
       "outcome": "success"
     },
+    "stage_1_iter_2": {
+      "stage": 1,
+      "iteration": 2,
+      "nodes": {},
+      "root_ids": [],
+      "created_at": "2026-01-23T23:24:25.201929",
+      "completed_at": "2026-01-23T23:31:22.589445",
+      "outcome": "success"
+    },
+    "stage_2_iter_2": {
+      "stage": 2,
+      "iteration": 2,
+      "nodes": {},
+      "root_ids": [],
+      "created_at": "2026-01-23T23:31:27.407020",
+      "completed_at": "2026-01-23T23:50:16.024892",
+      "outcome": "success"
+    },
     "stage_0_iter_1": {
       "stage": 0,
       "iteration": 1,
@@ -537,9 +688,32 @@ const TREE_DATA = {
     }
   },
   "layouts": {
+    "stage_0_iter_2": {},
     "stage_2_iter_1": {},
     "stage_1_iter_1": {},
     "stage_4_iter_1": {},
+    "stage_3_iter_2": {
+      "node-7353c2ad": {
+        "x": 140.0,
+        "y": 50
+      },
+      "node-99cd8393": {
+        "x": 520.0,
+        "y": 50
+      },
+      "node-518b2aa1": {
+        "x": 900.0,
+        "y": 50
+      },
+      "node-32a9d777": {
+        "x": 1280.0,
+        "y": 50
+      },
+      "node-4d3af960": {
+        "x": 1660.0,
+        "y": 50
+      }
+    },
     "stage_3_iter_1": {
       "node-66c5275a": {
         "x": 520.0,
@@ -570,6 +744,8 @@ const TREE_DATA = {
         "y": 350
       }
     },
+    "stage_1_iter_2": {},
+    "stage_2_iter_2": {},
     "stage_0_iter_1": {}
   }
 };

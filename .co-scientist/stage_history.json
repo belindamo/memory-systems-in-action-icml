@@ -1,6 +1,6 @@
 {
-  "current_stage": 4,
-  "current_iteration": 1,
+  "current_stage": 3,
+  "current_iteration": 2,
   "entries": [
     {
       "stage": 0,
@@ -39,8 +39,41 @@
       "iteration": 1,
       "tree_file": "stage_4_iter_1.json",
       "started": "2026-01-22T16:38:43.082185",
-      "completed": "2026-01-22T16:40:13.632505",
+      "completed": "2026-01-23T23:23:07.040191",
+      "outcome": "loop_back",
+      "loop_reason": "ICML Review W2: Missing baselines from 2024 literature (MemR3, Hindsight, proper BM25, other embeddings). Need to update literature review and add citations."
+    },
+    {
+      "stage": 0,
+      "iteration": 2,
+      "tree_file": "stage_0_iter_2.json",
+      "started": "2026-01-23T23:23:07.041236",
+      "completed": "2026-01-23T23:24:22.088766",
       "outcome": "success"
+    },
+    {
+      "stage": 1,
+      "iteration": 2,
+      "tree_file": "stage_1_iter_2.json",
+      "started": "2026-01-23T23:24:25.201934",
+      "completed": "2026-01-23T23:31:22.589453",
+      "outcome": "success"
+    },
+    {
+      "stage": 2,
+      "iteration": 2,
+      "tree_file": "stage_2_iter_2.json",
+      "started": "2026-01-23T23:31:27.407028",
+      "completed": "2026-01-23T23:50:16.024899",
+      "outcome": "success"
+    },
+    {
+      "stage": 3,
+      "iteration": 2,
+      "tree_file": "stage_3_iter_2.json",
+      "started": "2026-01-23T23:50:25.317961",
+      "completed": null,
+      "outcome": null
     }
   ]
 }

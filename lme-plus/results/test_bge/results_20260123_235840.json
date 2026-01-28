@@ -1,0 +1,14 @@
+[
+  {
+    "question_id": "e47becba",
+    "question": "What degree did I graduate with?",
+    "gold_answer": "Business Administration",
+    "agent_answer": "I don't have enough information to answer that question.",
+    "correct": false,
+    "time_seconds": 2.112215042114258,
+    "tokens": 5077,
+    "cost_usd": 0.012895,
+    "tool_calls": 1,
+    "iterations": 2
+  }
+]

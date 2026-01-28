@@ -1,0 +1,14 @@
+[
+  {
+    "question_id": "e47becba",
+    "question": "What degree did I graduate with?",
+    "gold_answer": "Business Administration",
+    "agent_answer": "You graduated with a degree in Business Administration.",
+    "correct": true,
+    "time_seconds": 2.1834466457366943,
+    "tokens": 4007,
+    "cost_usd": 0.010204999999999999,
+    "tool_calls": 1,
+    "iterations": 2
+  }
+]

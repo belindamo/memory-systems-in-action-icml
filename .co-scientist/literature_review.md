@@ -2,8 +2,9 @@
 
 ## Stage 0 Output - AI Co-Scientist
 
-**Date:** 2026-01-22
+**Date:** 2026-01-22 (Updated: 2026-01-23)
 **Project:** LME+ - Evaluating Memory Systems on Agentic Tasks
+**Revision:** Iteration 2 - Addressing ICML Review Feedback (W2: Missing Baselines)
 
 ---
 
@@ -52,6 +53,20 @@
 ### Mem0: Production-Ready AI Agents
 - **Source:** [arXiv:2504.19413](https://arxiv.org/abs/2504.19413)
 - **Method:** Scalable, memory-centric architecture with dynamic memory consolidation
+
+### MemR3: Memory Retrieval via Reflective Reasoning (Dec 2024) ⭐ NEW
+- **Source:** [arXiv:2512.20237](https://arxiv.org/html/2512.20237v1)
+- **Method:** Reflective reasoning to decide when to retrieve from long-term memory
+- **Benchmark:** Evaluated on LoCoMo
+- **Relevance:** Directly comparable concurrent work on agent memory retrieval
+- **ICML Review Note:** W2 requires citation and comparison
+
+### Hindsight: Agent Memory with Retain/Recall/Reflect (Dec 2024) ⭐ NEW
+- **Source:** [arXiv:2512.12818](https://arxiv.org/html/2512.12818v1)
+- **Method:** Three-stage memory mechanism for very long conversations
+- **Benchmark:** Evaluated on LoCoMo
+- **Relevance:** Alternative memory approach for comparison
+- **ICML Review Note:** W2 requires citation and comparison
 
 ---
 
@@ -114,6 +129,46 @@
 - Cannot distinguish old vs new information
 - Fails to grasp relationships between events
 - Context pollution degrades performance (especially for reasoning models)
+
+---
+
+## 4.5. Sparse vs Dense Retrieval Methods ⭐ NEW SECTION
+
+### BM25: The Gold Standard for Sparse Retrieval
+- **Algorithm:** TF-IDF with document length normalization and term saturation
+- **Formula:** $\text{BM25}(D,Q) = \sum_{i=1}^{n} \text{IDF}(q_i) \cdot \frac{f(q_i, D) \cdot (k_1 + 1)}{f(q_i, D) + k_1 \cdot (1 - b + b \cdot \frac{|D|}{\text{avgdl}})}$
+- **Default parameters:** $k_1 = 1.2$, $b = 0.75$
+- **Typical improvement:** 5-15% over raw frequency counting
+- **ICML Review Note:** W2 requires proper BM25 implementation vs current frequency counting
+
+### Dense Embedding Models (MTEB Leaderboard)
+- **Source:** [MTEB Leaderboard](https://modal.com/blog/mteb-leaderboard-article)
+- **Top Models (2025):**
+  - Stella V5 1.5B: 72.0% on retrieval tasks
+  - BGE-large-en-v1.5: 64.2% on retrieval tasks
+  - E5-large-v2: 62.9% on retrieval tasks
+  - Jina-embeddings-v3: 60.8% on retrieval tasks
+- **ICML Review Note:** W2 requires testing at least one other embedding model (BGE or E5)
+
+### Jasper and Stella: Distillation of SOTA Embedding Models (Dec 2024)
+- **Source:** [arXiv:2412.19048](https://arxiv.org/html/2412.19048v2)
+- **Finding:** Stella V5 trained primarily on documents (Wikipedia, scientific papers), not conversations
+- **Implication:** May explain poor performance on conversational QA (H2 hypothesis)
+
+### Hybrid Retrieval Methods
+- **Source:** [Hybrid Retrieval Survey](https://mbrenndoerfer.com/writing/hybrid-retrieval-combining-sparse-dense-methods-effective-information-retrieval)
+- **Typical Improvement:** 10-50% over single-method baselines
+- **Standard Fusion Techniques:**
+  1. **Reciprocal Rank Fusion (RRF):** $\text{RRF}(d) = \sum_{r \in R} \frac{1}{k + r(d)}$ where $k=60$
+  2. **Weighted Scoring:** $\text{score} = \alpha \cdot \text{sparse} + (1-\alpha) \cdot \text{dense}$
+  3. **Neural Rerankers:** Cohere, Jina, cross-encoders
+- **ICML Review Note:** W7 suggests our cascade hybrid may be suboptimal vs RRF
+
+### Advanced RAG Systems (2024-2025)
+- **Source:** [Systematic Review of RAG Systems](https://arxiv.org/html/2507.18910v1)
+- **Key Finding:** Proper fusion consistently outperforms single-method retrieval
+- **Source:** [Advanced RAG: Hybrid Search and Re-ranking](https://dev.to/kuldeep_paul/advanced-rag-from-naive-retrieval-to-hybrid-search-and-re-ranking-4km3)
+- **Standard Practice:** keyword → reranker (skipping embedding retrieval)
 
 ---
 
@@ -238,6 +293,41 @@ Based on literature review, the following methods should be tested:
 
 ---
 
+## 12. ICML Review Response: Addressing Weaknesses ⭐ NEW SECTION
+
+### W1: Limited Scale (50/500 questions)
+- **Required:** Confidence intervals, statistical significance tests (McNemar's)
+- **Options:** (1) Scale to 200+ questions, (2) Add CIs, (3) Reframe as pilot study
+- **Current Cost:** $8.02 for 300 evaluations → ~$30 for 200 questions
+
+### W2: Missing Critical Baselines
+| Baseline | Status | Action Required |
+|----------|--------|-----------------|
+| Proper BM25 (not frequency) | ❌ Missing | Implement with IDF, length normalization |
+| BGE or E5 embeddings | ❌ Missing | Test alternative to Stella V5 |
+| MemR3 comparison | ❌ Missing | Cite and compare LoCoMo results |
+| Hindsight comparison | ❌ Missing | Cite and compare LoCoMo results |
+| Reranker-only baseline | ❌ Missing | Test keyword → reranker pipeline |
+
+### W3: No Mechanistic Analysis
+| Hypothesis | Test Proposed |
+|------------|---------------|
+| H1: Session Length | Chunk sessions into 10-turn segments |
+| H2: Training Mismatch | Verify Stella V5 on document QA |
+| H3: Lexical vs Semantic | Analyze failure cases for rare terms |
+| H4: Reranking Failure | Quantitative rank movement analysis |
+
+### W4: Misleading Letta Comparison
+- **Issue:** Letta tested file-based context management on LoCoMo (74%), not filesystem tools for search
+- **Fix:** Clarify distinction in Related Work section
+
+### W5-W7: Architecture, Judge Bias, Hybrid Implementation
+- Single agent architecture (ReAct only)
+- GPT-4o as both agent and judge (circularity)
+- Cascade hybrid vs RRF fusion
+
+---
+
 ## Summary
 
 The literature reveals a critical tension:
@@ -246,3 +336,5 @@ The literature reveals a critical tension:
 - **The gap:** No systematic comparison of these methods when retrieval becomes agentic
 
 This research (LME+) will directly address whether the complexity of memory tools is justified in agentic contexts.
+
+**Revision Note (Iteration 2):** Literature review updated to address ICML Review W2 concerns. Added citations for MemR3, Hindsight, BM25 methodology, MTEB leaderboard context, and hybrid retrieval best practices.
